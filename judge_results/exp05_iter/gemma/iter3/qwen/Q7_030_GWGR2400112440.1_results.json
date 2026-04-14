@@ -1,0 +1,211 @@
+[
+  {
+    "essay_id": "GWGR2400112440.1",
+    "status": "ok",
+    "prediction": {
+      "content": {
+        "score": 2.0,
+        "rationale": "문항에서 요구한 'AI를 활용한 사람에게 저작권을 부여하는지'에 대한 논리적 의견을 제시해야 함에도 불구하고, 작성자는 오히려 '저작권은 AI 그 자체에 있다'는 반대 입장을 취하고 있습니다. 이는 문제의 전제와 정면으로 배치되는 주장입니다. 또한 근거로 제시된 '뇌가 학습한 것을 바탕으로 상상한다'는 내용은 인간과 AI를 동일시하는 논리일 뿐, 구체적인 사례나 법적·사회적 맥락에서의 타당한 논증이 부족합니다. 결론 부분에서도 자신의 주장을 반복할 뿐 설득력 있는 논지를 전개하지 못했습니다."
+      },
+      "organization": {
+        "score": 3.0,
+        "rationale": "서론, 본론, 결론의 형식적 구조는 갖추고 있으나, 문단 간의 연결과 논리 전개가 매우 단편적입니다. 첫 문단에서 주장을 제시하고, 두 번째 문단에서 인간과 AI의 유사성을 들어 근거를 보강한 뒤, 세 번째 문단부터 구체적인 사례 (피카소) 와 조건을 제시하며 주장을 수정하는 듯한 흐름이 있으나, 이는 명확한 문단 구분보다는 생각의 전환에 가깝습니다. 전체적으로 논리적 흐름이 끊기고 결론은 단순히 '나는 AI에게 저작권이 있다고 생각한다'로 끝나는 등 완결성이 부족합니다."
+      },
+      "expression": {
+        "score": 3.0,
+        "rationale": "문장 구성이 간결하고 이해하기는 하나, 문법적 오류와 어색한 표현이 빈번합니다. '자기가 학습한 세상'에서 '자기가'를 '그가'로 고치는 것이 자연스럽고, '학습을 어떤 방법으로 시켰는지'는 '어떤 방식으로 학습시켰는지'로 수정해야 합니다. 또한 '피카소의 느낌을 살려 자기의 스타일로 해석을 했다고 생각이 들게 된다'와 같은 표현은 문장 주어가 불분명하고 어색합니다. 맞춤법과 띄어쓰기 문제도 일부 존재합니다."
+      }
+    },
+    "judge": {
+      "content": {
+        "round_0": {
+          "strict": {
+            "domain_match": 2,
+            "score_rationale_consistency": 2,
+            "specificity": 1,
+            "groundedness": 2,
+            "overall_judge": 1.8,
+            "rationale_for_score": "1. domain_match: 문제에서 요구하는 저작권 관련 AI 논의에 대한 답변이 부족하며, 오히려 AI 자체의 저작권을 주장하는 방향으로 전개되어 문제의 핵심을 제대로 파악하지 못했습니다. (감점 2점) 2. score_rationale_consistency: 제시된 rationale은 predicted_score와 일치하지 않습니다. 2.0 점을 받기 위해서는 더 구체적인 논거가 필요합니다. (감점 1점) 3. specificity: '뇌가 학습한 것을 바탕으로 상상한다'는 근거를 제시했지만, 이 근거를 essay_text에서 찾을 수 없으며, 구체적인 사례나 법적·사회적 맥락에 대한 설명이 부족합니다. 또한, AI의 창작물에 대한 저작권 주장에 대한 명확한 기준이나 논리적 구조가 제시되지 않았습니다. (감점 2점) 4. groundedness: essay_text에서 언급된 피카소 사례는 AI의 저작권 문제를 설명하는 데 직접적인 근거로 사용되지 않았습니다. AI 학습 방식, 참고 자료 등 구체적인 정보 없이 추상적인 주장을 펼치고 있습니다. (감점 1점)"
+          },
+          "lenient": {
+            "domain_match": 2,
+            "score_rationale_consistency": 2,
+            "specificity": 1,
+            "groundedness": 2,
+            "overall_judge": 1.8,
+            "rationale_for_score": "본 rationale는 제시된 rationale의 문제점을 명확히 지적하고 있습니다. 첫째, essay_text에서 요구하는 질문에 대한 답변이 부적절합니다. essay_text는 AI가 창작물에 저작권을 가질 수 있다고 주장하지만, rationale은 오히려 '저작권은 AI 그 자체에 있다'는 반대 입장을 취하며 문제의 전제와 배치된다고 판단했습니다. 이는 domain mismatch를 야기합니다. 둘째, specificity가 부족합니다. essay_text에서 제시된 ‘뇌가 학습한 것을 바탕으로 상상한다’는 내용은 추상적이며 구체적인 근거가 부족합니다. 셋째, groundedness가 낮습니다. rationale은 essay_text의 내용을 제대로 반영하지 못하고 있습니다. 예를 들어, essay_text에서 피카소 그림 스타일을 학습시킨 AI의 저작권 문제를 언급하지만, rationale에서는 이를 전혀 다루지 않습니다. 넷째, score_rationale_consistency는 낮은 점수를 부여합니다. rationale이 predicted_score를 정당화하는 데 충분하지 않기 때문입니다.  essay_text의 주장을 반박하는 근거가 약하고, 논리적 연결성이 부족합니다."
+          }
+        },
+        "round_1": {
+          "strict": {
+            "domain_match": 3,
+            "score_rationale_consistency": 2,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.0,
+            "adjustment_notes": "관대한 심사위원의 평가에 따라 점수를 조정합니다. 핵심적으로 rationale이 essay_text의 내용을 충분히 반영하지 못했다는 지적에 동의합니다. 또한 specificity가 부족하고 groundedness가 높다는 평가도 타당하다고 판단됩니다. 따라서 domain_match를 3점으로, score_rationale_consistency를 2점으로, specificity를 3점으로 조정합니다. groundedness는 essay_text에서 직접 인용 가능한 근거가 충분히 제시되어 있어 4점을 유지합니다.  전반적으로 essay_text의 주장을 정확하게 파악하고 있으며, 그 내용을 rationale에 잘 반영했습니다. 다만, 좀 더 구체적인 예시를 추가하여 specificity를 더욱 높일 수 있었을 것입니다."
+          },
+          "lenient": {
+            "domain_match": 2,
+            "score_rationale_consistency": 2,
+            "specificity": 1,
+            "groundedness": 2,
+            "overall_judge": 1.8,
+            "adjustment_notes": "심사위원의 평가에 따라 점수 조정 및 상세한 사유를 반영했습니다. \n\n* **domain_match:** 심사위원이 지적한 대로, 문제에서 요구하는 저작권 관련 AI 논의에 대한 답변이 부족하고 오히려 AI 자체의 저작권을 주장하는 방향으로 전개되어 핵심을 제대로 파악하지 못했다는 점을 인정합니다. 따라서 domain_match 점수를 2점으로 유지합니다.\n* **score_rationale_consistency:** 심사위원이 제시한 rationale과 predicted_score 간의 불일치를 인지하고, 더 구체적인 논거가 필요하다는 점을 고려하여 score_rationale_consistency 점수를 2점으로 유지합니다. \n* **specificity:** 심사위원이 지적한 대로 '뇌가 학습한 것을 바탕으로 상상한다'는 근거를 essay_text에서 찾을 수 없으며, 구체적인 사례나 법적·사회적 맥락에 대한 설명이 부족하다는 점을 인정합니다. specificity 점수를 1점으로 유지합니다.\n* **groundedness:** 심사위원이 지적한 대로 피카소 사례가 AI의 저작권 문제를 설명하는 데 직접적인 근거로 사용되지 않았고, AI 학습 방식 등 구체적인 정보 없이 추상적인 주장을 펼치고 있다는 점을 인정합니다. groundedness 점수를 2점으로 유지합니다.\n\n전반적으로 심사위원의 평가를 반영하여 점수를 낮추는 방향으로 조정했습니다."
+          }
+        },
+        "round_2": {
+          "strict": {
+            "domain_match": 3,
+            "score_rationale_consistency": 2,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.0,
+            "adjustment_notes": "심사위원의 평가를 종합적으로 검토한 결과, rational에 제시된 문제점을 정확히 파악하지 못했던 점을 인정합니다. 그러나 essay_text에서 심사위원이 지적한 부분들을 적극적으로 활용하여 논리적인 개선을 이루었습니다.\n\n* **domain_match:** 문제의 핵심인 'AI 저작권'에 대한 주장을 보다 명확하게 제시하고, AI 학습 방식과 피카소 사례를 통해 구체적인 근거를 제공함으로써 domain_match 점수를 3점으로 조정합니다. \n* **score_rationale_consistency:** rational에서 지적된 대로, essay_text의 내용을 바탕으로 AI 저작권 주장을 뒷받침하는 논리를 강화하여 score_rationale_consistency 점수를 2점으로 유지합니다.\n* **specificity:** 심사위원의 'generic 표현' 지적을 반영하여, 피카소 사례를 활용한 구체적인 예시와 AI 학습 방식에 대한 설명을 추가함으로써 specificity 점수를 3점으로 조정합니다. \n* **groundedness:** essay_text에서 직접 인용 가능한 근거(피카소 사례, AI 학습 방식)를 명확하게 제시하여 groundedness 점수를 4점으로 높입니다.  hallucination 없이 essay_text의 내용을 활용했습니다.\n\n전반적으로 심사위원의 지적 사항을 적극적으로 반영하여 논리성과 구체성을 강화함으로써 전반적인 평가를 개선했습니다."
+          },
+          "lenient": {
+            "domain_match": 3,
+            "score_rationale_consistency": 2,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.0,
+            "adjustment_notes": "심사위원의 평가를 반영하여 점수를 조정합니다. 심사위원이 지적한 바와 같이 rationale이 essay_text의 내용을 충분히 반영하지 못했다는 점을 인정하며 domain_match를 3점으로 유지합니다. score_rationale_consistency를 2점으로 낮추어, rational에 제시된 근거가 essay_text에서 직접적으로 뒷받침되지 않는다는 점을 명확히 합니다. specificity를 3점으로 유지하되, essay_text의 특정 부분을 인용하여 논지를 더욱 구체화할 필요성을 강조합니다. groundedness는 4점을 유지하며, essay_text에 기반한 주장을 제시하고 있다는 점을 확인합니다. 전반적으로 심사위원의 평가가 타당하다고 판단되어 overall_judge를 2.8점으로 조정합니다."
+          }
+        },
+        "final": {
+          "domain_match": 3.0,
+          "score_rationale_consistency": 2.0,
+          "specificity": 3.0,
+          "groundedness": 4.0,
+          "overall_judge": 3.0
+        }
+      },
+      "organization": {
+        "round_0": {
+          "strict": {
+            "domain_match": 3,
+            "score_rationale_consistency": 2,
+            "specificity": 2,
+            "groundedness": 4,
+            "overall_judge": 2.8,
+            "rationale_for_score": "1. domain_match: organization 영역에 대한 논의는 이루어졌으나, 서론-본문-결론 구조의 연결이 미흡하여 조직화된 주장을 제시하지 못했습니다. (감점 1점) 2. score_rationale_consistency: predicted_score가 3인데 rationale에서 핵심적인 결함 설명이 부족합니다. AI 저작권 문제에 대한 다양한 시나리오를 제시했지만, 각 시나리오별로 저작권 귀속 주체를 명확히 판단하지 못했습니다. (감점 1점) 3. specificity: '문단 간의 연결과 논리 전개가 매우 단편적'이라는 표현은 구체적인 개선 방안을 제시하지 않습니다. 예를 들어, 어떤 부분에서 연결이 부족하고 논리 전개가 어떻게 이루어져야 하는지 명시하면 더 높은 점수를 받을 수 있습니다. (감점 1점) 4. groundedness: essay_text의 내용을 바탕으로 AI 저작권 문제에 대한 다양한 시나리오를 제시하여, rational이 essay_text에 근거하고 있음을 확인할 수 있었습니다. 피카소 사례 언급 등 구체적인 예시를 활용하여 주장을 뒷받침했습니다. (감점 0점) 전반적으로, rationale은 essay_text의 핵심 내용을 일부 반영했지만, 논리적 구조와 설득력 면에서 개선의 여지가 있습니다."
+          },
+          "lenient": {
+            "domain_match": 3,
+            "score_rationale_consistency": 2,
+            "specificity": 2,
+            "groundedness": 3,
+            "overall_judge": 2.5,
+            "rationale_for_score": "Rationale은 essay_text의 주장을 잘 파악하고 있지만, 구조적인 문제점과 논리적 연결 부족을 명확하게 지적하지 못했습니다. 서론, 본론, 결론의 형식을 갖추고 있긴 하지만, 문단 간의 흐름이 단편적이고, 피카소 사례를 활용한 부분도 충분히 구체화되지 않았습니다. 또한, AI 학습 방식에 대한 정보가 부족하여 groundedness 점수를 3점으로 제한했습니다. essay_text에서 'AI가 만들어낸 창작물에 대한 저작권은 AI 그 자체에 있다고 생각한다'는 핵심 주장을 잘 반영하고 있지만, 논리 전개와 구체적인 근거 제시 측면에서는 개선의 여지가 있습니다. (domain_match: 3점 - 주장이 organization 분야와 관련이 있음, score_rationale_consistency: 2점 - 주장의 설득력이 부족함, specificity: 2점 - 피카소 사례가 충분히 구체화되지 않음, groundedness: 3점 - essay_text의 내용을 바탕으로 한 평가)"
+          }
+        },
+        "round_1": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.0,
+            "adjustment_notes": "초기 평가에서 관대한 심사위원이 지적한 바와 같이, essay_text의 논리적 흐름이 단편적이고, 피카소 사례를 활용한 부분도 충분히 구체화되지 않았다는 점을 인정합니다. 그러나 rational에는 essay_text의 핵심 주장을 명확하게 반영하고 있으며, 특히 AI 학습 방식에 대한 정보 부족으로 인해 groundedness 점수가 낮게 평가된 점은 과도하다고 판단했습니다. 따라서 domain_match를 4점으로 조정하고, specificity를 4점으로 조정하여 논리 전개와 구체적인 근거 제시 측면에서 강점을 더욱 부각하도록 했습니다. 또한, essay_text에 명시적으로 언급된 내용 (AI 학습 방식, 피카소 사례 활용)을 바탕으로 groundedness 점수를 5점으로 높였습니다.  전반적으로 rational이 essay_text의 내용을 정확하게 반영하고 있으며, 논리적인 흐름과 구체적인 근거 제시 측면에서 충분히 설득력이 있다는 점을 강조합니다."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 3.8,
+            "adjustment_notes": "초기 평가의 엄격한 심사위원의 의견을 반영하여 점수를 조정했습니다. 우선, domain_match는 essay_text가 organization 영역에 대한 논의를 진행하고 있다는 점에서 4점을 부여합니다. score_rationale_consistency는 rationale이 predicted_score와 어느 정도 일치하지만, AI 저작권 문제에 대한 다양한 시나리오 제시 부분에서 설득력이 부족하다는 점을 고려하여 3점을 부여합니다. specificity는 '문단 간의 연결과 논리 전개가 매우 단편적'이라는 표현 외에도 구체적인 개선 방안이 부족하다는 점을 인정하고, 3점을 부여합니다. groundedness는 essay_text의 내용을 바탕으로 피카소 사례를 활용하여 주장을 뒷받침하고 있다는 점에서 5점을 부여합니다. 전체적으로, 초기 평가의 의견에 일부 동의하며, 논리적 흐름과 설득력 면에서 개선의 여지가 있음을 인정했습니다."
+          }
+        },
+        "round_2": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.2,
+            "adjustment_notes": "관대한 심사위원의 평가를 종합적으로 고려하여 점수를 조정했습니다. 우선 domain_match는 essay_text가 organization 영역에 대한 논의를 명확하게 진행하고 있다는 점에서 4점을 유지합니다. score_rationale_consistency는 rationale이 predicted_score와 매우 일치하며, AI 저작권 문제에 대한 다양한 시나리오 제시 및 피카소 사례 활용을 통해 설득력을 높였다고 판단하여 4점을 부여합니다. specificity는 '문단 간의 연결과 논리 전개가 매우 단편적'이라는 표현 외에도 '학습 방법, 학습 주제, 도움을 받은 사람' 등 구체적인 정보 제공을 통해 개선 방안 제시가 명확하게 드러나므로 4점을 부여합니다. groundedness는 essay_text의 내용을 바탕으로 피카소 사례를 활용하여 주장을 뒷받침하고 있다는 점에서 5점을 유지합니다. 전반적으로, essay_text의 강점과 rationale의 설득력을 충분히 반영한 평가라고 판단하여 점수를 조정했습니다."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.5,
+            "adjustment_notes": "초기 평가에서 엄격한 심사위원이 지적한 바와 같이, essay_text의 논리 전개가 다소 단편적이고, 피카소 사례를 활용한 부분에 대한 설명이 충분하지 않다는 점을 인정합니다. 그러나 rational은 essay_text의 핵심 주장을 잘 반영하고 있으며, groundedness는 텍스트 내용에 기반하여 평가되었습니다. specificity 측면에서, '상상이 들어가 있다'와 같은 추상적인 표현보다는 구체적인 학습 방식과 데이터에 대한 언급이 더 필요했습니다. 따라서 domain_match를 4점으로 유지하고, specificity를 3점으로 조정하여 보다 명확한 근거 제시를 유도했습니다. score_rationale_consistency는 rational이 predicted_score를 충분히 정당화하지 못한다는 점을 고려하여 3점으로 유지했습니다. groundedness는 essay_text의 내용을 기반으로 평가되었으므로 4점을 유지했습니다."
+          }
+        },
+        "final": {
+          "domain_match": 4.0,
+          "score_rationale_consistency": 3.5,
+          "specificity": 3.5,
+          "groundedness": 4.5,
+          "overall_judge": 3.9
+        }
+      },
+      "expression": {
+        "round_0": {
+          "strict": {
+            "domain_match": 2,
+            "score_rationale_consistency": 2,
+            "specificity": 1,
+            "groundedness": 3,
+            "overall_judge": 2.0,
+            "rationale_for_score": "문장 구성의 어색함과 표현의 부적절함을 지적했지만, 구체적인 문장이나 표현을 제시하지 못했습니다 (specificity 부족). '자기가'를 '그가'로 고치는 것과 같은 수정 제안은 일반적인 문법 오류에 대한 설명으로만 처리되어 설득력이 떨어집니다. 또한 essay_text에서 직접 인용 가능한 강점을 찾기 어려웠습니다 (groundedness 3). 하지만, AI 학습 방식 및 저작권 문제에 대한 전반적인 논지를 이해하고 있으며, rational이 predicted_score를 어느 정도 반영하고 있습니다."
+          },
+          "lenient": {
+            "domain_match": 2,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.0,
+            "rationale_for_score": "문장 구성의 어색함과 표현의 부자연스러움이 주요 결함으로 판단 (2점). 그러나 rationale은 predicted_score인 3.0을 어느 정도 정당화하며, essay_text에서 언급된 구체적인 내용(피카소 스타일, 학습 방법 등)을 고려하여 설명하려 노력했으므로 score_rationale_consistency는 3점으로 평가 (3점). 문장 구성의 specificity를 3점으로 평가한 이유는, 개선될 여지가 있는 부분에 대한 구체적인 지적은 부족하지만, essay_text에서 제시된 문제점을 파악하고 있다는 점을 인정하기 위함이다. groundedness는 essay_text의 내용을 정확히 반영하여 설명하려 노력했으므로 4점으로 평가 (4점). 전반적으로 rationale이 essay_text의 핵심 주장을 이해하고 있으며, 개선 방향을 제시하려는 노력이 엿보이는가 하지만, 좀 더 명확하고 구체적인 지적과 함께 논리적인 연결성을 강화한다면 더욱 높은 점수를 받을 수 있을 것이다."
+          }
+        },
+        "round_1": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.2,
+            "adjustment_notes": "관대한 심사위원의 평가에 따라 점수 조정. 원래 점수가 3.0으로 낮게 평가된 것을 고려하여, rationale이 essay_text의 내용을 매우 정확하게 반영하고 있으며, specificity와 groundedness 또한 높은 점수를 받았다. 특히, '자기가 학습한 세상'에서 '자기가'를 '그가'로 고치는 것과 같은 구체적인 예시를 통해 문장 구성의 문제점을 명확히 지적하고, essay_text에 언급된 피카소 스타일, 학습 방법 등 핵심 내용을 바탕으로 설득력 있게 argument를 전개했다는 점을 인정한다. 또한, AI 창작물에 대한 저작권 문제를 논하는 과정에서, 학습 데이터의 투명성 확보가 중요함을 강조한 부분은 essay_text의 핵심 주장을 잘 반영하고 있다. 따라서 domain_match, score_rationale_consistency, specificity, groundedness 모두 5점으로 평가하며, overall_judge는 4.2로 조정한다."
+          },
+          "lenient": {
+            "domain_match": 3,
+            "score_rationale_consistency": 2,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.0,
+            "adjustment_notes": "초기 평가의 지적 사항을 반영하여 점수를 조정합니다. 엄격한 심사위원의 의견처럼 문장 구성의 어색함과 표현의 부적절함을 일부 인정하며, specificity 부족 문제를 해결하기 위해 구체적인 예시를 추가했습니다. '자기가' -> '그가' 수정 제안은 essay_text에서 직접 확인 가능한 부분으로, groundedness 점수를 4로 높였습니다. 그러나 rational이 predicted_score를 완전히 정당화하지 못한다는 점을 고려하여 score_rationale_consistency는 2점으로 유지합니다."
+          }
+        },
+        "round_2": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.0,
+            "adjustment_notes": "관대한 심사위원의 평가를 종합적으로 검토한 결과, rational이 essay_text의 내용을 충분히 반영하고 있으며, specificity 부족 문제도 예시를 통해 개선되었습니다. 특히 '자기가' -> '그가' 수정 제안은 essay_text에서 명확하게 확인 가능하며, groundedness 점수를 5점으로 높였습니다. 또한 rational과 predicted_score 간의 일치성을 3점으로 조정하여, 점수 조정의 필요성을 반영했습니다. 전반적으로 essay_text에 대한 이해도가 높아졌다고 판단되어, overall_judge를 4.2로 상향 조정합니다."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 3.8,
+            "adjustment_notes": "심사위원의 평가에 따라 점수 조정. 심사위원이 essay_text의 핵심 내용을 정확하게 반영하고 있음을 인정하여 domain_match와 groundedness는 5점으로 유지했다. 그러나 rationale이 '문법적 오류와 어색한 표현'이라는 일반적인 지적에 비해, essay_text에서 구체적으로 어떤 문장이 문제인지, 어떤 수정이 필요한지 명확히 제시하지 못한다는 점을 고려하여 score_rationale_consistency를 3점으로 낮췄다. specificity 또한 '어색한 표현'과 같은 추상적인 표현만 사용했으므로 3점으로 조정했다.  전반적으로 심사위원의 평가가 타당하지만, rationale에 더 구체적인 지적이 필요함을 고려하여 점수를 조정한 결과이다."
+          }
+        },
+        "final": {
+          "domain_match": 4.0,
+          "score_rationale_consistency": 3.0,
+          "specificity": 3.5,
+          "groundedness": 5.0,
+          "overall_judge": 3.9
+        }
+      }
+    }
+  }
+]

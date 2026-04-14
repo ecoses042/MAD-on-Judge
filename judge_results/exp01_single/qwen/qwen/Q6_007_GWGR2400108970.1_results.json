@@ -1,0 +1,62 @@
+[
+  {
+    "essay_id": "GWGR2400108970.1",
+    "source_id": "국립국어원 글쓰기 채점 말뭉치 GWGR2400108970",
+    "prompt_id": "Q6",
+    "status": "ok",
+    "gold": {
+      "evaluator1": {
+        "content": 2.4,
+        "organization": 1.5,
+        "expression": 4.0
+      },
+      "evaluator2": {
+        "content": 4.4,
+        "organization": 3.5,
+        "expression": 4.5
+      },
+      "average": {
+        "content": 3.4,
+        "organization": 2.5,
+        "expression": 4.25
+      }
+    },
+    "prediction": {
+      "content": {
+        "score": 2.0,
+        "rationale": "글의 주제가 '블라인드 채용 폐지'에 대한 의견 제시인 반면, 본론 전체가 블라인드 채용의 장점과 단점을 나열하는 방식으로 전개되어 있다. 특히 서론에서 '블라인드 채용은 다양한 장점을 갖고 있다'고 명시적으로 주장한 후, 본론에서 이를 뒷받침하는 예시 (서울대 vs 지방대) 와 비용 절감 효과를 논하며 오히려 폐지 반대 입장을 취하고 있어 문제의 요구사항에 정면으로 배치된다. 결론에서도 '단점을 고치면 공정한 채용 방법이 될 것'이라 하여 폐지를 지지하지 않는 태도를 유지함으로써 논리적 일관성이 부족하다."
+      },
+      "organization": {
+        "score": 3.0,
+        "rationale": "서론, 본론, 결론의 기본 구조는 갖추고 있으나, 문단 간의 논리적 연결이 문제적이다. 서론에서 '장점'을 주장한 후 본론 첫 번째 문단에서 구체적인 예시를 들어 장점을 설명하고, 두 번째 문단으로 넘어가며 비용 절감 등 추가 장점을 나열하는 과정에서 주제가 흐트러진다. 또한 마지막 단락에서 갑자기 단점을 언급하며 결론을 맺는 방식은 전형적인 '장점-단점' 비교 구조를 따르지만, 이는 '폐지 여부'라는 핵심 질문에 대한 명확한 입장을 제시하는 데 실패한다."
+      },
+      "expression": {
+        "score": 3.0,
+        "rationale": "전반적으로 문장은 이해하기 쉬우나, 구어체 표현과 비유적 표현이 섞여 있어 학술적 에세이의 어조와는 다소 거리가 있다. '생각해보자면', '아닐까라는 생각이고', '이미지는 별로 안 좋지만' 등의 표현은 문장 연결을 자연스럽지 않게 만든다. 또한 '인서울 대학'과 같은 구어적 약어를 사용하거나, '스펙을 쌓느라 들인 시간, 노력, 비용 등이 필요 없어진다'는 표현에서 주술 호응이 다소 어색하다 (시간/노력/비용 자체가 없어지는 것이 아니라, 그 필요성이 줄어드는 것임)."
+      }
+    },
+    "judge": {
+      "content": {
+        "domain_match": 1,
+        "score_rationale_consistency": 1,
+        "specificity": 1,
+        "groundedness": 1,
+        "overall_judge": 1.0
+      },
+      "organization": {
+        "domain_match": 5,
+        "score_rationale_consistency": 5,
+        "specificity": 5,
+        "groundedness": 5,
+        "overall_judge": 5.0
+      },
+      "expression": {
+        "domain_match": 5,
+        "score_rationale_consistency": 5,
+        "specificity": 5,
+        "groundedness": 5,
+        "overall_judge": 5.0
+      }
+    }
+  }
+]

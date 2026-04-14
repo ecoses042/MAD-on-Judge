@@ -1,0 +1,211 @@
+[
+  {
+    "essay_id": "GWGR2400107750.1",
+    "status": "ok",
+    "prediction": {
+      "content": {
+        "score": 2.0,
+        "rationale": "글의 주제가 '동물 실험 폐지'에 대한 의견 제시였으나, 결론 부분에서 오히려 동물 실험을 찬성하는 입장을 취하여 문제의 요구사항과 정면으로 배치된다. 서론과 본론 일부에서는 동물 실험의 필요성을 논하지만, 핵심 주장인 '폐지'에 대한 논리적 근거가 부족하고, 반대로 '시행해야 한다'는 결론은 주제의 방향성을 완전히 왜곡한다."
+      },
+      "organization": {
+        "score": 3.0,
+        "rationale": "서론 (매독 사례로 동물 실험의 역사적 기여 언급), 본론 (윤리적 문제와 정확성 문제 제기 및 반박), 결론 (종합) 의 기본 골격은 갖추고 있으나, 본론 내에서 찬성과 반대 논리가 혼재되어 전개가 다소 어색하다. 특히 본론 2 단락에서 '동물실험을 반대하는 사람들은... 주장한다'라고 시작하여 반대 입장을 설명한 뒤 이를 반박하며 찬성으로 넘어가는 방식이 주어진 주제인 '폐지' 논의와 맞지 않아 구조적 일관성이 떨어진다."
+      },
+      "expression": {
+        "score": 3.0,
+        "rationale": "전반적으로 문장은 이해하기 쉬우나, 맞춤법 오류와 어색한 표현이 존재한다. '등물실험'은 명백한 오타이며, '동물들도 인간처럼 고통을 느끼고... 감정을 경험할 능력이 존재한다는 것이다'와 같은 문장은 주술 호응이나 표현이 다소 자연스럽지 않다. 또한 '1910년까지만 해도 불치병이였던 매독은...'과 같이 띄어쓰기나 어미 활용에 작은 오류가 보인다."
+      }
+    },
+    "judge": {
+      "content": {
+        "round_0": {
+          "strict": {
+            "domain_match": 1,
+            "score_rationale_consistency": 2,
+            "specificity": 2,
+            "groundedness": 4,
+            "overall_judge": 2.0,
+            "rationale_for_score": "1. domain_match: 5점 - 글의 주제가 '동물 실험 폐지'에 대한 의견 제시였으나, essay_text는 동물실험 찬성 입장을 명확히 제시하고 있어 domain mismatch 발생. 1점 감점. 2. score_rationale_consistency: 2점 - predicted_score (2.0)와 rationale이 일치하나, 근거가 부족하고 주장이 모순되어 설득력이 떨어진다. 2점 감점. 3. specificity: 2점 - '동물실험의 필요성'과 '반대 이유'를 언급하지만 구체적인 데이터나 사례 제시가 부족하여 specificity 부족. 2점 감점. 4. groundedness: 4점 - essay_text에서 직접 인용된 내용을 바탕으로 평가되었으며, hallucination은 없음. 5. 전반적으로 동물실험의 찬성 입장을 명확히 제시하고 있지만, 반대 주장에 대한 논리적 대응이 미흡하며, 핵심 주장인 '폐지'에 대한 근거가 부족하여 설득력이 떨어진다."
+          },
+          "lenient": {
+            "domain_match": 3,
+            "score_rationale_consistency": 2,
+            "specificity": 2,
+            "groundedness": 4,
+            "overall_judge": 2.8,
+            "rationale_for_score": "글의 주제가 동물 실험 폐지에 대한 의견 제시였으나, 결론 부분에서 오히려 동물 실험을 찬성하는 입장을 취하여 문제의 요구사항과 정면으로 배치된다는 점은 심각한 domain mismatch를 야기한다 (domain_match: 3). rational이 predicted_score를 정당화하지 못하며, essay text에 제시된 내용과 일관성이 없다 (score_rationale_consistency: 2). '폴 에를리히'의 매독 치료제 사례를 언급한 부분은 specificity가 부족하며, 구체적인 근거 제시가 미흡하다 (specificity: 2). 하지만 rational이 essay text의 내용을 바탕으로 동물실험의 필요성을 설명하고 있으며, 동물실험의 윤리적 문제와 정확성 문제를 반박하는 부분에서 groundedness는 비교적 높다 (groundedness: 4). 전반적으로 논리적인 흐름은 파악 가능하나, 핵심 주장인 '폐지'에 대한 설득력 있는 근거가 부족하다는 점이 아쉬움."
+          }
+        },
+        "round_1": {
+          "strict": {
+            "domain_match": 3,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.2,
+            "adjustment_notes": "관대한 심사위원의 평가에 따라 점수를 조정합니다. 초기 평가에서 'domain mismatch'를 지적한 부분은 essay_text의 내용과 일치하는 부분을 더 명확하게 강조하고, 'specificity' 부족을 보완하기 위해 구체적인 예시(폴 에를리히)를 활용했습니다. 또한, 심사위원의 주장을 일부 수용하여 'score_rationale_consistency'를 3점으로 조정했습니다. essay_text에서 직접 인용 가능한 근거가 2개 이상 존재하므로, 'groundedness'는 4점을 유지합니다."
+          },
+          "lenient": {
+            "domain_match": 2,
+            "score_rationale_consistency": 2,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 2.8,
+            "adjustment_notes": "엄격한 심사위원의 평가를 반영하여 점수를 조정했습니다. 1) domain_match는 essay_text가 동물실험 찬성 입장을 명확히 제시하고 있어, 문제의 요구사항과 정면으로 배치되어 있으므로 1점으로 낮췄습니다. 2) score_rationale_consistency는 predicted_score와 rationale 간의 일치성이 부족하며, 근거가 충분하지 않아 2점을 유지했습니다. 3) specificity는 essay_text에서 인용한 내용을 바탕으로 작성되었지만, 좀 더 구체적인 예시나 통계 자료를 추가하여 설득력을 높일 필요가 있습니다. 따라서 3점으로 조정했습니다. 4) groundedness는 essay_text의 내용에 기반하고 있어 4점을 유지했습니다. 전반적으로 논리적 비약이 있고 주장이 충분히 설득력 없다는 점을 고려하여, overall_judge를 2.2로 낮췄습니다."
+          }
+        },
+        "round_2": {
+          "strict": {
+            "domain_match": 3,
+            "score_rationale_consistency": 3,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 3.8,
+            "adjustment_notes": "관대한 심사위원의 평가를 반영하여 점수 조정했습니다. 1) domain_match: essay_text가 동물실험에 대한 찬성 입장을 명확하게 제시하고 있으며, 문제의 요구사항(동물 실험 폐지 의견 제시)과 일부 충돌하지만, '반대'라는 명확한 주장이 없기 때문에 3점으로 조정했습니다. 2) score_rationale_consistency: predicted_score와 rationale 간의 일치성이 높아졌습니다. essay_text에서 인용한 내용을 바탕으로 동물실험의 필요성을 설득력 있게 설명하고 있습니다. 따라서 3점을 유지합니다. 3) specificity: essay_text에서 제시된 구체적인 사례(폴 에를리히, 매독 치료제 개발)와 논지를 명확하게 반영하여 4점으로 조정했습니다. 4) groundedness: essay_text의 내용에 완전히 근거하고 있어 5점을 부여합니다. 전반적으로 논리적이고 설득력 있는 주장을 제시하고 있으며, 문제 해결에 필요한 정보를 충분히 제공하므로 overall_judge를 3.8로 높였습니다."
+          },
+          "lenient": {
+            "domain_match": 3,
+            "score_rationale_consistency": 2,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.0,
+            "adjustment_notes": "심사위원의 지적을 반영하여 점수를 조정합니다. 심사위원이 제시한 'domain mismatch' 문제는 essay_text가 동물실험에 대한 찬성 입장을 명확하게 드러내고 있다는 점을 고려하여 감점했습니다. 또한, rationale이 predicted_score를 충분히 정당화하지 못한다는 점을 고려하여 score_rationale_consistency를 낮추었습니다. specificity 부족은 예시의 활용으로 보완되었지만, 여전히 일반적인 표현이 많다는 점을 지적합니다. groundedness는 essay_text에서 직접 인용된 내용을 활용했으므로 4점을 유지합니다."
+          }
+        },
+        "final": {
+          "domain_match": 3.0,
+          "score_rationale_consistency": 2.5,
+          "specificity": 3.5,
+          "groundedness": 4.5,
+          "overall_judge": 3.4
+        }
+      },
+      "organization": {
+        "round_0": {
+          "strict": {
+            "domain_match": 3,
+            "score_rationale_consistency": 2,
+            "specificity": 2,
+            "groundedness": 4,
+            "overall_judge": 2.8,
+            "rationale_for_score": "1. domain_match: 동물실험의 윤리적 문제와 정확성 문제를 제기하는 내용은 organization 분야의 논쟁을 다루고 있으나, 매독 사례를 언급하며 역사적 기여를 설명하는 서론은 주어진 주제인 '폐지' 논의와 직접적인 관련이 없어 domain mismatch로 2점 감점. 2. score_rationale_consistency: predicted_score가 3인데 rationale에서 제시된 문제점(본론 내 혼재된 논리)에 대한 구체적인 해결책이나 심층적인 분석이 부족하여 2점. 3. specificity: '전반적으로 좋다', '논리적이다'와 같은 generic한 표현이 사용되었고, 본론의 구조적 어색함에 대한 설명도 다소 추상적이어서 specificity를 2점으로 평가. 4. groundedness: essay_text에서 언급된 내용을 정확하게 반영하고 있으며, 동물실험 반대 주장의 근거를 제시하는 데 있어 essay_text의 정보가 활용되었으므로 groundedness는 4점을 부여. 5. 전반적으로 구조적인 문제점과 논리적 혼재를 지적했지만, 구체적인 개선 방안이나 심층적인 분석이 부족하여 종합적으로 3.2점을 부여."
+          },
+          "lenient": {
+            "domain_match": 3,
+            "score_rationale_consistency": 3,
+            "specificity": 2,
+            "groundedness": 4,
+            "overall_judge": 3.0,
+            "rationale_for_score": "본 rationale는 제시된 rationale의 주요 내용을 잘 반영하고 있으며, essay_text와의 연결성을 평가하는 데 적절한 기준을 사용했습니다. 그러나 specificity 측면에서 '전반적으로 좋다', '논리적이다'와 같은 generic한 표현이 다소 부족하며, 구체적인 근거를 더 명시할 필요가 있습니다. groundedness는 essay_text의 내용을 정확하게 반영하고 있으며, hallucination은 발견되지 않았습니다. score_rationale_consistency는 predicted_score인 3.0과 rationale의 내용이 비교적 일치합니다. 서론에서 매독 사례 언급, 본론에서의 윤리적 문제와 반박, 결론의 종합적인 구조를 갖추고 있지만, 본론 내 논리 전개가 다소 어색하다는 점을 지적한 것은 타당합니다. 하지만 essay_text에 제시된 내용과 일관성을 유지하며 평가했습니다."
+          }
+        },
+        "round_1": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.2,
+            "adjustment_notes": "관대한 심사위원의 평가에 따라 점수를 조정했습니다. 관대한 심사위원이 지적한 사항들을 반영하여, 특히 specificity 및 groundedness를 높이는 방향으로 조정했습니다. essay_text에서 언급된 '폴 에를리히'와 606번 후보 물질, 매독 치료제 개발 과정 등 구체적인 내용을 rationale에 명시하여 groundedness를 5점으로 설정했습니다. 또한, 본론의 논리 전개 어색함에 대한 지적을 바탕으로, essay_text의 내용과 일관성을 유지하며 구조적 문제점을 더욱 명확하게 드러냈습니다.  rationale이 essay_text의 내용을 정확히 반영하고 있으며, hallucination은 발견되지 않았다는 점을 강조했습니다."
+          },
+          "lenient": {
+            "domain_match": 3,
+            "score_rationale_consistency": 2,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.0,
+            "adjustment_notes": "심사위원의 평가를 반영하여 점수 조정 및 상세한 사유를 기록합니다.\n\n**domain_match:** 심사위원이 언급한 대로 서론의 매독 사례는 주어진 '폐지' 논의와 직접적인 관련이 없으므로, domain mismatch로 인한 감점(2점에서 3점으로)을 인정합니다. 하지만, 동물실험 자체의 윤리적 문제와 정확성 문제를 다루고 있다는 점은 유지합니다.\n\n**score_rationale_consistency:** 심사위원이 지적한 대로 rationale에서 제시된 본론 내 논리 혼재에 대한 설명이 충분하지 않아 predicted score(3점)를 완전히 정당화하지 못합니다. 따라서 2점에서 3점으로 조정합니다.  논리적 흐름 개선을 위한 구체적인 제안이 부족했음을 인정합니다.\n\n**specificity:** 심사위원이 'generic한 표현' 사용에 대한 지적에 따라 specificity 점수를 2점에서 3점으로 조정합니다. 본론의 구조적 어색함에 대한 설명이 조금 더 구체적으로 작성될 필요가 있음을 인지합니다.  예를 들어, '찬성과 반대 논리가 혼재되어 전개가 다소 어색하다'는 표현 대신, 어떤 부분에서 혼재가 발생하고 어떻게 개선할 수 있는지 좀 더 명확하게 제시하는 것이 좋았을 것입니다.\n\n**groundedness:** 심사위원이 지적한 대로 essay_text의 내용을 정확하게 반영하고 있으며, 동물실험 반대 주장의 근거를 제시하는 데 있어 essay_text의 정보가 활용되었으므로 groundedness는 4점을 유지합니다.  이 부분은 매우 강점이라고 판단됩니다.\n\n**overall_judge:** 위 모든 요소들을 종합적으로 고려하여 overall judge 점수를 3.0으로 조정합니다."
+          }
+        },
+        "round_2": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.2,
+            "adjustment_notes": "심사위원의 평가를 반영하여 점수 조정 및 상세한 사유를 기록합니다.\n\n**domain_match:** 심사위원이 언급한 대로 서론의 매독 사례는 '폐지' 논의와 직접적인 관련이 없다는 점을 명확히 인지하고 있습니다. 그러나, 동물실험 자체의 윤리적 문제와 정확성 문제를 다루고 있다는 점은 핵심 내용에 부합하며, domain match를 5점으로 유지합니다.\n\n**score_rationale_consistency:** 심사위원이 지적한 대로 rationale에서 제시된 본론 내 논리 혼재에 대한 설명이 매우 명확하고 설득력 있습니다. predicted score(3점)를 완벽하게 정당화하며, 점수와 설명 간의 모순은 존재하지 않습니다. 따라서 5점으로 조정합니다.\n\n**specificity:** 심사위원이 'generic한 표현' 사용에 대한 지적에 따라 specificity 점수를 3점에서 4점으로 조정합니다. 본론의 구조적 어색함에 대한 설명이 매우 구체적으로 작성되어 있으며, 어떤 부분에서 혼재가 발생하고 어떻게 개선할 수 있는지 명확하게 제시합니다.  예를 들어, '찬성과 반대 논리가 혼재되어 전개가 다소 어색하다'는 표현 대신, '본론 2 단락에서 반대 입장을 설명한 뒤 이를 반박하며 찬성으로 넘어가는 방식이 주어진 주제인 '폐지' 논의와 맞지 않아 구조적 일관성이 떨어진다'고 구체적으로 지적합니다.\n\n**groundedness:** 심사위원이 지적한 대로 essay_text의 내용을 정확하게 반영하고 있으며, 동물실험 반대 주장의 근거를 제시하는 데 있어 essay_text의 정보가 활용되었습니다. 또한, rationale 텍스트에 실제로 존재하는 내용만 인정하며, hallucination은 존재하지 않습니다. 따라서 groundedness는 5점을 유지합니다.\n\n**overall_judge:** 위 모든 요소들을 종합적으로 고려하여 overall judge 점수를 4.2점으로 조정합니다."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.5,
+            "adjustment_notes": "심사위원의 평가를 반영하여 점수를 조정했습니다. 심사위원이 지적한 '본론 내에서 찬성과 반대 논리가 혼재되어 전개가 다소 어색하다'는 부분에 대한 rationale의 명확성이 부족함을 인지했습니다. 또한, essay_text의 구체적인 내용을 충분히 활용하지 못했다는 점을 고려하여 specificity를 낮추었습니다. 하지만 심사위원이 긍정적으로 평가한 '서론에서 동물실험의 역사적 기여 언급' 및 'groundedness'를 유지하며, rational에 핵심 내용들을 명시했습니다.  점수 조정 시, rationale이 predicted_score를 충분히 정당화하지 못한다는 점을 고려하여 score_rationale_consistency를 3점으로 낮추었습니다."
+          }
+        },
+        "final": {
+          "domain_match": 4.0,
+          "score_rationale_consistency": 3.5,
+          "specificity": 3.5,
+          "groundedness": 4.5,
+          "overall_judge": 3.9
+        }
+      },
+      "expression": {
+        "round_0": {
+          "strict": {
+            "domain_match": 3,
+            "score_rationale_consistency": 2,
+            "specificity": 2,
+            "groundedness": 4,
+            "overall_judge": 2.8,
+            "rationale_for_score": "1. domain_match: rationale은 expression 영역을 사용하고 있지만, essay_text의 핵심 주장에 대한 평가가 부족하다. '동물실험'이라는 용어에 초점을 맞추고 있지만, 실험의 윤리적 문제나 정확성 문제 등 더 심층적인 논의를 포함하지 못했다 (감점 1점). 2. score_rationale_consistency: predicted_score는 3.0인데, rationale은 오류 지적에 그치고 설득력 있는 근거 제시가 부족하다. '오타', '주술 호응' 등의 문제점을 지적했지만, 이러한 문제들이 점수에 미치는 영향을 명확히 설명하지 못했다 (감점 1점). 3. specificity: rationale은 문장 오류를 지적하는 데 집중하고 있지만, 구체적인 예시나 수정 방안을 제시하지 않는다. '동물들도 인간처럼 고통을 느끼고... 감정을 경험할 능력이 존재한다는 것이다'와 같은 표현은 일반적인 설명에 불과하며, essay_text에서 어떤 부분을 어떻게 개선해야 하는지에 대한 지침이 되지 못한다 (감점 2점). 4. groundedness: rationale은 essay_text의 내용을 정확하게 반영하고 있으며, '폴 에를리히', '606번' 등의 구체적인 정보를 언급하여 grounding을 확보했다 (감점 -1점). 전반적으로 오류 지적에 초점을 맞춘 평가이며, 설득력 있는 근거 제시나 심층적인 분석이 부족하다."
+          },
+          "lenient": {
+            "domain_match": 3,
+            "score_rationale_consistency": 3,
+            "specificity": 2,
+            "groundedness": 4,
+            "overall_judge": 3.0,
+            "rationale_for_score": "전반적으로 rationale은 essay_text의 주장을 잘 반영하고 있지만, 몇 가지 개선이 필요하다. domain_match는 essay_text의 표현 영역에 부합하며, groundedness는 essay_text에서 직접적인 인용을 통해 근거를 제시했다는 점에서 높게 평가되었다 (예: '폴 에를리히', '606번'). specificity는 '전반적으로 문장은 이해하기 쉬우나...'와 같은 일반적인 표현이 반복되어 구체적인 개선점을 지적하지 못했다는 점에서 낮게 평가되었다. score_rationale_consistency는 predicted_score인 3점과 rationale의 내용이 비교적 일치한다.  문장 표현에 대한 오류 (오타, 어색한 표현)를 지적했지만, essay_text의 핵심 주장을 충분히 반영하고 있다는 점을 고려하여 3점을 부여했다.  '동물들도 인간처럼 고통을 느끼고... 감정을 경험할 능력이 존재한다는 것이다'와 같은 문장은 조금 더 자연스러운 표현으로 수정될 필요가 있다."
+          }
+        },
+        "round_1": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.0,
+            "adjustment_notes": "관대한 심사위원의 평가를 종합적으로 고려하여 점수를 조정했습니다. 우선, rationale이 essay_text의 내용을 정확하게 반영하고 있다는 점 (domain_match: 4, groundedness: 5)을 인정합니다. 특히 '폴 에를리히'와 '606번' 등의 구체적인 근거를 제시한 부분은 매우 설득력이 있습니다. 다만, expression 영역에 대한 평가가 다소 일반적이어서 specificity를 3점으로 낮췄습니다. '어색한 표현', '주술 호응이 자연스럽지 않다' 등 좀 더 구체적인 개선점을 제시할 필요가 있었습니다. score_rationale_consistency는 predicted_score와 rationale의 일치성을 유지하며, essay_text의 핵심 주장을 잘 반영하고 있다는 점을 고려하여 4점으로 조정했습니다.  전반적으로 rational이 essay_text를 충분히 이해하고 있으며, 설득력 있는 평가를 내렸다고 판단했습니다."
+          },
+          "lenient": {
+            "domain_match": 3,
+            "score_rationale_consistency": 2,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.0,
+            "adjustment_notes": "심사위원의 평가를 반영하여 점수 조정 및 상세한 사유를 기록합니다. \n\n**domain_match:** 심사위원이 언급한 것처럼, rationale이 expression 영역을 사용하고 있지만 essay_text의 핵심 주장에 대한 깊이 있는 분석이 부족했습니다. 따라서 점수를 3에서 2로 하향 조정합니다. (감점 1)\n\n**score_rationale_consistency:** predicted_score가 3.0인데, rationale이 오류 지적에 그치고 설득력 있는 근거 제시가 부족하다는 심사위원의 의견에 동의합니다. 특히, '주술 호응'이나 '띄어쓰기 오류'와 같은 문제점을 명확하게 설명하지 못했습니다. 따라서 점수를 2에서 3으로 올립니다. (승점 1)\n\n**specificity:** rationale이 문장 오류를 지적하는 데 집중하고 있지만, 구체적인 예시나 수정 방안을 제시하지 않는다는 심사위원의 지적에 공감합니다. '동물들도 인간처럼 고통을 느끼고... 감정을 경험할 능력이 존재한다는 것이다'와 같은 표현은 개선 방향을 제시하기에는 다소 추상적이므로 점수를 2에서 3으로 올립니다. (승점 1)\n\n**groundedness:** rationale이 essay_text의 내용을 정확하게 반영하고 있으며, '폴 에를리히', '606번' 등의 구체적인 정보를 언급하여 grounding을 확보했다는 심사위원의 평가에 동의합니다. 따라서 점수를 4에서 4로 유지합니다.\n\n**전반적으로:** 심사위원이 지적한 약점들을 보완하기 위해 점수 조정 및 adjustment notes를 통해 개선했습니다."
+          }
+        },
+        "round_2": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.2,
+            "adjustment_notes": "심사위원의 평가를 면밀히 검토한 결과, rationale이 essay_text의 내용을 정확하게 반영하고 있으며, expression 영역에 대한 심사위원의 지적 또한 설득력 있는 근거를 제시하고 있습니다. 따라서 모든 기준을 4점으로 조정합니다. 특히, '동물실험' 관련 내용에 대한 심사위원의 상세한 분석과 함께, essay_text에서 직접 인용 가능한 구체적인 강점 (폴 에를리히, 606번 등)이 2가지 이상 존재하므로, 5점을 부여할 수 있습니다.  rationale의 specificity가 충분하며, groundedness 또한 완벽하게 충족합니다."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 3.8,
+            "adjustment_notes": "심사위원의 평가를 반영하여 점수를 조정했습니다. 심사위원이 지적한 바와 같이, rationale이 essay_text의 내용을 정확하게 반영하고 있다는 점 (domain_match: 4, groundedness: 5)을 인정합니다. '폴 에를리히'와 '606번' 등의 구체적인 근거를 제시한 부분은 매우 설득력이 있습니다. 그러나 expression 영역에 대한 평가가 여전히 다소 일반적이며, '어색한 표현', '주술 호응이 자연스럽지 않다' 등 좀 더 구체적인 개선점을 제시하지 못했다는 점을 고려하여 specificity를 3점으로 낮췄습니다. score_rationale_consistency는 predicted_score와 rationale의 일치성을 유지하며, essay_text의 핵심 주장을 잘 반영하고 있다는 점을 고려하여 3점으로 조정했습니다.  전반적으로 rational이 essay_text를 충분히 이해하고 있으며, 설득력 있는 평가를 내렸다고 판단되지만, expression 영역에 대한 좀 더 구체적인 피드백이 필요합니다."
+          }
+        },
+        "final": {
+          "domain_match": 4.0,
+          "score_rationale_consistency": 3.5,
+          "specificity": 3.5,
+          "groundedness": 5.0,
+          "overall_judge": 4.0
+        }
+      }
+    }
+  }
+]
