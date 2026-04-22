@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-e49792c337d3f4c13e22f710efa44cf6a4e59aba",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "rationale_for_score": "The summary is fluent and consistent with the source text. However, it scores lower on relevance because it only covers the procedural facts (guilty verdict, sentencing timeline) found in the first paragraph of the article. It completely omits the main subject of the news piece: the parents' plea to drop the death penalty, which constitutes the majority of the provided text."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is factually consistent and coherent based on the text provided. However, it fails significantly on relevance because it extracts only the procedural details (guilty verdict, sentencing timeline) while completely omitting the main subject of the article: the parents' emotional plea to drop the death penalty. By ignoring the core news hook, the summary provides a trivial and incomplete representation of the source text."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "The lenient judge's assessment is accurate. The summary strictly adheres to the procedural facts found in the first paragraph of the article but completely ignores the main body of the text, which details the parents' emotional plea to drop the death penalty. Since the prompt asks for a summary of the provided article text, omitting the central theme (the parents' argument) makes the summary factually incomplete regarding the source's primary content, justifying the lower relevance score."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary is factually accurate and coherent but fails completely on relevance by ignoring the article's primary focus: the parents' plea to drop the death penalty. It reduces a significant news story about victim advocacy to a dry procedural timeline."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No changes needed. The summary accurately reflects the procedural facts (guilty verdict, sentencing timeline) but completely omits the central theme of the article: the parents' emotional plea to drop the death penalty. This makes it highly irrelevant to the main story."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I agree with the strict judge's assessment regarding relevance. While the summary is coherent, consistent, and fluent, it fails to capture the primary subject of the article: the parents' emotional plea to drop the death penalty. By focusing solely on the procedural facts (guilty verdict, sentencing timeline) found in the first paragraph, the summary omits the central theme and the most significant information provided in the text. Therefore, a relevance score of 3 is appropriate."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 4.5,
+      "relevance": 2.5,
+      "overall_judge": 3.8
+    }
+  }
+}

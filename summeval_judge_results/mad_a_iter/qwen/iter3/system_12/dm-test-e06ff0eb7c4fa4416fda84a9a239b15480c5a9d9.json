@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-e06ff0eb7c4fa4416fda84a9a239b15480c5a9d9",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is coherent and consistent with the source text, accurately quoting key phrases. However, it suffers from poor fluency due to awkward phrasing (e.g., 'also a princess when need to be') and lacks proper punctuation/spacing in the quotes. It also has low relevance because it only captures two specific sentences from the article while omitting significant details about the man's self-description, age, and other requirements, which are central to the story."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from severe fluency issues due to the inclusion of raw backticks (e.g., ` also a princess...`) which makes it unreadable and unidiomatic. While the content is consistent with the source text and covers key points, the poor formatting significantly degrades quality. Additionally, the summary is overly brief, omitting significant details like the man's self-description or specific benefits offered, leading to moderate relevance."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate: the summary is coherent and consistent but suffers from poor fluency due to awkward phrasing and punctuation issues within the quotes. It also has low relevance as it omits significant details about the man's self-description (age, physical attributes, lifestyle) which are central to the story."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I maintained the strict judge's scores. The fluency score of 2 is justified because the summary includes raw backticks (e.g., ` also a princess...`) which makes it technically unreadable and violates standard formatting rules for a fluent text. While the content is consistent with the source, the poor presentation prevents a higher rating in fluency or overall quality."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "No changes made. The strict judge's assessment is accurate: the summary is coherent and consistent but suffers from poor fluency due to awkward phrasing and punctuation issues within the quotes. It also has low relevance as it omits significant details about the man's self-description (age, physical attributes, lifestyle) which are central to the story."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No changes made. The lenient judge's assessment of fluency (2) is correct due to the inclusion of raw backticks (`) which breaks standard text formatting and readability. The summary also suffers from poor coherence by omitting key details like the man's name ('Rich'), age, specific requirements (pets, non-drinker), and self-description, resulting in low relevance. Consistency remains high as no hallucinations are present."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 5.0,
+      "fluency": 3.0,
+      "relevance": 3.0,
+      "overall_judge": 3.6
+    }
+  }
+}

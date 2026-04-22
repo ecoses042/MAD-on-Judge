@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-096e418a953af86df0d1560bec95bc7bfee2e34b",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow and is disjointed, with sentences that do not connect well."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary incorrectly states that Porto beat Bayern 5-0, which contradicts the article's information that Bayern led 5-0 at half-time and won 6-1."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses too much on Guardiola's underwear, which is a trivial detail compared to the overall significance of Bayern's victory."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains awkward phrasing and lacks grammatical structure, making it difficult to read."
+        }
+      ],
+      "provisional_score": 1
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear focus on the incident involving Pep Guardiola and the match outcome, maintaining a logical flow."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the events described in the article, including the match result and Guardiola's wardrobe malfunction."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary lacks important details such as the final score of the match (6-1) and the context of Bayern's performance, which are key points in the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains awkward phrasing and repetition, making it less fluent and harder to read."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 1,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 1.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

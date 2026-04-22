@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-404f859482d47c127868964a9a39d1a7645dd2e9",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and consistent with the source text. It captures the main points regarding the financial ruling and the conflicting accusations between Shelly Sterling and V. Stiviano. It receives a slight deduction on relevance because it omits specific details about the nature of the gifts (e.g., luxury cars vs. the humorous items like the Easter bunny costume) and the context of Donald Sterling's racist remarks, which are significant parts of the original article."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is factually consistent with the source text but suffers from severe relevance issues by omitting the vast majority of key details (the specific nature of gifts, Stiviano's defense regarding the duplex, the court's reasoning about precedent, and the context of Sterling's racist remarks). Additionally, the fluency is poor due to a lack of capitalization and punctuation throughout the text."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is factually consistent but fails significantly on relevance by omitting key details like the specific nature of the gifts (cars vs. thongs), the court's precedent-setting reasoning, and the context of Sterling's racist remarks which explains the initial downfall. Fluency is penalized due to a complete lack of capitalization and punctuation."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "Coherence and Consistency remain high as the summary is well-structured and factually accurate based on the text. Fluency is lowered from 5 to 4 because the summary lacks proper capitalization for names (Donald Sterling, V. Stiviano, Los Angeles) and sentence starters, making it look unpolished despite being grammatically correct otherwise. Relevance is significantly lowered from 4 to 3 because the lenient judge's point about omitting specific gift details is valid; however, the summary also completely omits the core context of the article: Donald Sterling's racist remarks and the resulting NBA ban. The article explicitly states 'Donald Sterling's racist remarks cost him an NBA team last year,' but the summary only mentions this as a passing phrase without explaining *why* (the racism), which is the primary driver of the story alongside the financial dispute. Therefore, the summary misses the most critical narrative element."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding consistency (no hallucinations) and coherence (logical flow). However, I concur that the fluency score of 3 is justified due to the complete lack of capitalization and punctuation, which makes it difficult to read. Most importantly, I agree that the relevance score should remain low (2) because the summary omits critical context: the specific nature of the gifts (ranging from Ferraris to thongs), the court's precedent-setting reasoning, and the context of Sterling's racist remarks which explains the initial downfall. These omissions significantly reduce the summary's value compared to the source text."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. While the summary is grammatically sound and factually consistent with the text, it suffers from a significant relevance flaw by omitting the 'why' behind Donald Sterling's downfall (his racist remarks). The article explicitly links his loss of the NBA team to these remarks, but the summary treats this as a standalone event without context. Additionally, the lack of capitalization for proper nouns and sentence starters negatively impacts fluency/readability, justifying the score reduction."
+      }
+    },
+    "final": {
+      "coherence": 4.5,
+      "consistency": 5.0,
+      "fluency": 3.5,
+      "relevance": 2.5,
+      "overall_judge": 3.6
+    }
+  }
+}

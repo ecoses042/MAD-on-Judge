@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-4761dc6d8bdf56b9ada97104113dd1bcf4aed3f1",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information. It abruptly ends with an unrelated statement about a baby orca, which disrupts the coherence."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to cover key points about Varvara's record-breaking migration and the implications of her journey, focusing instead on an irrelevant detail about a baby orca."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as inconsistent capitalization and punctuation, which affect readability."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the significance of Varvara's journey in relation to the classification of gray whales, which is a crucial aspect of the original article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, detailing Varvara's migration from her feeding ground to Baja, Mexico."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding Varvara's migration distance and starting point."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary includes an irrelevant detail about the fourth baby orca, which is not related to Varvara's migration."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as inconsistent spacing and punctuation, which affect readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-0f0789390d67698283cc87b2e046b5c5cd77edb7",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, making it difficult to follow the sequence of events."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary incorrectly states that the guard dropped his rifle 'on the side of the box,' which is misleading and inconsistent with the source."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'camera camera camera' is nonsensical and disrupts the fluency of the summary."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention the context of the incident being part of the Changing of the Guard, which is a key detail."
+        }
+      ],
+      "provisional_score": 1
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with the guard slipping and ending with the explanation of why he may have slipped."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the incident described in the article without introducing any new facts or details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as the repeated phrase 'dropping his rifle' and the awkward phrasing 'camera camera camera'."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "While the summary captures the main event, it lacks some context, such as the reactions of the tourists and the guard's embarrassment, which are important to the story."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-b1f6faac3f406edca1e0cad8cce1319c83e62605",
+  "system_name": "system_3",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, particularly in the last sentence which is incomplete and leaves the reader confused."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits significant details from the source, such as the context of the murder, the role of alcohol and dementia, and the forensic psychiatrist's specific observations, which are crucial for understanding the case."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as missing articles ('the' before 'case') and inconsistent capitalization of names."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention the evidence presented by Professor Mullen regarding Costa's fluctuating mood and the implications of his mental state, which are key points in the article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the accusations against Luigi Costa and the importance of his mental state in the case."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the article, including the nature of the crime, the involvement of the forensic psychiatrist, and the implications of Costa's mental state for the jury's verdict."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits important details about the specific actions taken by Costa during the incident, which are crucial for understanding the severity of the accusations."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as missing articles and punctuation, which affect its readability and fluency."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

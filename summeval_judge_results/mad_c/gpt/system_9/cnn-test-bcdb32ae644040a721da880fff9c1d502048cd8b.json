@@ -1,0 +1,71 @@
+{
+  "article_id": "cnn-test-bcdb32ae644040a721da880fff9c1d502048cd8b",
+  "system_name": "system_9",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow of information, as it jumps between different details without connecting them."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary fails to mention the murder-suicide aspect indicated by the cruise line, which is a significant detail from the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key information about the authorities being notified and the investigation, which are crucial to understanding the context of the deaths."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as the lack of capitalization at the beginning of sentences."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with the discovery of the deceased passengers and mentioning the ship's departure."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding the passengers being found dead and the ship's itinerary."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary includes key details such as the ship's name, the location of the incident, and the cruise's departure point, which are central to the story."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization and punctuation, making it less readable."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits important context about the nature of the deaths being investigated as a murder-suicide and the involvement of the FBI."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

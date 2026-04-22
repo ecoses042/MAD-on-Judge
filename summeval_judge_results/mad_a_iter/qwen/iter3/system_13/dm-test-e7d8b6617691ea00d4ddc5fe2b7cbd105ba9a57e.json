@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-e7d8b6617691ea00d4ddc5fe2b7cbd105ba9a57e",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is factually consistent with the source text but suffers from severe relevance issues. It merely repeats the introductory description of Stephen Munden without summarizing the critical events: his escape from the psychiatric unit, the police manhunt, or the context of his conviction and specific crimes. By omitting the main news hook (the disappearance), it fails to capture the essence of the article."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "rationale_for_score": "The summary is fluent, coherent, and consistent with the source text. However, it only captures a tiny fraction of the article's content (physical description and obsession), missing critical details like his escape from the psychiatric unit, the specific crime, and the police manhunt. Given the lenient rules, it avoids hallucinations and aligns with the source, but its extreme brevity limits relevance."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment regarding relevance. The summary is extremely poor because it only captures the introductory description of the suspect and completely omits the central news event: his escape from the psychiatric unit and the subsequent police manhunt. While the facts included are consistent with the text, failing to summarize the main story makes the summary ineffective. I have slightly lowered the overall score from 3.0 to 2.5 to reflect that a summary missing its primary subject matter is significantly flawed."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "The lenient judge correctly identified that the summary is fluent, coherent, and consistent (no hallucinations). However, they rated relevance at 3, which I agree with but feel can be slightly lowered to 2 given the extreme brevity. The summary captures only the physical description and a quote about his obsession, completely omitting the central event (escape from psychiatric unit), the specific crime details (conviction, hospital order), and the current situation (police manhunt). While it avoids hallucinations, its relevance to the main news story is critically low."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 1,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment that the summary is severely flawed due to a lack of relevance. The provided text is a news report about a manhunt for an escaped patient; however, the summary only lists physical descriptions and character traits without mentioning the escape or the police search. This renders the summary functionally useless as it fails to convey the main event. Therefore, I have lowered the coherence score from 3 to 1 because the structure is incomplete (missing the 'what happened' part), and kept relevance at 1 as per the lenient judge's valid point that the primary subject matter is omitted."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is grammatically correct and consistent with the text, but it fails to capture the core news event (the escape/manhunt) or the context of his conviction and hospital order. It reads more like a character profile than a news summary. Therefore, the relevance score remains at 2, and the overall score stays at 3.0."
+      }
+    },
+    "final": {
+      "coherence": 3.0,
+      "consistency": 5.0,
+      "fluency": 4.5,
+      "relevance": 1.5,
+      "overall_judge": 2.5
+    }
+  }
+}

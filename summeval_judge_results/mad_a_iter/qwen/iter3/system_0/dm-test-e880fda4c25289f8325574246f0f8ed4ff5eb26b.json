@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-e880fda4c25289f8325574246f0f8ed4ff5eb26b",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 1,
+        "relevance": 1,
+        "overall_judge": 1.0,
+        "rationale_for_score": "The summary contains severe hallucinations and grammatical errors that make it nonsensical. It invents a 'guide price' for the house itself (implying the house is priced at £250k) rather than correctly stating the guide price range. It includes gibberish phrases like 'a ` guide ' for the .' and fails to mention key details like stained-glass windows or specific original features, while introducing facts not in the text (e.g., implying the house is literally 'the 1930s')."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary suffers from severe hallucinations and grammatical errors that violate the consistency and fluency criteria. Specifically, it replaces '£' with '#', invents a phrase 'a ` guide ' for the .', and creates nonsensical sentences like 'the 1930s is up for sale'. While it captures the general topic (relevance), the factual errors and poor structure make it very poor."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 1,
+        "relevance": 1,
+        "overall_judge": 1.0,
+        "adjustment_notes": "The strict judge's assessment is entirely correct. The summary contains severe hallucinations (e.g., 'it has been the original bathroom', 'a ` guide ' for the .'), grammatical errors ('the 1930s is up for sale' instead of 'a house from the 1930s'), and factual inaccuracies regarding the price. The summary fails to capture any key details like stained-glass windows or specific features mentioned in the text. No leniency is warranted as the output is nonsensical."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The lenient judge's assessment is accurate and well-founded. The summary contains severe hallucinations (e.g., 'the 1930s is up for sale' instead of 'a timewarp home... from the 1930s'), factual errors ('#' instead of '£'), and nonsensical fragments ('a ` guide ' for the .'). These issues fundamentally violate consistency and fluency. No points should be raised."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 1,
+        "relevance": 1,
+        "overall_judge": 1.0,
+        "adjustment_notes": "The summary is severely flawed with multiple hallucinations ('it has been the original bathroom', 'a ` guide ' for the .'), grammatical errors ('the 1930s is up for sale'), and factual inaccuracies (using '#' instead of '£'). It fails to capture key details like stained-glass windows or specific features. The lenient judge's assessment was correct; no score adjustment is needed."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The strict judge's assessment is correct. The summary contains severe hallucinations (e.g., 'the 1930s is up for sale' instead of the house being from that era), factual errors ('#' instead of '£'), and nonsensical fragments ('a ` guide ' for the .'). These issues fundamentally violate consistency and fluency, warranting low scores."
+      }
+    },
+    "final": {
+      "coherence": 1.5,
+      "consistency": 1.0,
+      "fluency": 1.5,
+      "relevance": 2.0,
+      "overall_judge": 1.5
+    }
+  }
+}

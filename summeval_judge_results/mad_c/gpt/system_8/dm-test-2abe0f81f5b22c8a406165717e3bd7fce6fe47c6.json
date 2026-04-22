@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-2abe0f81f5b22c8a406165717e3bd7fce6fe47c6",
+  "system_name": "system_8",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow of information, as it abruptly shifts from discussing the chiropractor's misconduct to his patient satisfaction ratings without a smooth transition."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the phrase 'Read more at the Des Moines Register,' which is not present in the original article and misrepresents the source of the information."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention the significant detail that Manuel cannot apply for reinstatement for at least 10 years, which is a key point regarding the consequences of his actions."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'swapping services for sex' could be more clearly articulated as 'accepting sex as payment for services' to enhance clarity."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, outlining the main actions taken by the chiropractor and the context of his evaluations."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the key points from the article, including the surrender of the license and the admission of wrongdoing."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important information, such as the surrender of the license and the nature of the accusations, while avoiding trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'Read more at the Des Moines Register' is somewhat abrupt and does not fit smoothly into the summary, affecting overall fluency."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

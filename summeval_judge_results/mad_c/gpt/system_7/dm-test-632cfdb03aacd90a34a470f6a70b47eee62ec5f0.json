@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-632cfdb03aacd90a34a470f6a70b47eee62ec5f0",
+  "system_name": "system_7",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, jumping between points without smooth transitions."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits important context about Gnabry's previous performance and the significance of his injury, which are crucial for understanding his situation."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary states he suffered the injury 'against Bayern Munich,' which is misleading; the injury occurred during a match against Bayern, not 'against' them in a direct sense."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary uses lowercase for 'serge gnabry' and lacks proper capitalization, affecting its readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear timeline of events, starting with Gnabry's injury and concluding with his recent performance and positive outlook."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article without introducing any new facts."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary captures the key points of Gnabry's injury, his recent game, and his feelings about recovery."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization at the beginning of sentences and for Gnabry's name."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary could benefit from more varied sentence structure to enhance readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 4,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 3.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

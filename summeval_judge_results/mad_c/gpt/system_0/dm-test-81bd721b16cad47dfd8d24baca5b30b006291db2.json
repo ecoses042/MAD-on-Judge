@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-81bd721b16cad47dfd8d24baca5b30b006291db2",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, making it difficult to understand the sequence of events."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces inaccuracies, such as stating 'the ban was thrown out in george north's head,' which is nonsensical and inconsistent with the source."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'suffered his knee colliding,' which is awkward and not idiomatic."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to include key details, such as the context of the incident, the reactions from players, and the implications of the appeal."
+        }
+      ],
+      "provisional_score": 1
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a sequence of events regarding Nathan Hughes' suspension and subsequent appeal, maintaining a logical flow."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the key details from the article, such as the incident involving Hughes and George North, and the outcome of the appeal."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, making it less readable."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "Some details are missing, such as the context of the incident and reactions from players and officials, which are important for understanding the significance of the appeal."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

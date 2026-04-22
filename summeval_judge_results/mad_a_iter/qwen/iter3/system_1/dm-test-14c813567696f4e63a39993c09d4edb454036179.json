@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-14c813567696f4e63a39993c09d4edb454036179",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and consistent with the source text. It captures the main event (the announcement via a rap video) and key details like the view count. It receives a 4 for relevance because it omits other significant points from the article, such as the specific lyrics used to explain the pregnancy, the couple's reaction to the video's success, and the context of why they made the video (loved ones far away), but this is acceptable given the brevity."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from poor relevance due to extreme brevity; it omits the specific lyrics quoted in the source which are central to the story's content. It also fails to mention the video's purpose (announcing to distant loved ones) or the unexpected viral success, focusing only on the basic facts of the announcement and view count."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate. The summary effectively captures the primary news event and key metrics (view count) while omitting secondary details like specific lyrics, reactions, and production context. Given the brevity of the provided text, this omission is acceptable, justifying the relevance score of 4."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I lowered the relevance score from 3 to 3 (maintained) because the strict judge's criticism is valid: the summary is extremely brief and omits key narrative elements like the specific lyrics, the video's purpose for distant relatives, and the unexpected viral nature of the event. While the summary is factually consistent and fluent, its brevity makes it a poor representation of the full story provided in the source text."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "Lowered relevance score from 4 to 3. While the summary captures the main event and view count, it omits significant details present in the source text that add context: the specific reason for the video (to inform distant loved ones), the couple's reaction to the unexpected viral success, the gender reveal aspect mentioned as a future possibility, and the background on Jesse Meek. The strict judge was too lenient by accepting 'brevity' as justification for omitting these key contextual points which explain the story's full scope."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I accepted the lenient judge's point regarding relevance. The summary is factually consistent and fluent but covers only the very first sentence of the source text (the announcement and view count). It completely omits the viral success context, the specific lyrics, the video's purpose for distant relatives, and the couple's reactions, which are significant parts of the article. Therefore, a relevance score of 3 is appropriate as it captures the 'what' but misses the 'how' and 'why' of the story."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 3.0,
+      "overall_judge": 4.5
+    }
+  }
+}

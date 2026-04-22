@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-8b59fa7715418c4bcc0d50e3caeb239129de453e",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary contains a severe hallucination in the sentence 'hart has said buffon is ` 50 ' at 37 years old', which incorrectly attributes the number 50 to Buffon (who has 147 caps) instead of Hart. Additionally, the phrase 'linked with his own cap' is nonsensical and not supported by the text. These are clear failures in consistency and coherence."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 2,
+        "overall_judge": 1.8,
+        "rationale_for_score": "The summary contains a severe hallucination in the phrase 'Hart has said Buffon is ` 50 ' at 37 years old', which incorrectly attributes the number of caps to Buffon instead of Hart. Additionally, the final sentence 'linked with his own cap' is nonsensical and not supported by the text. The summary also suffers from poor grammar and lacks logical flow."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The lenient judge's assessment is correct and should be accepted. The summary contains a severe hallucination where it states 'hart has said buffon is ` 50 ' at 37 years old', incorrectly attributing Hart's milestone (50 caps) to Buffon, who the text explicitly says has 147 caps. Additionally, the phrase 'linked with his own cap' is nonsensical and not supported by the source text. These are critical failures in consistency and coherence that justify the low scores."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 2,
+        "overall_judge": 1.8,
+        "adjustment_notes": "The strict judge's assessment is accurate and justified. The summary contains a critical factual error (hallucination) where it attributes '50' caps to Buffon instead of Hart, which contradicts the source text stating Buffon has 147 caps. Additionally, the phrase 'linked with his own cap' is nonsensical and unsupported by the text. These are severe flaws that warrant low scores across all categories."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The strict judge's assessment is correct and must be maintained. The summary contains a critical hallucination ('Hart has said Buffon is `50'') which directly contradicts the source text stating Hart reached his 50th cap while Buffon reached his 147th. Additionally, the phrase 'linked with his own cap' is nonsensical and unsupported by the text. These are severe factual errors that justify the low scores."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 2,
+        "overall_judge": 1.8,
+        "adjustment_notes": "The lenient judge's assessment was correct to maintain low scores. The summary contains a severe hallucination (attributing '50' caps to Buffon instead of Hart) and includes nonsensical phrasing ('linked with his own cap') not present in the source text. These are critical failures in consistency and fluency that justify the strict judge's harsh ratings."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 1.0,
+      "fluency": 2.0,
+      "relevance": 2.5,
+      "overall_judge": 1.9
+    }
+  }
+}

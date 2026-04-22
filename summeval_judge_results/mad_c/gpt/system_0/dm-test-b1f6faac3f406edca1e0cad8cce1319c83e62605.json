@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-b1f6faac3f406edca1e0cad8cce1319c83e62605",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, jumping between points without proper transitions."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that Costa bit Freebody's head, which is not mentioned in the article; it should state that he stomped on Freebody's head."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the forensic psychiatrist's testimony and the implications of Costa's mental state on the jury's decision."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'the triple 0 calls it made' is awkwardly constructed and should be rephrased for better clarity."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with the accusation against Luigi Costa and mentioning the context of the murder."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding Costa's mental state and the nature of the crime."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary includes key details such as the victim's name, the nature of the crime, and Costa's mental health issues, which are central to the case."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'biting his neighbour's head' instead of 'stomping on his head,' which misrepresents the actions described in the article."
+        },
+        {
+          "criterion": "coherence",
+          "reason": "The flow of information is somewhat disrupted by the awkward phrasing and the inclusion of 'the triple 0 calls it made,' which is unclear and lacks context."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

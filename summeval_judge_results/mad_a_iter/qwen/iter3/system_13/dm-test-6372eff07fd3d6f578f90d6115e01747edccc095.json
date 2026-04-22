@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-6372eff07fd3d6f578f90d6115e01747edccc095",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is coherent and mostly consistent with the text, but it suffers from poor fluency due to a lack of capitalization (e.g., 'dr', 'scotland'). More critically, it fails the relevance criterion by omitting significant context provided in the source article, such as the mechanism of energy conversion (semi-conductors), the specific benefits (restoring power to disaster areas), and the scientist's own warnings about weaponization potential. By ignoring these key points, the summary presents an incomplete picture."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and strictly consistent with the source text. It captures the main subject (Dr Quarterman), the mechanism (satellites converting sunlight to laser energy), and the primary benefit (making solar power viable in Scotland). It receives a slightly lower relevance score because it omits the secondary context regarding weapons concerns and space junk removal mentioned in the article, but given the lenient rules and the clear alignment with the main topic, this is acceptable."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is indeed too short and omits critical context regarding the weaponization warnings and specific benefits (like disaster relief) mentioned in the source text. The lack of capitalization further impacts fluency. No score reduction was necessary as the strict judge was accurate."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is grammatically correct, logically structured, and strictly consistent with the source text (no hallucinations). While it omits the secondary points about weapons concerns and space junk removal, these are indeed minor details compared to the primary news hook regarding Dr. Quarterman's project and its potential for Scotland. Therefore, a relevance score of 4 is appropriate, and no harsher penalty is warranted."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 2,
+        "overall_judge": 2.8,
+        "adjustment_notes": "Adjusted fluency down to 2 due to the complete lack of capitalization (e.g., 'dr', 'adrian', 'scotland'), which violates standard English conventions and makes the text difficult to read professionally. Adjusted coherence slightly down to 3 because the summary presents a single idea without context or transition, making it feel abrupt compared to the full article's structure. Relevance remains low (2) as critical information regarding safety warnings, disaster relief potential, and international comparisons is omitted. Consistency remains 4 as no hallucinations were found."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary accurately captures the main news hook (Dr Quarterman's project and its potential for Scotland) while correctly omitting secondary details like weapon concerns and space junk removal without introducing hallucinations. The scores reflect a high-quality summary that prioritizes key information effectively."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 4.5,
+      "fluency": 3.5,
+      "relevance": 3.0,
+      "overall_judge": 3.8
+    }
+  }
+}

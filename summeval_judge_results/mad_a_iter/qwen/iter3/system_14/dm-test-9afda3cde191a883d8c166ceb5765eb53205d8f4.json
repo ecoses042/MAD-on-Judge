@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-9afda3cde191a883d8c166ceb5765eb53205d8f4",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary contains a hallucination in the second sentence: 'arsenal boss arsene wenger believes sanchez will be fit up for his side'. The source text states Wenger is glad Sanchez will be 'lining up' (playing) against Liverpool, not that he is 'fit'. This introduces a fact not present and potentially misleading. Additionally, the summary misses the most significant information in the article regarding the reason for Sanchez's transfer choice (Liverpool's interest/Suarez leverage), failing the relevance criterion."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent and fluent. However, it contains a minor grammatical error ('fit up' instead of 'fitting up') which slightly impacts fluency. More importantly, the phrase 'believes sanchez will be fit up for his side' introduces a specific prediction about fitness that is not present in the source text; the article only mentions Wenger's general delight and comments on Sanchez's qualities, not his current fitness status. This counts as a minor hallucination/over-interpretation."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 5,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I lowered the consistency score from 4 to 2 because the strict judge correctly identified a hallucination: the summary claims Wenger believes Sanchez is 'fit', whereas the source text says he is glad Sanchez will be 'lining up' (playing) against Liverpool. This is a factual error regarding the subject's status. I also lowered the relevance score from 3 to 1 because the summary completely misses the article's primary focus: the complex transfer dynamics involving Liverpool, Luis Suarez, and the reasons behind Sanchez's choice of club. The summary focuses on trivial details (goal count) while ignoring the main narrative."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I have lowered the scores based on the lenient judge's valid points regarding consistency and relevance. The phrase 'fit up' is indeed a hallucination/typo not supported by the text (which discusses Sanchez's qualities and impact, not his fitness status), dropping consistency from 5 to 4. This error also impacts fluency significantly, dropping it to 3. Furthermore, the summary misses the vast majority of the article's content (Wenger's comments on Suarez negotiations, Sanchez's specific qualities like work-rate, the Sterling transfer speculation, and Liverpool's performance), making the relevance score a low 2 instead of 3."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 5,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I accept the lenient judge's assessment. The summary contains a factual hallucination ('fit up' vs 'lining up'), which justifies the low consistency score. Furthermore, the summary fails to capture the article's main narrative regarding transfer negotiations and club selection, making the relevance score of 1 appropriate. No points need to be raised."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I have maintained the strict judge's lower scores. The summary contains a factual error ('fit up' instead of 'fit for'), which violates consistency and hurts fluency. More importantly, it fails to cover the vast majority of the article's key points (Suarez negotiations, Sanchez's specific qualities like work-rate, Sterling transfer rumors), justifying the low relevance score."
+      }
+    },
+    "final": {
+      "coherence": 3.0,
+      "consistency": 3.0,
+      "fluency": 4.0,
+      "relevance": 1.5,
+      "overall_judge": 2.5
+    }
+  }
+}

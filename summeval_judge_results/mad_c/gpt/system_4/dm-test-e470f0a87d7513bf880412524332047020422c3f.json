@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-e470f0a87d7513bf880412524332047020422c3f",
+  "system_name": "system_4",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, repeating phrases and details unnecessarily, such as mentioning the film title multiple times."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits important details about the auction, such as the context of the auction being held by Heritage Auctions and the location, which are relevant to understanding the significance of the sale."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary does not mention the broader context of the auction, including the other items sold and the significance of the dress's provenance, which are key points in the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains awkward phrasing and punctuation issues, such as inconsistent spacing around the dollar amount and lack of capitalization in the film title."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, detailing the auction price and the significance of the dress in the film."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article without introducing any new facts."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points, such as the auction price, the dress's significance, and its condition, while avoiding trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains some grammatical issues, such as awkward phrasing and inconsistent capitalization, which affect its readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "tie",
+        "consistency": "tie",
+        "fluency": "critic",
+        "relevance": "tie"
+      }
+    }
+  }
+}

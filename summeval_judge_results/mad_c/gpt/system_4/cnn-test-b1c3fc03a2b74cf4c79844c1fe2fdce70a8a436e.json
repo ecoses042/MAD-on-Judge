@@ -1,0 +1,71 @@
+{
+  "article_id": "cnn-test-b1c3fc03a2b74cf4c79844c1fe2fdce70a8a436e",
+  "system_name": "system_4",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, abruptly transitioning from the number of rescued migrants to the missing migrants without connecting the two points."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits significant details such as the context of the migrant crisis, the capsizing incident, and the statistics regarding deaths and the origins of the migrants, which are crucial for understanding the situation."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary uses lowercase letters for the beginning of sentences, which is grammatically incorrect and affects readability."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the Italian coast guard's inability to confirm the capsizing incident, which is a critical aspect of the report."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the situation of migrants in Italy."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, including the number of migrants rescued and the concerns about missing individuals."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the article, such as the number of migrants rescued and the fears of missing individuals."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as lack of capitalization at the beginning of sentences and proper nouns."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits important details, such as the context of the migrant crisis, the role of the Italian coast guard, and the statistics on migrant deaths."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

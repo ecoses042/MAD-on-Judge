@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-207df192edc1836250b69d1bc5b9e6a38206eb78",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information. It jumps from the comparison of weight and height to the statistics about obesity without connecting these points effectively."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits critical information from the source, such as the potential link between antibiotics and weight gain, and the implications of the study on the obesity epidemic."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on specific statistics but fails to address the broader context of the study's findings and their significance regarding antibiotic use and obesity."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "There are grammatical issues, such as missing articles ('the' before 'weight and height') and awkward phrasing ('odds of being a fat toddler' could be more elegantly expressed)."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the study's findings on the relationship between antibiotic prescriptions and obesity in toddlers."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the findings of the study, specifically mentioning the statistics about overweight boys and girls and the impact of repeated antibiotic prescriptions."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the study, including the comparison of weight and height, the statistics on obesity, and the effect of antibiotic prescriptions."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'two year old' which should be 'two-year-olds,' and lacks some necessary articles, making it less fluent."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 4,
+      "overall_judge": 3.2,
+      "winner_side": {
+        "coherence": "tie",
+        "consistency": "tie",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

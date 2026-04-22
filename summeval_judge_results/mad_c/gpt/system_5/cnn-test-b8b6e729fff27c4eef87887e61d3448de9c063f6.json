@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-b8b6e729fff27c4eef87887e61d3448de9c063f6",
+  "system_name": "system_5",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, jumping abruptly between topics without proper transitions."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details about the unsuccessful landing attempt and the significance of reusing rockets, which are crucial to understanding the context of the launch."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the rocket tipping over after landing, which is an important detail from the source."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains awkward phrasing and punctuation issues, making it less readable."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with the launch of the Falcon 9 rocket and mentioning the Dragon spacecraft's mission to the International Space Station."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on key points such as the rocket launch, the purpose of the Dragon spacecraft, and SpaceX's future plans for landing rockets."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits important details about the unsuccessful landing attempt and Elon Musk's comments, which are relevant to understanding the challenges SpaceX faces."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper sentence structure and punctuation, making it difficult to read smoothly."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

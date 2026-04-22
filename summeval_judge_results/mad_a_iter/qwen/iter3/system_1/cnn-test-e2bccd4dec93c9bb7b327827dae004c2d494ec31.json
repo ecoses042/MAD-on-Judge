@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-e2bccd4dec93c9bb7b327827dae004c2d494ec31",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 3,
+        "fluency": 1,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary is severely flawed in fluency due to a sentence fragment ('...as the government's top military official earnestly.') that cuts off mid-thought and lacks a verb or object. It also suffers from poor coherence as it jumps abruptly between topics without logical transitions. While the information included is consistent with the source (no hallucinations), the summary fails to capture the main point of the article (the Defense Minister's specific denial regarding UFOs) and cuts off prematurely, making it incomplete and difficult to read."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 2,
+        "overall_judge": 1.8,
+        "rationale_for_score": "The summary is severely flawed. It fails consistency by cutting off a complete sentence ('...as the government's top military official earnestly.') and omitting the crucial information about UFOs that was the main point of the article. It also suffers from poor relevance as it includes generic background on Antonio Inoki (WWE, Muhammad Ali) without connecting it to the specific context of his inquiry about aliens, which is the core news event. The flow is disjointed due to the abrupt ending."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 3,
+        "fluency": 1,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The lenient judge's assessment is accurate and justified. The summary contains a severe grammatical error (a sentence fragment ending with 'earnestly.'), lacks logical flow between the disjointed sentences, and fails to capture the core news event (the Defense Minister's denial of UFO encounters). It also truncates the text prematurely. No points should be raised; the low scores reflect the actual quality of the provided summary."
+      },
+      "lenient": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 1,
+        "relevance": 1,
+        "overall_judge": 1.0,
+        "adjustment_notes": "The strict judge was correct but perhaps too polite given the severity of the errors. The summary is grammatically broken (incomplete sentence), factually incomplete regarding the main news hook (UFOs), and structurally disjointed. It fails on all criteria significantly."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 1,
+        "consistency": 2,
+        "fluency": 1,
+        "relevance": 1,
+        "overall_judge": 1.2,
+        "adjustment_notes": "The strict judge's assessment was accurate and justified. The summary is severely flawed: it contains a sentence fragment ('...official earnestly.'), lacks logical flow, truncates the text prematurely (missing the core news event regarding the Defense Minister's denial of UFO encounters), and fails to capture key details about Inoki or the context. The low scores reflect these critical failures."
+      },
+      "strict": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 1,
+        "relevance": 1,
+        "overall_judge": 1.0,
+        "adjustment_notes": "The summary is severely flawed. It contains a grammatically incomplete sentence ('...as the government's top military official earnestly .'), fails to mention the core news event (the ASDF's confirmation that no UFOs have been detected), and cuts off abruptly after introducing Antonio Inoki without explaining his relevance to the main story or summarizing his claims. The lenient judge correctly identified these critical failures."
+      }
+    },
+    "final": {
+      "coherence": 1.0,
+      "consistency": 1.5,
+      "fluency": 1.0,
+      "relevance": 1.0,
+      "overall_judge": 1.1
+    }
+  }
+}

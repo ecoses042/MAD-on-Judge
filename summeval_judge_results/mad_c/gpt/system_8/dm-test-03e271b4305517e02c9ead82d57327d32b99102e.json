@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-03e271b4305517e02c9ead82d57327d32b99102e",
+  "system_name": "system_8",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary incorrectly states that Williams won 6-3 6-3 against Errani; the actual match score was 4-6 7-6(3) 6-3."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary introduces a quote from Errani that is not present in the original article, which misrepresents the context and focus of the match."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, jumping between points without proper transitions, making it difficult to follow."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'Williams and Alison Riske were beaten 6-0 6-3 by Errani and Pennetta' is misleading as it suggests Williams and Riske won, when they actually lost."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with Williams' match against Errani and then moving to the doubles rubber."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is written in fluent English, making it easy to read despite some inaccuracies."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that Williams won 6-3 6-3 against Errani, while the article mentions a three-set match with scores of 4-6, 7-6(3), 6-3."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the context of the match, the significance of the claycourt season, and the US team's overall performance."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 1,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.0,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

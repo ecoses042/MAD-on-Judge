@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-9d0fcbd873927674d12aafce4ae7754fd591d4e2",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and strictly consistent with the source text regarding the main announcement (Ella Henderson as face of Batiste's 2015 campaign) and the significance (first collaboration). However, it scores a 4 for relevance because it repeats the same core fact three times in slightly different ways ('official face', 'face of dry shampoo company') without including other key details from the text such as the specific styling shown, the TV ad launch with 'Mirror Man', or the CEO's quote, which would have made the summary more comprehensive."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is grammatically correct and consistent with the source text. However, it repeats the core fact three times in slightly different ways (announced as face, first collaboration, face of company), making it feel redundant rather than concise. A more fluent summary would combine these points into a single, tighter sentence."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. While the summary is grammatically perfect and factually consistent, it suffers from redundancy by stating the core announcement three times in slightly different phrasings ('official face', 'face of... campaign', 'face of dry shampoo company') without adding new information. Furthermore, it misses significant key details present in the source text, such as the specific styling showcased, the launch with the single 'Mirror Man', and the CEO's endorsement. Therefore, the relevance score remains at 4."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I raised the fluency score slightly from a potential lower mark because while the sentences are grammatically correct, the repetition of 'face' and 'Batiste' in three separate sentences makes the flow clunky rather than just 'redundant'. I lowered the relevance score because the summary misses the context provided in the article about Ella Henderson's fame coming from her vocals (X Factor) and specifically highlights the campaign name ('Ready For It') only once, whereas the article emphasizes the specific campaign details more. The lenient judge correctly identified the redundancy issue which impacts both fluency and relevance."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary suffers from significant redundancy (stating she is the 'face' of Batiste three times in three sentences) which negatively impacts fluency and relevance by wasting space on trivial repetition rather than expanding on the campaign details or context provided in the source text. No score reduction was necessary as the strict judge's critique accurately identified these flaws."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I have adjusted the relevance score down from 4 to 3. While the lenient judge correctly identified redundancy as a flaw, they awarded a high relevance score (4) which contradicts their own observation that the summary misses 'significant key details' like the specific styling, the TV ad launch with 'Mirror Man', and the CEO's endorsement. A summary that repeats the main announcement three times in different ways while omitting these substantial supporting details is significantly less relevant than a 4/5 would imply. The strict assessment of lower relevance was more accurate given the high redundancy combined with missing context."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 4.5,
+      "relevance": 3.0,
+      "overall_judge": 4.3
+    }
+  }
+}

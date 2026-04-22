@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-d89de9c2a76f2665560becfe5d761a4fc62b9926",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, repeating phrases and failing to provide context for the match."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states '1-0 win over 1-0', which is nonsensical and does not reflect the source document."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention key details such as the significance of the match, the performance of other players, and the context of the 'mini-derby'."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'the the ` mini-derby ' ' which disrupts readability."
+        }
+      ],
+      "provisional_score": 1
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear focus on Callum Gribbin as the matchwinner and the context of the match being a 'mini-derby', which aligns with the main event of the article."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the outcome of the match and identifies Gribbin as the key player, consistent with the details provided in the article."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary captures the most important information regarding the match result and the significance of Gribbin's performance."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, such as '1-0 win over 1-0' and 'the the ` mini-derby '', which detracts from its readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

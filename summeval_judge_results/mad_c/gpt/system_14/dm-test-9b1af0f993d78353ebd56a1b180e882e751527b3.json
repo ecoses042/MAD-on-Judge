@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-9b1af0f993d78353ebd56a1b180e882e751527b3",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information. It abruptly shifts from discussing the shooting to mentioning the billboard without proper context."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary incorrectly states that 'Torres has been erected' which is nonsensical and does not accurately reflect the information in the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention the context of the billboard being a thank you to the community, which is a key point in the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, such as 'has been erected featuring a photograph of torres and his dog,' which makes it difficult to read."
+        }
+      ],
+      "provisional_score": 1
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with the shooting of Aaron Siler and mentioning the billboard featuring Officer Pablo Torres."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding the shooting incident and the reactions of Siler's family and friends."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the incident, including the shooting, the billboard, and the reactions from Siler's family and friends."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, such as 'torres has been erected featuring a photograph of torres and his dog,' which disrupts readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 1,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.0,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

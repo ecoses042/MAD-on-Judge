@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-31114653cd606fd3f4b1035f98dedd71f8282cd2",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source text and coherent in its structure. However, it suffers from poor relevance by omitting significant details such as the specific date (June 12), the context of the recent victory over Israel that drove ticket sales, and the venue controversy regarding the Millennium Stadium vs. Cardiff City Stadium. It reads like a truncated version rather than a complete summary."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is well-structured, grammatically correct, and strictly consistent with the source text. It captures the three most significant facts (sell-out status, venue/date, and historical context). It receives a score of 4 instead of 5 solely on relevance because it omits other key details present in the article, such as the specific match result against Israel that drove the demand, the squad's preference for the venue, and UEFA's rules regarding the stadium change. However, given the lenient instruction to give benefit of the doubt and focus on clear hallucinations (which are absent), this minor omission does not warrant a lower score."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. While the summary is factually consistent and coherent, it suffers from significant relevance issues by omitting key context (the Israel victory) and the venue controversy, making it feel truncated rather than a complete summary of the article."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate: the summary is well-structured and consistent but misses significant context regarding the Israel match result and venue preferences, justifying a relevance score of 4 rather than 5."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate: the summary is factually consistent and coherent but suffers from significant relevance issues by omitting key context (the Israel victory) and the venue controversy, making it feel truncated rather than a complete summary of the article."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "The strict judge correctly identified that the summary misses significant context regarding the Israel match result (which drove the ticket demand) and venue preferences. While the first sentence is a direct quote from the text, the subsequent sentences summarize the situation without mentioning the cause of the sell-out or the specific details about why Cardiff City Stadium was chosen over the Millennium Stadium. Therefore, the relevance score should be lowered to 3 to reflect that key explanatory details are omitted."
+      }
+    },
+    "final": {
+      "coherence": 4.5,
+      "consistency": 5.0,
+      "fluency": 4.5,
+      "relevance": 3.0,
+      "overall_judge": 4.2
+    }
+  }
+}

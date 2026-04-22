@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-8e6c8aec6808f66ed0342e128a4e146f3ecd627d",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from a significant relevance flaw: it truncates the text after the second arrest details, completely omitting the crucial context regarding her previous admission of inappropriate conduct (kissing and allowing breast touching), the school's administrative actions, and the specific quote about 'rumoring' a second person which validates the new charges. By ignoring these key points, the summary fails to capture the full narrative arc and importance of the article."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and consistent with the source text. It accurately captures the main events (arrests, dates, locations, and allegations). It receives a score of 4 instead of 5 because it omits significant context provided in the article, such as the specific nature of the first arrest (kissing/touching breasts), the school's administrative actions (suspension/leave), and the police department's confirmation of a second person involved. While these are details, they are central to the full story."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I lowered the relevance score slightly from 3 to 3.8 (rounding up minimally as it was already low) because while the strict judge's criticism about omitting context is valid, the summary does successfully cover the primary news hook: the second arrest and the specific new allegations. However, I agree with the strict judge that omitting the previous admission of conduct and the school's immediate actions significantly weakens the narrative completeness. The score remains low on relevance because a summary of this nature should ideally include the 'why' (the prior behavior) to provide full context, not just the 'what happened now'. No other scores were changed as the text is fluent, coherent, and consistent with the source."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The lenient judge's assessment is accurate. The summary is well-structured and consistent with the source text. While it omits details about the specific nature of the first arrest (kissing/touching breasts) and administrative actions, these are secondary to the primary news hook: the second arrest and the new allegations. Therefore, the score of 4 for relevance is appropriate, and no harsher penalty is warranted."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "No changes made to the scores. The lenient judge's adjustment to relevance was minimal and acknowledged the validity of the strict judge's critique regarding omitted context (prior admission of conduct and school actions). Since the summary focuses strictly on the new arrest allegations without including the background details that provide necessary narrative completeness, a low relevance score is justified. The text remains fluent, coherent, and consistent with the source."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The strict judge's assessment is correct. The summary effectively captures the primary news hook (the second arrest and new allegations) while omitting secondary details like the specific nature of the first incident or administrative actions. This omission does not detract from the core message, making the relevance score of 4 appropriate rather than lower."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.5,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.5
+    }
+  }
+}

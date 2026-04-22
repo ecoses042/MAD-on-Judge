@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-97bbda7ec22a736cd174b51513c72a6372d13d35",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow and omits key contextual information about the auction and the failure to sell the letters."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention that the letters failed to find a buyer at the auction, which is a crucial detail from the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as inconsistent capitalization of 'yankee' and 'new york city'."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to include important details about the auction process and the owner's intentions, making it less informative."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear focus on the letters, their expected auction value, and Reggie Jackson's desire for a new generation to appreciate them, creating a logical flow of information."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary captures key points about the auction expectations and Jackson's intentions, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits important details such as the auction's outcome and Jackson's humorous reflection on the size of the letters, which are relevant to the overall context."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as improper capitalization and punctuation, which affect readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

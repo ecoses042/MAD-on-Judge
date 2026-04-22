@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-6c1341bedf92a304318545fbf1aad88651de7909",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary suffers from a severe consistency and relevance flaw due to a major hallucination. It incorrectly states that Harry Kane is 'nominated for both the PFA Player and Young Player of the Season' as if this were a fact about his performance or the video's content, whereas the source text explicitly says he is nominated for these awards but does not claim he won them or that the video celebrates him as a winner. The summary fails to capture the core news (the nominations) and instead presents the nomination status as a definitive attribute of the season/video in a confusing manner. Additionally, it omits key details like the specific opponents mentioned in the source."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.5,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from a significant consistency issue in the first sentence where it conflates 'Harry Kane' with the awards ('PFA Player... of the season'), creating a grammatical/logical error not present in the source. Additionally, while it captures the main points about the video production and title, it omits key details like the specific goals shown or the award ceremony context, leading to a lower relevance score."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary suffers from a critical consistency error by conflating the nominations with the video content or the season's outcome in a way that implies facts not present (e.g., 'nominated for... of the season' is grammatically awkward and misleadingly attached to the celebration clause). It also fails relevance by omitting the specific goals, opponents, and the England debut mentioned in the source, which are key details. The fluency is acceptable but marred by the lack of punctuation and capitalization. No leniency is applied due to these fundamental flaws."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.5,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary contains a significant consistency error in the first sentence where 'Harry Kane' is grammatically linked to the awards ('...for the pfa player and young player of the season'), whereas the source text clearly separates his performance from his nominations. This logical flaw warrants a low consistency score. While the fluency and coherence are acceptable, the omission of specific goals and the award ceremony context (despite being minor details) combined with the structural error keeps the relevance and overall scores moderate."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "No adjustment needed. The lenient judge's points were accepted because the summary indeed conflates the nominations with the video content (consistency error), omits key specific details like the goals and opponents mentioned in the source (relevance error), and lacks basic punctuation/capitalization (fluency issue). The strict assessment was accurate."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.5,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary contains a significant consistency error in the first sentence where 'Harry Kane' is grammatically linked to the awards ('...for the pfa player and young player of the season'), whereas the source text clearly separates his performance from his nominations. This logical flaw warrants a low consistency score. While the fluency and coherence are acceptable, the omission of specific goals and the award ceremony context (despite being minor details) combined with the structural error keeps the relevance and overall scores moderate."
+      }
+    },
+    "final": {
+      "coherence": 3.5,
+      "consistency": 2.5,
+      "fluency": 4.0,
+      "relevance": 2.0,
+      "overall_judge": 2.8
+    }
+  }
+}

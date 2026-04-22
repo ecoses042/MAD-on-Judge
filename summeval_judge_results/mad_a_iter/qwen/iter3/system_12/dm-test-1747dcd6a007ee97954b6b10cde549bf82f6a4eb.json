@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-1747dcd6a007ee97954b6b10cde549bf82f6a4eb",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from a significant relevance flaw: it completely omits the second half of the source text regarding other major franchises (Starbucks, Taco Bell, McDonald's, Burger King) entering the delivery market. Additionally, while mostly consistent, the phrasing 'Mexican food fans should know' is an editorial opinion not explicitly stated in the source text, which reports the fact neutrally; this minor deviation slightly impacts consistency."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and consistent with the source text. It captures the two most critical details: the partnership scope (67 cities) and the specific financial implications for customers (9% service charge + $5 minimum fee). It receives a 4 instead of 5 only because it omits other relevant context from the article, such as Chipotle's history with delivery services, the involvement of political figures, and the fact that other major chains are also entering this market. However, under lenient rules, omitting secondary details is acceptable as long as the core message is accurate."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is fluent and coherent, but it suffers from a significant relevance flaw by omitting the substantial portion of the text discussing other franchises (Starbucks, Taco Bell, etc.) entering the market. Additionally, the phrase 'Mexican food fans should know' introduces an editorial tone not present in the neutral source text, warranting a deduction for consistency."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is fluent, coherent, and strictly consistent with the provided text. It accurately captures the two most critical details regarding the partnership scope and customer costs. While it omits other relevant context (political figures, competitors, history), this is acceptable under lenient rules for a summary focusing on core message accuracy."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary is fluent and coherent, but it suffers from a significant relevance flaw by omitting the substantial portion of the text discussing other franchises (Starbucks, Taco Bell, etc.) entering the market. Additionally, the phrase 'Mexican food fans should know' introduces an editorial tone not present in the neutral source text, warranting a deduction for consistency."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary is fluent, coherent, and strictly consistent with the source text. It accurately captures the two most critical details regarding the partnership scope (67 cities) and customer costs (9% service charge + $5+ fees). While it omits other relevant context such as political figures, competitors, and historical offers, this omission is acceptable for a summary focusing on core message accuracy."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.5,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.5
+    }
+  }
+}

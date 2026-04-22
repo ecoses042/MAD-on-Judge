@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-e49792c337d3f4c13e22f710efa44cf6a4e59aba",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, making it difficult to understand the context and significance of the events."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits crucial details about the emotional plea from the victims' parents and the implications of the death penalty, which are central to the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that the sentencing phase is expected to last four weeks without clarifying that this refers to the trial process, not the race."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as the lack of capitalization for 'Dzhokhar Tsarnaev' and the phrase 'now it is real' which is awkwardly phrased."
+        }
+      ],
+      "provisional_score": 1
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow by stating the conviction of Dzhokhar Tsarnaev and the timeline of the sentencing phase."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits significant details about the emotional plea from the victims' parents and the context of the death penalty discussion, which are crucial to understanding the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, such as 'it is expected to last four weeks, a day after the race,' which disrupts readability."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to cover key points, such as the impact on the victims' family and their specific plea regarding the death penalty, focusing instead on trivial details."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 1,
+      "overall_judge": 1.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "article_id": "dm-test-4f3b35b540ba05f0f82d71a694ec23dde4dc3e01",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, as it abruptly ends without mentioning the aftermath of the incident or the investigation."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to include key details such as the attempted carjacking, the fact that no one was injured, and the ongoing investigation by the Los Angeles County Fire Department."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as inconsistent capitalization of 'california' and 'saturday'."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, detailing the sequence of events leading to the car being set on fire."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the details from the article, including the number of suspects, the type of vehicle, and the location of the incident."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is written in fluent English, with no grammatical errors, making it easy to read."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the incident, including the argument, the act of arson, and the presence of passengers."
+        }
+      ],
+      "remaining_concerns": [],
+      "provisional_score": 5
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 5,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

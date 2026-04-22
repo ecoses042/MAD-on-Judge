@@ -1,0 +1,75 @@
+{
+  "article_id": "cnn-test-88c2481234e763c9bbc68d0ab1be1d2375c1349a",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow of information, abruptly ending without concluding the key details about the incident."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits significant details such as the cause of the fire, the response from Hillary Scott, and the fact that the other band members were not on the bus."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The use of parentheses and dashes in the summary disrupts the fluency and readability of the text."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention that the fire destroyed everything in the bus's back lounge except for Scott's Bible, which is a notable detail from the article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with the bus catching fire and mentioning the evacuation, which helps the reader understand the situation."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, including the fact that everyone on board was safely evacuated."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is written in grammatically correct English and is easy to read."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key event of the bus fire and the evacuation, which are the most important details from the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a complete narrative, omitting details about the cause of the fire and the aftermath, which would provide a fuller understanding of the incident."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "While it covers the main event, the summary does not mention the Instagram post by Hillary Scott or the fact that the band is scheduled to perform soon, which are relevant details."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 4,
+      "relevance": 3,
+      "overall_judge": 3.2,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "tie",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

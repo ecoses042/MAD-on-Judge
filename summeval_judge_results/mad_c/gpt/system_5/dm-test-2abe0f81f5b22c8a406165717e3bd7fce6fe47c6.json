@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-2abe0f81f5b22c8a406165717e3bd7fce6fe47c6",
+  "system_name": "system_5",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow and omits crucial context about the nature of the charges against Charles Manuel."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention the significant details regarding the accusations of accepting sex as payment and performing exorcisms, which are central to the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not accurately reflect the full scope of the charges, which includes bartering sex for services and advising patients to stop taking prescribed medication."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary uses lowercase letters at the beginning of sentences, which is grammatically incorrect and affects readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the charges against Charles Manuel and the conditions for the reinstatement of his chiropractic license."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article about the Iowa Board of Chiropractic's report and the agreement signed by Manuel."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the article, specifically the charges against Manuel and the implications for his ability to practice."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as the lack of capitalization at the beginning of the sentences, which affects its readability."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits important details, such as the nature of the charges (accepting sex as payment and performing exorcisms), which are crucial to understanding the context of the revocation."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

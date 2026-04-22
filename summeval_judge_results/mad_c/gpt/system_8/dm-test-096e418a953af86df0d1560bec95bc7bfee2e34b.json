@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-096e418a953af86df0d1560bec95bc7bfee2e34b",
+  "system_name": "system_8",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary incorrectly states that Porto's manager, Jorge Jesus, was left with a hole in his trousers, which is not mentioned in the article."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention the significant details of Bayern's 6-1 victory and the players who scored, which are key points in the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow and structure, making it difficult to follow the main points."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The repetition of the phrase about Jorge Jesus in the summary is awkward and disrupts the fluency."
+        }
+      ],
+      "provisional_score": 1
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear event related to Guardiola's trousers in the context of a Bayern Munich victory, maintaining a logical flow."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary incorrectly states that Porto's manager, Jorge Jesus, had a hole in his trousers, which is not mentioned in the article."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention the significant details of Bayern's 6-1 victory and the context of the Champions League match."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The repetition of the phrase about Jorge Jesus creates awkwardness and disrupts the flow of the summary."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 1,
+      "fluency": 2,
+      "relevance": 1,
+      "overall_judge": 1.5,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

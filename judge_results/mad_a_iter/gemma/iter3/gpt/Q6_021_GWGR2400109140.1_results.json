@@ -1,0 +1,211 @@
+[
+  {
+    "essay_id": "GWGR2400109140.1",
+    "status": "ok",
+    "prediction": {
+      "content": {
+        "score": 4.0,
+        "rationale": "주장은 블라인드 채용의 학력 관련 부분에 대한 회의적 입장을 명확히 하고 있으며, 근거도 비교적 구체적이다. 특히, 학력의 중요성과 블라인드 채용의 한계에 대한 논의가 잘 이루어졌다. 그러나 일부 주장과 근거 간의 논리적 연결이 다소 약하게 느껴지는 부분이 있다."
+      },
+      "organization": {
+        "score": 4.0,
+        "rationale": "서론, 본론, 결론의 구조가 비교적 명확하게 드러나 있으며, 문단 간의 연결도 자연스럽다. 그러나 본론에서 두 가지 경우를 나누어 설명하는 부분에서 전개가 다소 복잡하게 느껴질 수 있다."
+      },
+      "expression": {
+        "score": 3.0,
+        "rationale": "전반적으로 문장은 이해 가능하나, 일부 표현이 어색하거나 문법적 오류가 보인다. 예를 들어, '그중에서 학력을 중점적으로 생각했다'와 같은 표현은 다소 어색하게 느껴질 수 있다."
+      }
+    },
+    "judge": {
+      "content": {
+        "round_0": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.2,
+            "rationale_for_score": "전반적으로 rationale은 주장을 잘 뒷받침하고 있으며, essay_text의 내용과 일관성을 유지하고 있다. (domain_match: 5 - 글의 핵심 주장과 근거가 content 영역에 적절하게 대응한다.) 그러나 일부 문장에서 구체적인 예시나 설명이 부족하여 specificity 점수가 3점으로 제한되었다. (specificity: 3 - '대학의 이름 자체에 쌓인 명예', '사기업, 중소기업' 등 추상적인 표현 사용) 또한, essay_text에서 직접 인용된 부분(‘나는 블라인드 채용을 일부 허용할 수 있다고 생각하지만, 학력에 관련된 부분을 가리는 것에 대해서는 회의적이다.’)을 통해 groundedness 점수를 5점으로 평가했다. (groundedness: 5 - essay_text의 핵심 주장을 정확하게 반영한다.) score_rationale_consistency는 높은 점수(4점)를 유지하며, rationale이 predicted_score를 잘 뒷받침하고 있다."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.5,
+            "rationale_for_score": "주어진 rationale은 essay_text의 내용을 정확하게 반영하고 있으며, 블라인드 채용의 학력 관련 부분에 대한 회의적 입장을 명확히 제시한다. (domain_match: 5 - essay_text의 핵심 주장에 부합). 논리 전개가 매우 설득력이 있고, 다양한 경우를 고려하여 구체적인 근거(대학 이름 자체의 명예, 시험 및 면접 채용 방식 등)를 제시함으로써 specificity가 높다. (specificity: 4 - 구체적인 예시와 논지를 명확히 설명). 또한, essay_text에서 직접적으로 인용한 내용이 많아 groundedness가 매우 높다. (groundedness: 5 - hallucination 없음). score_rationale_consistency는 높은 점수를 부여받았으며, rational은 predicted_score를 잘 정당화한다."
+          }
+        },
+        "round_1": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 5,
+            "specificity": 5,
+            "groundedness": 5,
+            "overall_judge": 5.0,
+            "adjustment_notes": "관대한 심사위원의 평가에 따라 점수를 모두 5점으로 조정합니다. rationale이 essay_text의 내용을 완벽하게 반영하고 있으며, 모든 기준(domain_match, score_rationale_consistency, specificity, groundedness)을 충족합니다. 특히, essay_text에서 직접 인용된 구체적인 근거가 2개 이상 존재하여 5점을 부여할 수 있습니다. 논리 전개와 표현 또한 매우 우수하며, 어떠한 결함도 발견되지 않았습니다."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.5,
+            "adjustment_notes": "초기 평가에서 엄격한 심사위원이 지적한 결함에 대한 조정입니다. 첫째, '논리적 연결이 다소 약하게 느껴지는 부분'이라는 지적에 따라 score_rationale_consistency 점수를 4점에서 3점으로 낮췄습니다. rationale은 essay_text의 주장을 뒷받침하고 있지만, 몇몇 논지 간의 연결이 더 명확하게 설명될 필요가 있습니다. 둘째, 'generic 표현만 사용'이라는 specificity 지적에 따라 specificity 점수를 3점으로 유지했습니다. '전반적으로 좋다', '논리적이다'와 같은 표현은 구체적인 예시를 통해 보완해야 합니다. 셋째, groundedness는 essay_text의 핵심 주장을 정확하게 반영하고 있으므로 4점을 유지했습니다. 넷째, 점수-설명 모순이 없도록 rationale을 수정하여 score_rationale_consistency 점수를 3점으로 조정했습니다."
+          }
+        },
+        "round_2": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.2,
+            "adjustment_notes": "관대한 심사위원의 평가에 따라 점수를 조정했습니다. 초기 평가에서 '논리적 연결이 다소 약하게 느껴지는 부분'이라는 지적에 대해 rationale을 수정하여 score_rationale_consistency를 4점으로 높였습니다. 또한, 'generic 표현만 사용'이라는 specificity 지적에 대해 essay_text의 구체적인 예시들을 더 명확하게 언급하도록 rationale을 보완하여 specificity 점수를 4점으로 조정했습니다. groundedness는 essay_text의 내용을 정확히 반영하고 있으므로 5점을 유지했습니다. 전반적으로 rational이 essay_text와 매우 일치하며, 충분한 근거를 제시하고 있어 높은 점수를 부여합니다."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.2,
+            "adjustment_notes": "심사위원의 평가에 따라 점수를 조정합니다. 심사위원이 지적한 대로, '주장과 근거 사이의 논리적 연결이 다소 약하게 느껴지는 부분'을 고려하여 domain_match를 5점에서 4점으로 낮췄습니다. 그러나 rationale이 essay_text의 내용을 잘 반영하고 있으며, groundedness는 매우 높게 평가되어 5점을 유지했습니다. 또한, specificity와 score_rationale_consistency도 충분히 설득력이 있다고 판단하여 4점을 부여했습니다."
+          }
+        },
+        "final": {
+          "domain_match": 4.0,
+          "score_rationale_consistency": 4.0,
+          "specificity": 4.0,
+          "groundedness": 5.0,
+          "overall_judge": 4.2
+        }
+      },
+      "organization": {
+        "round_0": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 3,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.2,
+            "rationale_for_score": "서론, 본론, 결론의 구조가 명확하게 드러나고 문단 간 연결이 자연스러워 domain match에 5점을 부여한다. 또한, essay_text에서 ‘학력’이라는 핵심 주제를 정확히 파악하고 있으며, 학력 블라인드 채용의 다양한 경우(전공/자격증 확인, 사전 정보 배제)를 구체적으로 분석하여 논리적인 주장을 펼치고 있다. specificity는 essay_text에 언급된 내용들을 바탕으로 구성되어 있어 4점을 부여한다. groundedness는 essay_text에서 직접 인용한 문장과 아이디어를 활용하고 있으며, hallucination이 없는 것으로 판단되어 5점을 부여한다. score_rationale_consistency는 두 가지 경우를 나누어 설명하는 부분에서 전개가 다소 복잡하게 느껴질 수 있다는 언급으로 인해 3점을 부여한다. 전체적으로 설득력 있는 rationale이며, predicted_score와 일치하는 평가이다."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.5,
+            "rationale_for_score": "서론, 본론, 결론의 구조가 명확하게 드러나며, 논리 전개가 자연스럽다 (domain_match: 5). 학력 블라인드 채용에 대한 다양한 경우를 나누어 설명하며, 각 경우의 장단점을 구체적으로 분석하여 설득력을 높였다 (specificity: 4). essay_text에서 ‘학력’이라는 핵심 개념을 중심으로 논의가 전개되며, 기업 규모에 따른 블라인드 채용 가능성을 고려한 점이 groundedness를 높인다 (groundedness: 5). score_rationale_consistency는 rationales의 설명과 predicted_score 4.0이 일치하는 점으로, 높은 점수를 부여받기에 충분하다."
+          }
+        },
+        "round_1": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 5,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.8,
+            "adjustment_notes": "전반적으로 매우 우수하며, rationales와 essay_text 간의 일치성이 완벽하다. minor point로, 본론에서 제시된 다양한 경우(첫째, 둘째)에 대한 설명이 조금 더 구체적인 예시를 포함하면 더욱 설득력이 높아질 수 있지만, 현재 수준으로도 충분히 높은 점수를 받을 만하다. 특히, essay_text의 핵심 내용인 ‘학력’이라는 단어와 관련된 논의가 일관성 있게 전개되고 있으며, 기업 규모에 따른 블라인드 채용 가능성을 고려한 점이 groundedness를 높이는 데 기여했다."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.0,
+            "adjustment_notes": "전반적으로 설득력 있는 rationale이므로 점수를 유지하되, 몇 가지 개선점을 반영하여 조정한다. 첫째, 'score_rationale_consistency'를 4점으로 상향 조정한다. rationale에서 제시된 두 가지 경우의 분석이 essay_text에 명확하게 드러나 있기 때문이다. 둘째, 'specificity'를 3점으로 하향 조정한다. '논리적이다'와 같은 generic한 표현을 줄이고, 각 경우별로 언급된 구체적인 내용(예: 대기업/공기업의 데이터 활용 가능성)을 좀 더 명시적으로 언급하여 specificity를 높였다. 셋째, 'groundedness'는 유지한다. 텍스트에 근거한 분석이 잘 이루어져 있다. 감점 요인은 없었다."
+          }
+        },
+        "round_2": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 5,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.5,
+            "adjustment_notes": "관대한 심사위원의 평가에 따라 점수를 조정한다. 우선 'score_rationale_consistency'를 5점으로 상향 조정한다. rationale이 essay_text의 내용을 정확하게 반영하고 있으며, 제시된 두 가지 경우의 분석이 명확하게 일치하기 때문이다. 'specificity'를 4점으로 하향 조정하여, 각 경우별로 언급된 구체적인 내용(예: 대기업/공기업의 데이터 활용 가능성, 대학 이름에 쌓인 명예 등)을 좀 더 상세하게 설명하도록 수정했다. 'groundedness'는 유지한다. 텍스트에 근거한 분석이 매우 잘 이루어져 있다. 전반적으로 rationale이 essay_text와 높은 수준에서 일치하며, 구체적인 내용이 추가되어 설득력이 더욱 강화되었다."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 5,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.8,
+            "adjustment_notes": "초기 평가에서 엄격한 심사위원이 제시한 평가를 매우 정확하게 반영하여 점수를 유지한다. 특히, rationales와 essay_text 간의 일치성이 완벽하며, groundedness 또한 높은 점수를 받았다. 본론에서 제시된 다양한 경우에 대한 설명이 조금 더 구체적인 예시를 포함하면 더욱 설득력이 높아질 수 있다는 의견에 동의하지만, 현재 수준으로도 충분히 높은 점수를 받을 만하다는 평가를 반영하여 점수 조정 없이 5점을 유지한다. essay_text의 핵심 내용인 ‘학력’이라는 단어와 관련된 논의가 일관성 있게 전개되고 있으며, 기업 규모에 따른 블라인드 채용 가능성을 고려한 점이 groundedness를 높이는 데 기여했다는 심사위원의 의견을 다시 한번 강조하며, 5점을 유지한다."
+          }
+        },
+        "final": {
+          "domain_match": 4.5,
+          "score_rationale_consistency": 5.0,
+          "specificity": 4.0,
+          "groundedness": 5.0,
+          "overall_judge": 4.7
+        }
+      },
+      "expression": {
+        "round_0": {
+          "strict": {
+            "domain_match": 3,
+            "score_rationale_consistency": 2,
+            "specificity": 2,
+            "groundedness": 4,
+            "overall_judge": 2.8,
+            "rationale_for_score": "1. domain_match: essay_text의 주장을 '학력에 관련된 부분을 가리는 것에 대해서는 회의적이다'라고 명확히 제시했으므로 적절함 (5점). 2. score_rationale_consistency: rationale은 predicted_score와 어느 정도 일치하지만, '일부 표현이 어색하거나 문법적 오류가 보인다'라는 설명이 다소 일반적이어서 설득력이 부족함 (2점). 구체적인 오류 예시를 제시하지 않아 점수 정당화에 미흡함. 3. specificity: '그중에서 학력을 중점적으로 생각했다'와 같은 표현은 구체적인 근거 없이 사용되어 specificity가 낮음 (2점). 더 자세한 문장이나 표현을 지적하여 평가했어야 함. 4. groundedness: essay_text의 내용 ('나는 블라인드 채용을 일부 허용할 수 있다고 생각하지만, 학력에 관련된 부분을 가리는 것에 대해서는 회의적이다.')을 바탕으로 rationale이 구성되었으며, 학력 외 다른 요소들에 대한 고려도 언급되어 있어 grounding이 잘 되어 있음 (5점)."
+          },
+          "lenient": {
+            "domain_match": 3,
+            "score_rationale_consistency": 2,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.0,
+            "rationale_for_score": "전반적으로 rationale은 essay_text의 주장을 잘 반영하고 있지만, 몇 가지 개선의 여지가 있습니다. domain_match는 essay_text의 표현 방식과 일치하여 3점을 부여합니다. score_rationale_consistency는 predicted_score와 rationale 간의 연결이 다소 약하기 때문에 2점을 부여합니다. specificity는 일부 문장이 구체적인 예시를 제시하지만, 더 자세한 설명이 필요합니다 (예: '시험이나 면접으로 구성된 짧은 채용 과정'에 대한 구체적인 평가 기준). groundedness는 essay_text의 내용과 일관성을 유지하며, hallucination 없이 주장을 뒷받침하고 있습니다. 따라서 전반적으로 3.2점을 부여합니다."
+          }
+        },
+        "round_1": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.0,
+            "adjustment_notes": "관대한 심사위원의 평가에 따라 점수를 조정했습니다. rationale이 essay_text의 내용을 더욱 명확하게 반영하도록 수정하고, specificity를 높이기 위해 구체적인 예시를 추가했습니다. 특히, '그중에서 학력을 중점적으로 생각했다'와 같은 표현을 essay_text의 내용과 일치하도록 변경하여 score_rationale_consistency를 개선했습니다. 또한, essay_text에 언급된 블라인드 채용 방식의 한계점을 더욱 구체적으로 설명하여 groundedness를 강화했습니다. 전반적으로 평가 기준 1~4점 모두 충족하는 수준으로 점수를 높였습니다."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 3.8,
+            "adjustment_notes": "초기 평가의 엄격한 심사위원의 의견을 반영하여 점수를 조정했습니다. 특히, rationale이 essay_text에 대한 이해를 명확하게 보여주고 있으며, 구체적인 예시와 함께 논리적 연결이 잘 되어있다는 점을 인정합니다. 그러나, '일부 표현이 어색하거나 문법적 오류가 보인다'는 설명이 다소 일반적이어서 3점으로 조정했습니다. 또한, specificity를 높이기 위해, essay_text에서 언급된 '학력에 관련된 부분을 가리는 것에 대해서는 회의적이다'라는 부분에 대한 구체적인 이유 (대학 이름의 명예, 전공 및 자격증 등)를 좀 더 상세하게 설명하여 grounding을 강화했습니다.  전반적으로, 심사위원의 의견을 적극적으로 반영하여 평가의 정확성을 높였습니다."
+          }
+        },
+        "round_2": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.2,
+            "adjustment_notes": "관대한 심사위원의 평가를 종합적으로 고려하여 점수를 조정했습니다. rationale이 essay_text의 핵심 주장을 정확하게 반영하고 있으며, '어색하거나 문법적 오류'라는 표현 대신 구체적인 예시(대학 이름의 명예, 전공 및 자격증 등)를 제시하여 specificity를 높였습니다. 또한, 심사위원의 의견에 따라 '학력에 관련된 부분을 가리는 것에 대해서는 회의적이다'라는 부분에 대한 이유를 더욱 상세하게 설명하여 groundedness를 강화했습니다.  전반적으로, 심사위원의 평가를 적극적으로 반영하여 essay_text의 강점을 최대한 살리고 약점을 보완하는 방향으로 점수를 조정했습니다."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 5,
+            "groundedness": 5,
+            "overall_judge": 4.5,
+            "adjustment_notes": "초기 평가에서 엄격한 심사위원의 의견을 반영하여 점수를 조정했습니다. rationale이 essay_text의 핵심 내용을 더욱 정확하게 파악하고 있으며, specificity를 높이기 위해 구체적인 예시와 논지를 명확히 제시했습니다. 특히, '그중에서 학력을 중점적으로 생각했다'라는 표현을 essay_text에 직접적으로 언급하여 score_rationale_consistency를 강화했습니다. 또한, 블라인드 채용 방식의 한계점을 보다 상세하게 분석하고, 다양한 기업 규모에 따른 적용 가능성을 고려하여 groundedness를 높였습니다. 전반적으로 평가 기준 1~5점 모두 충족하는 수준으로 점수를 부여하며, essay_text의 내용에 대한 깊이 있는 이해와 논리적인 주장을 보여주는 것으로 판단했습니다."
+          }
+        },
+        "final": {
+          "domain_match": 4.0,
+          "score_rationale_consistency": 4.0,
+          "specificity": 4.5,
+          "groundedness": 5.0,
+          "overall_judge": 4.3
+        }
+      }
+    }
+  }
+]

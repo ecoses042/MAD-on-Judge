@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-0f0789390d67698283cc87b2e046b5c5cd77edb7",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, abruptly ending without mentioning the guard's reaction or the context of the incident."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the crowd's reaction, the recording by a tourist, and the fact that the incident was caught on camera, which are important to understanding the significance of the event."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as inconsistent capitalization of 'Buckingham Palace' and 'Queen's Guard', which affects readability."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention that the guard was embarrassed or that he scrambled to his feet, which are important aspects of the incident."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical sequence of events, detailing the guard's slip and the immediate consequences."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the events described in the article without introducing any new or misleading information."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key incident of the guard slipping and falling, which is the main point of the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as lack of proper capitalization and punctuation, which affects readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 4,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "tie",
+        "consistency": "tie",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-9beaaf73e4517d5bf1bc284f386485d571da96cf",
+  "system_name": "system_8",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow and does not adequately introduce the context of the wedding contest or Priscilla Presley's role."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces a 'bride's mother, Doris Presley,' which is not mentioned in the article and is inconsistent with the source."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The mention of a '$1 million cash prize' is irrelevant and not found in the original article, detracting from the key points."
+        }
+      ],
+      "provisional_score": 1
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear event timeline, mentioning the wedding date and location, which helps in understanding the context."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the main event of the wedding at the Graceland Wedding Chapel and the involvement of Priscilla Presley."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key details of the wedding event, including the location and date, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains a quote that seems out of context and introduces a character (the bride's mother) not mentioned in the article, which disrupts the flow."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The mention of a $1 million cash prize is not present in the article and introduces irrelevant information."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 1,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.0,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

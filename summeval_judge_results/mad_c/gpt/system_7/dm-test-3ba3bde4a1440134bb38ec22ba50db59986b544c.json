@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-3ba3bde4a1440134bb38ec22ba50db59986b544c",
+  "system_name": "system_7",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, as it jumps from the FA Cup semi-final to the incident with Sterling and Ibe without a clear connection."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits important context about Brendan Rodgers' comments regarding professional responsibilities and the implications of the players' actions."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention that Rodgers spoke to Sterling and Ibe about their behavior, which is a significant detail from the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary uses lowercase for 'Liverpool' and 'Reds', which is not standard in English writing."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, outlining the key events leading up to the FA Cup semi-final."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important information, including the incident involving Sterling and Ibe, and the availability of Gerrard for the match."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits important context regarding Brendan Rodgers' comments about the responsibilities of professional athletes, which is a significant part of the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization at the beginning of sentences, which affects its overall fluency."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

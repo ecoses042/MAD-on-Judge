@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-0cd10ad50ceef529d96a255ed12ac9cd001ba9db",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, making it difficult to understand the sequence of events and the victim's experiences."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that Van Ryn was 'sentenced to 12 years in jail,' which is not mentioned in the article. It also misrepresents the victim's statement about breaking her silence."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary includes trivial details, such as the mention of Van Ryn being a 'wealthy NSW businessman,' which does not contribute to the understanding of the case."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, such as 'the bega boss said she was forced to break her silence,' which is unclear."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with Van Ryn's guilty plea and moving to the victim's feelings and experiences."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the key points from the article, including the victim's fear for future relationships and the nature of the abuse."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most significant aspects of the case, such as the guilty plea and the victim's emotional impact."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, making it less readable."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "Some details, such as the mention of a 12-year sentence, are inaccurate or misleading as they were not present in the article."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

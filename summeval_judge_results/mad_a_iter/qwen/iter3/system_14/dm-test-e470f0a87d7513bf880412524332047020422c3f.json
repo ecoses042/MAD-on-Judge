@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-e470f0a87d7513bf880412524332047020422c3f",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source text and covers the main points (price, location, item description, collection owner). However, it scores lower on fluency due to poor capitalization (e.g., 'scarlett o'hara', 'saturday') and lack of sentence variety. It also misses significant relevant details like the specific color change of the dress or the context of the auction being a Heritage Auctions event, which slightly impacts relevance."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is factually consistent with the source text and captures the main points (price, location, item description, collection owner). However, it lacks a clear logical flow or introduction compared to the article's structure, and it omits significant context like the color change of the dress and other top-selling items, which slightly reduces its overall quality. The capitalization errors in the summary text are minor but affect fluency."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is factually accurate (consistent) and covers the main points, but it suffers from significant fluency issues due to a complete lack of capitalization for proper nouns and sentence starters (e.g., 'scarlett o'hara', 'saturday'). This makes the text look unprofessional and reduces readability. Additionally, while it captures the core event, it misses specific details like the dress's color change or the auction house name, which slightly impacts relevance. The scores remain unchanged as the strict judge was appropriately harsh on the fluency aspect."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "Lowered fluency score from 4 to 3 due to significant capitalization errors (e.g., 'scarlett o'hara', 'saturday', 'beverly hills') and lack of punctuation in the summary text, which violates standard English conventions despite being factually consistent."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "No changes made. The lenient judge correctly identified that the strict judge's low fluency score was justified by the complete lack of capitalization for proper nouns and sentence starters (e.g., 'scarlett o'hara', 'saturday'), which renders the text unprofessional. The summary is consistent with the source, covers the main points, but lacks specific details like the color change or auction house name, justifying the relevance score below 5."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary contains significant capitalization errors (e.g., 'scarlett o'hara', 'saturday') and lacks punctuation, which severely impacts readability and adherence to standard English conventions. Therefore, the fluency score remains at 3."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 5.0,
+      "fluency": 3.0,
+      "relevance": 4.0,
+      "overall_judge": 4.0
+    }
+  }
+}

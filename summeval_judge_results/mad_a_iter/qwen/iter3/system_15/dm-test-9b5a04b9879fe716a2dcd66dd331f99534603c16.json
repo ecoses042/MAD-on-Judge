@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-9b5a04b9879fe716a2dcd66dd331f99534603c16",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary contains a severe hallucination: it attributes the claim 'he would quit after he was accused of domestic violence' to Bob Katter. The source text explicitly states that Billy Gordon (not Katter) was forced to quit and admitted to his criminal past; Katter only criticized the government for assuming Gordon would quit. This factual error violates consistency rules strictly. Additionally, the summary is disjointed and fails to capture the main point of Katter's statement regarding the 'black puppet' comment, which is central to the article."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary contains a major hallucination: it attributes the statement 'I would quit after he was accused of domestic violence' to Bob Katter. In reality, the article states that Billy Gordon was the one who was forced to quit. This is a severe consistency failure (hallucination). The coherence is low because the sentences are fragmented and lack logical flow. Fluency is acceptable but choppy. Relevance is average as it covers the main actors but misses the core conflict regarding the 'puppet' comment which is central to the article."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a critical factual error (hallucination) by attributing the intent to quit to Bob Katter instead of Billy Gordon, which violates consistency rules. Additionally, it fails to mention the central topic of the article—the controversial 'black puppet' comment—and is disjointed in its structure."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No adjustment needed. The lenient judge correctly identified the severe consistency error where the summary attributes Billy Gordon's resignation to Bob Katter ('mr katter said he would quit'). This is a hallucination not supported by the text. The fragmented sentence structure also justifies the low coherence score. The summary misses the central 'puppet' controversy, warranting the lower relevance score."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary contains a critical factual error (hallucination) by attributing the intent to quit to Bob Katter instead of Billy Gordon ('mr katter said he would quit' vs 'Mr Gordon was forced to quit'), which violates consistency rules. Additionally, it fails to mention the central topic of the article—the controversial 'black puppet' comment—and is disjointed in its structure."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No adjustment needed. The strict judge correctly identified the critical consistency error where the summary falsely attributes Billy Gordon's resignation to Bob Katter ('mr katter said he would quit'), which is a hallucination not supported by the text. The fragmented sentence structure and lack of logical flow justify the low coherence score. Additionally, the summary fails to cover the central 'puppet' controversy, warranting the lower relevance score."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 1.5,
+      "fluency": 3.5,
+      "relevance": 2.5,
+      "overall_judge": 2.5
+    }
+  }
+}

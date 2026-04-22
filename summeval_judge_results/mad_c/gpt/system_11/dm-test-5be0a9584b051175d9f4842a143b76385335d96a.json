@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-5be0a9584b051175d9f4842a143b76385335d96a",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, abruptly ending without addressing the implications of the Manchester derby loss or the context of the team's performance."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary incorrectly states 'manuel pellegrini's lost' instead of 'manuel pellegrini's team lost,' which misrepresents the subject and introduces an error not present in the source."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary does not mention the total amount of bonuses at stake (£12 million) or the implications of the team's current league position, which are key points in the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The use of 'manchester city players will lose # 500,000-a-man' is awkward and non-idiomatic; the '#' symbol is unnecessary and disrupts the fluency."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the financial implications for Manchester City players and their current situation in the league."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, including the details about player bonuses and the context of their performance in the Manchester derby."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points about the financial stakes for the players and the implications of their performance, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, such as 'manuel pellegrini 's lost' instead of 'Manuel Pellegrini lost'."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 4,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

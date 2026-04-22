@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-d680ebcdcd59fd5ee9b602a06bcd5230c212835b",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is coherent and consistent with the source text, accurately reflecting the main points about Greg Dyke's proposals and the support from former managers. However, it repeats the same core information multiple times (Dyke wants to increase home-grown players) without adding new details or covering other significant aspects mentioned in the article, such as the specific rule changes regarding training age, the warning about England falling behind, or the statistics on eligible players. This repetition and lack of breadth reduce its relevance score."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from severe redundancy and lack of progression. It repeats the same core fact (Dyke wants to increase home-grown players) three times in slightly different ways without adding new information or logical flow. While it is consistent with the text, it fails to capture other key details like the specific rule change regarding training age, the warning about England falling behind, or the context of young talent emergence, making it a poor summary overall."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary is coherent and consistent but suffers from significant redundancy (stating Dyke's goal twice) and lacks breadth regarding key details like the specific rule changes or the warning about England falling behind, which justifies a lower relevance score."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is overly repetitive, stating the main point about increasing home-grown players three times without adding value or progressing logically. It also fails to include significant details from the source text, such as the specific rule change regarding training age (3 years under 18), the warning that England will fall behind other nations, and the context of young talent emerging. Therefore, the scores remain low."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I maintain the strict judge's scores. The summary is coherent and consistent but suffers from significant redundancy (stating Dyke's goal twice) and lacks breadth regarding key details like the specific rule changes or the warning about England falling behind, which justifies a lower relevance score."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment that the summary is repetitive and lacks key details. The strict judge's low scores are justified because the summary repeats the same core fact (Dyke wants to increase home-grown players) three times in slightly different ways without adding new information or logical progression. Furthermore, it completely omits critical context from the article, such as the specific rule change regarding training age, the warning about England falling behind other nations, and the statistics on eligible players. Therefore, I will not raise the scores; they accurately reflect the poor quality of the summary."
+      }
+    },
+    "final": {
+      "coherence": 3.5,
+      "consistency": 5.0,
+      "fluency": 3.5,
+      "relevance": 2.0,
+      "overall_judge": 3.1
+    }
+  }
+}

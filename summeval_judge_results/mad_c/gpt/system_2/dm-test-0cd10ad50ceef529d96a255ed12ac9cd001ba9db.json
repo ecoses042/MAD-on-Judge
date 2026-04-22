@@ -1,0 +1,63 @@
+{
+  "article_id": "dm-test-0cd10ad50ceef529d96a255ed12ac9cd001ba9db",
+  "system_name": "system_2",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, repeating the same sentence about the businessman pleading guilty without providing additional context or details."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to cover key points, such as the impact of the abuse on the victim, her feelings about future relationships, and her struggles with mental health, which are crucial to understanding the severity of the situation."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as the lack of capitalization at the beginning of sentences and inconsistent punctuation."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the key fact that Maurice Van Ryn pleaded guilty to 12 sex offences, including persistent sexual abuse of a child."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary captures the essential information about the young woman's decision to break her silence after learning of Van Ryn's arrest."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear structure and logical flow, repeating the same sentence about Van Ryn's guilty plea."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as the lack of proper sentence structure and punctuation."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 4,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

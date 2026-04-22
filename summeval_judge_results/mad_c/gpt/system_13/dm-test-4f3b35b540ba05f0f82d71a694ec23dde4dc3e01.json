@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-4f3b35b540ba05f0f82d71a694ec23dde4dc3e01",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, as it jumps between details without proper transitions."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that the driver set the vehicle on fire, whereas the article indicates that the suspects did."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the presence of passengers in the car and the investigation by the Los Angeles County Fire Department."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains awkward phrasing and lacks proper punctuation, making it less readable."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with the pouring of gasoline and leading to the attempted carjacking."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, including the details about the suspects, the car, and the incident."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the incident, such as the argument, the carjacking attempt, and the involvement of the grandmother."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains some grammatical issues, such as run-on sentences and awkward phrasing, which affect readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

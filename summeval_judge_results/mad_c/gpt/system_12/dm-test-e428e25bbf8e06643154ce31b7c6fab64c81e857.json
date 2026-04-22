@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-e428e25bbf8e06643154ce31b7c6fab64c81e857",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow and does not connect the information about the speed camera to the context of the house it is directed at."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits key details about the camera being re-pointed at the house and the council's response, which are essential for understanding the situation."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary does not mention the mystery surrounding who re-pointed the camera, which is a significant aspect of the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains awkward phrasing, such as 'Bright yellow gatso had previously enforced,' which could be more clearly articulated."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events regarding the speed camera's enforcement history and its current status."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article about the speed camera being non-functional for two years and the decommissioning of fixed devices in the West Midlands."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points regarding the speed camera's enforcement of the speed limit and its operational status, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as missing subjects and awkward phrasing, which affect readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

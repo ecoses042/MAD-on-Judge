@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-e880fda4c25289f8325574246f0f8ed4ff5eb26b",
+  "system_name": "system_8",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow and does not effectively convey the unique features of the house."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the guide price, the condition of the property, and the auction date, which are important for potential buyers."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary states the house has been 'untouched since the 1930s' but does not mention any upgrades, which could confuse readers."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'which has been untouched since the 1930s' is awkwardly placed and could be more smoothly integrated."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, highlighting the key features of the house and its historical context."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, mentioning the original features and the location of the house without introducing any new facts."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important aspects of the property, such as its original features and historical significance, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary could be improved by enhancing its fluency; it feels somewhat abrupt and could benefit from smoother transitions between points."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 4,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 3.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

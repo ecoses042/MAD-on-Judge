@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-4001b252a072ac149c70840b22299cc6cfab3bae",
+  "system_name": "system_8",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information. It abruptly shifts from Dirar's opinion to a vague statement about Falcao needing to work harder without connecting these ideas."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the idea that 'The Premier League is not the best for Falcao,' which is not mentioned in the article. This introduces a fact not present in the source document."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary does not adequately cover the key points from the article, such as Falcao's struggles at Manchester United and the financial implications of his loan."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'Falcao has to work harder' is somewhat awkward and could be expressed more fluently."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear opinion from Nabil Dirar regarding Falcao's situation, maintaining a logical flow of thought."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary captures the essence of Dirar's belief that Falcao would have been better off at Monaco, which is a key point from the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the idea that 'the Premier League is not the best for Falcao' without direct support from the article, which may misrepresent Dirar's views."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'Falcao has to work harder' feels abrupt and lacks context, which could affect the overall fluency of the summary."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

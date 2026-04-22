@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-31114653cd606fd3f4b1035f98dedd71f8282cd2",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is factually consistent with the source text (no hallucinations) and fluent enough to read. However, it suffers from severe redundancy by repeating the exact same sentence twice in a row, which hurts coherence and relevance. Additionally, it fails to summarize the other significant details present in the article (the 3-0 victory over Israel, the specific date June 12, or the venue context), making it an incomplete summary of the provided text."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary fails the relevance criterion severely because it repeats the exact same sentence twice ('Wales ' crunch euro 2016 qualifier with belgium this summer has been declared a 33,000 sell-out .') and cuts off after the second repetition. It completely ignores the vast majority of the source text's key information (the specific date June 12, the historical context since 1958, the recent victory over Israel, the ticket demand details, and the venue speculation). While the sentences it does include are consistent with the article and grammatically acceptable, the extreme redundancy and lack of coverage make it a very poor summary."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is severely flawed due to extreme redundancy (repeating the first sentence verbatim) and truncation (cutting off mid-summary). It fails to cover key information such as the specific date, the historical context, the recent victory over Israel, or the venue details. Therefore, I maintain the low scores for coherence and relevance."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I have lowered the coherence score from 4 to 3 because the repetition of the exact same sentence ('wales ' crunch euro 2016 qualifier with belgium this summer has been declared a 33,000 sell-out .') creates a disjointed and illogical flow. I agree with the lenient judge's assessment that relevance is severely impacted (score 2) because the summary fails to mention the crucial context of the 3-0 victory over Israel which drove the ticket sales, nor does it include the specific date or venue details found in the text. The consistency and fluency scores remain high as there are no hallucinations and the English is readable despite the structural flaw."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary suffers from extreme redundancy by repeating the first sentence verbatim and truncates abruptly mid-sentence ('...since the 1958 world cup finals in sweden . wales ' euro 2016 qualifier...'), failing to complete the thought or include subsequent key details like the Israel victory context or venue specifics. This structural failure severely impacts coherence and relevance, justifying the low scores."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I have lowered the coherence score from 3 to 2 because the repetition of the exact same sentence is not just a minor flaw but a fundamental structural failure that makes the text nonsensical. I also lowered the fluency score from 4 to 3 because while grammatically correct, the repetitive structure makes it awkward and poor reading. Finally, I reduced the relevance score from 2 to 1 because the summary fails to capture the most critical narrative element: the reason for the sell-out (the 3-0 victory over Israel), rendering the 'sell-out' fact disconnected from its cause."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 5.0,
+      "fluency": 3.5,
+      "relevance": 1.0,
+      "overall_judge": 2.0
+    }
+  }
+}

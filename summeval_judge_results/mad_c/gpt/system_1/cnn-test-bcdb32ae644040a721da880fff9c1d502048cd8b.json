@@ -1,0 +1,71 @@
+{
+  "article_id": "cnn-test-bcdb32ae644040a721da880fff9c1d502048cd8b",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow of information, failing to connect the events surrounding the deaths with the cruise details."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits critical information about the nature of the deaths (murder-suicide) and the involvement of authorities, which are key points from the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the FBI's involvement or the cruise line's cooperation with the investigation, which are important aspects of the original article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as inconsistent capitalization of 'Holland America Line' and missing punctuation."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the location and status of the cruise ship."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article about the cruise line and the timeline of events."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary includes key details about the discovery of the deceased passengers and the cruise itinerary."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization and punctuation, making it less readable."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits critical details about the nature of the deaths and the investigation, which are significant aspects of the article."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

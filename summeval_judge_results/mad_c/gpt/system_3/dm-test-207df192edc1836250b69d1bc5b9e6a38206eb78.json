@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-207df192edc1836250b69d1bc5b9e6a38206eb78",
+  "system_name": "system_3",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information. It jumps from the topic of antibiotics to statistics about obesity in children without connecting the two ideas."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key points from the article, such as the specific findings of the study regarding the relationship between antibiotics and weight gain, and the implications of these findings on the obesity epidemic."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as the lack of capitalization at the beginning of sentences."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the study's findings about boys being more prone to weight gain after antibiotics, which is a significant detail from the source."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical connection between the use of antibiotics in babies and the obesity rates in toddlers, reflecting the main finding of the study."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary captures the key point regarding the correlation between antibiotic use and obesity in toddlers, which is the central theme of the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits important details about the study's findings, such as the specific statistics regarding the percentage of boys and girls who are overweight or obese, which could provide a fuller understanding of the issue."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization and punctuation, making it less readable and fluent."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 4,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

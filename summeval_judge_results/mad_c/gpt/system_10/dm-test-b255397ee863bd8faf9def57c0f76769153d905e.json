@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-b255397ee863bd8faf9def57c0f76769153d905e",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, as it repeats the same information about James Hayward being frisked and having his toy gun confiscated without adding new context or details."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to include key points such as the father's criticism of the security measures, the airport's response, and the eventual replacement of the toy gun, which are essential for understanding the full context of the incident."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the father's name or age, which is present in the article, leading to a lack of consistency with the source document."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains awkward phrasing and lacks smooth transitions between sentences, making it less fluent and harder to read."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, starting with the main event of the toy gun confiscation and providing context about James and his parents."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article without introducing any new facts or misrepresenting the events."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the incident, including the confiscation of the toy gun and the context of the family's travel plans."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains some repetitive phrasing, such as mentioning 'four-year-old James Hayward' twice in close succession, which could be improved for better readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

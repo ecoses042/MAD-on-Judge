@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-3ba3bde4a1440134bb38ec22ba50db59986b544c",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from severe relevance issues due to extreme redundancy. It repeats the exact same core fact (Rodgers spoke to them, reminded them of responsibilities, and did not discipline them) three times in slightly different phrasings within a very short span. While it avoids hallucinations (consistency is good), it fails to synthesize the information effectively, resulting in a poor summary that wastes space on trivial repetition rather than covering other key points like the specific incidents or Rodgers' broader philosophy mentioned in the source."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and strictly consistent with the source text, accurately capturing the main points regarding Rodgers' conversation with Sterling and Ibe and the lack of disciplinary action. It receives a slight deduction on relevance because it omits the specific context of the incidents (nitrous oxide/shisha) which provides the 'reason' for the reminder mentioned in the first sentence, though this is a minor omission given the lenient criteria."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the relevance score from 3 to 2 because the strict judge's criticism of 'extreme redundancy' is valid and severe. The summary repeats the exact same core fact (Rodgers spoke to them, reminded them, didn't discipline them) three times in a very short span without adding any new information or covering other key points like the specific incidents (nitrous oxide/shisha) or Rodgers' broader philosophy on winning/losing mentioned in the source. This makes it a poor summary that wastes space on trivial repetition."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The summary is strictly consistent with the source text and flows logically. The lenient judge's deduction for relevance regarding the omission of specific incident details (nitrous oxide/shisha) is valid; while these are key context points, the summary successfully captures the primary narrative arc: the reminder given, the lack of punishment, and the manager's focus on the upcoming match. No harsher penalties were applied."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I have accepted the lenient judge's assessment regarding relevance. The summary suffers from extreme redundancy by repeating the core fact (Rodgers spoke to them and did not discipline them) three times in a very short span without adding new information or covering other key points from the source text, such as the specific incidents (nitrous oxide/shisha), Rodgers' comments on professional responsibilities, or his philosophy on winning/losing. This makes it a poor summary that wastes space on trivial repetition."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "Adjusted fluency down to 4 because the summary repeats the exact same sentence twice ('Rodgers... spoke to Sterling and Ibe... but neither will be disciplined'), which is redundant and poor writing style. Adjusted relevance down to 3 because the summary omits the specific context of the incidents (nitrous oxide/shisha) and the manager's quote about 'how it gets framed,' which are central to understanding why a reminder was given despite no punishment. The strict judge was too lenient on these omissions."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.5,
+      "fluency": 4.5,
+      "relevance": 2.5,
+      "overall_judge": 3.6
+    }
+  }
+}

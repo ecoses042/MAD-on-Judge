@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-9d0fcbd873927674d12aafce4ae7754fd591d4e2",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is consistent with the source text and uses fluent English, but it suffers from severe redundancy (repeating the same core announcement three times in slightly different ways) and lacks detail about the campaign specifics or quotes, making it feel incomplete despite being factually accurate."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is factually consistent with the source text but suffers from severe redundancy and lack of information density. It repeats the exact same core announcement three times in slightly different phrasings without adding any new details (e.g., specific campaign imagery, agency involvement, or quotes). This makes it trivial and poorly organized compared to a high-quality summary which would synthesize the key points into a concise paragraph."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate: the summary repeats the core announcement three times in slightly different phrasings (severe redundancy) and fails to include any of the specific details present in the article (campaign visuals, quotes from Mark Hargreaves or Ella Henderson, the TV ad launch, etc.), resulting in low relevance."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is factually consistent and grammatically fluent, but it fails significantly on coherence and relevance due to severe redundancy. It repeats the core announcement three times in slightly different ways without synthesizing the information or including any secondary details (like the campaign imagery, agency involvement, or quotes) mentioned in the source text. This lack of information density makes it a poor summary."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary suffers from severe redundancy by stating the same core fact three times in slightly different ways without adding new information. Furthermore, it fails to capture any of the specific details present in the source text (such as campaign visuals, quotes, or the TV ad launch), resulting in a very low relevance score."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I have raised the coherence score from 1 to 2 because, while repetitive, the sentences do follow a logical progression of stating the news and then elaborating on it; it is not completely incoherent. However, I agree with the lenient judge's assessment that relevance is critically low (score 1) due to severe redundancy where the core fact is stated three times without adding value or covering key secondary details like the campaign imagery, agency involvement, or quotes found in the source text."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 5.0,
+      "fluency": 4.0,
+      "relevance": 1.5,
+      "overall_judge": 2.5
+    }
+  }
+}

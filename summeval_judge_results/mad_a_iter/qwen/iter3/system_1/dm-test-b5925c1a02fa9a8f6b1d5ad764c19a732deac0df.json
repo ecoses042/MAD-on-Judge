@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-b5925c1a02fa9a8f6b1d5ad764c19a732deac0df",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is consistent with the source text and captures key facts (Tim Weston's presence, the photo, and specific social media reactions). However, it lacks coherence due to poor sentence structure (e.g., 'when attack happened' instead of 'when the attack happened') and misses significant context like the dog being dead or the video's viral nature. It is leniently scored above 3 because the hallucination rule is not violated, but relevance is slightly lower as it omits the central detail of the deceased pet."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from severe fluency issues due to poor capitalization and punctuation (e.g., 'tim weston', 'new zealander', missing periods). It also lacks coherence as it presents disjointed sentences without connecting the narrative flow logically. While the facts are consistent with the text, the summary misses critical context regarding the dog's death and the video's viral nature, focusing instead on trivial social media comments, which impacts relevance."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "Lowered coherence and fluency scores due to significant grammatical errors ('when attack happened' instead of 'when the attack happened') and poor sentence structure that makes the text read awkwardly. Lowered relevance score because the summary omits the most critical detail from the source: that the dog was dead, which is the central point of the story and the reason for the public reaction. The lenient judge's points about consistency are valid as no hallucinations occurred, but the omission of the 'dead dog' fact severely impacts relevance."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 1,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I lowered the fluency score to 1 because the lack of capitalization and punctuation makes the text grammatically incorrect and difficult to read, confirming the strict judge's assessment. I also reduced coherence to 2 as the sentences are disjointed fragments that fail to form a logical narrative flow. Relevance remains at 3 because while the social media comments are trivial, they are explicitly mentioned in the source text; however, the summary still misses the core event details (the dog being dead and the video going viral). Consistency is maintained at 4 as no false facts were introduced."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 1,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "adjustment_notes": "No changes to scores. The lenient judge correctly identified the severe fluency issues (lack of capitalization and punctuation) and coherence issues (disjointed fragments). The relevance score remains low because the summary omits critical details like the dog being dead and the video's viral status, focusing instead on trivial social media comments."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I lowered the fluency score from 3 to 2 because the grammatical errors ('when attack happened') and lack of capitalization/punctuation make the text significantly harder to read than initially assessed. I also lowered the relevance score from 2 to 1; while the strict judge noted the omission of the dog being dead, this is a catastrophic failure for a news summary where the central event (a crocodile holding a dead pet) is completely missed in favor of trivial social media comments. The summary fails to capture the essence of the story."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 4.5,
+      "fluency": 1.5,
+      "relevance": 2.0,
+      "overall_judge": 2.0
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-26e4e19d945cedcb489f28808c730658139c9415",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from a significant relevance issue: it only covers the first paragraph of the source text, completely omitting key information about other interested clubs (Southampton, Stoke, etc.), United's willingness to sell for £8m, Andreas Pereira's situation, and the specific details about Hernandez's contract. While the included facts are consistent with the article, the summary is incomplete relative to the full source content provided."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is well-structured, fluent, and strictly consistent with the source text. It captures the main news (Orlando City's interest in Javier Hernandez) and key supporting details (coach Adrian Heath, Latin-American fanbase). It receives a 4 for relevance because it omits other significant information present in the article, such as the specific transfer fee (£8m), other interested clubs, and the parallel story about Andreas Pereira, but this is acceptable given the lenient rules allowing benefit of the doubt."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is grammatically perfect and flows well (Fluency 5), and the information presented is accurate to the source (Consistency 4). However, it suffers from a severe relevance issue by ignoring the second half of the article which details other interested clubs, United's willingness to sell, and the story about Andreas Pereira. Therefore, I maintain the low Relevance score and the resulting overall average."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate: the summary is well-structured, strictly consistent with the source text, and fluent. While it omits details like the transfer fee, other interested clubs, and the story about Andreas Pereira (lowering relevance to 4), this is acceptable under the criteria for a news summary focusing on the primary headline event."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "No changes made. The lenient judge correctly identified that while the summary is grammatically perfect and factually consistent with the first half of the article, it completely ignores the second half regarding Andreas Pereira and other European clubs. This constitutes a significant relevance failure, justifying the low score."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The strict judge's assessment is accurate. The summary effectively covers the primary headline event (Orlando City's interest in Hernandez) and includes relevant context about the coach and fanbase. While it omits significant details regarding other interested clubs, transfer fees, and the secondary story about Andreas Pereira, this omission is acceptable for a news summary focusing on the main topic, keeping relevance at 4."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.5,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.5
+    }
+  }
+}

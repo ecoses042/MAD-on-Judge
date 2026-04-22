@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-9beaaf73e4517d5bf1bc284f386485d571da96cf",
+  "system_name": "system_5",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, as it abruptly shifts from Priscilla Presley serving as a witness to details about the winning couple without connecting the ideas."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the contest's requirements, the inclusion of airfares and concert tickets, and Priscilla's comments about the chapel, which are important for understanding the context."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention that the winning couple will be announced next Monday, which is a significant detail from the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'chapel of love' is used without context, making it sound somewhat awkward and less fluent."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, outlining the key event of Priscilla Presley serving as a witness at the wedding and the details of the winning couple's prize."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important information, including the date of the wedding, the location, and the prizes for the winning couple, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits details about the contest and the requirement for couples to submit a video or photos, which are important aspects of the original article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "While the summary is mostly clear, the phrasing could be improved for better readability, such as avoiding repetitive structures."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

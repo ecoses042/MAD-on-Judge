@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-97bbda7ec22a736cd174b51513c72a6372d13d35",
+  "system_name": "system_4",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear structure and logical flow, omitting key contextual details about the auction and the letters' history."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention the auction's outcome, specifically that the only bid was made by a Sotheby's employee, which is crucial information."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not clarify that the letters were owned by Reggie Jackson, which is an important detail from the source."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as inconsistent capitalization and spacing, which affect readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the auction and the owner's intentions."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the auction outcome and Reggie Jackson's desire for the letters to be appreciated by a new generation."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits important details such as the auction's expected price range and the fact that the letters were owned by Reggie Jackson."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as inconsistent capitalization and spacing, which affect readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

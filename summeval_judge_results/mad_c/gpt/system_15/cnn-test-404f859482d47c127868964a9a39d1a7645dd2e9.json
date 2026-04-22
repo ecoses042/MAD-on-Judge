@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-404f859482d47c127868964a9a39d1a7645dd2e9",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, jumping abruptly between points without proper transitions."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits key details from the source, such as the context of the lawsuit and the specific gifts mentioned, which could mislead the reader about the case."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to cover significant aspects of the case, such as the court's decision being a victory for the Sterling family and the implications of the ruling."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains awkward phrasing and lacks idiomatic expressions, making it less engaging to read."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with Donald Sterling's remarks leading to a legal decision against V. Stiviano."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding the lawsuit and the claims made by both Rochelle Sterling and V. Stiviano."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary captures the key points of the article, including the court ruling and the accusations made by Shelly Sterling."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as inconsistent spacing around punctuation and capitalization issues, which affect readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 4,
+      "overall_judge": 3.2,
+      "winner_side": {
+        "coherence": "tie",
+        "consistency": "tie",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

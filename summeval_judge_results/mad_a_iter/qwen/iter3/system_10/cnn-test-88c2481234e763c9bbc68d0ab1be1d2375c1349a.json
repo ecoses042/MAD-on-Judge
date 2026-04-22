@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-88c2481234e763c9bbc68d0ab1be1d2375c1349a",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is factually consistent with the source but suffers from severe relevance issues as it truncates the text mid-sentence after a direct quote without summarizing the subsequent critical details (safe evacuation confirmation, cause of fire, or upcoming performance). Additionally, the fluency score is lowered due to the inclusion of unnecessary LaTeX-style formatting tokens ('-lrb-', '-rrb-') which disrupt readability."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source and flows logically. However, it only covers the first two sentences of the article, omitting key details such as the cause of the fire (tire blowout), the safety of specific individuals (husband, driver, tour manager), the band members not on the bus, and the upcoming performance. While lenient rules allow for a score >= 3, the severe truncation limits relevance significantly."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I lowered the coherence score because the summary ends abruptly mid-quote without concluding the thought or summarizing the rest of the story, creating a disjointed flow. I significantly lowered the relevance score (from 2 to 1) because the strict judge's point about truncating critical details is valid; the summary fails to cover the cause of the fire, the safety confirmation, or the upcoming performance, which are key points in the source text. The fluency score remains at 3 due to the distracting LaTeX tokens ('-lrb-', '-rrb-') mentioned by the strict judge."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary is factually consistent and fluent but suffers from severe truncation regarding relevance. It captures only the initial incident and a quote, missing the cause of the fire (tire blowout), the specific safety status of key individuals mentioned in the text (husband, driver, tour manager), the fate of the bus contents (Bible), the status of other band members, and the upcoming performance context. Therefore, the relevance score remains low (3) as it fails to cover the majority of the source's key information."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate: the summary is truncated mid-sentence (breaking coherence and relevance), contains formatting artifacts ('-lrb-', '-rrb-') affecting fluency, and omits critical details like the cause of the fire and safety confirmations. The scores reflect these specific failures."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is factually accurate and fluent but suffers from severe truncation, omitting critical details such as the cause of the fire (tire blowout), the safety status of specific individuals (husband, driver, tour manager), the fate of the bus contents (Bible), the location of other band members, and the upcoming performance context. These omissions significantly reduce the summary's relevance to the source text."
+      }
+    },
+    "final": {
+      "coherence": 3.0,
+      "consistency": 5.0,
+      "fluency": 3.5,
+      "relevance": 2.0,
+      "overall_judge": 3.0
+    }
+  }
+}

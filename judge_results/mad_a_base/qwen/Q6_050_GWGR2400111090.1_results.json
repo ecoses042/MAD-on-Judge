@@ -1,0 +1,148 @@
+[
+  {
+    "essay_id": "GWGR2400111090.1",
+    "source_id": null,
+    "prompt_id": null,
+    "status": "ok",
+    "gold": null,
+    "prediction": {
+      "content": {
+        "score": 3.0,
+        "rationale": "글의 주제는 '블라인드 채용 폐지'에 대한 반대 의견이어야 하나, 본론에서 블라인드 채용의 장점 (전공 구애 없음, 성차별 방지) 을 설명하는 비중이 압도적으로 크며, 폐지해야 하는 구체적인 이유나 논리적 반박이 부족하다. 결론 부분에서는 오히려 '더 많은 기업이 블라인드 채용을 통해 능력을 중시하면 사회가 발전한다'고 주장하여, 문제의 요구사항인 '폐지에 대한 반대 의견'과 정반대의 결론을 내리고 있다."
+      },
+      "organization": {
+        "score": 3.0,
+        "rationale": "서론, 본론, 결론의 형식적 구조는 갖추고 있으나, 본론이 '장점' 설명으로만 구성되어 있어 논리적 흐름이 단절된다. 서론에서 문제 제기 (스펙 쌓기) 를 하고 본론 앞부분에 장점 설명을 배치한 뒤, 뒷부분에서 헌법적 근거를 들어 오히려 장점을 강화하는 방식으로 전개되어 전체적인 논리 전개가 일관되지 않다."
+      },
+      "expression": {
+        "score": 4.0,
+        "rationale": "전반적으로 문장이 자연스럽고 이해하기 쉽다. 다만, '수면 위로 떠오른 사례', '이전에 비한 업무 저하', '복지에 힘을 부어'와 같이 어색한 표현이나 오타가 몇 군데 보인다."
+      }
+    },
+    "judge": {
+      "content": {
+        "strict_initial": {
+          "domain_match": 2,
+          "score_rationale_consistency": 2,
+          "specificity": 2,
+          "groundedness": 2,
+          "overall_judge": 2.0,
+          "rationale_for_score": "domain_match에서 본론의 내용이 블라인드 채용의 장점에 집중되어 있어 폐지에 대한 반대 의견을 충분히 다루지 못하고 있으며, 결론 또한 요구사항과 상반된 주장을 하고 있어 주요 결함이 존재합니다. score_rationale_consistency에서는 predicted_score가 3점인데 비해 근거가 약해 점수를 정당화하지 못하고 있습니다. specificity와 groundedness 모두 구체적인 예시가 부족하고, essay_text와의 직접적인 연결이 미흡하여 각각 2점 이하로 처리하였습니다."
+        },
+        "lenient_initial": {
+          "domain_match": 4,
+          "score_rationale_consistency": 4,
+          "specificity": 3,
+          "groundedness": 4,
+          "overall_judge": 3.8,
+          "rationale_for_score": "domain_match에서 블라인드 채용의 장점에 대한 설명이 주를 이루고 있지만, 폐지에 대한 반대 의견을 제시해야 하는 요구사항에 대한 논리적 반박이 부족하다는 점에서 4점을 부여하였다. score_rationale_consistency는 rationale이 predicted_score와 일치하며, 결론이 요구사항과 반대라는 점을 잘 지적하고 있어 4점을 주었다. specificity는 블라인드 채용의 장점에 대한 구체적인 예시가 포함되어 있으나, 전반적으로 일반적인 표현이 많아 3점을 부여하였다. groundedness는 essay_text에서 블라인드 채용의 장점과 관련된 내용을 잘 인용하고 있어 4점을 주었다."
+        },
+        "strict_adjusted": {
+          "domain_match": 3,
+          "score_rationale_consistency": 4,
+          "specificity": 3,
+          "groundedness": 4,
+          "overall_judge": 3.5,
+          "adjustment_notes": "domain_match 점수를 4에서 3으로 조정하였습니다. 블라인드 채용의 장점에 대한 설명이 주를 이루고 있으나, 폐지에 대한 반대 의견을 제시해야 하는 요구사항에 대한 논리적 반박이 부족하다는 점이 명확하게 드러났습니다. score_rationale_consistency는 rationale이 predicted_score와 일치하므로 4점을 유지하였습니다. specificity는 여전히 구체적인 예시가 포함되어 있으나, 일반적인 표현이 많아 3점을 유지하였습니다. groundedness는 essay_text에서 블라인드 채용의 장점과 관련된 내용을 잘 인용하고 있어 4점을 유지하였습니다."
+        },
+        "lenient_adjusted": {
+          "domain_match": 2,
+          "score_rationale_consistency": 2,
+          "specificity": 2,
+          "groundedness": 2,
+          "overall_judge": 2.0,
+          "adjustment_notes": "domain_match에서 본론이 블라인드 채용의 장점에 집중되어 있어 폐지에 대한 반대 의견을 충분히 다루지 못한 점을 인정하여 점수를 유지했습니다. score_rationale_consistency에서도 predicted_score가 3점인데 비해 근거가 약하다는 지적을 반영하여 점수를 유지했습니다. specificity와 groundedness 모두 구체적인 예시가 부족하고, essay_text와의 직접적인 연결이 미흡하다는 점을 인정하여 점수를 유지했습니다."
+        },
+        "final": {
+          "domain_match": 2.5,
+          "score_rationale_consistency": 3.0,
+          "specificity": 2.5,
+          "groundedness": 3.0,
+          "overall_judge": 2.8
+        }
+      },
+      "organization": {
+        "strict_initial": {
+          "domain_match": 3,
+          "score_rationale_consistency": 3,
+          "specificity": 2,
+          "groundedness": 3,
+          "overall_judge": 2.8,
+          "rationale_for_score": "domain_match에서 본론의 장점 설명이 단순히 나열되어 있어 논리적 흐름이 단절된 점을 지적했으나, 구체적인 예시가 부족하여 3점으로 평가함. score_rationale_consistency는 predicted_score 3점에 비해 근거가 약한 점을 반영하여 3점으로 처리함. specificity는 구체적인 문장이나 표현 인용이 부족하여 2점으로 평가함. groundedness는 essay_text와의 연결이 일부 있으나, 전반적인 논리 전개에 대한 비판이 명확하지 않아 3점으로 처리함."
+        },
+        "lenient_initial": {
+          "domain_match": 4,
+          "score_rationale_consistency": 4,
+          "specificity": 3,
+          "groundedness": 4,
+          "overall_judge": 3.8,
+          "rationale_for_score": "rationale은 서론, 본론, 결론의 구조를 언급하며, 본론의 장점 설명이 단절된 점을 지적하고 있습니다. 이는 essay_text의 조직 구조와 관련이 있으며, 본론의 내용이 장점 설명으로만 구성되어 있다는 점에서 구체적인 비판을 하고 있습니다. 그러나 본론의 헌법적 근거를 언급하는 부분이 논리적 흐름을 강화하는 방식으로 전개될 수 있다는 점에서 긍정적인 해석도 가능합니다. 따라서 domain_match는 4점으로, score_rationale_consistency는 rationale이 예측 점수와 일치하므로 4점으로 평가했습니다. specificity는 다소 일반적인 표현이 포함되어 있어 3점으로, groundedness는 essay_text에 기반한 내용이므로 4점으로 평가했습니다."
+        },
+        "strict_adjusted": {
+          "domain_match": 4,
+          "score_rationale_consistency": 4,
+          "specificity": 3,
+          "groundedness": 4,
+          "overall_judge": 3.8,
+          "adjustment_notes": "domain_match와 score_rationale_consistency를 4로 조정했습니다. rationale이 서론, 본론, 결론의 구조를 언급하며 본론의 내용이 장점 설명으로만 구성되어 있다는 점을 구체적으로 지적하고 있어 domain_match가 4점으로 적합하다고 판단했습니다. score_rationale_consistency도 rationale이 예측 점수와 일치하므로 4점으로 유지했습니다. specificity는 여전히 일반적인 표현이 포함되어 있어 3점으로 유지했습니다. groundedness는 essay_text에 기반한 내용이므로 4점으로 유지했습니다."
+        },
+        "lenient_adjusted": {
+          "domain_match": 3,
+          "score_rationale_consistency": 3,
+          "specificity": 2,
+          "groundedness": 3,
+          "overall_judge": 2.8,
+          "adjustment_notes": "domain_match는 본론의 장점 설명이 단순히 나열되어 있어 논리적 흐름이 단절된 점을 인정하여 3점을 유지함. score_rationale_consistency는 근거가 약한 점을 반영하여 3점을 유지함. specificity는 구체적인 문장이나 표현 인용이 부족하여 2점을 유지함. groundedness는 essay_text와의 연결이 일부 있으나, 전반적인 논리 전개에 대한 비판이 명확하지 않아 3점을 유지함."
+        },
+        "final": {
+          "domain_match": 3.5,
+          "score_rationale_consistency": 3.5,
+          "specificity": 2.5,
+          "groundedness": 3.5,
+          "overall_judge": 3.3
+        }
+      },
+      "expression": {
+        "strict_initial": {
+          "domain_match": 3,
+          "score_rationale_consistency": 2,
+          "specificity": 2,
+          "groundedness": 3,
+          "overall_judge": 2.5,
+          "rationale_for_score": "domain_match에서 표현의 자연스러움과 이해 용이성을 언급했으나, 구체적인 문장이나 표현의 문제를 지적하지 않아 약점이 있다. score_rationale_consistency는 predicted_score가 4점인데 비해 근거가 약해 2점으로 평가되었다. specificity는 구체적인 예시가 부족하여 2점으로 처리되었고, groundedness는 일부 표현이 essay_text에 나타나지만, 전반적으로 근거가 부족하여 3점으로 평가되었다."
+        },
+        "lenient_initial": {
+          "domain_match": 4,
+          "score_rationale_consistency": 4,
+          "specificity": 3,
+          "groundedness": 4,
+          "overall_judge": 3.8,
+          "rationale_for_score": "expression 기준에서 문장이 전반적으로 자연스럽고 이해하기 쉬운 점은 긍정적으로 평가되지만, 어색한 표현과 오타가 몇 군데 존재하여 경미한 약점이 있다고 판단된다. 따라서 domain_match는 4점으로 평가하였고, rationale과 predicted_score 간의 일치성도 높아 4점을 부여하였다. 다만, 구체적인 예시가 부족하여 specificity는 3점으로 평가하였고, essay_text와의 연결이 잘 이루어져 groundedness는 4점으로 인정하였다."
+        },
+        "strict_adjusted": {
+          "domain_match": 4,
+          "score_rationale_consistency": 4,
+          "specificity": 3,
+          "groundedness": 4,
+          "overall_judge": 3.8,
+          "adjustment_notes": "domain_match와 score_rationale_consistency는 관대한 심사위원의 평가와 일치하여 유지하였고, groundedness도 essay_text와의 연결이 잘 이루어져 있어 유지하였다. specificity는 구체적인 예시가 부족하다는 점에서 3점을 유지하였다. 전체적으로 점수는 변동이 없으나, rationale의 내용이 적절하다는 점을 고려하여 4점으로 평가하였다."
+        },
+        "lenient_adjusted": {
+          "domain_match": 3,
+          "score_rationale_consistency": 2,
+          "specificity": 2,
+          "groundedness": 3,
+          "overall_judge": 2.5,
+          "adjustment_notes": "domain_match 점수를 4에서 3으로 조정했습니다. 표현의 자연스러움과 이해 용이성을 언급했으나, 구체적인 문장이나 표현의 문제를 지적하지 않아 약점이 있었습니다. score_rationale_consistency는 기존 점수를 유지했습니다. predicted_score가 4점인데 비해 근거가 약해 2점으로 평가된 점을 반영했습니다. specificity는 구체적인 예시가 부족하여 2점으로 처리된 점을 유지했습니다. groundedness는 일부 표현이 essay_text에 나타나지만, 전반적으로 근거가 부족하여 3점으로 평가된 점을 유지했습니다."
+        },
+        "final": {
+          "domain_match": 3.5,
+          "score_rationale_consistency": 3.0,
+          "specificity": 2.5,
+          "groundedness": 3.5,
+          "overall_judge": 3.1
+        }
+      }
+    }
+  }
+]

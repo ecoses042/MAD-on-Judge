@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-6372eff07fd3d6f578f90d6115e01747edccc095",
+  "system_name": "system_6",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, jumping between ideas without proper transitions."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key points about the potential applications of the technology, such as restoring power to disaster-hit areas and the successful initial trials."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'someone could potentially use them' which should be 'someone could potentially use them as weapons.'"
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the comparison to the laser system proposed by Tokyo researchers, which is relevant to the context of space lasers."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear focus on Dr. Adrian Quarterman's work with space lasers and their potential applications, maintaining a logical flow of information."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding the potential use of space lasers for powering homes and acknowledges the possibility of weaponization."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary highlights the key points about the purpose of the space lasers and the scientist's background, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, such as 'someone could potentially use them for weapons,' which disrupts the flow."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

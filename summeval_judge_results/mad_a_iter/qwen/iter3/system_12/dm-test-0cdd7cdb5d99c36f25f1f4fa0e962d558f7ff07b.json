@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-0cdd7cdb5d99c36f25f1f4fa0e962d558f7ff07b",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is well-structured, grammatically correct, and fully consistent with the source text. It captures the main news (squad named), context (defending champions), and key details (group opponents). It receives a score of 4 instead of 5 because it omits specific match dates, player names, and squad composition details which are significant parts of the original article, though this is acceptable for a brief summary."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is coherent and consistent with the source text, accurately reflecting the first three sentences of the article. However, it scores lower on relevance because it completely omits the majority of the article's content, including the specific tournament dates, opponents, squad list (goalkeepers, defenders, midfielders, forwards), and key details about specific players like Jay Dasilva or Chris Willock. It functions as a truncated version rather than a comprehensive summary."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is well-structured and consistent with the source text. While it omits specific player names, match dates, and squad composition details found in the article, this is a reasonable trade-off for a brief summary focusing on the core news (squad announcement, status as defending champions, and group draw). No harsher penalties are warranted."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is grammatically sound and logically structured (coherence/fluency), and it accurately reflects the opening facts of the source text without adding external information (consistency). However, it fails significantly on relevance by omitting the vast majority of the article's content, specifically the squad list, player highlights, and specific match details. It reads more like a truncated excerpt than a summary of the key points."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The strict judge's assessment is accurate; the summary effectively captures the core news (squad announcement, defending champion status, and group draw) while appropriately omitting granular details like specific player names and dates for a brief overview."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary is well-structured and factually accurate regarding the opening sentences of the source text (Coherence/Consistency). It contains minor punctuation spacing issues which justify a Fluency score of 4 rather than 5. However, it severely lacks Relevance as it omits the core content of the article: the specific squad list, player highlights (e.g., Jay Dasilva, Chris Willock), and match details. Therefore, the relevance score remains low."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 4.5,
+      "relevance": 3.5,
+      "overall_judge": 4.5
+    }
+  }
+}

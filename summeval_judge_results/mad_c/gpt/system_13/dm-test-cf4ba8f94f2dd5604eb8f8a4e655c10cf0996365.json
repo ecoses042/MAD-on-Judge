@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-cf4ba8f94f2dd5604eb8f8a4e655c10cf0996365",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, omitting key details about the incident, such as the context of the robbery and the reactions of the victims."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to include important information, such as the fact that the robber demanded cash from the owner's daughter and the police's request for public assistance."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention that there were no signs of weapons used, which is a relevant detail from the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains unnecessary spacing around punctuation, which affects readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, outlining the key details of the robbery in a structured manner."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article without introducing any new facts or misrepresenting the events."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important aspects of the robbery, including the description of the offender and the amount stolen, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains unnecessary spaces around punctuation, which affects its overall fluency and readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

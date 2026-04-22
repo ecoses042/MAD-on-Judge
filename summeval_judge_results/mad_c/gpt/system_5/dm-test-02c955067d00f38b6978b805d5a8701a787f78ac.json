@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-02c955067d00f38b6978b805d5a8701a787f78ac",
+  "system_name": "system_5",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, as it abruptly ends without mentioning the first patients flown out or the overall context of the crash."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the number of people involved, the injuries of the first patients, and the fact that some individuals were taken to a different hospital, which are crucial for understanding the incident."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains inconsistent capitalization and spacing, making it less readable."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the multi-vehicle crash, including the location and the number of people involved."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the details from the article, including the involvement of ten people and the specific injuries of the individuals mentioned."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the incident, such as the number of people involved and the injuries sustained, which are central to understanding the event."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as inconsistent capitalization and punctuation, which affect its readability."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits important details, such as the first patients flown out and the involvement of emergency crews, which are significant to the overall understanding of the incident."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 4,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

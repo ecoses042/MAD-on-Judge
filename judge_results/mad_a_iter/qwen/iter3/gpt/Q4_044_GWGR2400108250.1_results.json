@@ -1,0 +1,211 @@
+[
+  {
+    "essay_id": "GWGR2400108250.1",
+    "status": "ok",
+    "prediction": {
+      "content": {
+        "score": 3.0,
+        "rationale": "주장과 근거는 있으나, 설명이 피상적이고 일부 논리 연결이 약하다. 예를 들어, 잊힐 권리에 대한 부정적인 입장을 제시했지만 그 이유가 명확하게 설명되지 않았고, 법적 처벌의 필요성에 대한 주장은 다소 단편적이다."
+      },
+      "organization": {
+        "score": 3.0,
+        "rationale": "기본적인 구조는 있으나 문단 연결이나 전개 순서가 다소 어색하다. 서론에서 문제를 제기한 후 본론에서 법적 처벌에 대한 논의로 넘어가지만, 각 문단 간의 연결이 매끄럽지 않다."
+      },
+      "expression": {
+        "score": 3.0,
+        "rationale": "이해는 가능하나, 표현의 단조로움이나 문법적 어색함이 일부 보인다. 예를 들어, '저희 나라 대한민국의 법률 제 19234호에 따르면' 부분에서 문장이 다소 길고 복잡하여 이해하기 어려운 부분이 있다."
+      }
+    },
+    "judge": {
+      "content": {
+        "round_0": {
+          "strict": {
+            "domain_match": 2,
+            "score_rationale_consistency": 1,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 1.2,
+            "rationale_for_score": "1. domain_match: rationale가 'content' 영역의 평가 기준 (주장, 근거, 논리) 을 언급했으나, 구체적인 내용 분석 없이 추상적인 비판만 제시하여 실질적인 도메인 적합성이 낮음. 2. score_rationale_consistency: predicted_score(3.0) 와 rationale 의 설명이 모순됨. rationale 은 '설명이 피상적', '논리 연결이 약함'이라고 지적했으나, 이는 3 점대 (애매한 중간점) 에 필요한 '양면성'이나 '부분적 타당성'을 설명하지 못함. 오히려 주장과 근거가 전혀 부합하지 않거나 근거 자체가 결여된 경우로 보아 점수 정당화가 실패함. 3. specificity: '법적 처벌의 필요성에 대한 주장은 다소 단편적이다'라는 표현은 구체적인 문장이나 논지 번호를 인용하지 않아 구체성이 부족함. 4. groundedness: rationale 에 언급된 '잊힐 권리에 대한 부정적인 입장'은 essay_text 의 마지막 문단 ('디지털 세계 또는 온라인에서 잊힐 권리에 대해 조금 부정적인 생각을 가지고 있습니다') 과 일치하나, 본문 (2~3 단락) 에서 주장하는 '강한 처벌 필요성', '법 제 19234 호', '예방 교육' 등 핵심 논지와 연결되지 않은 채 표층적인 내용만 인용하여 essay_text 와의 연결 고리가 약함."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.5,
+            "rationale_for_score": "1. domain_match: rationale 는 essay_text 의 '잊힐 권리'에 대한 부정적 인식과 법적 처벌의 한계 등 핵심 주제를 다루고 있어 content 기준을 준수함. 다만 서론/결론 구조나 문법 오류 지적 등 organization/expression 평가 요소가 포함되지 않아 부분적인 영역 불일치 가능성 있음 (하지만 본질은 content 평가이므로 4점). 2. score_rationale_consistency: predicted_score(3.0) 와 rationale('설명이 피상적', '논리 연결이 약함') 이 서로 모순됨을 지적하지 않고 오히려 이를 정당화하는 듯한 어조로 점수가 낮게 나왔음을 설명해야 함. 현재 rationale 은 '약점'만 나열하여 3점을 정당화하지만, essay_text 에서 구체적인 근거 (법 조항 인용 오류 등) 를 언급하지 않아 설득력이 부족함. 따라서 점수-설명 일치도는 3점으로 처리. 3. specificity: '설명이 피상적', '논리 연결이 약함'이라는 표현은 다소 일반적이지만, '잊힐 권리 부정적 입장 이유 불명확', '법적 처벌 주장 단편적'이라는 구체적인 지적을 포함하여 essay_text 의 특정 부분 (법 조항 인용 후 처벌 수위 낮음 주장) 을 가리킴. 4. groundedness: rationale 은 essay_text 에서 실제로 언급된 '법 제 19234 호'와 '처벌 수위가 낮음'이라는 주장을 근거로 삼아 평가하고 있어 hallucination 이 없으며 텍스트 기반임."
+          }
+        },
+        "round_1": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 2,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.0,
+            "adjustment_notes": "1. domain_match: 관대한 심사위원의 평가 (4점) 를 유지함. rationale 은 essay_text 의 핵심 주제 (잊힐 권리, 법적 처벌 한계) 를 다루고 있어 content 기준을 충족하나 organization/expression 요소가 누락된 점은 부분적 불일치로 4점으로 처리함.\n2. score_rationale_consistency: 관대한 심사위원이 지적한 대로 predicted_score(3.0) 와 rationale 의 설명 간 모순이 있음. '설명이 피상적'이라는 generic 표현만 사용하면서 essay_text 에서 구체적으로 지적할 수 있는 명백한 결함 (예: 법 조항 번호 오류, 문법/띄어쓰기 오류 등) 을 언급하지 않아 점수 정당화가 부족함. 따라서 관대한 심사위원의 3점 유지 대신, 근거가 약해져야 할 점수를 반영하여 2점으로 하향 조정함.\n3. specificity: '설명이 피상적', '논리 연결이 약함'이라는 표현은 여전히 generic 한 면이 있으나, '법적 처벌 주장 단편적'이라는 구체적인 지적을 포함하고 있어 essay_text 의 특정 부분 (법 조항 인용 후 처벌 수위 낮음 주장) 을 가리킴. 관대한 심사위원의 3점 유지.\n4. groundedness: rationale 은 essay_text 에서 실제로 언급된 '법 제 19234 호'와 '처벌 수위가 낮음'이라는 주장을 근거로 삼아 평가하고 있어 hallucination 이 없으며 텍스트 기반임. 관대한 심사위원의 4점 유지."
+          },
+          "lenient": {
+            "domain_match": 3,
+            "score_rationale_consistency": 2,
+            "specificity": 1,
+            "groundedness": 2,
+            "overall_judge": 2.0,
+            "adjustment_notes": "1. domain_match: 엄격한 심사위원이 지적한 대로 rationale 은 'content' 기준을 언급했으나 구체적인 내용 분석 없이 추상적 비판만 제시하여 실질적인 도메인 적합성이 낮으므로 점수를 유지합니다. 2. score_rationale_consistency: predicted_score(3.0) 는 애매한 중간점을 의미하나, rationale 은 '설명이 피상적', '논리 연결이 약함'이라는 명확한 결함을 지적하고 있어 오히려 더 낮은 점수 (1~2 점대) 를 정당화합니다. 따라서 점수를 2 점으로 하향 조정합니다. 3. specificity: '법적 처벌의 필요성에 대한 주장은 다소 단편적이다'라는 표현은 구체적인 문장이나 논지 번호를 인용하지 않아 구체성이 부족하므로 엄격한 심사위원의 평가와 같이 1 점으로 유지합니다. 4. groundedness: rationale 은 essay_text 의 마지막 문단만 인용하고 본문 (2~3 단락) 의 핵심 논지와 연결되지 않았으므로, hallucination 이나 근거 부재가 아닌 '연결 고리가 약함'으로 판단하여 2 점으로 조정합니다."
+          }
+        },
+        "round_2": {
+          "strict": {
+            "domain_match": 3,
+            "score_rationale_consistency": 1,
+            "specificity": 1,
+            "groundedness": 2,
+            "overall_judge": 1.8,
+            "adjustment_notes": "1. domain_match: 관대한 심사위원이 '추상적 비판'이라고 평가했으나, rationale 은 '법적 처벌의 필요성', '범행 확률 대비 낮은 처벌 수위', '예방 교육 및 대중화' 등 essay_text 의 구체적인 논지를 언급하고 있으므로 도메인 적합성은 유지합니다. 2. score_rationale_consistency: 관대한 심사위원이 점수를 2 로 낮추었으나, 이는 오히려 rationale 과 모순됩니다. predicted_score(3.0) 는 '주장과 근거가 있음'을 전제로 한 애매한 중간점이나, rationale 은 이를 뒷받침하는 구체적인 근거 (예시 문장 등) 가 전혀 없습니다. 높은 점수 (3) 에 비해 근거가 부재하므로 점수-설명 일관성 기준에서 가장 낮은 1 점으로 조정합니다. 3. specificity: 관대한 심사위원이 유지한 대로 '법적 처벌의 필요성'이라는 표현만 사용하며 구체적인 문장이나 논지 번호를 인용하지 않아 구체성이 부족하므로 1 점을 유지합니다. 4. groundedness: 관대한 심사위원이 '연결 고리가 약함'으로 판단했으나, rationale 은 essay_text 의 마지막 단락 (잊힐 권리 부정적 생각) 을 근거로 삼아 전체적인 결론을 도출하고 있으므로 hallucination 이나 근거 전무가 아닙니다. 다만 본문 논지와 연결이 부족하여 2 점으로 유지합니다."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 2,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.0,
+            "adjustment_notes": "1. domain_match: 관대한 심사위원의 4점을 유지함. rationale 은 essay_text 의 핵심 주제 (잊힐 권리, 법적 처벌 한계) 를 다루고 있어 content 기준을 충족하나 organization/expression 요소가 누락된 점은 부분적 불일치로 4점으로 처리함.\n2. score_rationale_consistency: 관대한 심사위원이 지적한 대로 predicted_score(3.0) 와 rationale 의 설명 간 모순이 있음. '설명이 피상적'이라는 generic 표현만 사용하면서 essay_text 에서 구체적으로 지적할 수 있는 명백한 결함 (예: 법 조항 번호 오류, 문법/띄어쓰기 오류 등) 을 언급하지 않아 점수 정당화가 부족함. 따라서 관대한 심사위원의 3점 유지 대신, 근거가 약해져야 할 점수를 반영하여 2점으로 하향 조정함.\n3. specificity: '설명이 피상적', '논리 연결이 약함'이라는 표현은 여전히 generic 한 면이 있으나, '법적 처벌 주장 단편적'이라는 구체적인 지적을 포함하고 있어 essay_text 의 특정 부분 (법 조항 인용 후 처벌 수위 낮음 주장) 을 가리킴. 관대한 심사위원의 3점 유지.\n4. groundedness: rationale 은 essay_text 에서 실제로 언급된 '법 제 19234 호'와 '처벌 수위가 낮음'이라는 주장을 근거로 삼아 평가하고 있어 hallucination 이 없으며 텍스트 기반임. 관대한 심사위원의 4점 유지."
+          }
+        },
+        "final": {
+          "domain_match": 3.5,
+          "score_rationale_consistency": 1.5,
+          "specificity": 2.0,
+          "groundedness": 3.0,
+          "overall_judge": 2.4
+        }
+      },
+      "organization": {
+        "round_0": {
+          "strict": {
+            "domain_match": 2,
+            "score_rationale_consistency": 1,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 1.2,
+            "rationale_for_score": "1. domain_match: rationale가 '문단 연결'과 '전개 순서'라는 organization 기준을 언급했으나, 구체적인 문장 인용 없이 추상적으로만 평가하여 다른 영역(예: expression)의 기준처럼 보일 수 있어 명확한 혼동 위험이 있음. 2. score_rationale_consistency: predicted_score 3.0은 '애매하게 맞고 틀린 경우'를 의미하나, rationale은 '어색하다'는 부정적 표현만 제시하고 긍정적 요소나 구체적인 문제점을 균형 있게 설명하지 않아 점수 정당화가 부족함. 3. specificity: '문단 연결이 매끄럽지 않다'는 식의 generic 표현만 사용되어 구체적인 문장이나 표현을 지적하지 않음. 4. groundedness: rationale에 언급된 '서론에서 문제를 제기한 후 본론에서 법적 처벌에 대한 논의로 넘어간다'는 서술은 essay_text의 실제 구조 (문제 제기 → 해결 방안 제안) 와 일치하지 않으며, '법적 처벌' 부분만 강조하여 텍스트 전체를 왜곡하는 hallucination 성향이 있음."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 5,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 4.0,
+            "rationale_for_score": "1) domain_match: rationale 가 '문단 연결', '전개 순서' 등 organization 도메인의 핵심 기준을 명확히 적용함. 다만 '매끄럽지 않다'는 표현이 다소 일반적이어서 4점. 2) score_rationale_consistency: predicted_score(3.0) 와 '어색하다', '매끄럽지 않다'는 설명이 완벽하게 일치하여 5점 만점. 3) specificity: '서론-본론' 구조를 언급하고 구체적인 연결 문제 (법적 처벌 논의로 넘어가는 부분) 를 지적했으나, 문장 번호나 구체적인 표현 인용이 부족하여 3점. 4) groundedness: essay_text 의 실제 흐름 (개인정보 보호 법 조항 인용 후 처벌 수위 논쟁) 을 근거로 삼았으나, '법 제 19234 호'라는 구체적인 명칭은 사실과 다를 수 있으나 rationale 은 이를 '이미 존재하는 법'이라는 맥락에서 해석하여 hallucination 이 아닌 groundedness 로 인정 가능하나, 연결성 지적이 추상적이라 4점."
+          }
+        },
+        "round_1": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 3,
+            "specificity": 2,
+            "groundedness": 1,
+            "overall_judge": 2.0,
+            "adjustment_notes": "1) domain_match: 관대한 심사위원이 organization 도메인 기준 (문단 연결, 전개 순서) 을 적용한 점은 인정하나, '매끄럽지 않다'는 표현은 구체적인 조직적 결함을 지적하지 못해 4점으로 낮춤. 2) score_rationale_consistency: 점수 3.0 은 '경미한 약점'을 의미해야 함. 하지만 rationale 이 '문단 연결 어색함'이라는 매우 경미한 문제만 지적하고 있어, 실제 글의 심각한 논리적 단절 (법적 근거 오류 등) 을 반영하지 못해 점수와 설명 간 괴리가 커 3점으로 감점. 3) specificity: '서론-본론 구조 언급'과 '법적 처벌 논의 전환'은 구체적이지만, 문장 번호나 구체적인 표현 인용이 부족하여 2점으로 조정. 4) groundedness: 관대한 심사위원이 '법 제 19234 호'를 essay_text 에 존재하는 내용으로 인정했으나, 이는 명백한 환각 (hallucination) 이다. 실제 텍스트에는 '제 19234 호'라는 번호가 없으며, 이는 근거 없는 발명임. 따라서 groundedness 기준을 위반하여 1점으로 강하 조정."
+          },
+          "lenient": {
+            "domain_match": 2,
+            "score_rationale_consistency": 1,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 1.2,
+            "adjustment_notes": "엄격한 심사위원의 지적대로 기존 점수 (3.0) 를 유지할 수 없으며, 모든 항목을 하향 조정합니다. 1. domain_match: rationale 은 '문단 연결'과 '전개 순서'라는 organization 기준을 언급했으나 구체적인 문장 인용 없이 추상적으로만 평가하여 다른 영역의 기준처럼 보일 수 있어 명확한 혼동 위험이 있습니다. 2. score_rationale_consistency: predicted_score 3.0 은 '애매하게 맞고 틀린 경우'를 의미하나, rationale 은 부정적 표현만 제시하고 긍정적 요소나 구체적인 문제점을 균형 있게 설명하지 않아 점수 정당화가 부족합니다. 3. specificity: '문단 연결이 매끄럽지 않다'는 식의 generic 표현만 사용되어 구체적인 문장이나 표현을 지적하지 않았습니다. 4. groundedness: rationale 에 언급된 구조 분석은 essay_text 의 실제 내용과 일치하지 않으며, 텍스트 왜곡이 있습니다."
+          }
+        },
+        "round_2": {
+          "strict": {
+            "domain_match": 2,
+            "score_rationale_consistency": 1,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 1.2,
+            "adjustment_notes": "관대한 심사위원의 초기 평가 (3.0) 를 유지할 수 없으며, 모든 항목을 하향 조정합니다. 1. domain_match: rationale 은 '문단 연결'과 '전개 순서'라는 organization 기준을 언급했으나 구체적인 문장 인용 없이 추상적으로만 평가하여 다른 영역의 기준처럼 보일 수 있어 명확한 혼동 위험이 있습니다. 2. score_rationale_consistency: predicted_score 3.0 은 '애매하게 맞고 틀린 경우'를 의미하나, rationale 은 부정적 표현만 제시하고 긍정적 요소나 구체적인 문제점을 균형 있게 설명하지 않아 점수 정당화가 부족합니다. 3. specificity: '문단 연결이 매끄럽지 않다'는 식의 generic 표현만 사용되어 구체적인 문장이나 표현을 지적하지 않았습니다. 4. groundedness: rationale 에 언급된 구조 분석은 essay_text 의 실제 내용과 일치하지 않으며, 텍스트 왜곡이 있습니다."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 2,
+            "groundedness": 1,
+            "overall_judge": 2.0,
+            "adjustment_notes": "1) domain_match: 관대한 심사위원이 지적한 대로 '매끄럽지 않다'는 표현은 구체적인 조직적 결함 (문단 연결의 구체적 사례 등) 을 지적하지 못해 감점 필요. 따라서 5점이 아닌 4점으로 조정. 2) score_rationale_consistency: 점수 3.0 은 경미한 약점을 의미해야 함. 하지만 rationale 이 '문단 연결 어색함'이라는 매우 경미한 문제만 지적하고 있어, 실제 글의 심각한 논리적 단절 (법적 근거 오류 등) 을 반영하지 못해 점수와 설명 간 괴리가 커 감점 유지 (3점). 3) specificity: '서론-본론 구조 언급'과 '법적 처벌 논의 전환'은 구체적이지만, 문장 번호나 구체적인 표현 인용이 부족하여 2점으로 조정. 4) groundedness: 관대한 심사위원이 '법 제 19234 호'를 essay_text 에 존재하는 내용으로 인정했으나, 이는 명백한 환각 (hallucination) 이다. 실제 텍스트에는 해당 법 번호가 없으며, 이는 근거 없는 발명임. 따라서 groundedness 기준을 위반하여 1점으로 강하 조정."
+          }
+        },
+        "final": {
+          "domain_match": 3.0,
+          "score_rationale_consistency": 2.0,
+          "specificity": 1.5,
+          "groundedness": 1.0,
+          "overall_judge": 1.6
+        }
+      },
+      "expression": {
+        "round_0": {
+          "strict": {
+            "domain_match": 3,
+            "score_rationale_consistency": 2,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 1.8,
+            "rationale_for_score": "1. domain_match: 'expression' 영역 평가 기준을 준수했으나, 구체적인 문장 분석이 부족하여 표현의 질을 입증하기엔 한계가 있습니다. 2. score_rationale_consistency: predicted_score(3.0)는 '문법적 어색함'과 '단조로움'을 지적해야 하지만, rationale은 '법률 제 19234호'라는 존재하지 않는 구체적인 오류를 근거로 삼아 점수를 정당화하지 못했습니다. 이는 점수-설명 모순입니다. 3. specificity: '문장이 길고 복잡하다'는 표현만 사용했을 뿐, 실제로 어떤 문장에서 어떻게 어색한지 구체적 예시 (예: '형상 처벌', '법률 제 19234호') 를 명시하지 않았습니다. 4. groundedness: rationale에 포함된 '대한민국의 법률 제 19234호'는 essay_text에는 존재하지만, 이는 사실 오류 (hallucination) 가 아닌 평가자의 허구적 근거입니다. 또한 '법률 제 19234호'라는 잘못된 정보를 인용하여 평가의 신뢰성을 떨어뜨렸습니다."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 5,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 4.0,
+            "rationale_for_score": "1) domain_match: 평가 대상이 'expression'이며, rationale 은 문장 길이와 복잡성 등 표현의 난해함을 지적하여 영역 기준을 준수함 (4점). 2) score_rationale_consistency: 예측 점수 3.0(보통/약점 존재) 과 rationale 의 '단조로움', '어색함' 지적이 완벽하게 일치하며, 오히려 근거가 매우 명확하여 5점 부여 (5점). 3) specificity: '법률 제 19234호에 따르면'이라는 구체적인 문장 지정을 포함하고 있으나, '단조로움'이라는 표현은 텍스트의 다양한 어휘 사용과 직접 연결된 구체적 예시가 부족하여 3점 (3점). 4) groundedness: 지적한 긴 문장은 essay_text 에 실제로 존재하므로 hallucination 이 없으나, '단조로움'에 대한 구체적인 근거가 명시되지 않아 완전한 연결성에는 미치지 못함 (4점)."
+          }
+        },
+        "round_1": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 3,
+            "specificity": 2,
+            "groundedness": 4,
+            "overall_judge": 3.0,
+            "adjustment_notes": "1) domain_match: 관대한 심사위원이 'expression' 기준을 준수했다고 평가했으나, rationale 은 단순히 문장이 길다고만 언급하고 구체적인 어휘의 적절성이나 문법 오류 (예: '형상 처벌', '지킬 수 있는 권리' 등) 를 구체적으로 지적하지 않아 표현 영역의 핵심 기준인 '적절한 어휘 사용'과 '문법/맞춤법'을 충분히 평가하지 못함. 따라서 5점으로 상향 조정하여 명확한 근거 부족을 지적함. 2) score_rationale_consistency: 관대한 심사위원이 점수 3.0 에 대해 rationale 의 근거가 매우 명확하다고 5점을 부여했으나, 이는 모순됨. '단조로움'이라는 추상적 표현만으로는 3점 (보통/약점 존재) 을 정당화하기에 부족하며, 오히려 구체적인 결함 설명이 부재하여 점수 방어력이 약함. 따라서 일관성 기준을 3점으로 하향 조정함. 3) specificity: 관대한 심사위원이 '법률 제 19234호'라는 구체적 인용으로 3점을 유지했으나, '단조로움'이라는 지적에 대한 구체적인 문장 예시나 어휘 분석이 전혀 없어 generic 한 평가임. 따라서 구체성 기준을 2점으로 하향 조정함. 4) groundedness: 지적한 긴 문장은 essay_text 에 실제로 존재하므로 hallucination 이 없으나, '단조로움'에 대한 근거가 부족하여 완전한 연결성은 미치지 못함. 관대한 심사위원의 평가와 동일하게 4점 유지."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 2,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 2.0,
+            "adjustment_notes": "엄격한 심사위원의 지적대로 조정합니다. 1) domain_match: 'expression' 영역 기준을 사용했으므로 기존 3점을 유지합니다. 2) score_rationale_consistency: 점수 (3점) 와 근거 ('단조로움', '문법적 어색함') 가 일치하지만, 근거가 매우 약하고 구체적이지 않아 점수를 낮추기엔 부족하나 높이기엔 결함이 명확하므로 기존 2점을 유지합니다. 3) specificity: '문장이 길고 복잡하다'는 등 구체적인 예시 없이 일반화한 설명만 있어 감점 기준에 해당하므로 1점으로 하향 조정합니다. 4) groundedness: rationale 에 포함된 '법률 제 19234호'는 essay_text 에 존재하지만, 이는 평가자가 사실을 왜곡하거나 허구적인 근거로 삼은 경우 (hallucination of fact/error citation) 로 간주되어 신뢰성이 떨어지므로 감점 기준에 해당하여 1점으로 하향 조정합니다."
+          }
+        },
+        "round_2": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 2,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 2.0,
+            "adjustment_notes": "관대한 심사위원의 초기 평가 (3점) 를 재검토한 결과, 엄격한 기준에 따라 점수를 하향 조정합니다. 1) domain_match: rationale 이 '단조로움', '문법적 어색함' 등 expression 영역의 표현 문제를 지적했으므로 기존 5점을 유지합니다. 2) score_rationale_consistency: 예측 점수 3점과 근거 ('어색함') 가 일치하지만, 근거가 매우 약하고 구체적이지 않아 점수를 낮추기엔 부족하나 높이기엔 결함이 명확하므로 관대한 심사위원의 판단대로 2점으로 조정합니다. 3) specificity: '문장이 길고 복잡하다'는 등 구체적인 예시 없이 일반화한 설명만 있어 감점 기준에 해당하므로 1점으로 하향 조정합니다. 4) groundedness: rationale 에 포함된 '법률 제 19234호'는 essay_text 에 존재하지만, 이는 평가자가 사실을 왜곡하거나 허구적인 근거로 삼은 경우 (hallucination of fact/error citation) 로 간주되어 신뢰성이 떨어지므로 감점 기준에 해당하여 1점으로 하향 조정합니다."
+          },
+          "lenient": {
+            "domain_match": 2,
+            "score_rationale_consistency": 3,
+            "specificity": 2,
+            "groundedness": 4,
+            "overall_judge": 2.8,
+            "adjustment_notes": "1) domain_match: 관대한 심사위원이 5점을 주었으나, 엄격한 심사위원의 지적대로 rationale 이 '형상 처벌'이나 '지킬 수 있는 권리' 같은 구체적인 어휘 오류나 문법 문제를 언급하지 않고 단순히 '문장이 길다'고만 하여 표현 영역 기준을 충족하지 못함. 따라서 감점하여 2점으로 조정함. 2) score_rationale_consistency: 점수 3.0 은 보통/약점이 존재함을 의미하나, rationale 이 제시한 근거가 매우 약하고 구체적이지 않아 점수를 방어하기 부족함. 엄격한 심사위원의 지적대로 일관성 기준을 3점 (애매하게 맞음) 으로 유지함. 3) specificity: '단조로움'이라는 추상적 표현만 사용되고, 구체적인 문장 예시나 어휘 분석이 없어 generic 한 평가임. 따라서 구체성 기준을 2점으로 하향 조정함. 4) groundedness: 지적한 긴 문장은 essay_text 에 실제로 존재하므로 hallucination 이 없으나, '단조로움'에 대한 근거가 부족하여 완전한 연결성은 미치지 못함. 관대한 심사위원의 평가와 동일하게 4점 유지."
+          }
+        },
+        "final": {
+          "domain_match": 3.5,
+          "score_rationale_consistency": 2.5,
+          "specificity": 1.5,
+          "groundedness": 2.5,
+          "overall_judge": 2.4
+        }
+      }
+    }
+  }
+]

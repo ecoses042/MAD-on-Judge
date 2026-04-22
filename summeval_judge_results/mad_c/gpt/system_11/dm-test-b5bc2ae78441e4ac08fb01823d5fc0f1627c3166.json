@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-b5bc2ae78441e4ac08fb01823d5fc0f1627c3166",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, jumping between topics without smooth transitions, particularly between Downton's dismissal and Pietersen's emotions."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary implies that Downton's dismissal directly relates to Pietersen's potential return, which is not explicitly stated in the article. This introduces an interpretation not present in the source."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary does not mention key details such as the upcoming match against Glamorgan or the context of Pietersen's last international appearance, which are important for understanding the situation."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'you do n't' instead of 'you don't', which affects readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, starting with the dismissal of Paul Downton and smoothly transitioning to Kevin Pietersen's emotions during the team photo."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the article, highlighting both the significance of Downton's dismissal and Pietersen's potential return to the England team."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'you do n't' instead of 'you don't', which affects its readability."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "While the summary captures the main themes, it lacks some details about the context of Pietersen's return and the significance of the county championship season."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

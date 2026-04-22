@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-0cd10ad50ceef529d96a255ed12ac9cd001ba9db",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and strictly consistent with the source text. It captures the main narrative arc (victim speaking out after perpetrator's arrest) and key legal details. It receives a slightly lower relevance score because it omits significant emotional details from the article, such as the victim's fear for future relationships, her history of self-harm, and Van Ryn's demeanor in court, which were central to the original text's impact."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and strictly consistent with the source text. It captures the main narrative arc (victim speaking out after perpetrator's arrest) and key facts (12 offences). However, it scores a 4 for relevance because it omits significant details present in the article regarding the severe psychological impact on the victim (depression, self-harm, fear of future relationships), which are central to the 'severe impact' mentioned in the first sentence. A perfect summary would likely include these consequences."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The lenient judge's assessment is accurate. The summary strictly adheres to the source text (consistency) and presents a logical flow of information (coherence). While it omits specific emotional details like the victim's fear for future relationships or Van Ryn's demeanor in court, these omissions are justified by the summary's brevity; the core narrative arc and legal facts are preserved. Therefore, no harsher penalty is warranted."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. While the summary is grammatically perfect and factually consistent, it fails to adequately address the 'severe impact' mentioned in the opening sentence by omitting the specific details of depression, self-harm, and fear regarding future relationships found in the source text. Therefore, I maintain the relevance score at 4 rather than inflating it."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The strict judge's assessment is accurate. The summary effectively captures the core narrative arc and legal facts while appropriately omitting specific emotional details due to brevity constraints. No harsher penalty is warranted."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The lenient judge correctly identified that the summary omits specific details regarding the 'severe impact' (depression, self-harm, fear of future relationships) mentioned in the first sentence of the source text. While the summary is grammatically perfect and factually consistent, it fails to cover these key points about the victim's experience, making a score of 5 inappropriate for relevance. The strict judge's assessment stands."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 4.0,
+      "overall_judge": 4.8
+    }
+  }
+}

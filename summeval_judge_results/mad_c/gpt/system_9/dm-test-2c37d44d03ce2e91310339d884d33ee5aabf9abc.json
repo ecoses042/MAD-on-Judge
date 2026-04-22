@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-2c37d44d03ce2e91310339d884d33ee5aabf9abc",
+  "system_name": "system_9",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, jumping abruptly from the incident to the charges without proper context."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately implies that the parents 'jumped in' to rescue the boy, while the article states they rescued him before emergency services arrived."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits important details such as the child's injuries and the eyewitness accounts, which are significant to understanding the incident."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'boy, 2, slipped into cheetah pit' is awkwardly structured and lacks proper capitalization, affecting readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with the incident and concluding with the zoo's response."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, including the child's fall, the parents' actions, and the zoo's plans for charges."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the incident, such as the child's fall, the rescue, and the potential legal consequences for the parents."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization and punctuation, making it less fluent and harder to read."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 4,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "tie",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

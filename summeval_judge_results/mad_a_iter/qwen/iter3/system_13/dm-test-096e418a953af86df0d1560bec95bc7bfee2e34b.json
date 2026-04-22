@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-096e418a953af86df0d1560bec95bc7bfee2e34b",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is coherent and fluent but suffers from significant relevance issues by omitting the match result (6-1 win) and key scorers, which are central to the article's narrative of Bayern's dominance. It also fails consistency slightly by truncating the quote without attribution context found in the source."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is coherent and consistent with the source text, accurately capturing the main anecdote about Guardiola's torn trousers. However, it is very brief and lacks fluency due to missing punctuation (e.g., 'guardiola' instead of 'Guardiola', lack of periods). It also misses significant relevant details from the article, such as the match score (6-1), the specific goalscorers, and the context of Porto's previous lead, which lowers its relevance score."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. While the summary is grammatically correct and coherent, it fails to capture the primary news value of the article: the 6-1 victory and the specific scorers. The 'ripped trousers' incident is a secondary anecdote that becomes trivial without the context of the dominant performance described in the source text."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary is coherent and consistent but suffers from a lack of capitalization and punctuation (fluency issue) and omits significant factual details like the final score and goalscorers (relevance issue). No scores were raised as the content in the summary does not introduce new facts, nor does it contain errors that would warrant a lower consistency or coherence rating."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the lenient judge's points regarding relevance. The summary focuses entirely on the anecdotal incident of the ripped trousers and Guardiola's joke, completely omitting the primary news value of the article: the decisive 6-1 victory and the specific goalscorers (Thiago Alcantara, Jerome Boateng, Thomas Muller, Xabi Alonso, Robert Lewandowski). Without this context, the summary presents a trivial detail as the main story, failing to cover the key points of the source text."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I maintain the strict judge's scores. The summary is coherent and consistent with the text, but it lacks proper capitalization and punctuation (fluency issue). More importantly, it omits significant factual details such as the final score (6-1) and the names of the goalscorers, which are key points in the source article (relevance issue). Therefore, no upward adjustment is warranted."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.5,
+      "fluency": 4.0,
+      "relevance": 3.0,
+      "overall_judge": 4.1
+    }
+  }
+}

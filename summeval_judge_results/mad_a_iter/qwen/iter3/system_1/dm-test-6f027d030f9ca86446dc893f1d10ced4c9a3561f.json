@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-6f027d030f9ca86446dc893f1d10ced4c9a3561f",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.5,
+        "rationale_for_score": "The summary is coherent and relevant, covering the main points of the first paragraph of the source text. However, it contains a clear hallucination/error in consistency: it changes the salary figure from '£100,000' (pounds) to '# 100,000'. Since the instruction is to penalize only clear hallucinations and this is a factual error regarding the currency symbol present in the source, it prevents a perfect score. The summary stops abruptly after the first paragraph's details, missing other key info like the contract duration or Henderson's stats, but given the lenient rules, it still passes the threshold for an average-to-good score."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is coherent and relevant to the first paragraph of the source text. However, it fails the consistency criterion due to a hallucination/error: it transcribes '£100,000' as '# 100,000'. Additionally, while the summary covers the main points of the first section, it completely ignores the significant additional information present in the rest of the article (specifically details about his weekly wage, contract duration until 2020, and his role as a potential future captain), resulting in an incomplete summary relative to the full source text."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "Adjusted consistency score down from 4 to 3. The lenient judge acknowledged the currency symbol error (# instead of £) as a 'clear hallucination/error' but still gave a high score. As a strict evaluator, I must penalize this factual inconsistency more heavily since it alters the specific value mentioned in the source text. Additionally, while the summary covers the first paragraph well, it completely ignores the second half of the article containing key details about contract duration (until 2020), Henderson's stats (13 assists, 7 goals), and his potential role as captain. This lack of coverage warrants a lower relevance score (4 instead of 5) compared to the lenient judge's assessment."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.8,
+        "adjustment_notes": "I lowered the consistency score from 4 to 3 because the strict judge correctly identified a factual error where '£100,000' was transcribed as '# 100,000'. I also lowered the relevance score from 4 to 3 because the summary is extremely truncated; it ignores significant details present in the source text such as the contract duration (until 2020), the specific weekly wage amount (£100k-a-week), and the context of Henderson potentially replacing Steven Gerrard as captain. While the grammar is good, the omission of these key facts makes the summary incomplete relative to the full article."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 2,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "Significantly lowered consistency score to 2 because the summary contains a factual error ('# 100,000' instead of '£100,000'), which violates the requirement for information consistent with the source document. Lowered relevance score to 2 as the summary is extremely truncated; it ignores the contract duration (until 2020), Henderson's specific stats (13 assists, 7 goals), his potential captaincy role, and the context of other players' contracts mentioned in the second half of the article. Fluency is lowered to 3 due to the typo and slightly awkward phrasing ('likely be worth'). Coherence remains high as the single paragraph flows logically."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.8,
+        "adjustment_notes": "I have accepted the lenient judge's points regarding consistency and relevance. The summary contains a factual error ('# 100,000' instead of '£100,000'), which justifies lowering the consistency score to 3. Additionally, the summary is significantly truncated compared to the source text, omitting key details such as the contract duration (until 2020), the specific weekly wage (£100k-a-week), and the context of Henderson potentially replacing Steven Gerrard as captain. These omissions justify lowering the relevance score to 3. The coherence and fluency scores remain high as the text is well-structured and grammatically sound despite the truncation."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 2.5,
+      "fluency": 3.5,
+      "relevance": 2.5,
+      "overall_judge": 3.4
+    }
+  }
+}

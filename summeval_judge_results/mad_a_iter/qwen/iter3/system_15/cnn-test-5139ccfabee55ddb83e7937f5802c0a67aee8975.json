@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-5139ccfabee55ddb83e7937f5802c0a67aee8975",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary accurately captures the main points of the article: the complaint, the specific aircraft involved, the location, the disputed transponder status, and the U.S. crew's assessment of the maneuvers. It is consistent with the source text (no hallucinations) and highly relevant. The score is slightly reduced from 5 only due to minor fluency issues such as sentence fragmentation and lack of standard capitalization/punctuation, which makes it less polished but still readable."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is consistent with the source text and covers key points (the complaint, aircraft types/locations, transponder claim denial, and crew assessment). However, it scores lower on fluency due to poor sentence structure and punctuation (e.g., 'u.s. command says the transponder was off was false' lacks proper attribution or phrasing like 'officials said the claim...'). It also omits the specific context of diplomatic channels being used and the historical precedent mentioned in the article, slightly reducing relevance/completeness."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 5,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I lowered the fluency score from 4 to 3 because the summary lacks standard capitalization and punctuation (e.g., 'the united states', missing periods between sentences), which significantly impacts readability despite the content being accurate. I slightly reduced the overall judge score to reflect this lack of polish, while maintaining high scores for coherence, consistency, and relevance as the lenient judge correctly identified."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is factually consistent and covers the main points, but the fluency score of 3 is justified due to the lack of capitalization (e.g., 'u.s.', 'moscow'), missing punctuation at the end of sentences, and slightly clunky phrasing ('u.s. command says...'). While not a critical failure, these issues prevent it from being polished professional English. I maintain the strict judge's scores as they accurately reflect the trade-off between content coverage and linguistic quality."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 5,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment regarding fluency. The summary lacks standard capitalization and sentence-ending punctuation, which significantly impacts readability and professionalism. While the content is accurate (consistent) and covers the key points (relevant/coherent), the lack of basic formatting prevents a higher fluency score. Therefore, I maintain the scores provided by the strict judge."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "No changes to scores. The lenient judge correctly identified that while the content is accurate and relevant, the lack of capitalization (e.g., 'u.s.', 'moscow') and missing terminal punctuation significantly impact fluency, justifying a score of 3 rather than higher. The summary is functional but not polished."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 5.0,
+      "fluency": 3.0,
+      "relevance": 4.5,
+      "overall_judge": 4.1
+    }
+  }
+}

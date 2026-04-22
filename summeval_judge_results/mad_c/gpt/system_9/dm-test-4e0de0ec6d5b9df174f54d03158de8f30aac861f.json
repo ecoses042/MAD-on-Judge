@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-4e0de0ec6d5b9df174f54d03158de8f30aac861f",
+  "system_name": "system_9",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, jumping abruptly between points without smooth transitions."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits significant details about Ozil's performance and his comments on adjusting to English football, which are key points in the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains a grammatical error with the phrase 'playing with his dog on wednesday' which should capitalize 'Wednesday'."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention Ozil's previous illness or the controversy regarding his nightclub visit, which are relevant to understanding his current situation."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with Ozil's social media post, followed by his performance in the international match, and concluding with his upcoming game against Liverpool."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of Ozil's recent activities, including his performance and expectations for the upcoming match, which are the most important aspects of the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits details about Ozil's previous illness and the context of his performance since returning from injury, which are relevant to understanding his current form."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks some fluency due to its simplistic sentence structure and could benefit from more varied phrasing."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 4,
+      "relevance": 3,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

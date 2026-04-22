@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-b8b6e729fff27c4eef87887e61d3448de9c063f6",
+  "system_name": "system_7",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information and does not connect the points effectively."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details about the launch, the Dragon spacecraft, and the significance of the mission, focusing instead on a few isolated facts."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately implies that the rocket successfully landed, which contradicts the article's details about it tipping over."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as the lack of proper capitalization at the beginning of sentences."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding SpaceX's mission and its goals."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on key points such as the rocket's landing attempt, the mission's significance, and the cost-cutting goals of SpaceX."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits important details about the unsuccessful landing attempt and the specifics of the Dragon's mission to the ISS."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization and punctuation, making it less readable."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.0,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

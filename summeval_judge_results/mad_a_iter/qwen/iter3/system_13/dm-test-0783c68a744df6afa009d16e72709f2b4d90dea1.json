@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-0783c68a744df6afa009d16e72709f2b4d90dea1",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is consistent with the source and covers key facts (dates, team, quote). However, it repeats the phrase 'compete at the relay championship on May 2 and 3' and then immediately says 'on May 2', which creates a slight logical redundancy. Additionally, the capitalization is inconsistent (lowercase start), affecting fluency slightly. Given the lenient rules, no hallucinations are present, so it avoids a low score."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is fluent and covers key points (dates, team, quote). However, it repeats the phrase 'compete at the relay championship on may 2 and 3' and then immediately says 'on may 2', which is redundant and slightly confusing. It omits the specific event name ('IAAF/BTC World Relays') and the location ('Bahamas'), making it less precise than the source. The repetition lowers coherence."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "Lowered coherence and fluency scores significantly. The summary contains a logical redundancy where it states the event is on 'May 2 and 3' and then immediately repeats 'on May 2', which disrupts the flow. Furthermore, the lack of capitalization for proper nouns (Usain Bolt, IAAF, Jamaica) and sentence starters makes the text grammatically incorrect and poor in style, warranting a lower fluency score than the lenient judge's 3."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a clear logical flaw where it states Bolt will compete on 'May 2 and 3' and then immediately repeats that he will compete on 'May 2', creating redundancy and confusion rather than clarity. Additionally, omitting the specific event name ('IAAAF/BTC World Relays') and location ('Bahamas') reduces precision significantly compared to the source text. The scores remain unchanged as the flaws identified are real and impact the quality of the summary."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary suffers from a clear logical redundancy (stating 'May 2 and 3' then immediately repeating 'on May 2'), which hurts coherence. Additionally, the lack of capitalization for proper nouns and sentence starters constitutes a significant grammatical error, justifying the low fluency score. No changes to scores were necessary."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "No changes to scores. The lenient judge correctly identified the redundancy in dates ('May 2 and 3' followed by 'May 2') as a coherence issue and the omission of specific event details (IAAAF/BTC World Relays, Bahamas) as a relevance/precision issue. These are valid criticisms supported by the source text."
+      }
+    },
+    "final": {
+      "coherence": 3.0,
+      "consistency": 4.5,
+      "fluency": 3.5,
+      "relevance": 4.0,
+      "overall_judge": 3.5
+    }
+  }
+}

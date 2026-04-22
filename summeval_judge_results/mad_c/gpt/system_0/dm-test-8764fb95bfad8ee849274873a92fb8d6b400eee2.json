@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-8764fb95bfad8ee849274873a92fb8d6b400eee2",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, making it difficult to understand the sequence of events."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that Paul Merson was brought on as a player, while he was actually commenting on Townsend's performance."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention the context of Merson's criticism and Townsend's response, which are key points in the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'the tottenham midfielder in the 89th minute,' which is unclear and awkwardly phrased."
+        }
+      ],
+      "provisional_score": 1
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a sequence of events related to Paul Merson and Andros Townsend, maintaining a logical flow from the match to the subsequent comments."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the ongoing tension between Merson and Townsend, capturing the essence of their interactions without introducing unrelated facts."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary includes some details that are not central to the main narrative, such as the mention of 'click here for all the latest arsenal news news,' which detracts from the focus on Merson and Townsend."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'paul merson was brought on' which misrepresents the context, as Merson was not a player in the match but a commentator."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 1,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 1.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

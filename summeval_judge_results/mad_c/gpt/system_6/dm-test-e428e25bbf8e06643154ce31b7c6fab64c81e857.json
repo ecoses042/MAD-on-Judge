@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-e428e25bbf8e06643154ce31b7c6fab64c81e857",
+  "system_name": "system_6",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear structure and logical flow, making it difficult to understand the main points."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the phrase 'Big Brother is watching' without context, which is not present in the original article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as improper capitalization and punctuation."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to cover key points, such as the history of the speed camera, the council's response, and the future plans for the camera."
+        }
+      ],
+      "provisional_score": 1
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear focus on the main issue regarding the speed camera's malfunction and its unusual positioning."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article about the speed camera not working for two years and its location."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary highlights the most important aspect of the article, which is the speed camera's status and its pointed direction towards the house."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as improper capitalization and punctuation, which affect readability."
+        },
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow and omits important context, such as the background on the decommissioning of fixed cameras and the council's response."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

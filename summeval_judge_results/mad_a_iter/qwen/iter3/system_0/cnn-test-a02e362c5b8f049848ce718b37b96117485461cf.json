@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-a02e362c5b8f049848ce718b37b96117485461cf",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent and consistent with the source text. It captures key details like Tim Durkan's observation and the destruction of villages. However, it omits the primary context of the article: the cause of the reddish sunsets (smoke from Siberian wildfires carried to Washington). While not a hallucination, this omission makes the summary less relevant to the main topic compared to a more complete summary."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.5,
+        "rationale_for_score": "The summary contains a hallucination regarding the date 'April 14'. The source text states that on April 14 the flames grew out of control, but it does not state that Tim Durkan took photos or saw the sunset on that specific day; he simply shared aerial shots taken over the weekend. Additionally, the summary is overly brief and misses key explanatory details about why the sunsets are red (smoke particles filtering light), reducing its relevance."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "The lenient judge's score for coherence (5) is too high because the summary presents two disconnected facts: Tim Durkan seeing a sunset and villages being destroyed in Siberia, without explaining the causal link (smoke transport). This creates a disjointed narrative flow. The relevance score was raised from 2 to 3 only slightly; while the summary captures specific details, it fails to summarize the main point of the article, which is the phenomenon of the red sunsets in Washington caused by Siberian smoke. The core topic is missing entirely."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.5,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a factual error (hallucination) regarding the date Tim Durkan took the photos; the text says he shared shots taken 'over the weekend,' while April 14 is when the fires went out of control. This makes the consistency score low. Consequently, the relevance and coherence scores are also appropriately penalized for missing key explanatory details and presenting a disjointed narrative."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I lowered the coherence score from 5 to 2 because the summary presents two unrelated facts (Tim Durkan's photo and destroyed villages) without connecting them via the central mechanism (smoke transport), creating a disjointed narrative. I lowered the relevance score from 3 to 1 because the summary completely misses the article's main point: the explanation of the red sunsets in Washington caused by Siberian smoke. The core topic is absent."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 1.8,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding the factual error (hallucination) about the date April 14 being when Tim Durkan took the photos, whereas the text states he shared shots taken 'over the weekend' and that April 14 was when the fires went out of control. This is a significant consistency failure. Furthermore, the summary is extremely brief and misses the core explanatory details of why the sunsets are red (smoke particles filtering light) and how the smoke traveled, making it poor in relevance and coherence compared to the source text."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 3.0,
+      "fluency": 3.5,
+      "relevance": 1.0,
+      "overall_judge": 1.9
+    }
+  }
+}

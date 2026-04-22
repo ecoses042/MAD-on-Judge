@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-a3b6201aca77b5bdaa5df02d6acee2be66233237",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 1,
+        "relevance": 1,
+        "overall_judge": 1.0,
+        "rationale_for_score": "The summary contains severe hallucinations and factual errors regarding the source text. Specifically, it falsely claims that 'Dawn' was found to be lying (the lie detector test showed Jamie lied), and it incorrectly states that Dawn 'stormed off with the cash' (she stormed off after the theft was revealed; she did not take the money). Additionally, the summary is grammatically broken and disjointed. These critical inconsistencies result in a score of 1."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 2.5,
+        "rationale_for_score": "The summary contains severe hallucinations and factual errors regarding consistency. Specifically, it states 'she was found to be lying after taking a test,' whereas the source clearly states Jamie (the friend) lied, not Dawn. It also claims Dawn 'stormed off with the cash,' which contradicts the text that she stormed off because the money was stolen. Additionally, the sentence structure is fragmented and grammatically poor ('she burst into tears and stormed off with the cash . she was told to conduct a lie detector test...'). While it captures the main characters and setting, the critical factual errors regarding who lied and what happened to the money prevent a higher score."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 1,
+        "relevance": 3,
+        "overall_judge": 1.8,
+        "adjustment_notes": "I lowered the coherence and fluency scores slightly from a potential '0' to reflect that the text is readable enough to understand the intent, despite being grammatically broken. However, I maintained the low Consistency score (1) because the hallucinations identified by the strict judge are critical factual errors: the summary falsely accuses Dawn of lying (when Jamie lied) and claims she stormed off with the stolen cash (which contradicts the text). The relevance score is lowered from 5 to 3 because the summary fails to mention the core emotional context (the miscarriages and the specific purpose of the money) and presents the events in a disjointed, non-chronological manner."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 1,
+        "relevance": 3,
+        "overall_judge": 1.8,
+        "adjustment_notes": "The lenient judge's scores were too high given the severity of the errors. The summary contains critical hallucinations: it states Dawn was found lying (source says Jamie lied) and that she stormed off 'with the cash' (source says she stormed off because the money was stolen). Furthermore, the sentence structure is extremely fragmented and grammatically broken ('she burst into tears and stormed off with the cash . she was told to conduct a lie detector test...'), making it nearly unreadable. These are not minor issues but fundamental failures in consistency and fluency that warrant the lowest scores."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 1,
+        "relevance": 3,
+        "overall_judge": 1.8,
+        "adjustment_notes": "I have accepted the lenient judge's assessment. The summary contains critical factual hallucinations (accusing Dawn of lying instead of Jamie, and claiming she stormed off with the cash) which warrant a Consistency score of 1. The disjointed structure and grammatical errors justify the low Fluency and Coherence scores. The omission of the emotional core regarding the miscarriages and the specific purpose of the funds justifies lowering Relevance from 5 to 3."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 1,
+        "relevance": 3,
+        "overall_judge": 1.8,
+        "adjustment_notes": "The strict judge's assessment is correct. The summary contains severe factual hallucinations (claiming Dawn lied instead of Jamie) and misrepresents the outcome (she stormed off without the cash). Additionally, the grammar is extremely poor with fragmented sentences that make the text nearly unreadable. These are fundamental failures warranting the lowest scores."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 1.0,
+      "fluency": 1.0,
+      "relevance": 3.0,
+      "overall_judge": 1.8
+    }
+  }
+}

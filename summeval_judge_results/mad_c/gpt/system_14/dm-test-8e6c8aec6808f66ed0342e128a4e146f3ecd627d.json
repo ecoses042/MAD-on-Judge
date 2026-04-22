@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-8e6c8aec6808f66ed0342e128a4e146f3ecd627d",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, jumping abruptly from the first arrest to the second without adequate context or transition."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that another pupil 'also accused Granado' without clarifying that this pupil is a different individual from the one involved in the first incident."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits significant details such as the context of the first arrest and the implications of the teacher's actions, which are crucial for understanding the severity of the situation."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as missing articles and improper punctuation, which hinder readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear timeline of events, starting with Granado's first arrest and leading to the second arrest, which helps the reader understand the sequence of incidents."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, including the ages of the individuals involved and the nature of the allegations against Granado."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the article, specifically the arrests and the allegations, without including trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as missing articles and inconsistent punctuation, which affect its readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 4,
+      "overall_judge": 3.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

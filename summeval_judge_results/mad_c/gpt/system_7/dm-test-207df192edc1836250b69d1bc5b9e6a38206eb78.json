@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-207df192edc1836250b69d1bc5b9e6a38206eb78",
+  "system_name": "system_7",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information and does not connect the findings to the broader implications of the study."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary fails to mention the potential mechanisms by which antibiotics may contribute to weight gain, which is a significant aspect of the original article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as inconsistent capitalization and punctuation, which affect readability."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits important context about the obesity epidemic and the implications of the study, focusing too narrowly on the data without addressing its significance."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, outlining the key findings of the study regarding the relationship between antibiotic use and obesity in toddlers."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, specifically mentioning the comparison of weight and height in relation to antibiotic prescriptions."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important findings of the study, highlighting the association between antibiotic use in infancy and increased likelihood of obesity."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as the lack of capitalization at the beginning of sentences and the use of 'two years-old' instead of 'two years old'."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 4,
+      "fluency": 3,
+      "relevance": 4,
+      "overall_judge": 3.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

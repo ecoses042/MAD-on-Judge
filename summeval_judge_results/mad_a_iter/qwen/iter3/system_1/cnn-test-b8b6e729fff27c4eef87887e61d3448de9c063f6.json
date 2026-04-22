@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-b8b6e729fff27c4eef87887e61d3448de9c063f6",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary contains a significant fluency error (repeating 'dragon dragon') and is extremely incomplete, omitting the context of the Dragon cargo mission, the supplies delivered, and the splashdown plan which are major parts of the article. However, it accurately reflects the direction of the news regarding the landing failure and Musk's quote without hallucinating facts."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary is extremely poor in relevance and coherence because it consists almost entirely of a direct quote from the article without adding any context or synthesizing the information. It fails to cover key details such as the successful delivery of cargo to the ISS, the specific reason for the landing failure (tipping over), the future goals regarding cost reduction, or the fact that this was the second attempt after a weather scrub. While it is consistent with the text and grammatically acceptable, its lack of substance and focus on trivial details (the full quote) makes it a very poor summary."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 1,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The lenient judge's scores were too high for fluency and relevance. The summary contains a glaring typo ('dragon dragon') which severely impacts readability (Fluency: 1). It is extremely incomplete regarding the article's main subject matter (the cargo mission details, supplies, splashdown), making it barely relevant to the full text provided (Relevance: 2). While it accurately quotes Musk without hallucination (Consistency: 4), the overall quality is poor due to the typo and lack of context."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is a fragmented excerpt of a tweet rather than a synthesized summary of the article. It fails to cover the primary news (successful cargo delivery), key context (second attempt after weather scrub), or the 'why' (cost reduction). While grammatically acceptable and consistent with the text, its lack of substance and structure warrants low scores for coherence and relevance."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "No changes to scores. The summary is indeed a fragmented excerpt of a tweet that fails to synthesize the article's main points (successful cargo delivery, second attempt context, cost reduction goals). It lacks substance and structure, justifying the low coherence and relevance scores assigned by both judges."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 1,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary contains a significant typo ('dragon dragon') which makes it unprofessional and difficult to read (Fluency: 1). It is also extremely incomplete, missing the context of the cargo mission, the supplies delivered, and the splashdown plan, rendering it barely relevant to the full article (Relevance: 2). While the quoted text is accurate (Consistency: 4), the overall quality is too low to warrant a higher score."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 4.5,
+      "fluency": 2.5,
+      "relevance": 1.5,
+      "overall_judge": 2.0
+    }
+  }
+}

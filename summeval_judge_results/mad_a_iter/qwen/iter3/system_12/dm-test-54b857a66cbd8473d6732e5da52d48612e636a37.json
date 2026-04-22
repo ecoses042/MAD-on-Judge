@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-54b857a66cbd8473d6732e5da52d48612e636a37",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.5,
+        "rationale_for_score": "The summary is coherent and fluent, capturing the key events (standing on toilet, it breaking, injuries, stitches) accurately based on the text. It omits minor details like the specific location of the hospital or the police's comments about compensation avoidance, but these are not essential for a high-level summary. The score is slightly reduced from 5 because the summary misses the crucial detail that the passenger lied to the police about his actions, which is a significant part of the source text's narrative regarding the incident's aftermath."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and consistent with the source text, accurately capturing the key facts (who, what, where, why, and outcome). It omits minor details like the passenger's change of story to police or the specific quote from the police spokesman, but these are not essential for a high-level summary. The direction aligns perfectly with the article."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 4.2,
+        "adjustment_notes": "Adjusted scores down slightly from the strict judge's assessment. While the summary is grammatically correct and coherent, I agree with the strict judge that omitting the passenger's lie to the police (a significant narrative element) impacts relevance and consistency regarding the full story. The score for coherence remains high as the flow is logical, but relevance drops because a key plot point was excluded."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The lenient judge's assessment is accurate. The summary effectively captures the core narrative (who, what, where, why, outcome) without introducing hallucinations or omitting critical facts required for a high-level summary. While it omits the detail about the passenger changing his story to police, this is a non-essential detail for a general news summary, making the relevance score of 4 appropriate rather than lower."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I raised the fluency score to 5 as the summary is concise and error-free. I lowered the relevance score from 4 to 3 because the lenient judge's point about omitting the passenger's lie to the police is valid; this is a significant narrative element that adds depth to the story, and its absence makes the summary less comprehensive than a 'good' summary would be."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agree with the strict judge's assessment. The summary is concise and accurate. The omission of the police statement regarding the passenger changing his story is a minor reduction in relevance but does not significantly impact the core news value, so the score of 4 is fair."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.5,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.5
+    }
+  }
+}

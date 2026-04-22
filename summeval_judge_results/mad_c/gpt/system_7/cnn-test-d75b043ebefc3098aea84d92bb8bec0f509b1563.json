@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-d75b043ebefc3098aea84d92bb8bec0f509b1563",
+  "system_name": "system_7",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information and does not connect the events or provide context for the attack."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the number of casualties, the specific location of the attack, and the background of the militant group, which are crucial for understanding the significance of the event."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary uses inconsistent capitalization, such as 'jaish al adal' instead of 'Jaish al Adal', which affects readability."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the Iranian response or the request for Pakistan to apprehend the militants, which is a significant part of the original article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the attack, the responsible group, and the response from the Pakistani government."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the article, including the claim of responsibility by Jaish al Adal, the crossing of militants from Pakistan, and the Pakistani government's condemnation."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the number of Iranian border guards killed or the context of the attack, which are significant details from the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization and punctuation, making it less fluent and harder to read."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

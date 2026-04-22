@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-6f027d030f9ca86446dc893f1d10ced4c9a3561f",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, as it jumps between points without smooth transitions, making it difficult to follow the narrative."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the context of Henderson's contract negotiations, his contributions to the team, and the mention of other players who have signed extensions, which are important for understanding the significance of his new contract."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary states that Henderson's new deal is 'likely to be worth' £100,000-a-week, which introduces uncertainty not present in the original article that states it 'is worth around £100,000-a-week'."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'Henderson is set to sign a new long-term contract at Liverpool .' contains an unnecessary space before the period, which affects the overall fluency."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding Henderson's new contract and potential role as captain."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the details from the article, including the contract value and Henderson's age."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points about Henderson's contract and his potential future role, avoiding trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary could be improved with more natural phrasing, such as avoiding the awkward phrasing 'is set to sign'."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 4,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 3.2,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

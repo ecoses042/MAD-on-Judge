@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-8b59fa7715418c4bcc0d50e3caeb239129de453e",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "rationale_for_score": "The summary is grammatically correct and consistent with the source text. However, it suffers from severe relevance issues by repeating the exact same core information (Hart calling Buffon a legend after his 147th cap) three times in slightly different phrasings without adding any new details or covering other key points mentioned in the article, such as Hart's own 50th cap milestone or his desire to keep playing."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is excellent in coherence and fluency, accurately reflecting the main points of the article without hallucinations. It captures the key quote and context perfectly. The only minor deduction for relevance is that it omits Hart's own milestone (his 50th cap), which was a significant part of the source text, though the summary remains well-grounded."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the scores significantly based on the strict judge's valid criticism regarding relevance. The summary repeats the exact same core point (Hart praising Buffon) three times in slightly different ways without adding value or covering other key information from the source text, such as Hart's own 50th cap milestone or his future ambitions. While the grammar is correct (fluency 4 instead of 5 to reflect minor stylistic awkwardness due to repetition), the lack of logical flow caused by redundancy drops coherence. Consistency remains high as no facts are invented."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is well-structured and fluent. It accurately reflects the main points regarding Hart's praise for Buffon without introducing hallucinations. The only valid reason for a slight deduction in relevance is the omission of Hart's own 50th cap milestone, which was a significant detail in the source text but not included in the summary."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I have accepted the lenient judge's assessment regarding relevance and coherence. The summary suffers from severe redundancy by stating the same core message (Hart praising Buffon) three times in nearly identical phrasing, failing to synthesize the information or include other key details like Hart's own 50th cap milestone. This lack of synthesis and inclusion of secondary points justifies the low relevance score and the resulting drop in coherence."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary is well-structured and fluent, accurately reflecting Hart's praise for Buffon without hallucinations. The only valid reason for a slight deduction in relevance is the omission of Hart's own 50th cap milestone, which was a significant detail in the source text but not included in the summary."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 5.0,
+      "fluency": 4.5,
+      "relevance": 3.0,
+      "overall_judge": 3.9
+    }
+  }
+}

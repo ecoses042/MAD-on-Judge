@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-c05bda9b387ec8ae43803170b6f59b4b82505db9",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary fails the consistency criterion severely because it hallucinates a fact not present in the source text: 'arab tribal leaders did not say what led to release.' The article explicitly states that Rassol Omar (a Peshmerga commander) asserted that Arab tribal leaders helped coordinate the release, and Nuri Osman stated it wasn't immediately clear what motivated the release. The summary incorrectly attributes the lack of explanation to the tribal leaders themselves rather than the officials reporting on the event. Additionally, the summary is fragmented and lacks a clear logical flow (coherence), while still capturing some relevant details."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary contains a clear hallucination regarding the source of information: it states 'arab tribal leaders did not say what led to release,' whereas the article explicitly says 'Omar didn't say... other than asserting that Arab tribal leaders helped to coordinate it.' This contradicts the text. Additionally, the summary is fragmented and lacks a logical flow (coherence issues), jumping between facts without clear transitions. While the language is generally fluent and the content is relevant to the topic, the factual error regarding the 'Arab tribal leaders' drops the consistency score significantly."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a significant factual error (hallucination) regarding who failed to explain the motivation for the release, attributing it to 'Arab tribal leaders' when the text clarifies that officials like Rassol Omar and Nuri Osman were the ones discussing the lack of clear motivation or the role of the tribes. This is a critical consistency failure. Consequently, the coherence and relevance scores are also appropriately low due to the fragmented nature and the inclusion of incorrect information."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary contains a significant factual error (hallucination) regarding Arab tribal leaders not commenting on the release, whereas the source text explicitly states they helped coordinate it and Omar did not specify the motivation beyond that assertion. This invalidates the consistency score. The fragmented structure also supports the low coherence score. No points were raised as the lenient judge's critique was based directly on the provided text."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary contains a critical factual error (hallucination) regarding the motivation for the release. The text states that Rassol Omar and Nuri Osman did not say what led to the release, while noting that Arab tribal leaders helped coordinate it. The summary incorrectly attributes the lack of explanation to the 'Arab tribal leaders,' which contradicts the source text. This is a severe consistency failure that invalidates the summary's accuracy, justifying the low scores."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The strict judge correctly identified a major factual error (hallucination) where the summary claims Arab tribal leaders 'did not say what led to release,' contradicting the source text which states they helped coordinate it and Omar didn't specify the motivation beyond that assertion. This is a severe consistency failure warranting a score of 1. The fragmented sentence structure ('most of those released...') makes the summary disjointed, lowering coherence. While the grammar is passable (fluency 3), the content is highly misleading regarding the key point about who coordinated the release."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 1.0,
+      "fluency": 3.0,
+      "relevance": 2.0,
+      "overall_judge": 2.0
+    }
+  }
+}

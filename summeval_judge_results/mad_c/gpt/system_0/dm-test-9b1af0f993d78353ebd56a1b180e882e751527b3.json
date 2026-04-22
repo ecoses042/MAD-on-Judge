@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-9b1af0f993d78353ebd56a1b180e882e751527b3",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, making it difficult to understand the sequence of events."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the billboard without explaining its context or the reactions to it, which is a significant aspect of the original article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as the repeated phrase 'aaron siler' and awkward sentence structures."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to include key points, such as the reactions from Siler's family and friends regarding the billboard."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events regarding Aaron Siler's shooting and the subsequent billboard, maintaining a logical flow."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, including the details about the shooting and the billboard without introducing any new facts."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as the repetition of 'aaron siler' and awkward phrasing, which detracts from its readability."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary lacks important context and details, such as the reactions of Siler's family and friends to the billboard, which are key points in the article."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

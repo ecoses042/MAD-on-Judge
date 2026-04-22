@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-e49792c337d3f4c13e22f710efa44cf6a4e59aba",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is consistent with the source text and captures the main topic (parents' plea). However, it is very short and cuts off mid-sentence ('a look at all of the charges'), failing to cover the significant details about the parents' specific arguments, their request for life without parole in exchange, or the context of the sentencing phase. Due to the truncation, relevance is reduced."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is consistent with the source text and fluent enough to read, but it fails significantly on relevance and coherence regarding completeness. It cuts off abruptly after a sentence fragment ('a look at all of the charges .') that appears to be a subheading from the original article rather than part of the narrative flow. Crucially, it completely omits the main point of the article: the parents' specific plea to drop the death penalty in exchange for life without parole and their reasons for doing so (ending appeals, protecting remaining children). By stopping after the conviction details, it misses the core news value."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment regarding relevance and coherence. The summary is severely truncated, ending mid-sentence with a subheading ('a look at all of the charges .') which breaks the logical flow and makes it incomplete. Crucially, it fails to mention the article's primary subject: the parents' plea to drop the death penalty. While the text is consistent with the source (it doesn't add false info) and grammatically acceptable up to its abrupt end, the lack of coverage on the main point warrants a significant reduction in relevance and coherence scores."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "The summary is consistent with the source text (Consistency: 5) and generally fluent (Fluency: 4). However, the truncation ('a look at all of the charges') creates a significant coherence issue as it leaves the thought incomplete and disjointed from the preceding context about Tsarnaev's conviction. This structural break lowers Coherence to 3. Regarding Relevance, while the summary captures the main topic (parents' plea), the abrupt ending prevents it from conveying the core news value: the specific request for life without parole in exchange for waiving appeals and the reasoning behind it. Because the summary fails to deliver the essential details of the parents' argument due to being cut off, Relevance is lowered to 2."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment that the summary is severely truncated and fails to cover the primary subject (the parents' plea). The abrupt ending at a subheading breaks coherence and relevance significantly. No score increase is warranted as the summary is indeed incomplete and misses the main point."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is truncated mid-sentence ('a look at all of the charges'), which severely impacts coherence by leaving the thought incomplete and disjointed. Furthermore, this truncation causes a significant relevance issue: the core news value—the parents' specific plea for life without parole in exchange for waiving appeals and their reasoning about ending the anguish—is completely missing. The summary captures the topic but fails to deliver the essential details of the story due to the abrupt cut-off."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 5.0,
+      "fluency": 4.0,
+      "relevance": 1.5,
+      "overall_judge": 2.5
+    }
+  }
+}

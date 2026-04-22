@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-c6667409fcdea2c89ba9f0d3a72c50e3967b4b1b",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is factually consistent with the source text (no hallucinations) and covers key details like the miss, the player involved, and the context of Leighton Baines. However, it suffers from severe fluency issues due to poor sentence structure (e.g., 'Leighton Baines , who has scored...' is a fragment lacking a main verb). It also lacks coherence as a standalone summary because it omits the crucial outcome: that Everton won 1-0 and the penalty miss was not costly, making the first sentence misleading without context. The relevance is average as it focuses on the specific incident but misses the broader narrative of the match result."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is coherent and relevant, covering the key points of the article. However, it suffers from severe fluency issues due to poor sentence structure (e.g., a sentence fragment ending with 'in the Premier League' without a verb). While the content is consistent with the source, the grammatical errors significantly impact readability."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No adjustment needed. The lenient judge's assessment of severe fluency issues (specifically the sentence fragment ending with 'in the Premier League') is accurate and well-supported by the source text provided. The summary fails to connect the final clause grammatically, making it difficult to read despite covering relevant content."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is factually consistent (Consistency: 5) but suffers from severe grammatical fragmentation in the final sentence ('Leighton Baines...') which impacts Fluency (3). Crucially, the lack of context regarding the match result (Everton won 1-0) makes the first sentence misleading and harms Coherence (2), as a summary must explain why a penalty miss was not catastrophic. Relevance is average (3) because it focuses on the incident but misses the broader narrative of the game outcome."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No adjustment needed. The strict judge correctly identified the severe fluency issue caused by the sentence fragment ending with 'in the Premier League'. This grammatical error significantly impacts readability and structure, justifying the low fluency score. The summary also lacks a concluding thought on the match result or the save itself, which affects coherence and relevance slightly, but the strict judge's assessment remains valid."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary is factually consistent with the source text (Consistency: 5). However, it suffers from severe grammatical fragmentation in the final sentence ('Leighton Baines...'), which impacts Fluency (3). Crucially, the lack of context regarding the match result (Everton won 1-0) makes the first sentence misleading and harms Coherence (2), as a summary must explain why a penalty miss was not catastrophic. Relevance is average (3) because it focuses on the incident but misses the broader narrative of the game outcome."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 4.5,
+      "fluency": 2.5,
+      "relevance": 3.5,
+      "overall_judge": 3.0
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-d89de9c2a76f2665560becfe5d761a4fc62b9926",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, jumping between points without clear connections."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the match context, the performance of other players, and the significance of the victory."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that entry was 'probably as far removed from Sunday’s big match as you could imagine,' which is vague and not a direct fact from the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as inconsistent capitalization of 'Old Trafford' and awkward phrasing."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear focus on the match's setting and the key player, Callum Gribbin, providing a logical flow of information."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary highlights the most important aspects of the match, including the venue and the matchwinner, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits several details from the article, such as the context of the match being a 'mini-derby' and the performance of other players, which could mislead readers about the match's significance."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as inconsistent capitalization of names and places, which affects its readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

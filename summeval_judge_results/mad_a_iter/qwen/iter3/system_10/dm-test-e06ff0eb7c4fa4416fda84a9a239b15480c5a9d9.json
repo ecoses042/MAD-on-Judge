@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-e06ff0eb7c4fa4416fda84a9a239b15480c5a9d9",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is consistent with the source and uses correct grammar, but it suffers from severe redundancy (repeating the same sentence twice) and extreme brevity that omits the vast majority of the article's key details (the man's self-description, specific requirements like 'fit attractive', 'good cook', 'free gym membership', etc.). While lenient rules allow for minor weaknesses, this summary fails to capture the main points beyond the very first sentence, making it a poor representation of the source text."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary is extremely poor in relevance and coherence because it consists almost entirely of direct quotes from the source text without any synthesis or summarization. It fails to capture the key points (e.g., Rich's self-description, specific requirements like 'fit attractive', 'good cook', 'great in bed', or the outcome of the Daily Mail's attempt). By merely repeating the first few sentences and ending abruptly with a repetition of the subject, it ignores the majority of the article's content. While it avoids hallucinations (consistency is high), the lack of new information and logical flow makes it a failure as a summary."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate: the summary repeats the exact same sentence twice (severe redundancy) and omits the vast majority of the article's content (the man's self-description, specific requirements like 'fit attractive', 'good cook', etc.). This makes it a poor representation of the source text despite being factually consistent."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary fails to synthesize the information, merely repeating the first sentence and then a truncated version of it. It misses key details like Rich's self-description, specific requirements (e.g., 'fit attractive', 'good cook'), and the outcome regarding the Daily Mail contact attempt. Therefore, I maintain the low scores."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I have lowered the scores to align with the strict judge's valid criticisms. The summary suffers from severe redundancy by repeating the exact same sentence twice, which negatively impacts coherence and fluency. More critically, it fails relevance entirely by omitting the vast majority of the article's content (the man's self-description, specific requirements like 'fit attractive', 'good cook', etc.), making it a poor representation of the source text."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The summary is indeed poor because it fails to synthesize the information, merely repeating the first sentence and then a truncated version of it. It misses key details like Rich's self-description, specific requirements (e.g., 'fit attractive', 'good cook'), and the outcome regarding the Daily Mail contact attempt. Therefore, I maintain the low scores."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 4.5,
+      "fluency": 3.0,
+      "relevance": 1.0,
+      "overall_judge": 2.0
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-b1f6faac3f406edca1e0cad8cce1319c83e62605",
+  "system_name": "system_9",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow of information, as it abruptly shifts from the accusation to the psychiatrist's examination without adequately connecting the two."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the nature of the murder, the evidence presented in court, and the implications of Costa's mental state on the jury's verdict, which are crucial for understanding the case."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as the lack of capitalization at the beginning of sentences and the inconsistent use of punctuation."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the prosecutor's suggestion that Costa feigned memory loss, which is an important aspect of the case."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the key events and the examination of Costa's mental state."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, including the details about Costa's mental health and the context of the murder."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important aspects of the case, particularly Costa's mental state and the implications for the trial."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization and punctuation, which affects its readability and fluency."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "tie",
+        "consistency": "tie",
+        "fluency": "critic",
+        "relevance": "tie"
+      }
+    }
+  }
+}

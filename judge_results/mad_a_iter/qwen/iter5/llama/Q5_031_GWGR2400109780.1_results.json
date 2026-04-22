@@ -1,0 +1,319 @@
+[
+  {
+    "essay_id": "GWGR2400109780.1",
+    "status": "ok",
+    "prediction": {
+      "content": {
+        "score": 4.0,
+        "rationale": "The essay presents a clear and logical argument in favor of allowing assisted dying for patients with minimal quality of life. The author draws on philosophical concepts, such as Heidegger's idea that humans are 'thrown' into existence without predetermined meaning or purpose, to argue that individuals should have the right to end their own lives if they see fit."
+      },
+      "organization": {
+        "score": 4.0,
+        "rationale": "The essay has a clear structure, with an introduction that sets out the author's thesis, a body that develops the argument through philosophical concepts and examples, and a conclusion that summarizes the main points."
+      },
+      "expression": {
+        "score": 4.0,
+        "rationale": "The essay is written in clear and concise language, with minimal errors in grammar, syntax, or vocabulary."
+      }
+    },
+    "judge": {
+      "content": {
+        "round_0": {
+          "strict": {
+            "domain_match": 2,
+            "score_rationale_consistency": 1,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 1.2,
+            "rationale_for_score": "1. domain_match: 'content' 영역 평가 기준을 적용했으나, rationale 은 철학적 개념 (하이데거) 을 언급하는 수준에 그쳐 글의 핵심 논지인 '조력 존엄사 허용의 구체적 근거'와 '윤리적 정당성'을 다루지 않았습니다. 2점 처리.\n2. score_rationale_consistency: predicted_score 가 4.0(높은 점수) 인데, rationale 에 구체적인 강점 근거가 전혀 없습니다. '명확하고 논리적'이라는 일반적 표현만 사용하여 높은 점수를 정당화하지 못했습니다. 1점 처리.\n3. specificity: '전반적으로 좋다', '논리적이다'와 같은 추상적 표현만 사용했고, essay_text 의 특정 문장이나 구절을 인용하여 구체성을 입증하지 않았습니다. 1점 처리.\n4. groundedness: rationale 에 언급된 하이데거의 개념은 essay_text 와 연결되어 있으나, 나머지 주장 (조력 존엄사의 정의, 연명의료결정법 조항 등) 을 지지하는 구체적인 근거가 없으며, '명확하고 논리적'이라는 평가는 텍스트에서 확인 가능한 구체적 증거가 없습니다. 1점 처리."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 5,
+            "specificity": 5,
+            "groundedness": 5,
+            "overall_judge": 5.0,
+            "rationale_for_score": "1. domain_match: rationale 는 essay_text 의 핵심 철학적 근거 (하이데거의 '내던져진 존재') 와 논리적 흐름 (삶의 마지막 순간 결정권, 조력 존엄사와 자살의 구분) 을 정확히 반영하여 평가 기준을 충족함. 2. score_rationale_consistency: predicted_score(4.0) 는 essay_text 의 명확한 주장과 근거를 잘 뒷받침하는 rationale 과 완벽하게 일치함. 3. specificity: '하이데거', '내던져진 존재', '조력 존엄사 vs 자살 구분' 등 구체적인 문장과 개념을 지적하여 generic 한 표현이 아님. 4. groundedness: rationale 의 모든 내용은 essay_text 에 명시적으로 존재하는 내용으로, hallucination 이 전혀 없음."
+          }
+        },
+        "round_1": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 5,
+            "specificity": 5,
+            "groundedness": 5,
+            "overall_judge": 5.0,
+            "adjustment_notes": "관대한 심사위원이 rationale 에 '하이데거의 내던져진 존재'와 '조력 존엄사 vs 자살 구분' 등 구체적인 근거를 명시하여 domain_match, specificity, groundedness 를 5 점으로 평가했습니다. 이는 essay_text 의 실제 내용과 완벽하게 일치하므로 이 기준들은 유지합니다. score_rationale_consistency 도 predicted_score(4.0) 가 rationale 의 명확한 논지를 잘 반영하고 있으므로 5 점으로 유지합니다. 그러나 overall_judge 는 관대한 심사위원의 '완벽함'을 인정하기보다, essay_text 와 rationale 간의 직접적인 연결 고리가 충분히 입증되었으나 (인용 근거 충족), 여전히 경미한 약점이나 개선 여지가 있을 수 있음을 고려하여 4 점으로 조정합니다."
+          },
+          "lenient": {
+            "domain_match": 2,
+            "score_rationale_consistency": 1,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 1.2,
+            "adjustment_notes": "엄격한 심사위원의 지적을 전적으로 수용합니다. 1) domain_match: rationale 이 철학적 개념 언급 수준에 그쳐 '조력 존엄사'라는 핵심 주제의 구체적 근거와 윤리적 정당성을 다루지 않았으므로 감점 유지 (2 점). 2) score_rationale_consistency: predicted_score 가 4.0(높은 점수) 인데, rationale 에 구체적인 강점 근거가 전혀 없어 점수와 설명이 모순되므로 감점 유지 (1 점). 3) specificity: '명확하고 논리적'이라는 추상적 표현만 사용되어 구체성이 부족하므로 감점 유지 (1 점). 4) groundedness: essay_text 의 구체적 증거를 인용하지 못했으므로 감점 유지 (1 점). 따라서 기존 4.0 점수를 1.0 점으로 하향 조정합니다."
+          }
+        },
+        "round_2": {
+          "strict": {
+            "domain_match": 2,
+            "score_rationale_consistency": 1,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 1.2,
+            "adjustment_notes": "관대한 심사위원의 평가는 엄격한 기준에 부합하므로 점수 조정은 유지합니다. 1) domain_match: rationale 이 철학적 개념 (하이데거) 언급만 하고 '조력 존엄사'라는 핵심 주제와 윤리적 정당성을 구체적으로 다루지 않아 감점 유지 (2 점). 2) score_rationale_consistency: predicted_score 가 4.0(높은 점수) 인데, rationale 에 구체적인 강점 근거가 전혀 없어 점수와 설명이 모순되므로 감점 유지 (1 점). 3) specificity: '명확하고 논리적'이라는 추상적 표현만 사용되어 구체성이 부족하므로 감점 유지 (1 점). 4) groundedness: essay_text 의 구체적 증거를 인용하지 못했으므로 감점 유지 (1 점). 따라서 기존 4.0 점수를 1.0 점으로 하향 조정합니다."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 5,
+            "specificity": 5,
+            "groundedness": 5,
+            "overall_judge": 5.0,
+            "adjustment_notes": "엄격한 심사위원의 평가에 따르면 rationale 이 essay_text 의 '하이데거 철학'과 '조력 존엄사 vs 자살 구분' 등 구체적인 내용을 정확히 인용하고 있어 domain_match, specificity, groundedness 기준을 모두 충족합니다. 또한 predicted_score(4.0) 가 이러한 명확한 논지를 잘 반영하므로 score_rationale_consistency 도 5 점으로 유지합니다. 관대한 심사위원이 overall_judge 를 5.0 으로 높게 주었으나, '경미한 약점이나 개선 여지가 있을 수 있음'을 고려하여 엄격한 심사위원의 판단인 4.0 으로 조정합니다."
+          }
+        },
+        "round_3": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 5,
+            "specificity": 5,
+            "groundedness": 5,
+            "overall_judge": 5.0,
+            "adjustment_notes": "관대한 심사위원의 평가에서 domain_match, specificity, groundedness 기준을 충족하는 근거로 '하이데거 철학'과 '조력 존엄사 vs 자살 구분' 등 essay_text 의 구체적 내용을 정확히 인용했음을 인정합니다. 따라서 이 세 항목은 5 점으로 유지합니다. score_rationale_consistency 역시 명확한 논지를 반영하므로 5 점으로 유지합니다. 다만, 관대한 심사위원이 overall_judge 를 5.0 으로 부여했으나, 평가 기준에 따라 5 점은 '구체적 인용 근거가 2 개 이상'이어야 하며, 본 사례에서는 rationale 이 essay_text 와 직접 연결되는 명확한 근거는 있으나 '경미한 약점이나 개선 여지가 있을 수 있음'을 고려할 때 무난함 이상의 5 점보다는 4 점이 적절합니다. 따라서 overall_judge 를 4.0 으로 조정합니다."
+          },
+          "lenient": {
+            "domain_match": 2,
+            "score_rationale_consistency": 1,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 1.2,
+            "adjustment_notes": "엄격한 심사위원의 평가에 동의합니다. 1) domain_match: rationale 이 철학적 개념 (하이데거) 을 언급하는 것은 사실이나, '조력 존엄사'라는 핵심 주제와 윤리적 정당성을 구체적으로 다루지 않아 감점 유지 (2 점). 2) score_rationale_consistency: predicted_score 가 4.0(높은 점수) 인데, rationale 에 구체적인 강점 근거가 전혀 없어 점수와 설명이 모순되므로 감점 유지 (1 점). 3) specificity: '명확하고 논리적'이라는 추상적 표현만 사용되어 구체성이 부족하므로 감점 유지 (1 점). 4) groundedness: essay_text 의 구체적 증거를 인용하지 못했으므로 감점 유지 (1 점). 따라서 기존 4.0 점수를 1.0 점으로 하향 조정합니다."
+          }
+        },
+        "round_4": {
+          "strict": {
+            "domain_match": 2,
+            "score_rationale_consistency": 1,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 1.2,
+            "adjustment_notes": "관대한 심사위원의 평가에 전적으로 동의합니다. 1) domain_match: rationale 이 하이데거 철학을 언급했으나 '조력 존엄사'라는 특정 의료 윤리 영역의 구체적 기준 (법적 정의, 의학적 필요성 등) 을 적용하지 않아 감점 유지 (2 점). 2) score_rationale_consistency: predicted_score 가 4.0(높은 점수) 이나 rationale 에 구체적인 강점 근거가 전혀 없어 점수와 설명이 모순되므로 감점 유지 (1 점). 3) specificity: '명확하고 논리적'이라는 추상적 표현만 사용되어 구체성이 부족하므로 감점 유지 (1 점). 4) groundedness: essay_text 의 구체적 증거를 인용하지 못했으므로 감점 유지 (1 점). 따라서 기존 4.0 점수를 관대한 심사위원의 하향 조정 의견인 1.0 점으로 확정합니다."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 5,
+            "specificity": 5,
+            "groundedness": 5,
+            "overall_judge": 5.0,
+            "adjustment_notes": "엄격한 심사위원의 평가에 따라 domain_match, specificity, groundedness 항목은 essay_text 의 '하이데거 철학' 인용과 '조력 존엄사 vs 자살 구분' 등 구체적 근거가 명확히 확인되므로 5 점으로 유지합니다. score_rationale_consistency 역시 논지와 점수가 일치하므로 5 점으로 유지합니다. 다만, 관대한 심사위원이 부여한 overall_judge 5.0 은 평가 기준에서 요구하는 '구체적 인용 근거 2 개 이상' 조건을 충족하지만, 엄격한 심사위원의 지적대로 '경미한 약점이나 개선 여지'를 고려할 때 무난함 이상의 5 점보다는 4 점이 적절하므로 overall_judge 를 4.0 으로 조정합니다."
+          }
+        },
+        "final": {
+          "domain_match": 3.5,
+          "score_rationale_consistency": 3.0,
+          "specificity": 3.0,
+          "groundedness": 3.0,
+          "overall_judge": 3.1
+        }
+      },
+      "organization": {
+        "round_0": {
+          "strict": {
+            "domain_match": 2,
+            "score_rationale_consistency": 1,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 1.2,
+            "rationale_for_score": "1. domain_match: rationale는 서론-본론-결론의 구조적 흐름만 언급할 뿐, 'organization' 도메인의 핵심 평가 기준인 논리적 전개, 문단 간 연결 자연스러움, 주제의식 등을 전혀 다루지 않았습니다. 또한 essay_text 의 한국어 텍스트를 분석해야 하는 도메인임에도 영어로만 서술하여 언어적 불일치가 발생했습니다.\n2. score_rationale_consistency: predicted_score 가 4.0(우수) 인데 rationale 에는 'clear structure'라는 매우 포괄적이고 약한 근거 하나뿐입니다. 높은 점수를 정당화할 만큼 구체적인 강점 (예: 철학적 개념의 효과적 활용, 논증의 깊이 등) 이 제시되지 않아 점수와 설명이 심각하게 모순됩니다.\n3. specificity: 'clear structure', 'introduction', 'body', 'conclusion' 과 같은 추상적 표현만 반복하며, essay_text 의 구체적인 문장이나 표현을 인용하지 않았습니다.\n4. groundedness: rationale 은 essay_text 의 내용 (하이데거 철학 인용, 조력 존엄사 정의 등) 을 구체적으로 반영하지 않고 일반적인 서술에 그쳤으며, 도메인 평가 기준과도 괴리되어 있습니다."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 5,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.8,
+            "rationale_for_score": "1) domain_match: rationale 가 서론 (thesis 설정), 본론 (철학적 개념 및 예시 활용), 결론 (요약) 의 구조를 명확히 지적하여 organization 기준을 충족함. content 측면에서 글의 핵심 논지를 정확히 파악했음. 2) score_rationale_consistency: predicted_score(4.0) 가 높은 점수이므로 강한 근거가 필요하나, rationale 은 글의 구조적 완성도를 구체적으로 언급하여 점수를 정당화함. 모순 없음. 3) specificity: '서론', '본론', '결론' 등 문단별 기능을 명시하며 구체적인 예시 (하이데거 인용 등) 를 지적했음. 다만 '문법/어휘' 등 expression 세부 항목은 누락되어 4점으로 제한함. 4) groundedness: rationale 의 모든 주장은 essay_text 의 실제 구조와 내용 (하이데거 언급, 연명의료결정법 인용 등) 에 근거하고 있음. 환각 없음."
+          }
+        },
+        "round_1": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.2,
+            "adjustment_notes": "1) domain_match: 관대한 심사위원의 평가 (5점) 를 유지함. rationale 이 essay_text 의 서론/본론/결론 구조를 명확히 지적하여 organization 기준을 충족하고, content 측면에서도 핵심 논지를 파악했으므로 영역 혼동이나 근거 부재가 없음. 2) score_rationale_consistency: 관대한 심사위원이 '강한 근거 필요'라는 점수 기준에 대해 rationale 이 구조적 완성도만 언급했다고 평가했으나, predicted_score(4.0) 에 대한 정당화는 충분히 이루어졌다고 판단하여 5점을 유지함. 다만, expression 세부 항목 누락으로 인한 약점이 있으므로 4점으로 조정함. 3) specificity: 관대한 심사위원이 'expression 세부 항목 누락'을 지적하며 4점으로 제한했으나, 이는 domain_match 기준 (content/organization/expression 모두 포함) 에 대한 평가일 뿐, rationale 이 essay_text 의 구체적 내용 (하이데거, 연명의료결정법 등) 을 직접 인용하여 논지를 지지했으므로 specificity 기준에서는 '구체적 예시 없음'이 아님. 따라서 관대한 심사위원의 4점보다는 더 높은 점수인 5점을 부여함. 4) groundedness: 관대한 심사위원의 평가 (5점) 를 유지함. rationale 의 모든 주장이 essay_text 의 실제 구조와 내용에 근거하고 있어 환각이나 추상적 설명이 없음."
+          },
+          "lenient": {
+            "domain_match": 2,
+            "score_rationale_consistency": 1,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 1.2,
+            "adjustment_notes": "엄격한 심사위원의 지적대로 모든 항목을 하향 조정합니다.\n1. domain_match: rationale 은 '서론-본론-결론'이라는 구조적 요소만 언급했을 뿐, 도메인 기준인 논리적 전개나 주제의식 분석이 전혀 없습니다. 또한 영어로 서술되어 언어적 불일치가 있어 2 점으로 유지합니다.\n2. score_rationale_consistency: 4.0(우수) 점수에 'clear structure'라는 포괄적이고 약한 근거만 제시하여 점수와 설명이 심각하게 모순됩니다. 구체적인 강점 근거가 없으므로 1 점으로 조정합니다.\n3. specificity: 'clear structure'와 같은 추상적 표현만 반복하고 essay_text 의 구체적 문장이나 표현을 인용하지 않았습니다. 1 점으로 유지합니다.\n4. groundedness: rationale 은 essay_text 의 핵심 내용 (하이데거 철학, 조력 존엄사 정의 등) 을 반영하지 못했습니다. 1 점으로 유지합니다.\n5. overall_judge: 모든 하위 기준이 1 점 수준이며 근거가 부실하므로 전체 점수를 1.0 으로 조정합니다."
+          }
+        },
+        "round_2": {
+          "strict": {
+            "domain_match": 2,
+            "score_rationale_consistency": 1,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 1.2,
+            "adjustment_notes": "관대한 심사위원의 초기 평가 (4.0 점) 는 rationale 의 빈약함을 간과한 것으로 판단됩니다. 조정 사유는 다음과 같습니다.\n1. domain_match: rationale 은 '서론-본론-결론'이라는 형식적 구조만 언급했을 뿐, 도메인 기준인 '논리적 전개', '주제 대응', '내용의 적절성'을 분석하지 않았습니다. 또한 영어로 서술되어 언어적 불일치가 있어 2 점으로 유지합니다.\n2. score_rationale_consistency: 4.0(우수) 점수에 'clear structure'라는 포괄적이고 약한 근거만 제시하여 점수와 설명이 심각하게 모순됩니다. 구체적인 강점 근거가 없으므로 1 점으로 조정합니다.\n3. specificity: 'clear structure'와 같은 추상적 표현만 반복하고 essay_text 의 구체적 문장이나 표현을 인용하지 않았습니다. 1 점으로 유지합니다.\n4. groundedness: rationale 은 essay_text 의 핵심 내용 (하이데거 철학, 조력 존엄사 정의 등) 을 반영하지 못했습니다. 1 점으로 유지합니다.\n5. overall_judge: 모든 하위 기준이 1 점 수준이며 근거가 부실하므로 전체 점수를 1.0 으로 조정합니다."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 2,
+            "groundedness": 5,
+            "overall_judge": 3.0,
+            "adjustment_notes": "1) domain_match: 관대한 심사위원이 organization(content/organization/expression 모두 포함) 기준 충족으로 5점을 주었으나, rationale 은 '서론/본론/결론 구조'만 언급하고 content(하이데거 철학 적용 논리) 와 expression(문장 자연스러움 등) 에 대한 구체적 평가가 빠져 있어 domain_match 기준의 전 영역을 충실히 반영하지 못함. 따라서 5점 대신 4점으로 조정함. 2) score_rationale_consistency: predicted_score(4.0) 는 '경미한 약점 1 개 이하'를 요구하나, rationale 은 essay_text 의 핵심 내용 (하이데거, 연명의료결정법 등) 을 전혀 인용하지 않고 구조만 언급하여 근거가 매우 약함. 점수 대비 근거 부족으로 3점으로 조정함. 3) specificity: '전반적으로 좋다', '구조가 명확하다'와 같은 generic 표현만 사용되어 essay_text 의 구체적 문장이나 논지를 지적하지 않음. 따라서 2점으로 감점함. 4) groundedness: rationale 의 모든 주장 (서론/본론/결론 존재 여부) 이 essay_text 의 실제 구조에 근거하므로 5점을 유지함."
+          }
+        },
+        "round_3": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 2,
+            "groundedness": 5,
+            "overall_judge": 3.0,
+            "adjustment_notes": "관대한 심사위원의 평가와 내 판단을 비교하여 점수를 유지합니다. 1) domain_match: rationale 이 서론/본론/결론 구조만 언급하여 content(하이데거 철학 논리) 와 expression 을 평가하지 못했으므로 5점 대신 4점으로 조정됨. 2) score_rationale_consistency: predicted_score(4.0) 는 경미한 약점 허용이지만, rationale 이 essay 의 핵심 근거 (하이데거, 연명의료결정법 등) 를 전혀 인용하지 않아 점수 정당화가 부족하므로 3점으로 조정됨. 3) specificity: '구조가 명확하다'와 같은 generic 표현만 사용되어 구체적 문장이나 논지를 지적하지 않았으므로 2점으로 유지됨. 4) groundedness: rationale 의 구조 언급은 essay_text 의 실제 구성에 근거하므로 5점 유지."
+          },
+          "lenient": {
+            "domain_match": 2,
+            "score_rationale_consistency": 1,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 1.2,
+            "adjustment_notes": "엄격한 심사위원의 평가에 동의합니다. 관대한 초기 평가 (4.0 점) 는 rationale 의 빈약함을 간과한 것으로 판단됩니다.\n1. domain_match: rationale 은 형식적 구조만 언급했을 뿐 도메인 기준인 논리적 전개나 주제 대응을 분석하지 않았습니다. 영어 서술로 인한 불일치도 존재하므로 2 점 유지합니다.\n2. score_rationale_consistency: 4.0 점이라는 높은 점수에 'clear structure'라는 포괄적이고 약한 근거만 제시하여 점수와 설명이 심각하게 모순됩니다. 구체적인 강점 근거가 없으므로 1 점으로 조정합니다.\n3. specificity: 'clear structure'와 같은 추상적 표현만 반복하고 essay_text 의 구체적 문장이나 표현을 인용하지 않았습니다. 1 점 유지합니다.\n4. groundedness: rationale 은 essay_text 의 핵심 내용 (하이데거 철학, 조력 존엄사 정의 등) 을 반영하지 못했습니다. 1 점 유지합니다.\n5. overall_judge: 모든 하위 기준이 1 점 수준이며 근거가 부실하므로 전체 점수를 1.0 으로 조정합니다."
+          }
+        },
+        "round_4": {
+          "strict": {
+            "domain_match": 2,
+            "score_rationale_consistency": 1,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 1.2,
+            "adjustment_notes": "관대한 심사위원의 초기 평가 (4.0 점) 는 rationale 의 빈약함을 간과한 것으로 판단됩니다.\n1. domain_match: rationale 은 형식적 구조만 언급했을 뿐 도메인 기준인 논리적 전개나 주제 대응을 분석하지 않았습니다. 영어 서술로 인한 불일치도 존재하므로 2 점 유지합니다.\n2. score_rationale_consistency: 4.0 점이라는 높은 점수에 'clear structure'라는 포괄적이고 약한 근거만 제시하여 점수와 설명이 심각하게 모순됩니다. 구체적인 강점 근거가 없으므로 1 점으로 조정합니다.\n3. specificity: 'clear structure'와 같은 추상적 표현만 반복하고 essay_text 의 구체적 문장이나 표현을 인용하지 않았습니다. 1 점 유지합니다.\n4. groundedness: rationale 은 essay_text 의 핵심 내용 (하이데거 철학, 조력 존엄사 정의 등) 을 반영하지 못했습니다. 1 점 유지합니다.\n5. overall_judge: 모든 하위 기준이 1 점 수준이며 근거가 부실하므로 전체 점수를 1.0 으로 조정합니다."
+          },
+          "lenient": {
+            "domain_match": 3,
+            "score_rationale_consistency": 2,
+            "specificity": 2,
+            "groundedness": 5,
+            "overall_judge": 3.0,
+            "adjustment_notes": "1) domain_match: 엄격한 심사위원이 지적한 대로 rationale 은 서론/본론/결론의 구조만 언급하여 content(하이데거 철학 논리 전개) 와 expression 을 평가하지 못했습니다. 따라서 4점을 3점으로 하향 조정합니다. 2) score_rationale_consistency: predicted_score 가 4.0 이었으나, rationale 은 essay 의 핵심 근거 (하이데거 철학, 연명의료결정법 등) 를 전혀 인용하지 않아 점수 정당화가 부족합니다. 경미한 약점 허용 기준을 충족하지 못하므로 3점을 2점으로 하향 조정합니다. 3) specificity: '구조가 명확하다'와 같은 generic 표현만 사용되어 구체적 문장이나 논지를 지적하지 않았으므로 엄격한 심사위원의 2점 유지 판단에 동의합니다. 4) groundedness: rationale 의 구조 언급은 essay_text 의 실제 구성에 근거하므로 5점을 유지합니다."
+          }
+        },
+        "final": {
+          "domain_match": 2.5,
+          "score_rationale_consistency": 1.5,
+          "specificity": 1.5,
+          "groundedness": 3.0,
+          "overall_judge": 2.1
+        }
+      },
+      "expression": {
+        "round_0": {
+          "strict": {
+            "domain_match": 2,
+            "score_rationale_consistency": 1,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 1.2,
+            "rationale_for_score": "1. domain_match: 'expression' 영역 평가 기준을 적용했으나, rationale 은 내용적 논증 (하이데거 철학 인용, 조력 존엄사 정의 등) 에만 집중하여 표현의 명확성이나 문법 오류에 대한 구체적 분석이 부재함. 2. score_rationale_consistency: predicted_score 가 4.0(높은 점수) 인데 rationale 이 'minimal errors'라는 매우 약한 근거만 제시하여 점수를 정당화하지 못함. 높은 점수에 상응하는 구체적인 표현적 강점 (예: 문장 리듬, 어휘 선택의 정교함 등) 을 언급하지 않음. 3. specificity: 'clear and concise', 'minimal errors'와 같은 추상적 일반화 표현만 사용되어 구체적인 문장이나 표현을 지적하지 못함. 4. groundedness: rationale 의 내용은 essay_text 의 내용적 논증에 기반하고 있으나, 평가 대상이 'expression' 이므로 해당 텍스트의 실제 문장 구조나 어휘 사용을 확인하기 위한 근거가 전혀 없음 (hallucination 에 준하는 오류)."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 5,
+            "specificity": 4,
+            "groundedness": 4,
+            "overall_judge": 4.5,
+            "rationale_for_score": "1) domain_match: rationale 가 'grammar, syntax, vocabulary' 등 expression 영역의 평가 기준을 명확히 사용하여 글의 언어적 완성도를 평가하고 있습니다. 2) score_rationale_consistency: predicted_score(4.0) 와 일치하는 근거가 충분합니다. 문장이 자연스럽고 어휘 사용이 적절하며 맞춤법 오류가 거의 없다는 설명은 높은 점수를 정당화합니다. 3) specificity: 'clear and concise', 'minimal errors'와 같은 구체적인 언어적 특성을 지적하여 generic 한 평가지는 피했습니다. 다만, '문단 간 연결'이나 '논리 전개' 등 organization 영역의 구체적 예시는 포함되지 않아 4점으로 제한했습니다. 4) groundedness: essay_text 의 실제 문장 ('마냥 가벼운 주제가 아니었기 때문에', '조력 존엄사는 복용 또는 투약을 환자 본인이 직접 하므로') 이 표현이 명확하고 오류가 적다는 사실과 잘 부합합니다. hallucination 은 없으며, 텍스트의 언어적 특징을 정확히 반영했습니다."
+          }
+        },
+        "round_1": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 5,
+            "specificity": 4,
+            "groundedness": 4,
+            "overall_judge": 4.5,
+            "adjustment_notes": "관대한 심사위원의 평가는 rationale 텍스트에 명시된 근거 (grammar, syntax, vocabulary 등) 만을 인정해야 합니다. 관대 심사위원이 '문단 간 연결'이나 '논리 전개' 부족을 지적하여 domain_match 를 5 점으로 유지한 것은, rationale 에 organization 영역의 구체적 예시가 없다는 사실과 모순됩니다. 따라서 domain_match 는 expression 기준만 충족했으므로 5 점 유지합니다. score_rationale_consistency 는 predicted_score(4.0) 와 rationale 의 설명이 일치하므로 5 점 유지합니다. specificity 는 'clear and concise' 등 구체적인 표현을 지적했으나, generic 한 평가지는 피했다는 관대 심사위원의 논리는 rationale 에 organization 예시가 없다는 점을 고려할 때 타당하지 않으므로 4 점으로 조정합니다. groundedness 는 essay_text 의 실제 문장을 인용하여 언어적 특징을 평가했으므로 hallucination 이 없으며 4 점 유지합니다. 최종 점수는 4.0 으로 조정합니다."
+          },
+          "lenient": {
+            "domain_match": 1,
+            "score_rationale_consistency": 1,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 1.0,
+            "adjustment_notes": "엄격한 심사위원의 지적대로 모든 항목을 하향 조정함. 1. domain_match: rationale 이 'expression' 영역 평가 기준 (문법, 어휘, 문장 구조 등) 을 전혀 적용하지 않고 내용적 논증만 분석했으므로 1 점으로 감점. 2. score_rationale_consistency: predicted_score 가 4.0(높은 점수) 인데 근거가 'minimal errors'라는 매우 약한 표현에 그쳐 점수를 정당화할 수 없으므로 1 점으로 감점. 3. specificity: 'clear and concise'와 같은 추상적 일반화만 사용되어 구체적인 문장이나 표현을 지적하지 못했으므로 1 점으로 감점. 4. groundedness: essay_text 의 실제 문장 구조나 어휘 사용을 확인하기 위한 근거가 전혀 없어 평가 대상과 무관하므로 1 점으로 감점."
+          }
+        },
+        "round_2": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 5,
+            "specificity": 5,
+            "groundedness": 5,
+            "overall_judge": 5.0,
+            "adjustment_notes": "관대한 심사위원이 essay_text 에서 직접 인용 가능한 구체적 근거 (하이데거 철학 언급, 연명의료결정법 제1조 인용, '힘을 써 도와줌' 정의 등) 를 활용하여 rationale 을 방어한 점을 인정함. 따라서 관대한 심사위원의 평가인 4 점으로 조정하며, 모든 항목에 대해 essay_text 와 직접 연결된 구체적 근거가 존재하므로 5 점 기준 충족."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 5,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 4.2,
+            "adjustment_notes": "1. domain_match: 관대한 심사위원이 '문단 간 연결'이나 '논리 전개' 부족을 지적하여 5 점을 유지한 것은 오류입니다. rationale 은 'grammar, syntax, vocabulary' 등 expression 영역의 구체적 특징만 언급하고 organization(구조) 에 대한 평가 근거가 전혀 없습니다. 따라서 domain 기준 (organization) 을 충족하지 못하므로 감점하여 4 점으로 조정합니다.\n2. score_rationale_consistency: predicted_score(4.0) 와 rationale 의 설명이 일치하므로 5 점을 유지합니다.\n3. specificity: 'clear and concise' 등 구체적인 표현을 지적했으나, 이는 generic 한 평가지라 3 점으로 조정합니다.\n4. groundedness: essay_text 의 실제 문장을 인용하여 언어적 특징을 평가했으므로 hallucination 이 없으며 4 점을 유지합니다.\n5. 최종 점수: domain_match 가 4 점으로 조정됨에 따라 overall_judge 는 4.0 으로 조정합니다."
+          }
+        },
+        "round_3": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 5,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 4.0,
+            "adjustment_notes": "1. domain_match: 관대한 심사위원이 organization(구조) 평가 근거가 없다고 지적하여 감점한 것은 옳습니다. rationale 텍스트에는 '문단 간 연결'이나 '논리 전개'에 대한 언급이 전혀 없으며, 오직 expression 영역의 특징만 설명하고 있습니다. 따라서 domain 기준을 충족하지 못하므로 4 점으로 유지합니다.\n2. score_rationale_consistency: predicted_score(4.0) 와 rationale 의 설명이 일치하므로 5 점을 유지합니다.\n3. specificity: 'clear and concise' 등 구체적인 표현을 지적했으나, 이는 generic 한 평가지라 3 점으로 조정합니다.\n4. groundedness: essay_text 의 실제 문장을 인용하여 언어적 특징을 평가했으므로 hallucination 이 없으며 4 점을 유지합니다.\n5. 최종 점수: domain_match 가 4 점으로 확정됨에 따라 overall_judge 는 4.0 으로 조정합니다."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.2,
+            "adjustment_notes": "1. domain_match: 관대한 심사위원이 지적한 대로 essay_text 에서 하이데거 철학, 연명의료결정법 제 1 조, '힘을 써 도와줌' 정의 등 구체적인 근거를 활용하여 expression 기준 (문장 자연스러움, 어휘 적절함) 을 방어하고 있으므로 5 점 유지.\n2. score_rationale_consistency: predicted_score 가 4.0 이나 rationale 은 'minimal errors', 'clear and concise' 와 같이 매우 포괄적이고 추상적인 표현만 사용하여 구체적인 문장 예시나 오류 지적이 부재함. 높은 점수 (4 점) 에 비해 근거의 설득력이 약하므로 4 점으로 하향 조정.\n3. specificity: rationale 이 '문법, 구문, 어휘'에 대한 일반적인 칭찬만 하고, essay_text 의 구체적인 문장이나 표현을 직접 인용하거나 지적하지 않음. 구체적 예시 부재로 인해 3 점 부여.\n4. groundedness: 관대한 심사위원의 평가가 essay_text 의 실제 내용 (하이데거 언급 등) 에 기반하여 이루어졌으므로 5 점 유지.\n5. overall_judge: domain_match 와 groundedness 가 완벽하나, score_rationale_consistency 와 specificity 에서 근거 부족으로 인해 전체 점수는 4.2 로 조정."
+          }
+        },
+        "round_4": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.0,
+            "adjustment_notes": "1. domain_match: 관대한 심사위원이 essay_text 내 하이데거 철학 및 연명의료결정법 제 1 조 등 구체적 근거를 인용하여 expression 기준 (문장 자연스러움, 어휘 적절함) 을 방어했으므로 5 점 유지.\n2. score_rationale_consistency: predicted_score 가 4.0 인데 rationale 은 'minimal errors', 'clear and concise' 와 같이 추상적 표현만 사용하며 essay_text 의 구체적 문장 예시나 오류 지적이 부재함. 높은 점수에 비해 근거의 설득력이 약하므로 3 점으로 하향 조정.\n3. specificity: rationale 이 '문법, 구문, 어휘'에 대한 일반적인 칭찬만 하고 essay_text 의 구체적인 문장이나 표현을 직접 인용하지 않음. 구체적 예시 부재로 인해 3 점 유지.\n4. groundedness: 관대한 심사위원의 평가가 essay_text 의 실제 내용 (하이데거 언급 등) 에 기반하여 이루어졌으므로 5 점 유지.\n5. overall_judge: domain_match 와 groundedness 가 완벽하나, score_rationale_consistency 와 specificity 에서 근거 부족으로 인해 전체 점수는 4.0 으로 조정."
+          },
+          "lenient": {
+            "domain_match": 3,
+            "score_rationale_consistency": 2,
+            "specificity": 1,
+            "groundedness": 4,
+            "overall_judge": 2.0,
+            "adjustment_notes": "1. domain_match: 관대한 심사위원이 지적한 대로 rationale 은 expression(표현) 영역만 평가하고 organization(구조) 등 다른 영역 기준을 전혀 언급하지 않았습니다. 이는 '다른 영역 기준 사용'에 해당하므로 감점하여 3 점으로 조정합니다.\n2. score_rationale_consistency: predicted_score 가 4.0 이지만, rationale 은 'clear and concise'라는 매우 일반적이고 구체적인 근거가 없는 설명입니다. 높은 점수에 비해 근거가 부족하여 모순이 있으므로 2 점으로 강하게 감점합니다.\n3. specificity: 'clear and concise'와 같은 추상적 표현만 사용했고, 실제 문장이나 구체적인 오류 지정을 하지 않았습니다. 이는 generic 한 평가지라 1 점으로 조정합니다.\n4. groundedness: essay_text 의 내용과 일치하는 언어적 특징을 지적했으므로 hallucination 이 없으며 4 점을 유지합니다.\n5. 최종 점수: 주요 결함 (domain mismatch, 근거 부족, 구체성 부재) 이 명확하므로 overall_judge 를 2.5 로 조정합니다."
+          }
+        },
+        "final": {
+          "domain_match": 4.0,
+          "score_rationale_consistency": 2.5,
+          "specificity": 2.0,
+          "groundedness": 4.5,
+          "overall_judge": 3.0
+        }
+      }
+    }
+  }
+]

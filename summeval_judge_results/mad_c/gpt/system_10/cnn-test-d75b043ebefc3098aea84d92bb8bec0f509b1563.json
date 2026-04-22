@@ -1,0 +1,63 @@
+{
+  "article_id": "cnn-test-d75b043ebefc3098aea84d92bb8bec0f509b1563",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, as it abruptly ends without mentioning the militant group responsible for the attack or the context of the incident."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the identity of the militant group Jaish al Adal, their motivations, and the Pakistani government's response, which are crucial for understanding the significance of the event."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The use of parentheses and dashes in the summary is unconventional and disrupts the reading flow, making it less fluent."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, outlining the key events in a structured manner."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article without introducing any new facts."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important details, such as the number of guards killed and the involvement of Iranian and Pakistani authorities."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary uses a non-standard format with parentheses and dashes, which affects its readability and fluency."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 5,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "article_id": "cnn-test-b8b6e729fff27c4eef87887e61d3448de9c063f6",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information. It jumps between different points without proper transitions, making it difficult to follow."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details about the mission, such as the purpose of the Dragon spacecraft, the amount of supplies delivered, and the significance of the launch. This makes it less informative."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that SpaceX was unsuccessful without clarifying that the launch itself was successful, only the landing attempt failed."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as missing articles and improper sentence structure, which affect readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with the launch of the Falcon 9 rocket and mentioning the attempt to land it."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding the launch and the landing attempt, without introducing any new facts."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key events of the launch and the landing attempt, which are the most important aspects of the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as missing articles and improper sentence structure, which affect readability."
+        },
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow, as it jumps between points without clear transitions, making it harder to follow."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

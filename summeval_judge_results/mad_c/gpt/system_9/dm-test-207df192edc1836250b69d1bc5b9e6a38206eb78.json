@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-207df192edc1836250b69d1bc5b9e6a38206eb78",
+  "system_name": "system_9",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information. It jumps between statistics about obesity and the study without connecting them effectively."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits critical details about the study's findings regarding the link between antibiotic use and obesity, which are essential for understanding the implications of the research."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on statistics but fails to mention the potential causes of obesity related to antibiotic use, which is a key point of the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as inconsistent capitalization and punctuation, which detract from its readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the findings of the study, specifically mentioning the comparison of weight and height of two-year-olds."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on key statistics about obesity rates among children and the relationship with antibiotic prescriptions, which are central points of the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits important details about the implications of the study, such as the potential reasons for weight gain related to antibiotics and the warnings from the lead author."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as missing articles and punctuation, which affect its readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-b1c3fc03a2b74cf4c79844c1fe2fdce70a8a436e",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, abruptly transitioning from the number of rescued migrants to the missing migrants without connecting the two points effectively."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the claim of 400 missing migrants without providing the context that the Italian coast guard has not confirmed the capsizing incident, which is a critical detail from the source."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The use of lowercase for proper nouns (e.g., 'rome', 'italy', 'africa', 'middle east') is grammatically incorrect and affects readability."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary does not mention the increase in migrant deaths or the reasons behind it, which are significant points in the original article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, starting with the rising number of migrants and then detailing the rescue efforts and concerns about missing individuals."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, including the number of migrants rescued and the concerns raised by Save the Children regarding missing individuals."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the article, such as the number of rescues, the situation of missing migrants, and the context of the migrant crisis."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as the use of lowercase letters for proper nouns and punctuation errors, which affect its readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "tie",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "tie"
+      }
+    }
+  }
+}

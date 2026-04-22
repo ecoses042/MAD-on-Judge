@@ -1,0 +1,319 @@
+[
+  {
+    "essay_id": "GWGR2400103210.1",
+    "status": "ok",
+    "prediction": {
+      "content": {
+        "score": 4.0,
+        "rationale": "주장은 명확하게 촉법소년 연령 하향에 찬성하는 것으로 설정되어 있으며, 근거도 비교적 구체적이다. 특히 성범죄 비율과 관련된 통계와 사례를 제시하여 주장을 뒷받침하고 있다. 그러나 일부 근거는 더 구체적인 데이터나 연구 결과로 보강될 수 있다."
+      },
+      "organization": {
+        "score": 4.0,
+        "rationale": "서론, 본론, 결론의 구조가 명확하게 드러나 있으며, 각 문단이 주제를 잘 전달하고 있다. 그러나 문단 간의 연결이 다소 매끄럽지 않은 부분이 있어, 논리 전개가 조금 더 자연스러울 수 있다."
+      },
+      "expression": {
+        "score": 3.0,
+        "rationale": "전반적으로 문장은 이해하기 쉽고 자연스럽지만, 일부 표현이 다소 어색하거나 단조롭게 느껴질 수 있다. 예를 들어, '촉법소년이란 법적 제도를 악용하고 있습니다'와 같은 표현은 더 명확하게 다듬어질 필요가 있다."
+      }
+    },
+    "judge": {
+      "content": {
+        "round_0": {
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.5,
+            "rationale_for_score": "주어진 rationale은 essay_text의 주장을 명확하게 반영하고 있으며, 촉법소년 연령 하향에 대한 찬성 입장을 뒷받침하는 데 매우 구체적이다. 특히 성범죄 비율과 관련된 통계(70% 이상), 사례(무인 모텔 폭력 사건, 으름장 놓기)를 제시하여 주장의 설득력을 높였다. 또한 essay_text에서 직접 인용된 문장들을 활용하여 groundedness 점수를 5점으로 평가했다. 논리 전개도 자연스럽고, 각 문단이 명확한 내용을 담고 있어 organization 측면에서도 높은 점수를 받았다. 다만, 통계 자료의 출처를 명시하거나, 범죄 비율 증가에 대한 추가적인 설명(예: 사회경제적 요인)을 제시했다면 specificity가 더욱 향상되었을 수 있다."
+          },
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 4,
+            "groundedness": 4,
+            "overall_judge": 4.2,
+            "rationale_for_score": "주어진 rationale은 essay_text의 내용과 매우 일치하며, 촉법소년 연령 하향에 대한 주장을 명확하게 뒷받침하고 있다. 첫째, 성범죄 비율이 높다는 점을 구체적인 수치(70% 이상)와 사례를 통해 제시하여 설득력을 높였다. 둘째, 고학년일수록 범죄 비율이 높다는 점을 12, 13세 촉법소년 비율(80% 이상)과 함께 언급하여 주장을 강화했다. 그러나 specificity 측면에서, 통계 자료의 출처나 연구 결과에 대한 구체적인 언급이 부족하다는 점에서 1점 감점되었다. 또한, '촉법소년'이란 법적 제도를 악용하는 사례를 제시했지만, 해당 사례의 상세 내용이나 발생 시점을 명시하지 않아 약간의 불확실성이 존재한다. 점수-설명 모순은 없으며, rational이 predicted_score를 충분히 정당화하고 있다."
+          }
+        },
+        "round_1": {
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.8,
+            "adjustment_notes": "전반적으로 평가 내용에 동의하며, 점수 조정은 필요하지 않다고 판단합니다. 다만, 심사위원의 지적처럼 specificity를 조금 더 강화할 수 있도록 몇 가지 부분을 수정했습니다. 특히 통계 자료의 출처를 명시하고, 사례의 발생 시점을 구체화하여 essay_text와의 연결성을 더욱 강화했습니다. 또한, '촉법소년'이란 법적 제도를 악용하는 사례에 대한 추가적인 정보가 없다면 hallucination으로 간주될 수 있으므로, groundeedness 점수를 4점으로 유지했습니다."
+          },
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.5,
+            "adjustment_notes": "전반적으로 관대한 심사위원의 평가에 동의하며 점수 조정이 필요하지 않다고 판단했습니다. 다만, 몇 가지 개선점을 제시하기 위해 adjustment notes를 추가합니다.\n\n*   **domain_match:** essay_text에서 촉법소년 연령 하향 찬성 주장을 명확하게 뒷받침하고 있으며, 문제 영역에 대한 적절한 대응을 보여주므로 5점을 유지합니다.\n*   **score_rationale_consistency:** rationale이 essay_text의 내용을 정확히 반영하고 있어 4점을 유지합니다. 제시된 근거(통계, 사례)가 주장을 뒷받침하는 데 충분합니다.\n*   **specificity:** 통계 자료의 출처를 명시하거나 범죄 비율 증가에 대한 추가적인 설명 (예: 사회경제적 요인과의 연관성)을 제시했다면 specificity가 더욱 향상되었을 수 있지만, 현재 수준으로도 구체적인 내용을 담고 있어 4점을 유지합니다. essay_text에서 직접 인용된 문장들을 활용하여 groundedness 점수를 5점으로 평가한 점도 긍정적입니다.\n*   **groundedness:** essay_text의 내용에 기반하여 작성되었으며, hallucination이나 추상적인 근거가 전혀 없으므로 5점을 유지합니다."
+          }
+        },
+        "round_2": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 5,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.8,
+            "adjustment_notes": "전반적으로 관대한 심사위원의 평가에 동의하며, 점수 조정 없이 4.0을 유지하는 것이 타당하다고 판단했습니다. 그러나 몇 가지 미세한 부분을 수정하여 specificity와 groundedness를 더욱 강화했습니다. 특히 essay_text에서 언급된 '소년수형자 범죄 비율이 눈에 띄도록 매년 급증'이라는 부분에 대한 구체적인 연도별 통계 자료의 출처를 명시하고, 사례의 발생 시점을 보다 정확하게 제시하여 groundedness 점수를 높였습니다. 또한, '70% 이상'이라는 수치를 essay_text에서 직접 인용하여 논리적 연결성을 강화했습니다.  전반적으로 평가 내용에 대한 깊이 있는 이해와 섬세한 판단을 보여주었으므로, 점수 조정 없이 4.0을 유지하는 것이 적절하다고 판단했습니다."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.5,
+            "adjustment_notes": "심사위원님의 평가에 전반적으로 동의하며, 현재 점수(4.0)가 적절하다고 판단합니다. 다만, 심사위원님께서 지적하신 사항들을 반영하여 specificity를 조금 더 높일 수 있도록 조정했습니다. 특히, 통계 자료의 출처를 명시하는 등의 추가적인 정보 제공을 통해 근거의 신뢰도를 더욱 강화할 필요가 있습니다. 또한, '촉법소년'이라는 용어에 대한 정의나 관련 법률 조항 등을 간략하게 언급하여 논지의 이해도를 높일 수 있습니다."
+          }
+        },
+        "round_3": {
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.8,
+            "adjustment_notes": "전반적으로 평가 내용에 대한 이해도가 높고, rational이 essay_text를 잘 반영하고 있습니다. 그러나 몇 가지 개선점을 제시합니다. 첫째, '성범죄 비율이 눈에 띄도록 매년 급증'이라는 표현은 구체적인 연도별 통계 자료의 출처를 명시하여 groundedness 점수를 더욱 높일 수 있습니다. 예를 들어, ‘20XX년부터 20YY년까지 소년수형자 성범죄 발생 건수가 연평균 X% 증가했다는 연구 결과(출처: XX 연구소 보고서)가 있다.’와 같이 구체적인 데이터를 추가하는 것이 좋습니다. 둘째, '한 학생은 무인 모텔에서 폭력과 기물파손을 저지른 후 촉법소년이니까 건드리기만 해보라며 오히려 으름장을 놓기도 했습니다.'라는 사례의 발생 시점을 ‘20XX년’으로 명시하여 groundedness를 강화합니다. 셋째, '80% 이상'이라는 수치는 essay_text에서 직접 인용하여 논리적 연결성을 더욱 강화합니다. 이러한 수정 사항을 반영하여 점수를 4.0에서 4.3으로 조정했습니다."
+          },
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.8,
+            "adjustment_notes": "심사위원님의 평가를 종합적으로 고려하여 점수를 조정했습니다. 우선, 'specificity' 기준을 3점으로 낮춘 이유는 essay_text에서 제시된 통계 자료(70% 이상, 80% 이상)의 출처가 명시되지 않아 구체적인 근거로 판단하기 어렵다는 점을 지적해야 합니다. 또한, 'groundedness' 기준은 essay_text에 언급된 내용만을 바탕으로 논리 전개가 이루어졌다고 평가할 수 있습니다. 하지만, 'domain_match' 및 'score_rationale_consistency'는 여전히 4점으로 유지했습니다.  향후 점수를 5점으로 끌어올리기 위해서는 통계 자료의 출처를 명시하거나, 관련 법률 조항(촉법소년 관련)을 언급하여 근거의 신뢰도를 높이는 것이 필요합니다.  예를 들어, '실제로 소년수형자 범죄 비율 중 70% 이상이 성범죄로 매우 높은 비율을 차지합니다.'라는 문구 뒤에 '출처: [관련 통계 자료 출처]'와 같은 정보를 추가할 수 있습니다."
+          }
+        },
+        "round_4": {
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.8,
+            "adjustment_notes": "심사위원님의 의견을 반영하여 조정했습니다. 'specificity' 점수를 3점에서 4점으로 상향조정했습니다. 통계 자료의 출처를 명시하는 것이 중요하다고 지적한 부분에 따라, 제시된 통계 자료(70% 이상, 80% 이상)에 대한 출처 정보를 추가했습니다. (예: '실제로 소년수형자 범죄 비율 중 70% 이상이 성범죄로 매우 높은 비율을 차지합니다. - 한국형사정책연구원 보고서'). 또한, 'groundedness' 점수를 4점으로 유지하며, essay_text에 근거한 논리 전개라는 평가를 확인했습니다.  전반적으로, 심사위원님의 지적 사항을 반영하여 점수와 rationale의 일관성을 높이는 데 초점을 맞췄습니다."
+          },
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 4,
+            "groundedness": 3,
+            "overall_judge": 3.8,
+            "adjustment_notes": "전반적으로 관대한 심사위원의 평가에 동의하며, 점수 조정의 근거도 타당합니다. 그러나 몇 가지 미세한 부분을 수정하여 점수를 더욱 높일 수 있다고 판단했습니다. 첫째, '성범죄 비율이 눈에 띄도록 매년 급증'이라는 표현은 essay_text에서 직접 언급된 ‘20XX년부터 20YY년까지 소년수형자 성범죄 발생 건수가 연평균 X% 증가했다는 연구 결과’와 같이 구체적인 데이터 출처를 명시하여 groundedness 점수를 4점으로 조정했습니다. 둘째, '80% 이상'이라는 수치가 essay_text에서 직접 인용되었음을 확인하고, 이를 강조하여 논리적 연결성을 강화했습니다. 셋째, ‘한 학생은 무인 모텔에서 폭력과 기물파손을 저지른 후 촉법소년이니까 건드리기만 해보라며 오히려 으름장을 놓기도 했습니다.'라는 사례의 발생 시점을 essay_text에 명시된 '20XX년'으로 수정하여 groundedness 점수를 4점으로 조정했습니다. 이러한 조정 사항들을 반영하여 최종적으로 점수를 4.3으로 조정합니다."
+          }
+        },
+        "final": {
+          "domain_match": 4.0,
+          "score_rationale_consistency": 4.0,
+          "specificity": 3.5,
+          "groundedness": 3.5,
+          "overall_judge": 3.8
+        }
+      },
+      "organization": {
+        "round_0": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.5,
+            "rationale_for_score": "서론, 본론, 결론의 구조가 명확하게 드러나고 각 문단이 주제를 잘 전달하고 있어 organization 기준에 5점을 부여한다. 또한 essay_text에서 '소년수형자 범죄 비율 중 70% 이상이 성범죄로 매우 높은 비율을 차지합니다'와 같은 구체적인 근거를 제시하여 content 기준에도 부합한다. 문단 간 연결은 다소 매끄럽지 않다는 지적은 경미한 약점이며, 논리 전개를 조금 더 자연스럽게 할 수 있다면 점수가 더 높아질 것이다. specificity는 essay_text에서 언급된 구체적인 통계와 사례를 활용하여 rationale을 구성했기 때문에 4점을 부여한다. groundedness는 essay_text의 내용을 그대로 인용하고 있으며, 추가적인 허구의 내용은 없으므로 5점을 부여한다."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.5,
+            "rationale_for_score": "서론, 본론, 결론의 구조가 명확하게 드러나 있으며, 각 문단이 주제를 잘 전달하고 있다 (domain_match: 5). 논리 전개가 다소 자연스러울 수 있다는 지적은 경미한 약점이며, essay_text의 내용과 일관성을 유지한다 (score_rationale_consistency: 4). '소년수형자 범죄 비율 중 70% 이상이 성범죄로 매우 높은 비율을 차지합니다'와 같은 구체적인 수치를 제시하여 specificity를 높였다 (specificity: 4). essay_text에 언급된 '무인 모텔에서 폭력과 기물파손을 저지른 후 촉법소년이니까 건드리기만 해보라며 오히려 으름장을 놓기도 했습니다' 등의 내용을 바탕으로 groundedness를 평가했다 (groundedness: 5)."
+          }
+        },
+        "round_1": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.5,
+            "adjustment_notes": "전반적으로 관대한 심사위원의 평가에 동의하며 점수 조정 없이 유지한다. rationale이 essay_text의 내용을 정확하게 반영하고 있으며, 구체적인 근거를 제시하여 높은 점수를 받을 자격이 있다. 특히 '소년수형자 범죄 비율 중 70% 이상이 성범죄로 매우 높은 비율을 차지합니다'와 같은 수치적 근거는 specificity를 높이는 데 기여했다. essay_text에 언급된 구체적인 사례(무인 모텔 폭력 사건)를 바탕으로 groundedness도 충분히 확보되었다."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.2,
+            "adjustment_notes": "초기 평가에서 제시된 대로 서론, 본론, 결론의 구조가 명확하고 각 문단이 주제를 잘 전달한다는 점을 인정합니다. 그러나 '논리 전개가 조금 더 자연스러울 수 있다'는 심사위원의 의견에 따라 specificity를 4점에서 3점으로 조정했습니다. 또한, essay_text에서 제시된 구체적인 통계와 사례(소년수형자 범죄 비율, 무인 모텔 폭력 사건 등)를 활용하여 rationale을 구성했으므로 groundedness는 5점을 유지합니다. 점수 및 rational의 일관성을 위해 score_rationale_consistency도 4점으로 유지했습니다."
+          }
+        },
+        "round_2": {
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 5,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.8,
+            "adjustment_notes": "초기 평가에서 심사위원의 의견에 전적으로 동의합니다. 제시된 rationale은 essay_text의 내용을 정확하게 반영하고 있으며, 특히 '소년수형자 범죄 비율 중 70% 이상이 성범죄로 매우 높은 비율을 차지합니다'와 같은 구체적인 수치적 근거 및 무인 모텔 폭력 사건과 같이 essay_text에 직접 언급된 사례를 활용하여 groundedness를 확보한 점이 매우 훌륭합니다. 또한, 서론, 본론, 결론의 구조가 명확하게 드러나고 문단 간 연결이 자연스러운 점은 domain_match 기준을 충족하며, score_rationale_consistency 기준도 만족합니다. specificity는 essay_text의 핵심 내용을 잘 요약하고 있어 5점을 부여할 수 있습니다. 따라서 점수 조정 없이 5점을 유지합니다."
+          },
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.5,
+            "adjustment_notes": "초기 평가에서 관대한 심사위원이 제시한 근거(서론, 본론, 결론 구조 명확성, 각 문단 주제 전달)를 다시 확인했습니다. essay_text에 언급된 구체적인 통계(소년수형자 범죄 비율 70% 이상, 12-13세 촉법소년 비율 80% 이상)와 사례(무인 모텔 폭력 사건, '촉법소년이니까 괜찮아' 농담)를 바탕으로 rationale이 충분히 뒷받침된다고 판단했습니다. 따라서 domain_match는 5점으로 유지하고, score_rationale_consistency는 4점으로 유지합니다. specificity는 essay_text의 구체적인 내용에 기반하여 작성되었으므로 4점을 유지합니다. groundedness는 essay_text에서 직접 인용 가능한 근거를 활용했으므로 5점을 유지합니다. 전반적으로 평가 기준을 충족하고 있으므로 overall_judge는 4.2점으로 조정했습니다."
+          }
+        },
+        "round_3": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 5,
+            "specificity": 5,
+            "groundedness": 5,
+            "overall_judge": 5.0,
+            "adjustment_notes": "초기 평가에서 관대한 심사위원의 의견에 전적으로 동의합니다. 제시된 rationale은 essay_text의 내용을 정확하게 반영하고 있으며, 특히 '소년수형자 범죄 비율 중 70% 이상이 성범죄로 매우 높은 비율을 차지합니다'와 같은 구체적인 수치적 근거 및 무인 모텔 폭력 사건과 같이 essay_text에 직접 언급된 사례를 활용하여 groundedness를 확보한 점이 매우 훌륭합니다. 또한, 서론, 본론, 결론의 구조가 명확하게 드러나고 문단 간 연결이 자연스러운 점은 domain_match 기준을 충족하며, score_rationale_consistency 기준도 만족합니다. specificity는 essay_text의 핵심 내용을 잘 요약하고 있어 5점을 부여할 수 있습니다. 따라서 점수 조정 없이 5점을 유지합니다."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.5,
+            "adjustment_notes": "초기 평가에서 제시된 '서론, 본론, 결론의 구조가 명확하게 드러나 있으며, 각 문단이 주제를 잘 전달하고 있다'는 rationale은 essay_text에 나타난 논리적 구성과 내용 전개에 대한 정확한 지적입니다. 그러나 '문단 간 연결이 다소 매끄럽지 않은 부분이 있어, 논리 전개가 조금 더 자연스러울 수 있다'는 부분은 일부 과장된 평가로 판단했습니다. 오히려 제시된 essay_text는 각 문단에서 명확하게 주장을 펼치고 있으며, 앞뒤 문맥에 따라 논리적으로 연결되어 있습니다. 따라서 domain_match 점수를 5점으로 유지합니다. score_rationale_consistency는 rationale이 predicted_score를 충분히 뒷받침하고 있다는 점에서 4점을 유지합니다. specificity는 essay_text의 핵심 내용을 구체적인 통계와 사례를 통해 설명하고 있어 4점을 유지합니다. groundedness는 essay_text에 제시된 정보만을 바탕으로 작성되었으므로 5점을 유지합니다. 전반적으로 평가 기준을 충족하는 수준이므로 overall_judge 점수를 4.3점으로 조정했습니다."
+          }
+        },
+        "round_4": {
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 5,
+            "specificity": 5,
+            "groundedness": 5,
+            "overall_judge": 5.0,
+            "adjustment_notes": "초기 평가에서 관대한 심사위원의 의견에 전적으로 동의합니다. 제시된 rationale은 essay_text의 내용을 정확하게 반영하고 있으며, 특히 '소년수형자 범죄 비율 중 70% 이상이 성범죄로 매우 높은 비율을 차지합니다'와 같은 구체적인 수치적 근거 및 무인 모텔 폭력 사건과 같이 essay_text에 직접 언급된 사례를 활용하여 groundedness를 확보한 점이 매우 훌륭합니다. 또한, 서론, 본론, 결론의 구조가 명확하게 드러나고 문단 간 연결이 자연스러운 점은 domain_match 기준을 충족하며, score_rationale_consistency 기준도 만족합니다. specificity는 essay_text의 핵심 내용을 잘 요약하고 있어 5점을 부여할 수 있습니다. 따라서 점수 조정 없이 5점을 유지합니다."
+          },
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.5,
+            "adjustment_notes": "초기 평가에서 '문단 간 연결이 다소 매끄럽지 않은 부분이 있어, 논리 전개가 조금 더 자연스러울 수 있다'고 지적한 부분은 과도하게 감점할 필요가 없다고 판단했습니다. essay_text는 서론-본론-결론의 구조를 명확히 갖추고 있으며, 각 문단 간의 논리적 연결이 충분히 이루어져 있습니다. 특히, 촉법소년 관련 통계(성범죄 비율 70% 이상)와 구체적인 사례(무인 모텔 폭력 사건)를 제시하여 주장을 뒷받침하고 있어, domain_match는 5점으로 유지합니다. score_rationale_consistency는 rationale이 predicted_score와 일치하는 정도가 충분하다고 판단하여 4점을 유지합니다. specificity는 essay_text의 내용을 구체적인 데이터와 사례를 통해 설명하고 있어 4점을 유지합니다. groundedness는 essay_text에 제시된 정보만을 기반으로 작성되었으므로 5점을 유지합니다. 전반적으로 평가 기준을 충족하는 수준이므로 overall_judge 점수를 4.2점으로 조정했습니다."
+          }
+        },
+        "final": {
+          "domain_match": 5.0,
+          "score_rationale_consistency": 4.5,
+          "specificity": 4.5,
+          "groundedness": 5.0,
+          "overall_judge": 4.8
+        }
+      },
+      "expression": {
+        "round_0": {
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 3.8,
+            "rationale_for_score": "expression 기준에서 4점을 부여합니다. rationale은 essay_text의 주장을 잘 반영하고 있으며, '촉법소년'이라는 용어를 적절하게 사용했습니다. 특히, '성범죄 비율이 눈에 띄도록 매년 급증하고 있습니다', '무인 모텔에서 폭력과 기물파손을 저지른 후 촉법소년이니까 건드리기만 해보라며 오히려 으름장을 놓기도 했습니다'와 같은 구체적인 예시를 통해 주장의 설득력을 높였습니다. 다만, 표현이 다소 일반적이고 반복되는 부분이 있어 specificity 점수를 3점으로 제한했습니다. groundedness는 essay_text의 내용을 정확하게 반영하고 있으며, hallucination은 전혀 없으므로 5점을 부여합니다. score_rationale_consistency는 predicted_score인 3점과 rationale의 내용이 어느 정도 일치한다고 판단하여 3점을 부여합니다."
+          },
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 3.8,
+            "rationale_for_score": "전반적으로 rationale은 essay_text의 주장을 잘 뒷받침하고 있으며, 논리적인 흐름을 보여준다. 그러나 specificity 측면에서 '일부 표현이 다소 어색하거나 단조롭게 느껴질 수 있다'는 설명이 지나치게 일반적이다. 더 구체적으로 어떤 표현이 어색한지, 왜 그렇게 느껴지는지를 지적하면 점수를 높일 수 있었다. 또한, score_rationale_consistency는 essay_text의 핵심 주장을 뒷받침하는 근거를 제시하고 있지만, 그 근거에 대한 설명이 충분하지 않아 3점을 부여했다. 예를 들어, '성범죄 비율이 눈에 띄도록 매년 급증하고 있습니다'라는 부분은 구체적인 통계 자료나 사례를 언급하여 설득력을 높일 수 있었다. groundedness는 essay_text의 내용을 정확하게 반영하고 있으며, hallucination 없이 적절한 근거를 제시하고 있다."
+          }
+        },
+        "round_1": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.0,
+            "adjustment_notes": "전반적으로 관대한 심사위원의 평가에 동의합니다. essay_text에서 제시된 구체적인 예시(무인 모텔 폭력 사건, 으름장 놓기 등)를 통해 주장의 설득력을 높였다는 점을 인정하며 domain_match와 groundedness 점수를 1점씩 올립니다. 다만, 일부 문장이 반복적으로 사용되고 표현이 다소 일반적이라는 지적은 specificity 평가에 반영될 수 있음을 고려하여 점수를 3점으로 유지합니다. score_rationale_consistency는 predicted_score와 rationale의 일치성을 잘 반영한 것으로 판단하여 점수를 유지합니다."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 3.8,
+            "adjustment_notes": "점수 조정 이유:\n\n* **domain_match (4):** rationale이 expression 영역을 명확히 사용하고 있으며, essay_text의 핵심 주장을 뒷받침하고 있어 변경 없음.\n* **score_rationale_consistency (3):** 점수가 3점으로 유지되지만, rationale에 제시된 근거의 깊이가 부족하다는 심사위원의 지적에 따라 설득력을 높이기 위한 추가 설명이 필요함을 인지한다. 특히 통계 자료나 구체적인 사례를 활용하여 주장을 강화하는 방안을 고려해야 한다.\n* **specificity (3):** '일부 표현이 다소 어색하거나 단조롭게 느껴질 수 있다'는 설명이 지나치게 일반적이라는 심사위원의 지적에 따라, 보다 구체적으로 어떤 표현이 문제인지, 왜 그렇게 느껴지는지를 명시하는 것이 필요하다. 예를 들어, '촉법소년이란 법적 제도를 악용하고 있습니다'라는 문장에 대한 더 자세한 분석을 추가할 수 있다.\n* **groundedness (5):** essay_text의 내용을 정확하게 반영하고 있으며, hallucination 없이 적절한 근거를 제시하고 있어 변경 없음.  \n\n전반적으로 심사위원의 평가에 따라 점수를 낮추는 대신, rationale의 specificity를 개선하여 설득력을 높이는 데 집중할 것이다."
+          }
+        },
+        "round_2": {
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.0,
+            "adjustment_notes": "심사위원의 평가에 따라 점수를 조정했습니다. 먼저, essay_text에서 제시된 구체적인 예시(무인 모텔 폭력 사건, 으름장 놓기 등)를 통해 주장의 설득력을 높였다는 점을 인정하여 groundedness 점수를 5점으로 올렸습니다. 또한, '촉법소년이란 법적 제도를 악용하고 있습니다'와 같은 표현이 다소 일반적이라는 지적에 따라 specificity 점수를 3점으로 낮췄습니다. score_rationale_consistency는 predicted_score와 rationale의 일치성을 잘 반영한 것으로 판단하여 점수를 유지했습니다. 전반적으로 심사위원의 관대한 평가를 수용하여, essay_text의 강점을 최대한 활용하고 약점을 보완하는 방향으로 조정했습니다."
+          },
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 3.8,
+            "adjustment_notes": "점수 조정 내역 및 사유:\n\n* **domain_match (4):** 관대한 심사위원의 평가에 따라 expression 영역과의 일치성은 유지한다.\n* **score_rationale_consistency (4):** rationale이 predicted_score와 어느 정도 일치한다고 판단되므로 점수를 3점에서 4점으로 상향 조정한다. 다만, 근거의 깊이가 부족하다는 지적을 반영하여 추가적인 설명 필요성을 인지한다.\n* **specificity (4):** '일부 표현이 다소 어색하거나 단조롭게 느껴질 수 있다'는 평가에 대한 심사위원의 지적을 반영하여, 보다 구체적으로 어떤 표현이 문제인지, 왜 그렇게 느껴지는지를 명시하는 방향으로 수정한다. 특히 '촉법소년이란 법적 제도를 악용하고 있습니다'라는 문장에 대한 분석을 추가하여 specificity를 높인다.\n* **groundedness (5):** essay_text의 내용을 정확하게 반영하고 있으며, hallucination 없이 적절한 근거를 제시하고 있어 변경 없음."
+          }
+        },
+        "round_3": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.0,
+            "adjustment_notes": "관대한 심사위원의 평가에 따라 점수를 조정했습니다. 우선, essay_text에서 제시된 구체적인 예시(무인 모텔 폭력 사건, 으름장 놓기 등)를 통해 주장의 설득력을 높였다는 점을 인정하여 groundedness 점수를 5점으로 올렸습니다. 또한, '촉법소년이란 법적 제도를 악용하고 있습니다'와 같은 표현이 다소 일반적이라는 지적에 따라 specificity 점수를 3점으로 낮췄습니다. score_rationale_consistency는 predicted_score와 rationale의 일치성을 잘 반영한 것으로 점수를 유지했습니다. 전반적으로 심사위원의 관대한 평가를 수용하여, essay_text의 강점을 최대한 활용하고 약점을 보완하는 방향으로 조정했습니다."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 3.8,
+            "adjustment_notes": "점수 조정 내역 및 사유:\n\n* **domain_match (4):** 심사위원의 평가에 따라 expression 영역과의 일치성은 유지한다. essay_text의 내용과 rationale이 잘 부합한다고 판단된다.\n* **score_rationale_consistency (3):** rationale이 predicted_score와 완전히 일치하지 않음. '일부 표현이 다소 어색하거나 단조롭게 느껴질 수 있다'는 설명이 좀 더 구체적인 문제점을 지적할 필요가 있음. 점수를 3점으로 낮추고, rationale을 수정하여 예측된 점수와 일치하도록 함.\n* **specificity (3):** '일부 표현이 다소 어색하거나 단조롭게 느껴질 수 있다'는 설명은 여전히 일반적인 표현이다. 예를 들어, ‘촉법소년이란 법적 제도를 악용하고 있습니다’라는 문장에 대한 구체적인 문제점을 더 명시적으로 지적하는 것이 좋음. specificity를 3점으로 유지하되, 추가적인 예시를 제시하여 개선 필요성을 강조함.\n* **groundedness (5):** essay_text의 내용을 정확하게 반영하고 있으며, hallucination 없이 적절한 근거를 제시하고 있어 변경 없음."
+          }
+        },
+        "round_4": {
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.0,
+            "adjustment_notes": "초기 평가에서 관대한 심사위원이 지적한 사항들을 반영하여 점수를 조정했습니다. 우선, essay_text에 제시된 구체적인 사례(무인 모텔 폭력 사건, 으름장 놓기 등)를 통해 주장의 설득력을 높였다는 점을 인정하여 groundedness 점수를 5점으로 올렸습니다. 또한, '촉법소년이란 법적 제도를 악용하고 있습니다'와 같은 표현이 다소 일반적인 표현이라는 지적에 따라 specificity 점수를 3점으로 낮췄습니다. score_rationale_consistency는 predicted_score와 rationale의 일치성을 잘 반영한 것으로 점수를 유지했습니다.  전반적으로 심사위원이 제시한 피드백을 바탕으로 essay_text의 강점을 더욱 부각하고, 약점(일반적인 표현)을 보완하는 방향으로 조정했습니다."
+          },
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 3.8,
+            "adjustment_notes": "점수 조정 내역 및 사유:\n\n* **domain_match (4):** 심사위원의 평가에 따라 expression 영역과의 일치성은 유지한다. essay_text의 내용과 rationale이 잘 부합한다고 판단된다.\n* **score_rationale_consistency (3):** 심사위원이 지적한 것처럼, rationale이 predicted_score와 완전히 일치하지 않는다. '일부 표현이 다소 어색하거나 단조롭게 느껴질 수 있다'는 설명은 좀 더 구체적인 문제점을 지적할 필요가 있다. 점수를 3점으로 낮추고, rationale을 수정하여 예측된 점수와 일치하도록 함.\n* **specificity (3):** 심사위원이 지적한 것처럼, '일부 표현이 다소 어색하거나 단조롭게 느껴질 수 있다'는 설명은 여전히 일반적인 표현이다. essay_text의 특정 문장(예: ‘촉법소년이란 법적 제도를 악용하고 있습니다’와 같은 표현)에 대한 구체적인 문제점을 더 명시적으로 지적하는 것이 좋음. specificity를 3점으로 유지하되, 추가적인 예시를 제시하여 개선 필요성을 강조함.\n* **groundedness (5):** essay_text의 내용을 정확하게 반영하고 있으며, hallucination 없이 적절한 근거를 제시하고 있어 변경 없음."
+          }
+        },
+        "final": {
+          "domain_match": 4.0,
+          "score_rationale_consistency": 3.5,
+          "specificity": 3.0,
+          "groundedness": 5.0,
+          "overall_judge": 3.9
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-2c37d44d03ce2e91310339d884d33ee5aabf9abc",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is fluent and covers the main events well. However, it contains a significant consistency error: the source text states that 'firefighters and paramedics arrived on the scene' after the parents rescued the child, but the summary claims 'paramedics arrived to treat the boy' as if they were the ones who pulled him to safety or were present for the rescue itself. The source explicitly says the parents rescued him *before* paramedics arrived. Additionally, while the summary mentions charges will be pressed on Monday (consistent with the text), it omits the specific detail that the zoo plans to press 'child endangerment' charges, which is a key point in the source. These issues prevent a higher score despite the lenient rules."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is fluent and covers the main events well. However, it contains a significant consistency error: the source text states the child was rescued by his 'parents' (plural), while the summary claims 'his parents jumped in' (which implies both parents acted together or is slightly ambiguous but acceptable). The major flaw is in the final clause: the source text says charges will be pressed against the 'family' (specifically mentioning the mother's endangerment), whereas the summary states charges will be pressed on 'the child'. Pressing charges against a child for this act is factually inconsistent with the source which attributes the action to the parents. Additionally, the summary omits the specific detail that the boy was dangled over the edge, which is a key part of the cause described in the text."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding consistency. The summary states 'paramedics arrived to treat the boy' in a way that implies their involvement in the rescue or immediate treatment sequence, whereas the source explicitly clarifies the parents rescued him *before* paramedics arrived. This creates a slight ambiguity about the timeline of events (who treated him first). Additionally, the omission of the specific charge type ('child endangerment') is a minor relevance/consistency gap. The summary is fluent and coherent, but these factual nuances prevent a perfect score."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 2,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the consistency score significantly because the strict judge correctly identified a major factual error: the summary states charges will be pressed on 'the child', whereas the source explicitly states charges are against the 'family' (specifically the mother) for child endangerment. Pressing charges against the victim is factually incorrect based on the text. I also lowered the relevance score because the summary omits the crucial detail that the parents 'dangled' the child, which is the primary cause of the incident mentioned in the source text."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 2,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding consistency and relevance. The summary contains a critical factual error stating charges will be pressed on 'the child' instead of the 'family/mother', which violates the consistency criterion. Additionally, omitting that the parents 'dangled' the child is a significant omission of the primary cause of the incident, affecting relevance. No scores need to be raised as the strict judge's initial low scores were justified by these specific content errors."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the strict judge's assessment regarding consistency. The summary implies paramedics treated the boy immediately upon arrival ('paramedics arrived to treat'), whereas the source explicitly states the parents rescued him *before* paramedics arrived. This creates a factual ambiguity about who performed the initial rescue/treatment. Additionally, omitting the specific charge type ('child endangerment') is a minor gap in relevance/consistency. The summary remains fluent and coherent, but these nuances prevent a perfect score."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 2.5,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 3.5
+    }
+  }
+}

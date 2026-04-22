@@ -1,0 +1,280 @@
+{
+  "settings": {
+    "full_base": "judge_results/mad_a_iter/gpt/iter5",
+    "text_only_base": "judge_results/mad_a_text_only/gpt/iter5",
+    "essay_models": [
+      "gemma",
+      "gpt",
+      "llama"
+    ],
+    "common_file_counts": {
+      "gemma": 300,
+      "gpt": 300,
+      "llama": 300
+    }
+  },
+  "note_analysis": {
+    "overall": {
+      "n_notes": 21600,
+      "anchor_hits_total": 117924,
+      "logic_hits_total": 149575,
+      "anchor_hits_mean": 5.459444444444444,
+      "logic_hits_mean": 6.924768518518518,
+      "anchor_dominant_ratio": 0.24638888888888888,
+      "logic_dominant_ratio": 0.6272685185185185,
+      "label_distribution": {
+        "mixed": 21591,
+        "anchor_only": 6,
+        "logic_only": 3
+      }
+    },
+    "by_model": {
+      "gemma": {
+        "n_notes": 7200,
+        "anchor_hits_total": 39318,
+        "logic_hits_total": 50338,
+        "anchor_hits_mean": 5.460833333333333,
+        "logic_hits_mean": 6.991388888888889,
+        "anchor_dominant_ratio": 0.24166666666666667,
+        "logic_dominant_ratio": 0.6347222222222222,
+        "label_distribution": {
+          "mixed": 7199,
+          "anchor_only": 1
+        }
+      },
+      "gpt": {
+        "n_notes": 7200,
+        "anchor_hits_total": 38518,
+        "logic_hits_total": 49103,
+        "anchor_hits_mean": 5.349722222222222,
+        "logic_hits_mean": 6.819861111111111,
+        "anchor_dominant_ratio": 0.24847222222222223,
+        "logic_dominant_ratio": 0.6247222222222222,
+        "label_distribution": {
+          "mixed": 7197,
+          "anchor_only": 3
+        }
+      },
+      "llama": {
+        "n_notes": 7200,
+        "anchor_hits_total": 40088,
+        "logic_hits_total": 50134,
+        "anchor_hits_mean": 5.567777777777778,
+        "logic_hits_mean": 6.963055555555556,
+        "anchor_dominant_ratio": 0.24902777777777776,
+        "logic_dominant_ratio": 0.6223611111111111,
+        "label_distribution": {
+          "mixed": 7195,
+          "logic_only": 3,
+          "anchor_only": 2
+        }
+      }
+    },
+    "by_area": {
+      "content": {
+        "n_notes": 7200,
+        "anchor_hits_total": 40496,
+        "logic_hits_total": 50042,
+        "anchor_hits_mean": 5.624444444444444,
+        "logic_hits_mean": 6.950277777777778,
+        "anchor_dominant_ratio": 0.2523611111111111,
+        "logic_dominant_ratio": 0.6156944444444444,
+        "label_distribution": {
+          "mixed": 7195,
+          "anchor_only": 2,
+          "logic_only": 3
+        }
+      },
+      "organization": {
+        "n_notes": 7200,
+        "anchor_hits_total": 39927,
+        "logic_hits_total": 45426,
+        "anchor_hits_mean": 5.545416666666667,
+        "logic_hits_mean": 6.309166666666667,
+        "anchor_dominant_ratio": 0.31194444444444447,
+        "logic_dominant_ratio": 0.5348611111111111,
+        "label_distribution": {
+          "mixed": 7198,
+          "anchor_only": 2
+        }
+      },
+      "expression": {
+        "n_notes": 7200,
+        "anchor_hits_total": 37501,
+        "logic_hits_total": 54107,
+        "anchor_hits_mean": 5.208472222222222,
+        "logic_hits_mean": 7.514861111111111,
+        "anchor_dominant_ratio": 0.1748611111111111,
+        "logic_dominant_ratio": 0.73125,
+        "label_distribution": {
+          "mixed": 7198,
+          "anchor_only": 2
+        }
+      }
+    },
+    "by_side": {
+      "strict": {
+        "n_notes": 10800,
+        "anchor_hits_total": 58397,
+        "logic_hits_total": 75172,
+        "anchor_hits_mean": 5.40712962962963,
+        "logic_hits_mean": 6.96037037037037,
+        "anchor_dominant_ratio": 0.2312962962962963,
+        "logic_dominant_ratio": 0.6464814814814814,
+        "label_distribution": {
+          "mixed": 10794,
+          "anchor_only": 3,
+          "logic_only": 3
+        }
+      },
+      "lenient": {
+        "n_notes": 10800,
+        "anchor_hits_total": 59527,
+        "logic_hits_total": 74403,
+        "anchor_hits_mean": 5.511759259259259,
+        "logic_hits_mean": 6.889166666666667,
+        "anchor_dominant_ratio": 0.2614814814814815,
+        "logic_dominant_ratio": 0.6080555555555556,
+        "label_distribution": {
+          "mixed": 10797,
+          "anchor_only": 3
+        }
+      }
+    }
+  },
+  "condition_metrics": {
+    "full": {
+      "overall": {
+        "n": 2700.0,
+        "flip_count_mean": 3.6203703703703702,
+        "flip_rate": 0.9848148148148148,
+        "convergence_final_mean": 0.6165555555555555,
+        "initial_gap_mean": 0.9726666666666667,
+        "gap_reduction_mean": 0.3561111111111111
+      },
+      "by_model": {
+        "gemma": {
+          "n": 900.0,
+          "flip_count_mean": 3.5933333333333333,
+          "flip_rate": 0.9822222222222222,
+          "convergence_final_mean": 0.5643333333333332,
+          "initial_gap_mean": 0.7796666666666666,
+          "gap_reduction_mean": 0.21533333333333335
+        },
+        "gpt": {
+          "n": 900.0,
+          "flip_count_mean": 3.568888888888889,
+          "flip_rate": 0.99,
+          "convergence_final_mean": 0.5955555555555555,
+          "initial_gap_mean": 0.9148888888888889,
+          "gap_reduction_mean": 0.3193333333333333
+        },
+        "llama": {
+          "n": 900.0,
+          "flip_count_mean": 3.698888888888889,
+          "flip_rate": 0.9822222222222222,
+          "convergence_final_mean": 0.6897777777777778,
+          "initial_gap_mean": 1.2234444444444446,
+          "gap_reduction_mean": 0.5336666666666667
+        }
+      },
+      "by_area": {
+        "content": {
+          "n": 900.0,
+          "flip_count_mean": 3.6555555555555554,
+          "flip_rate": 0.9922222222222222,
+          "convergence_final_mean": 0.6241111111111111,
+          "initial_gap_mean": 1.1135555555555556,
+          "gap_reduction_mean": 0.48944444444444446
+        },
+        "organization": {
+          "n": 900.0,
+          "flip_count_mean": 3.5188888888888887,
+          "flip_rate": 0.9888888888888889,
+          "convergence_final_mean": 0.5603333333333332,
+          "initial_gap_mean": 0.8533333333333333,
+          "gap_reduction_mean": 0.29300000000000004
+        },
+        "expression": {
+          "n": 900.0,
+          "flip_count_mean": 3.6866666666666665,
+          "flip_rate": 0.9733333333333334,
+          "convergence_final_mean": 0.6652222222222222,
+          "initial_gap_mean": 0.951111111111111,
+          "gap_reduction_mean": 0.2858888888888889
+        }
+      }
+    },
+    "text_only": {
+      "overall": {
+        "n": 2700.0,
+        "flip_count_mean": 3.8737037037037036,
+        "flip_rate": 0.9896296296296296,
+        "convergence_final_mean": 0.9277777777777777,
+        "initial_gap_mean": 0.9725555555555555,
+        "gap_reduction_mean": 0.04477777777777777
+      },
+      "by_model": {
+        "gemma": {
+          "n": 900.0,
+          "flip_count_mean": 3.8444444444444446,
+          "flip_rate": 0.9933333333333333,
+          "convergence_final_mean": 0.8227777777777777,
+          "initial_gap_mean": 0.7704444444444444,
+          "gap_reduction_mean": -0.052333333333333364
+        },
+        "gpt": {
+          "n": 900.0,
+          "flip_count_mean": 3.8844444444444446,
+          "flip_rate": 0.9955555555555555,
+          "convergence_final_mean": 0.8577777777777778,
+          "initial_gap_mean": 0.9198888888888889,
+          "gap_reduction_mean": 0.062111111111111075
+        },
+        "llama": {
+          "n": 900.0,
+          "flip_count_mean": 3.8922222222222222,
+          "flip_rate": 0.98,
+          "convergence_final_mean": 1.1027777777777779,
+          "initial_gap_mean": 1.2273333333333334,
+          "gap_reduction_mean": 0.12455555555555559
+        }
+      },
+      "by_area": {
+        "content": {
+          "n": 900.0,
+          "flip_count_mean": 3.9044444444444446,
+          "flip_rate": 0.9877777777777778,
+          "convergence_final_mean": 0.9526666666666667,
+          "initial_gap_mean": 1.122111111111111,
+          "gap_reduction_mean": 0.16944444444444445
+        },
+        "organization": {
+          "n": 900.0,
+          "flip_count_mean": 3.8744444444444444,
+          "flip_rate": 0.9911111111111112,
+          "convergence_final_mean": 0.7916666666666666,
+          "initial_gap_mean": 0.8556666666666667,
+          "gap_reduction_mean": 0.06400000000000003
+        },
+        "expression": {
+          "n": 900.0,
+          "flip_count_mean": 3.8422222222222224,
+          "flip_rate": 0.99,
+          "convergence_final_mean": 1.039,
+          "initial_gap_mean": 0.9398888888888888,
+          "gap_reduction_mean": -0.09911111111111118
+        }
+      }
+    }
+  },
+  "condition_comparison": {
+    "overall": {
+      "flip_count_mean_diff": 0.2533333333333334,
+      "flip_rate_diff": 0.004814814814814827,
+      "convergence_final_mean_diff": 0.3112222222222222,
+      "gap_reduction_mean_diff": -0.31133333333333335
+    }
+  },
+  "interpretation": "adjustment_notes에서는 숫자/점수 관련 표현보다 내용 참조 표현이 더 많이 나타났다. 내용 우세 노트 비율이 앵커링 우세 노트 비율보다 높다. text-only에서도 flip이 줄지 않았고, 진동이 유지되거나 증가했다. 따라서 현재 데이터만 보면 숫자 앵커링 단독 가설은 강하게 지지되지 않으며, 텍스트 피드백 자체의 상호 모방/반복도 중요한 원인으로 보인다."
+}

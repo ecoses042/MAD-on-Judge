@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-8e6c8aec6808f66ed0342e128a4e146f3ecd627d",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, making it difficult to follow the sequence of events."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that another pupil 'also accused' Granado, failing to clarify that the second pupil is a different individual and does not specify the nature of the accusations."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the context of the first arrest and the subsequent actions taken by the school, which are crucial for understanding the situation."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as missing articles and awkward phrasing, which hinder readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with Granado's initial arrest and leading to her subsequent arrest, which helps the reader understand the timeline."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article without introducing any new facts or misrepresenting the events."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the article, specifically the allegations against Granado and the timeline of her arrests."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as missing articles and inconsistent punctuation, which affect its readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 4,
+      "overall_judge": 3.2,
+      "winner_side": {
+        "coherence": "tie",
+        "consistency": "tie",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

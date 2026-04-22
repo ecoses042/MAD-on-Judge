@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-d296270ab4a4cf20f2d9c1aae7514687806f2b35",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 2.5,
+        "rationale_for_score": "The summary suffers from severe grammatical errors (e.g., 'boasts a bedrooms', missing articles like 'a' before 'large dining room'), making it unfluent. It also fails consistency by directly copying a caption ('it is the lounge on board...') as if it were a factual statement about the plane's features, rather than describing the image. The flow is disjointed due to these errors and the inclusion of non-factual caption text."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from a major hallucination in the middle: it abruptly inserts 'it is the lounge on board a custom-built boeing 747-8' as if it were a sentence describing the jet's cost or layout, when that phrase is actually a caption from the source text. This breaks coherence and consistency significantly. Additionally, there are minor grammatical issues ('boasts a bedrooms') and awkward phrasing. While the general facts (cost, dining room, aeroloft) are consistent with the article, the structural failure due to copying captions as sentences lowers the score."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 1,
+        "relevance": 3,
+        "overall_judge": 1.8,
+        "adjustment_notes": "The strict judge was correct to penalize heavily. The summary contains severe grammatical errors ('boasts a bedrooms', missing articles) which destroy fluency. It also fails consistency by directly copying image captions (e.g., 'it is the lounge on board...') as factual statements, mixing description with non-factual metadata. The flow is disjointed due to these issues. I have lowered my scores to align with the strict judge's assessment of these fundamental flaws."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment but lower the scores due to the severity of the errors. The summary is not just incoherent; it is structurally broken because it treats image captions (e.g., 'it is the lounge on board...') as narrative sentences, resulting in a disjointed flow that makes no logical sense. Consistency is critically low because the summary fails to distinguish between factual text and descriptive captions, effectively hallucinating content by misrepresenting captions as facts. Fluency is poor due to grammatical errors like 'boasts a bedrooms' (singular/plural mismatch) and awkward phrasing resulting from the caption integration. Relevance is lowered slightly because the inclusion of caption-based filler dilutes the focus on the key points."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 1,
+        "relevance": 3,
+        "overall_judge": 1.8,
+        "adjustment_notes": "I agree with the lenient judge's assessment that the summary is fundamentally flawed. The text suffers from severe grammatical errors (e.g., 'boasts a bedrooms', missing articles like 'a' or 'the'), making it incoherent and unprofessional. Furthermore, it violates consistency by directly copying image captions (e.g., 'it is the lounge on board...') as if they were factual statements about the plane's interior, rather than describing the visual source material. The flow is disjointed because of these mixed sentence structures. Therefore, I will not raise the scores and maintain the strict evaluation."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary suffers from severe structural incoherence by directly concatenating image captions (e.g., 'it is the lounge on board...') into the narrative without transition or context, creating a disjointed flow. Consistency is critically low because it treats descriptive captions as factual statements within the summary text, effectively hallucinating that these are features of the plane rather than descriptions of images. Fluency is poor due to grammatical errors like 'boasts a bedrooms' and awkward phrasing resulting from this caption integration. Relevance is lowered because the inclusion of caption-based filler dilutes the focus on the key points."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 1.0,
+      "fluency": 1.5,
+      "relevance": 3.0,
+      "overall_judge": 1.9
+    }
+  }
+}

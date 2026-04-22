@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-051db270afc32571a08c15124330efe89d80fea8",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, jumping between details about the theft and the items stolen without a cohesive structure."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key contextual information, such as the significance of the theft occurring before President Obama's visit and the details about the police investigation."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention that the rifle was secured 'properly' as stated in the article, which is an important detail."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The use of quotation marks around 'secured properly' is inconsistent with standard writing conventions and disrupts the flow."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events regarding the theft, detailing how the rifle was secured and the method used by the thief."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article without introducing any new facts or misrepresenting the events."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key details of the theft, including the method of theft and the additional items stolen, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains some awkward phrasing, such as 'was ` secured properly ' to a truck safe,' which could be improved for better readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 4,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 3.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-2cfc33d01364162579f46b2764914a03a29453ce",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 2,
+        "overall_judge": 1.8,
+        "rationale_for_score": "The summary fails the consistency criterion severely due to multiple hallucinations and grammatical errors. It incorrectly states Ozil scored four goals in the 'Premier League' (the text says 'all competitions'), claims he is 'the beneficiary of the timepiece' without context, and creates a nonsensical sentence fragment regarding Ray Parlour ('arsenal midfielder is the to arsenal 's fa cup semi-final win over reading ray parlour believes...'). The summary lacks coherence and fluency, presenting disjointed facts that do not accurately reflect the source text."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary suffers from severe consistency issues due to hallucinations and misattributions. It falsely claims Ozil scored four goals in the Premier League (the text says 'all competitions'), incorrectly attributes Ray Parlour's quote about fitness to Ozil instead of Jack Wilshere, and creates a nonsensical sentence structure ('arsenal midfielder is the to arsenal 's fa cup semi-final win'). The grammar is poor, and the logical flow is broken."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 2,
+        "overall_judge": 1.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains severe factual errors (hallucinating 'Premier League' instead of 'all competitions'), lacks necessary context for the 'beneficiary' phrase, and suffers from a catastrophic grammatical failure in the final sentence which renders it nonsensical. No leniency is warranted."
+      },
+      "strict": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 1,
+        "relevance": 2,
+        "overall_judge": 1.2,
+        "adjustment_notes": "The lenient judge's scores were too high given the severity of the errors. The summary contains multiple critical consistency failures: it misattributes Ray Parlour's quote about fitness (which is explicitly about Jack Wilshere in the text) to Mesut Ozil, and it falsely claims Ozil scored four goals specifically in the Premier League when the text states 'all competitions'. Additionally, the grammar is broken ('arsenal midfielder is the to arsenal'), making fluency extremely poor. The logical flow is nonsensical. Therefore, scores must remain at the lowest tier."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 1,
+        "relevance": 2,
+        "overall_judge": 1.2,
+        "adjustment_notes": "The summary is severely flawed. It contains a major factual error (claiming Ozil scored four goals in the 'Premier League' when the text specifies 'all competitions'), lacks necessary context for the phrase 'beneficiary of the timepiece', and ends with a catastrophic grammatical failure ('is the to arsenal's fa cup semi-final win over reading ray parlour believes...') that renders the final sentence nonsensical. The lenient judge's points were not accepted because the issues cited (factual errors, lack of context, grammatical failure) are objectively present in the summary text provided."
+      },
+      "lenient": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 1,
+        "relevance": 2,
+        "overall_judge": 1.2,
+        "adjustment_notes": "Agreeing with the strict judge. The summary contains severe factual errors (misattributing Ray Parlour's comments about Jack Wilshere to Mesut Ozil) and grammatical breakdowns ('arsenal midfielder is the to arsenal'). These are critical flaws that render the summary unreliable and incoherent, warranting the lowest possible scores."
+      }
+    },
+    "final": {
+      "coherence": 1.0,
+      "consistency": 1.0,
+      "fluency": 1.0,
+      "relevance": 2.0,
+      "overall_judge": 1.2
+    }
+  }
+}

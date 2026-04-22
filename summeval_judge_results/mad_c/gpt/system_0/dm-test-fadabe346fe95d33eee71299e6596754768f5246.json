@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-fadabe346fe95d33eee71299e6596754768f5246",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, making it difficult to follow the narrative."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the idea that Gemma has been banned from seeing her children without any basis in the original article, which only mentions a threat of a ban."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as missing articles and improper sentence structure, which hinder readability."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to capture key emotional elements and context, such as Debbie's feelings and the implications of Gemma's actions on her children."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear narrative about Gemma's situation, including her relationship with her mother and her children."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the key issues raised in the article, such as Gemma's drinking, partying, and the allegations of theft."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important aspects of the article, including the mother's concerns and the potential consequences for Gemma."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, making it less readable."
+        },
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow, particularly in the last sentence, which is incomplete and unclear."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

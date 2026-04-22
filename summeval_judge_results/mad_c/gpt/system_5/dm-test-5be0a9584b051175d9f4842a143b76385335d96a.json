@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-5be0a9584b051175d9f4842a143b76385335d96a",
+  "system_name": "system_5",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, abruptly shifting from the financial implications of failing to qualify for the Champions League to the team's current standings without sufficient context."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits critical information about the total bonuses at stake (£12 million) and the implications of finishing outside the top four, which are key points in the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that City will be four points ahead of Liverpool after the derby defeat, while the article indicates they are only four points ahead if Liverpool wins their next match."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The use of '# 500,000-a-man' is awkward and not idiomatic; it should be '£500,000 per player' for better fluency."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the financial implications for Manchester City players and their current league position."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article about the potential loss of bonuses and the players involved, without introducing any new facts."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points regarding the bonuses and the team's current standing in the league, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as the use of '#' instead of '£' for the currency, which affects readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

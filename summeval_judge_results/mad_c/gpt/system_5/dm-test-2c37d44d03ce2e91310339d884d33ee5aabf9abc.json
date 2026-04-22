@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-2c37d44d03ce2e91310339d884d33ee5aabf9abc",
+  "system_name": "system_5",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, abruptly ending with an incomplete sentence about Dr. Christopher Kuhar."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits key details from the source, such as the child's condition being stable and the fact that he suffered from minor bumps and bruises, which misrepresents the severity of the incident."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention the context of the parents dangling the child over the edge, which is a crucial detail for understanding the incident."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as the lack of a complete thought in the last part, making it difficult to read."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with the incident and leading to the child's rescue and treatment."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, including the child's fall, the parents' actions, and the involvement of zoo officials."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the incident, such as the child's fall, the parents' response, and the child's condition, while avoiding unnecessary details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains a fragment at the end that lacks a complete thought, making it less fluent and harder to read."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

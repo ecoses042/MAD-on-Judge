@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-a3b6201aca77b5bdaa5df02d6acee2be66233237",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, jumping between points without proper transitions."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that Jamie 'burst into tears and stormed off,' which is misleading as it was Dawn who reacted this way."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention the key detail about the amount of money stolen and the purpose for which it was intended, which is crucial to understanding the emotional weight of the situation."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as the incorrect use of lowercase for 'dawn' and 'mr kyle,' which affects readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear narrative about Dawn's distress and the revelation of the theft, maintaining a logical flow of events."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the key details from the article, such as the involvement of the lie detector test and the relationship dynamics."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the main incident of theft and the emotional impact on Dawn, which are the central themes of the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, such as 'dawn , who has seven miscarriages , was furious' which disrupts the flow."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "Some important details, such as the amount of money stolen and the context of the gravestone, are missing, which diminishes the overall impact."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

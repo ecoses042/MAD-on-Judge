@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-2abe0f81f5b22c8a406165717e3bd7fce6fe47c6",
+  "system_name": "system_4",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow and omits key contextual information about the nature of the charges against Manuel, such as accepting sex as payment and performing exorcisms."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention the significant detail regarding Manuel's patient satisfaction ratings, which is a notable aspect of the case."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not include the specific charges of bartering sex for services, which is a critical part of the original article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as inconsistent capitalization and punctuation, which detract from its readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the charges against Charles Manuel and the consequences of his actions."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article without introducing any new facts."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the article, including the revocation of Manuel's license and the conditions for potential reinstatement."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization at the beginning of sentences, which affects its fluency."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits important details such as the nature of the charges (accepting sex as payment and performing exorcisms) and the context of patient satisfaction ratings."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

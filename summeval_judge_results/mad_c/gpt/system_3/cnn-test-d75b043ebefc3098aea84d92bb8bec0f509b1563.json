@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-d75b043ebefc3098aea84d92bb8bec0f509b1563",
+  "system_name": "system_3",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information and does not connect the events or provide context."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the number of Iranian border guards killed, the background of Jaish al Adal, and the implications of the attack, which are crucial for understanding the significance of the incident."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention that the militants crossed into Iran from Pakistan, which is a critical detail from the source."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary has grammatical issues, such as the lack of capitalization at the beginning of sentences."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with the clash and mentioning the involvement of Iranian forces and the request to Pakistani authorities."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding the militants' deaths and the claim of responsibility by Jaish al Adal."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the incident, including the deaths of militants and the response from Iranian officials."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization and punctuation, making it less readable and fluent."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

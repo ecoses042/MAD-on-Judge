@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-4f3b35b540ba05f0f82d71a694ec23dde4dc3e01",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.5,
+        "rationale_for_score": "The summary is fluent and coherent but omits the critical context that the incident was an attempted carjacking involving a gun, which is central to the 'why' of the event described in the source. Additionally, it misses the fact that suspects remain at large and are being investigated for arson, making it slightly less complete than a perfect summary."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is well-structured, fluent, and consistent with the source text. It captures the main event (arson at a gas station), key details (white Dodge Charger, passengers inside, no injuries, front end destroyed), and location. It receives a slight deduction on relevance because it omits the motive (attempted carjacking) mentioned in the article, which is a significant detail, though the summary remains grounded entirely in the source without hallucinations."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I lowered the relevance score from 4 to 3. While the summary is fluent and coherent, it significantly omits the central motivation (attempted carjacking with a gun) and the current status of the investigation (suspects at large, arson investigation). These are key points in the source text that explain the 'why' and the 'what now,' making the summary feel incomplete regarding the main narrative arc."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is well-structured and fluent. It accurately reflects the source text without hallucinations. The only minor deduction for relevance is justified because the summary omits the motive (attempted carjacking) which is a significant detail in the article, even though the core event is covered."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding relevance. The summary accurately reports the physical event (arson) but completely omits the critical context provided in the source text: the attempted carjacking involving a gun and the subsequent police investigation status ('suspects remain at large', 'investigating as an arson'). Without these details, the summary lacks the narrative arc explaining the motive and current situation, making it feel incomplete despite being factually consistent with the events described."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary is well-structured and fluent, accurately reflecting the source text without hallucinations. The only minor deduction for relevance is justified because the summary omits the motive (attempted carjacking) which is a significant detail in the article, even though the core event is covered."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.5,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.5
+    }
+  }
+}

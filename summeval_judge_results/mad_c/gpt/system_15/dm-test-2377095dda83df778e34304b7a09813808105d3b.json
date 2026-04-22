@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-2377095dda83df778e34304b7a09813808105d3b",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information. It jumps between points without connecting them, making it difficult to follow the narrative."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that managers at the passport agency received £42 million profit, when the article specifies that this was the profit made by the agency, not the amount received by managers."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the specific number of compensation applications approved and the context of the passport delays, which are crucial to understanding the situation."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The use of the symbol '#' in 'received # 42 million profit' is incorrect and disrupts the fluency of the text."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a logical flow of information by outlining the key issues related to the passport delay fiasco, including the profit made by the agency and the refusal of refunds."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important aspects of the article, such as the profit made by the passport agency and the impact on families, which are central to the story."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that managers received '£42 million profit' instead of clarifying that this was the profit made by the agency, not the bonuses received by managers."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as the use of '#' instead of '£' and lacks complete sentences, which affects readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

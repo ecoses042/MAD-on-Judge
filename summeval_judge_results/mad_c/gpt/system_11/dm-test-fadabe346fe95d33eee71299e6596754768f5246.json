@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-fadabe346fe95d33eee71299e6596754768f5246",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, jumping abruptly from one point to another without smooth transitions."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details about Gemma's past behavior, her mother's feelings, and the implications of the situation, which are crucial for understanding the context."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as inconsistent capitalization and awkward phrasing, making it less readable."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the mother's name, Debbie, consistently, which could lead to confusion about who is being referred to."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding Gemma's situation and her mother's concerns."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the key details from the article, such as Gemma's age, her children, and her mother's actions."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important aspects of the article, including Gemma's struggles with substance use and her mother's threat to ban her from seeing the children."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, such as the use of lowercase letters for names and lack of punctuation in some places."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

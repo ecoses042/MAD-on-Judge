@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-096e418a953af86df0d1560bec95bc7bfee2e34b",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information and is repetitive, mentioning Guardiola's ripped trousers twice without adding new context."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention the significant outcome of the match (Bayern's 6-1 victory and qualification for the semi-finals), which is a key point of the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not accurately reflect the context of the match, as it omits the fact that Porto had a two-goal lead going into the match."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization at the beginning of sentences, affecting its readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow by starting with the incident involving Guardiola's trousers and then transitioning to the team's performance."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary captures the key points of the article, including Guardiola's mishap and the team's impressive victory."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary lacks specific details about the match, such as the score and the players who scored, which are important for context."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary has repetitive phrases that could be streamlined for better readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

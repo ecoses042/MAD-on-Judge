@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-e880fda4c25289f8325574246f0f8ed4ff5eb26b",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information and does not effectively connect the details about the house."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the guide price, the unique features of the house, and the auction date, which are important for understanding the significance of the property."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary refers to the property as a 'collector's paradise' but does not explain why this term is used, leading to potential confusion."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains awkward phrasing and punctuation issues, such as unnecessary spaces around apostrophes."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear focus on the property being a collector's paradise and highlights its untouched state for over 80 years, establishing a logical flow of information."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary captures key points about the original features of the home, such as the bathroom and kitchen, which are central to the article's theme."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits several specific details from the article, such as the guide price and the unique features like stained-glass windows and vintage cupboards."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains awkward phrasing, such as 'the collector's paradise in horfield , bristol ,' which disrupts the flow and readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

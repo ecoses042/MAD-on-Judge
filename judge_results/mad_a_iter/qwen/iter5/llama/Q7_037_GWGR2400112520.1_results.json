@@ -1,0 +1,319 @@
+[
+  {
+    "essay_id": "GWGR2400112520.1",
+    "status": "ok",
+    "prediction": {
+      "content": {
+        "score": 4.0,
+        "rationale": "The essay presents a clear argument about the ownership of AI-generated creative works. The author argues that the user who provides the source data to the AI should be considered the owner, and that the AI itself does not have any rights to the work. This is supported by the fact that AI learns from existing data and does not create anything entirely new."
+      },
+      "organization": {
+        "score": 4.0,
+        "rationale": "The essay has a clear structure, with an introduction that sets the stage for the argument, followed by two main points that support the author's claim. The conclusion summarizes the main points and reiterates the author's stance."
+      },
+      "expression": {
+        "score": 3.0,
+        "rationale": "The essay is well-written, with clear sentences and proper grammar. However, some of the sentences are a bit long and could be broken up for better readability."
+      }
+    },
+    "judge": {
+      "content": {
+        "round_0": {
+          "strict": {
+            "domain_match": 2,
+            "score_rationale_consistency": 1,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 1.2,
+            "rationale_for_score": "1. domain_match: 'content' 영역 평가 기준을 충족하지 못함. 주장의 적절성이나 근거의 구체성보다는 AI의 작동 원리 (학습 데이터 기반) 에 대한 일반적 진술에 그쳐 문제의 핵심인 '소유권 분배'와 '공개 의무' 등 글의 구체적인 논거를 다루지 않음. 2. score_rationale_consistency: predicted_score가 4점 (높은 점수) 인데, rationale이 제시하는 근거는 매우 추상적이고 약함 ('AI learns from existing data'라는 일반적 사실만 언급). 높은 점수를 정당화할 만큼 구체적인 강점이나 논리적 설득력이 부족하여 점수와 설명 간 심각한 모순 존재. 3. specificity: '전반적으로 명확한 주장을 한다'는 식의 generic 표현만 사용됨. essay_text 내의 구체적인 문장 ('소스를 제공한 이용자가 소유권', '저작권은 이용자와 데이터 주인이 나눠서 가져야 함') 을 인용하거나 지적하지 않음. 4. groundedness: rationale 내용이 essay_text의 핵심 논지 (분할 소유, 공개 의무, 비영리 연구 자료화 등) 와 직접 연결되지 않음. AI가 데이터를 학습한다는 사실만 언급하여 essay 의 특정 주장과 일치하는지 확인이 불가능함."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 5,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.8,
+            "rationale_for_score": "1) domain_match: rationale 는 essay_text 의 핵심 주장 (소스 제공자가 소유권 보유, AI 는 권리 없음) 과 논리 근거 (학습 데이터 의존성, 모방 vs 창작 구분) 를 정확히 반영하여 content 영역 기준을 충족함. 2) score_rationale_consistency: predicted_score(4.0) 가 '명확한 주장을 가진 글'이라는 평가와 일치하며, rationale 이 이를 뒷받침하는 구체적인 논거를 제시했으므로 점수 정당화가 완벽함. 3) specificity: 'AI 가 만든 창작물', '소스를 제공한 이용자', '학습된 데이터' 등 essay 의 구체적 표현과 논지를 직접 인용하여 설명하므로 generic 한 평가가 아님 (단, 마지막 문단의 'openAI 연구 자료'라는 구체적인 예시나 구조적 연결에 대한 언급이 다소 부족하여 4 점). 4) groundedness: rationale 의 모든 내용은 essay_text 에 명시적으로 존재하는 내용으로, hallucination 이 전혀 없으며 추상적이지 않음."
+          }
+        },
+        "round_1": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.2,
+            "adjustment_notes": "1) domain_match: 관대한 심사위원의 평가대로 rationale 이 essay_text 의 핵심 주장 (소스 제공자 소유권) 과 근거 (학습 데이터 의존성) 를 정확히 반영하여 content 영역 기준을 충족하므로 5 점 유지. 2) score_rationale_consistency: predicted_score(4.0) 는 '명확한 주장'에 대한 평가와 일치하나, rationale 이 마지막 문단의 'openAI 연구 자료'나 '비영리 목적'이라는 구체적인 예시를 언급하지 않아 점수 정당화가 다소 불완전한 것으로 판단됨 (5 점 하향 조정). 3) specificity: 관대한 심사위원이 지적한 대로 'AI 가 만든 창작물', '소스를 제공한 이용자' 등 구체적 표현을 인용했으나, 마지막 문단의 논리적 연결이나 구조적 언급이 부족하여 generic 한 평가 요소가 남아있으므로 4 점으로 감점. 4) groundedness: rationale 의 모든 내용이 essay_text 에 명시적으로 존재하고 hallucination 이 없으므로 5 점 유지."
+          },
+          "lenient": {
+            "domain_match": 2,
+            "score_rationale_consistency": 1,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 1.2,
+            "adjustment_notes": "엄격한 심사위원의 지적대로 초기 평가 (4점) 가 지나치게 관대했습니다. rationale 은 essay_text 의 핵심 논지인 '소유권 분배'와 '공개 의무'를 다루지 않고 AI 의 작동 원리만 언급하여 domain_match 기준을 충족하지 못합니다. 또한 4 점이라는 높은 점수에 비해 근거가 매우 약하고 구체적이지 않아 score_rationale_consistency 와 specificity, groundedness 기준도 모두 위반합니다. 따라서 모든 항목을 하위 등급으로 조정하고 전체 점수는 1 점으로 낮췄습니다."
+          }
+        },
+        "round_2": {
+          "strict": {
+            "domain_match": 2,
+            "score_rationale_consistency": 1,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 1.2,
+            "adjustment_notes": "관대한 심사위원의 초기 평가 (4점) 는 지나치게 관대했습니다. rationale 텍스트는 essay_text 의 핵심 논지인 '소유권 분배'와 '공개 의무'를 전혀 언급하지 않고, AI 의 작동 원리만 추상적으로 서술하여 domain_match 기준을 충족하지 못합니다. 또한 4 점이라는 높은 점수에 비해 근거가 매우 약하고 구체적이지 않아 score_rationale_consistency 와 specificity 기준도 위반합니다. 특히 essay_text 에 없는 내용을 만들어낸 듯한 표현으로 groundedness 기준도 위반합니다. 따라서 모든 항목을 하위 등급으로 조정하고 전체 점수는 1 점으로 낮췄습니다."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 3,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.2,
+            "adjustment_notes": "1) domain_match: 관대한 심사위원의 평가대로 rationale 이 essay_text 의 핵심 주장 (소스 제공자 소유권) 과 근거 (학습 데이터 의존성) 를 정확히 반영하여 content 영역 기준을 충족하므로 5 점 유지. 2) score_rationale_consistency: predicted_score(4.0) 는 '명확한 주장'에 대한 평가와 일치하나, rationale 이 마지막 문단의 'openAI 연구 자료'나 '비영리 목적'이라는 구체적인 예시를 언급하지 않아 점수 정당화가 다소 불완전한 것으로 판단됨 (5 점 하향 조정). 3) specificity: 관대한 심사위원이 지적한 대로 'AI 가 만든 창작물', '소스를 제공한 이용자' 등 구체적 표현을 인용했으나, 마지막 문단의 논리적 연결이나 구조적 언급이 부족하여 generic 한 평가 요소가 남아있으므로 4 점으로 감점. 4) groundedness: rationale 의 모든 내용이 essay_text 에 명시적으로 존재하고 hallucination 이 없으므로 5 점 유지."
+          }
+        },
+        "round_3": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 3,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.2,
+            "adjustment_notes": "1) domain_match: 관대한 심사위원의 평가대로 rationale 이 essay_text 의 핵심 주장 (소스 제공자 소유권) 과 근거 (학습 데이터 의존성) 를 정확히 반영하여 content 영역 기준을 충족하므로 5 점 유지. 2) score_rationale_consistency: predicted_score(4.0) 는 '명확한 주장'에 대한 평가와 일치하나, rationale 이 마지막 문단의 'openAI 연구 자료'나 '비영리 목적'이라는 구체적인 예시를 언급하지 않아 점수 정당화가 다소 불완전한 것으로 판단됨 (5 점 하향 조정). 3) specificity: 관대한 심사위원이 지적한 대로 'AI 가 만든 창작물', '소스를 제공한 이용자' 등 구체적 표현을 인용했으나, 마지막 문단의 논리적 연결이나 구조적 언급이 부족하여 generic 한 평가 요소가 남아있으므로 4 점으로 감점. 4) groundedness: rationale 의 모든 내용이 essay_text 에 명시적으로 존재하고 hallucination 이 없으므로 5 점 유지."
+          },
+          "lenient": {
+            "domain_match": 2,
+            "score_rationale_consistency": 1,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 1.2,
+            "adjustment_notes": "엄격한 심사위원의 지적대로 초기 평가 (4 점) 는 지나치게 관대했습니다. rationale 은 essay_text 의 핵심 논지인 '소유권 분배'와 '공개 의무'를 전혀 언급하지 않고 AI 의 작동 원리만 추상적으로 서술하여 domain_match 기준을 충족하지 못합니다. 또한 4 점이라는 높은 점수에 비해 근거가 매우 약하고 구체적이지 않아 score_rationale_consistency 와 specificity 기준도 위반합니다. 특히 essay_text 에 없는 내용을 만들어낸 듯한 표현으로 groundedness 기준도 위반합니다. 따라서 모든 항목을 하위 등급으로 조정하고 전체 점수는 1 점으로 낮췄습니다."
+          }
+        },
+        "round_4": {
+          "strict": {
+            "domain_match": 2,
+            "score_rationale_consistency": 1,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 1.2,
+            "adjustment_notes": "관대한 심사위원의 초기 평가 (4 점) 는 지나치게 관대했습니다. rationale 은 essay_text 의 핵심 논지인 '소유권 분배'와 '공개 의무'를 전혀 언급하지 않고 AI 의 작동 원리만 추상적으로 서술하여 domain_match 기준을 충족하지 못합니다. 또한 4 점이라는 높은 점수에 비해 근거가 매우 약하고 구체적이지 않아 score_rationale_consistency 와 specificity 기준도 위반합니다. 특히 essay_text 에 없는 내용을 만들어낸 듯한 표현으로 groundedness 기준도 위반합니다. 따라서 모든 항목을 하위 등급으로 조정하고 전체 점수는 1 점으로 낮췄습니다."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 3,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.2,
+            "adjustment_notes": "1) domain_match: 관대한 심사위원의 평가대로 rationale 이 essay_text 의 핵심 주장 (소스 제공자 소유권) 과 근거 (학습 데이터 의존성) 를 정확히 반영하여 content 영역 기준을 충족하므로 5 점 유지. 2) score_rationale_consistency: predicted_score(4.0) 는 '명확한 주장'에 대한 평가와 일치하나, rationale 이 마지막 문단의 'openAI 연구 자료'나 '비영리 목적'이라는 구체적인 예시를 언급하지 않아 점수 정당화가 다소 불완전한 것으로 판단됨 (5 점 하향 조정). 3) specificity: 관대한 심사위원이 지적한 대로 'AI 가 만든 창작물', '소스를 제공한 이용자' 등 구체적 표현을 인용했으나, 마지막 문단의 논리적 연결이나 구조적 언급이 부족하여 generic 한 평가 요소가 남아있으므로 4 점으로 감점. 4) groundedness: rationale 의 모든 내용이 essay_text 에 명시적으로 존재하고 hallucination 이 없으므로 5 점 유지."
+          }
+        },
+        "final": {
+          "domain_match": 3.5,
+          "score_rationale_consistency": 2.0,
+          "specificity": 2.5,
+          "groundedness": 3.0,
+          "overall_judge": 2.7
+        }
+      },
+      "organization": {
+        "round_0": {
+          "strict": {
+            "domain_match": 2,
+            "score_rationale_consistency": 1,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 1.2,
+            "rationale_for_score": "1. domain_match: rationale는 'clear structure', 'two main points' 등 조직적 구조를 평가하는 organization 도메인의 기준을 사용했으나, essay_text의 핵심 주제인 'AI 창작물의 저작권 귀속 문제'에 대한 논리적 분석이나 주장의 타당성을 전혀 다루지 않아 content 기준을 충족하지 못함. 2. score_rationale_consistency: predicted_score가 4.0(높은 점수)인데 rationale에는 구체적인 근거가 하나도 없음. 'clear structure'라는 표현만으로는 4점 정당화 불가하여 점수-설명 모순이 심각함. 3. specificity: 'clear structure', 'two main points'와 같은 추상적 표현만 사용되어 essay_text의 구체적 문장이나 논지를 인용하지 못함. 4. groundedness: rationale에 언급된 'introduction', 'conclusion', 'two main points'가 essay_text의 실제 구조 (3 단락 본론, 결론 부재 등) 와 일치하지 않거나, 구체적인 텍스트 근거 없이 일반화된 설명만 제공하여 hallucination 또는 근거 전무로 판단됨."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 5,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.8,
+            "rationale_for_score": "1) domain_match: rationale 는 조직성 (structure), 논지 전개 (argument flow), 결론 요약 (conclusion) 등 organization 도메인의 핵심 평가 기준을 명확히 적용함. 2) score_rationale_consistency: predicted_score(4.0) 가 '명확한 구조'와 '논리적 연결'이라는 강점을 인정하면서도, '두 가지 주요 포인트'라는 표현이 다소 일반적일 수 있음을 고려하여 4 점대 점수와 일치하는 합리적인 근거를 제시함 (완벽한 5 점은 아님). 3) specificity: 서론 - 본론 (두 가지 이유) - 결론의 구조적 요소를 구체적으로 지적하여 generic 한 평가지는 피함. 다만 '두 main points'라는 표현이 구체적인 내용 (데이터 소유권, 표절 문제 등) 을 직접 인용하지는 않았으나, essay 의 논리 흐름을 잘 반영함. 4) groundedness: rationale 의 모든 주장은 essay_text 의 첫 문단과 마지막 문단을 정확히 반영하고 있으며, hallucination 이 없음."
+          }
+        },
+        "round_1": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.2,
+            "adjustment_notes": "1) domain_match: 관대한 심사위원의 평가대로 rationale 이 organization 도메인의 구조 (서론-본론-결론) 를 명확히 적용했으므로 5 점 유지. 2) score_rationale_consistency: predicted_score(4.0) 는 '명확한 구조'라는 강점을 인정하지만, '두 가지 주요 포인트'라는 표현이 구체적인 내용 (데이터 소유권 등) 을 직접 언급하지 않아 근거가 다소 일반적임. 따라서 완벽한 5 점보다는 4 점으로 조정하여 점수와 근거의 격차를 반영함. 3) specificity: 관대한 심사위원이 '구체적 예시 없음'을 지적한 바 있음. rationale 은 서론/본론/결론의 구조만 언급하고, essay 의 구체적인 논지 (데이터 소유권, 표절 문제 등) 를 직접 인용하지 못했으므로 generic 한 평가지는 피했으나 구체성은 부족함. 따라서 4 점에서 3 점으로 하향 조정함. 4) groundedness: rationale 이 essay 의 첫/마지막 문단 구조를 정확히 반영하고 hallucination 이 없으므로 5 점 유지."
+          },
+          "lenient": {
+            "domain_match": 1,
+            "score_rationale_consistency": 1,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 1.0,
+            "adjustment_notes": "엄격한 심사위원의 지적을 수용하여 점수를 대폭 하향 조정함. 1. domain_match: rationale 는 조직적 구조 (organization) 만 평가했으나, essay 의 핵심 주제인 'AI 저작권 귀속'에 대한 논리적 분석이나 주장 타당성을 전혀 다루지 않아 content 기준을 충족하지 못함. 2. score_rationale_consistency: predicted_score 가 4.0(높은 점수) 인데 rationale 에 구체적인 근거가 하나도 없어 점수와 설명이 심각하게 모순됨. 3. specificity: 'clear structure'와 같은 추상적 표현만 사용되어 essay 의 구체적 문장이나 논지를 인용하지 못함. 4. groundedness: rationale 이 언급한 구조 (결론 부재 등) 가 essay 의 실제 내용과 일치하지 않으며, 구체적인 텍스트 근거 없이 일반화된 설명만 제공하여 hallucination 으로 판단됨."
+          }
+        },
+        "round_2": {
+          "strict": {
+            "domain_match": 1,
+            "score_rationale_consistency": 1,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 1.0,
+            "adjustment_notes": "관대한 심사위원의 초기 평가 (4.0 점) 를 유지할 수 없으며, 엄격한 기준에 따라 모든 항목을 하향 조정함. 1. domain_match: rationale 은 서론-본론-결론의 구조만 언급했으나, essay 의 핵심 주제인 'AI 저작권 귀속' 논리나 주장 타당성을 전혀 평가하지 않아 content 기준을 충족하지 못함. 2. score_rationale_consistency: predicted_score 가 4.0(높은 점수) 인데 rationale 에 구체적인 근거가 하나도 없어 점수와 설명이 심각하게 모순됨. 3. specificity: 'clear structure'와 같은 추상적 표현만 사용되어 essay 의 구체적 문장이나 논지를 인용하지 못함. 4. groundedness: rationale 이 언급한 구조 (결론 부재 등) 가 essay 의 실제 내용과 일치하지 않으며, 구체적인 텍스트 근거 없이 일반화된 설명만 제공하여 hallucination 으로 판단됨."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.2,
+            "adjustment_notes": "1) domain_match: 관대한 심사위원의 평가대로 rationale 이 organization 도메인의 구조 (서론-본론-결론) 를 명확히 적용했으므로 5 점 유지. 2) score_rationale_consistency: predicted_score(4.0) 는 '명확한 구조'라는 강점을 인정하지만, '두 가지 주요 포인트'라는 표현이 구체적인 내용 (데이터 소유권 등) 을 직접 언급하지 않아 근거가 다소 일반적임. 따라서 완벽한 5 점보다는 4 점으로 조정하여 점수와 근거의 격차를 반영함. 3) specificity: 관대한 심사위원이 '구체적 예시 없음'을 지적한 바 있음. rationale 은 서론/본론/결론의 구조만 언급하고, essay 의 구체적인 논지 (데이터 소유권, 표절 문제 등) 를 직접 인용하지 못했으므로 generic 한 평가지는 피했으나 구체성은 부족함. 따라서 4 점에서 3 점으로 하향 조정함. 4) groundedness: rationale 이 essay 의 첫/마지막 문단 구조를 정확히 반영하고 hallucination 이 없으므로 5 점 유지."
+          }
+        },
+        "round_3": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.2,
+            "adjustment_notes": "관대한 심사위원의 평가와 일치함을 확인함. 1) domain_match: rationale 이 organization 도메인의 서론-본론-결론 구조를 명확히 적용했으므로 5 점 유지. 2) score_rationale_consistency: predicted_score(4.0) 는 '명확한 구조'라는 강점을 인정하지만, '두 가지 주요 포인트'라는 표현이 구체적인 내용 (데이터 소유권 등) 을 직접 언급하지 않아 근거가 다소 일반적임. 따라서 완벽한 5 점보다는 4 점으로 조정하여 점수와 근거의 격차를 반영함. 3) specificity: 관대한 심사위원이 '구체적 예시 없음'을 지적한 바 있음. rationale 은 서론/본론/결론의 구조만 언급하고, essay 의 구체적인 논지 (데이터 소유권, 표절 문제 등) 를 직접 인용하지 못했으므로 generic 한 평가지는 피했으나 구체성은 부족함. 따라서 4 점에서 3 점으로 하향 조정함. 4) groundedness: rationale 이 essay 의 첫/마지막 문단 구조를 정확히 반영하고 hallucination 이 없으므로 5 점 유지."
+          },
+          "lenient": {
+            "domain_match": 1,
+            "score_rationale_consistency": 1,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 1.0,
+            "adjustment_notes": "엄격한 심사위원의 지적대로 초기 평가 (4.0 점) 를 유지할 수 없으며, 모든 항목을 하향 조정함. 1. domain_match: rationale 은 서론-본론-결론의 구조만 언급했으나, essay 의 핵심 주제인 'AI 저작권 귀속' 논리나 주장 타당성을 전혀 평가하지 않아 content 기준을 충족하지 못함. 2. score_rationale_consistency: predicted_score 가 4.0(높은 점수) 인데 rationale 에 구체적인 근거가 하나도 없어 점수와 설명이 심각하게 모순됨. 3. specificity: 'clear structure'와 같은 추상적 표현만 사용되어 essay 의 구체적 문장이나 논지를 인용하지 못함. 4. groundedness: rationale 이 언급한 구조 (결론 부재 등) 가 essay 의 실제 내용과 일치하지 않으며, 구체적인 텍스트 근거 없이 일반화된 설명만 제공하여 hallucination 으로 판단됨."
+          }
+        },
+        "round_4": {
+          "strict": {
+            "domain_match": 1,
+            "score_rationale_consistency": 1,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 1.0,
+            "adjustment_notes": "관대한 심사위원의 초기 평가 (4.0 점) 를 유지할 수 없으며, 엄격한 심사위원의 지적대로 모든 항목을 하향 조정함. 1. domain_match: rationale 은 서론-본론-결론의 구조만 언급했으나, essay 의 핵심 주제인 'AI 저작권 귀속' 논리나 주장 타당성을 전혀 평가하지 않아 content 기준을 충족하지 못함. 2. score_rationale_consistency: predicted_score 가 4.0(높은 점수) 인데 rationale 에 구체적인 근거가 하나도 없어 점수와 설명이 심각하게 모순됨. 3. specificity: 'clear structure'와 같은 추상적 표현만 사용되어 essay 의 구체적 문장이나 논지를 인용하지 못함. 4. groundedness: rationale 이 언급한 구조 (결론 부재 등) 가 essay 의 실제 내용과 일치하지 않으며, 구체적인 텍스트 근거 없이 일반화된 설명만 제공하여 hallucination 으로 판단됨."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.2,
+            "adjustment_notes": "엄격한 심사위원의 평가와 기존 관대한 심사위원의 점수를 비교 검토한 결과, 조정할 항목이 없습니다. 1) domain_match: rationale 이 organization 도메인의 서론-본론-결론 구조를 명확히 적용했으므로 5 점 유지. 2) score_rationale_consistency: predicted_score(4.0) 는 '명확한 구조'라는 강점을 인정하지만, '두 가지 주요 포인트'라는 표현이 구체적인 내용 (데이터 소유권 등) 을 직접 언급하지 않아 근거가 다소 일반적임. 따라서 완벽한 5 점보다는 4 점으로 조정하여 점수와 근거의 격차를 반영함. 3) specificity: 관대한 심사위원이 '구체적 예시 없음'을 지적한 바 있음. rationale 은 서론/본론/결론의 구조만 언급하고, essay 의 구체적인 논지 (데이터 소유권, 표절 문제 등) 를 직접 인용하지 못했으므로 generic 한 평가지는 피했으나 구체성은 부족함. 따라서 4 점에서 3 점으로 하향 조정함. 4) groundedness: rationale 이 essay 의 첫/마지막 문단 구조를 정확히 반영하고 hallucination 이 없으므로 5 점 유지."
+          }
+        },
+        "final": {
+          "domain_match": 3.0,
+          "score_rationale_consistency": 2.5,
+          "specificity": 2.0,
+          "groundedness": 3.0,
+          "overall_judge": 2.6
+        }
+      },
+      "expression": {
+        "round_0": {
+          "strict": {
+            "domain_match": 2,
+            "score_rationale_consistency": 1,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 1.2,
+            "rationale_for_score": "1. domain_match: 'expression' 영역 평가 기준을 사용했으나, rationale은 내용적 논리 (소유권, 저작권 주체) 에만 집중하여 표현의 자연스러움이나 어휘 적절성 등 expression 특화 기준을 전혀 언급하지 않아 영역 혼동으로 감점. 2. score_rationale_consistency: predicted_score가 3.0(보통/약점 존재) 인데 rationale은 'well-written'이라는 긍정적 평가로 시작하여 점수를 정당화하지 못함. 오히려 긴 문장 지적이 있으나, 이를 3점으로 연결하는 논리가 부족해 모순됨. 3. specificity: 'some of the sentences are a bit long'라는 표현은 구체적인 문장 번호나 위치를 지칭하지 않아 구체성이 결여됨. 4. groundedness: essay_text에는 긴 문장이 존재하지만 (예: '그렇기 때문에, 온전히 자기 생각만으로 부를 수 있는 요소인 소스를 제공한 이용자가 창작물의 소유권을 갖는다고 생각한다.'), rationale은 이를 구체적으로 인용하거나 지적하지 않고 추상적으로만 언급하여 essay와 연결되지 않음."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 3,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.2,
+            "rationale_for_score": "1) domain_match: rationale 가 '문장이 길다', '문법적 오류가 없다'는 표현을 사용하여 expression(표현) 영역의 평가 기준을 명확히 준수함. 2) score_rationale_consistency: predicted_score(3.0) 와 rationale('잘 쓰였으나 문장이 길음') 사이의 관계가 모호함. 일반적으로 '잘 쓰였다'는 긍정적 표현은 4 점 이상을 시사하나, 3 점이라는 중간 점수를 정당화하기 위해 '문장이 길다'는 단점을 강조하는 방식이므로, 점수 설명의 방향성은 일치하지만 강도가 약해 3 점으로 처리함. 3) specificity: '일부 문장', '첫번째 문단' 등 구체적인 위치를 언급하여 generic 한 평가가 아님. 4) groundedness: essay_text 의 첫 번째 단락에 실제로 긴 문장이 존재하고, 마지막 단락에서 openAI 를 언급하는 등 텍스트 기반의 근거가 명확함."
+          }
+        },
+        "round_1": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 3,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.2,
+            "adjustment_notes": "관대한 심사위원의 평가에서 domain_match(5), specificity(4), groundedness(5)는 rationale 텍스트에 명시된 근거 ('문장이 길다', '일부 문장', '첫번째 문단') 가 essay_text 에서 확인 가능하므로 유지함. score_rationale_consistency 는 관대심사위원이 3 점을 유지한 이유 (강도가 약함) 를 인정하되, 이는 점수 조정의 핵심 기준이므로 수정 불가. 따라서 전체적인 판단은 관대한 심사위원의 평가와 일치하여 최종 점수를 3.0 으로 유지함."
+          },
+          "lenient": {
+            "domain_match": 1,
+            "score_rationale_consistency": 1,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 1.0,
+            "adjustment_notes": "엄격한 심사위원의 지적대로 모든 항목을 하향 조정합니다. 1. domain_match: rationale이 'well-written'이라는 표현만 사용하여 content(논리)에 집중했으므로 expression 기준 미충족으로 1점. 2. score_rationale_consistency: 'well-written'이라는 긍정적 평가와 3.0 점수 (약점 존재) 가 모순되며, 긴 문장 지적이 점수 하락과 연결되지 않아 1점. 3. specificity: 'some of the sentences'라는 표현은 구체적인 위치나 예시가 없어 generic함으로 1점. 4. groundedness: essay_text의 긴 문장을 구체적으로 인용하거나 분석하지 않고 추상적으로만 언급하여 근거가 부족하므로 1점."
+          }
+        },
+        "round_2": {
+          "strict": {
+            "domain_match": 2,
+            "score_rationale_consistency": 3,
+            "specificity": 2,
+            "groundedness": 2,
+            "overall_judge": 2.2,
+            "adjustment_notes": "관대한 심사위원의 초기 평가 (모든 항목 1점) 를 유지하되, 관대심사위원이 'essay_text 에서 직접 인용 가능한 구체적 근거'를 요구하는 기준에 따라 점수를 상향 조정합니다. 1. domain_match: rationale 은 expression(문장 구조, 가독성) 을 다루고 있으나, essay_text 의 실제 긴 문장을 구체적으로 분석하지 않고 추상적으로만 언급하여 표현력 평가의 깊이가 부족하므로 2점 (경미한 약점). 2. score_rationale_consistency: 'well-written'이라는 긍정적 평가와 3.0 점수 사이의 모순이 명확하나, 관대심사위원이 지적한 바와 같이 essay_text 의 구체적인 긴 문장 예시를 들어 가독성 문제를 정당화하지 못했으므로 완전한 불일치 (1점) 보다는 약간의 설명 부족으로 3점으로 상향. 3. specificity: 'some of the sentences'라는 표현은 여전히 구체적이지 않으므로 2점 유지. 4. groundedness: essay_text 의 실제 텍스트를 인용하거나 분석하지 않고 추상적으로만 서술하여 근거가 부족하므로 2점 유지."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 3,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.2,
+            "adjustment_notes": "엄격한 심사위원의 평가에 따라 모든 항목을 재검토함. domain_match(5), specificity(4), groundedness(5)는 rationale 에 제시된 구체적인 근거 ('문장이 길다', '일부 문장', '첫번째 문단') 가 essay_text 에서 명확히 확인 가능하므로 유지함. score_rationale_consistency 는 관대한 심사위원이 3 점을 준 이유 (강도가 약함) 를 인정하되, 이는 점수 조정의 핵심 기준이므로 수정 불가. 따라서 전체적인 판단은 엄격한 심사위원의 평가와 일치하여 최종 점수를 3.0 으로 유지함."
+          }
+        },
+        "round_3": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 3,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.2,
+            "adjustment_notes": "관대한 심사위원의 평가 (domain_match: 5, specificity: 4, groundedness: 5) 를 재검토한 결과, rationale 에 제시된 '문장이 길다', '일부 문장', '첫번째 문단'이라는 구체적인 근거가 essay_text 에서 명확히 확인 가능하므로 해당 항목 점수는 유지함. score_rationale_consistency 는 관대한 심사위원이 '강도가 약함'을 이유로 3 점을 준 것을 인정하되, 이는 점수 조정의 핵심 기준이므로 수정 불가. 따라서 전체적인 판단은 엄격한 심사위원의 평가와 일치하여 최종 점수를 3.0 으로 유지함."
+          },
+          "lenient": {
+            "domain_match": 2,
+            "score_rationale_consistency": 1,
+            "specificity": 2,
+            "groundedness": 2,
+            "overall_judge": 1.8,
+            "adjustment_notes": "엄격한 심사위원의 평가에 따라 점수를 재조정합니다. 1. domain_match: rationale 은 expression(문장 길이 등) 을 다루고 있어 영역은 맞으나, essay_text 의 구체적인 긴 문장을 인용하거나 분석하지 않고 추상적으로만 언급하여 평가 깊이가 부족하므로 2점 유지. 2. score_rationale_consistency: 'well-written'이라는 긍정적 평가와 3.0 점수 사이의 모순이 명확합니다. rationale 이 essay_text 의 구체적인 긴 문장 예시를 들어 가독성 문제를 정당화하지 못했으므로, 단순한 설명 부족을 넘어 점수와 근거가 완전히 불일치하므로 1점으로 하향 조정. 3. specificity: 'some of the sentences'라는 표현은 여전히 구체적이지 않으므로 2점 유지. 4. groundedness: essay_text 의 실제 텍스트를 인용하거나 분석하지 않고 추상적으로만 서술하여 근거가 부족하므로 2점 유지."
+          }
+        },
+        "round_4": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 1,
+            "specificity": 2,
+            "groundedness": 2,
+            "overall_judge": 2.0,
+            "adjustment_notes": "1. domain_match: 관대한 심사위원이 지적한 '추상적 언급'은 사실입니다. rationale 은 essay_text 의 긴 문장을 구체적으로 인용하거나 분석하지 않고 'some of the sentences'라는 일반화만 사용하여 expression 영역의 평가 기준을 충족하지 못했습니다. 따라서 2점 유지 (감점 없음). 2. score_rationale_consistency: 관대한 심사위원이 지적한 대로, 'well-written'이라는 긍정적 평가와 3.0 점수 사이에는 명확한 모순이 존재합니다. 또한 rationale 이 essay_text 의 구체적인 긴 문장 예시를 들어 가독성 문제를 정당화하지 못했으므로, 단순한 설명 부족을 넘어 점수와 근거가 완전히 불일치합니다. 따라서 1점으로 하향 조정 (관대한 심사위원의 판단 유지). 3. specificity: 'some of the sentences'라는 표현은 여전히 구체적이지 않으므로 2점 유지 (감점 없음). 4. groundedness: essay_text 의 실제 텍스트를 인용하거나 분석하지 않고 추상적으로만 서술하여 근거가 부족하므로 2점 유지 (감점 없음)."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 3,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.2,
+            "adjustment_notes": "엄격한 심사위원의 평가 (domain_match: 5, specificity: 4, groundedness: 5) 를 재검토한 결과, rationale 에 제시된 '문장이 길다', '일부 문장', '첫번째 문단'이라는 구체적인 근거가 essay_text 에서 명확히 확인 가능하므로 해당 항목 점수는 유지함. score_rationale_consistency 는 관대한 심사위원이 '강도가 약함'을 이유로 3 점을 준 것을 인정하되, 이는 점수 조정의 핵심 기준이므로 수정 불가. 따라서 전체적인 판단은 엄격한 심사위원의 평가와 일치하여 최종 점수를 3.0 으로 유지함."
+          }
+        },
+        "final": {
+          "domain_match": 5.0,
+          "score_rationale_consistency": 2.0,
+          "specificity": 3.0,
+          "groundedness": 3.5,
+          "overall_judge": 3.1
+        }
+      }
+    }
+  }
+]

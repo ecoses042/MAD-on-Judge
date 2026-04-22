@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-f5fead94ee884800e84a212cc0edc78b11c4ba9f",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and consistent with the source text. It captures the main points: Pellegrini's interest, Patoulidis's age and status, and the competition from Arsenal and Barcelona. It receives a slight deduction on relevance (from 5 to 4) because it omits specific details present in the article such as the family's preference for studies, the previous rejection of Barcelona, and the ongoing discussions regarding compensation, though these are minor compared to the core news."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.5,
+        "rationale_for_score": "The summary is fluent and coherent. It captures the main points: Pellegrini's interest, Patoulidis's age/role, his status as a top talent, and rival interest from Arsenal/Barcelona. However, it scores slightly lower on consistency and relevance because it omits specific details present in the source text that add context (e.g., the family's previous rejection of Barcelona due to studies, the ongoing discussions with the chairman regarding compensation, and Pellegrini's strategic goal of building for the future). While not hallucinations, these omissions make it less comprehensive than a perfect summary."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate. The summary effectively captures the core news (Pellegrini's interest, player profile, and rival interest) while omitting specific details like the family's study preference, the previous rejection of Barcelona, and compensation discussions. These omissions are minor but justify a slight deduction in relevance from 5 to 4, as per standard summarization evaluation practices where key context is missing."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.5,
+        "adjustment_notes": "The strict judge's assessment is accurate. While the summary is fluent and coherent, it omits significant contextual details from the source text (the family's previous rejection of Barcelona due to studies, ongoing discussions with the chairman regarding compensation, and Pellegrini's specific strategic goal). These omissions reduce the 'comprehensiveness' relative to a perfect summary, justifying the slight deduction in consistency and relevance. No score reduction is needed as the strict judge was appropriately lenient on fluency/coherence but correctly penalized for missing key context."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The strict judge's assessment is accurate. The summary successfully captures the main narrative (Pellegrini's interest, player profile, and rival interest) while appropriately omitting specific background details like the family's study preference, the previous rejection of Barcelona, and compensation discussions. These omissions are minor and do not detract from the core news value, justifying a relevance score of 4 rather than 5."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.5,
+        "adjustment_notes": "No changes to scores. The lenient judge's assessment is accurate: the summary is fluent and coherent but misses specific contextual details (family rejection of Barcelona, compensation discussions) present in the source text, which justifies the slight deductions in consistency and relevance."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.5,
+      "fluency": 5.0,
+      "relevance": 4.0,
+      "overall_judge": 4.7
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-6f027d030f9ca86446dc893f1d10ced4c9a3561f",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from a major consistency error: it states 'the club has been in talks with Liverpool', which is nonsensical as the club cannot talk to itself (the source says advisors talked with Liverpool). Additionally, the sentence regarding contract value ('likely be worth .') is incomplete. While the content is drawn from the text and the direction is correct, these clear factual errors and truncation prevent a higher score."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary fails the consistency criterion severely due to a major hallucination: it states 'the club has been in talks with liverpool', implying Henderson's advisors talked to Liverpool, whereas the text says they talked to 'Liverpool' (the club itself). Additionally, the sentence regarding the contract value ('likely be worth .') is grammatically broken and omits the specific figure (£100,000) found in the source. The summary also includes a caption-like detail about chasing Jack Grealish which is irrelevant to the main news story of the contract extension, hurting relevance."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a severe hallucination ('talks with Liverpool' instead of 'Liverpool'), which violates consistency. It also includes an irrelevant caption detail and leaves out the specific contract value mentioned in the text, further penalizing consistency and relevance. The grammatical error ('likely be worth .') impacts fluency. No leniency is warranted as these are fundamental flaws."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the overall score slightly from the lenient judge's 3.0 to 2.5. While I agree with the lenient judge's points regarding the nonsensical 'talks with Liverpool' (consistency error) and the truncated sentence about contract value, I believe these are severe enough to warrant a lower rating than a simple 3. The summary contains two distinct factual/logic errors in addition to the truncation, which significantly impacts the quality of the text beyond just being 'incomplete'. The coherence is also impacted by the disjointed nature of the truncated sentence and the logical error."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "No adjustment needed. The lenient judge's points regarding the hallucination ('talks with Liverpool'), the inclusion of an irrelevant caption detail, the missing contract value, and the grammatical error are all valid observations based on the provided text and summary. These are fundamental flaws that prevent a higher score."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I accepted the strict judge's criticism regarding consistency (the 'talks with Liverpool' error) and relevance (missing key details like contract value and duration). I lowered my overall score from 3.0 to 2.5 because the combination of a severe factual hallucination, a truncated sentence, and disjointed structure makes the summary significantly flawed, justifying the stricter rating."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 1.5,
+      "fluency": 3.5,
+      "relevance": 2.5,
+      "overall_judge": 2.5
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-1747dcd6a007ee97954b6b10cde549bf82f6a4eb",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from severe fluency issues due to poor sentence structure and awkward phrasing (e.g., 'with an app to bring burritos...' is a fragment incorrectly attached to the previous clause). While it covers key facts consistently with the source, the lack of grammatical correctness makes it difficult to read. The direction aligns well with the article."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary contains a severe hallucination in the 'consistency' criterion: it claims the restaurant plans to add a service charge 'with an app to bring burritos', incorrectly merging two separate sentences from the source text into a nonsensical causal relationship. The grammar is also poor (missing articles, awkward phrasing). While it covers some key points like the 67 cities and fees, the factual error regarding the service charge logic makes it unreliable."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No changes needed. The lenient judge's assessment of severe fluency issues (score 2) is accurate due to the fragmented sentence structure ('with an app to bring burritos...') and awkward phrasing in the summary. The coherence score remains low because the poor grammar disrupts the logical flow. Consistency and relevance scores are maintained as the facts cited are present in the source text, despite the poor presentation."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The strict judge's assessment is accurate and justified. The summary suffers from a severe coherence failure where it merges two distinct concepts ('add a nine per cent service charge' and 'bring burritos straight to customers') into a single nonsensical clause ('add a nine per cent service charge - with an app to bring burritos...'). This creates a logical hallucination not present in the source text. Additionally, the grammar is poor (missing articles like 'the', awkward phrasing), confirming the low fluency score. The summary misses significant relevant details such as the specific cities count context, the rejection of previous offers, and the celebrity sightings mentioned in the text. Therefore, I maintain the strict judge's low scores."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary suffers from severe fluency issues due to a fragmented sentence structure ('with an app to bring burritos...') and awkward phrasing that disrupts logical flow, justifying the low coherence and fluency scores. Consistency and relevance are maintained as the facts align with the source text."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The lenient judge's points were accepted. The strict judge correctly identified a severe coherence failure where the summary merges two distinct sentences from the source into a single nonsensical clause ('add a nine per cent service charge - with an app to bring burritos...'). This is a logical hallucination not present in the source text, justifying the low consistency score. The grammar issues (missing articles, awkward phrasing) confirm the low fluency score. Furthermore, the summary omits significant relevant details such as the specific cities count context, the rejection of previous offers, and the celebrity sightings mentioned in the text, supporting the low relevance score. No score increases are warranted."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 2.5,
+      "fluency": 2.5,
+      "relevance": 3.0,
+      "overall_judge": 2.5
+    }
+  }
+}

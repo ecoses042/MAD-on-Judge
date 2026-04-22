@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-8764fb95bfad8ee849274873a92fb8d6b400eee2",
+  "system_name": "system_2",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, as it redundantly mentions Townsend being brought on in the 83rd minute and the 0-0 draw with Burnley without connecting these points effectively."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details about Merson's criticism and Townsend's response, which are central to the conflict between the two, thus failing to capture the essence of the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that Townsend was brought on with only seven minutes remaining, which contradicts the article's mention of him being substituted in the 83rd minute."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as inconsistent capitalization of names and lack of punctuation, making it less readable."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with Merson's comments, followed by Townsend's response, and concluding with the context of the match."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the interactions between Merson and Townsend without introducing any new or misleading information."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the conflict between Merson and Townsend, highlighting the main events that are relevant to their ongoing dispute."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains some grammatical issues, such as missing articles and inconsistent capitalization, which affect its readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

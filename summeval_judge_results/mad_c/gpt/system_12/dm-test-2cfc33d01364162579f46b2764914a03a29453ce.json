@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-2cfc33d01364162579f46b2764914a03a29453ce",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, jumping abruptly from Ozil's watch to Wilshere's expected start without connecting the two topics."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details about the significance of the match, the context of Arsenal's position in the league, and the comments made by Ray Parlour regarding Wilshere's potential."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the 10-point gap between Arsenal and Chelsea, which is a crucial detail from the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'the Gunners at the Emirates' is somewhat vague and could be more clearly stated as 'the Gunners at their home ground, the Emirates Stadium.'"
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, outlining the key events and details related to the upcoming match and player updates."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important information, including the match details, Ozil's new watch, and Wilshere's expected participation, which are all key points from the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "While the summary captures key points, it omits some context about the significance of the match and the implications of Wilshere's fitness, which are present in the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is generally fluent, but could benefit from smoother transitions between points to enhance readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 4,
+      "relevance": 3,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

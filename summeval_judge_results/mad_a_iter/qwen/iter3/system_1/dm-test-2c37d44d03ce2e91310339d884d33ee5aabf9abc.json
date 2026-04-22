@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-2c37d44d03ce2e91310339d884d33ee5aabf9abc",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is fluent and covers the main events well. However, it contains a significant consistency error: the source text states that 'officials said' the parents dangled the child, but the summary claims the zoo 'heard a scream,' which was actually reported by witness Michael Lurie, not officials. Additionally, the summary omits the crucial detail from the source that the boy fell because his parents dangled him over the edge, instead implying he simply tumbled in. These omissions and the misattribution of the cause lower the consistency score."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 2,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary contains a major hallucination regarding consistency: it states 'his parents jumped in and pulled him to safety,' whereas the source text explicitly says 'The child was rescued by his parents from the pit' but does not describe them jumping into the exhibit (which would be dangerous and is not mentioned). The source says officials said the parents dangled him, while the summary implies a rescue action that contradicts the implied negligence. Additionally, the summary omits the specific detail that the boy was holding another child, which is a key part of the incident description."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding consistency. The summary incorrectly attributes the 'heard a scream' detail to the zoo officials ('Cleveland Metroparks Zoo... heard a scream'), whereas the text explicitly states this was reported by witness Michael Lurie. Furthermore, the summary omits the critical fact that officials stated the parents dangled the child, instead using the vague 'tumbled into,' which misrepresents the cause of the incident described in the source."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 2,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment regarding consistency. The summary states 'his parents jumped in and pulled him to safety,' which is a significant hallucination not supported by the text. The source says they rescued him from the pit but does not mention them jumping in (which would be highly unusual for zoo staff/parents in that context) or the specific mechanics of the rescue. This changes the nature of the event described. I also agree that omitting the detail about the second child is a relevant flaw, lowering the relevance score. The coherence and fluency scores remain high as the sentence structure is fine, but the factual error drags down the overall quality significantly."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 2,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the consistency score significantly because the strict judge identified two major factual errors: attributing the 'heard a scream' to the zoo itself rather than witness Michael Lurie, and failing to mention that officials stated the child was 'dangled,' which is the central cause of the incident. I also lowered the relevance score because omitting the specific act of dangling makes the summary miss the most critical detail regarding the nature of the accident."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 2,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding consistency. The summary states 'his parents jumped in and pulled him to safety,' which is a significant hallucination not supported by the text. The source says they rescued him from the pit but does not mention them jumping in (which would be highly unusual for zoo staff/parents in that context) or the specific mechanics of the rescue. This changes the nature of the event described. I also agree that omitting the detail about the second child is a relevant flaw, lowering the relevance score. The coherence and fluency scores remain high as the sentence structure is fine, but the factual error drags down the overall quality significantly."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 2.0,
+      "fluency": 5.0,
+      "relevance": 3.0,
+      "overall_judge": 3.0
+    }
+  }
+}

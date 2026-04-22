@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-e428e25bbf8e06643154ce31b7c6fab64c81e857",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is consistent with the source text and contains no hallucinations. However, it lacks coherence as a standalone piece because it consists of disjointed sentences without connecting words or a clear narrative flow. It also misses the main news hook (the camera being re-pointed at a specific house), focusing only on background context, which lowers its relevance to the primary event."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary suffers from severe relevance issues as it completely ignores the main news hook: a specific camera was re-pointed at a house in Birmingham, causing controversy and council intervention. It only summarizes background context (cameras being switched off) which is trivial compared to the actual event. Fluency is poor due to the lack of capitalization and punctuation. While the facts included are consistent with the text, the summary fails to capture the essence of the article."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I have lowered the scores significantly based on the strict criteria. While consistency remains perfect (no hallucinations), the summary is extremely poor in relevance as it completely omits the main news hook: the camera being re-pointed at a specific house and the council's response. It reduces the article to a disjointed list of background facts, failing to capture the actual story. Coherence is low due to the lack of narrative flow, and fluency is penalized for the choppy, sentence-by-sentence structure that lacks transitions."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary fails to mention the central event (the camera being re-pointed at a house) and focuses entirely on background context, making it irrelevant to the main story. Additionally, the lack of capitalization and punctuation makes it grammatically poor and difficult to read."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary fails to capture the core news event (the camera being re-pointed at a specific house) and instead lists background facts in a disjointed manner. While it is factually consistent with the text, its lack of narrative flow and omission of the main story justify the low scores."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "No changes needed. The summary fails to capture the main event (the camera being re-pointed at a house), relies solely on background context, and suffers from poor formatting (lack of capitalization/punctuation). The lenient judge's points regarding relevance and fluency are valid based on the actual content provided."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 5.0,
+      "fluency": 2.5,
+      "relevance": 1.0,
+      "overall_judge": 2.0
+    }
+  }
+}

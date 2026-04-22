@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-b1c3fc03a2b74cf4c79844c1fe2fdce70a8a436e",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, as it presents fragmented sentences without connecting ideas."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits critical details such as the missing migrants, the capsizing incident, and the context of the migrant crisis, which are essential to understanding the situation."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as inconsistent capitalization and punctuation, which affect readability."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not accurately reflect the source document's details about the number of migrants rescued and the context of their distress calls."
+        }
+      ],
+      "provisional_score": 1
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the situation of migrants in Italy."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points, such as the number of migrants rescued and the distress calls received, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits important details about the missing migrants and the context of the rescues, which are significant aspects of the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization and punctuation, making it less fluent and harder to read."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

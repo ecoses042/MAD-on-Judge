@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-e06ff0eb7c4fa4416fda84a9a239b15480c5a9d9",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, making it difficult to understand the main points."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces phrases and ideas not present in the original article, such as 'he is also ` also a princess ' need to be '."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as improper punctuation and capitalization."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to cover key points, such as the man's personal description and specific requirements for his partner."
+        }
+      ],
+      "provisional_score": 1
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear focus on the main subject, which is the man's advertisement for a girlfriend/wife, and it maintains a logical flow of information regarding his requirements."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the content of the article without introducing any new facts or misrepresenting the original information."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary captures the essence of the advertisement, including the man's desires and the context of his search for a partner."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, such as 'he is also ` also a princess ' need to be ' and 'accomodation' which should be 'accommodation'."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-97bbda7ec22a736cd174b51513c72a6372d13d35",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary contains a significant hallucination in the final sentence: '13 letters that hung over yankee stadium were estimated to bring in anywhere .' This sentence is grammatically incomplete and invents a fact (that they brought in 'anywhere') that contradicts the source text, which explicitly states they failed to find a buyer. While the beginning of the summary is accurate and fluent, this clear inconsistency with the source material prevents it from being rated higher than 2 for consistency."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary fails the relevance criterion severely because it ends with a nonsensical sentence ('...were estimated to bring in anywhere .') that cuts off mid-thought and adds no information. While the facts included are consistent with the text, the summary is incomplete and poorly structured."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary ends with a truncated sentence ('...were estimated to bring in anywhere .'), which is a severe flaw affecting coherence, fluency, and relevance. It fails to summarize the key outcome (the low bid price) or the owner's reaction, making it incomplete and poorly structured."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 3,
+        "relevance": 3,
+        "overall_judge": 2.8,
+        "adjustment_notes": "The lenient judge's assessment of consistency (2) is correct and should be maintained. The summary ends with a sentence fragment ('...were estimated to bring in anywhere .') that is grammatically incomplete and factually misleading as it implies an open-ended estimate rather than the specific $300k-$600k range mentioned earlier or the failure to sell. This constitutes a hallucination/inconsistency with the source text's explicit statement that they 'failed to find a buyer.' I will not raise this score despite the lenient judge's points because the error is in the summary itself, not the article. The coherence and fluency scores are lowered slightly from the lenient judge's 4s due to the abrupt ending and poor sentence structure."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I raised the overall score slightly from 2.0 to 2.5. While I agree with the strict judge's assessment that the summary is flawed due to the truncated final sentence and lack of key details (specifically the $260,000 bid price), the lenient judge correctly identified that the factual information present in the summary is consistent with the article. The summary does not introduce hallucinations or false claims; it simply fails to complete its thought and misses the most important news hook (the actual sale price). Therefore, while the score remains low due to structural failure, a perfect 2.0 feels slightly too harsh given the factual accuracy of the provided text."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 2.5,
+        "adjustment_notes": "I agree with the strict judge's assessment of consistency (2) due to the factual error in the final sentence fragment which contradicts the specific estimate provided earlier and fails to mention the sale failure clearly. I have lowered the fluency score from 4 to 2 because the summary ends abruptly with an incomplete sentence ('...were estimated to bring in anywhere .'), making it grammatically broken and difficult to read. The coherence and relevance scores remain at 3 as the structure is logical but marred by the poor ending, and the content covers the main points despite the errors."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 3.0,
+      "fluency": 2.5,
+      "relevance": 2.0,
+      "overall_judge": 2.2
+    }
+  }
+}

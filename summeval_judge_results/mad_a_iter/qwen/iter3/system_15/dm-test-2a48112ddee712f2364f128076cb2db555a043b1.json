@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-2a48112ddee712f2364f128076cb2db555a043b1",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary fails the consistency criterion due to a severe hallucination: it includes 'click here for all the latest chelsea news', which is completely absent from the source text and irrelevant to Esteban Cambiasso or Leicester City. Additionally, the relevance is poor because the sentence about Chelsea is noise that distracts from the main topic. While the grammar is acceptable (fluency 4) and the structure is simple (coherence 3), the inclusion of fabricated external links drops the consistency score significantly."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary contains a clear hallucination: it includes the phrase 'click here for all the latest chelsea news,' which is completely absent from the source article and unrelated to the content. This violates the consistency criterion severely. While the other sentences accurately reflect the text, the inclusion of this irrelevant link makes the summary unreliable."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The inclusion of 'click here for all the latest chelsea news' is a severe hallucination not present in the source text, violating consistency. This also drastically impacts relevance by introducing noise and distracting from the main topic of Leicester City. Therefore, I maintain the low scores."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No adjustment needed. The lenient judge correctly identified a severe consistency error: the phrase 'click here for all the latest chelsea news' is completely absent from the source text and introduces unrelated content (and specifically incorrect team information). This violates the core constraint of summarizing only the provided article. The other scores reflect the fragmented nature of the summary and its focus on trivial details over a cohesive narrative."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding consistency and relevance. The phrase 'click here for all the latest chelsea news' is a severe hallucination not present in the source text, which justifies the low consistency score (2) and relevance score (1). However, I am raising the overall_judge from 2.0 to 2.5 because the fluency is acceptable (4) and the coherence, while repetitive due to the summary's structure, is not entirely broken (3). The strict judge was slightly too harsh on the overall impact given that the core information about Cambiasso is accurate."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The strict judge was correct to penalize the summary heavily for consistency due to the hallucinated 'click here' link and incorrect team reference ('Chelsea'). I have lowered my scores further because the summary is not just inconsistent but also structurally incoherent (fragmented sentences) and irrelevant (focusing on a non-existent link rather than summarizing the article's content). The fluency score was slightly lowered to reflect the choppy, disjointed sentence structure."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 1.5,
+      "fluency": 3.5,
+      "relevance": 1.5,
+      "overall_judge": 2.0
+    }
+  }
+}

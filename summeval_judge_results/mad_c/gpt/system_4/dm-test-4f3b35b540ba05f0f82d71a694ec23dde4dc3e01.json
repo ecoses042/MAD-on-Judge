@@ -1,0 +1,66 @@
+{
+  "article_id": "dm-test-4f3b35b540ba05f0f82d71a694ec23dde4dc3e01",
+  "system_name": "system_4",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow and does not connect the events in a structured manner, making it difficult to follow the sequence of actions."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the attempted carjacking, the involvement of the driver's grandmother, and the investigation by the Los Angeles County Fire Department, which are crucial to understanding the context of the incident."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention that the suspects pulled out a gun during the argument, which is a significant detail from the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains awkward phrasing and lacks proper punctuation, making it less readable."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, detailing the argument, the pouring of gasoline, and the subsequent lighting of the car on fire."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article without introducing any new facts or misrepresenting the events."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is written in grammatically correct English and is easy to read."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the incident, including the argument, the act of arson, and the presence of passengers."
+        }
+      ],
+      "remaining_concerns": [],
+      "provisional_score": 5
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

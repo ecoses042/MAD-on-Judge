@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-2cf8c2d1d2ceb1980249f77e703f9039e63799d0",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from relevance issues by omitting key details present in the source text (e.g., fathers' suits, daughters' casual clothes, Japanese landmarks, online interest). It also contains a minor consistency flaw: it omits the specific detail that 'very little else is known,' which is explicitly stated in the article as a defining characteristic of the series."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and strictly consistent with the source text. It captures the main points effectively. It receives a slight deduction on relevance because it omits several other key details mentioned in the article (such as the fathers' suits, the daughters' casual clothing, the specific expressions like 'pained', and the fact that they are posed in front of Japanese landmarks), but given the lenient rules to give benefit of the doubt, this is considered a minor weakness rather than a failure."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is fluent and coherent but fails to capture key visual details (suits, casual clothes, landmarks) and context (online interest, lack of background info) present in the source text, resulting in a low relevance score. The omission of the 'very little else is known' detail is a valid consistency issue regarding the nature of the project described."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate. The summary is well-structured (coherence), contains no hallucinations (consistency), and is grammatically correct (fluency). It covers the primary subject matter but omits secondary details like clothing, specific expressions, and locations mentioned in the source text, justifying a slight deduction on relevance."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "No changes made. The lenient judge's points regarding the omission of visual details (suits vs casual clothes), landmarks, and the context of online interest are valid references to the source text that are missing from the summary. Therefore, the relevance score remains low, and the consistency score reflects the omission of the 'very little else is known' detail mentioned in the article."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The strict judge's assessment is accurate. The summary effectively captures the core narrative and key facts without hallucinations or structural issues. While it omits secondary details like clothing, expressions, and locations (justifying the relevance score of 4), this is acceptable for a concise summary focusing on the primary subject matter."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.5,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.5
+    }
+  }
+}

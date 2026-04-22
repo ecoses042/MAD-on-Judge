@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-8b51a10370a1219137e231192e65b9cd52238ea6",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and consistent with the source text. It captures the main narrative arc regarding the clash with Marlon Samuels and the subsequent advice from coach Peter Moores. The score is slightly reduced on relevance because it omits significant context present in the article, such as Stokes' history of aggression (breaking his wrist), the specific incident at Kensington Oval, and the discussion about team selection involving Adil Rashid and Chris Jordan."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and consistent with the source text, but it suffers from poor relevance due to excessive truncation. It captures only a small fraction of the article's content (specifically the incident with Samuels and the general philosophy on Stokes' character) while omitting significant details such as the context of his wrist injury, his history in the team, the specific advice from coach Peter Moores regarding controlling aggression, and the strategic discussion about playing Adil Rashid alongside him. By cutting off mid-sentence ('runs and wickets .'), it fails to provide a complete summary of the key points."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate. The summary is fluent and coherent but lacks relevance due to omitting key context from the article (Stokes' history of aggression, the specific injury incident, and team selection details). I agree with the slight reduction in relevance."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the scores significantly based on the strict judge's valid points regarding relevance and coherence. The summary is a severe truncation that cuts off mid-sentence ('runs and wickets .'), which breaks fluency and destroys coherence by failing to provide a complete thought or logical conclusion. While it is factually consistent with the text, its extreme brevity means it misses over 80% of the article's content (Stokes' injury history, specific advice on controlling aggression, strategic context regarding Adil Rashid), making it a poor summary rather than just a short one."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I lowered the relevance score from 4 to 3. While the summary is fluent and coherent, it fails to capture significant portions of the source text's key information: Stokes' history of aggression (breaking his wrist), the specific injury concern (back niggle), the context of him returning after a year of ups and downs, and the team selection strategy regarding Adil Rashid and Chris Jordan. The strict judge was correct that these omissions make the summary incomplete relative to the full article."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I have accepted the lenient judge's assessment regarding coherence and fluency. The summary is indeed a severe truncation that cuts off mid-sentence ('runs and wickets .'), which technically breaks grammatical completeness (fluency) and destroys logical flow/coherence by failing to provide a conclusion. While factually consistent, its extreme brevity means it misses the vast majority of the article's content (injury history, specific advice on controlling aggression, strategic context regarding Adil Rashid), making it a poor summary rather than just a short one. Therefore, the scores remain low."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 5.0,
+      "fluency": 4.5,
+      "relevance": 2.5,
+      "overall_judge": 3.8
+    }
+  }
+}

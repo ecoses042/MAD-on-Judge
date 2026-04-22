@@ -1,0 +1,71 @@
+{
+  "article_id": "cnn-test-88c2481234e763c9bbc68d0ab1be1d2375c1349a",
+  "system_name": "system_3",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information and does not connect the events in a coherent manner."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits key details from the source, such as the safe evacuation of everyone on board and the cause of the fire."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to cover important points, such as Hillary Scott's reaction and the context of the upcoming performance."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as inconsistent capitalization and punctuation."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with the incident of the bus catching fire and the reaction of the witness."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the main event of the bus fire without introducing any new or misleading information."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key incident of the bus fire and the immediate reactions, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as lack of capitalization at the beginning of sentences and inconsistent punctuation."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits important details, such as the safe evacuation of the passengers and the cause of the fire, which are significant aspects of the story."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-cf4ba8f94f2dd5604eb8f8a4e655c10cf0996365",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and strictly consistent with the source text. It captures the main event (robbery), the location, the amount stolen, and the police appeal. It receives a slightly lower relevance score only because it omits specific descriptive details like the robber's height or the mask type, which are present in the article but not strictly essential for the core summary of the incident."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source text and covers the main events (robbery, amount stolen, location, mask). However, it suffers from poor fluency due to awkward phrasing ('dairy 's', 'owner 's') and lacks proper capitalization/punctuation throughout. It also omits significant descriptive details provided in the article (e.g., the robber's height, specific time of day, victim's reaction), which impacts relevance slightly, though it captures the core appeal."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The lenient judge's assessment is accurate. The summary effectively captures the core event (robbery), location, amount stolen, and police appeal without introducing external facts. While it omits specific details like the robber's height or the 'fluoro orange sweatshirt', these are indeed secondary to the primary news hook of the robbery itself, justifying a high relevance score rather than a penalty."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "No changes made. The strict judge's assessment is accurate: the summary contains factual errors in punctuation and capitalization (e.g., 'dairy 's', 'owner 's', lowercase start) which significantly impacts fluency. While it captures the core events, it omits specific details like the time and the victim's reaction, justifying the slight deduction in relevance. The scores reflect these objective flaws without being overly harsh."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The strict judge's assessment is correct. The summary successfully captures the essential facts: the police appeal, the robbery event, the location (Union St dairy), and the amount stolen ($1500). While it omits specific descriptive details like the 'fluoro orange sweatshirt' or the robber's height, these are indeed secondary to the primary news hook. The summary is concise, accurate, and well-structured. No score reduction is necessary."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "No changes made. The lenient judge correctly identified that the summary's significant grammatical and punctuation errors (lowercase start, inconsistent spacing around apostrophes like 'dairy 's' and 'owner 's') severely impact fluency, justifying a score of 3 rather than higher. The summary accurately reflects the source text without adding external facts (consistency) and covers the main event, though it omits minor details like the time or specific victim reaction, which is acceptable for a short summary (relevance). The structure is logical (coherence)."
+      }
+    },
+    "final": {
+      "coherence": 4.5,
+      "consistency": 5.0,
+      "fluency": 4.0,
+      "relevance": 4.0,
+      "overall_judge": 4.4
+    }
+  }
+}

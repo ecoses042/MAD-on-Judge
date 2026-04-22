@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-f468efac7b3c54f8c42c2c81dff108c52ebe0d7d",
+  "system_name": "system_7",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow of information, as it abruptly shifts from the match result to the pundits' opinions without adequately connecting the events."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits key details about the foul itself, such as the nature of John Terry's challenge and the context of the pundits' comments, which are crucial for understanding the controversy surrounding the goal."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary does not mention the involvement of Cesc Fabregas and Oscar in the goal-scoring sequence, which is a significant part of the play leading to Hazard's goal."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary uses lowercase letters for the beginning of sentences, which is grammatically incorrect and affects readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, starting with the match outcome, followed by the key event of the goal, and concluding with the pundits' opinions."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important information, including the match result, the goal scorer, and the pundits' consensus on the foul, which are all key points from the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits specific details about the foul itself and the context of the pundits' comments, which could lead to a misunderstanding of the situation."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization for names and places, such as 'Chelsea' and 'Stamford Bridge,' which affects its overall fluency."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 4,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

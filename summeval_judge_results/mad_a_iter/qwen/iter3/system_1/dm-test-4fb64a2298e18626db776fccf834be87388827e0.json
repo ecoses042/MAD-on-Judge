@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-4fb64a2298e18626db776fccf834be87388827e0",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is excellent in coherence, consistency, and fluency, accurately reflecting the source text without hallucinations. It captures the main event (Wiggins' attempt) and key details. However, it scores a 4 on relevance because it only covers the first paragraph of the source text, omitting significant context such as his recent Paris-Roubaix finish, the current record holder (Rohan Dennis), ticket information, and his upcoming Olympic targets, which are important parts of the full article."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from a significant relevance flaw: it truncates the text after the first three sentences, omitting all other key information such as Wiggins' recent career move (Paris-Roubaix), the specific record details (52.491km by Rohan Dennis), upcoming ticket sales, and his Rio Olympic targets. While the included facts are consistent with the source, the summary fails to cover the 'most important information' from the full article as per the relevance criterion."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is well-structured and fluent (5/5) and strictly adheres to the provided text without hallucinations (5/5). However, it only summarizes the first paragraph of the article, completely omitting significant details present in the rest of the text such as the current record holder (Rohan Dennis), ticket prices, his recent Paris-Roubaix finish, and his Olympic targets. Therefore, a relevance score of 4 is appropriate to reflect this partial coverage."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. While the summary is grammatically perfect and coherent within its truncated scope, it fails the relevance criterion significantly by cutting off after the third sentence. It omits critical details present in the source text, such as Wiggins' recent Paris-Roubaix finish, the specific current record holder (Rohan Dennis) and distance, ticket sales information, and his Rio Olympic targets. Therefore, I maintain the low relevance score."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. While the summary is grammatically perfect and coherent, it only covers the introductory paragraph of the source text. It completely omits key details such as the current record holder (Rohan Dennis), the specific distance of the current record, ticket information, Wiggins' recent race results, and his Olympic targets. Therefore, the relevance score must remain at 4 to reflect this significant omission of important context."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding relevance. The summary is a perfect excerpt of the first three sentences of the source text. While it introduces no new facts (consistency) and flows well (coherence/fluency), it inherently lacks the 'most important information' from the full article, such as the current record holder, ticket details, and future targets, simply because that information was not in the provided text segment. Therefore, the low relevance score is justified by the truncation of the source material itself."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.7
+    }
+  }
+}

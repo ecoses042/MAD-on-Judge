@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-8847383b72167c3f3dd2161b5b091b580c8f4da7",
+  "system_name": "system_4",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow and omits important contextual details, such as the unexpected nature of the event and the lack of tremors or sounds reported by locals."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention the significance of the event, such as the surprise it caused among residents and the involvement of local researchers, which are key points in the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that the mass has risen from the sea surface without clarifying that it was previously underwater, which could lead to confusion."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as inconsistent capitalization and punctuation, which detract from its readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, detailing the emergence of the coastline and the factors contributing to it."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, including the measurements of the new landmass and the cause of its emergence."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the article, such as the rise of the coastline and the geological explanation, while avoiding trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains some grammatical issues, such as missing articles and inconsistent capitalization, which affect its readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

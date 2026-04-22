@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-46609841ffd23e9c22d1507edf7b176ecc4d834f",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is grammatically correct and consistent with the source text, but it suffers from a severe relevance flaw. It consists almost entirely of a direct copy-paste of the first three sentences of the article without adding any new information or summarizing the key points (such as the specific goal scorer, the context of the extra-time match, or Kluivert's background). A good summary should synthesize information rather than just repeating the opening lines."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 5,
+        "overall_judge": 5.0,
+        "rationale_for_score": "The summary is excellent. It accurately captures the main points of the article (Kluivert's success, Curacao's advancement to the second round, and the specific match results) without adding any hallucinated information or omitting critical context. The flow is logical and the English is fluent."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "The strict judge's assessment is correct. The summary text provided is a direct copy-paste of the first three sentences of the source article without any synthesis or inclusion of other key details (such as the goal scorer Charlton Vicento, the extra-time context, or Kluivert's background). Therefore, it fails the relevance criterion significantly. I maintain the strict judge's low relevance score and overall rating."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The summary is factually accurate and fluent. However, it omits the specific details about the first match (Curacao vs Willemstad) and the upcoming opponent (Cuba), which are significant key points in the source text regarding the progression context. Therefore, relevance is slightly lowered from 5 to 4."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. While the summary is factually accurate and fluent, it misses significant context regarding the progression (the first-leg win in Willemstad) and future implications (upcoming match against Cuba). These omissions prevent a perfect relevance score."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "The lenient judge correctly identified that the summary is a direct copy-paste of the first three sentences of the source text without any synthesis or inclusion of other key details (such as the goal scorer Charlton Vicento, the extra-time context, or Kluivert's background). Therefore, it fails the relevance criterion significantly. I maintain the strict judge's low relevance score and overall rating."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 3.0,
+      "overall_judge": 3.9
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-6721edf88c95f480a4db2c63649dbb03736aeadf",
+  "system_name": "system_8",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, making it difficult to understand the sequence of events."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that the teacher was sacked, while the article mentions he was banned from the classroom for at least two years."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention the annulment of the entire school's SATs results, which is a key point in the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'the school was in the middle of a school year' is misleading, as the incident occurred after the exam session had finished."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear narrative about the actions of Ian Guffick and the consequences of those actions, maintaining a logical flow."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the main events of the article, including the teacher's actions and the resulting investigation."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the incident, such as the teacher's actions and the impact on the school's SATs results."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains some grammatical issues, such as awkward phrasing and unclear statements, which could hinder readability."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "Some details, such as the timeline of events and the teacher's remorse, are omitted, which could provide a fuller understanding of the situation."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

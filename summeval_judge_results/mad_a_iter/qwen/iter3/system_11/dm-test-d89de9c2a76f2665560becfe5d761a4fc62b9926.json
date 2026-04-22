@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-d89de9c2a76f2665560becfe5d761a4fc62b9926",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is fluent and coherent but fails the relevance criterion significantly. It only covers the first two sentences of the source text, completely omitting the match winner (Callum Gribbin), the specific goal details, the context of the venue, the manager's strategy, the other key players mentioned, and the broader implications regarding FA chief Greg Dyke's comments on youth talent. By truncating the summary after the second sentence, it misses the vast majority of the article's content."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "rationale_for_score": "The summary is fluent, coherent, and consistent with the source text. However, it only covers the first two sentences of the article, omitting the match winner (Callum Gribbin), the scoreline context beyond the title, and other key details like the venue or specific match events. While lenient rules allow for a high score on direction, the severe truncation limits its relevance to 'average'."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "The strict judge's assessment is correct. The summary provided is a direct copy of the first two sentences of the source text and completely ignores the rest of the article. It fails to mention the match winner (Callum Gribbin), the goal details, the venue context, the manager's strategy, or the broader implications regarding youth talent. Therefore, the relevance score must remain low (2) as it covers only trivial introductory details while missing all key points."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "The summary is grammatically perfect and consistent with the text, but it is severely truncated. It only captures the headline and the very first sentence regarding player nationality. It completely omits the match winner (Callum Gribbin), the specific goal details, the venue context, and the broader implications mentioned in the article. The lenient judge awarded a relevance score of 3 based on 'average' coverage, but given that over 80% of the source text's information is missing, a score of 2 is more appropriate to reflect the extreme lack of summary completeness."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 1,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The summary is a direct copy of the first two sentences of the source text. While it is grammatically correct (Fluency 5) and contains no hallucinations (Consistency 5), it fails completely on Coherence as a standalone summary because it lacks a logical conclusion or structure beyond an introduction. More critically, it fails Relevance entirely by ignoring the match result, the goal scorer, the venue context, and the broader implications mentioned in the rest of the article. The lenient judge's assessment that this is trivial and misses key points is correct; therefore, the scores should be lowered to reflect a summary that effectively summarizes nothing but the lead-in."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment regarding relevance. The summary is grammatically perfect and consistent, but it is severely truncated, capturing only the headline and the first sentence about player nationality while omitting the match winner, goal details, venue context, and broader implications. Therefore, I maintain the relevance score of 2 and the overall score of 3.0."
+      }
+    },
+    "final": {
+      "coherence": 3.0,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 1.5,
+      "overall_judge": 2.5
+    }
+  }
+}

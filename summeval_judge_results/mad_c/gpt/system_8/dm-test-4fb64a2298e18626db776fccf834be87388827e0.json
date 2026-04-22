@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-4fb64a2298e18626db776fccf834be87388827e0",
+  "system_name": "system_8",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, abruptly ending mid-sentence without completing the thought."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary incorrectly states that Luke Rowe is a fellow British record holder and the only man to have completed the distance in an hour, which is not supported by the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention key details such as Wiggins' background, the significance of the hour record, and the context of his attempt, which are crucial for understanding the importance of the event."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding Wiggins' attempt to break the hour record, including the date and location."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the key details from the article, such as the date of the record attempt and the location."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the main event of Wiggins attempting to break the hour record, which is the central theme of the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains some grammatical issues and awkward phrasing, such as the incomplete sentence at the end."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary incorrectly states that Luke Rowe is the only man to have completed the distance in an hour, which is not supported by the article."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

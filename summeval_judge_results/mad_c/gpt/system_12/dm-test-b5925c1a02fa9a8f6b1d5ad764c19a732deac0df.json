@@ -1,0 +1,66 @@
+{
+  "article_id": "dm-test-b5925c1a02fa9a8f6b1d5ad764c19a732deac0df",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow and omits important contextual details, such as the reactions of bystanders and the background of the incident."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to include key points, such as the dog's owner and the public's reaction, which are crucial for understanding the significance of the event."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention that the dog belonged to the local bike shop's owner, which is an important detail from the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'locked in between its jaws' is awkward and could be more naturally expressed."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, starting with the video and its view count, followed by the location and the witness."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the main events and details from the article without introducing any new facts."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is written in fluent and idiomatic English, making it easy to read."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points, including the video, the crocodile, and the witness, while avoiding trivial details."
+        }
+      ],
+      "remaining_concerns": [],
+      "provisional_score": 5
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 4,
+      "relevance": 3,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

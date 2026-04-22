@@ -1,0 +1,63 @@
+{
+  "article_id": "dm-test-0cdd7cdb5d99c36f25f1f4fa0e962d558f7ff07b",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, as it abruptly ends without mentioning the squad details or key players."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to cover important information such as the squad composition, key players, and the context of their qualification, which are crucial for understanding the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'in may 7' should be corrected to 'on May 7' for grammatical accuracy."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, outlining the key details about the squad announcement and the upcoming tournament."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important information, including the team's defending champion status, group placement, and the opening match."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits specific details about the squad members and their clubs, which are present in the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'may 7' instead of 'May 7', which affects readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

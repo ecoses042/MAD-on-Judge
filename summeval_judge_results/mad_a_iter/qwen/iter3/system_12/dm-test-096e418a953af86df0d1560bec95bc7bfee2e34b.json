@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-096e418a953af86df0d1560bec95bc7bfee2e34b",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is coherent and fluent, accurately capturing the main anecdote (the ripped trousers) and the match result. However, it includes a 'Click here' link which is not present in the source text, resulting in a minor consistency deduction. It also omits significant details about the actual match performance (goalscorers, Porto's previous lead), which slightly impacts relevance."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is factually consistent with the source text and covers the main events (score, incident, quote). However, it fails significantly on relevance by including a generic 'Click here for more' call-to-action which is not part of the article's content but likely an artifact from the webpage layout. Additionally, fluency is penalized due to poor punctuation and spacing around the quote marks (` I 'll`), making it look unprofessional."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "Lowered consistency from 4 to 3 because the summary includes a 'Click here for more Bayern Munich news' link which is not present in the source text (hallucinated/external content). Lowered relevance from 3 to 2 because the summary completely omits the significant match details provided in the article, such as the specific goalscorers (Thiago Alcantara, Jerome Boateng, Thomas Muller, Xabi Alonso, Robert Lewandowski), Porto's previous two-goal lead, and the context of Bayern booking a place in the semi-finals. The summary focuses almost exclusively on the anecdote about the ripped trousers."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The inclusion of the 'Click here for more' link is a significant flaw in relevance as it introduces non-content artifacts. The fluency score is appropriately lowered due to the poor punctuation and spacing within the quote (` I 'll`), which makes the text look unprofessional despite the factual accuracy."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "Maintained the strict judge's scores. The summary fails consistency (score 2) due to the inclusion of a 'Click here...' link which is not in the source text. It fails relevance (score 1) because it completely ignores the match result context (semi-final qualification), the specific goalscorers, and Porto's previous lead, focusing only on the trivial anecdote about the trousers."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No changes to scores. The lenient judge correctly identified the 'Click here for more' link as a relevance flaw (non-content artifact) and the poor punctuation/spacing in the quote as a fluency issue. The summary is factually consistent but lacks professional polish due to these specific errors."
+      }
+    },
+    "final": {
+      "coherence": 4.5,
+      "consistency": 3.5,
+      "fluency": 3.5,
+      "relevance": 1.5,
+      "overall_judge": 2.5
+    }
+  }
+}

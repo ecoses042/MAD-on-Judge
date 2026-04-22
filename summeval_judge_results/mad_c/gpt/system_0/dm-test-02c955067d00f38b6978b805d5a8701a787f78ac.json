@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-02c955067d00f38b6978b805d5a8701a787f78ac",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, making it difficult to understand the sequence of events."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that 'three vehicles were taken to Ipswich Hospital,' which contradicts the article's information about the number of vehicles and their destinations."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention key details such as the number of people involved in the crash and the specific injuries sustained by other victims."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'three were involved in a crash crash in brisbane, brisbane' contains a repetition and is awkwardly constructed."
+        }
+      ],
+      "provisional_score": 1
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a sequence of events related to the crash, indicating the involvement of multiple vehicles and the subsequent airlifting of patients."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary includes information about the injuries sustained by the individuals involved, which is consistent with the details provided in the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, such as 'three were taken to ipswich hospital in brisbane' and 'three car pileup happened at the brisbane valley west of fernvale,' which affect readability."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary includes repetitive phrases and lacks clarity on the number of individuals involved, which detracts from the focus on the most important information."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.0,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

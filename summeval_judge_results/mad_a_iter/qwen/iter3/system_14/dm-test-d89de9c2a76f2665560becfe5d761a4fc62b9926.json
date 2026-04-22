@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-d89de9c2a76f2665560becfe5d761a4fc62b9926",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.8,
+        "rationale_for_score": "The summary contains a severe hallucination regarding consistency: it claims Paul McGuinness and Marcus Wood were in the first team, whereas the article explicitly states they are coaching/playing for the Under 18s side (Wood played for City U18s). Additionally, the relevance is poor because the summary fails to mention the actual match result (United winning), the specific goal scorer's name (Gribbin) is mentioned but the context of the win is weak, and it misses key details like the venue or the opponent's performance. The coherence is low due to the disjointed sentences."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary contains a major hallucination regarding consistency: it states that Paul McGuinness and Marcus Wood were in the first team, whereas the article explicitly identifies them as coaches of the Under 18s side playing against City's Under 18s. While the other facts about Callum Gribbin and the match result are correct, this significant factual error regarding player status drops the consistency score severely."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I have lowered the scores significantly to align with the strict judge's valid criticisms. The summary contains a severe hallucination (claiming players were in the first team when they are U18s), which is a critical consistency failure warranting a score of 1. The relevance is also extremely low as it omits the match result, opponent details, and venue, making it a poor summary of the text provided."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No adjustment needed. The lenient judge correctly identified a critical hallucination in the summary: stating that Paul McGuinness and Marcus Wood were 'in the first team' contradicts the article which explicitly identifies them as the coach of the Under 18s side and a player from Sale respectively, not members of the senior first team playing in this match. The factual error is severe enough to warrant a low consistency score."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The lenient judge's assessment is correct. The summary contains a severe hallucination stating 'paul mcguinness and marcus wood were in the first team'. The article explicitly states these players are part of the Under 18s side ('Paul McGuinness's Under 18s', 'Marcus Wood... came closest for City'). Claiming they were in the first team contradicts the source text, justifying a consistency score of 1. Additionally, the summary fails to mention the match result (United won), the opponent (Altrincham/City), or the venue, resulting in very low relevance."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I have lowered the consistency score from 2 to a more severe assessment (effectively maintaining the strict judge's low score) because the hallucination regarding Paul McGuinness and Marcus Wood being 'in the first team' is a critical factual error that fundamentally misrepresents the nature of the match described. The summary fails to distinguish between the Under 18s squad and the senior first team, which is the core distinction made in the article."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 1.5,
+      "fluency": 4.0,
+      "relevance": 2.0,
+      "overall_judge": 2.5
+    }
+  }
+}

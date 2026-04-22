@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-4761dc6d8bdf56b9ada97104113dd1bcf4aed3f1",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information. It abruptly ends without discussing the significance of Varvara's journey or the implications of her migration."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key points such as the comparison to the previous record, the insights from Bruce Mate, and the implications regarding the classification of gray whales, which are crucial to understanding the importance of Varvara's migration."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The use of '-LRB-' and '-RRB-' is not standard in English writing and disrupts the fluency of the summary."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that Varvara swam nearly 14,000 miles without mentioning the context of surpassing the previous record, which is a significant aspect of the article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, starting with the whale's name and its record-breaking migration distance."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of Varvara's migration, including the distance and starting point, which are the most important details from the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits important details about the whale's journey, such as the destination (Baja, Mexico) and the significance of the migration in relation to the species' classification."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains a grammatical error with the phrase 'A North Pacific gray whale completes,' which should be 'completed' to match the past tense of the article."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

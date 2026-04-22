@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-88c2481234e763c9bbc68d0ab1be1d2375c1349a",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, jumping between unrelated points without clear connections."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary incorrectly states that the bus is set to perform at the awards, which is misleading as it was the band that was scheduled to perform."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as missing articles and improper sentence structure."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary includes trivial details, such as the tour manager's feelings, while omitting key information about the fire and evacuation."
+        }
+      ],
+      "provisional_score": 1
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a sequence of events related to the bus fire, starting with the capture of the incident and mentioning key individuals involved."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding the members of the band and the incident without introducing any new facts."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, such as 'the antebellum singer hillary scott , co-lead singer for the band' which disrupts the flow."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits important details, such as the evacuation of the individuals on the bus and the cause of the fire, which are crucial to understanding the incident."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.0,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

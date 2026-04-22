@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-d89de9c2a76f2665560becfe5d761a4fc62b9926",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is factually consistent with the source text (no hallucinations) and grammatically fluent. However, it suffers from a severe relevance flaw: it acts as a disjointed list of sentences rather than a cohesive summary. It includes trivial details (stadium capacity/history) while omitting the core narrative elements such as the match result, the specific goal scorer's name (Marcus Rashford is mentioned in text but not summary), and the context of the 'mini-derby'. The lack of logical flow between sentences makes it feel like a random extraction rather than a structured summary."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source text (no hallucinations) and coherent in its sentence structure. However, it suffers from poor relevance as it only captures three specific details out of a longer article that covers the match result, key moments, player stats, and broader context. It feels like an incomplete extraction rather than a summary. The fluency is slightly reduced by the lack of capitalization and punctuation in the provided text."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is factually consistent and grammatically correct, but it fails significantly on relevance and coherence. It reads like a disjointed list of random sentences rather than a cohesive summary. Crucially, it omits the most important piece of information: the match result (United winning 1-0). Instead, it includes trivial details about stadium capacity and history that are not central to the news event. Therefore, I maintain the low scores for relevance and coherence."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I lowered the scores significantly compared to the lenient judge. While consistency is perfect (no hallucinations), the summary fails on fluency due to a complete lack of capitalization and punctuation (e.g., 'english', 'callum gribbin'), making it unreadable. Coherence is low because the sentences are disjointed fragments rather than a flowing narrative. Relevance is critically low; the summary captures only 3 minor details out of a text rich with match results, specific goals, player stats, and context, failing to summarize the main event."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding consistency and fluency; the sentences are grammatically correct and factually accurate to the source text. However, I maintain the low scores for relevance and coherence. The summary is a disjointed collection of random facts (stadium history, player nationality) that completely misses the main news event: the 1-0 victory for Manchester United. Omitting the match result makes it a very poor summary of the article's primary purpose."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 1,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is grammatically broken due to a total lack of capitalization and punctuation (e.g., 'english', 'callum gribbin'), which severely impacts fluency. Coherence is low because the sentences are disjointed fragments that do not form a logical narrative flow. Relevance is critically low as the summary ignores the main event (the match result, the winner, and the context) to focus on trivial details like stadium capacity and player nationality counts."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 5.0,
+      "fluency": 2.5,
+      "relevance": 1.0,
+      "overall_judge": 2.0
+    }
+  }
+}

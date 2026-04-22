@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-155754e1f2bc83f6836af78703edd4d00f19f381",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary contains a severe hallucination in the first sentence: Demelza is described as 'the oldest mother,' whereas the article states she is the 'proud mother to the show's latest addition' (implying her first child). Additionally, the phrase 'she is giving birth to the last month of her pregnancy passing in less than the blink of an eye' is a grammatical mess that fails to accurately reflect the source text's description of the timeline jump. The summary also lacks proper capitalization and punctuation."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary contains a major hallucination in the first sentence: it claims Demelza is the 'oldest mother,' whereas the article states she is the 'proud mother to the show's latest addition' (implying the newest baby). This contradicts the source text significantly. Additionally, the phrase 'she is giving birth to the last month of her pregnancy passing in less than the blink of an eye' is grammatically awkward and confusingly phrased, though it attempts to reflect a plot point from the article. Due to the clear factual error (hallucination) regarding her status as the 'oldest' mother, consistency drops significantly."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a severe hallucination ('oldest mother' vs 'latest addition/first child') and significant grammatical errors that make it difficult to read ('she is giving birth to the last month...'). These are fundamental flaws that warrant low scores across all categories."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "The lenient judge's assessment is correct and should be accepted. The summary contains a severe hallucination in the first sentence ('oldest mother') which directly contradicts the source text ('latest addition'). This is a critical consistency failure that warrants a low score (2). The phrasing regarding the birth timeline is also awkward, justifying the fluency score of 4 rather than higher. No points should be raised for this summary."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment that the scores need to remain low due to fundamental flaws. The summary contains a severe hallucination ('oldest mother' vs 'latest addition'), which violates consistency and relevance. Additionally, the sentence structure is broken and ungrammatical ('she is giving birth to the last month...'), significantly impacting fluency and coherence. These are not minor issues but critical failures in summarization quality."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "Agreeing with the strict judge's assessment. The summary contains a critical hallucination in the first sentence ('oldest mother' vs 'latest addition'), which is a severe consistency failure warranting a score of 2. The phrasing regarding the birth timeline is disjointed and awkward, justifying the fluency score of 4 rather than higher. No points should be raised for this summary."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 1.5,
+      "fluency": 3.5,
+      "relevance": 2.5,
+      "overall_judge": 2.5
+    }
+  }
+}

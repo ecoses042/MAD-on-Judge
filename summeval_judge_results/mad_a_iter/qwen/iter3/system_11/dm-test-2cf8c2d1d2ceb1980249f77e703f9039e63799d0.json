@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-2cf8c2d1d2ceb1980249f77e703f9039e63799d0",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from low relevance (score 3) because it only covers the very first sentence of the source text, omitting significant details such as the book title ('Daughter and Salaryman'), the specific attire (suits vs casual), the locations (Japanese landmarks), and the reactions/expressions described in the latter half of the article. While it avoids hallucinations, its brevity limits its coverage of key points."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and consistent with the source text. It captures the main idea effectively. However, it only covers the very first sentence of the article and omits other key details like the photographer's age, the book title, or specific visual descriptions (e.g., suits, expressions), resulting in a slightly lower relevance score compared to a more comprehensive summary."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I lowered the relevance score from 3 to 3 (maintained) and adjusted the overall judge slightly down from 4.2 to 4.0. The strict judge's criticism regarding low relevance is valid; the summary only captures the introductory hook and the core concept of the photos, completely omitting specific details like the book title ('Daughter and Salaryman'), the contrast in attire (suits vs casual), the Japanese landmarks, and the specific reactions/expressions mentioned later in the text. While the summary is fluent and coherent, its brevity results in a significant loss of key information from the source."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The lenient judge's assessment is accurate. The summary is grammatically perfect and logically structured (coherence/fluency). It strictly adheres to the source text without adding external facts (consistency). While it misses specific details like the book title or the fathers' expressions mentioned later in the article, this is a reasonable trade-off for a concise summary focusing on the core concept. Therefore, the relevance score of 4 and overall score of 4.8 are appropriate and do not need to be raised."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I accepted the lenient judge's point that the relevance score should remain at 3. The summary is indeed very short and only covers the introductory hook and the core concept (fathers leaping next to daughters). It completely omits significant details present in the source text, such as the book title ('Daughter and Salaryman'), the specific contrast in clothing (suits vs casual), the Japanese landmarks, and the specific reactions/expressions of the fathers. Therefore, the strict judge's criticism regarding low relevance is valid, and no points should be raised."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The strict judge's assessment is accurate. The summary effectively captures the core concept (the unique photography style) and does so with perfect grammar and structure. While it omits secondary details like the book title or specific expressions, this is a justified trade-off for brevity in a short summary. No score adjustment is needed."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.7
+    }
+  }
+}

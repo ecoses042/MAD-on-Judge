@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-6721edf88c95f480a4db2c63649dbb03736aeadf",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow and does not connect the events in a structured manner, making it difficult to follow the sequence of actions."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits critical details about Ian Guffick altering exam answers himself and the consequences of his actions, which are essential to understanding the full context of the situation."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary does not cover key points such as the annulment of the school's SATs results, the panel's findings, or the eventual ban imposed on Guffick, which are crucial to the story."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "There are grammatical errors, such as 'the the national curriculum tests,' which disrupt the readability of the summary."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with Guffick's actions and leading to the investigation."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article without introducing any new facts."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "It focuses on the key actions taken by Ian Guffick and the subsequent investigation, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as the repetition of 'the' in 'the the national curriculum tests.'"
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits important details, such as the consequences of Guffick's actions and the panel's findings."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

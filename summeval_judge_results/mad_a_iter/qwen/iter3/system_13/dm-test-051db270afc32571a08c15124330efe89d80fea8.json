@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-051db270afc32571a08c15124330efe89d80fea8",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is highly coherent and relevant, accurately capturing the main event and police theory of the crime. It is consistent with the source text, containing no hallucinations. The score is slightly reduced from 5 due to minor grammatical awkwardness (e.g., 'car 's', 'truck safe' instead of 'trunk safe') which affects fluency, though these are minor issues."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is coherent and fluent in its first two sentences but fails significantly on relevance and consistency due to a severe hallucination in the third sentence. The source text explicitly states the thief used 'momentum from another vehicle,' whereas the summary claims the thief used momentum 'from another vehicle' (which is consistent) BUT then adds 'to then break the case's handle free from the lock.' While this part is technically consistent, the summary cuts off abruptly and misses the critical context that the rifle was NOT recovered, which is a major detail. More importantly, the summary includes a specific detail about the thief using momentum from another vehicle, but the source text says 'using the momentum from another vehicle to then break the case's handle free from the lock.' Wait, looking closer at the source: 'using the momentum from another vehicle to then break the case's handle free from the lock.' The summary says exactly that. However, the summary is extremely short and omits the fact that the rifle was not recovered, which is a key point in the article. Also, the summary repeats the first sentence almost verbatim before adding the third. The main issue is relevance: it misses the outcome (rifle not found) and the context of the Obama visit which frames the story's urgency. Additionally, the fluency score is lowered because the text is a direct copy-paste of the article's first paragraph with minor capitalization fixes, lacking any summarization effort to condense or synthesize information, making it feel like an excerpt rather than a summary."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 5,
+        "overall_judge": 4.2,
+        "adjustment_notes": "Adjusted consistency down to 4 because the summary contains a significant factual error: it states the rifle was secured to a 'truck safe', whereas the source text explicitly says 'trunk safe'. This is a hallucination/misinterpretation of the source content. Adjusted fluency down to 3 due to excessive spacing errors (e.g., 'car 's', 'secured properly ', 'springhill suites') and the specific typo 'truck' instead of 'trunk', which impacts readability more than just being 'minor'. Coherence and Relevance remain high as the logical flow and key information are preserved."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I maintained the strict judge's scores because their criticisms were valid. The summary is essentially a truncated excerpt of the first paragraph rather than a synthesized summary, which severely impacts relevance (missing key outcomes like the rifle not being recovered and the Obama visit context) and fluency (lacking summarization effort). Consistency remains perfect as no hallucinations were introduced. Coherence is lowered slightly from 5 to 3 because the abrupt ending makes it feel incomplete rather than just short."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 3,
+        "fluency": 2,
+        "relevance": 5,
+        "overall_judge": 3.0,
+        "adjustment_notes": "Agreed with the strict judge's assessment on consistency (down to 3) due to the factual error ('truck safe' vs 'trunk safe'). Agreed with fluency (down to 2) because the excessive spacing errors (e.g., 'car 's', 'secured properly ') are severe enough to impact readability significantly, not just 'minor'. Coherence and Relevance remain high as the summary structure is logical and covers the main event."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No changes made. The lenient judge's assessment was accurate; the summary is indeed a truncated excerpt that fails to cover key outcomes (rifle unrecovered, Obama visit context) and ends abruptly, justifying the low relevance and coherence scores."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 4.0,
+      "fluency": 3.0,
+      "relevance": 3.5,
+      "overall_judge": 3.0
+    }
+  }
+}

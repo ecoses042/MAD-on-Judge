@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-e43eef75de38d246db9d80216ca9f5487215a78b",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary contains a severe hallucination regarding consistency: it claims Luis signed a deal with Atletico Madrid, whereas the article states he moved FROM Atletico TO Chelsea. It also misattributes the quote about 'refusing to let his league leaders rest' (which refers to Jose Mourinho) to Filipe Luis. The flow is disjointed due to these factual errors."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary contains a major hallucination regarding consistency: it states Luis signed a deal with 'Atletico Madrid', whereas the article explicitly says he moved from Atletico to Chelsea and signed with Chelsea. Additionally, the sentence about refusing to let league leaders rest is grammatically broken ('his return' instead of 'the team') and slightly misattributed in phrasing, though the sentiment aligns with Mourinho's quotes. Due to the clear factual error (hallucination) regarding the club name, a lower score is warranted despite the lenient rules."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The strict judge's assessment is correct and justified. The summary contains a critical factual error (hallucination) stating Luis signed with Atletico Madrid instead of Chelsea, and misattributes Mourinho's quote to Luis. These are severe flaws that fundamentally break consistency and coherence. As the lenient evaluator, I must lower my scores to match the strict judge's because these errors are not trivial; they contradict the source text directly."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No adjustment needed. The lenient judge correctly identified the critical factual error (hallucination) where the summary states Luis signed a deal with Atletico Madrid, while the article explicitly states he moved from Atletico to Chelsea and signed with Chelsea. This is a severe consistency violation that warrants a low score regardless of fluency or other factors."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "No adjustment needed. The lenient judge correctly identified the critical factual error (hallucination) where the summary states Luis signed a deal with Atletico Madrid instead of Chelsea, and misattributed Mourinho's quote to Luis. These are severe consistency failures that fundamentally break the summary's validity. The strict judge's assessment is justified."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the overall score slightly from 3.0 to 2.5 because the consistency error (hallucinating a move from Atletico to Chelsea instead of from Chelsea to Atletico) is not just a minor flaw but a fundamental contradiction of the source text's narrative. While the summary is fluent and covers some points, this factual inversion makes the summary misleading in a way that severely impacts its reliability, warranting a stricter penalty than the strict judge initially applied."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 1.5,
+      "fluency": 3.5,
+      "relevance": 2.5,
+      "overall_judge": 2.5
+    }
+  }
+}

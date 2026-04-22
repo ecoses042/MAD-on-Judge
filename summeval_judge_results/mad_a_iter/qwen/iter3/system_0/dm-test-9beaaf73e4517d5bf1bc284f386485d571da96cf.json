@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-9beaaf73e4517d5bf1bc284f386485d571da96cf",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source text and fluent enough to read. However, it suffers from relevance issues by omitting key details about the contest (NBC Today show collaboration), the specific date/location (Westgate Hotel), and the significant condition set by Priscilla Presley ('No impersonators'). Additionally, there is a minor coherence/fluency issue in the first sentence where 'wedding of love' is used instead of the article's phrasing 'chapel of love', which slightly disrupts the flow."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is well-structured, fluent, and consistent with the source text. It captures the main points: Priscilla Presley's role, the location (Graceland Wedding Chapel), and the significance of the event. The only minor deduction for relevance is that it omits specific details about the contest entry requirements or the additional prizes (reception, hotel suite, etc.), but given the lenient rules focusing on key points rather than trivial details, this is acceptable."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is factually consistent and fluent enough, but it significantly underperforms on relevance by omitting major context: the NBC Today show collaboration, the specific date/location (Westgate Hotel), and Priscilla Presley's notable 'No impersonators' condition. These omissions make the summary feel incomplete despite being grammatically correct."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "Coherence and Fluency remain high as the sentences flow well. Consistency is lowered from 5 to 4 because the summary contains a factual error: it states the chapel is 'the first permanent Graceland exhibit of the singer's artifacts outside his iconic Memphis home.' The source text says officials say the chapel is 'part of' the first permanent exhibit, not that the chapel itself constitutes the entire exhibit. This is a subtle but distinct inconsistency. Relevance is lowered from 4 to 3 because the summary omits the core mechanism of the story: the contest/competition aspect (submitting video/photos) and the specific prizes (reception, hotel suite, tickets). The source emphasizes this is a 'contest for one Elvis-obsessed couple,' but the summary presents it merely as an event where Priscilla serves as a witness, missing the primary driver of the news."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary is factually consistent and grammatically correct, but it suffers from significant relevance issues by omitting key context such as the NBC Today show collaboration, the specific date/location (Westgate Hotel), and Priscilla Presley's notable 'No impersonators' condition. These omissions make the summary feel incomplete despite being fluent."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a factual inconsistency regarding the chapel being 'the' exhibit versus 'part of' the exhibit. Furthermore, it significantly under-represents the core news value (the contest and prizes), making the relevance score appropriate at 3. No changes to scores are needed."
+      }
+    },
+    "final": {
+      "coherence": 4.5,
+      "consistency": 4.5,
+      "fluency": 4.5,
+      "relevance": 3.0,
+      "overall_judge": 4.1
+    }
+  }
+}

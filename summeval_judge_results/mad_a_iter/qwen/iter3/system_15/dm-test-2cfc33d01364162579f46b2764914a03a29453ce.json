@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-2cfc33d01364162579f46b2764914a03a29453ce",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary captures the main points and follows a logical flow (coherence/relevance are good). However, it suffers from significant consistency issues: it uses '#' symbols instead of '£' for currency values, which is not in the source text and alters the meaning. Additionally, the fluency is poor due to the lack of capitalization and punctuation, making it read like a raw list of sentences rather than fluent English."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from severe fluency issues due to the use of '#' symbols instead of '£' for currency (e.g., '# 299'), which makes it look like a raw data dump rather than fluent English. While the content is consistent with the text and covers key points about Ozil, the formatting error significantly impacts quality. Additionally, the summary omits the context of the upcoming match against Chelsea and the details regarding Jack Wilshere, reducing its overall relevance to the full scope of the article."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 2,
+        "fluency": 1,
+        "relevance": 4,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I lowered the consistency score from 3 to 2 because the use of '#' instead of '£' is a factual error regarding currency value, not just a stylistic choice; it alters the meaning as noted by the lenient judge. I also lowered fluency from 2 to 1 because the summary lacks capitalization and punctuation entirely, making it grammatically incorrect and difficult to read as standard English."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The use of '#' instead of '£' is a significant formatting error that breaks fluency and makes the text look like raw data, warranting a low score (2). While the content is consistent with the source, this specific flaw prevents it from being high quality. I maintain the scores as the strict judge assigned them because the errors are objective and severe."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 2,
+        "fluency": 1,
+        "relevance": 4,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The replacement of '£' with '#' is a factual error that alters the meaning of the text (currency vs. hash tag), justifying the low consistency score. Furthermore, the complete lack of capitalization and punctuation renders the text grammatically incorrect and difficult to read as standard English, warranting the lowest fluency score."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding the fluency score. The replacement of the currency symbol '£' with '#' is a significant formatting error that renders the text unprofessional and breaks the flow of reading, justifying a low fluency score (2). Since this specific flaw was correctly identified by the lenient judge and I did not penalize it further in my initial assessment, no upward adjustment to the scores is necessary."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 2.5,
+      "fluency": 1.5,
+      "relevance": 4.0,
+      "overall_judge": 2.5
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-2feca9acf532e33f1ab7442c442c8e19787d8d7b",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is consistent with the source text and covers key points about Roland Giroux's interaction with his fish. However, it suffers from significant fluency issues (e.g., 'from within side' instead of 'inside', 'a stroke' instead of 'a stroke/massage') and ends abruptly without concluding the thought or summarizing the full context provided in the article. As a lenient evaluator, I award high marks for consistency but penalize the grammatical errors and incomplete nature."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 2,
+        "overall_judge": 2.8,
+        "rationale_for_score": "The summary suffers from severe fluency issues due to the inclusion of a sentence fragment starting with 'but' and containing a typo ('does n't'). It also fails relevance criteria by truncating the text after only three sentences, omitting the majority of the source's key information (the backstory about bullying fish, the feeding routine, the specific breed details, and the emotional conclusion). While the included text is consistent with the article, the overall quality is poor due to the abrupt ending and grammatical errors."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the fluency score from 3 to 2 because the errors are not just minor typos but significant enough to disrupt reading flow and professionalism (e.g., 'within side' instead of 'inside', 'a stroke' instead of 'a massage'). The summary also fails to cover the majority of the source text's content, which lowers relevance slightly from 4 to 4 (keeping it high as per lenient rules but acknowledging the truncation). Coherence is lowered to 3 because the abrupt ending makes the structure feel incomplete rather than just short."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 1,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I lowered the scores to align with the strict judge's valid criticisms. The summary is grammatically broken (starts with a lowercase 'but', contains a typo 'does n't'), making fluency very poor. It also fails relevance by truncating the text after only three sentences, missing the majority of the source content including the backstory, feeding routine, and conclusion. While the included text is factually consistent, the overall quality is too low to warrant a higher score."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 1,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "No changes needed. The summary is severely flawed: it starts with a lowercase letter, contains a typo ('does n't'), and truncates the source text after only three sentences, omitting the vast majority of the article's content (backstory, feeding routine, fish history). While the included text is factually consistent, the grammatical errors and extreme lack of coverage justify the low scores."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 1,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I lowered the fluency score from 3 to 1 because the errors ('within side', 'a stroke' instead of 'a massage') are severe enough to disrupt reading flow and professionalism, making it difficult to read smoothly. I also lowered coherence to 2 because the summary is a truncated fragment that ends abruptly without any concluding thought or transition, creating an incomplete structure rather than just a short one. Relevance was lowered from 4 to 3 as the summary covers only the very first paragraph of events and ignores the context about cats/dogs, the backstory of the fish's tank mates, and the daily routine described in the rest of the text."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 4.5,
+      "fluency": 1.0,
+      "relevance": 2.0,
+      "overall_judge": 2.0
+    }
+  }
+}

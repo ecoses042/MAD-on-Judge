@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-18243373494a1722ddcd162ec67b63dd749633ab",
+  "system_name": "system_2",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, as it jumps between different points without smooth transitions, making it difficult to follow."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits significant details such as the context of the match, the implications of the win for both teams, and the security measures taken, which are crucial for understanding the importance of the game."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the injuries to key players like Francesco Totti and Gervinho, which were relevant to the match context."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as the lack of capitalization at the beginning of sentences and inconsistent punctuation."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, starting with the key event of the match and then providing context about Roma's winless streak and their position in the league."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important information, including the match outcome, key players, and implications for the league standings, while avoiding trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits some details from the article, such as the significance of the match in relation to Napoli's winless streak and the security measures taken, which could provide a fuller picture."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization and punctuation, which affects its readability and fluency."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

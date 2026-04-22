@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-e7d8b6617691ea00d4ddc5fe2b7cbd105ba9a57e",
+  "system_name": "system_9",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, making it difficult to understand the sequence of events."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits critical details about Munden's criminal history and the context of his disappearance, which are essential for understanding the severity of the situation."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as missing articles and improper sentence structure, which hinder readability."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to cover key points, such as the nature of his offenses and the urgency of the manhunt, focusing instead on trivial details like his physical description."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding Stephen Munden's disappearance, his description, and his criminal background."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the key details from the article, including Munden's age, his obsession, and the circumstances of his disappearance."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important aspects of the article, such as Munden's criminal history and the urgency of locating him."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper sentence structure and capitalization, making it less fluent and harder to read."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

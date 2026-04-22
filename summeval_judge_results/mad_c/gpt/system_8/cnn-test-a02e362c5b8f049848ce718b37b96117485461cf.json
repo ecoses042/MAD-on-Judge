@@ -1,0 +1,59 @@
+{
+  "article_id": "cnn-test-a02e362c5b8f049848ce718b37b96117485461cf",
+  "system_name": "system_8",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information and does not provide any context or details about the sunset or its causes."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to cover key points such as the cause of the sunset, the impact of the wildfires, and the scientific explanation behind the colors."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the wildfires in Siberia, which are crucial to understanding the phenomenon."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "While the sentence is grammatically correct, it is overly simplistic and does not convey the richness of the original article."
+        }
+      ],
+      "provisional_score": 1
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and concise opening statement that captures the essence of the article's main event."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary only includes the initial observation of the sunset and omits key details about the cause of the sunset, the wildfires in Siberia, and the impact on air quality."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 1,
+      "fluency": 3,
+      "relevance": 1,
+      "overall_judge": 1.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

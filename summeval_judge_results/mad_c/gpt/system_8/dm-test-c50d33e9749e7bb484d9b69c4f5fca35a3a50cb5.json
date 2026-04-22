@@ -1,0 +1,59 @@
+{
+  "article_id": "dm-test-c50d33e9749e7bb484d9b69c4f5fca35a3a50cb5",
+  "system_name": "system_8",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information and does not provide context about how Jacob Phillips fell or the circumstances leading to his death."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to cover key details such as the reason for his flight from the taxi, the involvement of friends, and the outcome of the inquest, which are crucial for understanding the incident."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the taxi fare issue, which is a significant part of the original article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "While the sentence is grammatically correct, it is overly simplistic and does not convey the complexity of the situation."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and concise statement about the incident involving Jacob Phillips, establishing the main event of his fall."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary is overly brief and lacks important context, such as the circumstances leading to the fall and the details of the inquest."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

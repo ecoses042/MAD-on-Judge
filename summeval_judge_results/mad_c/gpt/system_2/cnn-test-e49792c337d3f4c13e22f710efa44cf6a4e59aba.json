@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-e49792c337d3f4c13e22f710efa44cf6a4e59aba",
+  "system_name": "system_2",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, abruptly transitioning from the parents' plea to the sentencing phase without connecting the two ideas."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to include key details about the parents' emotional plea, their reasons for opposing the death penalty, and the context of the bombings, which are crucial for understanding the significance of their statement."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the convicted individual's name, Dzhokhar Tsarnaev, which is a significant detail in the context of the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The use of abbreviations like 'lrb' and 'rrb' is inappropriate and disrupts the fluency of the text, making it harder to read."
+        }
+      ],
+      "provisional_score": 1
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow by introducing the main subject, the parents' plea, and the context of the sentencing phase."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the parents' position regarding the death penalty without introducing any new or conflicting information."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details about the emotional impact on the family and the specific reasons they provided for their plea, which are central to understanding their perspective."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The use of abbreviations like 'lrb' and 'rrb' disrupts the fluency and readability of the summary."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

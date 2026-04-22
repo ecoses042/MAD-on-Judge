@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-b5bc2ae78441e4ac08fb01823d5fc0f1627c3166",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is factually consistent and fluent but suffers from a severe relevance flaw. It only covers the first three sentences of the source text (the photo shoot details) while completely ignoring the significant context provided in the article: Paul Downton's dismissal, Pietersen's potential return to the England team, his history with Downton, and the recent Ashes tour. By omitting these key points, the summary fails to capture the main story of the article."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and consistent with the source text. It captures the main events described in the first half of the article (the photo shoot, Pietersen's mood, and the upcoming match). However, it receives a score of 4 instead of 5 because it omits significant context from the second half of the article regarding Paul Downton's dismissal and its direct impact on Pietersen's potential return to the England team, which is a major talking point mentioned in the source."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. While the summary is grammatically correct and factually consistent with the provided text, it fails significantly on relevance. The article explicitly states that the dismissal of Paul Downton is the 'big talking point' and frames Pietersen's photo shoot as a step towards his potential return to the England team. By ignoring these central themes and focusing solely on the descriptive details of the photo shoot (which appear in the first few sentences), the summary misses the actual news story. Therefore, the low relevance score is justified."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary is well-structured and fluent (Coherence/Fluency: 5). It accurately reflects the content of the first half of the article without adding external facts (Consistency: 5). However, it misses the significant context regarding Paul Downton's dismissal and its direct link to Pietersen's potential return to the England team, which is a major point in the source text. Therefore, Relevance remains at 4."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary is grammatically correct and factually consistent with the source text (consistency/fluency). However, it suffers from a significant lack of relevance because it ignores the primary news hook: Paul Downton's dismissal and its direct impact on Kevin Pietersen's potential return to the England team. By focusing exclusively on the descriptive details of the photo shoot without mentioning the context provided in the article (the 'big talking point' and the strategic move regarding the Test set-up), the summary fails to capture the main story."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. While the summary is grammatically perfect and well-structured (Coherence/Fluency: 5) and accurately reflects the provided text without hallucinations (Consistency: 5), it significantly under-represents the core narrative of the article. The source text explicitly links Paul Downton's dismissal to Pietersen's potential return to the England team, which is described as a 'big talking point' and the main reason for his current mood. By omitting this crucial context, the summary fails to capture the primary significance of the event described, justifying the lower Relevance score."
+      }
+    },
+    "final": {
+      "coherence": 4.5,
+      "consistency": 5.0,
+      "fluency": 4.5,
+      "relevance": 3.0,
+      "overall_judge": 3.9
+    }
+  }
+}

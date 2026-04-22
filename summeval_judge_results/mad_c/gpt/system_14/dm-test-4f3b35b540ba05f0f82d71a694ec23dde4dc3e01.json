@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-4f3b35b540ba05f0f82d71a694ec23dde4dc3e01",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow of information, as it jumps between the argument, the car being set on fire, and the grandmother's statement without smooth transitions."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the time of the incident, the fact that no one was injured, and the ongoing investigation by the Los Angeles County Fire Department, which are important for understanding the context."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains awkward phrasing and punctuation issues, such as inconsistent spacing around commas and lack of capitalization at the beginning of sentences."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention that the suspects were armed, which is a significant detail from the article that adds to the severity of the incident."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with the argument, followed by the act of pouring gasoline and lighting the car on fire, and concluding with the grandmother's account of the attempted carjacking."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article without introducing any new facts or altering the original context."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary captures the key points of the incident, including the argument, the act of arson, and the attempted carjacking, while omitting trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as inconsistent spacing and punctuation, which affect its readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "tie",
+        "consistency": "tie",
+        "fluency": "tie",
+        "relevance": "tie"
+      }
+    }
+  }
+}

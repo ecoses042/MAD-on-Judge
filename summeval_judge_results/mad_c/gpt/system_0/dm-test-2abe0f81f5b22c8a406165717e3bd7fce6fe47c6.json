@@ -1,0 +1,75 @@
+{
+  "article_id": "dm-test-2abe0f81f5b22c8a406165717e3bd7fce6fe47c6",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, making it difficult to follow the sequence of events."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary incorrectly states that Manuel 'can resume practicing chiropractic in the state,' which contradicts the article's information about the conditions for reinstatement."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'he is also recommended' instead of 'he also recommended'."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention the requirement for Manuel to prove that the circumstances surrounding the revocation no longer exist before he can resume practice."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events regarding Charles Manuel's actions and the consequences he faced."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the key points from the article, including the charges against Manuel and his admission of wrongdoing."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most significant aspects of the case, such as the surrender of his license and the nature of his misconduct."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, making it less readable."
+        },
+        {
+          "criterion": "coherence",
+          "reason": "The flow of information is disrupted by the inclusion of incomplete sentences and unclear references, such as 'the exorcisms on patients has surrendered his license'."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "Some details, like the mention of patient satisfaction ratings, could be better integrated to enhance the summary's relevance."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

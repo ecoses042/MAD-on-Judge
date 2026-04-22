@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-81bd721b16cad47dfd8d24baca5b30b006291db2",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source text and covers the main events (the incident, the initial suspension, and the rescinded dismissal). However, it fails to capture the most critical information: the overturning of the ban on appeal due to public outcry and the specific reason given by the panel ('no act of foul play'). By omitting the resolution of the ban and the context of the 'stunning twist' mentioned in the article, the summary provides an incomplete picture of the story's significance."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is well-structured, grammatically correct, and strictly consistent with the source text. It accurately captures the key events: the initial suspension for 'recklessness', the specific nature of the collision, and the rescinding of the red card/dismissal. It receives a slight deduction on relevance (4) because it omits the crucial outcome mentioned in the article—the overturning of the ban on appeal—which is the main news hook. However, given the lenient rules to give benefit of the doubt and avoid penalizing for missing secondary details if the core facts are accurate, the score remains high."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. While the summary is factually consistent and grammatically sound, it fails to capture the central narrative arc of the article: the overturning of the ban on appeal. The source text emphasizes this as a 'stunning twist' driven by public outcry and a specific finding that 'no act of foul play took place.' By omitting the resolution (the ban was thrown out) and the reason for it, the summary presents an incomplete story that leaves the reader wondering about the current status of Nathan Hughes. Therefore, the relevance score remains low."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is well-structured and strictly consistent with the source text. While it misses the main news hook (the overturning of the ban), this is a valid reason for a slight deduction in relevance rather than a harsh penalty, as the core facts regarding the incident and initial suspension are accurately reported."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment that the summary is factually consistent and grammatically sound (Consistency 5, Fluency 4). However, I also agree that the relevance score should remain low (3) because the summary completely omits the central event of the article: the overturning of the ban. The source text explicitly states the ban was 'officially rescinded' and describes it as a 'stunning twist.' By stopping after mentioning the red card and initial suspension without mentioning the appeal outcome, the summary fails to cover the most important information, making it an incomplete summary of the provided text."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "While the summary is grammatically correct and factually consistent with the source text, it fails to capture the primary news value: the overturning of the ban. The article explicitly states 'Nathan Hughes on Friday night had his ban... over-turned' and details the appeal success. By omitting this central event and focusing only on the initial suspension and incident, the summary misses the most important information, warranting a lower relevance score than the strict judge suggested."
+      }
+    },
+    "final": {
+      "coherence": 4.5,
+      "consistency": 5.0,
+      "fluency": 4.5,
+      "relevance": 3.0,
+      "overall_judge": 4.2
+    }
+  }
+}

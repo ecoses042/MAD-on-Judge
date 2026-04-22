@@ -1,0 +1,63 @@
+{
+  "article_id": "dm-test-051db270afc32571a08c15124330efe89d80fea8",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, as it repeats the same sentence about the sniper rifle being stolen without adding new context or details."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to cover key details such as the method of theft, the additional items stolen, and the implications of the theft related to President Obama's visit, which are crucial for understanding the incident."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains inconsistent capitalization (e.g., 'fbi' instead of 'FBI') and punctuation issues, making it less fluent and harder to read."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the theft of the FBI agent's sniper rifle, including details about the circumstances and location."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article without introducing any new facts or inconsistencies."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the incident, including the theft, the timing related to President Obama's visit, and the security measures in place."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains awkward phrasing and punctuation issues, such as the use of '-lrb-' and '-rrb-', which detracts from its readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 5,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

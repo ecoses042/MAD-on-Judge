@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-c05bda9b387ec8ae43803170b6f59b4b82505db9",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and strictly consistent with the source text. It accurately captures the main event (release of Yazidis), key details (numbers, demographics), and quotes from officials. The only minor deduction for relevance is that it omits the broader context provided in the article regarding the humanitarian crisis, ISIS's previous actions, and the international response, focusing solely on the immediate news of the release."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is consistent with the source text and maintains a logical flow within its limited scope. However, it fails significantly on relevance by truncating the summary after the second sentence, omitting crucial details such as the specific number of released Yazidis (217 vs 228), the destination (Irbil), the historical context of ISIS's attacks, the humanitarian crisis, and international responses. Additionally, the fluency score is lowered due to the retention of non-standard formatting artifacts ('-lrb-', '-rrb-') which make the text look unpolished."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is severely truncated, omitting key details like the specific counts (217 vs 228), the destination (Irbil), and the broader context of the humanitarian crisis and international response. Furthermore, the retention of '-lrb-' and '-rrb-' artifacts significantly impacts fluency and professionalism, justifying the lower scores."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The lenient judge's assessment is accurate. The summary strictly adheres to the first paragraph of the source text, capturing the main event and specific quotes without adding external information (consistency). It flows logically (coherence) and uses correct grammar (fluency). The only valid deduction for relevance is that it ignores the significant background context provided in the rest of the article regarding the humanitarian crisis, previous ISIS actions, and international response. Since the summary focuses entirely on the immediate news release as per the source's opening section, a score of 4 is fair; raising it to 5 would imply it covers the whole article, which it does not."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding fluency and relevance. The inclusion of '-lrb-' and '-rrb-' artifacts makes the text unprofessional and grammatically flawed (lowering fluency). Additionally, by cutting off the summary after the first few sentences, it fails to cover the broader context of the humanitarian crisis, international response, or specific details like the conflicting counts provided in the article, which significantly impacts relevance. The coherence is low because the abrupt ending leaves the narrative incomplete."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary is a faithful extraction of the first paragraph but completely omits the significant background context (humanitarian crisis, previous atrocities, international response) present in the rest of the article. Therefore, a relevance score of 4 is appropriate; increasing it to 5 would be inaccurate as it implies coverage of the entire source text."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 5.0,
+      "fluency": 3.5,
+      "relevance": 3.0,
+      "overall_judge": 3.9
+    }
+  }
+}

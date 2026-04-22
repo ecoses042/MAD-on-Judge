@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-e880fda4c25289f8325574246f0f8ed4ff5eb26b",
+  "system_name": "system_7",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, as it abruptly jumps from the description of the property to the price without connecting the features to their significance."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the unique features of the property, including stained-glass windows and the historical context, which are essential to understanding its appeal."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the fact that some features have been upgraded, which is a relevant detail from the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary uses lowercase letters for the beginning of sentences, which is grammatically incorrect and affects readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, outlining the key features of the property and its price."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important aspects of the article, including the untouched nature of the home, its original features, and the guide price."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits several details from the article, such as the specific features like stained-glass windows and the historical context of the property."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "While the summary is mostly clear, the lack of capitalization in the beginning of sentences detracts from its fluency."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-2feca9acf532e33f1ab7442c442c8e19787d8d7b",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from severe fluency issues due to poor sentence segmentation (e.g., 'from within side the tank' instead of 'inside', and missing punctuation between distinct actions). This makes it difficult to read. While the content is consistent with the source text (no hallucinations), the lack of proper structure and grammatical errors significantly impacts quality. The summary also cuts off abruptly, failing to cover the full context provided in the article."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary suffers from severe relevance issues as it only covers the first few sentences of the article and completely ignores the majority of the content (the backstory about bullying fish, feeding routine, species details, etc.). It fails to capture the 'most important information' relative to the full text length. Consistency is penalized because it includes a sentence ('but that doesn't prevent one man from dipping his hand') which is contextually disjointed and grammatically awkward in this specific summary context, appearing to be a fragment from the intro rather than a coherent part of the narrative flow. Coherence is low due to the abrupt ending and lack of logical progression beyond the initial events."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 1,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I lowered the fluency score from 2 to 1 because the summary contains severe grammatical and mechanical errors that go beyond simple typos; it reads like a raw stream of consciousness or OCR error (e.g., 'from within side', missing periods between sentences, lowercase start). The coherence is also lower than 3 because the lack of punctuation makes the logical flow of events confusing rather than just 'difficult to read'. I kept consistency at 4 as there are no hallucinations. Relevance remains low (3) because the summary only covers the first few seconds of the video and ignores the significant context about the fish's history, the owner's motivation, and the conclusion provided in the source text."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is severely flawed in relevance as it only summarizes the first paragraph of the source text while ignoring significant details about the fish's history, the owner's actions to save it from bullying, and the specific species information. The inclusion of the disjointed sentence 'but that doesn't prevent one man from dipping his hand' further damages coherence and consistency within the summary's own context."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 1,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary suffers from severe mechanical errors (missing punctuation, lowercase start, 'from within side') which drastically impacts fluency and coherence. It also fails relevance by only summarizing the beginning of the interaction while ignoring the significant context about the fish's history and the owner's motivation provided in the source text. No score adjustment is needed."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "No changes to scores. The lenient judge's points were accepted because they correctly identified that the summary is truncated (ignoring history and species info), contains a disjointed sentence ('but that doesn't prevent one man from dipping his hand') which breaks flow and consistency, and fails to cover key points like the bullying incident or daily interaction duration."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 3.5,
+      "fluency": 2.5,
+      "relevance": 2.0,
+      "overall_judge": 2.0
+    }
+  }
+}

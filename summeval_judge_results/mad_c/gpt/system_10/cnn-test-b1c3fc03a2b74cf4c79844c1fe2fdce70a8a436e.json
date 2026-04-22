@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-b1c3fc03a2b74cf4c79844c1fe2fdce70a8a436e",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, jumping abruptly between statistics and statements without proper transitions."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits critical context about the rising wave of migrants and the dangers they face, focusing instead on specific numbers without explaining their significance."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as inconsistent capitalization and punctuation, which detract from readability."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not clarify that the Italian coast guard could not confirm the capsizing incident, which is a crucial detail from the source."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with the number of migrants rescued and following with the report of missing migrants, which maintains a logical flow."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding the number of migrants rescued and the concerns about missing individuals, without introducing any new facts."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the article, including the rescue operations and the situation of missing migrants, which are central to the report."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as inconsistent capitalization and punctuation, which affect its readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 4,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 3.2,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

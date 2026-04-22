@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-207df192edc1836250b69d1bc5b9e6a38206eb78",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information and does not connect the findings to the broader implications of the study."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key points such as the association between antibiotic use and obesity, the potential mechanisms behind this, and the warnings from the lead author."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'two year old' which should be 'two-year-olds'."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the specific age range of antibiotic exposure (first six months), which is crucial to understanding the study's focus."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information by stating the focus of the research and the key findings regarding the weight and height of children."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the findings of the study regarding the percentage of overweight or obese boys and girls, consistent with the article."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary highlights the most important information from the article, specifically the comparison of weight and height in relation to antibiotic prescriptions."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'two year old' which should be 'two-year-olds', affecting its readability."
+        },
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks context about the implications of the findings and does not mention the potential link between antibiotic use and obesity, which is a critical aspect of the article."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

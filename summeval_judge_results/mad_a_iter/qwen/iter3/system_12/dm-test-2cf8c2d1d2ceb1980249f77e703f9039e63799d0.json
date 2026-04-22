@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-2cf8c2d1d2ceb1980249f77e703f9039e63799d0",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is well-structured, fluent, and strictly consistent with the source text. It captures the main points effectively. It receives a slight deduction on relevance (from 5 to 4) because it omits several specific details mentioned in the article, such as the fathers' clothing (suits), the daughters' casual wear, the locations (Japanese landmarks), and the varied reactions/expressions of the subjects, though these are not hallucinations."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from a significant relevance issue: it only covers the first three sentences of the source text, omitting key details such as the fathers' attire (suits), the daughters' clothing (casual), the specific expressions (pained vs. smiling), and the setting (Japanese landmarks). Additionally, while mostly consistent, the summary relies heavily on direct copying of phrases from the beginning of the article rather than synthesizing the information, which limits its depth."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is well-structured and strictly consistent with the source text. While it captures the core concept effectively, it omits specific details present in the article (clothing, locations, expressions), which justifies a slight deduction on relevance from 5 to 4."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment regarding relevance. The summary is indeed too brief and only captures the introductory sentences of the source text, missing significant details like the clothing contrast, specific expressions, and the setting. While the grammar is perfect (fluency 5) and the structure is logical (coherence 5), the lack of depth prevents a higher score. I maintain the strict judge's scores as they accurately reflect the summary's limitations."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary is well-structured and consistent, but it omits significant details present in the source text such as the fathers' clothing (suits), their expressions (pained/joyful), the locations (Japanese landmarks), and the specific reactions of the daughters. These omissions justify keeping the relevance score at 4 rather than inflating it to 5."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding relevance. The summary is indeed too brief and only captures the introductory sentences of the source text, missing significant details like the clothing contrast, specific expressions, and the setting. While the grammar is perfect (fluency 5) and the structure is logical (coherence 5), the lack of depth prevents a higher score. I maintain the strict judge's scores as they accurately reflect the summary's limitations."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.5,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.5
+    }
+  }
+}

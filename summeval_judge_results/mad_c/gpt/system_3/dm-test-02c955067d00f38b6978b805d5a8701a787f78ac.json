@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-02c955067d00f38b6978b805d5a8701a787f78ac",
+  "system_name": "system_3",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow and omits important details about the crash, such as the number of people involved and the specifics of the injuries."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that the 40-year-old man and the five-year-old boy were 'also being flown out,' which implies they were not the first patients, contradicting the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention the involvement of emergency crews and the closure of the highway, which are significant aspects of the incident."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as inconsistent capitalization of 'brisbane valley highway' and missing conjunctions that affect readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with the collision and then detailing the injuries and subsequent actions taken."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article without introducing any new facts or misrepresenting the events."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key details of the crash, including the number of vehicles involved, the injuries sustained, and the response by emergency services."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization and punctuation, making it less readable and fluent."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

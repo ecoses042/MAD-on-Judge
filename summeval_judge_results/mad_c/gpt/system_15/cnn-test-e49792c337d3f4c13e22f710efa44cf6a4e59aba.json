@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-e49792c337d3f4c13e22f710efa44cf6a4e59aba",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information and does not connect the parents' plea to the context of the sentencing."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits crucial details about the parents' emotional plea against the death penalty and their reasons for it, which are central to the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the names of the parents or their son, which are significant to the emotional weight of the plea."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as missing capitalization for 'Boston Marathon bombings' and 'Dzhokhar'."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with the parents' plea and mentioning the conviction of Dzhokhar Tsarnaev, which helps maintain a logical flow."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary captures the key points of the parents' emotional plea and the context of the sentencing phase, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits significant details about the parents' specific arguments against the death penalty and their personal experiences, which are crucial for understanding their plea."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as missing articles and awkward phrasing, which detract from its readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

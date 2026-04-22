@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-36352fd1c61fd0c593ee7b84cbe213aa9b444439",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, repeating information about the location and circumstances of the death without connecting them effectively."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the police appeal for witnesses and the context of her profession, which are crucial to understanding the investigation."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The use of lowercase letters for the name 'vanessa santillan' and the inconsistent formatting of '£400,000' detracts from the overall readability."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary states she died 'at the end of March' twice, which is redundant and could confuse readers."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with the discovery of Vanessa Santillan's body and leading to the arrest of a suspect."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the details from the article, including the circumstances of her death and the arrest of a suspect."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the article, such as the victim's identity, the nature of her death, and the arrest related to the case."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as inconsistent capitalization and punctuation, which affect its readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "tie",
+        "consistency": "tie",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

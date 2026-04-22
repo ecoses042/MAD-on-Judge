@@ -1,0 +1,66 @@
+{
+  "article_id": "dm-test-cf4ba8f94f2dd5604eb8f8a4e655c10cf0996365",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow of information, as it abruptly ends without mentioning the context of the robbery or the reactions of the victims."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the specific actions of the robber, the emotional impact on the victims, and the police's request for public assistance, which are crucial for understanding the incident."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The use of backticks around 'distinctive' and 'very tall' is unconventional and disrupts the fluency of the text."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the absence of weapons, which is a significant detail from the article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, detailing the robbery incident in a structured manner."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the details from the article, including the description of the robber and the amount stolen."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is written in fluent English, with no grammatical errors, making it easy to read."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the robbery, including the description of the suspect and the amount taken, while avoiding trivial details."
+        }
+      ],
+      "remaining_concerns": [],
+      "provisional_score": 5
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 4,
+      "relevance": 3,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

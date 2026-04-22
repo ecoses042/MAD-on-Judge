@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-e43eef75de38d246db9d80216ca9f5487215a78b",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, jumping between topics without clear connections."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits key details about Atletico Madrid's interest and Luis's comments on the Premier League, which are essential for context."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary includes trivial details about friendly matches without addressing the more significant aspects of Luis's situation at Chelsea."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as missing articles ('the' before 'end of contract') and inconsistent capitalization."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding Filipe Luis's intentions and recent activities."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects Luis's statements about wanting to stay at Chelsea and his contract situation without introducing any new facts."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of Luis's commitment to Chelsea and his recent performances, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as missing articles and inconsistent capitalization, which affect readability."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits important context about Chelsea's Premier League title run-in and manager Jose Mourinho's expectations, which are significant aspects of the article."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

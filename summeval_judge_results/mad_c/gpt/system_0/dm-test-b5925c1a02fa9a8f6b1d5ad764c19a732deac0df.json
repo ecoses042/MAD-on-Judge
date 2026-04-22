@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-b5925c1a02fa9a8f6b1d5ad764c19a732deac0df",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, making it difficult to understand the sequence of events."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary incorrectly states that the dog was 'in new zealander's mouth,' which is factually incorrect as it was in the crocodile's mouth."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'the the animal was taken by the owner of puerto vallarta,' which is nonsensical."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to capture key details, such as the dog's ownership and the public reaction to the incident, which are important for context."
+        }
+      ],
+      "provisional_score": 1
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary attempts to present a narrative about Tim Weston and the incident, indicating a connection between the characters and the event."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that the dog was in 'New Zealander's mouth,' which is incorrect; it was in the crocodile's mouth."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, making it difficult to read smoothly."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary lacks key details about the incident, such as the dog's owner and the reactions of bystanders, which are important for understanding the context."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "final": {
+      "coherence": 1,
+      "consistency": 1,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 1.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

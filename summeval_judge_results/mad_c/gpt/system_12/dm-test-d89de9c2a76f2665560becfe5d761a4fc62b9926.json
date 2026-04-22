@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-d89de9c2a76f2665560becfe5d761a4fc62b9926",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow and omits important context about the match, such as the significance of the players' backgrounds and the match atmosphere."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention key details like the performance of other players, the match dynamics, and the implications of the result for both teams, which are crucial for understanding the match's importance."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not clarify that the match was part of a series, which is important for understanding the context of City's losses."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'the ` mini-derby '` contains unnecessary formatting that disrupts the fluency of the text."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, starting with the outcome of the match and then mentioning the key player and the implications of the result."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important information, including the match result, the goal scorer, and the standings in the league, while avoiding trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits details about the match context, such as the significance of the 'mini-derby' and the performance of other players, which could provide a fuller picture."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "While generally clear, the phrase 'in the ` mini-derby '` contains unnecessary formatting that disrupts the flow of reading."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 4,
+      "relevance": 3,
+      "overall_judge": 3.2,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "tie",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

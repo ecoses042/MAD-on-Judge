@@ -1,0 +1,59 @@
+{
+  "article_id": "dm-test-155754e1f2bc83f6836af78703edd4d00f19f381",
+  "system_name": "system_8",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information and does not provide context about the character or the significance of the event."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary only includes a single sentence and fails to cover key points such as the timeline issues and audience reactions."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the timeline inconsistency that is a significant aspect of the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "While the sentence is grammatically correct, it is overly simplistic and does not reflect the complexity of the original text."
+        }
+      ],
+      "provisional_score": 1
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and concise statement about Demelza Poldark becoming a mother, which is a central event in the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary lacks coverage of key points such as the timeline issues of the pregnancy and the audience's reactions, which are significant aspects of the article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

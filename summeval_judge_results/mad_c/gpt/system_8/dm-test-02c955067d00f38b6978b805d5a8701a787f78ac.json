@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-02c955067d00f38b6978b805d5a8701a787f78ac",
+  "system_name": "system_8",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, failing to provide context about the crash or the number of people involved."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits critical details such as the number of vehicles involved, the specific injuries of the patients, and the location of the incident, which are essential for understanding the event."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately implies that only one person was trapped, while the article mentions multiple individuals involved in the crash."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary includes a copyright notice that is irrelevant to the content and disrupts the flow."
+        }
+      ],
+      "provisional_score": 1
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical sequence of events, mentioning the trapped individual and the helicopter's role in airlifting patients."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits critical details about the number of people involved, the nature of their injuries, and the specifics of the crash, which are essential for understanding the incident."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not accurately reflect the full scope of the article, particularly the number of individuals affected and their injuries."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks a complete sentence structure and context, making it less fluent and harder to read."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.0,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-6721edf88c95f480a4db2c63649dbb03736aeadf",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from a critical consistency flaw: it repeats the same sentence twice with slight variations (hallucinating redundancy). More importantly, for relevance, it completely omits the most significant outcome of the article—the annulment of SATs results, the teacher's admission of guilt, the ban from the classroom, and the panel's findings. By stopping after the investigation launch, it fails to summarize the main story."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source text and flows logically. However, it only covers the first paragraph of the article, omitting significant details such as the annulment of results, the teacher's admission of guilt, the panel's findings on dishonesty vs fraud, and the final ban. While lenient rules allow for a score >= 3, the severe truncation limits its relevance to the full story."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 5,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I lowered the scores significantly based on the strict judge's valid points. The summary is factually incomplete (consistency issue regarding the 'twice' repetition in the text provided by the user vs the single instance in the source, but more importantly, it misses the outcome) and critically fails relevance by omitting the ban, annulment, and admission of guilt which are the core of the story. The summary effectively stops at the investigation phase, rendering it a poor summary of the entire article."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate: the summary is factually consistent and coherent but suffers from severe truncation, omitting the investigation outcome (annulment), the teacher's admission, the panel's specific findings, and the final ban. These omissions significantly impact relevance without introducing errors."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 5,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The summary is severely flawed in relevance and consistency. It completely omits the central outcome of the article: the annulment of SATs results, the teacher's admission of guilt, and his two-year ban from the classroom. By stopping at the investigation phase, it fails to summarize the main event (the sanction). Regarding consistency, while the summary does not introduce external facts, it presents a truncated version of events that misses the crucial context provided in the source text regarding the final resolution. The lenient judge's points about fluency are valid as the grammar is correct, but the structural and content failures are too severe to warrant higher scores."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the relevance score from 3 to 2. While the summary is factually consistent and coherent, the strict judge's point about 'severe truncation' is valid. The summary covers only the setup (the incident) but completely misses the resolution (investigation outcome, annulment of results, admission of guilt, panel findings, and the final ban). For a news summary, omitting the consequence and the final ruling renders it significantly incomplete regarding the 'most important information', justifying a lower relevance score."
+      }
+    },
+    "final": {
+      "coherence": 3.0,
+      "consistency": 3.0,
+      "fluency": 4.5,
+      "relevance": 1.5,
+      "overall_judge": 2.5
+    }
+  }
+}

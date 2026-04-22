@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-23e8c1d71474d239aa9ae37b9a05031b0054b8ce",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, jumping between points without clear connections."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary incorrectly states 'Swansea host Swansea' instead of mentioning Leicester hosting Swansea, which misrepresents the source."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key points about Leicester's recent wins and Pearson's emphasis on focusing on their own performance."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'just three points from safety' is vague and lacks context, making it less clear."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear focus on key events, such as Vardy's winning goal and Pearson's message to the team."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "It highlights the most important aspects of the article, including the relegation battle and the need for focus."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that Swansea is hosting the match, while the article mentions Leicester hosting Swansea."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks grammatical structure, such as the missing subject in 'swansea host swansea on saturday'."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

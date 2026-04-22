@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-46609841ffd23e9c22d1507edf7b176ecc4d834f",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, as it abruptly shifts from Kluivert's success to the match details without connecting the two."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key information such as Kluivert's background, the significance of the matches, and the next opponent, which are important for understanding the context."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary uses lowercase for 'patrick kluivert' and 'caribbean island team', which is not standard for proper nouns."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention Kluivert's role as assistant coach or his previous World Cup experience, which are relevant to his current position."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding Kluivert's success in World Cup qualifying."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the key outcomes of the matches and the progression of Curacao in the qualifying rounds."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important information, including Kluivert's role and the results of the matches."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization for names and places, which affects its overall fluency."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits details about the significance of the matches, such as the late goal by Charlton Vicento, which adds context to the victory."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

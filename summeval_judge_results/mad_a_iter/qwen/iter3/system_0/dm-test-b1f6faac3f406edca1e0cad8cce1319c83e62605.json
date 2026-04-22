@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-b1f6faac3f406edca1e0cad8cce1319c83e62605",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary contains a severe hallucination in the 'consistency' criterion: it states Costa was accused of 'biting' his neighbour's head, whereas the source text explicitly says he 'stomped on' his neighbour's head. This is a critical factual error. Additionally, the sentence regarding the triple 0 calls is grammatically broken ('the triple 0 calls it made'), lacking a clear subject for 'it'. While the summary covers the main points (relevance) and flows reasonably well otherwise (fluency), the hallucination prevents a higher score."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 3.8,
+        "rationale_for_score": "The summary captures the main points and aligns with the source text's direction. However, it contains a minor hallucination/error: it states 'the triple 0 calls it made', whereas the source specifies that Luigi Costa made the calls. Additionally, the sentence structure is slightly disjointed in the final clause. Despite these small issues, the core information is accurate and relevant."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the overall score from 3.0 to 2.5 because the strict judge's criticism regarding 'consistency' is valid and severe. The summary claims Costa was accused of 'biting' his neighbor's head, while the source text explicitly states he 'stomped on' his neighbor's head. This is a critical factual hallucination that fundamentally alters the nature of the crime described. Additionally, the grammatical error in the sentence about the triple 0 calls ('it made') further reduces the quality, confirming the strict judge's assessment."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "Lowered consistency score significantly due to a critical hallucination in the summary: 'the triple 0 calls it made' incorrectly attributes the action to the victim or an unspecified entity, whereas the source explicitly states Luigi Costa made the calls. This is a factual error regarding the subject of the sentence. Also lowered fluency and coherence slightly as the disjointed final clause ('the triple 0 calls it made...') makes the summary grammatically awkward and confusing."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I have adjusted the overall score down to 2.5 to align with the strict judge's valid criticism regarding consistency. The summary contains a critical factual error, stating Costa 'bit' his neighbor's head instead of 'stomping on' it as per the source text. This is a hallucination that fundamentally misrepresents the crime. Additionally, the sentence regarding the triple 0 calls ('it made') is grammatically incorrect and lacks clarity, supporting the lower fluency score. The lenient judge's points were accepted where they referenced these specific content errors."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary contains a critical factual error (hallucination) where 'the triple 0 calls it made' incorrectly attributes the action to an unspecified entity or the victim, whereas the source text explicitly states Luigi Costa made the calls. This violates consistency and significantly impacts fluency and coherence due to the grammatical awkwardness and confusion caused by this error. No score increase is warranted."
+      }
+    },
+    "final": {
+      "coherence": 3.0,
+      "consistency": 2.0,
+      "fluency": 3.5,
+      "relevance": 3.5,
+      "overall_judge": 3.0
+    }
+  }
+}

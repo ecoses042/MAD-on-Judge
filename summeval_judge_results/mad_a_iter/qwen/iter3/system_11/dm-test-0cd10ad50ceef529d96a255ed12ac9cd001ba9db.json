@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-0cd10ad50ceef529d96a255ed12ac9cd001ba9db",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and strictly consistent with the source text. It captures the main narrative arc (victim speaking out after perpetrator's arrest) and key legal facts. It receives a slightly lower relevance score because it omits significant emotional details from the article (e.g., the victim's fear for future relationships, her history of self-harm, and Van Ryn's demeanor in court), but given the lenient rules allowing for benefit of the doubt on summarization scope, this is acceptable."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and strictly consistent with the source text regarding the main facts (victim's testimony, Van Ryn's plea, charges). However, it scores a 4 for relevance because it only covers the introductory paragraph of the article and omits significant key details present in the full text, such as the victim's specific emotional impact ('scared for future relationships'), her lack of understanding at the time, her history of self-harm/depression, and Van Ryn's demeanor in court. A high-quality summary should ideally capture these critical aspects of the story."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate: the summary is well-structured, strictly consistent with the source text, and fluent. While it omits significant emotional details (fear for future relationships, self-harm history, Van Ryn's demeanor), this is a valid trade-off in summarization to maintain brevity and focus on the core narrative arc and legal facts. The score adjustment rules confirm that points should not be raised based on content not in the original summary, so the lenient scores are retained."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. While the summary is grammatically perfect and factually consistent, it suffers from a significant relevance issue by truncating the narrative after the introduction of the charges. It completely omits the core emotional weight of the article: the victim's specific fears for her future relationships, her childhood confusion about the abuse, her history of self-harm/depression, and Van Ryn's demeanor in court. These are critical details that define the 'severe impact' mentioned in the first sentence. Therefore, the score remains 4 for relevance."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The strict judge's assessment was accurate. The summary effectively captures the core narrative arc (victim testimony, Van Ryn's plea, charges) while appropriately omitting specific emotional details and secondary facts to maintain brevity. No score adjustments were necessary."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I am raising the relevance score from 4 to 3 (lowering it) because the lenient judge's assessment was too generous regarding the omission of key details. The summary explicitly mentions the 'severe impact' on the victim's life in the first sentence but then immediately truncates the text after introducing the charges. It fails to elaborate on *what* that impact is, omitting critical context provided in the article such as her fear for future relationships, her childhood confusion about the abuse, and her history of self-harm/depression. Without these details, the summary's claim of 'severe impact' feels unfulfilled and disconnected from the actual content of the source text."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.7
+    }
+  }
+}

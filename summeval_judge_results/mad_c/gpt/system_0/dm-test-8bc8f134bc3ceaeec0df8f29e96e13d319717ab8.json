@@ -1,0 +1,75 @@
+{
+  "article_id": "dm-test-8bc8f134bc3ceaeec0df8f29e96e13d319717ab8",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, jumping between topics without proper transitions."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The statement 'suarez has been replaced in the summer' contradicts the article, which does not mention any replacement for Suarez."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary includes trivial details like Suarez's goal without adequately covering the main points about Bartomeu's support for Enrique."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'the barcelona president is only six games away from winning the title' is misleading as it implies Bartomeu is the one competing, rather than the team."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear structure, starting with Bartomeu's stance on Enrique and then mentioning key details about the manager's contract and recent match performance."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects Bartomeu's comments about Enrique's position and the club's satisfaction with him, without introducing any contradictory information."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is mostly free of grammatical errors and is generally easy to read, maintaining a straightforward narrative."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary includes important points such as Bartomeu's support for Enrique and the recent match against Valencia, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The phrase 'suarez has been replaced in the summer' is incorrect and inconsistent with the article, which does not mention any such replacement."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary could better emphasize the context of Enrique's contract and the club's aspirations for winning trophies, which are significant points in the article."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 4,
+      "relevance": 3,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

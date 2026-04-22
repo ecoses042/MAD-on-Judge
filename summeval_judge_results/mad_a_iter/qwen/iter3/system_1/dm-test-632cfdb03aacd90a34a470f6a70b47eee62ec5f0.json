@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-632cfdb03aacd90a34a470f6a70b47eee62ec5f0",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from severe fluency issues due to poor capitalization and lack of sentence variety (three short, repetitive sentences). While the facts are consistent with the text, the summary fails relevance by omitting the most critical information: Gnabry's return after a year-long injury and his positive update ('feeling better'). It essentially just repeats the first two sentences of the source without synthesizing the main news."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source text and well-structured (coherence). However, it lacks fluency due to repetitive phrasing (e.g., stating he played 90 minutes twice in slightly different ways) and misses key information like Gnabry's positive quote about feeling 'better and better' or his status as a Germany Under-21 international, which lowers relevance. It is not a hallucination, but it is an incomplete summary."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary fails to synthesize the main news (Gnabry's return and positive update), merely repeating the first two sentences of the source text. It also suffers from poor capitalization and repetitive sentence structure, resulting in low fluency and relevance scores."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the fluency score from 4 to 3 because the summary repeats the fact that Gnabry played 90 minutes twice (once as a standalone sentence and again within the context of the match result), which is poor writing style. I significantly lowered the relevance score from 3 to 2 because the summary completely omits the most important news: Gnabry's return after over a year out, his specific quote about feeling 'better and better', and his status as a Germany Under-21 international. The lenient judge correctly identified these missing key points."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No adjustment needed. The summary is a direct concatenation of sentences from the source text without synthesis or capitalization, resulting in poor fluency and relevance. It fails to capture the main news (Gnabry's return update), confirming the lenient judge's assessment."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary suffers from significant redundancy (stating he played 90 minutes twice) which impacts fluency and style. More critically, it fails to capture the main news hook: his return after a year-long injury absence and his positive quote regarding his recovery. Therefore, I maintain the lowered relevance score of 2."
+      }
+    },
+    "final": {
+      "coherence": 3.5,
+      "consistency": 4.5,
+      "fluency": 2.5,
+      "relevance": 2.5,
+      "overall_judge": 3.0
+    }
+  }
+}

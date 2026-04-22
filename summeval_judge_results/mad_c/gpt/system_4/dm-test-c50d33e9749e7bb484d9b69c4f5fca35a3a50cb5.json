@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-c50d33e9749e7bb484d9b69c4f5fca35a3a50cb5",
+  "system_name": "system_4",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, as it jumps abruptly from one point to another without connecting the events."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits critical details such as the circumstances leading to the incident, the taxi driver's perspective, and the coroner's verdict, which are essential for understanding the context."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as inconsistent capitalization of 'mr' and 'graduate', which affects readability."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the phrase 'caught the cab' without specifying that it was after a night out, which could mislead readers about the timeline."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with Jacob Phillips' fall and providing context about his night out and the taxi."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the main facts from the article, including his age, the circumstances of his fall, and the reason for running from the taxi."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the incident, such as the fall, the taxi situation, and the night out, without including trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as inconsistent capitalization and punctuation, which affect its readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

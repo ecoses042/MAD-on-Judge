@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-0cdd7cdb5d99c36f25f1f4fa0e962d558f7ff07b",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from a significant relevance issue: it completely omits the specific squad details (player names, positions) which constitute the bulk of the source text's informational value. While consistent with the article, it fails to capture the 'most important information' regarding the actual team composition."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is well-structured, grammatically correct, and accurately reflects the first three sentences of the source text regarding the coach, tournament, defending status, and group placement. It receives a score of 4 (Good) rather than 5 because it omits significant details present in the article, such as the opening match opponent/date, the specific squad list, and the context about Liverpool players' recalls, which are key points in the source."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I agree with the strict judge's assessment regarding relevance. The summary provides only the background context (coach, tournament, group stage) but completely omits the core news: the specific list of players and their positions, which is the primary purpose of a squad announcement article. Therefore, the relevance score remains low."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The lenient judge's assessment is accurate. The summary perfectly captures the introductory context (coach, tournament, defending status, group) but completely omits the specific squad list and the notable news regarding Liverpool players' recalls, which are significant details in the source text. Therefore, a relevance score of 4 is appropriate, and no harsher penalty was needed."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I agree with the lenient judge's points regarding relevance. The summary accurately reflects the background information present in the article (coach, tournament details, group stage) but completely omits the specific list of players and their positions, which constitutes the core news value of a squad announcement. Therefore, the low relevance score is justified."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "The strict judge's assessment of relevance (4) was slightly too generous. While the summary captures the high-level context (coach, tournament, defending status, group), it completely omits the specific squad list and the significant news regarding Liverpool players' recalls, which are substantial portions of the source text. Given that a summary should ideally cover key points including specific roster details and major updates, the relevance score is lowered to 3 to reflect this significant omission."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 3.0,
+      "overall_judge": 4.5
+    }
+  }
+}

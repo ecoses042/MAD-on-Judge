@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-051db270afc32571a08c15124330efe89d80fea8",
+  "system_name": "system_5",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, jumping abruptly from the theft to the details of how it occurred without proper transitions."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits key details from the source, such as the involvement of the FBI agent's other stolen items and the context of the theft occurring before President Obama's visit, which are crucial for understanding the significance of the event."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary does not adequately cover the most important information, such as the police's findings and the implications of the theft, which are essential to the overall narrative."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains awkward phrasing and lacks proper capitalization, making it less readable and fluent."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with the theft of the rifle and detailing how it was secured and stolen."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article without introducing any new facts or misrepresenting the events."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key details of the theft, including the circumstances surrounding the incident and the involvement of the FBI agent."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as inconsistent use of capitalization and punctuation, which affects its readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "tie",
+        "consistency": "tie",
+        "fluency": "critic",
+        "relevance": "tie"
+      }
+    }
+  }
+}

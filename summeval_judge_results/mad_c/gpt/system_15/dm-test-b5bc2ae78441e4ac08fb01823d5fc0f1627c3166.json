@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-b5bc2ae78441e4ac08fb01823d5fc0f1627c3166",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, jumping between topics without smooth transitions."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The phrase 'downton's sacking has been axed by former managing director in 2014' is misleading and inconsistent with the article, as it incorrectly implies that Downton's sacking occurred in 2014."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary does not adequately cover key points, such as Pietersen's potential return to the England team and the significance of the county championship season."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as missing articles ('the' before 'team photo') and awkward phrasing ('cut a range of emotions')."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear focus on Kevin Pietersen's emotions and actions during the team photo shoot, maintaining a logical flow of information."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary highlights key points such as Pietersen's reflection, his position in the team photo, and the context of the county championship season, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that Downton's sacking has been 'axed by former managing director in 2014,' which is confusing and misrepresents the timeline of events."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as incomplete sentences and awkward phrasing, which affect readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

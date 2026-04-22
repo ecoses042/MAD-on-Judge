@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-e43eef75de38d246db9d80216ca9f5487215a78b",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary contains a major hallucination in the second sentence: it attributes the struggle to 'make the left back position his own' to Atletico Madrid, whereas the source text explicitly states that Filipe Luis (at Chelsea) has struggled with this. This violates the consistency criterion significantly. The other sentences are accurate but lack depth compared to the source."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary contains a severe hallucination in the second sentence: it attributes the struggle to make the left-back position his own to Atletico Madrid ('atletico madrid have struggled...'), whereas the source text explicitly states that Filipe Luis (Filipe Luis) is the one who has struggled at Stamford Bridge. This violates the consistency criterion severely. Additionally, the summary misses the key context regarding Mourinho's refusal to rest the team and the specific nature of the 'hard situation' mentioned in the text, reducing relevance."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No adjustment needed. The lenient judge correctly identified the critical hallucination in the second sentence where 'Atletico Madrid' is credited with struggling to make the left-back position his own, whereas the source text explicitly states that Filipe Luis (at Chelsea) has struggled. This is a severe consistency error. The summary also misses key context regarding Mourinho's stance and the specific nature of Atletico's interest (leverage), making it less relevant than the strict score might suggest, but the hallucination alone justifies the low consistency score."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a critical factual error (hallucination) in the second sentence, attributing Filipe Luis's struggle to Atletico Madrid instead of himself, which severely impacts consistency and coherence. Additionally, it omits significant context regarding Mourinho's management style and the upcoming league challenges, lowering relevance. The fluency score remains at 3 due to minor capitalization issues ('filipe', 'chelsea', etc.) and sentence structure."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the overall score from 3.0 to 2.5. While I initially agreed with the strict judge's assessment of the hallucination (Atletico struggling vs Luis struggling) and the lack of relevance regarding Mourinho, I felt the consistency score of 2 was perhaps too harsh for a single sentence error in such a short text; however, upon reflection, the hallucination fundamentally distorts the narrative about who is having trouble, so I will maintain the low consistency score. The overall drop reflects that while the grammar is fine (fluency 4), the factual error and missing context make it a poor summary of the provided text."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary contains a critical factual error (hallucination) in the second sentence: it states 'atletico madrid have struggled to make the left back position his own', whereas the source text explicitly says Filipe Luis is the one who has struggled ('has struggled to make the left back position his own'). This makes the summary factually inconsistent with the source. Additionally, the summary omits key context regarding Mourinho's management and the upcoming league challenges, reducing relevance. The fluency score remains low due to lack of capitalization."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 1.5,
+      "fluency": 3.5,
+      "relevance": 2.5,
+      "overall_judge": 2.5
+    }
+  }
+}

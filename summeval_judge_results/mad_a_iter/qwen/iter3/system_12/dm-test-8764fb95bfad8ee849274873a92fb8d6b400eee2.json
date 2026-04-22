@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-8764fb95bfad8ee849274873a92fb8d6b400eee2",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and consistent with the source text, avoiding hallucinations. However, it lacks coherence in its narrative flow; it presents events somewhat disjointedly without connecting the timeline of the Merson-Townsend feud effectively (e.g., missing the context that Merson's criticism was renewed *after* the Burnley game). It also misses the significant plot point where Merson admitted he was wrong after Townsend scored for England, which is a major part of the source text."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and consistent with the text, but it suffers from poor relevance due to omitting the central narrative arc: Merson's initial criticism, his subsequent admission of being wrong after Townsend scored for England, and the final 'dig' after the Burnley game. By only mentioning the first and last points without the crucial middle event (the apology/admission), the summary fails to capture the main story."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I raised the coherence score slightly from 1 to 3 because the summary is grammatically correct and the sentences are logically ordered chronologically (Event A -> Event B -> Event C), even if the narrative arc isn't perfect. However, I significantly lowered the relevance score from 4 to 2. The lenient judge's point about missing the 'admitted mistake' plot was valid, but the summary also fails to mention the very first event described in the text: Merson's renewed criticism *after* the Burnley game. This makes the summary feel disjointed and incomplete regarding the main subject (the feud), as it jumps straight to the past conflict without setting up the current context mentioned in the article's opening."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. While the summary is grammatically correct and factually consistent, it fails to capture the central narrative arc of the article: Merson's initial criticism, his admission of being wrong after Townsend scored for Italy, and then his subsequent 'dig' at Townsend again. By omitting the crucial middle event (the apology/admission), the summary presents a disjointed sequence that misses the main point of the story."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary fails to capture the main narrative arc of the article, which is Paul Merson's renewed criticism of Andros Townsend *after* the Burnley game (the 'rubber dub' incident). By starting with the past conflict and ending with the Italy goal without mentioning the current feud or Merson's latest dig, the summary misses the primary news hook. Therefore, I maintain the low relevance score."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding relevance and coherence. The summary lists three distinct events but fails to connect them into a narrative, missing the crucial middle event where Merson admitted he was wrong after Townsend scored for Italy. This omission makes the sequence disjointed (lowering coherence) and causes it to miss the main point of the story, which is the resolution of the feud before the final dig (lowering relevance). Consistency and fluency remain high as the text is grammatically correct and factually accurate based on the source."
+      }
+    },
+    "final": {
+      "coherence": 3.0,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 2.0,
+      "overall_judge": 3.0
+    }
+  }
+}

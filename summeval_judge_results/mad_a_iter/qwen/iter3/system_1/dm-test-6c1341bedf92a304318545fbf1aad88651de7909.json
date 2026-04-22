@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-6c1341bedf92a304318545fbf1aad88651de7909",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and strictly consistent with the source text, containing no hallucinations. It captures the main points regarding Kane's achievements and nominations. It receives a slight deduction on relevance (from 5 to 4) because it omits the context about the new animation video produced by Copa90, which was a significant part of the article's narrative, though this is a minor omission given the lenient rules."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source text (no hallucinations) and coherent in its flow. However, it suffers from relevance issues: it includes a specific detail about Kane's 20th Premier League goal against Newcastle which is a minor detail compared to the main news (the PFA nominations and the new animation video). Crucially, it completely omits the primary subject of the article—the clever new animation produced by Copa90—focusing instead on generic biographical facts and one specific match stat, resulting in an incomplete summary of the source's main point."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate. The summary is well-structured (coherence), contains only facts present in the article (consistency), and is grammatically correct (fluency). The deduction for relevance is justified because the summary omits the primary subject of the article: the new animation video produced by Copa90, which serves as the framing device for the news about Kane's nominations and goals."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary fails to capture the main news hook (the new animation video by Copa90) and instead focuses on generic background info and a specific match statistic that is less relevant than the awards nominations. Therefore, I maintain the lower relevance score."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "No changes made. The lenient judge correctly identified that the summary misses the primary news hook (the Copa90 animation video) and focuses on secondary details (background info and a specific goal stat). The relevance score of 3 is appropriate because the summary covers key facts but fails to summarize the main event described in the article."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The strict judge's assessment is accurate. While the summary is grammatically correct and factually consistent with the text, it fails to capture the main topic of the article, which is the new animation video produced by Copa90. The summary lists Kane's achievements (nominations, specific goals) as if they are the news story itself, missing the context that these details are presented within a video feature. Therefore, the relevance score of 4 and overall judge of 4.8 are appropriate."
+      }
+    },
+    "final": {
+      "coherence": 4.5,
+      "consistency": 5.0,
+      "fluency": 4.5,
+      "relevance": 3.5,
+      "overall_judge": 4.4
+    }
+  }
+}

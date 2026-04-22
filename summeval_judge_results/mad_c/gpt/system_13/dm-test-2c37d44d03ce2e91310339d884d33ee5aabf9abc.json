@@ -1,0 +1,75 @@
+{
+  "article_id": "dm-test-2c37d44d03ce2e91310339d884d33ee5aabf9abc",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, as it repeats the phrase 'listed in stable condition' and does not effectively connect the details."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the phrase 'officials said' without specifying which officials, leading to ambiguity and inconsistency with the source."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the circumstances of the fall, the parents' actions, and the zoo's plans to press charges, which are important for understanding the incident."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains awkward phrasing and punctuation issues, such as the inconsistent use of spaces before and after apostrophes."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, detailing how the toddler fell into the cheetah exhibit and his subsequent condition."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, including the child's injuries and the fact that he was not attacked by the animals."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is written in grammatically correct English and is easy to read."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the incident, including the child's fall, injuries, and the response from officials."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary could benefit from a more structured flow, as it repeats the phrase 'listed in stable condition' unnecessarily."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits important details such as the parents' actions and the zoo's plans to press charges, which are significant to the context of the incident."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 4,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 3.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

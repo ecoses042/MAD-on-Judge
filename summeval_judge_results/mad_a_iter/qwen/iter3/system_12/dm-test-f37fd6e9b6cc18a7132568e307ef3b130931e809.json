@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-f37fd6e9b6cc18a7132568e307ef3b130931e809",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from significant relevance issues by omitting the core context of the article: the specific nature of the alleged crime (attempted orgy), the timeline (1978), the victim's identity as a former royal footman, and the current status of the police investigation. It reads like a generic summary that misses the 'hook' of the news story."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and consistent with the source text. It captures the main narrative arc (the incident, the immediate reaction, and the delayed police involvement). It receives a score of 4 for relevance because it omits specific details present in the article, such as the date (1978), the fact that Lawler was a former police officer, the threat made to him, and the Palace's current stance on cooperating with the investigation. However, given the lenient rules, these omissions are not considered hallucinations or severe failures."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the relevance score from 3 to 2. While the summary is grammatically correct and flows well, it fails to capture the essential 'hook' of the news story: the specific allegation of an attempted orgy, the historical context (1978), and the current police investigation status. The strict judge's critique that it reads like a generic summary missing the core context is valid; without these details, the summary lacks the necessary weight and accuracy for a news report."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate: the summary is well-structured, consistent with the source, and fluent. While it omits specific details like the date (1978), Lawler's background as a former police officer, and the Palace's current stance, these are valid omissions for a short summary rather than errors or hallucinations. The score of 4 for relevance appropriately reflects that the most critical 'key points' regarding the full scope of the story were not included."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I have accepted the lenient judge's assessment regarding relevance. The summary is indeed a generic recitation of the first few sentences without capturing the specific allegations (orgy), historical context (1978), or the current investigation status, which are essential for a news summary. Therefore, the score remains at 2."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The strict judge's assessment is accurate: the summary is well-structured, consistent with the source text, and fluent. While it omits specific details like the date (1978), Lawler's background as a former police officer, and the Palace's current stance, these are valid omissions for a short summary rather than errors or hallucinations. The score of 4 for relevance appropriately reflects that the most critical 'key points' regarding the full scope of the story were not included."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.5,
+      "fluency": 5.0,
+      "relevance": 3.0,
+      "overall_judge": 3.9
+    }
+  }
+}

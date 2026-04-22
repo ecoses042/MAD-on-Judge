@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-f468efac7b3c54f8c42c2c81dff108c52ebe0d7d",
+  "system_name": "system_9",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow and does not connect the events leading to the goal effectively."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details about the context of the foul and the pundits' analysis, which are crucial for understanding the significance of the events."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary uses lowercase letters for names and lacks proper capitalization, making it less readable."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the specific nature of the challenge (forearm smash) that was discussed by the pundits, which is relevant to the analysis."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with Terry's challenge, followed by Fabregas's action, and concluding with the pundits' agreement on the foul."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the key events and opinions from the article without introducing any new or unrelated information."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important aspects of the article, including the foul and the subsequent goal, while omitting trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization and punctuation, making it less readable and fluent."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 4,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

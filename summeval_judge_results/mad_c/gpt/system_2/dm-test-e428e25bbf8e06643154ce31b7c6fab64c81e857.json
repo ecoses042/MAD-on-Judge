@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-e428e25bbf8e06643154ce31b7c6fab64c81e857",
+  "system_name": "system_2",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow and does not connect the points about the speed camera's status and the actions taken by the council."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits key information about the camera being pointed at a house and the council's awareness and potential actions regarding it."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as inconsistent capitalization and punctuation, making it harder to read."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention the mystery surrounding who re-pointed the camera, which is a relevant detail from the article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the speed camera's history and its current status."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article about the speed camera being non-functional and the decommissioning of fixed devices in the West Midlands."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points about the speed camera's enforcement history and its current operational status, avoiding trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as missing capitalization and punctuation, which affect its readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 4,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

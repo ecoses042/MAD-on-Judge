@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-7cba80e83b222801fed8d6f96e8c0aa381c54b28",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 2,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.2,
+        "rationale_for_score": "The summary contains severe factual hallucinations and inconsistencies with the source text. Specifically, it claims Lindegaard made the most of the weather 'last year', whereas the article states he tied the knot last year but is currently enjoying sunshine (implying present tense). It also incorrectly states he has made 19 league appearances 'this season', while the article specifies these 19 appearances occurred over 'five seasons'. Additionally, the sentence structure is awkward and grammatically poor ('with swedish model last year'). These errors constitute major flaws in consistency and coherence."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary contains a major factual hallucination regarding the timeline: it states Lindegaard made only 19 league appearances 'this season', whereas the source text explicitly states he has made just 19 in 'five seasons' (since 2010). This is a significant inconsistency. Additionally, the grammar is poor ('made the most of... with swedish model last year' is awkward and confusing). However, it covers the key points about his wife and transfer links well."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I have lowered the scores significantly based on the strict judge's valid points. The summary contains severe factual hallucinations regarding timeframes ('last year' vs 'five seasons') and awkward phrasing that impacts fluency and coherence. While it covers some key entities (Lindegaard, Beqiri, FC Midtjylland), the inaccuracies make it unreliable."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary contains a critical factual error regarding the timeline of Lindegaard's appearances ('this season' vs 'five seasons'), which warrants a low consistency score. The grammar is indeed poor and confusing (e.g., 'made the most of... with swedish model last year'), justifying the fluency score. While it covers the main topics (wife, transfer links), the errors prevent a higher rating."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary contains severe factual inconsistencies: it claims Lindegaard tied the knot 'last year' while the article states they have been dating since 2012 and married in a beach wedding (implied to be recent or specific, but the text explicitly mentions 'five seasons' of struggle, making 'last year' for the marriage factually ambiguous or incorrect depending on the article's date context, whereas the summary fails to capture the 'five seasons' detail accurately). More critically, the sentence 'made the most of the english weather with swedish model last year' is grammatically broken and confusing. The phrase 'tied the knot... misse beqiri , lindegaard tied the knot...' is repetitive and ungrammatical. The claim about 'this season' for 19 appearances contradicts the article's 'five seasons'. These are not minor errors but fundamental failures in consistency and fluency."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I have lowered the scores significantly based on the strict judge's valid points. The summary contains a severe factual error regarding the timeline ('this season' vs 'five seasons'), which violates consistency rules. Additionally, the grammar is poor and confusing (e.g., 'made the most of... with swedish model last year'), justifying a low fluency score. While it covers the main topics, the errors are fundamental flaws that prevent a higher rating."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 1.0,
+      "fluency": 2.0,
+      "relevance": 3.5,
+      "overall_judge": 2.0
+    }
+  }
+}

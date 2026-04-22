@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-0cd10ad50ceef529d96a255ed12ac9cd001ba9db",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, making it difficult to understand the sequence of events and the impact of the abuse."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the phrase 'most serious charge of a child' without context, which is misleading and inconsistent with the original article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as missing articles and awkward phrasing, which hinder readability."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to capture key details about the victim's emotional state and the severity of the abuse, focusing instead on less significant points."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear focus on the main subject, which is the abuse suffered by the young woman and the legal proceedings against Maurice Van Ryn."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the key facts from the article, including Van Ryn's guilty plea and the impact of the abuse on the victim."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary highlights the most important aspects of the case, such as the victim's feelings and the charges against Van Ryn."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, making it less fluent and harder to read."
+        },
+        {
+          "criterion": "coherence",
+          "reason": "The flow of information is somewhat disjointed, with repetitive phrases and a lack of logical progression in the sentences."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

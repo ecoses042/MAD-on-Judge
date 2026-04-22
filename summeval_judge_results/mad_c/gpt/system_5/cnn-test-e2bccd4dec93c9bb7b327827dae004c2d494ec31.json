@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-e2bccd4dec93c9bb7b327827dae004c2d494ec31",
+  "system_name": "system_5",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, abruptly shifting from the military official's statement to Inoki's background without a coherent connection."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to cover key points from the article, such as the context of the discussion about UFOs and the specific comments made by Defense Minister Gen Nakatani."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not accurately reflect the content of the article, particularly in omitting the details about the Air Self Defense Force's procedures regarding unidentified flying objects."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as missing articles and inconsistent capitalization, which detract from its readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear statement regarding the Air Self Defense Force's lack of encounters with extraterrestrial UFOs, which is a central point of the article."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article about the Defense Minister's statement regarding UFOs."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits significant context about the political discussion initiated by Antonio Inoki and his background, which are important for understanding the article's content."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as missing articles and awkward phrasing, which affect its readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.0,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

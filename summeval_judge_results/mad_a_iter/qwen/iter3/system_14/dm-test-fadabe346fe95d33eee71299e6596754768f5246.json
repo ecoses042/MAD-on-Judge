@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-fadabe346fe95d33eee71299e6596754768f5246",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from severe fluency issues due to a major grammatical error in the final sentence ('says her daughter's penchant...'), which makes it unreadable and structurally broken. While the content is consistent with the source text (no hallucinations) and covers the key points, the lack of proper sentence structure prevents it from being considered 'Good' or 'Excellent'. The coherence is low because the summary feels fragmented due to this error."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is consistent with the source text and covers key points (Gemma's name, children, age, handing over to Debbie, threat of ban, drug use, stealing suspicion). However, it has a significant grammatical flaw in the final sentence where the subject 'says' lacks a clear antecedent or proper connector ('...MKat, and because she suspects her of stealing.'), making it slightly confusing. Despite this, the content is accurate to the source, so no hallucinations are penalized."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I maintained the low fluency score (2) because the summary contains a severe grammatical error in the final sentence ('says her daughter's penchant...') which renders it structurally broken and unreadable without a subject or verb connecting the clauses. I increased consistency to 5 as there are absolutely no hallucinations; all facts align with the source text. Coherence remains low (3) due to the fragmentation caused by the grammatical failure, though the logical flow of events is otherwise present. Relevance is high (4) as it covers the main conflict and reasons."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "Lowered fluency score significantly due to a severe grammatical error in the final sentence where 'says' lacks a subject and proper punctuation, making the text disjointed and difficult to read. The lenient judge's score of 3 was too generous given this specific structural failure. Coherence is also lowered slightly because the lack of a connector before 'says' breaks the logical flow between the cause (drug use/theft suspicion) and the reported speech."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No changes to scores. The lenient judge's assessment of fluency (2) is correct due to the severe grammatical error in the final sentence ('says her daughter's penchant...') which lacks a subject and verb, making it structurally broken. Consistency remains high as all facts are present in the source text. Coherence is low because the grammatical failure disrupts the logical flow at the end of the summary. Relevance is appropriate as key points are covered."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary contains a severe grammatical error in the final sentence ('says her daughter...') where the subject is missing and punctuation is absent, rendering it disjointed. This structural failure justifies the low fluency score of 2. The coherence is also impacted by this abrupt break in flow. No other scores were adjusted as the strict judge was accurate regarding these specific flaws."
+      }
+    },
+    "final": {
+      "coherence": 3.0,
+      "consistency": 5.0,
+      "fluency": 2.0,
+      "relevance": 4.0,
+      "overall_judge": 3.0
+    }
+  }
+}

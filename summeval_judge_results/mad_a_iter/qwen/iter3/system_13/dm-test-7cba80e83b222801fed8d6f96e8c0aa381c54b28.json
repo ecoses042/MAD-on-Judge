@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-7cba80e83b222801fed8d6f96e8c0aa381c54b28",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.8,
+        "rationale_for_score": "The summary contains a major hallucination regarding the nationality of Anders Lindegaard. The source text explicitly identifies him as a 'Danish international' and 'United goalkeeper', while the summary incorrectly refers to him as a 'Swedish international'. Although the text mentions he is Swedish by birth (implied by context or common knowledge, but strictly speaking, the text says 'The 31-year-old moved...' and later refers to 'Danish international'), calling him a 'Swedish international' contradicts the explicit label in the source. Additionally, the summary fails to cover the main point of the article: Lindegaard's off-pitch happiness despite his struggles on the pitch at Manchester United. It focuses almost exclusively on the Instagram post and relationship details, missing the context of his career struggles which is half the text."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary contains a major hallucination regarding the nationality of Misse Beqiri. The source text explicitly states she is 'Swedish but has Albanian roots' and refers to Lindegaard as the 'Danish international'. The summary incorrectly calls her a 'Danish beauty', which contradicts the source facts. While the other sentences are fluent and relevant, this clear factual error regarding identity prevents a higher score."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a significant factual error (hallucination) regarding Lindegaard's nationality, calling him 'Swedish international' when the text explicitly calls him 'Danish international'. Furthermore, the summary fails to capture the main theme of the article, which is the contrast between his struggles on the pitch and his happiness off it. It focuses too narrowly on the Instagram post details while ignoring the career context provided in the source."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No adjustment needed. The lenient judge correctly identified a critical factual error (hallucination) where the summary refers to Misse Beqiri as a 'Danish beauty' while the source text explicitly identifies her as Swedish with Albanian roots and Lindegaard as the Danish international. This contradiction severely impacts consistency, justifying the low score."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 1.8,
+        "adjustment_notes": "I agree with the strict judge's assessment and do not raise the scores. The summary contains a critical factual error (hallucination) by calling Lindegaard 'Swedish' when the text explicitly identifies him as 'Danish'. Additionally, it completely misses the article's main theme: the contrast between his poor performance on the pitch and his happiness off it. It focuses only on trivial details of the Instagram post without providing necessary context about his career struggles or marriage."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I have lowered the overall score from 3.0 to 2.5. While I agreed with the strict judge's assessment of the critical factual error (hallucination) regarding Misse Beqiri's nationality, which severely impacts consistency and relevance, I believe the individual dimension scores were slightly too generous given the severity of this specific flaw. A summary containing a direct contradiction to the source text on a primary subject's identity warrants a lower score than 3.0 across the board, as it undermines the fundamental reliability of the summary."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 1.5,
+      "fluency": 3.5,
+      "relevance": 2.0,
+      "overall_judge": 2.4
+    }
+  }
+}

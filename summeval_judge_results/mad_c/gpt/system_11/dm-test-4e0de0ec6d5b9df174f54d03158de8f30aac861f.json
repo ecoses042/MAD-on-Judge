@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-4e0de0ec6d5b9df174f54d03158de8f30aac861f",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, as it abruptly shifts from discussing Ozil's personal life to his performance without a smooth transition."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the phrase 'world cup winners' without clarifying that it refers to Germany, which could lead to confusion."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'in a enjoying' is grammatically incorrect and should be 'enjoying'."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary does not mention Ozil's injury status or his performance statistics, which are key points in the original article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear narrative about Mesut Ozil's return to London, his recent performance, and his downtime activities, maintaining a logical flow."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on key points such as Ozil's performance in the Euro 2016 qualifier, his relaxation at home, and his upcoming match against Liverpool."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'in a enjoying' instead of 'enjoying', which affects readability."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention Ozil's missed game due to illness or the nightclub rumors, which are relevant details from the article."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

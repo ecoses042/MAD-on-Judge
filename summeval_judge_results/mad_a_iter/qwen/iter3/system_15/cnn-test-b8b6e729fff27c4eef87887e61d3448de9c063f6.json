@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-b8b6e729fff27c4eef87887e61d3448de9c063f6",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary fails the relevance criterion severely because it omits the vast majority of key information from the source text, including the successful delivery of Dragon to the ISS, the specific reason for failure (landing too hard/tipping over), the cost-saving motivation, and details about the cargo. While the sentences are grammatically correct (fluency 4) and mostly consistent with the text (consistency 3), the lack of coverage makes it a poor summary."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from severe fluency issues due to poor capitalization and sentence structure (e.g., starting with lowercase 'spacex', run-on sentences). It also lacks coherence as the second sentence ('the private space exploration company was unsuccessful') is a fragment that doesn't clearly connect to the previous or following context without proper punctuation. While the content is consistent with the article, the low quality of writing and disjointed flow prevent it from being a good summary."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is severely lacking in relevance as it omits the successful delivery of cargo to the ISS, the specific details of the failure (tipping over), the motivation for landing rockets, and the cargo specifics. While the grammar is fine, the content coverage is too low to be considered a good summary."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 1,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I lowered the fluency score from 2 to 1 because the summary contains severe grammatical errors (lowercase start of sentences, missing punctuation between independent clauses creating run-on sentences) that make it difficult to read. I also adjusted coherence down slightly as the lack of punctuation creates a disjointed flow where the subject shifts abruptly without clear separation. Consistency remains high as all facts are accurate to the source. Relevance is moderate; while it covers the main event and the failure, it misses the 'why' (cost reduction) and specific details like the cargo delivered, which are significant parts of the article."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "No changes made. The lenient judge's points were accepted because the summary indeed fails to cover the most critical information (successful cargo delivery, ISS docking) and contains a grammatical inconsistency ('he later clarified' referring to Elon Musk without naming him). The low relevance score is justified as the summary focuses almost entirely on the landing failure while omitting the primary mission success."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 1,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary suffers from severe fluency issues due to a complete lack of capitalization and punctuation (e.g., 'spacex', 'he later clarified'), making it difficult to read. This also impacts coherence by creating run-on sentences that obscure the logical flow between ideas. Consistency is maintained as facts are accurate, though the summary is very brief. Relevance is moderate because while it covers the launch and landing failure, it omits key context like the cargo delivered and the motivation for reusability mentioned in the source text."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 3.5,
+      "fluency": 2.5,
+      "relevance": 2.0,
+      "overall_judge": 2.0
+    }
+  }
+}

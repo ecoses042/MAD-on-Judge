@@ -1,0 +1,75 @@
+{
+  "article_id": "cnn-test-c05bda9b387ec8ae43803170b6f59b4b82505db9",
+  "system_name": "system_3",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information and does not connect the details about the release to the broader context of the Yazidi situation."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits critical information about the circumstances surrounding the release, such as the involvement of Arab tribal leaders and the historical context of the Yazidi persecution by ISIS."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states 'more than 200 Yazidis were released' without specifying the exact number mentioned in the article (217 or 228), which could lead to confusion."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as inconsistent capitalization of 'Yazidis' and awkward phrasing that detracts from readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the release of Yazidis."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article about the demographics of those released."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is mostly free of grammatical errors and is easy to read."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key event of the release of Yazidis, which is the main point of the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks context about the significance of the release and the circumstances surrounding it."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "Important details such as the involvement of Arab tribal leaders and the total number of Yazidis released are omitted."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

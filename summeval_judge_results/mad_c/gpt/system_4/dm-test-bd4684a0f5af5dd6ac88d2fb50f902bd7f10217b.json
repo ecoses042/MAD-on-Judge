@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-bd4684a0f5af5dd6ac88d2fb50f902bd7f10217b",
+  "system_name": "system_4",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, repeating information about River Plate's interest in Falcao without adding new context."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that Falcao spent eight years with River Plate; he actually spent only four years in the first team."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention Falcao's current struggles at Manchester United and his recent good form for Colombia, which are key points in the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary uses lowercase for the beginning of sentences and proper nouns, which is grammatically incorrect."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding River Plate's interest in Falcao and his history with the club."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article without introducing any new facts."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of River Plate's interest in Falcao and his past with the club, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization and punctuation, making it less readable."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

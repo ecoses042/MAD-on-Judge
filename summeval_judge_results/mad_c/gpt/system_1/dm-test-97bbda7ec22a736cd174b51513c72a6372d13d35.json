@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-97bbda7ec22a736cd174b51513c72a6372d13d35",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, jumping from the auction results to the current owner without a clear connection."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary incorrectly states that Reggie Jackson purchased the letters for $260,000, while the article indicates that this amount was the only bid made by a Sotheby's employee."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as inconsistent capitalization of 'Sotheby's' and 'Wednesday'."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details, such as Jackson's intention for the letters and the context of their historical significance."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the auction and the ownership of the letters."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, including the auction details and the ownership by Reggie Jackson."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the auction outcome and the significance of the letters, avoiding trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as inconsistent capitalization and spacing issues, which affect readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

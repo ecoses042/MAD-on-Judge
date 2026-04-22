@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-155754e1f2bc83f6836af78703edd4d00f19f381",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, making it difficult to understand the sequence of events."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary incorrectly states that Demelza is the 'oldest mother' which is not mentioned in the article; it misrepresents her character."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to capture key points about the timeline of the pregnancy and the audience's reactions, focusing instead on trivial details."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrasing is awkward and lacks grammatical correctness, such as 'she is giving birth to the last month of her pregnancy' which is nonsensical."
+        }
+      ],
+      "provisional_score": 1
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear focus on Demelza Poldark and her new baby, establishing a central theme related to the show's characters."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary captures key points about the new baby and Ross Poldark's affection, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that Demelza is the 'oldest mother,' which is not mentioned in the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains awkward phrasing, such as 'she is giving birth to the last month of her pregnancy passing,' which affects readability."
+        },
+        {
+          "criterion": "coherence",
+          "reason": "The flow of information is disrupted by the lack of context regarding the timeline of the pregnancy, which is a significant aspect of the article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 1,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.0,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

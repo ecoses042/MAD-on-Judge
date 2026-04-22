@@ -1,0 +1,63 @@
+{
+  "article_id": "dm-test-26e4e19d945cedcb489f28808c730658139c9415",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, abruptly ending after mentioning Hernandez's loan at Real Madrid without discussing other relevant details such as the interest from multiple clubs or the financial aspects."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key points about the interest from other European clubs and the context of Hernandez's situation, which are crucial for understanding the full scope of the transfer news."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary uses lowercase letters for proper nouns and the beginning of sentences, which detracts from its readability and professionalism."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding Orlando City's interest in Javier Hernandez, including relevant details about his current situation and the potential impact on the club."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of Hernandez's interest from Orlando City and his struggles at Real Madrid, which are the main themes of the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits several details from the article, such as the interest from other clubs and the financial aspects of the potential transfer, which could provide a more complete picture."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization and punctuation, making it less readable and fluent."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-14c813567696f4e63a39993c09d4edb454036179",
+  "system_name": "system_3",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow and does not connect the various elements of the announcement, such as the context of the video and its purpose."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details about the content of the video, such as the lyrics and the couple's motivations for making the video, which are essential to understanding the significance of the announcement."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as inconsistent capitalization and punctuation, which detract from its readability."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the couple's names consistently; it starts with 'jesse and melissa meek' but later refers to them as 'the couple,' which could lead to confusion."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information by introducing the couple, their announcement, and the context of the video."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the article, including the couple's announcement and the video's popularity."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits important details from the article, such as the content of the rap and the couple's motivations for making the video."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as inconsistent capitalization and punctuation, which affect readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-8847383b72167c3f3dd2161b5b091b580c8f4da7",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow and does not connect the details about the landslide and the local residents' reactions."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the detail about 'a man stands on a clump of land' without context, which is not present in the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention the surprise of local residents and their lack of awareness of the event, which is a key point in the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains awkward phrasing and lacks proper capitalization, making it less fluent."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the emergence of the landmass and its dimensions."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, including the cause of the land emergence being a landslide."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points, such as the dimensions of the new landmass and the geological explanation for its emergence."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as the lack of proper capitalization and punctuation, which affects readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

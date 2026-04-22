@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-b255397ee863bd8faf9def57c0f76769153d905e",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, jumping abruptly between points without proper transitions."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits key details about the father's criticism of the security measures and the context of the family's situation, which are essential for understanding the incident."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'also performed a patting patting down' contains a repetition error, which disrupts the fluency of the text."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention the airport's response and the father's eventual resolution regarding the toy gun, which are important aspects of the story."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with the confiscation of the toy gun and mentioning the father's description of the security officers' actions."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the events described in the article without introducing any new facts or altering the context."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'patting patting down' contains a repetition error, which disrupts the flow of the summary."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary lacks important details, such as the father's reaction and the airport's defense of their actions, which are key points in the article."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

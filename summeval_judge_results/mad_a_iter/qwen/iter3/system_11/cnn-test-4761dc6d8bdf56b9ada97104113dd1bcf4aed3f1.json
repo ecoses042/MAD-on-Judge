@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-4761dc6d8bdf56b9ada97104113dd1bcf4aed3f1",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is coherent and consistent with the source text, accurately reporting the main facts about Varvara's record-breaking migration. However, it fails the relevance criterion significantly because it truncates the text abruptly after the third sentence, omitting the crucial scientific implications regarding the whale's origin (Eastern vs. Western gray whale) and the potential impact on population estimates, which are key points of the article."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is excellent in coherence, consistency, and fluency, accurately reflecting the source text without hallucinations. It captures the key facts about Varvara's record-breaking migration. The score is slightly reduced on relevance (from 5 to 4) because the summary cuts off abruptly after the third sentence, omitting the significant scientific implications regarding the whale's origin and population status mentioned in the latter half of the article, though this truncation is a common summarization artifact rather than a flaw in the text provided."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is factually accurate and coherent but fails significantly on relevance by cutting off the text mid-story, omitting the crucial scientific findings about Varvara's potential species classification and population implications."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is well-structured and factually consistent with the provided text. The score for relevance was adjusted down to 4 (from a potential 5) because the summary ends abruptly after the third sentence, completely omitting the significant scientific findings regarding Varvara's origin and the implications for western gray whale populations, which constitute the main body of the article."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding relevance. The summary accurately reflects the provided text up to the point where it cuts off (indicated by the abrupt ending before 'Fourth baby orca...'). While the omission of the scientific findings about species classification is a significant loss of information from the full article, the summary remains consistent with the source text provided and maintains good coherence and fluency. Therefore, no harsher penalty is warranted."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. While the summary is grammatically correct and factually consistent with the provided text, it fails to capture the core significance of the article, which lies in the scientific implications regarding Varvara's origin and the potential reclassification of western gray whales. The abrupt ending after the third sentence renders the summary incomplete and misses the most important information."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 4.5,
+      "relevance": 3.5,
+      "overall_judge": 4.5
+    }
+  }
+}

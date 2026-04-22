@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-cf4ba8f94f2dd5604eb8f8a4e655c10cf0996365",
+  "system_name": "system_7",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, as it jumps directly to the robbery without providing context about the victim or the circumstances."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the description of the robber's clothing, the reaction of the victim's daughter, and the police's appeal for public assistance, which are important for understanding the incident."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the specific location of the robbery (Union St dairy), which is relevant to the context."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary has a fragmented structure and lacks smooth transitions between sentences, making it less readable."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the robbery incident."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the key details from the article, such as the use of a cartoon mask and the amount of cash stolen."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important aspects of the robbery, including the description of the robber and the outcome."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization and punctuation, making it less fluent."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits important context, such as the reaction of the dairy owner's daughter and the police's appeal for information."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-207df192edc1836250b69d1bc5b9e6a38206eb78",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information. It jumps between points without proper transitions, making it difficult to follow the argument."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the statistic about a third of 10-11 year olds being overweight or obese without context or connection to the main findings about antibiotics, which is inconsistent with the source document's focus."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'the may also be fattening our children,' which should be 'they may also be fattening our children.'"
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key points, such as the specific findings regarding boys and girls and the implications of repeated antibiotic prescriptions, which are crucial to understanding the study's conclusions."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, starting with the main finding about antibiotics and weight gain in toddlers."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the study, including the association between antibiotic use and obesity in children, which is central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits important details, such as the specific statistics regarding obesity rates in boys and girls and the implications of the study's findings."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'the may also be fattening our children,' which disrupts the flow and clarity of the text."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

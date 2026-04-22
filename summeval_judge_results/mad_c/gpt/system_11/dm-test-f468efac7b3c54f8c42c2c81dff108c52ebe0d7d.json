@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-f468efac7b3c54f8c42c2c81dff108c52ebe0d7d",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, abruptly ending without mentioning the pundits' analysis or their opinions on the foul."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits key details about the pundits' agreement on the foul and their specific comments, which are crucial to understanding the context of the goal."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "There are grammatical errors, such as 'give' instead of 'to give' and inconsistent capitalization of names."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary does not cover the key points regarding the pundits' reactions, which are central to the article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events leading to the goal, starting with Hazard's score and detailing the build-up involving Terry's challenge and Fabregas's involvement."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the events described in the article, including the foul by Terry and the subsequent goal by Hazard, without introducing any new or conflicting information."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key moments of the match, specifically the goal and the controversial challenge, which are central to the article's content."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'give' instead of 'to give' and lacks proper capitalization, which affects its readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

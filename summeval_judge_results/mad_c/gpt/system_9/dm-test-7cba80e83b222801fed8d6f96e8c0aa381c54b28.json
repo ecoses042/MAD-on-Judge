@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-7cba80e83b222801fed8d6f96e8c0aa381c54b28",
+  "system_name": "system_9",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, jumping abruptly between topics without smooth transitions."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as Lindegaard's Instagram post, their son, and the context of his struggles at Manchester United, which are important for understanding the situation."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states 'denmark international' instead of 'Danish international', which is the correct term."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary uses lowercase letters for names and places, which is grammatically incorrect and affects readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, starting with Lindegaard's enjoyment of the weather and his relationship with Beqiri, followed by their marriage and his struggles at Manchester United."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, mentioning Lindegaard's marriage to Beqiri and his challenges with playing time at Manchester United without introducing any new facts."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of Lindegaard's personal life and his professional struggles, which are the main themes of the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization and punctuation, which affects its readability and fluency."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

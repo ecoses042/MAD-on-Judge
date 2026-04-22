@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-5be0a9584b051175d9f4842a143b76385335d96a",
+  "system_name": "system_7",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, jumping from the league position to the match result and then to player contracts without clear connections."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits critical information about the financial implications of failing to qualify for the Champions League, which is a key point in the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states the match result as '1-0' without confirming if this was the actual score, which could mislead readers."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is somewhat choppy and lacks smooth transitions between sentences, affecting overall readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, starting with Manchester City's current position in the league and mentioning the recent loss to Manchester United."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding the players' incentivized contracts and the club's financial fair play requirements."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on key points such as the team's league position, recent match outcome, and the players' contracts, which are central to the article's content."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary could benefit from improved fluency, as it lacks some connecting phrases that would enhance readability."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits important details about the potential financial consequences for the players and the overall context of the team's performance this season."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

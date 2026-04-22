@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-0f0789390d67698283cc87b2e046b5c5cd77edb7",
+  "system_name": "system_5",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information and does not connect the events in a structured manner."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the reactions of the tourists and the context of the incident being caught on camera, which are important for understanding the significance of the event."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as inconsistent capitalization and punctuation, which affect readability."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the embarrassment of the guard or the reactions of the crowd, which are present in the source article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, detailing the guard's slip and the immediate consequences, which helps the reader understand what happened."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the main incident described in the article without introducing any new or unrelated information."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key event of the guard slipping and falling, which is the central point of the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization and punctuation, making it less readable and fluent."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

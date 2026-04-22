@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-2cf8c2d1d2ceb1980249f77e703f9039e63799d0",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from a significant relevance issue: it completely omits the specific details about the fathers' attire (suits) and expressions (pained/energetic), which are key descriptive elements in the source text. Additionally, while mostly consistent, it misses the nuance that 'salaryman' refers to clothing choices rather than just a title, though this is a minor point compared to the missing visual details."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and consistent with the source text. It captures the main points effectively. It receives a slightly lower relevance score (4) because it omits several specific details mentioned in the article, such as the fathers' suits, the daughters' casual clothing, the locations (Japanese landmarks), and the specific reactions/expressions of the subjects, though these are not hallucinations."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "The strict judge's assessment is accurate. The summary fails to capture key visual details (fathers in suits, pained expressions) which are central to the article's description of the images. Therefore, I maintain the low relevance score and the slight deduction for consistency regarding the 'salaryman' nuance."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is well-structured, grammatically correct, and strictly adheres to the source text without hallucinations. While it omits specific details like clothing, locations, and expressions (which lowers relevance from a perfect 5), this is an acceptable trade-off for a concise summary of the main concept. No harsher penalties are warranted."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary is coherent and fluent but lacks relevance because it omits key visual details mentioned in the article (fathers in suits, pained expressions, specific poses). It also misses the context of the book title translation nuances regarding 'salaryman' vs 'salary man'. Therefore, the scores remain unchanged."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary is concise and accurate but misses several key details present in the source text (clothing contrast, specific expressions like 'pained' or 'giggling', and the fact that they are posed in front of Japanese landmarks). However, these omissions do not constitute a failure to summarize; rather, they reflect a choice for brevity. The strict judge's score is fair."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.5,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.5
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-2cf8c2d1d2ceb1980249f77e703f9039e63799d0",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 2,
+        "overall_judge": 1.8,
+        "rationale_for_score": "The summary contains severe hallucinations and logical failures. It claims the images capture 'teenagers in the air next to their daughters,' contradicting the source which states fathers are leaping while daughters stand po-faced. It also invents a new subject ('father-daughter photographer') not present in the text. The final sentence is nonsensical, claiming the photographer was captured by himself. These are clear hallucinations and severe mismatches with the source."
+      },
+      "strict": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 1,
+        "overall_judge": 1.2,
+        "rationale_for_score": "The summary contains severe hallucinations and logical failures. It claims the images capture 'teenagers in the air next to their daughters', contradicting the source which states fathers are leaping while daughters stand po-faced. It invents a non-existent book titled 'Daughter and a Salaryman each image'. It falsely claims the photographer was 'captured by photographer Yûki Aoyama' (identity confusion). The text is incoherent, grammatically broken, and introduces facts not present in the article."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 1,
+        "relevance": 1,
+        "overall_judge": 1.0,
+        "adjustment_notes": "The summary is severely flawed and agrees with the lenient judge's assessment. It contains multiple hallucinations: it incorrectly states teenagers are in the air (source says fathers leap while daughters stand), invents a 'father-daughter photographer' subject not in the text, and ends with a nonsensical sentence about the photographer being captured by himself. The grammar is poor ('that roughly translates to daughter and a salaryman each image'). There is no reason to raise scores; the summary fails all criteria."
+      },
+      "lenient": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 1,
+        "overall_judge": 1.2,
+        "adjustment_notes": "The strict judge's assessment was accurate and necessary. The summary contains severe hallucinations (claiming teenagers are in the air instead of fathers, inventing a book title 'Daughter and a Salaryman each image', and confusing the photographer with himself). These are fundamental failures in consistency and coherence that cannot be overlooked. I maintain the strict judge's low scores as they correctly identify the summary as factually incorrect and incoherent."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 1,
+        "relevance": 1,
+        "overall_judge": 1.0,
+        "adjustment_notes": "The strict judge's assessment is correct. The summary contains severe hallucinations (claiming teenagers are in the air instead of fathers, inventing a 'father-daughter photographer'), grammatical errors ('that roughly translates to daughter and a salaryman each image'), and nonsensical phrasing at the end. It fails all criteria."
+      },
+      "strict": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 1,
+        "overall_judge": 1.2,
+        "adjustment_notes": "The lenient judge's points were accepted because they correctly identified the severe hallucinations in the summary (e.g., claiming teenagers are in the air instead of fathers, inventing a nonsensical book title, and confusing the photographer with himself). These are fundamental failures in consistency and coherence. The strict judge's low scores were accurate and necessary; no points need to be raised."
+      }
+    },
+    "final": {
+      "coherence": 1.0,
+      "consistency": 1.0,
+      "fluency": 1.5,
+      "relevance": 1.0,
+      "overall_judge": 1.1
+    }
+  }
+}

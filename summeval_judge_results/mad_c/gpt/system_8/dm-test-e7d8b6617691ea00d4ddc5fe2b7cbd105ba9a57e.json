@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-e7d8b6617691ea00d4ddc5fe2b7cbd105ba9a57e",
+  "system_name": "system_8",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, abruptly shifting from Munden's arrest to Mr. Jenkins' comments without proper context or connection."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces new information about Munden being 'deeply disturbed' and having a 'schizophrenia-like personality disorder,' which is not mentioned in the source article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on Mr. Jenkins' comments rather than the key details of Munden's actions, his background, and the ongoing manhunt, which are more relevant to the situation."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The repetition of 'He is a very dangerous man' is redundant and disrupts the fluency of the summary."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding Stephen Munden's background and the nature of his offenses."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article about Munden's arrest and the context of his offenses without introducing any new facts."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of Munden's criminal behavior and the implications for public safety, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains repetitive phrases, such as 'He is a very dangerous man,' which detracts from its overall fluency and readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 1,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.0,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

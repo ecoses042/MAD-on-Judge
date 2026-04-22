@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-88c2481234e763c9bbc68d0ab1be1d2375c1349a",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and consistent with the source text, but it suffers from poor relevance due to excessive truncation. It omits critical details such as the cause of the fire (rear tire blowout), the specific safety outcomes for all passengers (husband, tour manager, driver), the fact that the fire destroyed everything except the Bible, and the upcoming performance at the ACM Awards. By cutting off mid-sentence regarding the band members not on the bus and ignoring the aftermath details, it fails to capture the full scope of the key information."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is well-structured, fluent, and consistent with the source text. It captures the main event (fire), key details (location, witness Barnett's reaction), and a relevant follow-up (Hillary Scott's post). It receives a slight deduction on relevance because it omits other significant details from the article, such as the cause of the fire (tire blowout), the safety status of everyone involved, and the band's upcoming performance."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is grammatically correct and factually consistent, but it suffers from severe truncation that results in poor relevance. It misses the cause of the fire, the specific safety outcomes for all individuals mentioned in the text, the emotional detail about the Bible, and the upcoming event context. These are significant omissions for a news summary."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is well-structured and consistent. The slight deduction in relevance (score of 4) is justified because the summary omits key details present in the article, specifically the cause of the fire (tire blowout), the confirmation that everyone was safe, and the band's upcoming performance at the ACM Awards."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "No changes to scores. The lenient judge's points were accepted because the summary indeed suffers from severe truncation, omitting key details like the cause of the fire (tire blowout), the safety status of specific individuals (husband, tour manager, driver), the emotional detail about the Bible, and the upcoming ACM Awards performance. These are significant omissions for a news summary."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary is well-structured and factually consistent, but it misses significant key details regarding the cause of the fire (tire blowout), the safety status of everyone on board, and the band's upcoming performance, which are central to the news story."
+      }
+    },
+    "final": {
+      "coherence": 4.5,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.5
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-97bbda7ec22a736cd174b51513c72a6372d13d35",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary fails the consistency criterion severely due to a major hallucination: it conflates the estimated value of the Yankees letters ($300k-$600k) with the Mets car auction estimates ($20k-$30k), stating 'the auction was $20,000 to $260,000'. Additionally, the final sentence is a grammatical fragment that does not form a complete thought. The fluency is poor due to these errors and lack of punctuation."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 2.8,
+        "rationale_for_score": "The summary contains a major hallucination in the 'consistency' criterion: it incorrectly states the auction estimate was '$20,000 to $260,000'. The source text specifies the letters were estimated at $300k-$600k and the Mets car (not the letters) was estimated at $20k-$30k. Additionally, the summary ends with a sentence fragment ('he promised...'), hurting fluency and coherence. However, it captures the key facts about Reggie Jackson and the auction outcome correctly."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a severe factual error (hallucination) where it conflates the estimated values of two different items (Yankees letters vs. Mets car), creating an impossible range for the main subject. Additionally, the final sentence is a grammatical fragment that fails to complete its thought, significantly impacting fluency and coherence. The scores remain low as these are critical flaws."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The lenient judge's scores were too high given the severity of the errors. The summary contains a critical consistency error by conflating the auction estimate for the letters ($300k-$600k) with that of the Mets car ($20k-$30k), stating the letters' estimate was '$20,000 to $260,000'. This is a major hallucination. Additionally, the summary ends with an incomplete sentence fragment ('he promised...'), which severely impacts fluency and coherence. The relevance score remains 4 as it covers the main entities and events, despite the factual mix-up."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary contains a critical factual error (hallucination) by conflating the estimated value range of the Yankees letters ($300k-$600k) with the Mets car auction details, creating an impossible range for the main subject. Furthermore, the final sentence is a grammatical fragment that fails to complete its thought, significantly impacting fluency and coherence. These are severe flaws that justify the low scores."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 2.0,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary contains a critical factual error (hallucination) by merging the auction estimates for the letters and the Mets car into a single incorrect range for the letters. Additionally, the final sentence is a grammatical fragment, severely impacting fluency and coherence. No score reduction was necessary as the initial lenient scores were too high given these severe flaws."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 1.0,
+      "fluency": 2.0,
+      "relevance": 3.5,
+      "overall_judge": 2.0
+    }
+  }
+}

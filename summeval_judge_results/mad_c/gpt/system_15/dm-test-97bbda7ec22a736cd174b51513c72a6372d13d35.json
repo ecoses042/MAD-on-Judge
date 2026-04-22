@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-97bbda7ec22a736cd174b51513c72a6372d13d35",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow and is fragmented, making it difficult to understand the overall context."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits key details about the auction, such as the fact that the only bid was made by a Sotheby's employee and the humorous remarks made by Reggie Jackson."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as inconsistent capitalization and spacing."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention the significance of the letters and their history, which are important to the context of the auction."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the auction and the letters' ownership."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article about the auction and the expected value of the letters."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the auction and the ownership of the letters, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as improper capitalization and punctuation, which affect readability."
+        },
+        {
+          "criterion": "coherence",
+          "reason": "The summary is somewhat fragmented and lacks a complete narrative, missing details about the auction's outcome and Reggie Jackson's intentions."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

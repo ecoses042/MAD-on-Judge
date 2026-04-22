@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-02c955067d00f38b6978b805d5a8701a787f78ac",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is coherent and fluent but fails significantly on relevance and consistency due to truncation. It cuts off mid-sentence after the first paragraph of information, omitting critical details about other victims (the woman, the six-year-old girl), hospital destinations, the trapped person, rescue efforts, and road closures. By stopping abruptly, it presents an incomplete picture rather than a summary of the key points."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is well-structured, grammatically correct, and fully consistent with the source text. It captures the most critical details (location, time, number of victims, specific injuries of those airlifted). It receives a score of 4 for relevance because it omits information about the other injured parties (the woman, the six-year-old girl, the infant, etc.) and the rescue efforts for the trapped person, which are significant parts of the original report. However, given the lenient rules, this is considered a minor weakness rather than a failure."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is truncated mid-sentence and omits significant details regarding other victims, hospital destinations, rescue efforts, and road closures, making it incomplete and low on relevance despite being grammatically correct."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate: the summary is well-structured and consistent but omits significant details regarding other victims (woman, six-year-old girl, infant) and rescue efforts (trapped person), which impacts relevance. The score of 4 for relevance is appropriate given these omissions."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "The lenient judge's points regarding coherence and fluency are accepted as the summary is grammatically correct and logically structured within its truncated scope. However, the relevance score remains low (2) because the summary is incomplete; it cuts off mid-sentence and omits critical details about other victims, hospital destinations, rescue efforts, and road closures present in the source text. The consistency score is raised to 5 as the included information accurately reflects the source without hallucinations."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary is well-structured and factually consistent but significantly truncates the information by omitting details about the second group of patients airlifted (woman and six-year-old girl), the infant and others taken to Ipswich Hospital, the trapped victim, and the highway closure. These are key points in a news report about a multi-casualty incident, making the relevance score of 4 appropriate."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 5.0,
+      "fluency": 4.5,
+      "relevance": 3.0,
+      "overall_judge": 3.9
+    }
+  }
+}

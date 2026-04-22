@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-e06ff0eb7c4fa4416fda84a9a239b15480c5a9d9",
+  "system_name": "system_2",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information and is repetitive, mentioning the same details about 'Rich' and his advertisement multiple times."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to cover key points such as the specific requirements listed in the advertisement and the humorous tone of the original article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as inconsistent capitalization and punctuation, which affect readability."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the name 'Rich' without proper context, making it unclear who he is in relation to the advertisement."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear focus on the main subject, which is the advertisement posted by the man from Humpty Doo, and it maintains a logical flow by mentioning both his requirements and personal details."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the content of the article without introducing any new facts or misrepresenting the information."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary lacks specific details about the man's requirements and personal attributes that are crucial to understanding the context of the advertisement."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as inconsistent capitalization and punctuation, which detract from its readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

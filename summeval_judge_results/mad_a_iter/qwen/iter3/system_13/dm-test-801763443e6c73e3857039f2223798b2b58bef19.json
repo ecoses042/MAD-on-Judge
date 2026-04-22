@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-801763443e6c73e3857039f2223798b2b58bef19",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is well-structured, grammatically correct, and accurately reflects the main points of the article (denial of leaving, falling out with Blanc). It is slightly penalized on relevance because it omits the specific quotes from Van der Wiel and the context regarding Dani Alves, which are present in the source text."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from significant relevance issues by omitting the core evidence (Van der Wiel's direct quotes about loving the club) and crucial context regarding Dani Alves being linked with PSG, which explains why Van der Wiel might be sold despite his denial. It also repeats the same point twice ('denied claims' and 'not interested'), reducing efficiency."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate: the summary effectively captures the core narrative (denial of transfer, conflict with manager) but misses secondary details like specific quotes and the Dani Alves context, justifying a slight relevance penalty."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary repeats the main point (denial of leaving) twice in slightly different phrasing, which reduces efficiency and relevance. Furthermore, it completely omits the crucial context regarding Dani Alves being linked to PSG, which is a significant part of the story explaining the potential transfer situation. Therefore, I maintain the lower relevance score."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "Adjusted fluency down to 4 because the summary text is entirely lowercase and lacks standard capitalization/punctuation, which affects readability despite being grammatically correct in structure. Adjusted relevance down to 3 because the strict judge's point about missing key context (specifically the Dani Alves transfer link) is valid; omitting this significant detail regarding the club's potential squad changes makes the summary less comprehensive than a score of 4 would suggest."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding relevance. The summary repeats the core denial of leaving PSG twice (once in the first sentence and again in the third), which is redundant and reduces efficiency. More importantly, it completely omits the significant context about Dani Alves being linked to a move to PSG, which explains the potential transfer scenario mentioned in the source text. Therefore, the relevance score remains low."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.5,
+      "fluency": 4.5,
+      "relevance": 3.0,
+      "overall_judge": 4.2
+    }
+  }
+}

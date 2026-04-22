@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-051db270afc32571a08c15124330efe89d80fea8",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, as it repeats the same sentence about the sniper rifle being stolen without adding new details."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to include key details about how the theft occurred, the police investigation, and the implications of the theft, which are crucial for understanding the incident."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains inconsistent formatting with the use of parentheses and dashes, which disrupts the reading experience."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention that the rifle was secured 'properly' according to police, which is a significant detail from the article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the theft of the FBI agent's sniper rifle."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the details from the article, including the circumstances of the theft and the security measures taken."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key event of the rifle theft and its context related to President Obama's visit, avoiding trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains awkward phrasing and punctuation issues, such as the use of '-lrb-' and '-rrb-', which disrupts the flow."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

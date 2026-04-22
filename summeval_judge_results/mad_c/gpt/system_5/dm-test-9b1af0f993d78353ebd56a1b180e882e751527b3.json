@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-9b1af0f993d78353ebd56a1b180e882e751527b3",
+  "system_name": "system_5",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, abruptly ending without completing the thought about the billboard."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to include key details about the reactions of Siler's family and friends regarding the billboard, which is central to the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as inconsistent capitalization of names and lack of proper punctuation."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention that Siler was wanted on an active felony probation and parole warrant, which is a significant detail from the article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with the shooting incident involving Aaron Siler and Officer Pablo Torres."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding the circumstances of the shooting and the status of Officer Torres."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary includes key details about the shooting and the billboard, which are central to the article's narrative."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as the lack of proper sentence structure and punctuation, making it less readable."
+        },
+        {
+          "criterion": "coherence",
+          "reason": "The summary is incomplete and does not provide a full context about the billboard or the reactions from Siler's family and friends."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

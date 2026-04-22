@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-0cdd7cdb5d99c36f25f1f4fa0e962d558f7ff07b",
+  "system_name": "system_8",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear structure and logical flow, making it difficult to follow the information presented."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces players without context or a complete list, which is inconsistent with the source document that provides a full squad list."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary repeats the information about being in Group D alongside Italy, which is trivial and does not add value."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is fragmented and lacks complete sentences, affecting readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear structure by outlining the key points about the England Under-17s' qualification and their group placement."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important information, such as the team's qualification, group opponents, and the opening match date."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits details about the squad members and their clubs, which are relevant to understanding the team's composition."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary has some awkward phrasing and lacks smooth transitions, making it less fluent."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

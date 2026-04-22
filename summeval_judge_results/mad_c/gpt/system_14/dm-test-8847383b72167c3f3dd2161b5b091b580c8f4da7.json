@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-8847383b72167c3f3dd2161b5b091b580c8f4da7",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, jumping abruptly from the rise of the coastline to the residents' experience without connecting the two."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that residents say there are 'no tremors' instead of 'they didn't hear any sounds and there were no tremors,' which alters the original meaning."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the dimensions of the new landmass and the context of the landslide, which are important for understanding the event."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'say they are no tremors' instead of 'say they felt no tremors,' which affects readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the emergence of the coastline and the geological explanation behind it."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, specifically mentioning the rise of the coastline and the belief that it is due to a landslide."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the article, including the height of the new coastline and the residents' lack of awareness of any tremors."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'say they are no tremors,' which should be 'say they felt no tremors.' This affects the overall readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

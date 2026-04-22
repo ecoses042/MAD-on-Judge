@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-eeef09d26cf30c2124c0399b08eedc6321fe5d20",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from a significant grammatical error ('Neymar and Alves proved their dedication' uses plural 'their' for singular subjects), reducing fluency. More critically, it fails the consistency criterion by omitting the specific context that Neymar was watching with his sister Rafaella, which is a major detail in the source text. It also misses the key information regarding Neymar's recent performance (leading Brazil to a win) and upcoming fixtures, making it incomplete relative to the source."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is consistent with the source text and captures the main events (Neymar/Alves watching basketball, Real Madrid's standing). However, it suffers from minor grammatical awkwardness ('Dani Alves proved their dedication' - singular/plural mismatch) and lacks a clear logical flow between sentences. It also misses key context like the specific match result or the upcoming La Liga game, making relevance average."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a significant grammatical error ('their' for singular subjects) and omits major details present in the source text (Neymar's sister Rafaella, Neymar's recent win against Chile, and upcoming fixtures). These omissions make the summary incomplete and inconsistent with the source, warranting low scores."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I raised the coherence score slightly to 3 because while the sentences are grammatically correct (fixing the lenient judge's concern about 'their' vs 'his'), the logical flow is poor; it jumps from a specific event to a general statement back to a third party without clear transitions. I lowered the relevance score to 2 because the summary misses significant key points present in the source text, such as the actual basketball match result (85-80), Neymar's recent international win against Chile, and the upcoming La Liga fixture against Celta Vigo, which are major news items in the article."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment that the summary is flawed. The use of 'their' for singular subjects (Neymar and Alves) is a grammatical error affecting fluency. Furthermore, the summary omits significant details from the source text, such as Neymar's sister Rafaella attending the game, Neymar's recent victory against Chile, and the upcoming match against Celta Vigo, which impacts relevance and consistency with the full scope of the article."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary suffers from poor logical flow (jumping between events without transitions) and critically misses major information present in the source text, such as the basketball match score, Neymar's international win, and the upcoming La Liga fixture. Therefore, I maintain the low relevance score and do not increase the overall score."
+      }
+    },
+    "final": {
+      "coherence": 3.0,
+      "consistency": 3.5,
+      "fluency": 4.0,
+      "relevance": 2.5,
+      "overall_judge": 3.0
+    }
+  }
+}

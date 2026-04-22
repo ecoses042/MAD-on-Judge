@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-404f859482d47c127868964a9a39d1a7645dd2e9",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.8,
+        "rationale_for_score": "The summary fails the consistency criterion because it attributes the claim about 'targeting extremely wealthy older men' to Donald Sterling ('donald sterling accused stiviano...'), whereas the source text explicitly states that Shelly Sterling (Donald's wife) made this accusation against Stiviano. Additionally, the summary is overly brief and lacks coherence by omitting the central outcome of the article: the judge's order for Stiviano to repay $2.6 million in gifts."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from a significant consistency error: it attributes the claim that Stiviano was 'targeting extremely wealthy older men' to Donald Sterling, whereas the source text clearly states this accusation came from Shelly Sterling (Donald's wife). Additionally, the summary omits the article's main news hook regarding the $2.6 million court ruling and the specific details of the gifts, focusing only on the conflicting claims."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary contains a critical factual error (hallucination) by attributing Shelly Sterling's accusation to Donald Sterling, which violates consistency. Furthermore, it completely omits the main news hook—the court order for Stiviano to repay $2.6 million—making it irrelevant to the article's primary purpose."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "The lenient judge's assessment of 'consistency: 4' was incorrect; the summary explicitly attributes a claim to Donald Sterling that the source text clearly assigns to Shelly Sterling (his wife), which is a significant factual error warranting a lower score. The relevance score was also too high for a summary that completely omits the article's primary news hook (the $2.6 million court ruling) and focuses only on minor background details. Coherence and fluency remain high as the sentences are grammatically correct and logically ordered within their limited scope."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I lowered the consistency score from 2 to 1 because the summary explicitly attributes the accusation of 'targeting extremely wealthy older men' to Donald Sterling ('donald sterling accused stiviano...'), whereas the source text clearly states this was an accusation made by Shelly Sterling. This is a significant hallucination regarding who made the claim. I also lowered the relevance score from 2 to 1 because the summary completely omits the article's primary news hook: the court order for Stiviano to repay $2.6 million, which is the main event described in the text."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary contains a significant factual error regarding consistency by attributing the accusation of targeting wealthy men to Donald Sterling instead of his wife, Shelly Sterling. Additionally, the relevance score was too high because the summary completely omits the article's main news hook: the $2.6 million court ruling ordering Stiviano to pay back the gifts. The summary only covers minor background details."
+      }
+    },
+    "final": {
+      "coherence": 3.0,
+      "consistency": 1.5,
+      "fluency": 4.5,
+      "relevance": 2.0,
+      "overall_judge": 2.5
+    }
+  }
+}

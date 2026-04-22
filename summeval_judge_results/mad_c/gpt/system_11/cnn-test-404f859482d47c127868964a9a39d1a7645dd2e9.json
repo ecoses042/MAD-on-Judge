@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-404f859482d47c127868964a9a39d1a7645dd2e9",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information and abruptly ends without providing a complete overview of the article."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention key details about the lawsuit, the nature of the gifts, and the implications of the court's decision, which are crucial for understanding the context."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The use of abbreviations like 'lrb' and 'rrb' is inappropriate and disrupts the readability of the summary."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not accurately reflect the details of the gifts mentioned in the article, such as the variety and nature of the items."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information by starting with the context of Donald Sterling's past actions and then transitioning to the recent court ruling against V. Stiviano."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the key details from the article, including the amount Stiviano is ordered to pay back and the context of the lawsuit initiated by Sterling's wife."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important information regarding the court ruling and its implications, avoiding trivial details about the gifts."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, such as the use of '-lrb- cnn -rrb-' which disrupts the flow and readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.0,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

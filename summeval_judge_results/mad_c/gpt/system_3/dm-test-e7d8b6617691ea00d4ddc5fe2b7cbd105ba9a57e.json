@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-e7d8b6617691ea00d4ddc5fe2b7cbd105ba9a57e",
+  "system_name": "system_3",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, repeating the same sentence about Munden being last seen leaving a hospital."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to include critical details about Munden's criminal background, the nature of his offenses, and the urgency of the manhunt, which are essential for understanding the situation."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as inconsistent capitalization and spacing around commas."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention Munden's age or the specific details of his offenses, which are present in the source document."
+        }
+      ],
+      "provisional_score": 1
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding Stephen Munden's disappearance and the subsequent manhunt."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the key details from the article, including Munden's age, location, and the fact that he was detained under the Mental Health Act."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary lacks important context about Munden's criminal history and the nature of his offenses, which are crucial for understanding the urgency of the manhunt."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains repetitive phrases, which detracts from its readability and fluency."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

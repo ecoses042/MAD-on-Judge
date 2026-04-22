@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-e880fda4c25289f8325574246f0f8ed4ff5eb26b",
+  "system_name": "system_9",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow and does not connect the features of the house to the overall appeal or context of the property."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits significant details such as the unique features of the house, the auction date, and the potential concerns regarding renovations, which are crucial for understanding the property's value."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention that some features have been upgraded, which is an important aspect of the property's condition."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary uses lowercase letters for the beginning of sentences, which is grammatically incorrect and affects readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, highlighting the key features of the property in a structured manner."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, mentioning the original features of the home and the guide price without introducing any new facts."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important aspects of the article, such as the untouched condition of the home and its key features, while avoiding trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization and punctuation, which affects its readability and fluency."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

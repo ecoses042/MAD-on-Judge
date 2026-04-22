@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-2feca9acf532e33f1ab7442c442c8e19787d8d7b",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is consistent with the source text and flows logically (coherence/consistency are excellent). However, it only covers the very first event described in the article, omitting significant details about the fish's history, the owner's background, and the conclusion of the interaction. While this makes it a partial summary rather than a complete one (lowering relevance), there are no hallucinations or grammatical errors that would warrant a lower score for fluency."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is consistent with the source text and contains no hallucinations. However, it suffers from severe relevance issues as it only covers the first two sentences of the article, ignoring the vast majority of the content (the fish's history, the removal of other fish, feeding habits, specific species details, etc.). Additionally, the fluency is poor due to a typo ('from within side') and inconsistent capitalization ('roland giroux', 'finger'), which detracts from professional quality."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I raised the coherence score slightly because the sentences are grammatically correct and flow logically from one to the next, though the overall structure is fragmented due to brevity. I maintained consistency at 5 as there are no hallucinations. Fluency remains 4 for minor punctuation issues (e.g., 'side' instead of 'side', spacing). I lowered relevance significantly from 3 to 2 because the summary covers only the first few seconds of a much longer narrative, missing the context of the fish's history, the reason for its isolation, and the emotional conclusion where the fish follows the owner. This makes it a very incomplete representation of the source text."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I lowered the coherence score slightly because the summary is extremely fragmented and lacks a concluding thought or broader context, making it feel incomplete rather than just short. I maintained consistency at 5 as there are no hallucinations. I significantly lowered fluency from 3 to 2 due to the specific typo ('within side') and lack of capitalization for proper nouns (Roland Giroux), which are objective errors. I drastically reduced relevance from 2 to 1 because the summary captures only a tiny fraction of the source text's information, failing to mention the backstory about the bullied fish, the feeding routine, or the species details, rendering it a very poor representation of the article."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is grammatically correct and factually consistent (Consistency 5, Fluency 4), but it suffers from severe fragmentation due to its extreme brevity (Coherence 3). Most critically, it fails to capture the essence of the source text by omitting the backstory of the bullied fish, the owner's intervention, and the emotional conclusion where the fish follows the owner. Therefore, the relevance score is appropriately low at 2."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary contains a clear typo ('within side' instead of 'inside'), lacks capitalization for the proper noun 'Roland Giroux', and is grammatically incomplete (missing articles like 'a'). Regarding relevance, the summary captures only the first sentence of the source text's narrative arc, ignoring the significant backstory about the bullied fish, the feeding routine that built trust, and the species details. Therefore, it fails to represent the article's key points. I maintain the lenient judge's scores as they accurately reflect these objective errors and the severe lack of coverage."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 5.0,
+      "fluency": 3.0,
+      "relevance": 1.5,
+      "overall_judge": 2.5
+    }
+  }
+}

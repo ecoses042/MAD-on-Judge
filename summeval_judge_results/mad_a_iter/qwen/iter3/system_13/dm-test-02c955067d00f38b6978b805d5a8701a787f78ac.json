@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-02c955067d00f38b6978b805d5a8701a787f78ac",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is coherent and fluent but suffers from significant relevance issues by omitting the majority of the article's key information (injuries, hospital transfers, rescue operations). It also fails consistency criteria slightly due to inconsistent capitalization and punctuation compared to standard English conventions, though the facts remain grounded in the text."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "rationale_for_score": "The summary is grammatically correct and consistent with the source text. However, it only covers the very first sentence of the article, omitting significant details about injuries, hospital transfers, rescue operations, and road closures. While lenient rules allow for a score >= 3, the severe truncation limits its relevance to 'Average' (3) rather than 'Good' (4), though I will round up slightly due to the strict adherence to facts in the included portion."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is coherent and fluent but fails significantly on relevance by omitting critical details like injuries, hospital transfers, and rescue operations. It also has minor consistency issues regarding capitalization (e.g., 'ten', 'brisbane') which lowers its quality slightly."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "The lenient judge correctly identified that the summary only covers the first two sentences of the article, omitting critical details about injuries, hospital transfers, rescue operations, and road closures. While the included text is factually consistent and fluent, the severe truncation significantly impacts relevance. I agree with the 'Average' (3) rating for relevance but adjust the overall score from 4.5 to 4.0 to better reflect that a summary missing over half the key information of a news report cannot be considered 'Good'."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "No changes made. The lenient judge's assessment aligns with the strict criteria: while the summary is grammatically correct and logically structured (coherence/fluency), it significantly underperforms on relevance by omitting the critical details of injuries, hospital transfers, and rescue operations which constitute the bulk of the article's information. The consistency score remains 4 due to the lowercase capitalization errors noted in the source text."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary is factually consistent and fluent but fails relevance by truncating the text after the second sentence, omitting critical details regarding injuries, hospital transfers, rescue operations, and road closures. The overall score was adjusted down from 4.5 to 4.0 to reflect that a summary missing over half of the key information cannot be considered 'Good'."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.5,
+      "fluency": 4.5,
+      "relevance": 3.0,
+      "overall_judge": 4.2
+    }
+  }
+}

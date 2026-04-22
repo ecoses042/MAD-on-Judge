@@ -1,0 +1,71 @@
+{
+  "article_id": "cnn-test-b8b6e729fff27c4eef87887e61d3448de9c063f6",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, making it difficult to understand the sequence of events."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the purpose of the mission, the significance of the Dragon spacecraft, and the context of the failed landing attempt."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as missing verbs and incomplete sentences, which hinder readability."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not accurately reflect the source document's details about the mission's goals and the significance of the cargo being delivered."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear focus on the main event, which is SpaceX's launch of the Falcon 9 rocket and the attempt to land it on a barge."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding SpaceX's attempt to land the rocket stage and its commitment to continue trying."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary captures the key points about the launch and the landing attempt, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks grammatical structure and is not easy to read, as it is fragmented and does not form complete sentences."
+        },
+        {
+          "criterion": "coherence",
+          "reason": "The summary does not provide a logical flow of information, as it omits important details about the mission, such as the cargo and the purpose of the launch."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.0,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

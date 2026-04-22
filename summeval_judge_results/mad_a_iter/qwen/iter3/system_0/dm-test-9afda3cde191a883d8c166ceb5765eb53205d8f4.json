@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-9afda3cde191a883d8c166ceb5765eb53205d8f4",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 3,
+        "overall_judge": 3.2,
+        "rationale_for_score": "The summary captures the main points and aligns with the source text's direction (lenient rule). However, it suffers from poor fluency due to awkward phrasing ('lining up for his side' is vague without context of who 'his side' refers to in that specific sentence structure) and a repetitive error ('19 goals in 19 goals'). Coherence is reduced because the sentences are fragmented and lack smooth transitions. Consistency is good as no hallucinations are present, though some minor phrasing issues exist."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.8,
+        "rationale_for_score": "The summary suffers from severe coherence issues due to the inclusion of a nonsensical sentence ('alexis sanchez is glad chile forward will be lining up for his side') which repeats information from the article but lacks context or logical flow. The fluency is poor because it uses lowercase letters and lacks proper punctuation. Relevance is low because the summary fails to capture the main narrative about Wenger's specific comments on the transfer leverage regarding Luis Suarez, instead focusing on trivial details like 'the world cup' which is mentioned only as a timing marker in the source. Consistency is partially maintained but marred by the hallucinated phrasing and lack of grammatical correctness."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the fluency score from 3 to 2 because the summary contains a severe repetition error ('19 goals in 19 goals') and awkward phrasing that makes it difficult to read naturally. While I accepted the lenient judge's point about consistency (no hallucinations), the grammatical errors significantly impact the overall quality, warranting a stricter penalty on fluency."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a nonsensical sentence ('alexis sanchez is glad...') that lacks context and logical flow, severely impacting coherence. It also fails to capture the main narrative regarding transfer leverage (Suarez/Sanchez exchange) and focuses on trivial details like 'the world cup', hurting relevance. While the English is understandable, the lack of capitalization and punctuation makes fluency poor rather than excellent. The hallucinated phrasing ('lining up for his side' without context) also affects consistency."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment on fluency. The repetition of '19 goals in 19 goals' is a significant error that degrades readability and professionalism, justifying the score of 2. The summary also suffers from poor sentence structure (e.g., 'alexis sanchez is glad chile forward will be lining up for his side' lacks a clear subject/object relationship) and awkward phrasing ('the world cup' as a standalone fragment). While consistency is maintained, the lack of grammatical correctness prevents a higher fluency score. The other scores remain unchanged as the structural issues are primarily linguistic rather than logical or relevance-based."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.8,
+        "adjustment_notes": "I agree with the lenient judge's points regarding the summary's flaws. The sentence 'alexis sanchez is glad chile forward will be lining up for his side' is indeed nonsensical without context (it lacks the subject 'Arsenal manager Wenger' and the object 'Liverpool'), severely damaging coherence. The repetition of '19 goals so far this season' in the summary is a clear error affecting consistency with the source text's phrasing ('netted 19 goals so far'). The inclusion of 'the world cup' as a standalone fragment hurts relevance and fluency. Therefore, I will not raise the scores; they accurately reflect the poor quality of the provided summary."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 3.5,
+      "fluency": 3.0,
+      "relevance": 2.5,
+      "overall_judge": 2.9
+    }
+  }
+}

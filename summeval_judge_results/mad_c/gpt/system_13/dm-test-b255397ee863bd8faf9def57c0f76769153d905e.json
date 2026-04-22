@@ -1,0 +1,66 @@
+{
+  "article_id": "dm-test-b255397ee863bd8faf9def57c0f76769153d905e",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, jumping between details without smooth transitions, making it difficult to follow the sequence of events."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key information such as the outcome of the situation, including the airport's response and the eventual replacement of the toy gun, which are important for understanding the full context."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the airport's offer to post the toy back, which is a significant detail that reflects the airport's stance on the incident."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains awkward phrasing and punctuation issues, such as inconsistent spacing around commas and quotation marks, which detracts from readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with James arriving at the airport and leading to the confiscation of his toy gun."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the father's perspective on the security checks and does not introduce any new facts not present in the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is written in fluent English, with no grammatical errors, making it easy to read."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the incident, including the toy's confiscation and the father's reaction, without including trivial details."
+        }
+      ],
+      "remaining_concerns": [],
+      "provisional_score": 5
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

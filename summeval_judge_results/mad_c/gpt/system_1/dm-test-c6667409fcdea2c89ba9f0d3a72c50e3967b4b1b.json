@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-c6667409fcdea2c89ba9f0d3a72c50e3967b4b1b",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow and structure, making it difficult to follow the sequence of events."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary incorrectly states that Baines scored 15 penalties from 16 attempts, which is redundant and misleading as it does not clarify that this is a historical statistic."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as Barkley's penalty being saved and the context of Martinez's defense of Barkley's decision."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as the lack of capitalization at the beginning of sentences and inconsistent punctuation."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with Barkley's penalty miss and providing context about the foul that led to the penalty."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the events described in the article, including the details about Barkley taking the penalty instead of Baines."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key incident of Barkley's penalty miss and the context surrounding it, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as the lack of proper capitalization at the beginning of sentences and inconsistent punctuation."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary repeats the information about Baines scoring 15 penalties from 16 attempts, which is unnecessary and does not add value to the summary."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

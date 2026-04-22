@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-2377095dda83df778e34304b7a09813808105d3b",
+  "system_name": "system_3",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information and does not effectively connect the points made about the passport agency's profits, bonuses, and the refusal of refunds."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits critical details such as the number of compensation applications approved, the total amount paid out, and specific examples of individuals affected, which are essential for understanding the full context of the situation."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the concept of a 'blanket refund' without adequately explaining the context of the compensation issue, which may confuse readers unfamiliar with the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The use of symbols like '#' instead of the word '£' for currency is non-standard and disrupts the fluency of the text."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear connection between the profit made by the passport agency and the refusal of ministers to provide compensation, establishing a logical flow of information."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding the profits of the passport agency and the lack of compensation for affected families."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the article, specifically the financial aspects and the response of the ministers, which are central to the issue discussed."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as the use of '#' instead of '£', which disrupts the readability and fluency of the text."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "tie",
+        "consistency": "tie",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

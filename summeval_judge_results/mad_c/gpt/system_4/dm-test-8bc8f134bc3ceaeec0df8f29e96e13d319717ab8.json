@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-8bc8f134bc3ceaeec0df8f29e96e13d319717ab8",
+  "system_name": "system_4",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, as it repeats the information about Luis Enrique taking charge last summer without adding new context."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as Bartomeu's comments on Enrique's contract and the team's performance, which are crucial for understanding the context of the president's statements."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'only took took charge' contains a typographical error, which affects the readability."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the specific achievements or the current situation regarding the trophies, which are important aspects of the original article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding Bartomeu's statements about Luis Enrique's position and performance."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article without introducing any new facts or misrepresentations."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points about Bartomeu's support for Enrique and his current status with the club."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains a grammatical error with the phrase 'only took' being repeated, which affects its overall fluency."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 4,
+      "relevance": 3,
+      "overall_judge": 3.2,
+      "winner_side": {
+        "coherence": "tie",
+        "consistency": "tie",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

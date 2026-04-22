@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-cf4ba8f94f2dd5604eb8f8a4e655c10cf0996365",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, making it difficult to understand the sequence of events."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the context of the robbery, the reaction of the victim, and the police's appeal for information, which are crucial for understanding the incident."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as inconsistent capitalization and punctuation, which detract from its readability."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the phrase 'owner's daughter' without clarifying that she is the daughter of the dairy owner, which could lead to confusion."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear description of the offender and the crime, maintaining a logical flow of information."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the details from the article, including the description of the offender and the amount stolen."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the robbery, including the distinctive mask and the amount of cash taken."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as inconsistent capitalization and punctuation, which affect readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

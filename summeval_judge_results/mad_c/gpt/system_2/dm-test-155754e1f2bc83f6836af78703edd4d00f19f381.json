@@ -1,0 +1,63 @@
+{
+  "article_id": "dm-test-155754e1f2bc83f6836af78703edd4d00f19f381",
+  "system_name": "system_2",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information and repeats the same sentence, which disrupts coherence."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to cover key points such as the timeline inconsistency of the pregnancy and the audience's reactions, which are crucial to understanding the context."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as inconsistent capitalization of names and awkward phrasing."
+        }
+      ],
+      "provisional_score": 1
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow by mentioning the key event of Ross Poldark gazing at his new baby daughter, which is central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary repeats the same sentence about Demelza being the proud mother, which does not add new information and may confuse readers."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary lacks coverage of important details such as the timeline issues of the pregnancy and the audience's reactions, which are significant points in the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains awkward phrasing and lacks smooth transitions, making it less fluent and idiomatic."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

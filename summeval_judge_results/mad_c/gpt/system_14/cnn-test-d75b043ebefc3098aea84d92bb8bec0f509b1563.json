@@ -1,0 +1,71 @@
+{
+  "article_id": "cnn-test-d75b043ebefc3098aea84d92bb8bec0f509b1563",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, jumping between points without proper transitions."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits key details about the incident, such as the number of Iranian border guards killed and the context of the attack, which could mislead readers."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the group's motives but fails to mention the actual incident and its implications, which are crucial for understanding the context."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary uses a fragmented style that detracts from readability and does not maintain standard capitalization rules."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the incident, mentioning the key details about the militants and their motives."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects information from the article, specifically mentioning the involvement of Iranian forces and the group Jaish al Adal."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important aspects of the article, including the clash, the group responsible, and their motives."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization and punctuation, making it less readable."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits significant details, such as the number of Iranian border guards killed and the context of the attack, which are important for understanding the incident."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

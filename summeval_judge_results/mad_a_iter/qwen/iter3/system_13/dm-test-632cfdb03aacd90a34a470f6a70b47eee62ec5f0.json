@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-632cfdb03aacd90a34a470f6a70b47eee62ec5f0",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is coherent and fluent but suffers from significant relevance issues by omitting the core news hook (the imminent return after a year out). It also includes a minor consistency flaw by stating he 'impressed... last season' without clarifying that this was before his injury, which could be misleading given the context of his long absence. The summary is too brief to capture the full story."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and strictly consistent with the source text, capturing the main points about Gnabry's recovery and past performance. It receives a high score but not a perfect 5 because it omits the specific context of his recent return to play (the match against Reading) and his direct quote regarding looking forward to the next game, which are significant details in the article."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is grammatically correct and coherent, but it fails to capture the primary news value: Gnabry's imminent return after a year-long absence. By omitting the specific details of his recovery progress ('closing in on a return') and the recent match context, the summary becomes trivial. The potential ambiguity regarding 'last season' vs. current status is also noted as a minor consistency issue."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The lenient judge's assessment is accurate. The summary effectively captures the core narrative (Gnabry's recovery and past performance) while omitting specific details like the Reading match or his quote about looking forward to the next game. This omission justifies a slight deduction from a perfect score on relevance, as these are significant contextual elements in the source text. No harsher penalties were warranted."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I have raised the consistency score to 5 because the summary accurately reflects the facts presented in the article (Gnabry's age, position, past performance, and injury status) without introducing external information or contradictions. The lenient judge correctly identified that the summary misses the 'news value' of his imminent return, which is a valid point for relevance; therefore, I maintain the relevance score at 3. The coherence and fluency scores are adjusted slightly down from 5 to reflect that while the sentences are grammatically correct, the flow is somewhat disjointed due to the lack of connecting context regarding his current status versus his past performance."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary accurately captures the main narrative regarding Gnabry's recovery and past performance but misses significant contextual details present in the source text (the specific match against Reading, the timeline of his absence since March 2014, and his direct quote about looking forward to the next game). Therefore, a perfect relevance score is not justified, and the deduction to 4 is appropriate."
+      }
+    },
+    "final": {
+      "coherence": 4.5,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.5
+    }
+  }
+}

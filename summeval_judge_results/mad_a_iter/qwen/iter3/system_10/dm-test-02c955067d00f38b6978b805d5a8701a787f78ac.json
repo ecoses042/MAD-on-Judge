@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-02c955067d00f38b6978b805d5a8701a787f78ac",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "rationale_for_score": "The summary is grammatically correct, coherent, and strictly consistent with the source text (no hallucinations). However, it only covers the first half of the article, omitting details about other patients, hospital destinations, road closures, and rescue efforts. Under lenient rules, since there are no factual errors or hallucinations, a score of 3 is given for relevance to acknowledge the incomplete coverage."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is coherent and consistent with the source text, but it suffers from a severe relevance flaw by truncating the content abruptly. It omits critical details such as the other patients airlifted, those taken to Ipswich Hospital, the trapped victim, road closures, and police statements, failing to capture the full scope of the event described in the article."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate: the summary is grammatically perfect and factually consistent with the source text (no hallucinations). However, it strictly covers only the first half of the article, omitting significant details regarding other victims, hospital destinations, road closures, and rescue efforts. Therefore, a relevance score of 3 is appropriate to reflect this incomplete coverage without penalizing for factual errors."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. While the summary is grammatically correct and factually consistent with the provided text, it suffers from a severe relevance flaw by truncating the content abruptly after the first sentence of the source text. It completely omits critical details regarding other patients airlifted, those taken to Ipswich Hospital, the trapped victim, road closures, and police statements, failing to capture the full scope of the event."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "The strict judge's assessment is accurate. The summary is grammatically perfect and factually consistent (no hallucinations), warranting high scores for fluency, coherence, and consistency. However, the relevance score of 3 is justified because the summary only covers the first half of the article, completely omitting details about other victims, hospital destinations, road closures, and rescue efforts. As a lenient evaluator, I maintain the strict judge's low relevance score as it correctly identifies a significant omission in coverage."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No changes to scores. The summary is factually consistent and coherent but severely lacks relevance by omitting the majority of the source text's key information (other victims, hospital destinations, trapped victim, road closures). The lenient judge correctly identified this truncation as a critical flaw."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 4.5,
+      "relevance": 2.5,
+      "overall_judge": 3.8
+    }
+  }
+}

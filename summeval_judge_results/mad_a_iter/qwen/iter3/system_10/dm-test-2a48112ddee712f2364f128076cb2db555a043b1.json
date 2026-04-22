@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-2a48112ddee712f2364f128076cb2db555a043b1",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 3,
+        "overall_judge": 3.2,
+        "rationale_for_score": "The summary captures the main sentiment and includes a specific detail (2010 FIFA Club World Cup) found in the text. However, it suffers from poor coherence due to the abrupt ending ('Argentine Primera Division') which appears to be a fragment or hallucination of a list item rather than a complete thought. Fluency is affected by this fragmentation. It is leniently scored as 3 because the core message and the specific trophy mention are consistent with the source, but it fails to form a complete summary."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.8,
+        "rationale_for_score": "The summary fails the relevance criterion significantly by truncating the text mid-sentence ('Argentine Primera Division') without context or completion, making it incomplete and disjointed. While the quoted facts are consistent with the source, the abrupt ending renders the summary poor in terms of utility and coherence."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 3,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 2.8,
+        "adjustment_notes": "I lowered the scores significantly compared to the lenient judge. The summary ends abruptly with 'Argentine Primera Division', which is a fragment from the article's list of trophies and not a complete sentence or thought. This makes the text grammatically broken (Fluency: 2) and structurally incoherent (Coherence: 2). While the core message about Cambiasso comparing saving Leicester to winning a trophy is accurate (Relevance: 4), the inclusion of the fragmented list item without context introduces information that feels like an error rather than a summary point, slightly impacting Consistency (3) as it presents a fragment as part of the narrative flow."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is severely flawed because it truncates the text mid-sentence ('Argentine Primera Division'), rendering it incomplete and disjointed. This lack of completion significantly impacts coherence and relevance, as the reader is left hanging without context for that specific phrase or the conclusion of the article. While the grammar of the existing parts is fine (fluency 4), the structural failure warrants a low overall score."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 3,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 2.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is structurally broken due to the abrupt ending ('Argentine Primera Division'), which renders it grammatically incomplete and incoherent. While the core sentiment regarding Cambiasso's quote is relevant, the inclusion of the fragmented list item without context makes it feel like an error rather than a valid summary point. Therefore, no upward adjustment is warranted; the scores reflect the significant flaws identified."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.8,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary is severely flawed because it truncates the text mid-sentence ('Argentine Primera Division'), rendering it incomplete and disjointed. This lack of completion significantly impacts coherence and relevance, as the reader is left hanging without context for that specific phrase or the conclusion of the article. While the grammar of the existing parts is fine (fluency 4), the structural failure warrants a low overall score."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 3.0,
+      "fluency": 3.0,
+      "relevance": 3.0,
+      "overall_judge": 2.8
+    }
+  }
+}

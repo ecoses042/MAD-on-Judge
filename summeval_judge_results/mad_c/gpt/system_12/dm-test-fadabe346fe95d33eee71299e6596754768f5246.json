@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-fadabe346fe95d33eee71299e6596754768f5246",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, as it jumps abruptly between points without proper transitions."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits critical details such as Gemma's history of stealing and her mother's emotional response, which are essential to understanding the situation."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the specific legal high, MKat, which is a significant detail in the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The sentence structure is choppy and lacks fluidity, making it less readable."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding Gemma's situation and her mother's concerns."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the main points from the article, including Gemma's age, her children, and her mother's threats regarding visitation."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key issues of Gemma's behavior and her mother's response, avoiding trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as missing conjunctions and awkward phrasing, which affect readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

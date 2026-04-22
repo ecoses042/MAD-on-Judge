@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-5be0a9584b051175d9f4842a143b76385335d96a",
+  "system_name": "system_3",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, abruptly shifting from the financial implications of failing to qualify for the Champions League to the team's current standings without connecting these ideas."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits critical details such as the total bonuses at stake (£12 million), the context of the team's performance, and the implications of their recent losses, which are essential for understanding the situation."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that City is in fourth place without mentioning the potential consequences of their position or the requirement to win a qualifying round for the Champions League."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The use of '# 500,000-a-man' is awkward and not idiomatic; it should be written as '£500,000 per player' for better clarity and fluency."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding Manchester City's current standings and the implications for player bonuses."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key point about the financial consequences for players if the team fails to qualify for the Champions League, which is a central theme of the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits important details about the context of the team's performance and the specific players affected, which are present in the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The use of the symbol '#' instead of the word '£' is not standard and may confuse readers, affecting the overall fluency."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 4,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

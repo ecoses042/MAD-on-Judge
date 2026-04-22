@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-d3c9ce137ba24a69253508b3416630465c050ae4",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from a significant relevance issue: it truncates the source text abruptly after the third sentence without covering other key points mentioned in the article (e.g., her specific achievements like driving/college, motivational speaking at schools, or the specific examples of her videos). Additionally, there is a minor consistency flaw where the summary repeats the exact same introductory sentences found in the source text verbatim rather than synthesizing them, which feels redundant."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is well-structured, grammatically correct, and fully consistent with the source text. It captures the main points: Dayna's background, her condition, and her motivation. The only minor deduction for relevance is that it omits the specific details about her other videos (like 'Shake It Off') and her recent motivational speaking engagements, which are significant parts of the article, though the core message remains intact."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is indeed truncated and fails to cover key points such as her specific achievements (driving, college) or her new role in motivational speaking, making it incomplete regarding relevance. I also accept the criticism that the summary merely repeats the first three sentences of the source text verbatim rather than synthesizing the information, which lowers the consistency score slightly due to redundancy."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is well-structured and consistent with the source text. While it omits specific details about her 'Shake It Off' video and recent motivational speaking engagements (which are significant parts of the article), these omissions do not detract from the core message regarding her motivation to counteract stereotypes. Therefore, a minor deduction for relevance is appropriate, but no further harshness is needed."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "No changes made. The lenient judge's points regarding the summary being truncated and failing to cover key achievements (driving, college) or the new role in motivational speaking are valid and supported by the source text. The summary does indeed repeat the first three sentences of the article verbatim without synthesis, which justifies the slight deduction in consistency and the significant drop in relevance."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary effectively captures the core narrative and motivation of the article while omitting secondary details like specific video titles and recent speaking engagements. These omissions are minor enough that they do not significantly detract from the main point, justifying a slight deduction for relevance rather than a harsher penalty."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.5,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.5
+    }
+  }
+}

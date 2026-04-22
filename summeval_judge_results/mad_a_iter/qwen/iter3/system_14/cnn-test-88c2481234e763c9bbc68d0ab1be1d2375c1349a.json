@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-88c2481234e763c9bbc68d0ab1be1d2375c1349a",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is fluent and consistent with the source text regarding the specific quote from Barnett. However, it suffers from severe relevance issues: it fails to mention the most critical outcome (that everyone was evacuated safely), omits the cause of the fire (rear tire blowout), excludes the band members' safety status, and leaves out the upcoming performance at the ACM Awards which is a key detail in the source. It focuses almost exclusively on a minor quote while ignoring the main news value."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source and fluent. However, it is very brief and misses key details like the safe evacuation of everyone on board, the cause of the fire (tire blowout), and the specific outcome regarding what was saved/destroyed. It captures the core event but lacks sufficient coverage of the main points."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is grammatically correct and consistent with the text regarding Barnett's quote, but it fails significantly on relevance by omitting the most critical information: that everyone was evacuated safely, the cause of the fire (tire blowout), and the context of the upcoming ACM performance. Focusing almost entirely on a minor quote while ignoring the main news value is a severe flaw."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "The lenient judge's score for relevance (3) was too high. The summary is extremely truncated, omitting critical details such as the safe evacuation of all passengers, the cause of the fire (tire blowout), and the specific outcome regarding the bus contents (everything destroyed except the Bible). While factually consistent, it fails to cover the majority of the key information in the source text, making a score of 2 more appropriate for relevance. Coherence is lowered slightly due to the abrupt ending without context on the aftermath or future plans."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No changes needed. The lenient judge's points were accepted because they correctly identified that the summary fails relevance by omitting critical facts (safe evacuation, tire blowout cause) and focuses disproportionately on a minor quote. The strict assessment was accurate."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "Agreed with the strict judge's assessment on relevance. The summary is severely truncated and misses critical information regarding safety (evacuation), cause (tire blowout), and specific outcomes (destruction of contents). The score remains at 2."
+      }
+    },
+    "final": {
+      "coherence": 3.0,
+      "consistency": 4.5,
+      "fluency": 4.5,
+      "relevance": 2.0,
+      "overall_judge": 3.0
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-e7d8b6617691ea00d4ddc5fe2b7cbd105ba9a57e",
+  "system_name": "system_4",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow of information, as it jumps from Munden's disappearance to his conviction without adequately connecting these points."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits significant details about Munden's background, the nature of his offenses, and the context of his psychiatric detention, which are crucial for understanding the severity of the situation."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The use of commas and spacing around '54' and 'fanatical obsession' disrupts the readability of the summary."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention that Munden was last seen leaving a hospital, which is a critical detail from the article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, outlining Munden's disappearance, his past offenses, and the subsequent manhunt."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the key details from the article, including Munden's age, his obsession, and the nature of his offenses without introducing any new facts."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important aspects of the article, such as Munden's conviction and the ongoing search for him, while avoiding trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as inconsistent spacing and punctuation, which detract from its readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

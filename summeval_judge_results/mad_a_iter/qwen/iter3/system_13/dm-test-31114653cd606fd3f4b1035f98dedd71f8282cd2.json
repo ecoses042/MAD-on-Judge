@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-31114653cd606fd3f4b1035f98dedd71f8282cd2",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is factually consistent with the source text and captures the main points regarding the match details, venue, and team standings. However, it cuts off mid-sentence ('ranked fourth in the world - on top spot...'), which affects fluency and completeness. As a lenient evaluator, I acknowledge that the content provided is accurate to the source, but the abrupt ending prevents a higher score."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source text and covers the main points (sell-out, venue, date, standings). However, it suffers from poor fluency due to awkward phrasing ('with belgium declared a...') and incomplete sentences at the end. Crucially, for relevance, it fails to summarize the significant portion of the article regarding Gareth Bale's performance against Israel, the rise in expectations, the ticket sales statement, and the venue preference details, making it an incomplete summary of the provided text."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "Consistency remains 5 as the summary is factually accurate to the source. Coherence and Relevance remain high (4) as it captures key points logically. Fluency was lowered from 4 to 3 because the summary ends abruptly mid-sentence ('...ranked fourth in the world .'), which makes the text grammatically incomplete and awkward, violating the 'easy to read' criterion more severely than initially assessed."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is factually consistent and coherent but suffers from poor fluency (awkward phrasing) and, most importantly, a significant lack of relevance. It completely omits the details about Gareth Bale's performance, the rise in expectations, the FAW statement regarding ticket demand, and the specific context regarding venue preferences, which constitute a large portion of the source text."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "Agree with the strict judge's assessment on fluency. The summary ends abruptly mid-sentence ('...ranked fourth in the world .'), making it grammatically incomplete and awkward. This is a significant flaw that warrants a score of 3 rather than 4. All other scores remain unchanged as the content is accurate, coherent, and relevant."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding consistency and coherence. However, I lower the fluency score from 4 to 3 due to the repetitive phrasing in the first sentence ('Wales' crunch Euro 2016 qualifier... has been declared') which appears twice in the source text and is awkwardly retained here without smoothing. Most importantly, I agree with the lenient judge's assessment on relevance; the summary cuts off abruptly after mentioning Belgium's ranking, failing to include the significant details about Gareth Bale's performance, the FAW statement on ticket demand, or the venue context found in the source text."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 5.0,
+      "fluency": 3.0,
+      "relevance": 3.0,
+      "overall_judge": 3.5
+    }
+  }
+}

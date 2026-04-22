@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-88c2481234e763c9bbc68d0ab1be1d2375c1349a",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow of information, jumping abruptly from the fire incident to the performance without connecting the events."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that Scott says everyone was safely evacuated, while the article specifies that the tour manager provided this information."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the cause of the fire (rear tire blowout) and the dramatic nature of the incident, which are important for context."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'Scott says' is awkwardly placed and disrupts the flow; it would be more fluent to integrate this information more smoothly."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with the bus catching fire and concluding with the upcoming performance at the awards."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, including the evacuation of everyone on board and the detail about the Bible being the only item not destroyed."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the incident, including the fire, evacuation, and the upcoming performance, avoiding unnecessary details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains some awkward phrasing, such as 'Scott says' and 'she says,' which could be more smoothly integrated into the sentences."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

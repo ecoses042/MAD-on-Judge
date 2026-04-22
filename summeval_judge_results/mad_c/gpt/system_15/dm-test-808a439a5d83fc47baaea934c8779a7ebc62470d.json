@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-808a439a5d83fc47baaea934c8779a7ebc62470d",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, jumping between topics without clear connections."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that Vincent Kompany was dismissed for offences against Wales, while the article mentions he was sent off during a match against Israel."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as Clattenburg's history of sending off players and the context of the Manchester derby, which are important for understanding the significance of the match."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains fragmented sentences that disrupt the flow, making it less readable."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear focus on the main event, which is Clattenburg officiating the Manchester derby."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding Clattenburg's officiating role and the dismissal of Vincent Kompany."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary highlights key points such as Clattenburg's appointment and the controversy surrounding him, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as the incomplete sentence about Vincent Kompany's dismissal."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The mention of Kompany's dismissal against Wales is incorrect; it should refer to his suspension for the match against Wales."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

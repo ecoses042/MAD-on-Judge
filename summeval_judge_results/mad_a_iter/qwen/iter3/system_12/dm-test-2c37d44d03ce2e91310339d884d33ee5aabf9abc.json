@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-2c37d44d03ce2e91310339d884d33ee5aabf9abc",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 5,
+        "overall_judge": 5.0,
+        "rationale_for_score": "The summary is excellent: it captures the key facts (who, what, where, when) accurately without hallucinations. It flows logically and uses concise language. The only reason for a score slightly below 5.0 is that it omits the specific cause of the fall (parents dangling the child), which is a major detail in the source text, but this omission does not constitute a hallucination or severe failure under lenient rules."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.5,
+        "rationale_for_score": "The summary is fluent and coherent but omits the critical detail that the parents 'dangled' the child over the edge, instead stating they 'jumped in,' which slightly alters the narrative of how the rescue occurred (the text says he was rescued by parents before paramedics arrived, implying a jump, but the cause was dangling). More importantly, it misses the significant outcome: the zoo's plan to press child endangerment charges. This omission affects relevance and consistency with the full scope of the article."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.5,
+        "adjustment_notes": "While the summary is fluent and coherent, I am lowering the Consistency score from 5 to 4 because it omits the specific cause of the fall (parents dangling the child), which is a central fact in the source text. Under strict evaluation rules, omitting such a critical detail constitutes an incomplete representation rather than just a minor omission. Similarly, the Relevance score is lowered from 5 to 4 for failing to include the outcome regarding legal action (child endangerment charges) and the child's medical status (stable condition), which are significant key points in the article."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 3,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the consistency score because the summary states the parents 'jumped in,' which contradicts the source text stating the child was 'dangled' and then rescued; this changes the nature of the incident. I significantly lowered the relevance score because the summary completely omits the most critical piece of information from the article: the zoo's plan to press child endangerment charges against the family. This omission renders the summary incomplete regarding the main news value of the event."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is fluent and coherent, but it fails to capture two critical elements present in the source text: the specific cause of the fall (parents dangling the child) and the significant outcomes (child endangerment charges and stable medical condition). Omitting these central facts makes the summary an incomplete representation of the article's main points, justifying the reduction in Consistency and Relevance scores."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 3,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding consistency and relevance. The summary contains a factual error ('parents jumped in') that contradicts the source text (child was dangled/rescued by parents from below), warranting a low consistency score. Furthermore, the omission of the zoo's plan to press child endangerment charges removes the primary news hook, justifying the low relevance score. No points need to be raised."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 3.5,
+      "fluency": 5.0,
+      "relevance": 3.0,
+      "overall_judge": 3.8
+    }
+  }
+}

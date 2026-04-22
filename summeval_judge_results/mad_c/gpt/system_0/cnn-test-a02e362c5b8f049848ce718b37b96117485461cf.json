@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-a02e362c5b8f049848ce718b37b96117485461cf",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information and does not connect the events or explain their significance."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details about the cause of the sunsets, the impact of the wildfires, and the atmospheric effects, focusing only on a single person's observation."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as missing capitalization at the beginning of sentences."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the date 'April 14' without context, which may confuse readers about its relevance."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear observation made by Tim Durkan regarding the sunset, establishing a connection to the events in Siberia."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details about the cause of the sunsets, the impact of the wildfires, and the atmospheric effects that led to the intense colors."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the role of atmospheric winds in carrying the smoke, which is a crucial part of the original article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization and punctuation, making it less readable."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.0,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

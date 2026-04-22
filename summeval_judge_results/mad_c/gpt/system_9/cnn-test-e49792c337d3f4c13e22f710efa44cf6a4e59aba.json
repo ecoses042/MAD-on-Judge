@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-e49792c337d3f4c13e22f710efa44cf6a4e59aba",
+  "system_name": "system_9",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information and does not adequately convey the emotional weight of the parents' plea."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details about the emotional impact on the family, the context of their plea, and the specifics of the bombings, which are crucial for understanding the significance of their statement."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately refers to 'his parents' instead of specifying that it is the parents of the youngest victim, which could lead to confusion."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary uses lowercase for 'dzhokhar tsarnaev,' which is not standard for proper nouns and affects the overall fluency."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, outlining the key points of the parents' plea and the conviction of Tsarnaev."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the main points from the article without introducing any new facts or misrepresenting the original content."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important aspects of the article, specifically the conviction of Tsarnaev and the parents' stance on the death penalty."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization at the beginning of sentences and does not use Tsarnaev's full name, which could affect readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 4,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 3.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

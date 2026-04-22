@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-b8b6e729fff27c4eef87887e61d3448de9c063f6",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, making it difficult to understand the sequence of events."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the purpose of the mission, the specifics of the cargo, and the significance of the attempted landing, which are crucial for understanding the context."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as the repetition of 'dragon' and awkward phrasing, which detracts from readability."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states 'dragon dragon enroute,' which introduces confusion and does not reflect the original text accurately."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with the successful ascent and the status of the Dragon spacecraft."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects Elon Musk's tweet regarding the ascent and the landing attempt, without introducing any new or conflicting information."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is written in grammatically correct English, making it easy to read despite some minor punctuation issues."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details about the mission, such as the purpose of the Dragon cargo, the amount of supplies being delivered, and the context of SpaceX's landing attempts."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

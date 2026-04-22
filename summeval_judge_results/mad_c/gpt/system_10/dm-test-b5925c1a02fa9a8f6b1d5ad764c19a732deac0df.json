@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-b5925c1a02fa9a8f6b1d5ad764c19a732deac0df",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, as it abruptly jumps from describing the crocodile to Tim Weston's account without a smooth transition."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits significant details such as the public reaction to the video and the context of crocodiles in Puerto Vallarta, which are important for understanding the incident."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as inconsistent capitalization of 'Puerto Vallarta' and 'Mexico', which affects readability."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the duration the crocodile held the dog, which is a notable detail from the article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, detailing the key event of the crocodile with the dog and including the eyewitness account from Tim Weston."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article without introducing any new facts, maintaining consistency with the source."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important aspects of the article, including the location, the incident, and the eyewitness's perspective, while avoiding trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains some grammatical issues, such as inconsistent capitalization and punctuation, which affect its overall fluency."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "tie",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

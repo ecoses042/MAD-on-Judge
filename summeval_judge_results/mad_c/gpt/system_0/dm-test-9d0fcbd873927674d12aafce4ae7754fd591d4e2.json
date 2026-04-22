@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-9d0fcbd873927674d12aafce4ae7754fd591d4e2",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, making it difficult to understand the main points."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that the campaign is Ella Henderson's 'first brand' in 2012, which is inconsistent with the article that mentions it as her first brand collaboration in 2015."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'the singer singer' which is repetitive and incorrect."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to include key details about the campaign, such as the partnership with Batiste and the context of the campaign images."
+        }
+      ],
+      "provisional_score": 1
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear focus on Ella Henderson being announced as the face of the Batiste campaign, which is the main point of the article."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding Ella Henderson's collaboration with Batiste and her role in the campaign."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, such as 'the singer singer and the uk's brand,' which affects readability."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary lacks important details, such as the context of her fame from The X Factor and the specifics of the campaign images, which are key points in the article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 1,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 1.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-b255397ee863bd8faf9def57c0f76769153d905e",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is coherent and covers the main events. However, it contains a grammatical error ('with his brightly coloured toy' lacks a verb connecting the parents to the toy), which affects fluency. It also omits the specific detail that the father was Phil (introducing 'Phil' as if he were the boy in the phrase 'Phil... with his brightly coloured toy' is confusing/ambiguous). While it avoids major hallucinations, these issues prevent a perfect score."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 5,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary captures the main events and key quotes accurately (coherence and relevance are high). However, it contains a grammatical error in the phrase 'Phil, 44, and Hazel, 38, with his brightly coloured toy,' which lacks a verb and creates a disjointed sentence structure (fluency issue). Additionally, while consistent with the text, the phrasing is slightly awkward. Given the lenient rules, it avoids hallucinations but fails on fluency due to the syntax error."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I maintained the strict judge's scores. The summary contains a significant grammatical flaw ('Phil... with his brightly coloured toy') that creates ambiguity and poor flow, justifying the low fluency score (3). While the content is consistent with the source text, the structural error prevents a higher coherence or fluency rating."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 5,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I raised the coherence score from 3 to 4 because the summary successfully conveys the narrative arc (confiscation -> father's reaction -> resolution) despite the grammatical stumble. I maintained the fluency score at 3 due to the specific sentence fragment 'Phil, 44, and Hazel, 38, with his brightly coloured toy,' which lacks a verb and disrupts the flow. Consistency and relevance remain high as the summary accurately reflects the source text without adding or omitting key details."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "Agreed with the lenient judge's assessment regarding fluency. The phrase 'Phil, 44, and Hazel, 38, with his brightly coloured toy' is a significant grammatical error (dangling modifier/incorrect pronoun agreement) that disrupts readability and flow, justifying the score of 3. The summary accurately reflects the source text without adding external facts, maintaining consistency. The structure is logical enough for a short summary despite the error, warranting a coherence of 4."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 5,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. The coherence is good as the narrative flow is logical despite the structural error. Consistency and relevance are perfect as all facts align with the source. Fluency remains at 3 specifically because of the sentence fragment 'Phil, 44, and Hazel, 38, with his brightly coloured toy,' which is grammatically incorrect and disrupts readability."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 5.0,
+      "fluency": 3.0,
+      "relevance": 4.5,
+      "overall_judge": 4.1
+    }
+  }
+}

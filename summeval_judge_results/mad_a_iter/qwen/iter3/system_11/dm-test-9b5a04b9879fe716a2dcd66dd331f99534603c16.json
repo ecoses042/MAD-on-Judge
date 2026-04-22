@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-9b5a04b9879fe716a2dcd66dd331f99534603c16",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from a significant relevance flaw: it truncates the text after the first paragraph of the source, omitting the critical context regarding Billy Gordon's resignation, his admission of domestic violence/criminal history, the resulting political chaos in Queensland, and the subsequent social media backlash and Katter's defense. While the included facts are consistent with the source, the summary fails to capture the main event and resolution described in the article."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and consistent with the source text. It captures the main event (Katter's statement) and key details (Gordon's situation, Katter's background). It receives a 4 for relevance because it omits the significant context regarding Gordon being forced to quit the Labor Party, his admission of criminal history, and the subsequent social media backlash and Katter's defense, which are major parts of the article."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the relevance score from 3 to 2. The strict judge correctly identified that the summary is a severe truncation of the source text. By stopping after the introduction and Katter's background, it completely omits the core news event (Gordon's resignation and the resulting political chaos), the public backlash, and Katter's defense. This makes the summary factually consistent with the beginning of the article but functionally useless as a standalone summary of the story."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I raised the relevance score from 4 to 3 (a slight penalty) because the summary is extremely truncated. While it captures the headline event and Katter's background, it misses the critical context of *why* Gordon was embattled (forced to quit Labor Party, withholding criminal history), which is central to the 'race row' accusation. The lenient judge correctly identified this omission but awarded a 4; given that over half the article details the fallout (social media criticism and Katter's defense), the summary feels incomplete rather than just missing minor details."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding relevance. The summary is a severe truncation that stops after introducing Bob Katter and his background, completely omitting the core news event (Gordon's resignation and political chaos), the public backlash, and Katter's defense. While the text is grammatically correct and consistent with the beginning of the article, its failure to cover the main story makes it functionally useless as a standalone summary. Therefore, I maintain the lowered relevance score."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I lowered the overall score from 4.5 to 4.0 to align with the strict judge's assessment of relevance. While the summary is grammatically perfect and coherent, it fails to capture the essential context of Billy Gordon's situation (forced to quit Labor Party, withholding criminal history) which explains the 'race row' accusation. The strict judge correctly noted that over half the article details the fallout (social media criticism and Katter's defense), making the summary feel significantly incomplete rather than just missing minor details. Therefore, a score of 3 for relevance is justified."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.5,
+      "fluency": 5.0,
+      "relevance": 2.5,
+      "overall_judge": 3.8
+    }
+  }
+}

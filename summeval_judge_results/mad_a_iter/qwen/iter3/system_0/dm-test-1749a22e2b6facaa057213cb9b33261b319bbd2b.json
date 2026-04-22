@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-1749a22e2b6facaa057213cb9b33261b319bbd2b",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from severe fluency issues due to a repetitive typo ('has been been') and poor sentence structure that makes it read like a disjointed list of facts rather than a coherent paragraph. While the information is consistent with the source (no hallucinations), the summary fails to capture the nuance of Carragher's argument regarding community work or specific quotes, focusing only on the most basic context points."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary accurately reflects the main points and direction of the article without hallucinations (Consistency: 5). However, it suffers from a significant fluency issue due to a repetitive typo ('has been been') which lowers readability (Fluency: 3). Coherence is slightly affected by this error and the somewhat choppy sentence structure. Relevance is good as it covers key facts like the points gap and Carragher's stance."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 1,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I lowered the fluency score to 1 because the typo 'has been been' is a critical error that severely impacts readability, and the sentence structure is indeed disjointed, resembling a list of facts rather than a cohesive summary. I also adjusted coherence down slightly as the lack of connecting words exacerbates the disjointed feel. Consistency remains high as there are no hallucinations. Relevance is maintained at 3 because while it covers the main points, it misses the significant context of Carragher's community award and his specific reasoning about player integration."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "Lowered Fluency from 3 to 2 because the typo 'has been been' is a critical grammatical error that severely impacts readability and professionalism, warranting a lower score than just 'slightly affected'. Lowered Coherence from 4 to 3 because the summary consists of disjointed sentences lacking proper conjunctions or transitional phrases, resulting in a choppy flow that feels more like a list of facts than a cohesive paragraph. Relevance remains high as it captures the core narrative (Carragher's support, Rodgers' pressure, specific stats). Consistency remains perfect."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 1,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The typo 'has been been' is a critical error that justifies a fluency score of 1. The disjointed sentence structure and lack of connecting words also warrant a low coherence score (2). Consistency remains high (4) as no hallucinations are present, though the summary is very brief. Relevance is appropriately lowered to 3 because the summary omits significant context regarding Carragher's Beacon Award and his specific comments on player integration, which were major parts of the source text."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The typo 'has been been' is a significant grammatical error that drops the fluency score to 2. Additionally, the summary lacks transitional phrases and conjunctions, resulting in a disjointed, choppy flow that justifies lowering the coherence score from 4 to 3. Relevance and consistency remain high as the core facts are accurate and central."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 4.5,
+      "fluency": 1.5,
+      "relevance": 3.5,
+      "overall_judge": 2.5
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "article_id": "cnn-test-5139ccfabee55ddb83e7937f5802c0a67aee8975",
+  "system_name": "system_3",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow and omits important context about the incident, such as the U.S. response and the characterization of the Russian pilot's actions."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention the U.S. complaint to Moscow and the significance of the incident, which are key points in the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that the transponder claim was false without providing the context that it was a U.S. official's statement against the Russian claim."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary uses lowercase letters at the beginning of sentences, which is not standard in English writing."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with the U.S. plane's flight and the interception by the Russian jet."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding the type of aircraft involved and the location of the incident."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key details of the incident, including the aircraft involved and the claim about the transponder."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization and punctuation, making it less readable."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits important context, such as the U.S. response and the nature of the interception being described as 'unsafe and unprofessional'."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

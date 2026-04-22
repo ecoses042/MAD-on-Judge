@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-3ba3bde4a1440134bb38ec22ba50db59986b544c",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary fails the consistency criterion severely because it hallucinates a causal link between Daniel Sturridge's nitrous oxide incident and Raheem Sterling leading the line at Wembley. The source text explicitly states that Sterling leads due to Sturridge being 'injured', not because of Sturridge's drug use. Additionally, the summary is grammatically broken ('says raheem sterling...') and lacks fluency. It also misses key relevant details like the shisha pipe incident which was central to Rodgers' warning."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from severe fluency issues due to the first sentence ('brendan rodgers says raheem sterling and jordon ibe .') which is a fragment lacking a verb or object, making it grammatically incorrect and hard to read. Consistency is penalized because the summary states Sterling 'was exposed' for inhaling nitrous oxide; while the article mentions he was 'exposed for inhaling', the phrasing in the summary implies a definitive fact without context that this was an incident Rodgers addressed, though strictly speaking it aligns with the text's mention of him being 'exposed'. The coherence is slightly affected by the disjointed first sentence. Despite these flaws, the core information regarding the players, the specific incidents (nitrous oxide), and Rodgers' stance is present in the source."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a severe factual error (hallucination) by implying Sturridge was injured due to nitrous oxide use rather than being injured as stated in the text. It also suffers from poor grammar ('says raheem sterling...') and omits the central point of the article regarding the shisha pipe incident and Rodgers' decision not to discipline the players."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 3,
+        "fluency": 1,
+        "relevance": 4,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The lenient judge's score for fluency (2) and coherence (4) was too high given the severe grammatical error in the first sentence ('brendan rodgers says raheem sterling and jordon ibe .') which is a sentence fragment lacking a predicate. This makes the text difficult to read and structurally flawed, warranting a score of 1 for fluency and 2 for coherence. Consistency remains at 3 because while the facts are present, the phrasing 'was exposed' in the summary creates a slight ambiguity regarding the context of the incident compared to the article's narrative flow, though it is not a hallucination. Relevance stays high as key points are covered."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary contains a severe factual error (hallucination) by implying Sturridge was injured due to nitrous oxide use rather than being injured as stated in the text. It also suffers from poor grammar ('says raheem sterling...') and omits the central point of the article regarding the shisha pipe incident and Rodgers' decision not to discipline the players."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 3,
+        "fluency": 1,
+        "relevance": 4,
+        "overall_judge": 2.0,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary contains a severe grammatical error in the first sentence ('brendan rodgers says raheem sterling and jordon ibe .') which is a sentence fragment lacking a verb/predicate, making it structurally flawed and difficult to read (Fluency: 1). This structural failure also impacts the logical flow (Coherence: 2). Consistency remains at 3 due to the ambiguous phrasing 'was exposed' which slightly distorts the narrative context compared to the article. Relevance is maintained at 4 as the key facts are present despite the poor execution."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 2.0,
+      "fluency": 2.0,
+      "relevance": 3.0,
+      "overall_judge": 2.0
+    }
+  }
+}

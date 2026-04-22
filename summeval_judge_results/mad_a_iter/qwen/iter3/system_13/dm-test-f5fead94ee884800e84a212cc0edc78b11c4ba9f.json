@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-f5fead94ee884800e84a212cc0edc78b11c4ba9f",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from a significant relevance flaw: it omits the primary news hook regarding Manchester City's interest and the ongoing discussions with the chairman, focusing instead on background details about Patoulidis's past rejection of Barcelona. Additionally, while mostly consistent, the omission of the current status (City's active pursuit) makes the summary less grounded in the article's main point compared to a full summary."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is well-structured, fluent, and strictly consistent with the source text. It captures the main points regarding Manchester City's interest, Patoulidis's age and reputation, and his previous rejection of Barcelona. The only minor deduction for relevance is that it omits the specific detail about discussions with the chairman and the hope of a compensation package, which are secondary details compared to the core narrative."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. While the summary is grammatically perfect and coherent, it fails to capture the primary news hook: Manchester City's active interest and discussions regarding a compensation package. By focusing almost exclusively on the background detail of his rejection of Barcelona, the summary misses the main point of the article (the transfer rumor). Therefore, I maintain the lower relevance score."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes needed. The lenient judge's assessment is accurate: the summary is well-structured, strictly consistent with the source text, and fluent. The deduction for relevance is justified because the summary omits specific details about discussions with the chairman and the compensation package, which are secondary to the core narrative of City's interest and the player's background."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary is well-structured, consistent, and fluent. The deduction for relevance is justified as it omits details regarding discussions with the chairman and the compensation package, which are secondary to the main narrative of City's interest and the player's background."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding relevance. The summary accurately reflects the background details (Barcelona rejection) but omits the primary news hook: Manchester City's active interest and discussions about a compensation package. Since the main point of the article is the transfer rumor involving City, the summary fails to cover the most important information, justifying the lower relevance score."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.5,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.5
+    }
+  }
+}

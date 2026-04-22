@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-c6667409fcdea2c89ba9f0d3a72c50e3967b4b1b",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, jumping between topics without smooth transitions, particularly between Barkley's penalty and the historical context of Baines and Mirallas."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the term 'untried' to describe Barkley, which is not present in the source document and could mislead readers about his experience."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary uses lowercase letters for the beginning of sentences, which is grammatically incorrect and affects readability."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary includes details about the historical penalty incident with Mirallas that, while related, may not be essential to the main point of Barkley's missed penalty."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, detailing the penalty incident and its context within the match."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the events described in the article, including the details of the penalty taken by Barkley and the historical context of previous penalty disputes."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the article, such as the missed penalty, the players involved, and the manager's defense of the situation."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as the lack of capitalization at the beginning of sentences and inconsistent punctuation, which affects readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 4,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "tie",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

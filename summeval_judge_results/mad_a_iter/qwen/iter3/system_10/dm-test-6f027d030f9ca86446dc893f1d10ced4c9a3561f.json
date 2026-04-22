@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-6f027d030f9ca86446dc893f1d10ced4c9a3561f",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 5,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is highly relevant and coherent, accurately capturing the main points of the article (contract details, duration, and context). However, it scores lower on consistency due to a clear hallucination/error: it writes '# 100,000' instead of '£100,000'. While the prompt asks for leniency, this is a factual inconsistency with the source text which explicitly states '£'. Additionally, fluency is slightly impacted by the lack of capitalization and punctuation in the provided text."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 3,
+        "overall_judge": 3.8,
+        "rationale_for_score": "The summary is factually consistent with the source text (no hallucinations) and covers the main points regarding Henderson's new contract. However, it suffers from poor fluency due to awkward phrasing ('worth around # 100,000-a-week' instead of '£') and excessive repetition of the subject name and sentence structure. Additionally, while it captures the core news, it omits other significant details present in the source, such as Henderson's specific stats (goals/assists), his potential role as captain, and the context of other players like Sterling or Coutinho, which lowers its relevance score."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 5,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary is highly relevant and coherent, capturing the core news about Henderson's contract. However, consistency must be penalized because the summary explicitly writes '# 100,000' instead of '£100,000', which contradicts the source text. Fluency is also correctly lowered due to the lack of capitalization and punctuation in the provided text, making it read poorly despite the accurate information."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 3,
+        "overall_judge": 3.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is factually consistent but suffers from significant fluency issues (specifically the typo '# 100,000' instead of '£') and poor stylistic choices (repetitive sentence structure starting with 'Jordan Henderson' or 'Liverpool midfielder Jordan Henderson'). It also lacks relevance by omitting key context like Henderson's stats, his potential captaincy role, and the broader squad context mentioned in the source text. No score reduction is necessary as the strict judge was accurate."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 3,
+        "fluency": 2,
+        "relevance": 5,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the consistency score from 4 to 3 because the summary contains a factual error regarding the currency symbol ('#' instead of '£'), which contradicts the source text. I also lowered the fluency score from 3 to 2 because the summary lacks standard capitalization and punctuation (e.g., lowercase start, missing periods), making it grammatically incorrect and difficult to read as professional English."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 3,
+        "overall_judge": 3.8,
+        "adjustment_notes": "No score adjustment is necessary. The lenient judge correctly identified the fluency issues (specifically the typo '# 100,000' and repetitive sentence structure) and the relevance gaps (omission of stats, captaincy context, and squad details). The strict judge's assessment was accurate, so the scores remain unchanged."
+      }
+    },
+    "final": {
+      "coherence": 4.5,
+      "consistency": 4.0,
+      "fluency": 2.5,
+      "relevance": 4.0,
+      "overall_judge": 3.4
+    }
+  }
+}

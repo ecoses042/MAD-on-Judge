@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-e470f0a87d7513bf880412524332047020422c3f",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, as it jumps from the auction price to the description of the dress without connecting these points."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits significant details such as the dress's original color, its fading, and the background of James Tumblin, which are important for understanding the context of the auction."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states 'scarlett o'hara sold for $137,000' instead of clarifying that it was the dress worn by Scarlett O'Hara that sold."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as inconsistent capitalization and punctuation, making it less readable."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, starting with the auction price and location, followed by details about the dress and its significance in the film."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important information, including the auction price, the dress's role in the film, and its connection to James Tumblin's collection."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary lacks specific details about the dress's original color and its fading over time, which are mentioned in the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as inconsistent capitalization and spacing, which affect its readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

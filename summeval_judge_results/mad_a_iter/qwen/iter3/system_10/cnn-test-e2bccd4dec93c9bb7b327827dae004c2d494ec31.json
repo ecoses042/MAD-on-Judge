@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-e2bccd4dec93c9bb7b327827dae004c2d494ec31",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary suffers from severe coherence issues as it presents a disjointed sequence of sentences without connecting them logically (e.g., jumping from the video game intro to Antonio Inoki's political career). It fails relevance by omitting the main news event—the Defense Minister's statement about UFOs—and instead focusing on biographical details. While the facts included are consistent with the source, the lack of a clear narrative flow and the exclusion of the primary topic result in a poor summary."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 2,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary is extremely poor in relevance and coherence. It fails to capture the main topic of the article (the government's denial of UFO encounters) and instead presents a disjointed collection of biographical details about Antonio Inoki that are buried in the middle or end of the original text. The structure is illogical, jumping from the main news hook to random facts about Inoki without context. While the sentences themselves are grammatically correct (fluency 3), the lack of focus on the primary subject matter and the fragmented flow result in a very low overall score."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The lenient judge's assessment is accurate and should be accepted. The summary suffers from severe coherence issues because it presents a disjointed sequence of sentences (jumping from the Space Invaders intro to Inoki's political career) without logical connectors or a clear narrative flow. It fails relevance completely by omitting the main news event—the Defense Minister's statement regarding UFOs—and focusing instead on trivial biographical details. While the facts included are consistent with the source text, the lack of structure and exclusion of the primary topic result in a poor summary. No points need to be raised as the original strict evaluation was correct."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary fails completely on relevance by ignoring the main news hook (the government's denial of UFO encounters) and instead focusing on minor biographical details about Antonio Inoki. This results in a disjointed flow where sentences jump from the main topic to unrelated facts without context, justifying the low coherence score. While the text is factually consistent with the source, the lack of focus on the primary subject matter makes it a poor summary."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The strict judge's assessment is accurate and should be maintained. The summary fails coherence by jumping abruptly between the 'Space Invaders' intro and Antonio Inoki's biography without logical transitions. It fails relevance entirely by omitting the core news event (Defense Minister Nakatani's statement that no UFOs have been detected) and focusing only on trivial biographical details. While the included facts are consistent with the source, the lack of structure and exclusion of the primary topic result in a poor summary."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary fails completely on relevance by ignoring the main news hook (the government's denial of UFO encounters) and instead focusing on minor biographical details about Antonio Inoki. This results in a disjointed flow where sentences jump from the main topic to unrelated facts without context, justifying the low coherence score. While the text is factually consistent with the source, the lack of focus on the primary subject matter makes it a poor summary."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 5.0,
+      "fluency": 3.5,
+      "relevance": 1.0,
+      "overall_judge": 2.0
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-f468efac7b3c54f8c42c2c81dff108c52ebe0d7d",
+  "system_name": "system_6",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information and abruptly repeats the same information about Terry's challenge."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key points, such as the pundits' opinions and the context of the discussion surrounding the foul."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'give' instead of 'to give' and inconsistent capitalization."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not accurately reflect the source document's details about the pundits' reactions and analysis."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with Hazard's goal and leading into the discussion of Terry's challenge."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the events described in the article, particularly the foul committed by Terry on Falcao."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'give' instead of 'to give' and inconsistent capitalization, which affects readability."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary lacks key details, such as the pundits' names and their opinions on the foul, which are important for understanding the context of the discussion."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

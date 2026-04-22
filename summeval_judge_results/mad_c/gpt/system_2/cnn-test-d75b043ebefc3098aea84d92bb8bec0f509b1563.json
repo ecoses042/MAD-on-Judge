@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-d75b043ebefc3098aea84d92bb8bec0f509b1563",
+  "system_name": "system_2",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, presenting facts in a disjointed manner."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the context of the attack, the response from Pakistani authorities, and the background of the militant group, which are crucial for understanding the incident."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as inconsistent capitalization and punctuation, which affect readability."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not accurately reflect the timeline of events, as it presents information in a fragmented way that may confuse readers."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with the clash, followed by the number of casualties, and concluding with the identification of the militant group responsible."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, including the number of Iranian border guards killed and the involvement of the militant group Jaish al Adal."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the incident, including the casualties and the claim of responsibility, which are the most important aspects of the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as the lack of proper sentence structure and punctuation, which affects readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

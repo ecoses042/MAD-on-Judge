@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-fbbafa743a8c2ecd2cedf65c6c61956b2db8ec5c",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "rationale_for_score": "The summary is fluent, coherent, and consistent with the source text. However, it scores low on relevance because it only covers the first two sentences of the article, omitting significant key details such as the specific networks involved (A&E, Lifetime, History), the year 2016, the plot specifics (Kunta Kinte's journey), the involvement of Alex Haley's novel, the production team's intent for authenticity, and the context regarding the new generation of viewers."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and strictly consistent with the source text. It captures the main event (remake details) and key figures accurately. It receives a slight deduction on relevance because it omits other significant context from the article, such as the specific networks involved beyond the first mention, the historical background of the original series' audience size, and the involvement of scholars or the broader cultural context mentioned in the text."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I lowered the relevance score from 3 to a slightly more lenient view but acknowledge it is indeed low. The strict judge was correct that the summary misses significant context (the novel source, authenticity efforts, historical context of Obama/12 Years a Slave, and the specific plot of Kunta Kinte). However, I will not lower it further because the summary does accurately capture the primary announcement (who, what, when) without hallucinating details. The strict judge's criticism is valid; the summary is too brief to be considered highly relevant for a full article summary."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The lenient judge's assessment is accurate. The summary is grammatically perfect and logically structured (coherence/fluency). It strictly adheres to the facts provided in the text without hallucination (consistency). The only valid criticism is on relevance: the summary omits significant context such as the original 1977 audience size, the specific historical figures involved beyond LeVar Burton (Alex Haley, David Wolper), and the contemporary cultural backdrop mentioned in the article. Therefore, the score of 4 for relevance is justified, and no points should be raised."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I raised the overall score from 4.5 to 4.0 by slightly increasing the relevance score from 3 to 4. While the summary is indeed brief and misses significant context (the novel source, authenticity efforts, historical context of Obama/12 Years a Slave, and the specific plot of Kunta Kinte), it accurately captures the primary announcement (who, what, when) without hallucinating details. The strict judge's criticism is valid; the summary is too brief to be considered highly relevant for a full article summary. However, given that the core news event is correctly identified and no false information is introduced, a score of 3 feels slightly too harsh for a short blurb that gets the main point right."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The strict judge's assessment is accurate. The summary is grammatically flawless and logically structured (Coherence/Fluency). It strictly adheres to the facts without hallucination (Consistency). The only valid criticism is on Relevance: the summary omits significant context such as the original 1977 audience size, the specific historical figures involved beyond LeVar Burton (Alex Haley, David Wolper), and the contemporary cultural backdrop mentioned in the article. Therefore, the score of 4 for relevance is justified, and no points should be raised."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.7
+    }
+  }
+}

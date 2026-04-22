@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-0f0789390d67698283cc87b2e046b5c5cd77edb7",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, making it difficult to understand the sequence of events."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that the guard lost his footing 'on the side of the box' instead of on a manhole cover, which is a critical detail from the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'dropping his rifle' is grammatically incorrect as it lacks a subject and verb structure."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the crowd's reaction and the context of the incident being caught on camera, which are important for understanding the embarrassment of the guard."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the incident involving the Queen's Guard."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the events described in the article without introducing any new or inconsistent facts."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key event of the guard slipping and the embarrassment that followed, which are the main points of the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'dropping his rifle' which should be 'and dropped his rifle,' affecting its readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

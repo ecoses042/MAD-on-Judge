@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-a02e362c5b8f049848ce718b37b96117485461cf",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is factually consistent with the source but suffers from severe relevance issues by omitting the core explanation of the phenomenon (smoke particles filtering light) and the cause of the fires going out of control (strong winds). It also fails to mention the impact on other regions or the resolution, making it an incomplete summary of the article's main points."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and strictly consistent with the source text (no hallucinations). It captures the main narrative arc regarding Tim Durkan's observation and the cause of the sunsets. However, it scores a 4 for relevance because it omits significant details present in the article, such as the specific date, the reason the fires got out of control, the destruction of villages, and the scientific explanation for why the sunsets appear red."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is factually consistent and fluent but fails significantly on relevance by omitting the scientific explanation (smoke filtering light) and the impact/resolution details which constitute the bulk of the article's informational value. It reads more like an excerpt than a summary."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is grammatically correct, logically structured, and strictly consistent with the source text (no hallucinations). It successfully captures the primary narrative: Tim Durkan's observation and the immediate cause (Siberian wildfires started by farmers). The score of 4 for relevance is justified because the summary omits significant secondary details present in the article, such as the date, the specific reason the fires escalated (winds), the impact on villages, the trans-Pacific transport of smoke, and the scientific explanation for the red color. Since these are key points in the full article, omitting them prevents a perfect relevance score."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No changes needed. The summary is factually consistent and fluent but severely lacks relevance by omitting the scientific explanation of the red color and the resolution of the fires, which are the core informational content of the article."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary is grammatically correct and consistent with the source text. However, it suffers from significant relevance issues by omitting key explanatory details: the cause of the smoke (Siberian wildfires), the mechanism of transport (winds carrying smoke across the Pacific), and the scientific reason for the red color (smoke particles filtering shorter wavelengths). These are central to understanding the phenomenon described in the article, so a perfect score is not warranted."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 5.0,
+      "fluency": 4.5,
+      "relevance": 3.0,
+      "overall_judge": 3.9
+    }
+  }
+}

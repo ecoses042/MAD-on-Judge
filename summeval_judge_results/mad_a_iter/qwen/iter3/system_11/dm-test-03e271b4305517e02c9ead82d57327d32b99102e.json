@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-03e271b4305517e02c9ead82d57327d32b99102e",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is highly coherent and relevant, capturing the main points of the article accurately without hallucinations. The only minor deduction for fluency is due to the retention of the source text's formatting artifacts (e.g., '-lrb- 3 -rrb-'), which makes it slightly less readable than standard English, though the content itself is factually consistent and well-grounded."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is highly coherent and relevant, accurately capturing the main points of the article (Williams' match result, her reaction, the doubles loss, and the relegation). It is consistent with the source text, though it omits specific details like weather conditions or future quotes. The only deduction for fluency is due to the retention of the source text's non-standard punctuation/formatting (e.g., '4-6 7-6(3)' written as '4-6 7-6 -lrb- 3 -rrb-'), which makes it slightly less fluent than a polished summary would be, but this is a minor flaw compared to the high quality of content extraction."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The lenient judge's assessment is accurate. The summary effectively captures the main points (Williams' 'eye-opener', the match score, the doubles loss, and the relegation) with perfect coherence and relevance. It contains no hallucinations, maintaining full consistency with the source text. The only valid reason for a deduction in fluency is the retention of the source text's formatting artifacts ('-lrb-', '-rrb-'), which makes the reading experience slightly less smooth than standard English, but this does not constitute a grammatical error or lack of idiomatic expression. Therefore, the scores remain unchanged."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 5,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I lowered the consistency score because the summary retains non-standard formatting artifacts from the source text (e.g., '-lrb- 3 -rrb-' instead of '(3)'), which technically introduces a representation error rather than just an omission. I also lowered the fluency score significantly; while the grammar is correct, the inclusion of these raw encoding markers ('-lrb-', '-rrb-') and the lack of standard punctuation breaks the flow and makes it read like a raw data dump rather than fluent English."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary accurately reflects the source text without introducing hallucinations or omitting key details. While the inclusion of formatting artifacts ('-lrb-', '-rrb-') slightly impacts fluency, it does not constitute a grammatical error or lack of idiomatic expression severe enough to warrant a lower score than 4. Therefore, no adjustment is needed."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 5,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I have aligned my scores with the lenient judge's assessment regarding consistency and fluency. The summary contains raw encoding artifacts ('-lrb-', '-rrb-') which constitute a representation error (consistency) and significantly degrade readability, making it read like a data dump rather than fluent English (fluency). I did not raise the scores as these are objective flaws in the provided text."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.5,
+      "fluency": 3.5,
+      "relevance": 5.0,
+      "overall_judge": 4.5
+    }
+  }
+}

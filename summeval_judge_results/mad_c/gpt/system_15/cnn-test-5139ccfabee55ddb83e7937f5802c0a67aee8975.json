@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-5139ccfabee55ddb83e7937f5802c0a67aee8975",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, making it difficult to understand the sequence of events."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that the U.S. command said the transponder was off was false, which is a misrepresentation of the original article's context."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as missing articles and awkward phrasing, which hinder readability."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details, such as the context of the U.S. complaint and the previous incident involving the RC-135U, which are important for understanding the significance of the current event."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with the U.S. complaint and detailing the incident involving the U.S. reconnaissance plane and the Russian fighter jet."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the main points from the article, including the U.S. crew's perception of the Russian pilot's actions and the dispute over the transponder status."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key aspects of the incident, such as the interception and the U.S. response, while avoiding unnecessary details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, such as 'the transponder was off was false,' which affects readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

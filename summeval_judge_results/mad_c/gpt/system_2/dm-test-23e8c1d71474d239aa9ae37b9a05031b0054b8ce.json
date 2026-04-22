@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-23e8c1d71474d239aa9ae37b9a05031b0054b8ce",
+  "system_name": "system_2",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, jumping between Vardy's goal, the upcoming match, and Pearson's advice without smooth transitions."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention the significance of Pearson's comments about focusing on their own performance and not worrying about rivals, which is a key point in the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not clarify that Leicester is currently at the bottom of the table, which is an important detail for understanding their situation."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains awkward phrasing, such as 'improve his side's slim chance,' which could be more clearly expressed."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with Vardy's goal, followed by the team's current standing and Pearson's advice."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the key points from the article, including Vardy's goal, the team's position, and Pearson's message."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important information, such as the match outcome, the team's relegation status, and the manager's advice."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains some awkward phrasing, such as 'improve his side's slim chance,' which could be more smoothly expressed."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 4,
+      "relevance": 3,
+      "overall_judge": 3.2,
+      "winner_side": {
+        "coherence": "tie",
+        "consistency": "tie",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

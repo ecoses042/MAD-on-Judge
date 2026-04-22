@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-e7d8b6617691ea00d4ddc5fe2b7cbd105ba9a57e",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and strictly consistent with the source text. However, it scores a 4 for relevance because it omits critical details present in the article, such as the fact that Munden has 'gone on the run' (the main news hook), his physical description, and the specific nature of the recent incident (targeting a toddler on a bus). While accurate, it provides an incomplete picture of the situation."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and strictly consistent with the source text, accurately capturing the subject's identity, location, conviction, and detention status. It receives a score of 4 for relevance because it omits significant details present in the article, such as the fact that he has gone on the run (is missing), his physical description, and the specific nature of the recent incident involving the toddler on the bus, which are central to the news report."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I lowered the relevance score from 4 to 3. While the summary is factually consistent and grammatically correct, it is extremely sparse for a news summary of this nature. It misses the primary 'news hook' (that he has gone on the run/vanished), his physical description which is crucial for a manhunt, and the specific context of the recent incident (the bus/toddler). The strict judge was correct that these omissions make the summary feel incomplete and less useful to a reader seeking current information."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The lenient judge's assessment is accurate. The summary strictly adheres to the facts in the text (consistency) and presents them clearly (coherence/fluency). However, it significantly under-reports the urgency of the situation by omitting that Munden has 'gone on the run' or is 'missing,' which is the primary news hook. It also misses key context like his physical description and the specific incident details. Therefore, a relevance score of 4 is appropriate, and no harsher penalty is needed."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I have raised the overall score from 4.5 to 4.0. While I agree with the lenient judge's assessment that the summary is factually consistent and coherent, I disagree with their decision to lower the relevance score further or keep it at 3 based on 'extreme sparseness'. The summary successfully captures the three most critical facts: who (Stephen Munden), what happened (convicted of touching a child under 13), and current status (detained in a hospital order). In news summarization, brevity is often preferred over detail; including every physical description or quote would dilute the core message. The omission of the 'on the run' aspect is a significant gap, but given the strict constraint to only use provided text without adding external context, and the fact that the summary accurately reflects the source's main narrative arc (Conviction -> Hospital Order), a score of 3 feels too harsh for a concise factual summary. The summary is relevant to the core event described."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "While the summary is factually consistent and fluent, I am lowering the relevance score from 4 to 3. The strict judge correctly identified that the summary misses the primary news hook: that Munden has 'gone on the run' and is currently 'missing.' By omitting this critical status update, the summary fails to convey the urgency of the situation described in the article. Additionally, it omits his physical description (height, build) which is essential for a manhunt context, further reducing its relevance as a standalone news brief."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 3.0,
+      "overall_judge": 4.5
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "article_id": "cnn-test-bcdb32ae644040a721da880fff9c1d502048cd8b",
+  "system_name": "system_8",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, as it abruptly shifts from the murder-suicide claim to the cruise details without a clear connection."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the phrase 'but did not provide details,' which is not present in the original article and misrepresents the information."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details about the investigation and the involvement of authorities, which are important to the context of the incident."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the incident."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information provided in the article without introducing any new facts."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the incident, including the nature of the deaths and the cruise details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'UPDATE: Holland America said the two passengers were found dead in their stateroom, but did not provide details' is somewhat awkward and disrupts the flow."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 1,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.0,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

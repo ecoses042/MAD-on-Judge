@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-a3b6201aca77b5bdaa5df02d6acee2be66233237",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.8,
+        "rationale_for_score": "The summary suffers from a critical consistency flaw: it ends with the incomplete sentence 'she said .' which is grammatically broken and fails to convey any information. Additionally, while it captures the main characters, it omits significant details regarding the specific amount stolen (£207), the intended use (grave stone), and the emotional context of the miscarriages provided in the source, leading to low relevance. The coherence is affected by the abrupt ending."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is consistent with the source text and covers the main points (Dawn's miscarriages, the theft, the lie detector test). However, it ends abruptly with 'she said .' without completing the quote or reporting what she actually said, which affects fluency and completeness. It misses significant emotional context provided in the article (e.g., her specific grief over Daniel James), slightly impacting relevance, but given the lenient rules, it is not penalized heavily for missing details unless they are hallucinations."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The strict judge's assessment was accurate but perhaps too lenient on fluency given the critical error at the end of the text. The summary ends with an incomplete sentence ('she said .'), which is a severe grammatical failure and breaks coherence entirely. Furthermore, this truncation causes a massive consistency issue: it fails to report what she actually said (the lie detector results), effectively omitting the core event of the story. The omission of key details like the specific amount (£207) and the purpose of the funds (grave stone) further lowers relevance. Therefore, scores were lowered to reflect these critical flaws."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "The lenient judge's score for fluency (3) was too high because the summary ends with a grammatical fragment ('she said .') that makes the text incomplete and ungrammatical. This is a significant error in fluency. The coherence score was lowered to 3 because the abrupt ending disrupts the logical flow of the narrative. Consistency remains 5 as no hallucinations were introduced. Relevance stays at 4 as key facts are present despite the missing quote."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary ends with a grammatical fragment ('she said .'), which severely impacts fluency and coherence by leaving the narrative incomplete. No changes to scores were necessary."
+      },
+      "strict": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 1,
+        "relevance": 1,
+        "overall_judge": 1.0,
+        "adjustment_notes": "The lenient judge's assessment was overly generous given the catastrophic failure of the summary. The text ends with an incomplete sentence ('she said .'), which is a severe grammatical error (fluency) and breaks logical flow (coherence). This truncation also causes a massive consistency issue by failing to report the core event: what she actually said or the result of the test, effectively omitting the main point of the story. Additionally, key details like the specific amount (£207) and the purpose of the funds are missing, lowering relevance. The summary is fundamentally broken."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 3.0,
+      "fluency": 1.5,
+      "relevance": 2.5,
+      "overall_judge": 2.0
+    }
+  }
+}

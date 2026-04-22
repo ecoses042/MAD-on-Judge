@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-6f027d030f9ca86446dc893f1d10ced4c9a3561f",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.5,
+        "rationale_for_score": "The summary is coherent and relevant, covering the main points of the first paragraph of the source text. However, it contains a clear hallucination/error in consistency: it writes '# 100,000' instead of '£100,000'. Since the instruction states to only penalize clear hallucinations (content not at all in the article), and this is a formatting error rather than a factual invention, I am applying leniency. The score is reduced slightly due to this obvious typo which affects fluency and consistency."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is coherent and relevant to the first paragraph of the source text. However, it fails the consistency criterion because it hallucinates a specific currency symbol ('#') instead of '£' for the salary figure mentioned in the article. Additionally, while the summary covers the main points of the first section, it completely ignores the significant additional information provided in the rest of the article (e.g., Henderson's stats, his potential captaincy role, and the context of other players like Sterling), which impacts its overall relevance score."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.5,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary accurately reflects the content of the first paragraph of the source text. The error '# 100,000' is a clear formatting/typo issue rather than a factual hallucination (inventing a fact not in the article), so it warrants a slight penalty on consistency and fluency but not a severe one. No other adjustments are necessary."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I lowered the consistency score from 4 to 3 because the strict judge correctly identified a factual hallucination: the summary uses '#' instead of '£' for the salary figure. This is an error in information consistency with the source text. I maintained the other scores as the strict judge's assessment was accurate regarding the fluency (minor typo) and relevance (missing later paragraphs)."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.5,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary is well-structured and covers the primary news event accurately. The only flaw is the typo '# 100,000' instead of '£100,000', which slightly impacts consistency (factual accuracy regarding currency) and fluency (readability). Since this is a minor formatting error rather than a hallucination or structural failure, maintaining the scores with a slight penalty is appropriate."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I accepted the lenient judge's adjustment to the consistency score. The summary contains a factual error ('# 100,000') instead of the correct currency symbol ('£') found in the source text. This constitutes an inconsistency with the source document. I maintained the other scores as the strict judge's assessment regarding fluency (minor typo) and relevance (missing later paragraphs) was accurate."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 3.5,
+      "fluency": 4.0,
+      "relevance": 4.5,
+      "overall_judge": 4.2
+    }
+  }
+}

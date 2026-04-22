@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-f37fd6e9b6cc18a7132568e307ef3b130931e809",
+  "system_name": "system_7",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, jumping between events without proper transitions."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details about the nature of the alleged abuse and the context of the investigation, which are crucial for understanding the severity of the claims."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not specify that the alleged incident occurred in January 1978, which is an important detail from the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as the lack of capitalization at the beginning of sentences."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting from Mr. Lawler's initial experience at Clarence House to his later attempts to report the incident."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the claims made by Mr. Lawler without introducing any new or unrelated information."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of Mr. Lawler's experience and the subsequent actions taken, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains some grammatical issues, such as the lack of proper capitalization at the beginning of sentences."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 4,
+      "relevance": 3,
+      "overall_judge": 3.2,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "tie",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

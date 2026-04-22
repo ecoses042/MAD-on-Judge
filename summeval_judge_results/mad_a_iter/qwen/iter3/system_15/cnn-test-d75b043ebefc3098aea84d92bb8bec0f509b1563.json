@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-d75b043ebefc3098aea84d92bb8bec0f509b1563",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary accurately captures the key facts (casualties, responsible group, and diplomatic request) with high consistency and relevance. The score is slightly reduced from perfect due to minor capitalization inconsistencies in the summary text (e.g., 'eight', 'jaish al adal', 'iranian'), which affects fluency/idiomatic presentation, though the content is flawless."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source text and covers the main events (deaths, responsibility, casualties). However, it lacks coherence due to poor sentence structure and capitalization errors (e.g., 'eight', 'jaish al adal', 'iranian'). It also suffers from low relevance by omitting significant context provided in the article, such as the specific location (Negur), the identity of the militant group's leader/deputy governor cited, the group's ideology/targets, and Pakistan's official response regarding investigation and apprehension of survivors. The inclusion of 'new :' is unprofessional and detracts from fluency."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary accurately reflects the key facts of the article (casualties, responsible group, and diplomatic request) without introducing external information. The only deduction is for capitalization inconsistencies (e.g., 'eight', 'jaish al adal'), which impacts fluency but not content accuracy."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "Lowered fluency score significantly due to the inclusion of 'new :' which is unprofessional and breaks readability, as well as consistent lack of capitalization (e.g., 'eight', 'jaish al adal'). Lowered coherence slightly because the sentence structure is fragmented and lacks logical transitions between the event, the response, and the context. Relevance remains low as key contextual details like location, group ideology, and specific diplomatic responses are missing. Consistency remains perfect as no facts were invented."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary accurately captures the key facts (casualties, responsible group, diplomatic request) without introducing external information. The only deduction is for capitalization inconsistencies (e.g., 'eight', 'jaish al adal'), which impacts fluency but not content accuracy."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No score adjustment required. The lenient judge's assessment is accurate: the summary contains a formatting error ('new :') and lacks capitalization, which severely impacts fluency (score 2). While the summary is factually consistent with the source, it omits significant context regarding the militant group's ideology, specific locations, and diplomatic responses, keeping relevance low. The fragmented structure further limits coherence."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 5.0,
+      "fluency": 3.0,
+      "relevance": 4.0,
+      "overall_judge": 3.9
+    }
+  }
+}

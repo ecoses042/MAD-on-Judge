@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-d75b043ebefc3098aea84d92bb8bec0f509b1563",
+  "system_name": "system_6",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, as it abruptly ends without providing a complete picture of the incident or its implications."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the context of the attack, the response from Pakistani authorities, and the historical background of Jaish al Adal, which are crucial for understanding the significance of the event."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary uses inconsistent capitalization (e.g., 'cnn' instead of 'CNN') and lacks proper punctuation, making it less fluent and harder to read."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the number of militants killed or the specific location of the incident, which are present in the original article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, detailing the key events in a structured manner."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, including the number of guards killed and the involvement of the militant group Jaish al Adal."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important aspects of the incident, such as the casualties and the claim of responsibility by the militant group."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as inconsistent capitalization and punctuation, which affect its readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

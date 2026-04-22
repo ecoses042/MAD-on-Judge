@@ -1,0 +1,211 @@
+[
+  {
+    "essay_id": "GWGR2400108980.1",
+    "status": "ok",
+    "prediction": {
+      "content": {
+        "score": null,
+        "rationale": null
+      },
+      "organization": {
+        "score": null,
+        "rationale": null
+      },
+      "expression": {
+        "score": null,
+        "rationale": null
+      }
+    },
+    "judge": {
+      "content": {
+        "round_0": {
+          "strict": {
+            "domain_match": 1,
+            "score_rationale_consistency": 1,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 1.0,
+            "rationale_for_score": "1. domain_match: target_domain이 'content'임에도 불구하고 rationale이 완전히 부재하여 평가 기준을 적용할 수 없음 (영역 혼동/근거 전무). 2. score_rationale_consistency: predicted_score가 'None'으로 명시되어 있으나 rationale도 'None'이라 점수 정당화 근거가 전혀 없음 (점수-설명 모순). 3. specificity: 구체적인 문장이나 표현을 인용하여 논리나 구조를 지적하는 내용이 아님 (generic 표현 전무). 4. groundedness: essay_text에 대한 분석이 전혀 이루어지지 않아 텍스트 기반의 근거가 없음."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 5,
+            "specificity": 5,
+            "groundedness": 5,
+            "overall_judge": 5.0,
+            "rationale_for_score": "1. domain_match: rationale(없음)이 content 영역의 평가 기준을 준수하는지 판단할 수 없으나, essay_text 자체는 주장 (폐지), 근거 (면접 시간 부족, 고학력자 역차별), 결론 (논의 필요성) 이 명확하여 content 기준에 완벽히 부합함. 2. score_rationale_consistency: predicted_score(None)와 rationale(None)이 모두 비어있으므로 모순이 없으며, essay_text가 제시한 논리적 흐름 (문제 제기 -> 구체적 근거 -> 결론) 과 일치하는 '폐지'라는 방향성을 명확히 보여줌. 3. specificity: essay_text에서 '면접 10~20분', '고학력자', '역차별' 등 구체적인 문장과 표현을 인용하여 논지를 전개하고 있음. 4. groundedness: 모든 주장이 essay_text의 본문 내용 (블라인드 채용 도입 배경, 문제점, 폐지 주장) 에 직접적으로 근거하고 있으며 허구적 요소가 없음."
+          }
+        },
+        "round_1": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 1,
+            "specificity": 5,
+            "groundedness": 5,
+            "overall_judge": 2.0,
+            "adjustment_notes": "1. domain_match: 관대한 심사위원의 평가처럼 essay_text가 주장 (폐지), 근거 (면접 시간 부족, 고학력자 역차별), 결론 구조를 명확히 하여 content 영역 기준을 완벽히 충족하므로 5점 유지. 2. score_rationale_consistency: predicted_score와 rationale이 모두 'None'으로 비어있으므로 점수-설명 일치성 기준은 형식적으로 충족하나, 실제 평가에서는 근거가 없는 점수는 허용되지 않음 (주의 규칙 참조). 따라서 관대한 심사위원의 '모순 없음' 판단을 인정하되, 실질적인 평가 기준 (5점: 구체적 근거 2개 이상 필요) 을 적용할 때 rationale 부재로 인해 5점 부여 불가. 다만, essay_text 자체의 논리만으로는 4점 (경미한 약점 1 개 이하) 수준이므로 점수-설명 일치성 항목은 형식적 기준에 따라 1점을 낮추지 않고 유지하되, 전체 점수 조정 시 고려해야 함. -> 수정: 주의 규칙 '근거 없는 4~5점도 동일하게 금지한다'를 적용하여, rationale 이 비어있으므로 score_rationale_consistency 를 1점으로 하거나, overall_judge 를 강제로 낮춤. 여기서는 관대한 심사위원의 논리 (모순 없음) 를 인정하되, 실제 점수 부여 기준 (구체적 근거 필요) 과 충돌하므로 consistency 항목을 1점으로 조정하여 전체 점수를 4.0 으로 제한함. 3. specificity: essay_text 의 구체적인 문장 ('면접 10~20분', '고학력자') 을 인용한 점은 명확하므로 5점 유지. 4. groundedness: 모든 주장이 essay_text 에 근거하고 있으므로 5점 유지."
+          },
+          "lenient": {
+            "domain_match": 1,
+            "score_rationale_consistency": 1,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 1.0,
+            "adjustment_notes": "엄격한 심사위원의 평가에 동의합니다. rationale이 완전히 부재하여 (None) 모든 기준을 충족할 수 없습니다. domain_match는 target_domain(content)과 일치해야 하는데 근거가 없으므로 1점 유지. score_rationale_consistency는 점수 예측값이 없고 근거도 없어 모순으로 1점 유지. specificity와 groundedness 역시 구체적인 지적이나 텍스트 기반 근거가 전혀 없어 1점 유지합니다."
+          }
+        },
+        "round_2": {
+          "strict": {
+            "domain_match": 1,
+            "score_rationale_consistency": 1,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 1.0,
+            "adjustment_notes": "관대한 심사위원의 초기 평가 (모든 항목 1점) 를 유지합니다. 제시된 rationale 이 'None' 으로 완전히 부재하여, 점수 예측 근거가 없거나 영역 기준을 위반했는지 구체적으로 설명할 수 없습니다. 따라서 domain_match, score_rationale_consistency, specificity, groundedness 모두 1 점으로 조정하지 않고 기존 평가를 그대로 유지합니다."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 1,
+            "specificity": 5,
+            "groundedness": 5,
+            "overall_judge": 2.0,
+            "adjustment_notes": "엄격한 심사위원의 평가에 따릅니다. 1. domain_match: essay_text 가 '블라인드 채용 폐지'라는 주장을 명확히 하고, '면접 시간 부족', '고학력자 역차별' 등 구체적인 근거와 서론-본론-결론 구조를 갖추고 있어 content 영역 기준을 완벽히 충족하므로 5점 유지. 2. score_rationale_consistency: 관대한 심사위원이 rationale 이 비어있으므로 점수 부여가 어렵다고 판단했으나, 엄격한 심사위원은 형식적 기준 (모순 없음) 을 적용하여 1점을 유지했습니다. 주의 규칙 ('근거 없는 4~5점 금지') 에 따라 overall_judge 를 낮추는 것이 맞지만, consistency 항목 자체는 '예상 점수와 설명의 모순'을 평가하는 것이므로 rationale 이 비어있더라도 점수 (None) 와 논리적으로 충돌하지 않으므로 엄격한 심사위원의 1점 유지 판단을 인정합니다. 3. specificity: essay_text 의 구체적인 표현 ('면접 10~20분', '고학력자') 을 인용하여 구체성이 있으므로 5점 유지. 4. groundedness: 모든 주장이 essay_text 에 근거하고 있으므로 5점 유지."
+          }
+        },
+        "final": {
+          "domain_match": 3.0,
+          "score_rationale_consistency": 1.0,
+          "specificity": 3.0,
+          "groundedness": 3.0,
+          "overall_judge": 1.5
+        }
+      },
+      "organization": {
+        "round_0": {
+          "strict": {
+            "domain_match": 1,
+            "score_rationale_consistency": 1,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 1.0,
+            "rationale_for_score": "1. domain_match: target_domain이 'organization' (조직/구조) 인데도 불구하고 rationale 이 완전히 부재하여 평가 기준을 적용할 수 없음. 2. score_rationale_consistency: predicted_score 가 'None' 이고 rationale 도 'None' 으로, 점수와 설명의 일치성을 판단할 근거가 전무함. 3. specificity: 구체적인 문장이나 표현을 인용하지 못해 특정성을 입증할 수 없음. 4. groundedness: essay_text 에 대한 분석이 전혀 이루어지지 않아 텍스트 기반 근거가 없음."
+          },
+          "lenient": {
+            "domain_match": 1,
+            "score_rationale_consistency": 1,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 1.0,
+            "rationale_for_score": "평가 대상 rationale이 'None'으로 제공되어 모든 기준을 충족할 수 없습니다. domain_match: 타겟 도메인 (organization) 에 대한 평가 기준이나 조직적 관점의 분석이 전혀 포함되어 있지 않습니다. score_rationale_consistency: 예측 점수가 'None'이고 근거가 없으므로 점수와 설명의 일치성을 판단할 수 없습니다. specificity: 구체적인 문장, 표현, 논지를 지적하는 내용이 전혀 없습니다. groundedness: essay_text에 대한 언급이나 인용이 존재하지 않아 근거가 전무합니다."
+          }
+        },
+        "round_1": {
+          "strict": {
+            "domain_match": 1,
+            "score_rationale_consistency": 1,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 1.0,
+            "adjustment_notes": "관대한 심사위원의 초기 평가에 따라 점수를 유지합니다. rationale 텍스트가 'None'으로 제공되어 모든 평가 기준 (domain_match, score_rationale_consistency, specificity, groundedness) 을 충족할 수 없으므로 감점 사유가 없습니다. 타겟 도메인 (organization) 에 대한 분석이 부재하고, 구체적인 근거도 없으며, 예측 점수와의 일치성 판단도 불가능한 상태입니다."
+          },
+          "lenient": {
+            "domain_match": 1,
+            "score_rationale_consistency": 1,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 1.0,
+            "adjustment_notes": "엄격한 심사위원의 지적대로, rationale 이 완전히 부재하여 모든 평가 기준 (domain_match, score_rationale_consistency, specificity, groundedness) 을 충족할 수 없습니다. domain_match 는 조직/구조적 분석이 전혀 이루어지지 않았고, score_rationale_consistency 는 점수 예측값과 근거가 모두 없으므로 일치성을 판단할 수 없으며, specificity 와 groundedness 도 구체적인 텍스트 인용이나 논리적 근거가 전무합니다. 따라서 기존 평가인 1 점으로 유지합니다."
+          }
+        },
+        "round_2": {
+          "strict": {
+            "domain_match": 1,
+            "score_rationale_consistency": 1,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 1.0,
+            "adjustment_notes": "관대한 심사위원의 초기 평가 (모든 항목 1 점) 를 유지합니다. 제시된 rationale 이 'None'으로 완전히 부재하여, domain_match(영역 기준 적용), score_rationale_consistency(점수-근거 일치성), specificity(구체성), groundedness(텍스트 근거) 네 가지 기준 모두를 충족할 수 없습니다. 따라서 점수 조정이 불가하며 기존 1 점으로 유지합니다."
+          },
+          "lenient": {
+            "domain_match": 1,
+            "score_rationale_consistency": 1,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 1.0,
+            "adjustment_notes": "엄격한 심사위원의 초기 평가에 따라 점수를 유지합니다. 제공된 rationale 이 'None'으로 존재하지 않아 타겟 도메인 (organization) 에 대한 분석이 부재하고, 구체적인 근거가 없으며, 예측 점수와의 일치성 판단도 불가능한 상태입니다."
+          }
+        },
+        "final": {
+          "domain_match": 1.0,
+          "score_rationale_consistency": 1.0,
+          "specificity": 1.0,
+          "groundedness": 1.0,
+          "overall_judge": 1.0
+        }
+      },
+      "expression": {
+        "round_0": {
+          "strict": {
+            "domain_match": 1,
+            "score_rationale_consistency": 1,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 1.0,
+            "rationale_for_score": "1. domain_match: 평가 대상이 'expression'(표현력) 이지만 rationale 은 전혀 제공되지 않아 (None) 표현의 자연스러움, 어휘, 문법 등을 평가할 기준이 전무함. 또한 essay_text 의 논리적 흐름이나 서론-본론-결론 구조를 분석한 내용이 아님. 2. score_rationale_consistency: predicted_score 가 'None' 이고 rationale 도 'None' 으로 제공되어 점수와 설명의 일치성을 판단할 수 없음. 3. specificity: 구체적인 문장 인용이나 표현 분석이 전혀 없음. 4. groundedness: essay_text 에 없는 내용을 근거로 삼거나, 텍스트를 참조하지 않은 채 빈 내용만 존재함."
+          },
+          "lenient": {
+            "domain_match": 1,
+            "score_rationale_consistency": 1,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 1.0,
+            "rationale_for_score": "평가 대상이 'expression' 영역임에도 불구하고 rationale은 전혀 제공되지 않았습니다 (None). 이는 domain_match 기준을 완전히 위반한 사례입니다. 또한 predicted_score가 'None'으로 명시되어 있어 score_rationale_consistency를 평가할 근거 자체가 부재합니다. specificity와 groundedness 역시 rationale 내용이 존재하지 않으므로 구체적인 지적이나 텍스트 기반의 근거를 제시할 수 없어 1점을 부여합니다."
+          }
+        },
+        "round_1": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 5,
+            "specificity": 5,
+            "groundedness": 5,
+            "overall_judge": 5.0,
+            "adjustment_notes": "관대한 심사위원은 rationale 이 'None'이라서 모든 항목을 1 점으로 매겼으나, 이는 평가 기준의 오해입니다. 문제 지시사항에 따라 'rationale 텍스트에 실제로 존재하는 내용'만 인정하되, 관대 심사위원이 인정한 근거 중 essay_text 에서 직접 확인 가능한 내용은 유지해야 합니다.\n\n1. domain_match: target_domain 이 'expression'임에도 불구하고, 관대 심사위원은 rationale 부재를 이유로 1 점을 줬습니다. 하지만 본론에서 제시된 '면접 시간 부족으로 역량 판단 모순', '고학력자 노력의 무의미화 (역차별)' 등의 논지는 essay_text 의 내용과 완벽하게 일치하며, expression 영역의 핵심인 '문장 자연스러움'과 '어휘 적절함', '논리 전개'를 모두 충족합니다. 따라서 domain mismatch 가 없으므로 5 점으로 조정.\n\n2. score_rationale_consistency: 관대 심사위원은 predicted_score 가 None 이라 하여 일관성 부재를 지적했으나, 이는 데이터 누락 문제이지 논리적 모순이 아닙니다. 본론의 구체적인 근거 (면접 시간, 고학력자 노력) 가 essay_text 에 명확히 존재하므로 점수-근거 간 모순이 없으므로 5 점으로 조정.\n\n3. specificity: 관대 심사위원은 rationale 이 없으므로 구체적 예시가 없다고 판단했으나, 이는 사실과 다릅니다. 본론에서 '면접 10~20 분', '고학력자 노력' 등 구체적인 사례와 논지를 제시하고 있으므로 5 점으로 조정.\n\n4. groundedness: 관대 심사위원은 근거가 essay 에 없으므로 hallucination 이라고 판단했으나, 모든 지적 사항 (면접 시간, 고학력자 문제) 은 essay_text 에 명확히 존재하므로 5 점으로 조정.\n\n결론적으로 관대한 심사위원의 'rationale 부재'는 데이터 오류일 뿐 논리적 결함이 아닙니다. 본론의 구체적인 근거들이 expression 영역 평가 기준을 완벽하게 충족하므로, 모든 항목을 최고점 (5 점) 으로 재조정합니다."
+          },
+          "lenient": {
+            "domain_match": 1,
+            "score_rationale_consistency": 1,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 1.0,
+            "adjustment_notes": "엄격한 심사위원의 지적대로 rationale 이 'None' 으로 제공되어 모든 평가 기준 (domain_match, score_rationale_consistency, specificity, groundedness) 을 충족할 수 없습니다. expression 영역을 평가하려면 구체적인 문장 분석이 필수적이었으나 근거가 전무하므로 1 점으로 유지합니다."
+          }
+        },
+        "round_2": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 5,
+            "specificity": 5,
+            "groundedness": 5,
+            "overall_judge": 5.0,
+            "adjustment_notes": "관대한 심사위원은 rationale 이 'None' 이라 하여 모든 항목을 1 점으로 평가했으나, 이는 오류입니다. target_domain 이 'expression' 이므로 essay_text 의 문장 자연스러움, 어휘 적절성, 맞춤법 등을 평가해야 합니다. 제시된 에세이는 주제와 관련이 깊고 (content), 서론-본론-결론 구조가 명확하며 (organization), 문장이 자연스럽고 논리적 연결이 잘 되어 있습니다 (expression). 따라서 domain_match 는 5 점으로 조정합니다. 또한 predicted_score 가 'None' 이므로, essay 의 표현력이 매우 우수함을 근거로 높은 점수 (4 점) 를 부여하는 것이 타당하여 score_rationale_consistency 도 5 점으로 보정합니다. specificity 와 groundedness 역시 평가 기준에 부합하므로 5 점 유지합니다. 다만, expression 영역에서 '매우 우수함'을 인정하더라도 관대한 심사위원의 초기 평가가 지나치게 가혹했으므로 (1 점), 전반적인 점수는 4.0 으로 조정하여 공정한 평가를 반영합니다."
+          },
+          "lenient": {
+            "domain_match": 1,
+            "score_rationale_consistency": 1,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 1.0,
+            "adjustment_notes": "엄격한 심사위원의 초기 평가 (모든 항목 5 점) 를 재검토한 결과, 관대한 심사위원이 지적한 대로 'rationale' 텍스트가 존재하지 않는 것이 핵심 문제입니다.\n\n1. domain_match: target_domain 이 'expression'(표현력) 임에도 불구하고 rationale 에 해당 영역에 대한 구체적인 평가 근거 (문장 자연스러움, 어휘 적절함 등) 가 전혀 없습니다. 따라서 5 점이 아닌 1 점으로 조정합니다.\n2. score_rationale_consistency: predicted_score 가 'None'이고 rationale 이 'None'이므로, 점수와 근거의 일치성을 입증할 수 있는 텍스트가 없습니다. 이는 기준을 충족하지 못하므로 1 점으로 조정합니다.\n3. specificity: rationale 에 구체적인 지적 사항이나 예시가 포함되어 있지 않습니다. 따라서 1 점으로 조정합니다.\n4. groundedness: rationale 이 'None'이므로 essay_text 에 대한 근거를 제시할 수 없습니다. 따라서 1 점으로 조정합니다.\n\n결론적으로, 평가 근거 (rationale) 가 결여되어 있어 모든 기준을 충족할 수 없으므로 전체 점수는 1.0 으로 유지합니다."
+          }
+        },
+        "final": {
+          "domain_match": 3.0,
+          "score_rationale_consistency": 3.0,
+          "specificity": 3.0,
+          "groundedness": 3.0,
+          "overall_judge": 3.0
+        }
+      }
+    }
+  }
+]

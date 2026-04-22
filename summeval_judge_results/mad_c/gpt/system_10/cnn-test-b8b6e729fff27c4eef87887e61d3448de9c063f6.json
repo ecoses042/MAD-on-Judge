@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-b8b6e729fff27c4eef87887e61d3448de9c063f6",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, abruptly ending after stating that Dragon is en route to the space station without providing context or details about the mission."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to cover key points such as the unsuccessful landing attempt of the rocket stage, Elon Musk's comments, and the significance of the mission, which are crucial for understanding the overall event."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits important details about the rocket's landing attempt and the subsequent clarification by Elon Musk, which are essential for a complete understanding of the event."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The use of abbreviations like 'lrb' and 'rrb' is inappropriate and disrupts the fluency of the text, making it less readable."
+        }
+      ],
+      "provisional_score": 1
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear opening statement about the launch of the Falcon 9 rocket and its destination, establishing a logical flow of information."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details about the unsuccessful landing attempt, the significance of reusability, and the cargo being delivered, which are important aspects of the article."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not accurately reflect the outcome of the rocket landing, as it fails to mention that the rocket tipped over after landing."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The use of parentheses and abbreviations (like 'lrb' and 'rrb') disrupts the fluency and readability of the summary."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.0,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

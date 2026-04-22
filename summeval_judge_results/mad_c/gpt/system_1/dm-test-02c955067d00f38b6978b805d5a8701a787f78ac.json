@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-02c955067d00f38b6978b805d5a8701a787f78ac",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, repeating the same details about the collision without providing a cohesive narrative."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits critical information such as the number of people involved, the severity of injuries, and the response from emergency services, focusing instead on trivial details."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the specific injuries of the most severely affected individuals, which is inconsistent with the source."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as the awkward phrasing 'happened at on the brisbane valley highway'."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the multi-vehicle crash, including the location and the number of vehicles involved."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the details from the article, including the number of vehicles, the location of the crash, and the involvement of individuals with injuries."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the incident, such as the collision, the number of people involved, and the injuries sustained, while avoiding trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as the lack of proper capitalization and punctuation, which affects its readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

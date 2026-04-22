@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-808a439a5d83fc47baaea934c8779a7ebc62470d",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source text (no hallucinations) and flows logically. However, it suffers from relevance issues by including a minor detail about Clattenburg's past accusations while omitting significant context such as his actual red card record for the season, the specific players sent off, or the current league standings which are central to the article's narrative. The fluency is slightly reduced due to run-on sentences and lack of punctuation."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.8,
+        "rationale_for_score": "The summary fails the consistency criterion because it incorrectly states that Clattenburg 'was dismissed' for two bookable offences. The source text explicitly says City captain Vincent Kompany was dismissed, not Clattenburg. Additionally, the summary omits the most critical information from the article: that Clattenburg has only sent off United players this season (Luke Shaw and Tyler Blackett), which directly addresses the accusation of favouring United mentioned in the text. By ignoring this key context and misattributing a red card to the referee, the summary introduces a major factual error and misses the main point."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a critical factual error (attributing dismissal to Clattenburg instead of Kompany) and fails to address the central context regarding his recent red card history, which is essential given the accusation of bias mentioned in the text. Therefore, I maintain the low scores."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the relevance score from 3 to 2 because the summary omits critical context present in the article: the specific red cards Clattenburg issued this season (which contradicts the 'accused of favouring' narrative by showing he actually sent off United players), the current league standings driving the match importance, and the assistant referees. The lenient judge's point about relevance was partially valid but underestimated how much the summary misses the article's main narrative arc regarding Clattenburg's actual performance record versus his reputation."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.8,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary contains a critical factual error (attributing dismissal to Clattenburg instead of Kompany) and fails to address the central context regarding his recent red card history, which is essential given the accusation of bias mentioned in the text. Therefore, I maintain the low scores."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary fails to capture the article's main narrative arc regarding Clattenburg's actual performance record versus his reputation. By omitting the specific red cards issued this season (which contradicts the 'accused of favouring' narrative) and ignoring the context of league standings driving the match importance, the summary misses critical information. The relevance score remains at 2."
+      }
+    },
+    "final": {
+      "coherence": 3.0,
+      "consistency": 3.5,
+      "fluency": 4.0,
+      "relevance": 2.0,
+      "overall_judge": 2.9
+    }
+  }
+}

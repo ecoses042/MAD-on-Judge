@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-b5bc2ae78441e4ac08fb01823d5fc0f1627c3166",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, jumping between topics without clear connections."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary incorrectly states that Pietersen has been 'axed as England's managing director,' which is not true; it was Paul Downton who was dismissed."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention the significance of Pietersen's potential return to the England team, which is a key point in the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'set for the surrey team photo shoot for surrey' is repetitive and awkwardly constructed."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear focus on Kevin Pietersen's involvement in the Surrey team photo shoot, maintaining a logical flow of information related to the event."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the article's content regarding Pietersen's participation in the photo shoot and the context of the county championship season."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary highlights key points such as the date of the photo shoot and Pietersen's role, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as the phrase 'set for the surrey team photo shoot for surrey,' which is repetitive and awkward."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits significant details about Pietersen's emotional state and the implications of Downton's dismissal, which are important for understanding the context."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

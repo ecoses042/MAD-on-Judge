@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-8bc8f134bc3ceaeec0df8f29e96e13d319717ab8",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, making it difficult to understand the main points."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary incorrectly states that 'Enrique will be replaced in the summer,' which contradicts the article's assertion that Bartomeu refuted these claims."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'took only charge' instead of 'took charge' and lacks proper punctuation."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to include key details about Enrique's contract and the club's performance, which are important for context."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear statement about the club president's satisfaction with Luis Enrique, establishing a logical flow of information regarding the club's stance."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the president's comments about not planning to replace Luis Enrique, aligning with the information provided in the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, such as 'took only charge of the club' and 'took charge at club,' which hinder readability."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary lacks important details, such as the context of Enrique's contract and the team's performance, which are key points in the original article."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

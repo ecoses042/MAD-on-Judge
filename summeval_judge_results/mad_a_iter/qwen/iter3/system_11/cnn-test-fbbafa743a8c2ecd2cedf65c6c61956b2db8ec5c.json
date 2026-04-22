@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-fbbafa743a8c2ecd2cedf65c6c61956b2db8ec5c",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and strictly consistent with the source text. It captures the main news hook (remake of 'Roots') and key details like the original audience size and the new air date. It receives a score of 4 instead of 5 because it omits significant context from the article, such as the involvement of other networks (Lifetime, History), LeVar Burton's role, the historical context mentioned, and the producers' quotes, which are important for a complete summary."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source text and maintains a logical flow regarding the premise of the remake. However, it scores lower on relevance because it truncates the summary after the second sentence, omitting significant key details such as the involvement of other networks (Lifetime, History), the specific plot focus on Kunta Kinte, LeVar Burton's role, the connection to Alex Haley's novel, and the contemporary context mentioned in the article. The inclusion of '-lrb- cnn -rrb-' is a minor formatting flaw affecting fluency."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The lenient judge's assessment is accurate. The summary strictly adheres to the source text (consistency) and presents a logical flow (coherence). While it omits significant details like the specific networks involved beyond A&E, LeVar Burton's production role, and the historical context, these omissions are justified for a brief summary focusing on the core news hook. Therefore, no points should be deducted from the lenient judge's scores."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the fluency score from 4 to 3 because the inclusion of '-lrb- cnn -rrb-' and '-rrb-' is a significant formatting error that disrupts readability, not just a 'minor' flaw. I also lowered the relevance score from 3 to 2 because the summary is severely truncated; it covers only the first two sentences of the source text and completely omits the specific subject (Kunta Kinte), key production details (LeVar Burton, Alex Haley), and the crucial contemporary context regarding racial unrest which constitutes a major portion of the article's narrative."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The strict judge's assessment is accurate. The summary effectively captures the core news hook (remake of 'Roots' airing in 2016) and maintains high coherence and consistency. While it omits significant details like the specific networks involved beyond A&E, LeVar Burton's role, and the historical context, these omissions are justified for a brief summary focusing on the primary announcement. Therefore, no points should be deducted from the lenient judge's scores."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding fluency and relevance. The summary contains significant formatting artifacts ('-lrb-', '-rrb-') which disrupt readability, justifying a score of 3 rather than 4. Furthermore, the summary is severely truncated, covering only the introductory context (original audience, remake announcement) while omitting the specific subject matter (Kunta Kinte), key production details (LeVar Burton, Alex Haley), and the crucial contemporary context mentioned in the article. Therefore, the relevance score of 2 is appropriate."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 4.0,
+      "relevance": 3.0,
+      "overall_judge": 3.9
+    }
+  }
+}

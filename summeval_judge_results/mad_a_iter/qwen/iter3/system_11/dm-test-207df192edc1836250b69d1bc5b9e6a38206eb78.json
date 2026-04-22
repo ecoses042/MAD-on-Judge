@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-207df192edc1836250b69d1bc5b9e6a38206eb78",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is coherent and fluent but suffers from severe relevance issues as it only covers the first paragraph of the source text, omitting critical details such as the study's methodology (12,000 children), specific statistics (1 in 5 boys), the proposed biological mechanism (gut bugs), and the lead author's warnings. Additionally, it contains a grammatical error ('researchers said say') and retains the awkward phrasing from the source text rather than smoothing it out."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "rationale_for_score": "The summary is coherent, consistent with the source text, and fluent. However, it only covers the first paragraph of the article, omitting significant details such as the study's methodology (12,000 children), specific statistics (one in five boys), the proposed biological mechanism (gut bugs), and warnings about antibiotic resistance. Due to this severe truncation of key information, the relevance score is lowered."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is severely flawed in terms of relevance because it only summarizes the first paragraph and completely ignores the majority of the source text, including key statistics (12,000 children), specific findings (boys vs girls), the proposed mechanism (gut bugs), and the lead author's warnings. Additionally, the grammatical error ('researchers said say') and the retention of awkward phrasing ('the may also be fattening') warrant a deduction in fluency and consistency scores. No adjustment is needed; the strict judge was accurate."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "The lenient judge's assessment is accurate. The summary strictly adheres to the first paragraph of the source text and completely omits the study's methodology (12,000 children), specific statistics (one in five boys), biological mechanisms (gut bugs), and warnings regarding antibiotic resistance found later in the article. While the summary is coherent, consistent, and fluent, its relevance is severely compromised by this truncation of key information, justifying the lower relevance score."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 3,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I have lowered the scores based on the strict evaluator's valid points regarding relevance and coherence. The summary is extremely truncated, covering only the first paragraph while ignoring the vast majority of the source text (statistics, specific findings about boys vs girls, mechanisms, warnings). This makes it a poor representation of the article. I also agree that the grammatical error ('researchers said say') and awkward phrasing ('the may also be fattening') negatively impact fluency and consistency. The lenient judge's high scores for coherence and relevance were unjustified given the summary's incompleteness."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I agree with the strict judge's assessment regarding relevance. The summary is a direct copy of the first paragraph of the source text and completely ignores the majority of the article, including the study's scale (12,000 children), specific findings on gender differences, biological explanations (gut bugs), and critical warnings about antibiotic resistance. While the grammar is perfect and the flow is logical within its limited scope, it fails to summarize the 'article' as a whole, making the low relevance score justified."
+      }
+    },
+    "final": {
+      "coherence": 3.5,
+      "consistency": 4.0,
+      "fluency": 4.0,
+      "relevance": 2.0,
+      "overall_judge": 3.2
+    }
+  }
+}

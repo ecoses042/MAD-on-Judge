@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-0783c68a744df6afa009d16e72709f2b4d90dea1",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is factually consistent with the source text and covers the main points (Bolt's participation, event details, quotes). However, it contains a significant coherence/fluency flaw: the sentence 'the competition will be announced on may 2 and 3' incorrectly states that the dates are for the announcement rather than the event itself. The source text clearly states Bolt will compete 'on May 2 and 3'. This misinterpretation of the timeline reduces the overall quality."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary accurately reflects the source text without hallucinations (Consistency: 5). It covers the key points: Bolt's participation, the event details, and his quote about making the country proud (Relevance: 4). The structure is logical (Coherence: 4), though the final sentence regarding the competition dates ('The competition will be announced on May 2 and 3') is slightly awkwardly phrased compared to the source ('running for Jamaica... on 2nd and 3rd May'), which affects Fluency slightly. Given the lenient rules, minor phrasing issues do not warrant a drop below 4."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 4.2,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary contains a factual error regarding the dates ('the competition will be announced on may 2 and 3' vs 'compete... on May 2 and 3'), which impacts both coherence (logical flow of information) and consistency (accuracy relative to source). No score reduction was necessary as the strict judge correctly identified this flaw."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "Lowered Fluency from 4 to 3. The lenient judge noted the final sentence is 'slightly awkwardly phrased'. Upon closer inspection, the phrase 'The competition will be announced on May 2 and 3' is a significant semantic error (hallucination of intent) rather than just a phrasing issue. The source text states Bolt will compete *on* those dates; the summary incorrectly claims the competition itself will be *announced* on those dates. This is a factual inconsistency that impacts fluency/readability significantly, warranting a score drop."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 3.5,
+        "adjustment_notes": "Adjusted scores down from the lenient judge's assessment. The lenient judge incorrectly stated that 'No score reduction was necessary' regarding the factual error where the summary claims the competition is 'announced on May 2 and 3' instead of Bolt competing on those dates. This is a significant consistency failure (hallucination/misattribution) and disrupts coherence. Therefore, Consistency and Coherence must be lowered to reflect this clear error."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "Agreed with the strict judge's assessment on Consistency and Fluency. The phrase 'The competition will be announced on May 2 and 3' is a critical factual error (hallucination) where the summary confuses the event dates with the announcement date. This violates consistency with the source text and severely impacts fluency/readability, justifying the score drops."
+      }
+    },
+    "final": {
+      "coherence": 3.5,
+      "consistency": 3.0,
+      "fluency": 3.0,
+      "relevance": 4.0,
+      "overall_judge": 3.2
+    }
+  }
+}

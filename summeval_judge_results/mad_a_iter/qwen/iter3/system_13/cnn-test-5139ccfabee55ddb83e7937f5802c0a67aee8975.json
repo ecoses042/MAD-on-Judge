@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-5139ccfabee55ddb83e7937f5802c0a67aee8975",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is factually consistent and coherent with the source text. However, it suffers from poor relevance because it completely omits the context of the complaint (the U.S. filing a petition), the specific aircraft models involved beyond general description, and the historical context of similar incidents mentioned in the article. It reads more like a sentence extracted directly from the text rather than a summary that synthesizes the main points."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and strictly consistent with the source text, accurately quoting the Pentagon's assessment of the incident. It receives a slightly lower relevance score (4) because it omits the context that this is not the first such incident and lacks the specific details about the conflicting claims regarding the transponder, though these are minor omissions in an otherwise accurate summary."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. While the summary is factually consistent and coherent, it fails to capture the main point of the article: that the US is formally complaining about the incident. By omitting the diplomatic response (filing a petition) and the historical context, the summary provides only a fragment of the story rather than a comprehensive overview. Therefore, I maintain the lower relevance score."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is fluent, coherent, and strictly consistent with the provided text (accurately quoting the Pentagon). The relevance score of 4 is appropriate because the summary focuses exclusively on the specific incident details while omitting significant context present in the article: the diplomatic response, the conflicting claims about the transponder status, and the historical context that this is not the first such incident. These are substantive omissions rather than trivial ones."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding relevance. The summary accurately reflects the specific details provided in the text (location, crew's perception of unsafe maneuvers) and is consistent with the source. While it omits the diplomatic complaint and historical context, these are secondary to the immediate description of the incident itself. Therefore, the lower relevance score is justified as the summary focuses on the event description rather than the full narrative arc."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary is well-structured and strictly consistent with the source text. However, it significantly omits key context: the diplomatic response (filing petitions), the conflicting claims regarding the transponder status, and the historical precedent of a similar dangerous incident a year prior. These are substantive omissions that reduce the summary's completeness relative to the full article."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 4.5,
+      "relevance": 3.5,
+      "overall_judge": 4.5
+    }
+  }
+}

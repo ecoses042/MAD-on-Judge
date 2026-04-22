@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-6c1341bedf92a304318545fbf1aad88651de7909",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from severe fragmentation; it reads like a list of disjointed sentences rather than a cohesive paragraph, failing the coherence criterion significantly. While the content is consistent with the source (no hallucinations), it lacks fluency due to poor sentence structure and omits key relevant details such as the specific goals featured, the awards nominations, and the context of the video release, resulting in low relevance."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary suffers from severe relevance issues as it consists almost entirely of fragmented sentences that fail to synthesize the main points of the article (nominations, specific video content, awards context). It lacks a clear logical flow. While grammatically acceptable, it feels incomplete and disjointed. Consistency is partially maintained but the summary misses key facts present in the source, making it an inadequate representation."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I have raised the consistency score from 4 to 5 because the summary strictly adheres to the source text without adding any external facts or hallucinations; every sentence is supported by the article. I maintained the lower scores for coherence, fluency, and relevance as they accurately reflect the summary's severe fragmentation (reading like a disjointed list), grammatical awkwardness (e.g., 'uses still photographs' lacking a verb for the action), and significant omission of key details like the specific goals, awards nominations, and video title mentioned in the source."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is a disjointed list of sentences that fails to synthesize the information. It misses the critical context regarding Kane's PFA nominations and the specific content of the video (goals vs celebrations), making it highly irrelevant despite being grammatically correct."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "No changes made. The lenient judge's points were accepted because the summary indeed fails to synthesize information (coherence), omits critical context about PFA nominations and specific video content like goals (relevance), and introduces a slight inconsistency by implying Kane is 'animated off it' without clarifying the animation medium is a photo montage rather than actual off-pitch behavior (consistency). The grammatical correctness noted in fluency remains valid."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I lowered the fluency score from 3 to 2 because the sentences are grammatically incomplete and awkward (e.g., 'uses still photographs' lacks a clear object or verb phrase indicating what is being done with them). I also lowered the relevance score from 2 to 1, as the summary omits almost all key information: the specific goals mentioned, the awards nominations, the video title, and the context of the England debut. The strict judge was correct to penalize heavily for these omissions."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 4.0,
+      "fluency": 3.0,
+      "relevance": 1.0,
+      "overall_judge": 2.0
+    }
+  }
+}

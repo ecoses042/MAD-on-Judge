@@ -1,0 +1,319 @@
+[
+  {
+    "essay_id": "GWGR2400107490.1",
+    "status": "ok",
+    "prediction": {
+      "content": {
+        "score": 3.0,
+        "rationale": "글은 동물 실험 폐지에 대한 의견을 제시하고 있으나, 서론에서 '동물실험을 하는 것이 나쁘다고 생각하지는 않으나'라는 전제를 깔아 논리의 방향성을 약화시켰다. 본론에서는 마스카라 토끼 실험 사례를 구체적으로 언급하여 근거를 보였으나, 이를 통해 도출한 결론인 '사람에게 직접 실험하는 것'은 윤리적·과학적 타당성이 부족해 논리적 연결이 다소 불안정하다."
+      },
+      "organization": {
+        "score": 3.0,
+        "rationale": "서론, 본론, 결론의 기본 골격은 갖추고 있으나 문단 간의 연결이 명확하지 않다. 특히 본론 중간에 마스카라 사례가 갑자기 등장하고, 그 이후로 화학 성분과 시간 경과에 따른 후유증 논의가 이어지는데 문단 구분이나 전환어가 부족하여 흐름이 단절되어 보인다."
+      },
+      "expression": {
+        "score": 2.0,
+        "rationale": "문장 구성이 매우 어색하고 문법적 오류가 빈번하다. '인체에 해로운지,특이 증상이 있는지 등등'처럼 조사 생략과 불필요한 반복 표현이 있으며, '좋은성분 으로 이루어져 있지 않아'처럼 띄어쓰기 오류와 문맥상 의미가 모호한 표현이 많다. 또한 '말 못하는 생명체 라도'처럼 어미 활용이 부정확하다."
+      }
+    },
+    "judge": {
+      "content": {
+        "round_0": {
+          "strict": {
+            "domain_match": 3,
+            "score_rationale_consistency": 2,
+            "specificity": 2,
+            "groundedness": 4,
+            "overall_judge": 2.8,
+            "rationale_for_score": "1. domain_match: 글의 주장이 동물실험에 대한 의견을 제시하고 있지만, essay_text에서 언급된 '사람에게 직접 실험하는 것'에 대한 윤리적·과학적 타당성 검토가 부족하여 내용의 적절성을 부분적으로 떨어뜨림 (감점 1점). 2. score_rationale_consistency: rational이 predicted_score를 충분히 정당화하지 못함. 마스카라 토끼 실험 사례를 언급했지만, 이를 통해 도출한 결론에 대한 논리적 연결이 미흡함 (감점 2점). 3. specificity: '사람에게 직접 실험하는 것'과 같은 추상적인 표현이 사용되어 구체적인 내용 설명이 부족함 (감점 1점). 4. groundedness: essay_text에서 언급된 마스카라 토끼 실험 사례를 정확히 인용하여 rational의 근거를 제공하고 있음 (감점 -1점). 전반적으로, rational은 동물실험에 대한 비판적인 시각을 제시하지만, 논리적 연결과 구체적인 내용 설명이 부족하여 점수를 제한함."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.5,
+            "rationale_for_score": "글의 주장에 대한 평가가 전반적으로 타당하다. 서론에서 제시된 '동물실험을 하는 것이 나쁘다고 생각하지는 않으나'라는 전제는 essay_text와 일치하며, 본론에서 마스카라 토끼 실험 사례를 언급하여 구체적인 근거를 제시했다. 다만, 결론의 논리적 연결이 다소 약하고, '사람에게 직접 실험하는 것'이라는 부분은 추상적이므로 specificity 점수를 3점으로 평가한다. groundedness는 essay_text에 언급된 마스카라 토끼 실험 사례를 바탕으로 한 근거 제시로 인해 4점을 부여했다. score_rationale_consistency는 predicted_score인 3.0과 rationale의 내용이 어느 정도 일치한다고 판단하여 3점을 부여한다."
+          }
+        },
+        "round_1": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.0,
+            "adjustment_notes": "관대한 심사위원의 평가를 종합적으로 고려하여 점수를 조정했다. 우선, domain_match는 essay_text와 rationale 간의 일치성을 매우 높게 평가 (4점) 했다. score_rationale_consistency 또한 rational이 predicted_score를 잘 반영하고 있다고 판단되어 4점을 부여했다. specificity는 essay_text에서 마스카라 토끼 실험 사례를 구체적으로 언급한 점을 고려하여 3점으로 유지했다. groundedness는 essay_text의 내용과 일치하는 근거 제시로 인해 5점을 부여했다. overall_judge는 모든 기준을 종합적으로 고려하여 3.8점으로 조정했다. 특히, essay_text에서 마스카라 토끼 실험 사례를 통해 동물 실험의 위험성을 설득력 있게 제시한 점을 강조하기 위해 점수를 높였다."
+          },
+          "lenient": {
+            "domain_match": 3,
+            "score_rationale_consistency": 2,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.0,
+            "adjustment_notes": "초기 평가에서 엄격한 심사위원이 지적한 사항을 반영하여 점수를 조정했습니다. 특히, rational이 predicted_score를 충분히 정당화하지 못한다는 지적에 따라 감점했습니다. 또한, '사람에게 직접 실험하는 것'과 같은 추상적인 표현이 사용되어 specificity가 부족하다는 평가를 고려하여 점수를 낮췄습니다. 하지만, essay_text에서 언급된 마스카라 토끼 실험 사례를 정확히 인용하여 groundedness가 높다는 점을 인정하고 유지했습니다. 전반적으로 rational의 논리적 연결과 구체적인 내용 설명이 부족하다는 점을 감안하여 점수를 0.2점 낮추었습니다."
+          }
+        },
+        "round_2": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.0,
+            "adjustment_notes": "관대한 심사위원의 평가를 종합적으로 고려하여 점수를 조정했습니다. rational이 predicted_score를 충분히 정당화하지 못한다는 지적에 대한 반영으로 점수를 0.5점 낮췄습니다. 그러나 essay_text에서 마스카라 토끼 실험 사례를 명확하게 인용하고, 이를 통해 도출된 결론의 타당성을 뒷받침하는 구체적인 내용을 제시했으므로 groundedness와 specificity는 높게 평가했습니다. 또한, rational의 논리적 연결과 내용 설명이 부족하다는 점을 고려하여 score_rationale_consistency를 3점으로 조정했습니다."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 3.8,
+            "adjustment_notes": "심사위원의 평가를 반영하여 점수를 조정했다. domain_match는 essay_text와 rationale 간의 일치성을 높게 평가 (4점) 했다. score_rationale_consistency는 rational이 predicted_score를 잘 반영하고 있다고 판단했으나, '윤리적·과학적 타당성이 부족해 논리적 연결이 다소 불안정하다'는 설명이 다소 추상적이므로 3점으로 조정했다. specificity는 essay_text에서 마스카라 토끼 실험 사례를 구체적으로 언급한 점을 고려하여 3점으로 유지했다. groundedness는 essay_text의 내용과 일치하는 근거 제시로 인해 5점을 부여했다. overall_judge는 모든 기준을 종합적으로 고려하여 3.6점으로 조정했으며, rational에 대한 좀 더 구체적인 지적 (예: 토끼 눈 건강 문제, 장기적인 영향)이 필요함을 강조한다."
+          }
+        },
+        "round_3": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 3.8,
+            "adjustment_notes": "관대한 심사위원의 평가를 반영하여 점수를 조정했다. domain_match는 essay_text와 rationale 간의 일치성을 높게 평가 (4점) 했다. score_rationale_consistency는 rational이 predicted_score를 잘 반영하고 있다고 판단했으나, '윤리적·과학적 타당성이 부족해 논리적 연결이 다소 불안정하다'는 설명이 추상적이므로 3점으로 조정했다. specificity는 essay_text에서 마스카라 토끼 실험 사례를 구체적으로 언급한 점을 고려하여 3점으로 유지했다. groundedness는 essay_text의 내용과 일치하는 근거 제시로 인해 5점을 부여했다. overall_judge는 모든 기준을 종합적으로 고려하여 3.7점으로 조정했으며, rational에 대한 좀 더 구체적인 지적 (예: 토끼 눈 건강 문제, 장기적인 영향)이 필요함을 강조한다. 또한, 관대한 심사위원이 언급한 '전제' 약화라는 점을 고려하여, essay_text의 전제를 명확히 인지하고 이에 대한 반박 또는 비판을 제시하는 부분이 부족하다는 점을 지적하며 점수를 0.3점 낮추었다."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.0,
+            "adjustment_notes": "심사위원의 평가를 반영하여 점수를 조정했습니다. rational이 predicted_score를 충분히 정당화하지 못한다는 지적에 따라 score_rationale_consistency를 3점으로 낮췄습니다. 또한, '마스카라 토끼 실험 사례'를 구체적으로 언급하고 이를 통해 도출된 결론의 타당성을 뒷받침하는 내용이 essay_text에 명확하게 반영되었음을 고려하여 groundedness와 specificity를 유지했습니다. 전반적인 평가를 종합적으로 고려하여 overall_judge를 3.5점으로 조정했습니다."
+          }
+        },
+        "round_4": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.0,
+            "adjustment_notes": "관대한 심사위원의 평가를 반영하여 점수 조정했습니다. rational이 predicted_score를 충분히 정당화하지 못한다는 지적에 따라 score_rationale_consistency를 3점으로 낮췄습니다. 특히, essay_text에서 '세제만 해도 계면 활성제 에는 사람에게 유해한 물질들이 들어가 있고'와 같은 구체적인 사례를 제시하여 동물 실험의 위험성을 강조하고 있으며, 이는 rational에 대한 지지를 강화하는 부분입니다. 하지만, '사람에게 직접 실험하는 것'이라는 결론이 essay_text의 내용과 완벽하게 일치하지 않는다는 점을 고려하여 groundedness를 4점으로 유지했습니다. 또한, 전반적인 평가를 종합적으로 고려하여 overall_judge를 3.8점으로 조정했습니다."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 3.8,
+            "adjustment_notes": "심사위원의 평가를 반영하여 점수를 조정했습니다. domain_match는 essay_text와 rationale 간의 일치성을 높게 평가 (4점) 했습니다. score_rationale_consistency는 rational이 predicted_score를 잘 반영하고 있다고 판단했으나, '윤리적·과학적 타당성이 부족해 논리적 연결이 다소 불안정하다'는 설명이 추상적이므로 3점으로 조정했습니다. specificity는 essay_text에서 마스카라 토끼 실험 사례를 구체적으로 언급한 점을 고려하여 3점으로 유지했습니다. groundedness는 essay_text의 내용과 일치하는 근거 제시로 인해 5점을 부여했습니다. overall_judge는 모든 기준을 종합적으로 고려하여 3.6점으로 조정했으며, rational에 대한 좀 더 구체적인 지적 (예: 토끼 눈 건강 문제, 장기적인 영향)이 필요함을 강조합니다. 또한, 심사위원이 언급한 '전제' 약화라는 점을 고려하여, essay_text의 전제를 명확히 인지하고 이에 대한 반박 또는 비판을 제시하는 부분이 부족하다는 점을 지적하며 점수를 0.3점 낮추었습니다."
+          }
+        },
+        "final": {
+          "domain_match": 4.0,
+          "score_rationale_consistency": 3.0,
+          "specificity": 3.5,
+          "groundedness": 5.0,
+          "overall_judge": 3.9
+        }
+      },
+      "organization": {
+        "round_0": {
+          "strict": {
+            "domain_match": 3,
+            "score_rationale_consistency": 2,
+            "specificity": 2,
+            "groundedness": 3,
+            "overall_judge": 2.5,
+            "rationale_for_score": "1. domain_match: organization 분야 평가 기준을 사용하고 있으나, 동물실험의 윤리적 문제에 대한 논의가 주된 내용이 아니므로 3점. 2. score_rationale_consistency: predicted score (3.0)와 rationale이 어느 정도 일치하나, 문단 간 연결 부족 및 마스카라 사례 갑작스러운 등장으로 인해 설득력이 약하다는 점을 명확히 설명하지 못하여 2점. 3. specificity: '문단 간의 연결이 명확하지 않다'라는 표현은 generic하며 구체적인 문제점을 지적하지 못했다는 점에서 2점. 4. groundedness: essay_text에서 언급된 내용 (동물실험의 문제점, 친환경 재료 사용 등)을 바탕으로 rationale을 구성했으나, 마스카라 사례와 시간 경과에 따른 후유증 논의가 essay_text에 직접적으로 언급되지 않아 3점. 전반적으로, 구조적인 문제와 몇몇 구체적인 내용의 부재로 인해 점수가 낮게 평가되었습니다."
+          },
+          "lenient": {
+            "domain_match": 3,
+            "score_rationale_consistency": 3,
+            "specificity": 2,
+            "groundedness": 3,
+            "overall_judge": 2.8,
+            "rationale_for_score": "서론, 본론, 결론의 구조는 갖추고 있으나 문단 간 연결이 명확하지 않다는 점을 지적한 것은 타당하다. 특히 마스카라 사례가 갑자기 등장하고 화학 성분과 시간 경과에 따른 후유증 논의로 이어지는 흐름 전환이 미흡하며, 이는 essay_text의 내용과 일치한다. 그러나 ‘전환어가 부족하여 흐름이 단절되어 보인다’는 표현은 다소 일반적이며 구체적인 개선 방안을 제시하지 못했다는 점에서 specificity 점수를 2점으로 평가했다. groundedness는 essay_text에 언급된 사례(마스카라, 세제)를 바탕으로 논의가 이루어졌다는 점에서 3점을 부여한다. score_rationale_consistency는 rationale이 predicted_score인 3.0과 유사한 수준의 평가를 내렸다고 판단하여 3점을 부여했다."
+          }
+        },
+        "round_1": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.0,
+            "adjustment_notes": "전반적으로 관대한 심사위원의 평가에 동의하며 점수 조정이 필요하다고 판단합니다. rationale은 essay_text의 핵심 주장을 정확하게 반영하고 있으며, groundedness는 essay_text에서 직접 인용된 사례(마스카라, 세제)를 통해 논리적 근거를 제시하고 있습니다. 다만, '전환어가 부족하여 흐름이 단절되어 보인다'는 표현은 다소 일반적인 설명으로, specificity 점수를 3점으로 조정했습니다. essay_text의 내용에 대한 심사위원의 이해도가 높고, 평가 기준을 충실히 반영했으므로, predicted_score인 3.0에서 높은 점수를 부여하는 것이 타당하다고 판단합니다."
+          },
+          "lenient": {
+            "domain_match": 3,
+            "score_rationale_consistency": 2,
+            "specificity": 2,
+            "groundedness": 3,
+            "overall_judge": 2.5,
+            "adjustment_notes": "엄격한 심사위원의 평가를 반영하여 점수를 조정합니다. 핵심적으로, rationale이 essay_text의 문제점을 충분히 지적하지 못하고 generic한 표현을 사용했다는 점을 인정합니다. 특히 마스카라 사례와 시간 경과에 따른 후유증 논의가 essay_text에서 직접적으로 언급되지 않았다는 사실을 명확히 하였으며, 이는 score_rationale_consistency를 낮추는 주요 원인이 되었습니다. 또한, '문단 간 연결이 명확하지 않다'라는 표현이 specificity 기준에 부합하지 않는다는 점을 고려하여 점수를 0.5점 낮췄습니다. 하지만, essay_text의 핵심 주장에 대한 논리적 대응은 유지하고 있으므로, 기존 점수(3.0)를 유지합니다."
+          }
+        },
+        "round_2": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.5,
+            "adjustment_notes": "관대한 심사위원의 평가를 반영하여 점수 조정 및 상세 내역을 추가합니다. 우선, rationale이 essay_text의 문제점을 충분히 지적하지 못했다는 점에 동의하며, 특히 마스카라 사례와 시간 경과에 따른 후유증 논의가 essay_text에서 직접적으로 언급되지 않았다는 사실을 명확히 하였습니다. 이는 score_rationale_consistency를 낮추는 주요 원인이었습니다. 그러나 심사위원의 평가에서 '문단 간 연결이 명확하지 않다'라는 표현이 specificity 기준에 부합하지 않는다고 지적한 부분에 대해, essay_text 자체에 이러한 흐름 단절을 보여주는 구체적인 언급(예: 전환어 부족, 문장 연결 방식)이 없다는 점을 고려하여 점수를 0.5점 낮췄습니다. groundeedness는 essay_text의 내용을 잘 반영하고 있어 유지했습니다.  전반적으로 rationale은 essay_text의 핵심 주장을 뒷받침하는 데 충분하며, 개선할 여지가 있습니다. 따라서 predicted_score를 3.0에서 3.5로 조정합니다."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 3.8,
+            "adjustment_notes": "심사위원의 평가에 일부 동의하지만, '전환어가 부족하여 흐름이 단절되어 보인다'는 rationale은 essay_text의 논리 전개 흐름을 지나치게 단순화한 것으로 판단했습니다. essay_text에서 제시된 문제점(마스카라, 세제 사례)에 대한 심사위원의 분석이 충분히 구체적이지 않다는 점을 고려하여 score_rationale_consistency를 3점으로 조정하고, specificity를 4점으로 조정했습니다. groundedness는 여전히 높게 유지하며, overall_judge를 3.5점으로 낮췄습니다."
+          }
+        },
+        "round_3": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.2,
+            "adjustment_notes": "관대한 심사위원의 평가에 전반적으로 동의하며, 특히 groundedness와 specificity 점수를 높게 유지했습니다. rationale이 essay_text의 내용을 충분히 반영하고 있으며, 논리적 흐름을 지나치게 단순화하지 않았습니다. score_rationale_consistency를 4점으로 조정하여 근거가 더욱 강력한 것으로 평가했습니다.  전환어가 부족하다는 심사위원의 지적에 대해, essay_text 자체에는 명시적인 전환어가 없다는 점을 고려하여 감점 없이 유지했습니다."
+          },
+          "lenient": {
+            "domain_match": 3,
+            "score_rationale_consistency": 2,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.0,
+            "adjustment_notes": "심사위원의 의견을 반영하여 점수 조정 및 상세 내역을 추가합니다. rationale이 essay_text의 문제점을 충분히 지적하지 못했다는 점에 동의하며, 특히 마스카라 사례와 시간 경과에 따른 후유증 논의가 essay_text에서 직접적으로 언급되지 않았다는 사실을 명확히 합니다. 이는 score_rationale_consistency를 낮추는 주요 원인이었습니다. 심사위원의 '문단 간 연결이 명확하지 않다'라는 표현은 specificity 기준에 부합하지 않지만, essay_text 자체에 이러한 흐름 단절을 보여주는 구체적인 언급이 부족하다는 점을 고려하여 점수를 0.5점 낮췄습니다. groundeedness는 essay_text의 내용을 잘 반영하고 있어 유지했습니다.  전반적으로 rationale은 essay_text의 핵심 주장을 뒷받침하는 데 충분하며, 개선할 여지가 있습니다. 따라서 predicted_score를 3.0에서 3.2로 조정합니다."
+          }
+        },
+        "round_4": {
+          "strict": {
+            "domain_match": 3,
+            "score_rationale_consistency": 2,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.0,
+            "adjustment_notes": "심사위원의 의견을 반영하여 점수 조정 및 상세 내역을 추가합니다. 심사위원이 지적한 ‘문단 간 연결이 명확하지 않다’는 점에 동의하며, 특히 본론 중간에 마스카라 사례가 갑자기 등장하고, 그 이후로 화학 성분과 시간 경과에 따른 후유증 논의가 이어지는 흐름 단절은 essay_text 자체에도 명확히 드러나 있다는 사실을 고려하여 score_rationale_consistency를 2점에서 3점으로 조정합니다. ‘generic 표현’이라는 지적에 따라 specificity 점수를 3점으로 유지합니다. groundeedness는 essay_text의 내용을 잘 반영하고 있어 4점을 유지합니다. 전반적으로 rationale은 essay_text의 핵심 주장을 뒷받침하는 데 충분하며, 개선할 여지가 있습니다. 따라서 predicted_score를 3.0에서 3.3으로 조정합니다."
+          },
+          "lenient": {
+            "domain_match": 3,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.2,
+            "adjustment_notes": "심사위원의 지적을 반영하여 점수를 낮추었습니다. rationale이 essay_text의 핵심 내용을 정확히 반영하고 있지만, 문단 간 연결 부족에 대한 설명이 다소 일반적이어서 specificity가 부족하다고 판단했습니다. 또한, '전환어가 부족하다'는 심사위원의 의견에 따라, essay_text 자체에는 명시적인 전환어가 없다는 점을 고려하여 점수를 낮추었습니다. groundedness는 essay_text의 내용을 잘 반영하고 있어 유지했습니다."
+          }
+        },
+        "final": {
+          "domain_match": 3.0,
+          "score_rationale_consistency": 2.5,
+          "specificity": 3.0,
+          "groundedness": 4.0,
+          "overall_judge": 3.1
+        }
+      },
+      "expression": {
+        "round_0": {
+          "strict": {
+            "domain_match": 1,
+            "score_rationale_consistency": 2,
+            "specificity": 2,
+            "groundedness": 3,
+            "overall_judge": 2.0,
+            "rationale_for_score": "문장 구성의 어색함과 문법적 오류가 심각하여 표현 능력 부족으로 판단했습니다 (expression 기준). '인체에 해로운지 등등'과 같은 불필요한 반복 및 조사 생략은 구체적인 지적을 어렵게 합니다. 또한, 몇몇 표현(예: '말 못하는 생명체 라도')의 어미 활용 오류는 specificity를 낮추고 있습니다. essay_text에서 직접적으로 언급된 내용은 없지만, 동물 실험에 대한 비판적인 시각을 제시하고 있어 groundedness는 3점입니다. 점수와 rationale 간의 일관성이 부족하며, 개선 방향에 대한 구체적인 제안이 없어 score_rationale_consistency는 2점을 부여했습니다."
+          },
+          "lenient": {
+            "domain_match": 2,
+            "score_rationale_consistency": 1,
+            "specificity": 2,
+            "groundedness": 3,
+            "overall_judge": 2.0,
+            "rationale_for_score": "문장 구성의 어색함과 문법적 오류가 심각하여 내용 이해에 어려움을 야기한다 (expression: 1점). '인체에 해로운지 등등'과 같은 표현은 전문 용어 사용 부족 및 불필요한 반복으로 인해 구체성이 떨어진다 (specificity: 2점). essay_text에서 언급된 동물 실험의 문제점을 지적하고 있지만, 구체적인 근거 제시가 미흡하며, '말 못하는 생명체 라도'와 같은 표현은 논리적 연결성을 약화시킨다 (groundedness: 3점). 점수와 설명이 일치하지 않으며, rational이 predicted_score를 정당화하지 못한다."
+          }
+        },
+        "round_1": {
+          "strict": {
+            "domain_match": 3,
+            "score_rationale_consistency": 2,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.0,
+            "adjustment_notes": "관대한 심사위원의 평가를 종합적으로 고려하여 점수를 조정했다. 초기 평가에서 지적된 문장 구성의 어색함과 문법적 오류가 심각하다는 점을 인정하고, expression 영역에 대한 감점을 유지한다 (1점). 그러나 essay_text에서 언급된 동물 실험의 문제점에 대한 논지 전개가 비교적 명확하며, '말 못하는 생명체 라도'와 같은 표현에도 불구하고 핵심 주장을 뒷받침하는 근거 제시가 충분하다는 점을 고려하여 specificity를 3점으로 올렸다. 또한, essay_text에서 언급된 동물 실험의 문제점을 정확히 반영하고 있으며, 이를 통해 인체 및 환경에 대한 안전성을 확보하기 위한 방안을 제시한다는 groundedness 측면에서도 4점을 부여한다. 따라서 predicted_score인 2.0점에서 점수를 3점으로 조정했다."
+          },
+          "lenient": {
+            "domain_match": 3,
+            "score_rationale_consistency": 2,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.0,
+            "adjustment_notes": "심사위원의 평가를 반영하여 점수 조정 및 상세한 수정 사항을 기록합니다.\n\n**domain_match:** 심사위원이 '표현 능력 부족'으로 판단한 부분에 동의하며, essay_text의 주장을 뒷받침하는 표현 방식이 다소 미흡하다는 점을 인정합니다. 따라서 domain_match를 3점으로 조정합니다.\n\n**score_rationale_consistency:** 심사위원이 제시한 '점수와 rationale 간의 일관성 부족'에 대한 지적에 따라 score_rationale_consistency를 3점으로 조정합니다. essay_text의 내용과 심사위원의 rational이 어느 정도 부합한다고 판단됩니다.\n\n**specificity:** 심사위원이 '구체적인 지적을 어렵게 한다'고 한 부분에 대해, 문장 구성의 어색함이나 표현 방식의 문제점을 보다 구체적으로 언급하여 specificity를 3점으로 조정합니다. 예를 들어, '인체에 해로운지 등등'이라는 표현 대신 '유해 물질의 존재 가능성'과 같이 명확한 용어를 사용해야 한다는 점을 지적할 수 있습니다.\n\n**groundedness:** 심사위원이 '동물 실험에 대한 비판적인 시각을 제시하고 있어 groundedness는 3점'이라고 한 부분에 동의합니다. essay_text에서 동물 실험의 문제점을 제기하고 있으며, 이는 심사위원의 평가와 일치합니다. 하지만, essay_text에서 직접적으로 언급된 내용을 바탕으로 한 주장이므로 groundedness를 4점으로 조정합니다.\n\n**overall_judge:** 전체적인 점수를 2.5점으로 조정했습니다. 심사위원이 지적한 문제점들이 일부 존재하지만, essay_text의 핵심 내용(동물 실험에 대한 비판)을 잘 드러내고 있다는 점에서 충분히 합격점을 받을 수 있다고 판단했습니다."
+          }
+        },
+        "round_2": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.0,
+            "adjustment_notes": "관대한 심사위원의 평가를 반영하여 점수 조정 및 상세한 수정 사항을 기록합니다.\n\n**domain_match:** 심사위원이 'expression' 영역에 대한 문제점을 지적한 부분에 깊이 동감합니다. essay_text는 문장 구성의 어색함, 반복적인 표현, 띄어쓰기 오류 등 명확하게 '표현 능력 부족'으로 판단될 수 있는 결함을 보입니다. 따라서 domain_match를 5점으로 조정합니다.\n\n**score_rationale_consistency:** 심사위원이 제시한 '점수와 rationale 간의 일관성 부족'에 대한 지적에 대해, essay_text의 내용이 심사위원의 rational을 충분히 뒷받침한다고 판단됩니다. 특히, '인체에 해로운지 등등'과 같은 표현의 문제점을 명확하게 지적하고 있으며, 이는 predicted_score 2.0과 일치합니다. 따라서 score_rationale_consistency를 4점으로 조정합니다.\n\n**specificity:** 심사위원이 '구체적인 지적을 어렵게 한다'고 한 부분에 대해, essay_text는 문장 구성의 어색함, 표현 방식의 문제점, 띄어쓰기 오류 등 구체적인 내용을 명시하고 있습니다. 예를 들어, '유해 물질의 존재 가능성'과 같이 명확한 용어를 사용하도록 제안하는 것은 매우 구체적입니다. 따라서 specificity를 5점으로 조정합니다.\n\n**groundedness:** 심사위원이 '동물 실험에 대한 비판적인 시각을 제시하고 있어 groundedness는 3점'이라고 한 부분에 동의합니다. essay_text에서 동물 실험의 문제점을 제기하고 있으며, 이는 심사위원의 평가와 일치합니다. 또한, essay_text에서 직접적으로 언급된 내용을 바탕으로 한 주장이므로 groundedness를 5점으로 조정합니다.\n\n**overall_judge:** 전체적인 점수를 3.8점으로 조정했습니다. 심사위원이 지적한 문제점들이 일부 존재하지만, essay_text의 핵심 내용(동물 실험에 대한 비판)을 잘 드러내고 있으며, 심사위원의 평가를 반영하여 개선 노력이 엿보입니다."
+          },
+          "lenient": {
+            "domain_match": 3,
+            "score_rationale_consistency": 2,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.0,
+            "adjustment_notes": "심사위원의 평가를 반영하여 점수 조정 및 상세 설명 추가. 초기 평가에서 지적된 문장 구성의 어색함과 문법적 오류가 심각하다는 점을 인정하고 expression 영역에 대한 감점을 유지 (1점). '말 못하는 생명체 라도'와 같은 표현에도 불구하고 핵심 주장을 뒷받침하는 근거 제시가 충분하다는 점을 고려하여 specificity를 3점으로 조정. groundedness 측면에서 essay_text의 내용을 정확히 반영하고 있으며, 이를 통해 인체 및 환경에 대한 안전성을 확보하기 위한 방안을 제시한다는 점을 인정하여 4점을 유지.  전반적으로 rational이 설득력이 부족하다는 점을 고려하여 score_rationale_consistency를 2점으로 유지.  결론적으로 predicted_score인 2.0점에서 점수를 3.2점으로 조정함."
+          }
+        },
+        "round_3": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.0,
+            "adjustment_notes": "관대한 심사위원의 평가를 반영하여 점수 조정 및 상세 설명 추가. 심사위원은 essay_text에서 제시된 문제점을 명확하게 지적하고 있으며, 특히 '인체에 해로운지,특이 증상이 있는지 등등'과 같은 표현에 대한 비판을 통해 expression 영역의 약점을 정확히 파악했습니다.  rationale 텍스트에 이미 존재하는 내용(동물 실험의 문제점, 친환경적인 생필품 개발 필요성)을 바탕으로 점수를 부여하는 것이 타당하다고 판단하여 domain_match를 4점으로 조정했습니다. specificity는 essay_text의 구체적인 표현과 논지를 정확히 반영하고 있음을 고려하여 4점을 유지했습니다. groundedness 측면에서는 essay_text의 내용을 충실하게 반영하고 있으며, 이를 통해 인체 및 환경에 대한 안전성을 확보하기 위한 방안을 제시한다는 점을 인정하여 5점을 부여했습니다. score_rationale_consistency는 rational이 predicted_score를 충분히 뒷받침한다고 판단하여 3점으로 유지했습니다.  결론적으로 predicted_score인 2.0점에서 점수를 4.5점으로 조정함."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 5,
+            "groundedness": 5,
+            "overall_judge": 4.8,
+            "adjustment_notes": "심사위원의 평가를 반영하여 점수 조정 및 상세한 수정 사항을 기록합니다.\n\n**domain_match:** 심사위원이 'expression' 영역에 대한 문제점을 지적한 부분에 깊이 동감합니다. essay_text는 문장 구성의 어색함, 반복적인 표현, 띄어쓰기 오류 등 명확하게 '표현 능력 부족'으로 판단될 수 있는 결함을 보입니다. 따라서 domain_match를 5점으로 유지합니다.\n\n**score_rationale_consistency:** 심사위원이 제시한 '점수와 rationale 간의 일관성 부족'에 대한 지적에 대해, essay_text의 내용이 심사위원의 rational을 충분히 뒷받침한다고 판단됩니다. 특히, '인체에 해로운지 등등'과 같은 표현의 문제점을 명확하게 지적하고 있으며, 이는 predicted_score 2.0과 일치합니다. 따라서 score_rationale_consistency를 4점으로 유지합니다.\n\n**specificity:** 심사위원이 '구체적인 지적을 어렵게 한다'고 한 부분에 대해, essay_text는 문장 구성의 어색함, 표현 방식의 문제점, 띄어쓰기 오류 등 구체적인 내용을 명시하고 있습니다. 예를 들어, '유해 물질의 존재 가능성'과 같이 명확한 용어를 사용하도록 제안하는 것은 매우 구체적입니다. 따라서 specificity를 5점으로 유지합니다.\n\n**groundedness:** 심사위원이 '동물 실험에 대한 비판적인 시각을 제시하고 있어 groundedness는 3점'이라고 한 부분에 동의합니다. essay_text에서 동물 실험의 문제점을 제기하고 있으며, 이는 심사위원의 평가와 일치합니다. 또한, essay_text에서 직접적으로 언급된 내용을 바탕으로 한 주장이므로 groundedness를 5점으로 유지합니다.\n\n**overall_judge:** 전체적인 점수를 4.5점으로 조정했습니다. 심사위원이 지적한 문제점들이 일부 존재하지만, essay_text의 핵심 내용(동물 실험에 대한 비판)을 잘 드러내고 있으며, 심사위원의 평가를 반영하여 개선 노력이 엿보입니다."
+          }
+        },
+        "round_4": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 5,
+            "groundedness": 5,
+            "overall_judge": 4.8,
+            "adjustment_notes": "관대한 심사위원의 평가를 반영하여 점수 조정 및 상세한 수정 사항을 기록합니다.\n\n**domain_match:** 심사위원이 'expression' 영역에 대한 문제점을 지적한 부분에 깊이 동감합니다. essay_text는 문장 구성의 어색함, 반복적인 표현, 띄어쓰기 오류 등 명확하게 '표현 능력 부족'으로 판단될 수 있는 결함을 보입니다. 따라서 domain_match를 5점으로 유지합니다.\n\n**score_rationale_consistency:** 심사위원이 제시한 '점수와 rationale 간의 일관성 부족'에 대한 지적에 대해, essay_text의 내용이 심사위원의 rational을 충분히 뒷받침한다고 판단됩니다. 특히, '인체에 해로운지 등등'과 같은 표현의 문제점을 명확하게 지적하고 있으며, 이는 predicted_score 2.0과 일치합니다. 따라서 score_rationale_consistency를 4점으로 유지합니다.\n\n**specificity:** 심사위원이 '구체적인 지적을 어렵게 한다'고 한 부분에 대해, essay_text는 문장 구성의 어색함, 표현 방식의 문제점, 띄어쓰기 오류 등 구체적인 내용을 명시하고 있습니다. 예를 들어, '유해 물질의 존재 가능성'과 같이 명확한 용어를 사용하도록 제안하는 것은 매우 구체적입니다. 따라서 specificity를 5점으로 유지합니다.\n\n**groundedness:** 심사위원이 '동물 실험에 대한 비판적인 시각을 제시하고 있어 groundedness는 3점'이라고 한 부분에 동의합니다. essay_text에서 동물 실험의 문제점을 제기하고 있으며, 이는 심사위원의 평가와 일치합니다. 또한, essay_text에서 직접적으로 언급된 내용을 바탕으로 한 주장이므로 groundedness를 5점으로 유지합니다.\n\n**overall_judge:** 전체적인 점수를 4.8점으로 조정했습니다. 심사위원이 지적한 문제점들이 일부 존재하지만, essay_text의 핵심 내용(동물 실험에 대한 비판)을 잘 드러내고 있으며, 심사위원의 평가를 반영하여 개선 노력이 엿보입니다."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.0,
+            "adjustment_notes": "심사위원의 평가를 반영하여 점수 조정 및 상세 설명 추가. 심사위원이 지적한 '인체에 해로운지,특이 증상이 있는지 등등'과 같은 표현의 어색함, 조사 생략, 반복 표현 등을 명확히 짚어내어 expression 영역의 문제점을 정확하게 파악했습니다. rational에 제시된 내용(동물 실험의 문제점, 친환경적인 생필품 개발 필요성)을 바탕으로 점수를 부여하는 것이 타당하다고 판단하여 domain_match를 4점으로 조정했습니다. specificity는 essay_text의 구체적인 표현과 논지를 정확히 반영하고 있음을 고려하여 4점을 유지했습니다. groundedness 측면에서는 essay_text의 내용을 충실하게 반영하고 있으며, 이를 통해 인체 및 환경에 대한 안전성을 확보하기 위한 방안을 제시한다는 점을 인정하여 5점을 부여했습니다. score_rationale_consistency는 rational이 predicted_score를 충분히 뒷받침한다고 판단하여 3점으로 유지했습니다.  결론적으로 predicted_score인 2.0점에서 점수를 4.5점으로 조정했으며, 특히 어색한 표현과 문법적 오류에 대한 심층적인 분석을 통해 essay의 전반적인 품질을 더욱 정확하게 평가할 수 있도록 수정했습니다."
+          }
+        },
+        "final": {
+          "domain_match": 4.5,
+          "score_rationale_consistency": 3.5,
+          "specificity": 4.5,
+          "groundedness": 5.0,
+          "overall_judge": 4.4
+        }
+      }
+    }
+  }
+]

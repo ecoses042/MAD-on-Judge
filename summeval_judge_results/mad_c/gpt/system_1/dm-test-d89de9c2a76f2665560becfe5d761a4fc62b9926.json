@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-d89de9c2a76f2665560becfe5d761a4fc62b9926",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, jumping between points without proper transitions."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the match context, the performance of other players, and the significance of the match, focusing instead on trivial aspects like the stadium's history."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the match being a 'mini-derby,' which is an important aspect of the game's context."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as inconsistent capitalization and punctuation, which affect readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear focus on key events, such as the match winner and the significance of the venue."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "It highlights important details like the number of English players and the match-winning goal, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits several details about the match, such as the context of the rivalry and other players' performances, which could provide a fuller picture."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper sentence structure and capitalization, making it less readable."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.0,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

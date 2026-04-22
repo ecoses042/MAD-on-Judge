@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-8bc8f134bc3ceaeec0df8f29e96e13d319717ab8",
+  "system_name": "system_2",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow and is repetitive, particularly in mentioning Bartomeu's satisfaction with Enrique."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits key details from the article, such as Enrique's contract duration and the context of the team's performance, which are essential for understanding the situation."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'took only took charge' which is redundant."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention the significance of the upcoming matches and the potential for winning three trophies, which are crucial points from the article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the club's stance on Luis Enrique's position."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article without introducing any new facts."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points about Bartomeu's comments on Enrique's future and performance."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains a grammatical error with the phrase 'only took took charge,' which affects its readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 4,
+      "relevance": 3,
+      "overall_judge": 3.2,
+      "winner_side": {
+        "coherence": "tie",
+        "consistency": "tie",
+        "fluency": "defender",
+        "relevance": "tie"
+      }
+    }
+  }
+}

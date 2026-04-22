@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-130ff8f2dfb6ab67861d5924b0ff5acd63c7d8ce",
+  "system_name": "system_8",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, jumping between topics without smooth transitions."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces a new fact about the owner attempting to buy the club, which is not mentioned in the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary includes the detail about being without a win in 12 games, which is not mentioned in the article and may not be the most critical information."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events regarding Ze Maria's sacking and the club's situation."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information about Ze Maria being sacked and the club's relegation status."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of Ze Maria's dismissal and the club's performance, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'are currently without a win in 12 games' could be more smoothly integrated into the summary."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces information about the failed attempt to buy the club, which is not mentioned in the article."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 4,
+      "relevance": 3,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

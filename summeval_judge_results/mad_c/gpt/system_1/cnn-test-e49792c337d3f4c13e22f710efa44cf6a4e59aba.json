@@ -1,0 +1,71 @@
+{
+  "article_id": "cnn-test-e49792c337d3f4c13e22f710efa44cf6a4e59aba",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information and does not connect the key points effectively."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits crucial details about the emotional plea from the victims' parents and their arguments against the death penalty, which are central to the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the emotional impact on the Richards family or their specific statements, which are significant to understanding their position."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as inconsistent capitalization of 'Dzhokhar Tsarnaev' and awkward phrasing."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear timeline of events, indicating Tsarnaev's conviction and the upcoming sentencing phase."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the fact that Tsarnaev was found guilty on all charges related to the bombings."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key event of Tsarnaev's conviction and the impending sentencing, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization and punctuation, making it less fluent and harder to read."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits significant details about the emotional plea from the victims' parents, which is a crucial aspect of the article."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

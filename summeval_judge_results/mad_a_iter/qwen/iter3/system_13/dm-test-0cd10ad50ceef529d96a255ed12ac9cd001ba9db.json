@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-0cd10ad50ceef529d96a255ed12ac9cd001ba9db",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary fails the consistency criterion severely because it attributes the victim's testimony to Maurice Van Ryn ('maurice van ryn has told a court...'), whereas the article explicitly states that 'A young woman' told the court and Van Ryn sat in the dock. This is a clear hallucination/misattribution of the subject. Additionally, the summary misses key details regarding the specific charges (persistent sexual abuse) and the victim's emotional state, making it less relevant than an average score would suggest."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.8,
+        "rationale_for_score": "The summary fails the consistency criterion because it attributes the victim's testimony to Maurice Van Ryn ('maurice van ryn has told a court...'), whereas the article explicitly states that 'A young woman' told the court and Van Ryn sat in the dock. This is a hallucination of the speaker. Additionally, the summary lacks relevance as it omits the most critical details: the specific nature of the charges (persistent sexual abuse), the victim's severe psychological impact (suicide attempts, depression), and her fear for future relationships, reducing the text to a generic statement about breaking silence."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 1.8,
+        "adjustment_notes": "The lenient judge's points regarding consistency and relevance are valid and must be accepted. The summary contains a severe factual error (hallucination) by attributing the victim's testimony to Maurice Van Ryn ('maurice van ryn has told a court...'), whereas the article clearly states 'A young woman' told the court. This is a critical failure in consistency. Furthermore, the summary is extremely short and misses key details like the specific charges (persistent sexual abuse) and the victim's emotional state, leading to a low relevance score. The fluency score is lowered slightly due to the lack of capitalization and punctuation in the provided text, though the sentence structure itself is readable."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a critical factual error (hallucination) by attributing the victim's testimony to Maurice Van Ryn ('maurice van ryn has told a court...'), which violates consistency. Furthermore, it fails relevance by omitting the specific charges and the severe psychological impact on the victim, which are central to the article. The scores remain unchanged."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 1.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary contains a critical hallucination where it attributes the victim's testimony to Maurice Van Ryn ('maurice van ryn has told a court...'), which is factually incorrect based on the source text stating 'A young woman' told the court. This is a severe consistency failure. Additionally, the summary is extremely brief and omits key details such as the specific charges (persistent sexual abuse) and the victim's emotional impact, resulting in low relevance. The lack of capitalization and punctuation further impacts fluency."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 1.8,
+        "adjustment_notes": "The summary contains a severe hallucination: it states 'maurice van ryn has told a court', whereas the article explicitly states a 'young woman' told the court about Van Ryn's abuse. This is a critical consistency failure (score 1). Due to this factual error, the coherence of the narrative is broken (score 2). The summary also fails relevance by omitting the specific charges (persistent sexual abuse of a child) and the victim's psychological impact (depression, suicide attempts), which are the core of the article. Fluency is low (3) because the text is all lowercase and lacks proper sentence structure."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 1.0,
+      "fluency": 3.0,
+      "relevance": 1.0,
+      "overall_judge": 1.8
+    }
+  }
+}

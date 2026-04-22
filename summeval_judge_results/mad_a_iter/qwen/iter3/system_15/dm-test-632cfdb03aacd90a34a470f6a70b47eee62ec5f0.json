@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-632cfdb03aacd90a34a470f6a70b47eee62ec5f0",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary accurately reflects the key facts from the source text (Gnabry's return, injury history, and specific match details) without hallucinations. The only minor deduction is for fluency due to inconsistent capitalization and punctuation in the generated text, which makes it slightly less professional, though the content is excellent."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 3.8,
+        "rationale_for_score": "The summary is factually consistent with the source text (no hallucinations) and covers key points. However, it scores lower on fluency due to poor sentence structure, lack of capitalization, and repetitive phrasing ('19-year-old' used twice in close proximity without clear antecedent distinction). Coherence is average because the sentences are disjointed fragments rather than a flowing narrative. Relevance is high as it captures the main facts, but the presentation quality drags down the overall score."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 5,
+        "overall_judge": 4.2,
+        "adjustment_notes": "Coherence and Relevance remain high as the summary covers key points logically. Consistency is lowered from 5 to 4 because the summary includes a specific date ('March 2014') which, while present in the source text, creates a slight redundancy with 'March last year' without clarifying the timeline context, though it remains factually consistent. Fluency is significantly lowered from 4 to 3 due to severe formatting issues: the entire summary lacks capitalization for proper nouns (Arsenal, Reading, Bayern Munich) and sentence starters, and lacks standard punctuation (periods), making it difficult to read professionally despite the content being accurate."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the fluency score from 3 to 2 because the summary is not just poorly structured but lacks basic capitalization and punctuation entirely (e.g., 'serge gnabry', 'arsenal', 'march'). This makes it difficult to read and violates standard English conventions significantly. The coherence remains low due to the disjointed, telegraphic style. Consistency and relevance are maintained as they were."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No changes made. The lenient judge's assessment of fluency (2) is justified by the complete lack of capitalization and punctuation in the summary text provided. The coherence score remains low due to the disjointed, sentence-by-sentence structure that lacks transitional flow. Consistency and relevance are correctly maintained as the facts align with the source."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 5,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is logically structured (Coherence) and covers all key points without adding external facts (Relevance). However, the lack of capitalization for proper nouns and sentence starters, combined with the absence of standard punctuation, severely impacts readability and professionalism, justifying the Fluency score of 3. The Consistency score remains at 4 because while factually accurate, the repetition of 'March' without clarifying the timeline (one instance referring to the previous season generally, the other specifically to 2014) creates a slight logical redundancy in the narrative flow."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 4.5,
+      "fluency": 2.5,
+      "relevance": 4.5,
+      "overall_judge": 3.6
+    }
+  }
+}

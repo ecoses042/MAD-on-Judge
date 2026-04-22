@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-4f3b35b540ba05f0f82d71a694ec23dde4dc3e01",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is fluent and consistent with the provided text for the first three sentences. However, it fails to include the crucial context that the fire was an attempted carjacking involving a gun, which is a major part of the source article's narrative. By omitting this key detail, the summary provides an incomplete picture of the event, resulting in a lower relevance score."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and consistent with the source text. However, it only covers the first paragraph of the provided article, omitting significant details such as the motive (carjacking attempt), the grandmother's account, the specific damage to the car's front end, and the fact that the LA County Fire Department is investigating it as arson. Due to these omissions, the relevance score is lowered, though no hallucinations or coherence issues exist."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment regarding relevance. The summary accurately describes the physical act of arson but completely omits the critical context that this was an attempted carjacking involving a gun, which is the primary motivation and narrative driver in the source text. Therefore, the relevance score remains low (3) as the summary fails to capture the 'why' behind the event."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "The lenient judge's assessment is accepted. The summary is grammatically perfect (fluency 5), logically structured (coherence 5), and contains no hallucinations (consistency 5). However, it strictly summarizes only the first paragraph of the source text, completely omitting the motive (carjacking attempt), the grandmother's account, the specific damage details, and the investigation status. These are significant portions of the article, justifying a lower relevance score despite the high quality of the writing."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding relevance. While the summary is coherent, consistent, and fluent, it fails to capture the critical context of an attempted carjacking involving a gun, which is the primary motivation described in the source text. This omission significantly impacts the relevance score, keeping it low (3) as the summary describes the 'what' but misses the crucial 'why'."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I agree with the strict judge's assessment regarding relevance. While the summary is grammatically perfect and logically structured, it only covers the initial events (the argument and the act of arson) found in the first paragraph. It completely omits the critical context provided later in the text: the motive (carjacking attempt), the grandmother's account which explains the escalation, the specific damage details (front end torched vs just 'ablaze'), and the investigation status. These omissions represent a significant gap in coverage of the source material, warranting a lower relevance score than 4."
+      }
+    },
+    "final": {
+      "coherence": 4.5,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 3.0,
+      "overall_judge": 4.3
+    }
+  }
+}

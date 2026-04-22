@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-d75b043ebefc3098aea84d92bb8bec0f509b1563",
+  "system_name": "system_8",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, failing to provide context about the incident."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that the guards were killed in Baluchistan, while the article specifies the southeastern town of Negur in Iran."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the number of guards killed, the involvement of the militant group Jaish al Adal, and the response from Iranian and Pakistani authorities."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'Iran is a major ally of Pakistan in the region' is misleading and irrelevant to the incident described."
+        }
+      ],
+      "provisional_score": 1
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow by stating the main event of the Iranian border guards being killed by militants."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that Iran is a major ally of Pakistan, which is not supported by the article."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the number of guards killed, the identity of the militant group, and the context of the attack."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "While the summary is mostly fluent, the phrasing could be improved for clarity and precision."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

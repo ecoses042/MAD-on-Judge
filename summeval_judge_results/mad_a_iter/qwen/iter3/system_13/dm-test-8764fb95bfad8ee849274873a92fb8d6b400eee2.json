@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-8764fb95bfad8ee849274873a92fb8d6b400eee2",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from a major consistency flaw: it states Townsend was brought on for the Burnley game and then immediately claims Merson had a dig at him 'after scoring for England against Italy.' In reality, the article clarifies that Merson's criticism of Townsend regarding the England squad happened *before* Townsend scored. The summary conflates the timeline, implying Merson criticized Townsend after the goal rather than before, which contradicts the source text. Additionally, the relevance is low because it repeats the exact same sentence about the Burnley game twice without adding new information."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary contains a severe hallucination regarding the timeline of events. It states that Merson criticized Townsend 'after scoring for England against Italy,' whereas the source text explicitly says Merson admitted his mistake and was pleased *after* Townsend scored. The summary presents these as sequential or simultaneous events rather than correcting a past opinion, which contradicts the source's narrative arc. Additionally, the summary is repetitive (stating the Burnley substitution twice) and fails to capture the resolution of the conflict mentioned in the text."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding consistency and relevance. The summary contains a significant chronological error (claiming Merson criticized Townsend after the England goal when the text says he did so before) and fails to add value by repeating the same fact about the Burnley game twice. Therefore, I will not raise these scores despite the general leniency rule."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a critical factual error (hallucination) regarding the timeline: it implies Merson criticized Townsend after Townsend scored for England, whereas the source text clarifies that Merson admitted he was wrong *after* the goal and only restarted the row later due to the Burnley game. Additionally, the summary is redundant, repeating the Burnley substitution details twice without adding value. These flaws are severe enough to warrant low scores across all categories."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary contains a factual inconsistency regarding the timing of Merson's criticism (claiming it happened after the England goal when the text states he criticized Townsend before and then admitted being wrong after). Additionally, the summary repeats the fact about the Burnley game twice without adding new information, which negatively impacts relevance and coherence. No score increases were applied."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment and maintain the strict scores. The summary contains a critical factual error (hallucination) regarding the timeline: it implies Merson criticized Townsend after Townsend scored for England, whereas the source text clarifies that Merson admitted he was wrong *after* the goal and only restarted the row later due to the Burnley game. Additionally, the summary is redundant, repeating the Burnley substitution details twice without adding value. These flaws are severe enough to warrant low scores across all categories."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 1.5,
+      "fluency": 4.0,
+      "relevance": 2.0,
+      "overall_judge": 2.5
+    }
+  }
+}

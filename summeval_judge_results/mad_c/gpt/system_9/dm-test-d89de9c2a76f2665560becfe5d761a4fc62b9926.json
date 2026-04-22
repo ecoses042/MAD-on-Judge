@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-d89de9c2a76f2665560becfe5d761a4fc62b9926",
+  "system_name": "system_9",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, as it jumps from the match result to player statistics without a smooth transition."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to cover key points such as the match context, the significance of the venue, and the performance of other players, which are important for understanding the match."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary uses a fragmented style with missing conjunctions and transitions, making it less fluent and harder to read."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the context of the match being a 'mini-derby' or the implications of the result for both teams, which are present in the source."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, starting with the outcome of the match and then providing details about the players."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the key details from the article, including the score, the goal scorer, and the nationality of the players."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important information, such as the match result and the performance of Callum Gribbin, while avoiding trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization and punctuation, making it less fluent and harder to read."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

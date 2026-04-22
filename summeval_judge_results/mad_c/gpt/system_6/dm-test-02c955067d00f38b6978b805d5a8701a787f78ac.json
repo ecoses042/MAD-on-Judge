@@ -1,0 +1,75 @@
+{
+  "article_id": "dm-test-02c955067d00f38b6978b805d5a8701a787f78ac",
+  "system_name": "system_6",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, abruptly ending without mentioning the other injured individuals or the closure of the highway."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the involvement of other victims, the actions of emergency crews, and the impact on the highway, which are crucial for understanding the incident."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains inconsistent capitalization and spacing, making it less readable."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the total number of people involved in the crash, which is important for consistency with the source."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the multi-vehicle crash, including the location, the number of people involved, and the initial patients airlifted."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the details from the article, including the number of people involved and the specific injuries sustained."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is mostly free of grammatical errors and is easy to read, maintaining a straightforward narrative."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the incident, such as the number of people involved, the nature of their injuries, and the response by rescue services."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks some details about the other individuals involved and the overall impact of the crash, which could enhance the narrative."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits information about the highway closure and the involvement of emergency crews, which are important aspects of the incident."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 4,
+      "relevance": 3,
+      "overall_judge": 3.2,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "defender",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

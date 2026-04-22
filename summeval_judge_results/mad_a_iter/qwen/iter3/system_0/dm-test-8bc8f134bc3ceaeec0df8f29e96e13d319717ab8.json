@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-8bc8f134bc3ceaeec0df8f29e96e13d319717ab8",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary contains a severe hallucination: it claims 'Suarez has been replaced in the summer,' which is factually incorrect and not present in the source text (the article only mentions speculation about Luis Enrique being replaced). This violates the consistency criterion significantly. The rest of the summary is coherent, fluent, and relevant to the main points."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.8,
+        "rationale_for_score": "The summary contains a severe hallucination: it states 'suarez has been replaced in the summer,' which is factually incorrect based on the source text (which says Luis Enrique was speculated to be replaced, not Suarez). This violates consistency rules. Additionally, the summary fails relevance by omitting the core news about Bartomeu's defense of Enrique and focusing trivially on Suarez's goal while inventing a false fact about his replacement."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No adjustment needed. The lenient judge correctly identified the severe hallucination regarding 'Suarez has been replaced in the summer,' which is a critical consistency failure not supported by the source text. The scores reflect this significant error while acknowledging the otherwise fluent and relevant content."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a critical hallucination ('Suarez has been replaced') which directly contradicts the source text (which discusses replacing Luis Enrique). This is a severe consistency failure that invalidates the summary's reliability. Consequently, the relevance score is also low because the summary focuses on this invented detail and trivial match events rather than the main news story about Bartomeu defending Enrique."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No adjustment needed. The strict judge correctly identified the severe hallucination ('Suarez has been replaced in the summer') which contradicts the source text and represents a critical consistency failure. The scores accurately reflect this major error while acknowledging the otherwise fluent and relevant content."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.8,
+        "adjustment_notes": "No adjustment needed. The lenient judge correctly identified the critical hallucination ('Suarez has been replaced') which contradicts the source text and severely impacts consistency and relevance. The summary's structure is fragmented due to this error, justifying the low coherence score."
+      }
+    },
+    "final": {
+      "coherence": 3.5,
+      "consistency": 2.0,
+      "fluency": 4.0,
+      "relevance": 2.5,
+      "overall_judge": 2.9
+    }
+  }
+}

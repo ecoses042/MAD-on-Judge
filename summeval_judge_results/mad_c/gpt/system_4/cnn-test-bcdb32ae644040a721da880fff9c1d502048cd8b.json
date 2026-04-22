@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-bcdb32ae644040a721da880fff9c1d502048cd8b",
+  "system_name": "system_4",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow of information, failing to connect the events surrounding the deaths."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits critical details about the nature of the deaths (murder-suicide) and the involvement of authorities, which are key points from the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the investigation by the FBI or the cruise line's cooperation, which are important aspects of the original article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is fragmented and lacks proper sentence structure, making it less readable."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the location and status of the cruise ship."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary includes key details about the cruise ship's departure and current location, which are important to the context of the incident."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits critical information about the circumstances of the passengers' deaths and the investigation, which are essential to understanding the event."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks grammatical structure, such as complete sentences, which affects its readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.0,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

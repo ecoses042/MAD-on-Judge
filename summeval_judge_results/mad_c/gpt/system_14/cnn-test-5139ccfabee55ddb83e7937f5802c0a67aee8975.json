@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-5139ccfabee55ddb83e7937f5802c0a67aee8975",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, as it abruptly jumps from the incident to the Pentagon's statement without providing context or details about the Russian response."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits key details from the source, such as the Russian claim about the U.S. plane's transponder being off and the historical context of previous incidents, which are essential for a complete understanding of the situation."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary does not adequately cover the most important information, such as the diplomatic actions the U.S. plans to take following the incident."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as inconsistent capitalization and punctuation, which detract from its readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with the U.S. plane's flight and leading to the Pentagon's response."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article without introducing any new facts."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary captures the key points of the incident, including the type of aircraft involved and the Pentagon's assessment of the Russian pilot's actions."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization and punctuation, which affects its readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

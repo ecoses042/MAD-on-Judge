@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-fadabe346fe95d33eee71299e6596754768f5246",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, making it difficult to understand the relationship between the characters and the situation."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits key details about Gemma's history and her mother's concerns, which are crucial for understanding the context of the situation."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to capture the emotional weight of the mother's feelings and the implications of Gemma's actions on her children."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as missing articles and improper sentence structure, which hinder readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding Gemma's situation and her mother's concerns."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the key issues raised in the article, such as Gemma's drinking, her unemployment, and the threat from her mother."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important aspects of the article, including the relationship between Gemma and her mother, and the implications for her children."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper sentence structure and capitalization, making it less fluent and harder to read."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

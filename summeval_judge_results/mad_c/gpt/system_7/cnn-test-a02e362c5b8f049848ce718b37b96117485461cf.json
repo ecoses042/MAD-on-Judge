@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-a02e362c5b8f049848ce718b37b96117485461cf",
+  "system_name": "system_7",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow of information, as it jumps from wildfires to sunsets without adequately connecting the two."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits key details about the cause of the wildfires and their impact, which are essential for understanding the context of the sunsets."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary does not mention the specific origin of the wildfires or the dramatic nature of the sunsets, which are important aspects of the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary uses lowercase letters for the beginning of sentences, which is grammatically incorrect."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, linking the wildfires in Siberia to the resulting sunsets in the Pacific Northwest."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points, specifically the cause of the sunsets and the regions affected, avoiding trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits important details about the origin of the wildfires and the impact they had on villages, which could provide context to the situation."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization and punctuation, making it less readable and fluent."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 4,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

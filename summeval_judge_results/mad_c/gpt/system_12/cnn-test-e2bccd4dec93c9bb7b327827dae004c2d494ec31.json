@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-e2bccd4dec93c9bb7b327827dae004c2d494ec31",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow of information, as it abruptly shifts from Nakatani's statement to Inoki's questions without providing context or connection."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to include key details about the context of the discussion, such as the political background of Inoki and the significance of the exchange, which are essential for understanding the importance of the topic."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention that Nakatani also discussed the nature of objects detected by the ASDF, which is relevant to the topic of UFOs."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The use of commas in the summary is inconsistent and disrupts the flow, making it less fluent."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information by directly addressing the main question posed by Inoki and the response from Defense Minister Nakatani."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article without introducing any new facts, maintaining consistency with the source."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the discussion regarding UFOs and the response from the Defense Minister, avoiding trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains some awkward phrasing, such as 'to date' and 'had never come across,' which could be improved for better readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-b1f6faac3f406edca1e0cad8cce1319c83e62605",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information. It abruptly ends without mentioning the critical details about Costa's mental state, the prosecutor's claims, or the implications for the jury's verdict."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key points such as the context of the murder, the details of the forensic psychiatrist's testimony, and the significance of Costa's mental state in relation to the jury's decision."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as inconsistent capitalization and punctuation, which detract from its readability."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not accurately reflect the complexity of the case, particularly regarding the prosecutor's suggestion that Costa feigned memory loss, which is a significant aspect of the article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the key events of the case, including the actions of Luigi Costa and the involvement of the forensic psychiatrist."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, specifically mentioning the accusations against Costa and the examination by Professor Mullen."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important aspects of the case, including the nature of the crime and the mental state of the accused, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as the lack of proper punctuation and capitalization, which affects its readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

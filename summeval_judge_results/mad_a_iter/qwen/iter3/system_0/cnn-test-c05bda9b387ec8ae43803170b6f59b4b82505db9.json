@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-c05bda9b387ec8ae43803170b6f59b4b82505db9",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 2,
+        "overall_judge": 1.8,
+        "rationale_for_score": "The summary contains severe hallucinations and grammatical errors that violate consistency and fluency criteria. Specifically, it states 'the islamist terror group has been killed in recent summer,' which is factually incorrect (ISIS was not killed); the source says ISIS *killed* Yazidis. The phrase 'minority group group' is a redundancy error. The summary fails to capture key details like the location (northern Iraq), the specific number discrepancies, or the humanitarian context, resulting in poor relevance and coherence."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary contains severe hallucinations and grammatical errors that make it inconsistent with the source text. Specifically, the phrase 'the islamist terror group has been killed in recent summer' incorrectly attributes the action of being killed to ISIS itself (or implies they were killed) rather than stating that ISIS members killed Yazidis or that Yazidis were displaced/killed. The summary also fails to coherently connect the release event with the context provided in the article, resulting in a disjointed and factually inaccurate representation."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 2,
+        "overall_judge": 1.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a critical hallucination ('ISIS... has been killed') which violates consistency and severely impacts coherence. It also suffers from grammatical errors ('minority group group', 'has been killed' instead of 'killed Yazidis'). Due to these fundamental flaws, lowering my initial scores was unnecessary; the strict judge's low scores are justified."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The lenient judge's assessment is correct and should be accepted. The summary contains a severe hallucination ('the islamist terror group has been killed') which contradicts the source text where ISIS is the perpetrator of violence, not the victim. Additionally, the summary fails to mention the specific number released (200+), the location (Iraq/Sinjar context), or the humanitarian crisis details, making it factually inconsistent and lacking relevance despite covering the main topic."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 1,
+        "relevance": 2,
+        "overall_judge": 1.2,
+        "adjustment_notes": "The summary contains a severe hallucination stating 'ISIS... has been killed', which is factually incorrect and not present in the source text (the text states ISIS released Yazidis). This violates consistency rules fundamentally. Additionally, the grammar is poor ('minority group group'), and the flow is disjointed. The lenient judge's points were accepted because they correctly identified these critical flaws."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary contains a critical hallucination ('the islamist terror group has been killed') that completely contradicts the source text and common sense. Additionally, it fails to capture key details like the specific number of people released (217/228), the location context, or the humanitarian crisis, making it factually inconsistent and low in relevance."
+      }
+    },
+    "final": {
+      "coherence": 1.5,
+      "consistency": 1.0,
+      "fluency": 2.0,
+      "relevance": 2.0,
+      "overall_judge": 1.6
+    }
+  }
+}

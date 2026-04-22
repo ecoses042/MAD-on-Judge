@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-b255397ee863bd8faf9def57c0f76769153d905e",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary accurately reflects the source text without hallucinations (Consistency: 5) and covers the key events (Relevance: 4). However, it contains a clear grammatical error ('patting patting down') which affects fluency (Fluency: 3). The structure is slightly repetitive but generally logical (Coherence: 4). Given the lenient rules, the score is kept above 3 despite the typo."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from a significant fluency error ('patting patting down') which makes it awkward to read. While the content is consistent with the source text and covers the main events, the repetition of 'patting' lowers the quality significantly. The summary is also slightly truncated compared to the full article but captures the core narrative."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I maintained the strict judge's low fluency score (2) because the repetition of 'patting patting down' is a genuine grammatical error that disrupts readability. I kept the other scores high as the summary accurately reflects the source text without adding external facts and covers the key narrative points."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary accurately reflects the source text (Consistency: 5) and covers the key events (Relevance: 4). The structure is logical despite being a bit repetitive (Coherence: 4). However, the phrase 'patting patting down' is a clear grammatical error/typo that significantly impacts readability, justifying the Fluency score of 3. No points were raised as the lenient judge's reasoning was sound and based on actual content."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No changes made. The lenient judge correctly identified the repetition of 'patting patting down' as a genuine grammatical error that significantly impacts fluency, warranting the low score of 2. The summary accurately reflects the source text without adding external facts (consistency) and covers the key narrative points (relevance/coherence)."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary accurately reflects the source text (Consistency: 5) and covers the key events (Relevance: 4). The structure is logical despite being a bit repetitive (Coherence: 4). However, the phrase 'patting patting down' is a clear grammatical error/typo that significantly impacts readability, justifying the Fluency score of 3. No points were raised as the lenient judge's reasoning was sound and based on actual content."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 5.0,
+      "fluency": 2.5,
+      "relevance": 4.0,
+      "overall_judge": 3.5
+    }
+  }
+}

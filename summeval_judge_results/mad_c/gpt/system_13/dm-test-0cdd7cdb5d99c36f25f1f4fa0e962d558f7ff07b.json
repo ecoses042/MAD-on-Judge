@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-0cdd7cdb5d99c36f25f1f4fa0e962d558f7ff07b",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow and does not effectively connect the information about the squad and the tournament."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the squad list, the opening match date, and the performance in the qualifiers, which are crucial for understanding the context."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains inconsistent capitalization (e.g., 'uefa' should be 'UEFA') and lacks proper punctuation in some areas."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the specific players included in the squad, which is a significant aspect of the article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the squad announcement and the tournament context."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article about the team's status as defending champions and their group placement."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the squad announcement and the upcoming championship, avoiding trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as inconsistent capitalization and spacing issues."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits important details such as the squad list and the opening match date, which are significant for understanding the context."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "tie",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

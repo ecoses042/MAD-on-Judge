@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-14c813567696f4e63a39993c09d4edb454036179",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, jumping between points without proper transitions."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to cover key points such as the couple's rapping, the content of their lyrics, and the purpose of the video, focusing instead on trivial details."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the fact that the video is a rap without adequately explaining its context or significance."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as improper capitalization and punctuation, making it less fluent."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear introduction of the couple and their announcement, establishing the context of the video."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the main event of the article, which is the couple announcing their pregnancy through a rap video."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary includes key details such as the couple's names, the video's theme, and its popularity, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains fragmented sentences and lacks smooth transitions, making it less readable."
+        },
+        {
+          "criterion": "coherence",
+          "reason": "The summary could benefit from a more logical flow, as it jumps between points without clear connections."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

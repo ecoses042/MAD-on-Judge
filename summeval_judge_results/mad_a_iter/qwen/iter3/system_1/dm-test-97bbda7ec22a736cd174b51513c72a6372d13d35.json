@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-97bbda7ec22a736cd174b51513c72a6372d13d35",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary fails the consistency criterion because it states Reggie Jackson 'purchased' the letters for $260,000. The source text explicitly clarifies that this amount was a bid raised by a Sotheby's employee to jumpstart the bidding, and the letters ultimately received 'no bids' from actual buyers (implying they were not sold). By attributing the purchase to Jackson at that price, the summary introduces a factual error regarding the transaction outcome. The coherence is slightly reduced due to this contradiction with the source narrative."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is fluent and relevant but contains a significant consistency error: it states Reggie Jackson purchased the letters for $260,000, whereas the source text clarifies that this was the failed bid by a Sotheby's employee, not the actual purchase price (which remains undisclosed). This contradicts the source. Additionally, the summary presents the failed auction bid as if it were the transaction price without sufficient context, which is a minor coherence issue."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 2,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the consistency score significantly (from 3 to 2) because the strict judge correctly identified a major factual error: the summary states Reggie Jackson 'purchased' the letters for $260,000, whereas the source text clarifies that this was a bid by an employee to jumpstart bidding and no actual buyer emerged. This is a critical inconsistency that changes the meaning of the event from a failed sale to a successful purchase at that price."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 2,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "The lenient judge correctly identified the critical consistency error: the summary states Reggie Jackson purchased the letters for $260,000, but the source text explicitly says he bought them for an 'undisclosed amount' and that the $260,000 was a failed bid by an employee. This is a major factual contradiction, warranting a score of 2 rather than 3. The other scores (coherence, fluency, relevance) remain unchanged as they accurately reflect the summary's structure, readability, and focus on key points."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 2,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding consistency. The summary explicitly states that Reggie Jackson 'purchased' the letters for '$260,000'. However, the source text clarifies that this amount was a bid placed by a Sotheby's employee to jumpstart bidding, and the letters ultimately 'failed to find a buyer'. Therefore, stating Jackson purchased them is a critical factual error. I maintain the consistency score of 2. The other scores remain unchanged as they accurately reflect the summary's structure, language quality, and focus on key details."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 2,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary contains a critical factual error regarding the purchase price ($260,000 vs. 'undisclosed amount'), which invalidates the consistency score. The other dimensions (coherence, fluency, relevance) remain strong and warrant the original scores."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 2.0,
+      "fluency": 5.0,
+      "relevance": 4.0,
+      "overall_judge": 3.0
+    }
+  }
+}

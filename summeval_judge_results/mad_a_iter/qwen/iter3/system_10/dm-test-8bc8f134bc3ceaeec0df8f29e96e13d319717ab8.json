@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-8bc8f134bc3ceaeec0df8f29e96e13d319717ab8",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from severe fluency issues due to the repetition of the same sentence (the quote about being 'very happy') and a typo ('bartemou' instead of 'Bartomeu'). While it avoids hallucinations, it fails to capture the most critical information: that Barcelona is six games away from winning the title and capable of winning three trophies. The summary focuses too much on trivial details like the specific minute Suarez scored rather than the broader context of the club's success."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is consistent with the source text and avoids hallucinations. However, it suffers from poor coherence due to significant redundancy (stating Bartomeu's happiness twice in slightly different ways) and a disjointed flow where the first two sentences overlap heavily. Relevance is average because while it covers the main points, it misses the context of the Champions League victory against PSG mentioned in the source, focusing only on the Valencia game at the end."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary requires a score reduction in fluency due to the repetitive sentence structure and the typo ('bartemou'). It also loses points on relevance for missing the key context about Barcelona being six games away from winning the title and capable of winning three trophies, while focusing instead on trivial details like the specific minute of the goal."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the coherence score from 4 to 3 because the redundancy between the first two sentences is severe enough to disrupt the logical flow significantly; they are nearly identical in meaning. I also lowered the relevance score from 3 to 2 because the summary completely omits the context of the Champions League victory against PSG, which is a major part of the source text's narrative regarding the team's form and Bartomeu's comments on their trophy chances."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No changes to scores. The lenient judge's points regarding the typo ('bartemou'), repetitive structure, and missing key context (three trophies/six games away) are valid and supported by the source text. The summary does introduce a specific detail (one minute) that is in the text but arguably trivial compared to the strategic context, justifying the lower relevance score. The fluency penalty for repetition and the typo is also justified."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The redundancy in the first two sentences of the summary is a significant structural flaw that lowers coherence. Furthermore, omitting the Champions League victory against PSG and Messi's goal is a major omission regarding relevance, as these are key events mentioned in the source text that provide context to the team's current form and Bartomeu's comments."
+      }
+    },
+    "final": {
+      "coherence": 3.0,
+      "consistency": 4.5,
+      "fluency": 3.0,
+      "relevance": 2.5,
+      "overall_judge": 3.0
+    }
+  }
+}

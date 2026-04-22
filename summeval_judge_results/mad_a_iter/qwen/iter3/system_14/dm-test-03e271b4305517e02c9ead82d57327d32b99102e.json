@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-03e271b4305517e02c9ead82d57327d32b99102e",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and strictly consistent with the source text without hallucinations. It captures the main results (singles win, doubles loss) and a key biographical fact (19th Grand Slam). It receives a slight deduction on relevance because it omits the significant context of the US team's relegation to World Group II and the captain's comments, which are major points in the article."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source text and covers the main events (singles win, doubles loss, Grand Slam record). However, it lacks coherence in flow as it presents facts somewhat disjointedly without connecting them to the broader context of the team's relegation or the player's reaction. It also misses significant relevant details like the specific match score of the singles match and the captain's comments, which are central to the article's narrative about the 'eye-opener' and future challenges."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The lenient judge's assessment is accurate. The summary is well-structured and strictly consistent with the source text. While it omits the significant context of the US team's relegation to World Group II and the captain's comments (which are major points in the article), this omission justifies a slight deduction on relevance rather than a harsh penalty, as the core match results and biographical fact are captured correctly."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the coherence score because the summary presents facts in a disjointed list without logical transitions or a clear narrative arc (e.g., moving from the win to the loss to the consequence). I significantly lowered the relevance score; while it covers the 'what', it misses the 'why' and 'so what' which are central to the article: Williams' realization about her clay court readiness, the specific context of the relegation, and the team's future outlook. The strict judge was correct that these omissions make the summary feel trivial compared to the source text."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary accurately captures the core match results and a key biographical fact without introducing errors. While it misses the significant context of the team's relegation and the captain's quotes, this omission is acceptable for a short summary, justifying a relevance score of 4 rather than lower."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I accept the lenient judge's assessment regarding relevance and coherence. The summary lists three distinct facts (the singles win, the doubles loss, and the Grand Slam count) without connecting them to the article's central narrative: Williams' realization about her clay court readiness, the consequence of relegation, or the team's future outlook. By omitting these key contextual elements, the summary fails to capture the 'so what' of the event, making it trivial compared to the source text. The scores remain unchanged."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 5.0,
+      "fluency": 4.5,
+      "relevance": 3.0,
+      "overall_judge": 3.9
+    }
+  }
+}

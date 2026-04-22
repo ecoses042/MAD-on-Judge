@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-b255397ee863bd8faf9def57c0f76769153d905e",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, jumping between points without clear connections."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the parents' ages without context, which is not relevant to the main story."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention key details such as the reason for the confiscation and the father's criticism of the security measures."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains fragmented sentences that disrupt the reading experience."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with the confiscation of the toy gun and ending with the replacement after the holiday."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the events described in the article without introducing any new or misleading information."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary captures the key points of the incident, including the father's reaction and the eventual replacement of the toy gun."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains fragmented sentences and lacks smooth transitions, making it less readable."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

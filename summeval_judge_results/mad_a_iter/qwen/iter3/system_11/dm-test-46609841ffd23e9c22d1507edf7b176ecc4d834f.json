@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-46609841ffd23e9c22d1507edf7b176ecc4d834f",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is grammatically correct and consistent with the source text, but it suffers from a severe relevance flaw by being an incomplete copy-paste of the first three sentences of the article. It fails to include key information such as the specific match details (Willemstad win), the extra-time goal scorer (Charlton Vicento), the opponent for the next round (Cuba), and Kluivert's background context, which are significant parts of the source text."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 5,
+        "overall_judge": 5.0,
+        "rationale_for_score": "The summary is excellent: it is coherent, fluent, and consistent with the source text. It captures the most critical information (Kluivert's success, Curacao's advancement, and the specific match result) without adding hallucinations or missing key context. The only reason for a score slightly below 5 is that it omits the upcoming opponent (Cuba), but given the lenient rules focusing on clear failures or hallucinations, this omission is acceptable as it covers the primary news."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "The strict judge's assessment is accurate. The summary is indeed a direct copy-paste of the first three sentences of the source text, omitting significant details like the specific match result in Willemstad, the extra-time goal scorer, and future opponents. Therefore, the relevance score remains low (2) and the overall score reflects this severe flaw."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The summary is well-structured and fluent. However, regarding relevance, the lenient judge's note that 'it omits the upcoming opponent (Cuba)' is a valid point for raising the score slightly below perfect. The article explicitly states Curacao faces Cuba in the next round, which is a significant piece of news for a sports summary about advancing to the next stage. While not a hallucination or a critical failure, omitting the specific next opponent reduces the completeness of the 'key points' compared to a full 5/5 relevance score."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. While the summary is fluent and coherent, it misses a significant key detail: the upcoming opponent (Cuba) mentioned in the source text. For a sports summary about advancing to a new round, knowing who the next opponent is constitutes a major piece of information that was omitted, justifying a relevance score below 5."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "The lenient judge's points regarding coherence, consistency, and fluency are valid as the summary is grammatically correct, logically structured, and strictly adheres to the source text without adding external facts. However, the relevance score of 2 is justified because the summary consists entirely of a direct copy-paste of the first three sentences of the article, completely omitting other significant details present in the text such as the specific result of the first leg (Willemstad), the extra-time goal scorer, and the upcoming opponents. Therefore, no adjustment to the scores is necessary."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 3.0,
+      "overall_judge": 3.9
+    }
+  }
+}

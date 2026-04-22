@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-b5925c1a02fa9a8f6b1d5ad764c19a732deac0df",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from a major consistency flaw: it incorrectly states that 'the dog has been viewed more than half a million times online.' The source text explicitly says the *video* of the crocodile was viewed more than half a million times, not the dog itself. This is a hallucination/misattribution of the subject of the view count. Additionally, the summary lacks proper capitalization and punctuation (e.g., 'new zealander', 'puerto vallarta'), reducing fluency. The structure is somewhat disjointed due to these errors."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is consistent with the source text and covers key facts (Tim Weston, location, dog details, view count). However, it suffers from a significant fluency issue: the sentence 'the dog has been viewed more than half a million times online' incorrectly attributes the view count to the dog rather than the video clip. While this is a minor grammatical error that doesn't constitute a hallucination of new facts (since the source mentions both), it creates awkward phrasing. The summary also lacks proper capitalization and punctuation, which impacts readability."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I have lowered the consistency score from 2 to 2 (maintained) because the strict judge's criticism regarding the 'dog viewed' vs 'video viewed' error is a definitive factual hallucination that cannot be overlooked; this is a critical failure in information accuracy. I slightly reduced the overall score from 3.0 to 2.5 to reflect that while the grammar and vocabulary are adequate (fluency 4), the fundamental logical error regarding the subject of the view count combined with the lack of capitalization makes the summary unreliable."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "No changes made. The lenient judge's assessment of fluency (3/5) is justified by the awkward phrasing 'the dog has been viewed' instead of 'the video clip', as well as the lack of capitalization and punctuation throughout the text. These are genuine readability issues that prevent a higher score, despite the content being factually consistent."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I accepted the lenient judge's point regarding the critical factual error ('dog has been viewed' vs 'video viewed'), which constitutes a consistency failure (score 2). I also accepted the note on lack of capitalization affecting reliability, keeping fluency at 4 but lowering the overall score to 2.5 to reflect the combination of a major hallucination and poor formatting."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "No changes made. The strict judge's assessment of fluency (3/5) is justified by the awkward phrasing 'the dog has been viewed' instead of 'the video clip', as well as the lack of capitalization and punctuation throughout the text. These are genuine readability issues that prevent a higher score, despite the content being factually consistent."
+      }
+    },
+    "final": {
+      "coherence": 3.5,
+      "consistency": 3.5,
+      "fluency": 3.5,
+      "relevance": 3.5,
+      "overall_judge": 3.5
+    }
+  }
+}

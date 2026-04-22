@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-d296270ab4a4cf20f2d9c1aae7514687806f2b35",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary fails the consistency criterion severely due to a hallucination: it replaces the specific currency '£' with '#', which is factually incorrect based on the source text. Additionally, the summary only covers the first three sentences of the article and completely omits all subsequent details regarding the specific rooms (dining room, aeroloft, master bedroom, conference room), the artist's impressions, and the layout plan, resulting in poor relevance for a full summary."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.5,
+        "rationale_for_score": "The summary is coherent and relevant, capturing the main points of the article. However, it contains a consistency error: it uses '# 400million' instead of '£400million'. While this is likely a formatting typo rather than a factual hallucination (the amount itself is correct), strictly speaking, it introduces an inconsistency with the source text's currency symbol. Given the lenient rules, I penalize slightly for this deviation but do not drop the score below 3."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a factual error (hallucination) by replacing '£' with '#', which violates the consistency criterion. Additionally, it only summarizes the first paragraph and ignores the vast majority of the source text describing specific rooms and features, making it insufficiently relevant for a full summary. Therefore, I maintain the low scores."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.5,
+        "adjustment_notes": "The lenient judge's assessment is accurate. The summary captures the main points well (coherence and relevance are high). The only issue is the replacement of '£' with '#', which is a consistency error regarding the source text's specific currency symbol, though not a factual hallucination about the amount itself. Therefore, the scores remain unchanged from the lenient judge's evaluation."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding the factual error (hallucination) where '£' was replaced with '#', which strictly violates the consistency criterion. Additionally, the summary only covers the introductory paragraph and completely omits the detailed descriptions of specific rooms (bedroom, lounge, restaurant, etc.) found in the rest of the source text, making it insufficiently relevant for a full summary. Therefore, I maintain the low scores."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.5,
+        "adjustment_notes": "Agree with the strict judge's assessment. The summary is well-structured and covers the key points (high coherence and relevance). The only flaw is the replacement of the currency symbol '£' with '#', which violates consistency with the source text. No other changes are necessary."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 2.5,
+      "fluency": 3.0,
+      "relevance": 4.5,
+      "overall_judge": 3.2
+    }
+  }
+}

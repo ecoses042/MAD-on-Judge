@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-8e6c8aec6808f66ed0342e128a4e146f3ecd627d",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is fluent and mostly consistent with the source text, but it suffers from severe relevance issues by cutting off abruptly after the second sentence. It fails to summarize the key developments in the story (the new arrest details, the specific dates of the alleged sex, the admission of kissing/touching, the school's response, or the bail amount). By stopping mid-narrative, it misses the majority of the important information provided in the source article."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and strictly consistent with the source text. It captures the key facts regarding Kaitlyn Granado's identity, age, school, and the two separate incidents (the new arrest for sex in a car and the previous arrest for inappropriate touching). The only minor deduction for relevance is that it omits details about the second boy being questioned and the specific outcome of the first arrest (suspension/administrative leave), but given the lenient rules allowing benefit of the doubt, this does not constitute a failure."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is truncated and fails to cover the majority of the key information in the source text (the second arrest details, specific dates, school response, bail amount). Therefore, the low relevance score is justified and should not be increased."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The summary is well-structured and strictly consistent with the provided text. It accurately captures the main events: the new arrest for sex in a car and the previous arrest for inappropriate touching. While it omits details about the second boy being questioned and the administrative leave status (which the lenient judge noted as a minor deduction), these are secondary to the primary narrative of the arrests. The summary remains focused on the most critical information without introducing hallucinations or errors."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No changes made. The summary is indeed truncated and omits critical details from the source text, specifically the second arrest (the core of the news), specific dates for the second incident, the bail amount ($50,000), and the school's response. Therefore, the low relevance score is justified and should not be increased."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The strict judge's assessment is accurate. The summary effectively covers the primary narrative (the new arrest and the context of the previous one) while omitting secondary details like the administrative leave or the specific timeline of the second boy being questioned. These omissions are justified as they do not detract from the core news value. No score reduction is necessary."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 4.5,
+      "fluency": 4.5,
+      "relevance": 3.0,
+      "overall_judge": 3.9
+    }
+  }
+}

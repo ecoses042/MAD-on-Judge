@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-096e418a953af86df0d1560bec95bc7bfee2e34b",
+  "system_name": "system_2",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow and does not connect the events of Guardiola's trouser rip with the match outcome."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses excessively on Guardiola's trousers, which is a trivial detail compared to the significance of Bayern's victory and their performance."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the score of the match (6-1), which is a key detail that provides context to Bayern's victory."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains awkward phrasing, such as 'ripped a hole during the champions league match in germany,' which could be more fluid."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with Guardiola's mishap and concluding with Bayern Munich's victory."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of Guardiola's incident and Bayern's success in the Champions League, which are the main highlights of the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits important details about the match, such as the scoreline and the players who scored, which are essential for understanding the context of Bayern's victory."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization and punctuation, making it less fluent and harder to read."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

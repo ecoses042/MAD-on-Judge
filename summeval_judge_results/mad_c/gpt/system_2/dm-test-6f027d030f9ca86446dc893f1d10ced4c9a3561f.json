@@ -1,0 +1,63 @@
+{
+  "article_id": "dm-test-6f027d030f9ca86446dc893f1d10ced4c9a3561f",
+  "system_name": "system_2",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, as it presents the same information about Henderson's contract multiple times without clear transitions."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention key points such as Henderson's contributions to the team, his potential role as captain, and the context of his contract negotiations, which are crucial for understanding the significance of the new deal."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The use of '# 100,000-a-week' is not idiomatic; it should be formatted as '£100,000-a-week' for clarity and fluency."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding Henderson's new contract, including its duration and financial terms."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the key details from the article, such as the contract value and duration, without introducing any new or misleading information."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important aspects of the article, specifically Henderson's contract and its implications for Liverpool."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains some grammatical issues, such as inconsistent capitalization and punctuation, which affect its overall readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 5,
+      "fluency": 4,
+      "relevance": 3,
+      "overall_judge": 3.8,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-36352fd1c61fd0c593ee7b84cbe213aa9b444439",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is excellent in coherence, consistency, and fluency. It accurately captures the main facts (victim details, location, cause of death, arrest status) without hallucinations. It receives a slightly lower relevance score because it omits the police appeal for witnesses and the victim's background as an escort, which were significant parts of the source text, though these are minor omissions in a short summary."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is coherent and fluent but suffers from relevance issues by omitting the crucial detail that Scotland Yard is appealing for witnesses regarding contact with the victim in the hours before her death, which is a major point of the article. It also misses the specific location details (Romily Court) and the investigation lead's quotes. Consistency is slightly penalized because the summary omits the nuance that police did not confirm if her profession was central, though it doesn't contradict the text."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is factually accurate and well-structured. The slight deduction in relevance is justified because the summary omits the police appeal for witnesses and the victim's profession/background, which are significant details in the source text, even if minor in a short summary."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is grammatically correct and coherent but fails to capture the most significant news hook: the police appeal for witnesses regarding contact with the victim in the hours before her death. This omission significantly impacts relevance. I maintain the scores as they accurately reflect a summary that covers the basic facts (who, where, how) but misses the critical 'what now' element of the story."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary is factually accurate and well-structured. The slight deduction in relevance is justified because the summary omits the police appeal for witnesses and the victim's profession/background, which are significant details in the source text, even if minor in a short summary."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding relevance. While the summary is grammatically sound and coherent, it significantly underperforms on relevance by omitting the critical police appeal for witnesses, which is a major news hook in the source text. The strict judge was correct to penalize this omission; there is no need to raise the score."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 4.5,
+      "relevance": 3.5,
+      "overall_judge": 4.5
+    }
+  }
+}

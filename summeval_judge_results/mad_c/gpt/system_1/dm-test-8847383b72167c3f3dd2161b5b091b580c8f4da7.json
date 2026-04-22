@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-8847383b72167c3f3dd2161b5b091b580c8f4da7",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear structure and logical flow, making it difficult to follow the sequence of events and information."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits key details such as the dimensions of the new landmass and the reactions of local residents, which are essential for a complete understanding of the event."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as missing articles and inconsistent capitalization, which detract from its readability."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary does not adequately cover the most important information, such as the lack of tremors felt by residents and the official statements regarding the landslide."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, detailing the emergence of the coastline and the geological explanation behind it."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding the cause of the land emergence being a landslide due to melting ice and snow."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the article, including the height of the new land and the geological explanation, while avoiding trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as missing capitalization at the beginning of sentences and inconsistent punctuation, which affects readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

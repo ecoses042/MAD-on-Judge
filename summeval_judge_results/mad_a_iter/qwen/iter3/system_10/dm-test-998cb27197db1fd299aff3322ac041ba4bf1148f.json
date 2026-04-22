@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-998cb27197db1fd299aff3322ac041ba4bf1148f",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is consistent with the source text and covers the key points (the match result, the media team's struggle, and the short highlights). However, it suffers from severe fluency issues due to poor capitalization and punctuation (e.g., 'doncaster', 'compling' instead of 'compiling'), making it difficult to read. Coherence is low because the final sentence ('The managers on the touchline...') is a fragment that does not connect logically to the preceding sentences, failing to form a complete thought or flow."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is consistent with the source text and covers the key points (the draw, the media team's struggle, and the managers). However, it suffers from severe fluency issues due to missing spaces between words (e.g., 'doncaster', 'compling') and lacks proper sentence structure/punctuation, making it difficult to read. The coherence is low because the final fragment ('The managers...') is not integrated into a complete thought. Given the lenient rules, I penalize heavily for the obvious grammatical errors but do not deduct for hallucinations."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains significant grammatical errors (lowercase start of sentences, 'compling' instead of 'compiling') and includes a sentence fragment ('The managers on the touchline...') that adds no value and disrupts the flow. These are objective flaws that prevent the text from being fluent or coherent, so I maintain the lower scores."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No adjustment needed. The lenient judge's assessment is accurate: the summary contains severe fluency errors (missing spaces between words like 'doncaster', 'compling') and poor sentence structure (the final fragment lacks a verb). While the content is consistent with the source, these mechanical issues significantly impact readability, justifying the low fluency score. The coherence is also appropriately penalized for the disjointed ending."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No adjustment needed. The strict judge correctly identified severe mechanical flaws (missing spaces between words) and poor sentence structure that drastically impact readability. These issues justify the low fluency score and the resulting penalty on coherence."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No adjustment needed. The lenient judge correctly identified that the summary contains objective flaws (lowercase starts, typo 'compling', and a non-integrated sentence fragment) which strictly impact fluency and coherence. Since these issues are present in the provided text and not invented by the evaluator, the strict scores stand."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 5.0,
+      "fluency": 2.5,
+      "relevance": 4.0,
+      "overall_judge": 3.0
+    }
+  }
+}

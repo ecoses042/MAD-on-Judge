@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-0cdd7cdb5d99c36f25f1f4fa0e962d558f7ff07b",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is consistent with the source text and flows logically. However, it includes a significant factual error regarding the previous final: the article states England 'progressed to this edition' and implies they are defending champions, but the summary incorrectly phrases it as 'face holland on penalties in the final last year,' which sounds like an upcoming event rather than a past achievement. Additionally, while coherent, the summary misses key details about the tournament opponents (Italy) and specific squad members mentioned in the text, leading to a lower relevance score."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.5,
+        "rationale_for_score": "The summary is coherent and fluent but suffers from a significant consistency flaw: it states the Young Lions 'face Holland on penalties in the final last year' as if it were a current fact or part of the squad news context without proper attribution to the past tense (e.g., 'having beaten'). While the source text mentions this, presenting it as a standalone clause alongside current events is slightly awkward. More importantly, the summary misses key relevant details like the tournament location (Bulgaria), the opening match against Italy, and the specific inclusion of Chelsea players, making it less comprehensive than an excellent summary would be."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate: the summary contains a significant factual error regarding the final (phrasing it as an upcoming event 'face' rather than a past achievement), which impacts consistency and relevance. It also omits key details about the full squad composition and specific opponents like Italy, justifying the lower relevance score."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the relevance score from 3 to 2. While the strict judge focused on consistency and missing some details (like location), I agree that the omission of the opening match against Italy is a significant gap in relevance for a sports summary, as it defines the immediate context of the squad announcement. The summary misses the primary hook of the article (the specific first game) and fails to mention the tournament host nation, making it less comprehensive than expected."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "Adjusted consistency down from 5 to 3 because the summary states 'the young lions face holland on penalties in the final last year', which grammatically implies a future event ('face') rather than a past achievement ('faced' or 'beat'), contradicting the source text. Adjusted relevance down significantly from 3 to 2 because the summary omits the vast majority of the squad details (the specific list of players, their clubs, and positions) which constitutes the bulk of the source text's informational content, leaving only a tiny fraction of the key points."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I raised the relevance score from 2 to 3. The lenient judge's argument that omitting the opening match against Italy makes the summary 'less comprehensive' is subjective; a concise summary does not need to list every scheduled fixture if it captures the core news (squad announcement, group stage placement, and key player recalls). The summary accurately reflects the main points without trivial details. I also raised consistency to 5 as there are no hallucinations or contradictions with the source text."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 4.0,
+      "fluency": 4.0,
+      "relevance": 2.5,
+      "overall_judge": 3.5
+    }
+  }
+}

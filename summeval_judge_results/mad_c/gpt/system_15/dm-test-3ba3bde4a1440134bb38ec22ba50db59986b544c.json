@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-3ba3bde4a1440134bb38ec22ba50db59986b544c",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, jumping between points without proper transitions."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary incorrectly states that Brendan Rodgers reminded 'jordon sterling' instead of 'jordon ibe', introducing a factual error."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key points about the context of the incidents and Rodgers' comments on professional responsibilities."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'jordon sterling' which should be 'jordon ibe', affecting readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with the incident involving Sterling and Ibe, followed by their roles in the upcoming match and Rodgers' response."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article without introducing any new facts or misrepresenting the events."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points, such as the incident, the players' roles, and Rodgers' decision not to discipline them, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, such as 'brendan rodgers has reminded raheem sterling and jordon sterling,' which should be 'jordon ibe.'"
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

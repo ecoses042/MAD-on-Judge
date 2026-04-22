@@ -1,0 +1,63 @@
+{
+  "article_id": "dm-test-c16c9fa34ccae7e2b9e29c3988ccb74974c4b3c0",
+  "system_name": "system_8",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information and does not provide context about the reasons for Tevez's departure or the status of his contract."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary oversimplifies the situation by stating Tevez is 'leaving' without mentioning the need to terminate his contract, which is a crucial detail."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately implies that Tevez's move is finalized, whereas the article indicates that he must first terminate his contract."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "While the summary is grammatically correct, it is overly simplistic and lacks the nuance present in the original article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and straightforward statement about Carlos Tevez's move from Juventus to Boca Juniors."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary oversimplifies the situation by not mentioning the need for Tevez to terminate his contract with Juventus or the context of his decision."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that Tevez is leaving Juventus, while the article indicates he wishes to leave but has not yet completed the process."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

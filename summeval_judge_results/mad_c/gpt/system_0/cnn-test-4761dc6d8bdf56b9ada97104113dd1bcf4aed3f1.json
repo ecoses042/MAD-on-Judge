@@ -1,0 +1,68 @@
+{
+  "article_id": "cnn-test-4761dc6d8bdf56b9ada97104113dd1bcf4aed3f1",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, making it difficult to understand the main points."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces incorrect information, such as 'the north coast of mexico is russian for ",
+          "barbara,": " which is not relevant to the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, such as 'whale whale whale'."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to cover key points, such as the significance of Varvara's migration and the implications for gray whale populations."
+        }
+      ],
+      "provisional_score": 1
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear focus on Varvara's record-breaking migration, establishing a logical connection between the whale's journey and the significance of the record."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information about Varvara's migration distance and the comparison to the previous record without introducing any unrelated facts."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, such as 'whale whale whale' and 'the north coast of mexico is russian for `` barbara '' ''', which disrupts readability."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details, such as the significance of Varvara's journey in relation to her species and the implications for understanding gray whale populations."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "final": {
+      "coherence": 1,
+      "consistency": 1,
+      "fluency": 2,
+      "relevance": 1,
+      "overall_judge": 1.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

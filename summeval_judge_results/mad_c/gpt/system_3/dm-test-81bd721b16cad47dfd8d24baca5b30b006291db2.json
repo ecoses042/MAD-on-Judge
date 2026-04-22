@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-81bd721b16cad47dfd8d24baca5b30b006291db2",
+  "system_name": "system_3",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information. It jumps from the ban to the disciplinary ruling without connecting the events or providing context."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the appeal process, the reactions from teammates and others, and the implications of the incident on North's health, which are crucial for understanding the significance of the event."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as the lack of capitalization for 'nathan hughes' and 'wasps no 8', which affects readability."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention that Hughes was shown a red card, which is an important detail that adds to the understanding of the situation."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with the ban and the reason behind it."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding the nature of the incident and the initial ruling."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the incident, including the ban and the reason for it, without delving into trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks grammatical structure, such as proper capitalization and punctuation, which affects its readability."
+        },
+        {
+          "criterion": "coherence",
+          "reason": "The summary does not provide the outcome of the appeal or the context of the incident, which are crucial for understanding the full story."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

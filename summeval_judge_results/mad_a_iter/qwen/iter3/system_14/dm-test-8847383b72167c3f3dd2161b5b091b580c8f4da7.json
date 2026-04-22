@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-8847383b72167c3f3dd2161b5b091b580c8f4da7",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from a major consistency flaw in the final sentence: it states 'residents... say they are no tremors,' which is grammatically incorrect and factually inaccurate based on the source text that says residents felt 'no tremors.' Additionally, the summary lacks proper capitalization for names and locations (Shiretoko, Rausu, Hokkaido), reducing fluency. The content is relevant but marred by these errors."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 3.5,
+        "rationale_for_score": "The summary captures the main points well (coherence and relevance). However, it contains a grammatical error ('residents... say they are no tremors' instead of 'felt no tremors'), which affects fluency. More critically, for consistency, the summary omits the crucial context that residents felt *no* tremors or heard *no* sounds, while stating they 'are no tremors'. This phrasing is confusing and slightly misrepresents the source's specific detail about the lack of warning signs, though the core fact (no tremors) is present. Given the lenient rules, I penalize only for the clear grammatical awkwardness and the slight imprecision in reporting the residents' experience."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a significant factual inconsistency in the final sentence ('are no tremors' instead of 'felt no tremors'), which changes the meaning and accuracy of the report. Additionally, the lack of capitalization for proper nouns (Shiretoko, Rausu, Hokkaido) is a clear fluency issue that lowers the quality score. No leniency is applied as these are objective errors."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the fluency score from 3 to 2 because the phrase 'residents... say they are no tremors' is a severe grammatical error that renders the sentence nonsensical (it implies residents claim there are literally zero tremors existing as an object, rather than stating they felt none). The lenient judge's assessment of fluency was too high given this specific error. I also lowered consistency from 3 to 2 because the summary omits the critical detail that residents heard 'no sounds' and explicitly states 'are no tremors' instead of 'felt no tremors', which creates a factual ambiguity regarding the residents' experience compared to the source text."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding the factual inconsistency ('are no tremors' vs 'felt no tremors') and the lack of capitalization for proper nouns. These are objective errors that negatively impact consistency and fluency respectively. No scores were raised as the summary does contain these specific issues."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 2,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment on fluency and consistency. The phrase 'residents... say they are no tremors' is indeed a severe grammatical error that makes the sentence nonsensical (missing the verb 'felt'). Additionally, omitting the detail about 'no sounds' while introducing the awkward phrasing regarding tremors creates a factual ambiguity not present in the source text. Therefore, I maintain the lowered scores."
+      }
+    },
+    "final": {
+      "coherence": 3.5,
+      "consistency": 2.0,
+      "fluency": 3.0,
+      "relevance": 3.5,
+      "overall_judge": 3.0
+    }
+  }
+}

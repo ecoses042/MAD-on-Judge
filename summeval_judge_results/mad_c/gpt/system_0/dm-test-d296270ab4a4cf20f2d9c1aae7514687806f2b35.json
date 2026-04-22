@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-d296270ab4a4cf20f2d9c1aae7514687806f2b35",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, jumping between points without proper transitions."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the phrase 'it boasts a bedrooms,' which is grammatically incorrect and inconsistent with the article's description of the jet's features."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'a bedrooms' instead of 'bedroom' and inconsistent use of punctuation."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention key features like the conference room and the luxurious nature of the jet, focusing instead on less significant details."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear structure, outlining the key features of the custom-built Boeing 747 in a logical order."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, including the cost, features, and layout of the jet."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important aspects of the luxury jet, such as its cost, dining facilities, and sleeping arrangements, while avoiding trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'a bedrooms' instead of 'bedrooms' and inconsistent use of punctuation, which affects readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 4,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "tie",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-d296270ab4a4cf20f2d9c1aae7514687806f2b35",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is factually consistent with the source and fluent in English. However, it only covers a small fraction of the key details (cost, customization time, and three specific rooms), omitting major features like the bedrooms, 'aeroloft', conference room, and guest areas mentioned in the text. While lenient rules allow for brevity, this summary feels incomplete rather than concise."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is fluent and consistent with the source text regarding the cost, customization period, and specific rooms mentioned in the first paragraph. However, it fails significantly on relevance by truncating the summary after the third sentence, completely omitting the vast majority of key details provided in the article (e.g., the 'aeroloft' sleeping quarters, conference room, master bedroom, private chef services, guest capacity, and specific luxury features). This results in a severe loss of information coverage."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "The lenient judge's assessment is accurate. The summary is factually consistent and fluent but suffers from significant relevance issues by omitting major features (bedrooms, aeroloft, conference room) described in the source text. No score increase is warranted as the summary remains incomplete."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is grammatically correct and factually consistent with the provided text, but it suffers from a critical flaw in relevance: it cuts off abruptly after describing only three rooms (dining room, lounge, state room), completely ignoring the majority of the article which details the master bedroom, aeroloft sleeping quarters, conference room, guest capacity, and specific luxury features. This truncation makes the summary incomplete and fails to capture the key points of the source text."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "Agreed with the strict judge. While the summary is factually consistent and fluent, it fails to cover key points from the source text, specifically omitting the bedrooms, aeroloft, conference room, and guest areas. The omission of these major features makes the summary significantly incomplete regarding the 'luxury home' aspect described in the article."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding consistency and fluency; the summary is grammatically correct and factually accurate based on the text provided. However, I concur with the strict judge's severe penalty for relevance. The summary is critically incomplete as it abruptly cuts off after listing only three rooms (dining room, lounge, state room), completely omitting other major details from the source such as the master bedroom, the 'aeroloft' sleeping quarters, the conference room, the guest capacity, and the specific luxury features like the private chef. This truncation renders the summary ineffective at capturing the key points of the article."
+      }
+    },
+    "final": {
+      "coherence": 3.5,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 2.5,
+      "overall_judge": 3.6
+    }
+  }
+}

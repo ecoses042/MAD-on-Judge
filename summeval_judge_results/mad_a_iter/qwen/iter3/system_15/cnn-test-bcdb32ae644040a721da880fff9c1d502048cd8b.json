@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-bcdb32ae644040a721da880fff9c1d502048cd8b",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is coherent and fluent but lacks proper capitalization (e.g., 'puerto rico', 'holland america line'), which slightly impacts fluency and professionalism. It is consistent with the source text as it does not introduce hallucinated facts. However, its relevance is limited because it omits the most critical piece of information from the article: the cruise line's statement that the deaths appear to be a murder-suicide. By excluding this key detail, the summary fails to capture the primary significance of the event."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is well-structured, grammatically correct, and accurately reflects the key facts from the source text (location, cruise line, discovery, ship origin/date, and FBI involvement). It omits minor details like the specific time of death or the cleaning staff's role, but this does not constitute a hallucination or a failure to cover key points; it simply results in a slightly less comprehensive summary. Given the lenient rules, high scores are appropriate."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is well-structured and accurately reflects the key facts without hallucinations. While it omits specific details like the time of discovery or the cleaning staff's role, these are minor details that do not detract from the core information, justifying a high relevance score."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the fluency score from 4 to 3 because the strict judge's point about capitalization is valid; 'puerto rico', 'holland america line', and 'tampa' are proper nouns that must be capitalized for standard English fluency. I significantly lowered the relevance score from 3 to 2 because the omission of the 'murder-suicide' detail is a critical failure in summarizing news events, where the nature of the incident is the most important takeaway. The strict judge was correct to penalize heavily on relevance."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary effectively captures the core facts (location, event, cruise line, timeline) while appropriately omitting minor details like the specific time of discovery or the cleaning staff's role without losing relevance."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I accepted the lenient judge's adjustments. The fluency score was correctly lowered due to missing capitalization on proper nouns (Puerto Rico, Holland America Line, Tampa). The relevance score was correctly lowered because omitting the 'murder-suicide' detail is a significant failure in summarizing a news event where the nature of the incident is paramount. No further changes were needed."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.5,
+      "fluency": 4.0,
+      "relevance": 3.0,
+      "overall_judge": 3.9
+    }
+  }
+}

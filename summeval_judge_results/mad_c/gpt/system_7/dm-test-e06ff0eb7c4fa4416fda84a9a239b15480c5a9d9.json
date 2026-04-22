@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-e06ff0eb7c4fa4416fda84a9a239b15480c5a9d9",
+  "system_name": "system_7",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information and does not effectively connect the details about Rich's advertisement."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key points such as Rich's specific requirements for his partner and his personal attributes, which are crucial to understanding the context of the advertisement."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The use of lowercase for 'rich' and 'gumtree' is inconsistent with standard capitalization rules, affecting the overall fluency."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention Rich's age, which is a relevant detail provided in the article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information by introducing Rich and his advertisement before detailing the requirements for his potential partner."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the advertisement, including Rich's requirements for a partner and his personal details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits several details from the article, such as Rich's personal attributes and the benefits he offers, which could provide a fuller picture of the advertisement."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The use of lowercase letters for 'rich' and the lack of proper punctuation detracts from the overall fluency and readability of the summary."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

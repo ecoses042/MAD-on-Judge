@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-632cfdb03aacd90a34a470f6a70b47eee62ec5f0",
+  "system_name": "system_2",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, as it jumps between different points without smooth transitions."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to include Gnabry's positive statements about his recovery and readiness to play, which are key points in the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary repeats the phrase 'serious knee injury' unnecessarily, which could be seen as inconsistent with the article's varied language."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary uses lowercase for the name 'Serge Gnabry' and lacks proper capitalization, affecting readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear timeline of Gnabry's situation, mentioning his recent game, his absence from the first team, and his previous performance."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding Gnabry's injury and his performance last season."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of Gnabry's return to play and his injury history, which are the main topics of the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization and punctuation, making it less readable and fluent."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 4,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

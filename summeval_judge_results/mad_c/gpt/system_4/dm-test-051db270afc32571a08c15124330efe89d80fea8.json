@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-051db270afc32571a08c15124330efe89d80fea8",
+  "system_name": "system_4",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information and does not connect the events in a structured manner."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits key details from the source, such as the involvement of the Secret Service and the context of President Obama's visit, which are relevant to understanding the significance of the theft."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains inconsistent capitalization (e.g., 'fbi' instead of 'FBI') which affects readability."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary does not cover the broader implications of the theft or the police's findings, which are important for context."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with the theft of the rifle and detailing how it was secured and stolen."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article without introducing any new facts or misrepresenting the events."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key details of the theft, including the method used by the thief and the context of the incident."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains some awkward phrasing and lacks smooth transitions, which can affect readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 4,
+      "relevance": 3,
+      "overall_judge": 3.2,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "tie",
+        "fluency": "defender",
+        "relevance": "tie"
+      }
+    }
+  }
+}

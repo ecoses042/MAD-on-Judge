@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-26e4e19d945cedcb489f28808c730658139c9415",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is excellent in coherence, consistency, and fluency, accurately reflecting the source text without hallucinations. It captures the main points regarding Orlando City's interest in Javier Hernandez. It receives a slight deduction on relevance (4) because it omits information about other interested clubs and Andreas Pereira, which are present in the source; however, under lenient rules, this is acceptable as the summary focuses well on the primary subject."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from a significant relevance flaw: it completely omits the second half of the source text regarding Andreas Pereira, which constitutes nearly 50% of the provided information. While the first part is consistent with the article, the failure to cover the other major subject (Pereira) makes the summary incomplete relative to the full source."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate. The summary perfectly captures the primary news (Orlando City's interest in Hernandez) and includes supporting details from the text (coach, fanbase). While it omits secondary stories about other clubs and Andreas Pereira, this is a standard trade-off for a short summary focusing on the main event, justifying the slight deduction in relevance rather than a harsher penalty."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is grammatically perfect and flows well (Fluency/Coherence), but it fails to cover nearly half of the source text regarding Andreas Pereira (Relevance). Since the goal is to summarize the *source document* and not just a portion of it, the omission of the second major topic is a significant flaw that warrants the lower relevance score. I maintain the strict judge's scores as they accurately reflect the trade-off between high fluency/coherence and low completeness."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The strict judge's assessment is accurate. The summary effectively captures the main news story regarding Orlando City's interest in Javier Hernandez and includes relevant supporting details (coach, fanbase). The omission of the secondary story about Andreas Pereira is a standard trade-off for a short summary focusing on the primary event, justifying the slight deduction in relevance."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary is grammatically perfect and flows well (Fluency/Coherence), but it fails to cover nearly half of the source text regarding Andreas Pereira (Relevance). Since the goal is to summarize the *source document* and not just a portion of it, the omission of the second major topic is a significant flaw that warrants the lower relevance score. I maintain the strict judge's scores as they accurately reflect the trade-off between high fluency/coherence and low completeness."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.5,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.5
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-c16c9fa34ccae7e2b9e29c3988ccb74974c4b3c0",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source text and flows logically. However, it suffers from poor relevance as it omits the central conflict: Boca Juniors' confirmation of a deal and the specific requirement that Tevez must terminate his contract first. It also misses key context like the player's history with Boca and the manager's comments, focusing only on the initial report without the resolution or broader context provided in the article."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is consistent with the source text and flows logically. However, it lacks fluency due to poor capitalization (e.g., 'carlos tevez', 'juventus') and sentence structure that feels slightly disjointed. It also misses key context from the article regarding Boca Juniors' involvement and the specific condition of terminating the contract, making it less relevant than a full summary would be."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the strict judge's assessment regarding relevance. The summary captures the initial report but fails to include the crucial update that Boca Juniors is close to sealing a deal and the specific condition (terminating the contract first), which constitutes the main news hook of the article. Therefore, I maintain the lower relevance score."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the fluency score from 4 to 3 because the lack of capitalization (e.g., 'carlos tevez', 'juventus') is a significant grammatical error that detracts from readability, making it less than just 'slightly disjointed'. I also lowered the relevance score from 3 to 2. While the lenient judge noted the missing context about Boca Juniors, the summary's primary failure in relevance is its extreme brevity; it omits the core news hook (the instruction to terminate the contract), the specific condition set by the club president, and the player's history with Boca, which are central to the article's narrative. The summary captures only a tiny fraction of the key points."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding relevance. The summary captures the initial report but fails to include the crucial update that Boca Juniors is close to sealing a deal and the specific condition (terminating the contract first), which constitutes the main news hook of the article. Therefore, I maintain the lower relevance score."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The fluency score is correctly lowered to 3 due to the lack of capitalization for proper nouns (e.g., 'carlos tevez', 'juventus'), which constitutes a significant grammatical error rather than just a stylistic choice. The relevance score is also correctly lowered to 2 because the summary fails to capture the central news hook: the specific instruction from Juventus and Boca Juniors regarding contract termination, which is the main point of the article. The summary's extreme brevity causes it to miss these critical details."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 5.0,
+      "fluency": 3.5,
+      "relevance": 2.5,
+      "overall_judge": 3.5
+    }
+  }
+}

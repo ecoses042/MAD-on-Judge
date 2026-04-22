@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-2c37d44d03ce2e91310339d884d33ee5aabf9abc",
+  "system_name": "system_6",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, jumping from the incident to the parents' actions and then to potential charges without smooth transitions."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits key details such as the height of the fall (10 to 12 feet) and the child's condition being stable, which are important for understanding the severity of the incident."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary does not mention the eyewitness accounts or the context of the cheetahs' behavior, which are relevant to the incident."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'the felines appeared to avoid the child' is vague and could be more clearly articulated."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with the incident, the rescue, and the potential legal consequences."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, including the child's fall, the parents' actions, and the zoo's response."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the incident, including the child's injury, the rescue, and the possibility of charges against the parents."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains some grammatical issues, such as missing articles and inconsistent capitalization, which affect readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 4,
+      "overall_judge": 3.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-fadabe346fe95d33eee71299e6596754768f5246",
+  "system_name": "system_9",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, making it difficult to understand the situation."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details about Gemma's lifestyle choices, her mother's concerns, and the implications of the situation, which are crucial for understanding the context."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as missing articles and inconsistent capitalization."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the idea of Gemma being suspected of stealing but does not clarify the context or provide supporting details from the article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with Gemma's situation and leading to her mother's threat to ban her from seeing the children."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding Gemma's relationship with her children and her mother's concerns."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary captures the key points of Gemma's situation, including her children's ages, her mother's role, and the threat of being banned from seeing her children."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization and punctuation, making it less readable and fluent."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

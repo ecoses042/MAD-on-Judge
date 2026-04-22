@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-d75b043ebefc3098aea84d92bb8bec0f509b1563",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, as it jumps between different points without clear connections."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the context of the attack, the number of militants killed, and the Iranian government's response, which are crucial for understanding the incident."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention that the militants crossed into Iran from Pakistan, which is a significant detail from the source."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains awkward phrasing, such as 'calling it an `` act of terrorism ''', which disrupts the flow."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, outlining the key event of the attack and the response from both Iranian and Pakistani authorities."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important information, including the number of casualties, the group responsible for the attack, and the reaction from the Pakistani government."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the context of the militants crossing from Pakistan or the specific details about Jaish al Adal's background, which are important for understanding the situation."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "While generally readable, the summary could benefit from smoother transitions and more idiomatic phrasing to enhance fluency."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

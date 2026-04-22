@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-4001b252a072ac149c70840b22299cc6cfab3bae",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is well-structured, grammatically correct, and fully consistent with the source text. It captures the main points regarding Nabil Dirar's opinion and Falcao's struggles. A minor deduction in relevance is given because the summary omits specific details present in the article (such as the £46m transfer fee, Louis van Gaal's stance, and the comparison to Monaco/Champions League), though these are not hallucinations."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from severe fluency issues due to the lack of capitalization and punctuation (e.g., 'radamel falcao', 'manchester united'), making it look like raw data rather than a coherent text. While the content is consistent with the source and covers key points, the poor formatting significantly impacts readability and professional quality. Additionally, it misses the specific quote about Monaco atmosphere which adds nuance to the 'regret' aspect."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary fails basic formatting standards (lowercase, lack of punctuation), which severely impacts fluency and professional quality. It also omits the specific nuance regarding Monaco's atmosphere provided in the source text, making it less relevant than a standard summary would be. No score increase is warranted."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "Adjusted fluency from 5 to 4 because the summary text is entirely lowercase and lacks proper capitalization for names (e.g., 'radamel falcao', 'manchester united') and sentence beginnings, which affects readability despite being grammatically correct in structure. Adjusted relevance from 4 to 3 because the lenient judge's point about omitting specific details like the £46m fee is valid; while not a hallucination, these are significant key points from the source article that make the summary feel incomplete compared to the full text provided."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No score adjustment is warranted. The lenient judge correctly identified that the summary fails basic formatting standards (lowercase text, lack of punctuation), which severely impacts fluency and professional quality. Additionally, the omission of specific nuances from the source text regarding Monaco's atmosphere further limits relevance. The strict judge's assessment aligns with these observations."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary suffers from a lack of capitalization (lowercase text) which impacts fluency/readability, warranting a score below 5. Furthermore, the omission of the specific £46m transfer fee and Louis van Gaal's stance on the permanent deal represents a significant loss of key information from the source text, justifying the relevance score of 3 rather than higher."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 4.5,
+      "fluency": 3.0,
+      "relevance": 3.0,
+      "overall_judge": 3.6
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-46609841ffd23e9c22d1507edf7b176ecc4d834f",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from relevance issues by omitting the specific match details (extra time, winning goal scorer) that constitute the bulk of the article's narrative. It also misses the context regarding Kluivert's background (mother from Curacao, 1998 semi-finalist), which is significant information in the source text. While consistent with the facts provided, it feels incomplete relative to the source length and detail."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and strictly consistent with the source text, avoiding hallucinations. It captures the main results (scores, progression) and relevant background (Kluivert's connection to Van Gaal). It receives a slightly lower relevance score because it omits the specific details about the match going to extra time, the winning goal scorer, and the upcoming opponent Cuba, which are key points in the article."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is grammatically correct and factually consistent but fails to capture the narrative weight of the article (the dramatic extra-time winner) and omits significant biographical context about Kluivert provided in the source. Therefore, I maintain the lower relevance score."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate: the summary is well-structured and factually consistent with the source text. The only deduction in relevance is justified because the summary omits specific details present in the article (extra time, goal scorer Charlton Vicento, upcoming opponent Cuba) which are considered key points."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary is grammatically correct and factually consistent with the source text (Consistency: 4). It flows well (Coherence: 5, Fluency: 5). However, it significantly under-represents the key narrative points of the article, specifically the dramatic extra-time winner by Charlton Vicento and Kluivert's specific background as a former semi-finalist in 1998. Therefore, the relevance score remains low (3) as the summary misses these important details."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I lowered the relevance score from 4 to 3. While the summary is factually consistent and fluent, it misses significant key information regarding the specific nature of the victory (extra time), the decisive goal scorer (Charlton Vicento), and the upcoming opponent (Cuba). These are central details in a sports news context, making the omission more severe than initially assessed."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.5,
+      "fluency": 5.0,
+      "relevance": 3.0,
+      "overall_judge": 4.3
+    }
+  }
+}

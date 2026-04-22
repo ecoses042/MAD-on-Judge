@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-9afda3cde191a883d8c166ceb5765eb53205d8f4",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary contains a severe hallucination in the first sentence: it claims Wenger does not know Sanchez will be lining up for Liverpool, whereas the source text explicitly states he is glad Sanchez will be lining up for Arsenal (not Liverpool). This contradicts the core fact of the article. Additionally, the second sentence incorrectly attributes Barcelona's decision to 'leave' without specifying who left or in what context, creating ambiguity inconsistent with the source."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary contains a severe hallucination in the first sentence: it claims Wenger does not know Sanchez will be lining up for Liverpool, whereas the source explicitly states he is glad Sanchez will be playing *for* Arsenal and *against* Liverpool. This contradicts the core fact of the article. Additionally, the second sentence omits the crucial condition that Barcelona decided to let him leave before he chose clubs, making it misleading. The summary fails consistency and relevance due to these factual errors and omissions."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The lenient judge's assessment is correct and the scores should remain low. The summary contains a severe hallucination in the first sentence ('lining up for liverpool') which directly contradicts the source text stating Wenger is glad Sanchez will be lining up for Arsenal. Additionally, the second sentence creates ambiguity by saying 'Barcelona had decided to leave' without specifying that Barcelona was letting Sanchez leave, whereas the source clarifies this context. These are critical factual errors that justify the low consistency and coherence scores."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a critical factual error (hallucination) in the first sentence, stating Wenger doesn't know Sanchez will play for Liverpool, when the text says he is glad Sanchez plays for Arsenal against Liverpool. This makes the summary factually inconsistent and irrelevant to the main point of the article. I maintain the low scores."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The strict judge's assessment is correct. The summary contains a critical hallucination in the first sentence ('lining up for liverpool') which directly contradicts the source text stating Wenger is glad Sanchez will be lining up for Arsenal. This is a severe factual error that invalidates the consistency score. Additionally, the ambiguity regarding Barcelona leaving without specifying 'letting him leave' further damages consistency. The low scores are justified and should not be increased."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The lenient judge's points were rejected because the summary contains a critical factual error (hallucination) in the first sentence: it claims Wenger doesn't know Sanchez will play for Liverpool, whereas the source text explicitly states he is glad Sanchez plays for Arsenal against Liverpool. This makes the summary factually inconsistent and irrelevant to the main point of the article. The low scores assigned by the strict judge are correct."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 1.0,
+      "fluency": 4.0,
+      "relevance": 2.5,
+      "overall_judge": 2.0
+    }
+  }
+}

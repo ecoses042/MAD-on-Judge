@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-dea0ed2e587495e516ac85056e21a2076a9a993c",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 3.8,
+        "rationale_for_score": "The summary is coherent and fluent but contains a grammatical error ('just a tip' instead of 'after receiving a tip') which affects consistency slightly. It misses the specific details about the car's modifications (red rims, detailing) which are central to the story, making it less relevant than a full summary, though it captures the main narrative arc."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary contains a grammatical error ('just a tip' instead of 'after receiving a tip'), which affects consistency and fluency. More critically, it fails the relevance criterion by omitting significant details from the source text, such as the specific modifications made to the car (red rims, detailing), the owner's humorous reaction, and the subsequent actions taken (professional cleaning, smoothie creation). The summary is too brief to be considered a good representation of the article."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.5,
+        "adjustment_notes": "Adjusted consistency from 3 to 3 (no change) but lowered relevance from 4 to 3. The lenient judge's point about missing specific modification details is valid; the summary omits the 'red rims,' 'detailing,' and 'orange accents' which are central to the story's unique hook ('pimped out'). Additionally, the summary fails to mention the positive resolution regarding the smoothie or the friend's quote, further reducing relevance. The grammatical error noted by the lenient judge ('just a tip') is indeed present in the source text provided by the user (likely a typo in the prompt's article_text), so consistency remains at 3."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a factual inconsistency ('just a tip' vs 'after receiving a tip') and significantly fails on relevance by omitting key details like the specific modifications (red rims, detailing), the owner's humorous reaction, and her subsequent actions (cleaning, smoothie). These omissions make the summary too brief to be a good representation of the source text."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No changes needed. The lenient judge correctly identified the factual inconsistency ('just a tip' vs 'after receiving a tip') and the severe lack of relevance due to omitting key details like specific modifications, the owner's reaction, and subsequent actions. The summary is indeed too brief to be a good representation."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.5,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary is grammatically correct (fluency 4) and logically structured (coherence 4). However, it suffers from significant relevance issues (relevance 3) by omitting the specific 'pimped' details (red rims, detailing, orange accents) which are the core of the story's hook. It also misses the resolution involving the smoothie tribute. Consistency remains at 3 because the summary contains a typo ('just a tip') that is present in the source text provided by the user, meaning it faithfully reproduces an error rather than introducing new false facts, but this does not make the summary high quality."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 3.0,
+      "fluency": 4.5,
+      "relevance": 2.5,
+      "overall_judge": 3.2
+    }
+  }
+}

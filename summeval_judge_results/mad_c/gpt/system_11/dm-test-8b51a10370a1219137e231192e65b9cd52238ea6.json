@@ -1,0 +1,63 @@
+{
+  "article_id": "dm-test-8b51a10370a1219137e231192e65b9cd52238ea6",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information and does not provide a cohesive overview of the article."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on a trivial detail about Stokes and the locker, neglecting key points about his character, performance, and the team's dynamics."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as inconsistent capitalization and punctuation, which hinder readability."
+        }
+      ],
+      "provisional_score": 1
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary begins with a clear reference to the team environment and the specific incident involving Ben Stokes, establishing a logical flow."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary does not capture the key points about Stokes' character, his need for careful management, or the implications of his aggression on his performance."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as the lack of proper punctuation and capitalization, making it less readable."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits significant context and details from the article, which may lead to misunderstandings about Stokes' situation and character."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 1,
+      "fluency": 2,
+      "relevance": 1,
+      "overall_judge": 1.5,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

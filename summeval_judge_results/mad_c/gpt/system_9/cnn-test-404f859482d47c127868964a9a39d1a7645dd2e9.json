@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-404f859482d47c127868964a9a39d1a7645dd2e9",
+  "system_name": "system_9",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow and does not connect the points effectively, making it difficult to understand the overall context."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits significant details, such as the court's decision being a victory for the Sterling family and the implications of the ruling, which are crucial to understanding the case."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the lawsuit filed by Shelly Sterling, which is a key aspect of the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary uses a lowercase 'a' at the beginning, which is grammatically incorrect and affects readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, starting with the court's decision and then outlining the accusations made by Shelly Sterling."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, including the amount Stiviano is ordered to pay and the specific gifts mentioned."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the article, such as the court ruling and the nature of the gifts, while avoiding trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks some grammatical structure, such as missing conjunctions and transitions, which could improve readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

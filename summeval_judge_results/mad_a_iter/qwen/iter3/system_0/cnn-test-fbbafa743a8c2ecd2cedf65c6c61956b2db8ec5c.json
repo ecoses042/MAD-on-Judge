@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-fbbafa743a8c2ecd2cedf65c6c61956b2db8ec5c",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary suffers from severe relevance issues as it omits the vast majority of key information (LeVar Burton's involvement, the specific networks involved beyond A&E, the historical context, and the purpose of the remake). It also contains a hallucination/error in consistency by describing 'Roots' as an 'epic episode' instead of a miniseries. The phrasing 'series of 'original'' is grammatically awkward and confusing."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from severe fluency issues due to poor grammar and awkward phrasing (e.g., 'the series of `` original '' and `` contemporary '' will be the new version' is confusing and unidiomatic). While it captures the main facts consistently with the text, the lack of clarity significantly impacts readability. It is leniently scored above 1 because it avoids hallucinations and covers key points, but the quality is poor."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary fails to capture the most important news (LeVar Burton's return, the specific networks beyond A&E, the historical context of the remake). It also contains a factual error calling 'Roots' an 'epic episode' instead of a miniseries, and uses awkward phrasing ('series of original'). No score reduction is necessary."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No adjustment needed. The lenient judge's assessment of fluency (2) is accurate due to the severe grammatical errors and awkward phrasing in the summary (e.g., 'the series of `` original '' and `` contemporary '''). The coherence and relevance scores are also appropriate given the fragmented structure and lack of specific details compared to the source text. Consistency is high as no hallucinations were introduced."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "No score reduction is necessary. The summary contains a factual error ('epic episode' vs 'miniseries'), awkward phrasing ('series of original'), and misses critical details like LeVar Burton's involvement and the specific historical context mentioned in the article. The lenient judge correctly identified these issues."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No adjustment needed. The strict judge's assessment is accurate. The summary suffers from severe grammatical errors and awkward phrasing (e.g., 'the series of `` original '' and `` contemporary '''), justifying a low fluency score. The structure is fragmented, impacting coherence and relevance. Consistency is maintained as no hallucinations are present."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 3.5,
+      "fluency": 3.0,
+      "relevance": 2.0,
+      "overall_judge": 2.5
+    }
+  }
+}

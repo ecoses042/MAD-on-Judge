@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-9b1af0f993d78353ebd56a1b180e882e751527b3",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is well-structured, fluent, and consistent with the source text. It captures the main points regarding the billboard, the victim (Aaron Siler), the officer (Pablo Torres), and the current status of the investigation. It receives a slightly lower relevance score because it omits significant context provided in the article, such as the family's specific reaction ('disrespectful'), the police association's defense, and the recent history involving Terry Knight, which adds depth to the situation."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 3,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from severe fluency issues due to the lack of capitalization and punctuation (e.g., 'kenosham , wisconsin', 'aaron siler'), making it difficult to read. While the content is consistent with the source text regarding the main facts, it fails to capture the core conflict and emotional weight of the article: the family's reaction ('shock', 'disrespectful') and the specific reason for the billboard (the police association thanking the community). By omitting these key elements, the summary provides a generic description that misses the point of the news story, resulting in low relevance scores despite accurate factual grounding."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate. The summary is well-structured and consistent with the source text. While it omits significant details like the family's specific reaction ('disrespectful'), the police association's defense, and the context of the Terry Knight shooting (which adds depth), these omissions are justified for a concise summary focusing on the primary event (the billboard) and immediate facts. The relevance score of 4 is appropriate."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I maintained the low fluency score (2) because the lack of capitalization and punctuation makes the text objectively difficult to read, which is a hard constraint. I lowered the coherence score from 5 to 4 because the summary presents only the background facts without connecting them to the central conflict (the billboard controversy), resulting in a disjointed narrative flow compared to the full story. I adjusted relevance down from 4 to 3; while the strict judge was harsh on relevance, the summary does capture the primary event (billboard erection) and the immediate context (shooting details). However, it misses the 'why' (the association's statement) and the emotional core (family reaction), which are significant parts of the article. I kept consistency at 5 as there are no hallucinations."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "Adjusted relevance score down from 4 to 3. While the summary covers the primary event (the billboard) and immediate facts about Aaron Siler's death, it completely omits the core conflict of the story: the family's specific reaction ('disrespectful'), the police association's defense, and the context regarding the Terry Knight shooting which adds significant depth to the investigation narrative. The strict judge was correct that these are major omissions for a summary intended to capture the full story, not just the headline."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment of fluency (2) due to the lack of capitalization and punctuation, which objectively hinders readability. I also agree that relevance is limited (3) because the summary omits the central conflict regarding the billboard controversy, the family's reaction, and the police association's defense, focusing only on background facts. Coherence is lowered to 3 because the summary presents a list of disconnected facts without linking them to the main story arc (the controversy). Consistency remains 5 as no hallucinations are present."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 5.0,
+      "fluency": 3.5,
+      "relevance": 3.0,
+      "overall_judge": 3.8
+    }
+  }
+}

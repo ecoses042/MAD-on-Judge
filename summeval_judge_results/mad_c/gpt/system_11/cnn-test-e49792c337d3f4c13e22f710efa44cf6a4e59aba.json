@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-e49792c337d3f4c13e22f710efa44cf6a4e59aba",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information and abruptly ends without concluding the main points of the article."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention the emotional plea made by the parents and their specific arguments against the death penalty, which are central to the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not accurately reflect the parents' position, as it does not include their support for life imprisonment without parole."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The use of parentheses and abbreviations (e.g., -lrb- cnn -rrb-) disrupts the fluency and readability of the summary."
+        }
+      ],
+      "provisional_score": 1
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the parents' plea and the context of the case."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the main points from the article, including the conviction of Dzhokhar Tsarnaev and the emotional plea from the parents."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key aspects of the parents' plea and the conviction, avoiding trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, such as the use of '-lrb- cnn -rrb-' which disrupts the flow."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-2feca9acf532e33f1ab7442c442c8e19787d8d7b",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information and does not provide a complete picture of the interaction between the man and the fish."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits significant details about the man's relationship with the fish, including the background of the fish's previous tank mates and the man's daily interactions."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'within side' which should be 'inside'."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the fish's name, 'blood parrot cichlid', which is a key detail from the article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information by describing the interaction between Roland Giroux and the fish in a sequential manner."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is written in fluent English, with no grammatical errors, making it easy to read."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details about the fish's behavior and the context of their relationship, such as the fish's initial reluctance and the daily interaction routine."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "While the summary captures part of the interaction, it does not fully represent the depth of the relationship described in the article, such as the fish's previous bullying by other fish and its sociability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-81bd721b16cad47dfd8d24baca5b30b006291db2",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 1,
+        "overall_judge": 1.2,
+        "rationale_for_score": "The summary contains severe hallucinations and grammatical failures that violate the strict rules. Specifically, the sentence 'the ban was thrown out in george north 's head on appeal' is a complete fabrication of facts; the ban was overturned because the incident was accidental, not because it happened to North's head. The phrase 'sent off the line' is nonsensical. These are not minor errors but fundamental failures in consistency and coherence."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 2.5,
+        "rationale_for_score": "The summary contains severe grammatical errors and nonsensical phrasing that violate fluency (e.g., 'sent off the line', 'thrown out in george north 's head'). It also fails consistency by attributing the ban's overturning to George North ('thrown out in george north 's head') rather than the appeal process, which is a hallucination of agency. While it covers the main events (relevance) and has a basic structure (coherence), the language quality and factual accuracy issues are major flaws."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 1,
+        "overall_judge": 1.2,
+        "adjustment_notes": "The strict judge's assessment is entirely correct. The summary contains severe hallucinations (e.g., 'ban was thrown out in george north 's head') and nonsensical phrasing ('sent off the line'). These are not minor errors but fundamental failures that make the text incoherent, inconsistent with the source, and grammatically poor. No leniency is warranted."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 1,
+        "relevance": 3,
+        "overall_judge": 1.8,
+        "adjustment_notes": "The lenient judge's assessment was correct; the summary is severely flawed. The phrase 'thrown out in george north 's head' is a catastrophic hallucination that misattributes the cause of the ban reversal to the injured player rather than the appeal panel, violating consistency and fluency. Additionally, 'sent off the line' is nonsensical grammar. These are not minor errors but fundamental failures in language and factual accuracy."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 1,
+        "relevance": 3,
+        "overall_judge": 1.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a catastrophic hallucination ('thrown out in george north 's head') which fundamentally breaks consistency and fluency by attributing the ban reversal to the wrong entity. Additionally, 'sent off the line' is grammatically incorrect. These are not minor issues but fatal flaws that prevent the summary from being usable."
+      },
+      "strict": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 1,
+        "relevance": 1,
+        "overall_judge": 1.0,
+        "adjustment_notes": "The lenient judge's assessment was correct to maintain low scores. The summary contains severe hallucinations and grammatical errors that fundamentally break the text. Specifically: 1) 'sent off the line' is a nonsensical phrase (likely a hallucination of 'crossed the line'); 2) 'ban was thrown out in george north 's head' is a complete fabrication mixing two separate facts; 3) The sentence structure is broken and lacks basic subject-verb agreement or logical flow. These are not minor issues but critical failures in coherence, consistency, fluency, and relevance."
+      }
+    },
+    "final": {
+      "coherence": 1.5,
+      "consistency": 1.0,
+      "fluency": 1.0,
+      "relevance": 2.0,
+      "overall_judge": 1.4
+    }
+  }
+}

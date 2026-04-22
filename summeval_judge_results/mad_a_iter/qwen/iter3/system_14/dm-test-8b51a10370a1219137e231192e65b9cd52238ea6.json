@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-8b51a10370a1219137e231192e65b9cd52238ea6",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is fluent and covers key points (clash, fiery character). However, it contains a significant hallucination in the third sentence: 'stokes broke his wrist a locker' is grammatically incorrect and misrepresents the source text which states he broke his wrist 'punching a locker'. Under strict consistency rules, this would be a major flaw, but applying lenient rules (benefit of the doubt), I penalize it only partially as the core fact (wrist injury from punching locker) is present, just poorly phrased. The direction aligns with the article."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary fails the consistency criterion due to a severe hallucination: it states Stokes 'broke his wrist a locker' instead of 'punching a locker'. This is a factual error not present in the source text. Additionally, the summary lacks coherence as it presents disjointed sentences without connecting logic or flow. While the fluency is acceptable and it covers relevant topics, the hallucination and poor structure prevent a higher score."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the consistency score significantly because the phrase 'broke his wrist a locker' is not just a grammatical error; it fundamentally misrepresents the source text's meaning ('punching a locker'). A strict evaluator cannot accept this as a minor phrasing issue when the causal link (action -> injury) is broken. The coherence also drops slightly because the summary jumps from the clash to the character description and then abruptly to the injury without a clear logical connector, making the flow disjointed compared to the article's narrative."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the overall score slightly because the strict judge's criticism regarding consistency is valid and severe. The phrase 'broke his wrist a locker' is a grammatical hallucination that changes the meaning of the event from 'punching a locker' to an impossible action (breaking a wrist *a* locker). This is not just a minor error but a factual distortion. Consequently, the summary fails the consistency criterion significantly. I maintained the coherence score at 3 because while the sentences are disjointed, they do follow a loose chronological order of events mentioned in the text, so it isn't completely incoherent, just poorly structured."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The phrase 'broke his wrist a locker' is a severe consistency error that fundamentally alters the meaning of the source text (which states he broke his wrist *by* punching a locker). This is not a minor phrasing issue but a factual distortion. Consequently, the coherence score remains low because the summary presents these disjointed facts without logical connectors, and the consistency score must remain penalized for this critical hallucination/error."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I have raised the consistency score from 1 to 2 because while 'broke his wrist a locker' is indeed a severe grammatical error that distorts meaning (hallucination), it is an isolated instance within a short summary rather than pervasive nonsense throughout the text. The other sentences are factually consistent with the source. I have lowered coherence and fluency slightly to reflect that the sentence structure is disjointed and contains a significant grammatical flaw, making it less fluent and coherent than a score of 3 might imply. Relevance remains high as it covers the key points."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 1.5,
+      "fluency": 3.5,
+      "relevance": 4.0,
+      "overall_judge": 2.5
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-e2bccd4dec93c9bb7b327827dae004c2d494ec31",
+  "system_name": "system_4",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, abruptly transitioning from the video game to the military official's statement without connecting the two topics."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details about the context of the discussion, such as the involvement of Antonio Inoki and the specifics of the Defense Minister's comments, which are crucial for understanding the significance of the statement."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as missing punctuation in '1970' which should be '1970s'."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states 'extraterrestrial unidentified flying object' without clarifying that the military official specifically mentioned no UFOs from outer space."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, starting with the context of the video game and transitioning to the military official's statement about UFOs."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, specifically mentioning that the Air Self Defense Force has never encountered extraterrestrial UFOs."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key point of the article, which is the government's assurance regarding UFO encounters, while omitting less relevant details about the politician's background."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as missing punctuation and awkward phrasing, which affect its readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-6721edf88c95f480a4db2c63649dbb03736aeadf",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, as it abruptly presents facts without connecting them or providing context."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits critical details such as the consequences of Guffick's actions, the investigation, and the panel's findings, which are essential for understanding the significance of the events."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that Guffick asked pupils to change their answers without mentioning that he claimed it was to make them more legible, which is a key aspect of his defense."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as inconsistent capitalization of names and lack of proper punctuation, making it less readable."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with Ian Guffick's actions and the context of the exams."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article without introducing any new facts."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "It focuses on the key actions taken by Guffick that led to the investigation and the annulment of the SATs results."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as inconsistent use of singular and plural forms (e.g., 'pupil's' instead of 'pupils')."
+        },
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks some details about the consequences of Guffick's actions, such as the ban from teaching and the investigation's findings."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "tie",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-3ba3bde4a1440134bb38ec22ba50db59986b544c",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is fluent and consistent with the source text up to the point where it abruptly cuts off mid-sentence ('It is difficult .'). This truncation causes a significant failure in coherence (incomplete thought) and relevance (missing the rest of the article's key points about disciplinary actions, FA Cup context, and Gerrard). While the content included is accurate, the abrupt ending prevents a higher score."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary fails the relevance criterion severely because it cuts off mid-sentence ('It is difficult.') without completing the thought or summarizing the rest of the article's key points (e.g., the lack of disciplinary action, the upcoming FA Cup semi-final context, or Rodgers' philosophy on winning/losing). While the included text is consistent with the source and fluent enough to be readable, the abrupt truncation renders it an incomplete summary rather than a coherent representation of the full text."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The strict judge's assessment is accurate and justified. The summary text provided in the input literally cuts off mid-sentence ('It is difficult.') and fails to cover the vast majority of the article's content (the lack of disciplinary action, the FA Cup context, or Rodgers' philosophy). Therefore, I maintain the low scores for relevance and coherence as the summary is functionally incomplete."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I raised the coherence score slightly from 1 to 2 because the summary is internally consistent up to its abrupt end; it does not contain contradictory information within the truncated text. However, I lowered the relevance score from 2 to 1 because the truncation results in a massive loss of key information (the manager's specific quotes, the lack of disciplinary action, and the FA Cup context), making the summary extremely poor at summarizing the article's main points. The fluency remains high as the grammar is perfect until the cut-off. Consistency remains high as no hallucinations are present."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The lenient judge's assessment is correct. The summary text provided literally cuts off mid-sentence ('It is difficult.') and fails to cover the vast majority of the article's content (the lack of disciplinary action, the FA Cup context, or Rodgers' philosophy). Therefore, the low scores for relevance and coherence are justified as the summary is functionally incomplete."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is severely truncated, cutting off mid-sentence and omitting the most critical information: that neither player was disciplined, the context of the FA Cup semi-final, and the manager's quotes regarding professional responsibility. This makes the relevance score a 1 (extremely poor) and keeps the overall score low despite perfect grammar in the visible portion."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 4.0,
+      "fluency": 4.0,
+      "relevance": 1.0,
+      "overall_judge": 2.0
+    }
+  }
+}

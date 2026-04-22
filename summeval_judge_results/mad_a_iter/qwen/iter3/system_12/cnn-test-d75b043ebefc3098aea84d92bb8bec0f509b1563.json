@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-d75b043ebefc3098aea84d92bb8bec0f509b1563",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from low relevance due to severe truncation. It omits critical details present in the source text, such as the number of militants killed (3), the specific location (Negur), the identity of the Iranian official cited, the group's ideology/targets, and the historical context of previous attacks. While it avoids hallucinations, its failure to cover key points makes it an incomplete summary."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and consistent with the source text. It captures the main event (casualties), the perpetrator (Jaish al Adal), and the reaction (Pakistan's condemnation). It receives a slight deduction on relevance because it omits specific details present in the article such as the number of militants killed, the group's background, and their past attacks, though these are not strictly required for a high-level summary."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "The strict judge's assessment of low relevance (3) is accurate and justified. The summary suffers from severe truncation, omitting critical details like the number of militants killed, the specific location, the group's ideology, and historical context. While the summary is fluent and coherent, its incompleteness regarding key information prevents it from being a high-quality summary. I maintained the relevance score at 3 as the strict judge was not overly harsh but rather correctly identified the flaw."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is well-structured and factually accurate based on the source text. The deduction for relevance is justified as the summary omits significant context provided in the article, such as the number of militants killed (3), the group's specific ideology/targets (anti-Iranian, targeting Shiites), and their history of attacks (e.g., October 2013). While these are not strictly required for a basic event summary, they represent key points that add depth to the story."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary is factually accurate and well-structured. The deduction for relevance is justified because the summary omits significant context from the source text, specifically the number of militants killed (3), the group's ideology/targets (anti-Iranian, targeting Shiites), and their history of attacks (e.g., October 2013). While these are not strictly required for a basic event summary, they represent key points that add depth to the story."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I raised the overall score from 4.5 to 4.0. While I agree with the lenient judge that the relevance score of 3 is justified due to severe truncation (omitting militant deaths, specific location, ideology, and historical context), the summary is not entirely flawless. It successfully captures the primary event, the responsible party, and the diplomatic response. The strict judge's assessment was accurate in identifying the incompleteness, but the lenient judge correctly noted that the core narrative arc is present. Therefore, a perfect 4.5 is slightly generous given the significant loss of detail, warranting a slight reduction to 4.0."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.7
+    }
+  }
+}

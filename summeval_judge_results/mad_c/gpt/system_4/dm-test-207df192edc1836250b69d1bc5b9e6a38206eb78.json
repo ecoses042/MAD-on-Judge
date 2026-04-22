@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-207df192edc1836250b69d1bc5b9e6a38206eb78",
+  "system_name": "system_4",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information and jumps between ideas without proper transitions."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the idea of antibiotics fattening children without adequately explaining the study's findings or context, which may misrepresent the source."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'the may also be fattening' which should be 'they may also be fattening'."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key points, such as the specific findings regarding boys and girls, and the implications of the study on the obesity epidemic."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical connection between the use of antibiotics in babies and the potential impact on their weight as toddlers."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary highlights the key finding of the study regarding the correlation between antibiotic use and obesity in children, which is the main focus of the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits important details, such as the specific statistics about overweight boys and girls and the implications of repeated antibiotic prescriptions."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as missing articles and punctuation, which affect its readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

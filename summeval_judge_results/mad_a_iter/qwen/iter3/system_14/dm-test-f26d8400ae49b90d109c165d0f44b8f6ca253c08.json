@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-f26d8400ae49b90d109c165d0f44b8f6ca253c08",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is fluent and covers the main points (offer, loan move, sponsorship denial). However, it contains a significant consistency error: it attributes the claim that the interest is unrelated to the sponsorship deal to Muto ('Muto claims...'), whereas the source text explicitly states this was claimed by FC Tokyo president Naoki Ogane. This misattribution of a specific fact lowers the consistency score."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is fluent and covers the main points (offer, loan move, sponsorship context). However, it contains a significant consistency error: the article states that *Chelsea's president* Ogane claims the interest is not connected to the sponsorship deal, whereas the summary incorrectly attributes this claim to *Muto*. Additionally, the summary omits Muto's own admission that he hasn't decided yet, which is a key point from the source. Due to the attribution error and missing key nuance, it cannot be rated as excellent or good."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the strict judge's assessment regarding consistency. The summary incorrectly attributes the statement about the sponsorship deal to Muto ('Muto claims...'), whereas the source text clearly states it was FC Tokyo president Naoki Ogane who made that claim. This is a factual error in attribution that lowers the consistency score, so I maintain the strict judge's scores."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "The lenient judge's assessment is correct and should be maintained. The summary contains a significant consistency error by attributing the statement about the sponsorship deal to Muto ('Muto claims...'), whereas the source text explicitly states that FC Tokyo president Naoki Ogane made this claim. Additionally, the summary omits the crucial detail that Muto has not yet decided whether to join Chelsea, which is a key point in the article. Therefore, the scores remain unchanged."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding consistency. The summary incorrectly attributes the statement about the sponsorship deal to Muto ('Muto claims...'), whereas the source text clearly states it was FC Tokyo president Naoki Ogane who made that claim. This is a factual error in attribution that lowers the consistency score, so I maintain the strict judge's scores."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "The strict judge correctly identified a factual inconsistency where the summary attributes the statement about the sponsorship deal to Muto ('Muto claims...') instead of FC Tokyo president Naoki Ogane as stated in the source text. The strict judge also rightly noted the omission of Muto's undecided status, which is a key narrative point. As these are genuine flaws, the lenient evaluator agrees that the scores should not be inflated and maintains the strict judge's assessment."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 3.0,
+      "fluency": 5.0,
+      "relevance": 4.0,
+      "overall_judge": 4.0
+    }
+  }
+}

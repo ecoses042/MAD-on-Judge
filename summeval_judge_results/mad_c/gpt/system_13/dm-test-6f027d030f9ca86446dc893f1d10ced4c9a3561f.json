@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-6f027d030f9ca86446dc893f1d10ced4c9a3561f",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information. It jumps from Henderson's contract situation to his advisors' talks without connecting these points effectively."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key information such as the details of the new contract, the significance of Henderson's performance, and his potential role as club captain, which are crucial to understanding the context."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains inconsistent capitalization of 'jordan henderson' and 'liverpool', which affects its readability."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the financial terms of the new contract, which is a significant detail in the original article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding Jordan Henderson's contract situation."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article about Henderson's contract and the ongoing talks with Liverpool."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key point of Henderson's new contract and the context of his role within the team."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as inconsistent capitalization of 'jordan' and missing punctuation."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits important details, such as the specifics of the contract terms and Henderson's contributions to the team."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

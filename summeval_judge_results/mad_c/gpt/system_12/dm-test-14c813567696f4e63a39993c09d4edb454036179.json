@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-14c813567696f4e63a39993c09d4edb454036179",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information and abruptly shifts from discussing the couple's video to the original sitcom's theme without a proper transition."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to include key points about the couple's announcement, the content of their rap, and the context of the video, focusing instead on irrelevant details about the original sitcom."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not accurately represent the source document, as it omits significant details about the couple's pregnancy announcement and the purpose of the video."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains awkward phrasing, such as 'The clip , which features...' which disrupts the flow and readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow by introducing the couple and their video, followed by mentioning its popularity."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the content of the article by mentioning the couple's names and the context of the video."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is written in fluent and idiomatic English, making it easy to read."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary lacks coverage of key points such as the couple's announcement of their pregnancy and the details of the rap video."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

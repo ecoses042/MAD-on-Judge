@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-a02e362c5b8f049848ce718b37b96117485461cf",
+  "system_name": "system_2",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information and does not connect the events in a cohesive manner."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details about the cause of the wildfires, their impact, and the scientific explanation for the sunset colors, focusing instead on a single person's observation."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as inconsistent capitalization and punctuation."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the phrase 'fiery sunset greeted people in washington' without context, which could mislead readers about the location of the sunset."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow by starting with Tim Durkan's observation and linking it to the cause of the sunsets, which is the wildfires in Siberia."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding the source of the sunsets being the wildfires in Siberia."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points, such as the observation of the sunset and its connection to the wildfires, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and lacks proper sentence structure, making it less fluent and harder to read."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

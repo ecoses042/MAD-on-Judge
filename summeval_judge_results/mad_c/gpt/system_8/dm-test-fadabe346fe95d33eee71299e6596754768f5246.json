@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-fadabe346fe95d33eee71299e6596754768f5246",
+  "system_name": "system_8",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information and abruptly shifts from discussing Gemma's situation to Debbie's statements without proper context."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces a quote from Debbie that is not present in the article, which misrepresents the source material."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to cover key points such as Gemma's history of behavior, her mother's concerns about her fitness as a parent, and the implications of Gemma's actions on her relationship with her children."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains a disjointed structure that affects readability, making it difficult to follow the narrative."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding Gemma's situation and her mother's concerns."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the main issues presented in the article, such as Gemma's drinking and partying habits and her mother's stance on her parenting."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the article, particularly the conflict between Gemma and her mother regarding the care of the children."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains a quote that is somewhat disjointed and lacks context, making it less fluent and harder to read."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

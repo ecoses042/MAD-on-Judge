@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-e7d8b6617691ea00d4ddc5fe2b7cbd105ba9a57e",
+  "system_name": "system_7",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow of information, presenting disjointed facts without connecting them effectively."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits critical details such as Munden's history of offenses, the circumstances of his conviction, and the ongoing manhunt, which are essential for understanding the severity of the situation."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary uses inconsistent capitalization (e.g., 'stephen munden' instead of 'Stephen Munden'), which affects readability."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention Munden's learning difficulties, which is a significant aspect of his profile as described in the article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, outlining the key details about Stephen Munden's situation."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important information, including Munden's conviction, his obsession, and his last known whereabouts."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary contains information that is consistent with the source document, accurately reflecting Munden's criminal background and current status."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization and punctuation, which affects its readability and fluency."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

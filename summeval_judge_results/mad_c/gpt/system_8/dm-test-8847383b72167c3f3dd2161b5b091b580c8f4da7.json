@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-8847383b72167c3f3dd2161b5b091b580c8f4da7",
+  "system_name": "system_8",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, abruptly ending without completing the thought about the surprise to locals."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces a quote from Tanaka that suggests a comparison to the 2011 Tohoku earthquake, which is not mentioned in the article and could mislead readers."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary does not adequately cover key details such as the dimensions of the new landmass or the geological explanation provided by experts."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'it's a bit like the tsunami from the 2011 Tohoku earthquake' is informal and may not fit well in a summary context."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear narrative about the landslide and its impact on the local residents, maintaining a logical flow of information."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key event of the landslide and its effects on the coastline and local residents, avoiding trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces a quote from Tanaka that is not present in the article, which could mislead readers about the context of the situation."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains some awkward phrasing, such as 'it's happening,' which could be improved for better readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-fadabe346fe95d33eee71299e6596754768f5246",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, jumping abruptly between points without proper transitions."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states Gemma's age as 13, which is inconsistent with the article where she is 23 years old."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details about Gemma's past behavior and her mother's feelings, which are crucial for understanding the context of the situation."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as the incorrect use of commas and lack of capitalization at the beginning of sentences."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding Gemma's situation and her mother's concerns."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the main points from the article, including Gemma's history and her mother's intentions."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key issues of Gemma's behavior and her mother's response, avoiding trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, such as 'gemma , 13 ,' which is incorrect as Gemma is 23 years old."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 1,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.0,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

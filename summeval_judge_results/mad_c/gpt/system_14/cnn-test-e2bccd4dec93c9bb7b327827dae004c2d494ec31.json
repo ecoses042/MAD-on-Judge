@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-e2bccd4dec93c9bb7b327827dae004c2d494ec31",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, jumping abruptly from the video game to the defense minister's statement without connecting the two topics."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details about the context of the discussion regarding UFOs, such as Inoki's role in the inquiry and the significance of the defense minister's response."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that the Air Self Defense Force never had an extraterrestrial unidentified flying object, whereas the minister said they had never encountered one."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary uses inconsistent capitalization and punctuation, such as 'u.s.-based wwe' instead of 'U.S.-based WWE', which affects readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow by starting with the mention of the video game and then transitioning to the main topic of the discussion about UFOs."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding the statements made by Defense Minister Gen Nakatani about the Air Self Defense Force and UFOs."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits significant details about the context of the discussion, such as the involvement of Antonio Inoki and the nature of his questions, which are key to understanding the political discussion."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as the lack of proper capitalization and punctuation, which affects its readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

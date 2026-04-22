@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-096e418a953af86df0d1560bec95bc7bfee2e34b",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source text and flows logically. However, it suffers from a significant relevance flaw by omitting the specific names of the five goal scorers (Thiago Alcantara, Jerome Boateng, Thomas Muller, Xabi Alonso, Robert Lewandowski), which are explicitly detailed in the article as key reasons for the victory. Additionally, while fluent, the capitalization is inconsistent ('bayern munich', 'pep guardiola'), slightly affecting fluency."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is fluent and consistent with the source text. However, it contains a minor hallucination/error: the article states Bayern led 5-0 at half-time but won 6-1 overall (implying Porto scored in the second half), whereas the summary implies Guardiola 'led' his side 5-0 at half-time which is factually correct per the text, but the phrasing 'Guardiola led their side' slightly conflates the manager with the team's scoreline. More importantly, it misses key details like the specific scorers and the context of Porto coming in with a lead, making it less comprehensive than a 4 or 5 would warrant, though still grounded in the text."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the fluency score from 4 to 3 because the strict judge correctly identified inconsistent capitalization ('bayern munich', 'pep guardiola') which violates standard English conventions. I significantly lowered the relevance score from 3 to 2 because the omission of the five specific goal scorers is a major flaw; in sports reporting, knowing who scored the goals is often more important than the final scoreline or incidental details like torn trousers. The summary focuses too heavily on the minor anecdote while missing the primary news value (the goals)."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "The lenient judge's assessment is accurate. The summary correctly identifies the main event (score) and the humorous incident (ripped trousers). However, it significantly underperforms on relevance by omitting crucial context provided in the article: Porto entered with a lead, the specific scorers for Bayern, and the fact that this victory secured their spot in the semi-finals. The summary is too brief to be considered comprehensive despite being factually consistent."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I accepted the lenient judge's points regarding fluency (lowering from 4 to 3) due to the inconsistent capitalization of proper nouns ('bayern munich', 'pep guardiola') which violates standard English conventions. I also accepted the point on relevance (lowering from 3 to 2) because the summary omits the specific goal scorers, which are a critical piece of information in sports reporting, while focusing disproportionately on the minor anecdote about Guardiola's torn trousers."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment regarding relevance. While the summary is factually consistent and fluent, it fails to capture the most critical outcome mentioned in the text: that the victory secured Bayern's place in the semi-finals. Additionally, omitting the context of Porto entering with a lead makes the narrative feel incomplete. Therefore, I maintain the lower relevance score."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 5.0,
+      "fluency": 4.0,
+      "relevance": 2.5,
+      "overall_judge": 3.6
+    }
+  }
+}

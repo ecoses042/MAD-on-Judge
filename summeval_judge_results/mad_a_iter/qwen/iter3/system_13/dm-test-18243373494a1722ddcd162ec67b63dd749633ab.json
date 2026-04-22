@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-18243373494a1722ddcd162ec67b63dd749633ab",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 1.8,
+        "rationale_for_score": "The summary contains a severe hallucination regarding the final score (claims 4-2, while the article states Roma won by protecting 'three points' and mentions only one goal for Roma). It also repeats the same sentence about Pjanic scoring twice with slightly different wording. Furthermore, it fails to cover other key details like Napoli's winless streak extension or the security context mentioned in the text."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary contains a severe hallucination regarding the scoreline (claiming 4-2 when the article states Roma won to end a winless streak and mentions Napoli's streak extended to five matches, implying a loss for Napoli). The source text explicitly describes a victory for Roma but never mentions a 4-2 score; in fact, it notes Pjanic scored in the 25th minute and Iturbe had a chance to make it 2-0 late on, suggesting the final score was likely 1-0 or similar. This major factual error violates the consistency criterion severely."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 1.8,
+        "adjustment_notes": "The strict judge's assessment is correct and well-founded. The summary contains a severe hallucination regarding the score (claiming 4-2 when the text implies a narrow win with 'three points' secured), repeats the same scoring event twice with minor wording changes, and completely misses major context like Napoli's extended winless streak and the security situation. No leniency is warranted for these fundamental factual errors and omissions."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "adjustment_notes": "No adjustment needed. The lenient judge's assessment of 'consistency: 1' is correct and must be upheld because the summary explicitly states a '4-2' scoreline, whereas the source text describes a Roma victory ending a winless streak with no mention of such a high score (in fact, it mentions Napoli's winless streak extended to five matches). This is a severe hallucination. The other scores reflect the repetitive nature and lack of coverage of key details like the goalkeeper's performance or security measures mentioned in the text."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 1.8,
+        "adjustment_notes": "The lenient judge's assessment is correct and well-founded. The summary contains a severe hallucination regarding the score (claiming 4-2 when the text explicitly states Roma secured 'three points' and mentions a narrow win context), repeats the same scoring event twice with minor wording changes, and completely misses major context like Napoli's extended winless streak and the security situation. No leniency is warranted for these fundamental factual errors and omissions."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "adjustment_notes": "No adjustment needed. The strict judge correctly identified a severe hallucination regarding the scoreline (4-2 vs actual 1-0 implied by 'put Roma ahead' and 'protect the three points'). This factual error is critical enough to warrant a consistency score of 1. The other scores remain appropriate given the summary's repetitive nature and lack of coverage for key details like the goalkeeper's performance or security measures."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 1.0,
+      "fluency": 4.0,
+      "relevance": 2.0,
+      "overall_judge": 1.9
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-cf4ba8f94f2dd5604eb8f8a4e655c10cf0996365",
+  "system_name": "system_6",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, as it abruptly ends without mentioning the context of the robbery or the reactions of the victims."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the specific location of the robbery, the time it occurred, and the victim's emotional response, which are important for understanding the incident."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains unnecessary spaces before and after punctuation, which disrupts the reading experience."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention that police reported no signs of weapons, which is a relevant detail from the source."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, detailing the robbery incident in a structured manner."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the details from the article, including the description of the robber and the amount stolen."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the robbery, such as the distinctive mask, the amount stolen, and the police appeal for information."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains awkward phrasing and punctuation issues, such as unnecessary spaces before punctuation marks."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

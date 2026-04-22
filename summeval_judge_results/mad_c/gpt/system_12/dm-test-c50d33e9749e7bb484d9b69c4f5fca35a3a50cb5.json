@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-c50d33e9749e7bb484d9b69c4f5fca35a3a50cb5",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, as it abruptly jumps from the discovery of Jacob Phillips' body to his night out without adequately connecting these events."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits critical details about the circumstances leading to his death, such as the reason for running from the taxi and the subsequent fall, which are essential for understanding the incident."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention that Jacob Phillips was trying to avoid paying the taxi fare, which is a significant detail from the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The use of quotation marks around 'use an ATM' is inconsistent with standard writing conventions and disrupts the fluency of the text."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with Jacob Phillips' death and providing context about his night out and the taxi situation."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the key details from the article, such as the involvement of friends and the circumstances leading to Phillips' fall."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most critical aspects of the incident, including the location of the fall and the actions taken by Phillips and his friends."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains unnecessary spaces before and after commas, which affects the overall fluency and readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 4,
+      "relevance": 3,
+      "overall_judge": 3.2,
+      "winner_side": {
+        "coherence": "tie",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

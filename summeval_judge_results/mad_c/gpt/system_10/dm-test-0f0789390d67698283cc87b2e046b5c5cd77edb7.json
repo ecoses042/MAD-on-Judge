@@ -1,0 +1,75 @@
+{
+  "article_id": "dm-test-0f0789390d67698283cc87b2e046b5c5cd77edb7",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow and does not provide a complete narrative of the incident."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary repeats the same information about the incident being caught on camera, which is trivial and does not add value."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the embarrassment of the guard or the reactions of the tourists, which are significant aspects of the original article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains awkward phrasing and lacks variety in sentence structure, making it less engaging."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, detailing the guard's slip and the consequences of the incident."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the main event described in the article without introducing any new or unrelated facts."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is written in grammatically correct English and is easy to read, maintaining a fluent style."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key incident of the guard slipping, which is the central point of the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary could benefit from a more structured flow, as it repeats the phrase about the incident being caught on camera, which may confuse readers."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary lacks additional context about the setting and the reactions of the crowd, which are important aspects of the incident."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 4,
+      "relevance": 3,
+      "overall_judge": 3.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "tie",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-b1f6faac3f406edca1e0cad8cce1319c83e62605",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from a significant relevance issue: it omits the central theme of the article, which is the debate regarding Costa's mental state (dementia vs. feigned illness) and its legal implications for a not guilty verdict. Additionally, while mostly consistent, it presents Professor Mullen's opinion as fact without explicitly attributing it to his specific view against the prosecutor's counter-argument mentioned in the source text, slightly affecting consistency with the full context."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is well-structured, grammatically correct, and accurately reflects the key facts of the article (the accused's actions, the victim, and the psychiatrist's opinion). It avoids hallucinations. It receives a score of 4 instead of 5 because it omits other significant details present in the source text, such as the specific date, the location (Red Hill, Canberra), the role of alcohol abuse mentioned by the prosecutor, and the critical legal implication regarding the 'not guilty' verdict based on mental state."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "The strict judge's assessment is accurate. The summary fails to capture the central narrative of the article, which is the legal debate regarding Costa's mental state (dementia vs. feigned illness) and its impact on the verdict. By omitting the prosecutor's counter-argument and the specific legal implication (not guilty verdict), the summary lacks relevance despite being fluent and coherent."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The lenient judge's assessment is accurate. The summary successfully captures the core narrative (accused actions, victim, psychiatrist's opinion) without hallucinations or grammatical errors. However, it significantly omits critical context provided in the source text: the specific date (July 2012), the location (Red Hill, Canberra), the role of alcohol abuse, and most importantly, the legal implication that a 'not guilty' verdict depends on proving an unstable mindset. These omissions prevent the summary from being fully comprehensive regarding the article's key points, justifying the relevance score of 4 rather than 5."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "The lenient judge's assessment is accurate. The summary accurately reflects the specific details provided in the text (the attack description and Professor Mullen's initial examination findings). While it omits the prosecutor's counter-argument and the legal implications regarding the verdict, these are significant omissions that reduce its relevance to the full scope of the article. However, since the summary does not contradict the source or introduce hallucinations, a lower consistency score is unwarranted. The strict judge was appropriately lenient in raising the coherence and fluency scores given the text's simplicity."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I lowered the relevance score from 4 to 3. While the summary captures the basic 'who did what' and the psychiatrist's initial opinion, it misses critical context that defines the article's narrative arc: the specific date/location (July 2012, Red Hill), the compounding factor of alcohol abuse, and most crucially, the legal stakes regarding the 'not guilty' verdict based on an unstable mindset. The strict judge was correct; these omissions represent a significant gap in coverage for a news summary."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.5,
+      "fluency": 5.0,
+      "relevance": 3.0,
+      "overall_judge": 4.3
+    }
+  }
+}

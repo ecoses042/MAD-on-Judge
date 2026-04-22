@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-4e0de0ec6d5b9df174f54d03158de8f30aac861f",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from severe fluency issues due to poor capitalization and inconsistent formatting (e.g., '# 42.5 million' instead of '£42.5million'). It also fails relevance by omitting the main topic of the article: Ozil's return to London, his social media post with his dog, and his upcoming match against Liverpool. While it includes some correct facts from the text, the lack of focus on the primary narrative makes it a poor summary."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is consistent with the source text and covers key facts (Germany win, Ozil's transfer, Newcastle absence, Wenger's comments). However, it lacks coherence in its structure as it presents two nearly identical sentences about Germany beating Georgia consecutively without adding new information. Additionally, it misses significant relevant details from the article such as Ozil's current form for Arsenal, his social media post, and his quotes about adjusting to English football, which lowers the relevance score."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary requires a score of 2 for fluency due to severe formatting errors (lowercase start, inconsistent capitalization like 'germany' vs 'Germany', and the specific error '# 42.5 million' instead of '£42.5million'). It also scores low on relevance because it completely ignores the article's primary narrative regarding Ozil's return to London, his social media post with his dog, and his upcoming match against Liverpool, focusing only on minor biographical details."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the coherence score from 4 to 3 because the summary begins with two consecutive sentences that are nearly identical in meaning ('impressed on international duty...' and 'German star was in fine form...'), creating a redundant and disjointed opening structure rather than a smooth flow. I significantly lowered the relevance score from 3 to 2; while the lenient judge noted missing details, the summary's primary failure is that it ignores the main subject of the article (Ozil's social media post about his dog/home) and fails to synthesize the narrative arc (returning home -> form -> upcoming match). The current summary reads like a disjointed list of isolated facts rather than a cohesive summary of the story."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 3,
+        "fluency": 1,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment that the scores need to be lowered. The summary fails significantly on fluency due to severe formatting issues (lowercase start, inconsistent capitalization, and the specific error '# 42.5 million' instead of '£42.5million'). It also lacks relevance by omitting the article's primary narrative about Ozil's return to London, his social media post with his dog, and his upcoming match against Liverpool, focusing only on minor biographical details."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary fails to capture the main narrative (Ozil's return home and social media post), instead presenting a disjointed list of facts starting with redundant sentences about his international performance. The structure is poor, and the content misses the primary focus of the article."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 4.0,
+      "fluency": 2.5,
+      "relevance": 2.0,
+      "overall_judge": 2.5
+    }
+  }
+}

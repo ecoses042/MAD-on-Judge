@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-998cb27197db1fd299aff3322ac041ba4bf1148f",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 1,
+        "relevance": 1,
+        "overall_judge": 1.0,
+        "rationale_for_score": "The summary contains severe hallucinations and factual errors inconsistent with the source text. It incorrectly states that Doncaster's media team 'won' the match (the article says they struggled to compile highlights for a draw). It also claims it was a 'play-off draw,' whereas the article explicitly states Fleetwood Town's play-off hopes had evaporated. The sentence structure is incoherent and grammatically broken ('so it was 27 seconds'). These are critical failures in consistency, coherence, and fluency."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 2,
+        "overall_judge": 1.8,
+        "rationale_for_score": "The summary contains severe hallucinations and factual errors inconsistent with the source text. It incorrectly states that Doncaster's media team 'won the match,' whereas the article says they struggled to create highlights for a goalless draw. It also claims the visit was a 'play-off draw' (the article mentions Fleetwood's play-off hopes evaporated, not that this specific match was a play-off). The grammar is poor and the sentence structure is incoherent."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 1,
+        "relevance": 1,
+        "overall_judge": 1.0,
+        "adjustment_notes": "The strict judge's assessment is entirely correct. The summary contains severe hallucinations (claiming the media team 'won' the match) and factual errors regarding the nature of the draw ('play-off draw'). The grammar is broken and incoherent. There are no grounds to maintain or increase these scores."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 2,
+        "overall_judge": 1.8,
+        "adjustment_notes": "No adjustment needed. The lenient judge's assessment is accurate and well-supported by the source text. The summary contains severe hallucinations (claiming the media team 'won' the match instead of struggling to create highlights) and factual errors regarding the nature of the draw ('play-off draw'). These are critical consistency failures that justify a score of 1 for consistency and low scores across other categories."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 1,
+        "relevance": 1,
+        "overall_judge": 1.0,
+        "adjustment_notes": "The lenient judge's assessment was correct to maintain the low scores. The summary contains severe hallucinations (claiming the media team 'won' the match), factual errors regarding the nature of the draw ('play-off draw'), and broken grammar/incoherent phrasing. There are no grounds to raise these scores."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 2,
+        "overall_judge": 1.8,
+        "adjustment_notes": "No adjustment needed. The strict judge correctly identified severe hallucinations (claiming the media team 'won' the match) and factual errors ('play-off draw'). These are critical consistency failures that justify a score of 1 for consistency and low scores across other categories."
+      }
+    },
+    "final": {
+      "coherence": 1.5,
+      "consistency": 1.0,
+      "fluency": 1.5,
+      "relevance": 1.5,
+      "overall_judge": 1.4
+    }
+  }
+}

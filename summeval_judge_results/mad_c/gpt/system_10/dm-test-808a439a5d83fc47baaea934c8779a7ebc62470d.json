@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-808a439a5d83fc47baaea934c8779a7ebc62470d",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, jumping between topics without smooth transitions, such as moving from Clattenburg's appointment to Kompany's suspension."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that Clattenburg has sent off three players from United and City this season, while the article specifies that he has only sent off two players, both from United."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The mention of Kompany's suspension for the match against Wales is irrelevant to the Manchester derby and distracts from the main focus."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as inconsistent capitalization of names and awkward phrasing, making it less fluent."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear focus on the main event, which is Mark Clattenburg officiating the Manchester derby, and logically includes relevant details about player suspensions."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding Clattenburg's officiating history and the context of the match."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary highlights the key points about Clattenburg's role in the derby and the implications of player suspensions, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as the lack of capitalization at the beginning of sentences and inconsistent punctuation."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

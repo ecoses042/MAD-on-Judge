@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-23e8c1d71474d239aa9ae37b9a05031b0054b8ce",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and strictly consistent with the source text, accurately reporting the match details and Vardy's goal. It receives a slightly lower relevance score (4) because it omits Nigel Pearson's key message about ignoring rivals and staying focused, which is a significant portion of the article's content, though this omission is minor given the brevity of the summary."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from poor relevance due to severe truncation. It captures the first half of the article (match details) but completely omits the main theme: Manager Nigel Pearson's specific advice to ignore rivals and focus on their own games. By ignoring the bulk of the source text, it fails to cover the key points."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate: the summary is factually consistent and coherent, though it misses the central theme of Nigel Pearson's quotes regarding team focus. Given the extreme brevity of the summary (approx. 35 words), omitting the manager's extensive quotes while retaining the factual match details is a reasonable trade-off, justifying the relevance score of 4 rather than lower."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I agree with the strict judge's assessment regarding relevance. The summary is factually consistent and fluent, but it completely misses the central theme of the article: Nigel Pearson's specific advice to ignore rivals and focus on their own performance. By truncating the text after the match details, the summary fails to capture the 'main point' or the manager's key message, which constitutes a significant flaw in relevance."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "Adjusted relevance score down from 4 to 3. While the strict judge argued that omitting quotes was a 'reasonable trade-off' for brevity, the article's primary focus is explicitly on Manager Nigel Pearson's specific advice to ignore rivals and maintain focus. The summary captures only the match facts (who, when, where, result) but completely misses the narrative arc of the article, which is about the team's mindset and the manager's reaction to it. Therefore, the summary fails to cover the 'most important information' regarding the central theme."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding relevance. The summary is factually consistent and fluent, but it completely misses the central theme of the article: Nigel Pearson's specific advice to ignore rivals and focus on their own performance. By truncating the text after the match details, the summary fails to capture the 'main point' or the manager's key message, which constitutes a significant flaw in relevance."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 3.0,
+      "overall_judge": 4.5
+    }
+  }
+}

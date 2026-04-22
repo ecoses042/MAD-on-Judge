@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-3ba3bde4a1440134bb38ec22ba50db59986b544c",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is grammatically correct and consistent with the text, but it fails the relevance criterion significantly. It only covers the first two sentences of the source article (the incident details) and completely omits the main points: Brendan Rodgers' meeting with the players, his decision not to discipline them, his comments on professional responsibilities, and the context regarding Steven Gerrard's availability for the FA Cup semi-final."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "rationale_for_score": "The summary is grammatically perfect and consistent with the source text. However, it only covers the first two sentences of the article (the incident details) and completely omits the main news hook: Brendan Rodgers' decision NOT to discipline them and his desire to 'draw a line under the matter.' This significant omission reduces its relevance score, though the lenient rule prevents a lower score due to the lack of hallucinations."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "The strict judge's assessment is correct. The summary only covers the introductory incident details (the drug use and shisha photos) but completely omits the core news: Brendan Rodgers' meeting with the players, his explicit decision not to discipline them, his quotes on professional responsibilities, and the context regarding Steven Gerrard's availability for the FA Cup semi-final. Therefore, the relevance score of 2 is appropriate and should be maintained."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "The lenient judge correctly identified that the summary omits the main news hook (Rodgers' decision not to discipline the players). While I agreed with the low relevance score for this omission, I adjusted the overall score down from 4.5 to 4.0 because a summary that covers only the background incident while ignoring the primary outcome (the lack of punishment) is significantly incomplete, warranting a stronger penalty on the overall metric."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "The lenient judge's points were accepted. The summary strictly covers the introductory incident details (drug use and shisha photos) but completely omits the core news: Brendan Rodgers' meeting with the players, his explicit decision not to discipline them, his quotes on professional responsibilities, and the context regarding Steven Gerrard's availability for the FA Cup semi-final. Therefore, the relevance score of 2 is appropriate and should be maintained."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I agree with the strict judge's assessment that the summary is significantly incomplete because it omits the primary news hook: Brendan Rodgers' decision not to discipline Sterling and Ibe. The summary only covers the background incidents (nitrous oxide, shisha) without mentioning the outcome or Rodgers' specific comments on professional responsibilities in this context. Therefore, I have lowered my relevance score from 5 to 3 and adjusted the overall score down from 4.5 to 4.0 to reflect this major omission."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 2.5,
+      "overall_judge": 3.8
+    }
+  }
+}

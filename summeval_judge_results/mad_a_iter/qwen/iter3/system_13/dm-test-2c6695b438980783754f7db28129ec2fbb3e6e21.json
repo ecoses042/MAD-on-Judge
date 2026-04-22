@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-2c6695b438980783754f7db28129ec2fbb3e6e21",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and strictly consistent with the source text regarding charges and video evidence. However, it scores a 4 for relevance because it omits significant details present in the article, such as the specific timeline of the abuse (ages 9-13), the victim's age at discovery (15), the location of the camera (under the sink), and the police chief's statement describing the crime as 'horrific'. A high-quality summary should capture the gravity and scope of the event, not just the legal charges and video counts."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and strictly consistent with the source text without hallucinations. It captures the key facts regarding charges and evidence. It receives a score of 4 (Good) rather than 5 because it omits significant details present in the article, such as the specific nature of the abuse allegations (molesting while sleeping), the timeline of the crimes, and the victim's age at the time of discovery, which are central to the story."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. While the summary is grammatically correct and factually consistent, it significantly under-represents the gravity of the situation by omitting the timeline of abuse (ages 9-13), the victim's current age (15), and the specific location of the camera. These omissions prevent the summary from conveying the full scope and horror of the event described in the source text, justifying a relevance score of 4 rather than higher."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The lenient judge's assessment is accurate. The summary strictly adheres to the source text (consistency) and presents a logical flow of facts regarding charges and evidence (coherence/fluency). The score of 4 for relevance is justified because the summary omits significant narrative elements from the article, specifically the detailed allegations of abuse while sleeping, the specific timeline (ages 9-13), and the victim's current age at discovery, which are central to the story's gravity."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I raised the relevance score from 4 to 3 (lowering it) because the lenient judge's reasoning was flawed. The lenient judge claimed the summary 'significantly under-represents' key details like the timeline and victim age, but these specific facts are indeed absent from the provided summary text. Since I cannot award points for content that is not in the original summary, the strict assessment of low relevance stands. The summary covers the charges and video evidence well but fails to capture the core narrative elements (duration of abuse, specific ages) present in the source."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. While the summary is factually consistent and fluent, it significantly under-represents the gravity of the allegations by omitting the specific timeline of abuse (ages 9-13), the victim's age at discovery (15), and the nature of the abuse (molesting while sleeping). These details are central to the story's context and severity, justifying a lower relevance score."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.7
+    }
+  }
+}

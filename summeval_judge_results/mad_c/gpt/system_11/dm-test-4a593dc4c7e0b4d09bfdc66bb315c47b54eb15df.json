@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-4a593dc4c7e0b4d09bfdc66bb315c47b54eb15df",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, as it abruptly shifts from Henderson's thoughts to the match details without a smooth transition."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention key events from the match, such as the goals scored by Raheem Sterling and Joe Allen, which are crucial to understanding the context of Liverpool's performance."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as missing articles ('the' before 'Barclays Premier League' and 'season'), which disrupt the reading experience."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not consistently represent the source document, as it omits important details about the match and the players' performances."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, outlining Henderson's thoughts on Liverpool's potential to catch Manchester City and the context of their recent performance."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, including Henderson's comments and the details of the match against Newcastle United."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points, such as Henderson's optimism, the team's performance, and their position in the league, while avoiding trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as missing articles and inconsistent capitalization, which affect its readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "tie",
+        "consistency": "tie",
+        "fluency": "critic",
+        "relevance": "tie"
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-f468efac7b3c54f8c42c2c81dff108c52ebe0d7d",
+  "system_name": "system_5",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information. It jumps abruptly from Hazard's goal to the pundits' opinions without a smooth transition."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details about the pundits' specific comments and the context of the foul, which are crucial for understanding the controversy surrounding the goal."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'scored give his side' contains a grammatical error and should be 'scored to give his side'."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the involvement of Cesc Fabregas and Oscar in the goal-scoring play, which is an important part of the sequence."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with Hazard's goal and then describing the foul by Terry."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the key incident of the foul by Terry on Falcao, which is central to the article."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important aspects of the article, namely the goal and the controversy surrounding the foul."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'give' instead of 'to give' and lacks proper sentence structure."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

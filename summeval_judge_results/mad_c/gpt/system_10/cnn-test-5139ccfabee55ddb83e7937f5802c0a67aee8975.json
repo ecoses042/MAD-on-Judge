@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-5139ccfabee55ddb83e7937f5802c0a67aee8975",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow and does not connect the events or provide context for the U.S. complaint."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the aggressive maneuvers of the Russian jet, the U.S. response, and the previous incident involving the RC-135U, which are crucial for understanding the significance of the event."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The use of parentheses and quotation marks in the summary is inconsistent and disrupts the reading flow."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the conflicting claims about the U.S. plane's transponder status, which is an important aspect of the incident."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with the incident and providing details about the aircraft involved and the location."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article without introducing any new facts or misrepresentations."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key details of the incident, including the type of aircraft, the nature of the interception, and the U.S. response."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The use of parentheses and the formatting of the summary (e.g., '-lrb- cnn -rrb-') detracts from its readability and fluency."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "tie",
+        "consistency": "tie",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

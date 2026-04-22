@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-b255397ee863bd8faf9def57c0f76769153d905e",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and strictly consistent with the source text. It captures the key events (confiscation, frisking, parents' names/ages, destination). The only minor deduction for relevance is that it omits the father's criticism and the resolution (buying a new gun), but given the instruction to be lenient and focus on major flaws, this omission does not constitute a failure."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from a significant relevance flaw: it truncates the text abruptly after the first paragraph of events, omitting the resolution (replacement toy), the airport's apology/defense, and the specific regulatory context which constitutes key information in the source. Consistency is slightly penalized because the summary repeats the exact same sentences found at the beginning of the article without adding new synthesis or covering the rest of the story."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is well-structured, strictly consistent with the source text, and fluent. While it omits the father's criticism and the resolution (buying a new gun), these are secondary details compared to the main event of confiscation and the context provided. Given the instruction to be lenient regarding minor omissions, no score reduction is necessary."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is grammatically perfect and flows well (Fluency/Coherence), but it fails significantly on Relevance by cutting off the narrative before the resolution (buying a new toy) and the airport's official response, which are key components of the story. I maintain the lower relevance score as the summary feels incomplete."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary is well-structured, strictly consistent with the source text, and fluent. While it omits the father's criticism and the resolution (buying a new gun), these are secondary details compared to the main event of confiscation and the context provided. Given the instruction to be lenient regarding minor omissions, no score reduction is necessary."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding Relevance. The summary is grammatically perfect and flows well (Fluency/Coherence), but it fails significantly on Relevance by cutting off the narrative before the resolution (buying a new toy) and the airport's official response, which are key components of the story. I maintain the lower relevance score as the summary feels incomplete."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.5,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.5
+    }
+  }
+}

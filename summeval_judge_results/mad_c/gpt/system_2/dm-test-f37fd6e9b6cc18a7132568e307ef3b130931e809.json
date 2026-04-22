@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-f37fd6e9b6cc18a7132568e307ef3b130931e809",
+  "system_name": "system_2",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, jumping abruptly between Lawler's experience and his later actions without sufficient context."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details about the nature of the alleged abuse and the subsequent investigation, which are crucial for understanding the severity of the claims."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the specific year of the incident (1978), which is important for context."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as the lack of capitalization at the beginning of sentences."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with Lawler's experience on his first day and leading to his decision to contact palace officials."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary captures the key points of Lawler's allegations and the context of his complaints, focusing on the most significant aspects of the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits important details about the nature of the alleged abuse and the subsequent investigation, which could misrepresent the severity of the claims."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as the lack of capitalization at the beginning of sentences, which affects its readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

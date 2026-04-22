@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-e06ff0eb7c4fa4416fda84a9a239b15480c5a9d9",
+  "system_name": "system_9",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, as it jumps between details without proper transitions."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to cover key points such as the man's personal description, his offer of benefits, and the humorous tone of the advertisement."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not accurately reflect the tone of the original article, which includes a mix of humor and seriousness."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'also a princess when need to be' is awkwardly repeated and disrupts the flow."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, outlining the main focus of the advertisement regarding the man's requirements for a partner."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary captures the key points of the advertisement, including the man's desire for a partner who enjoys the outdoors and the inclusion of personal details about himself."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits several details from the original article, such as the man's name, age, and specific attributes he is looking for in a partner, which could lead to a lack of context."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains some grammatical issues, such as the phrase 'also a princess when need to be,' which could be more clearly expressed."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

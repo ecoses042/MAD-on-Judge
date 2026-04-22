@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-1749a22e2b6facaa057213cb9b33261b319bbd2b",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is excellent in coherence, consistency, and fluency, accurately reflecting the source text without hallucinations. It captures the main points regarding Carragher's support for Rodgers and the context of his Beacon Award speech. The only minor deduction in relevance is that it omits specific details about Liverpool's league position (seven points behind Man City) and the FA Cup semi-final loss, which are significant parts of the source text, though the summary remains well-grounded."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is coherent and fluent but suffers from a significant relevance flaw: it truncates the text abruptly after the first quote without summarizing the rest of the article's key points (Carragher's specific reasons for backing Rodgers, the FA Cup context, or Carragher's Beacon Award details). Additionally, there are minor consistency issues due to inconsistent capitalization and punctuation spacing (e.g., 'jamie carragher', 'rodgers ', 'i do n't'), which detracts from professional quality."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is well-structured and fluent. It accurately reflects the core message (Carragher supporting Rodgers) and the context (Beacon Award). The deduction in relevance is justified because the summary omits specific details present in the article, such as Liverpool's league position relative to Manchester City and the FA Cup semi-final loss, which are significant contextual points regarding the pressure on Rodgers."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the scores based on the strict judge's valid criticisms. The summary is severely truncated, cutting off mid-sentence and failing to cover the majority of the article's content (specific reasons for backing Rodgers, FA Cup context, Beacon Award details). This makes it highly irrelevant (2) and structurally incomplete (3). While the grammar within the provided text is fine (4), the capitalization errors ('jamie', 'rodgers') noted by the strict judge are real flaws that prevent a higher score. I maintained consistency at 4 because the truncated text itself does not contradict the source, even though it omits information."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. While the summary is fluent and coherent, it significantly truncates the source text by omitting key contextual details regarding Liverpool's specific league standing (7 points behind Man City) and the FA Cup semi-final loss, which are crucial to understanding the 'pressure' mentioned. Therefore, the relevance score remains at 4."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding coherence and relevance. The summary is severely truncated, cutting off mid-sentence ('...one game .'), which makes it structurally incomplete (Coherence: 3) and fails to cover key points like the FA Cup context or specific reasons for backing Rodgers (Relevance: 2). I raised Consistency from the strict judge's likely lower score to 5 because, despite being incomplete, every word in the summary is factually accurate according to the source text; it contains no hallucinations. Fluency remains at 4 due to minor capitalization errors ('jamie', 'rodgers') and the abrupt ending."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 5.0,
+      "fluency": 4.5,
+      "relevance": 3.0,
+      "overall_judge": 3.9
+    }
+  }
+}

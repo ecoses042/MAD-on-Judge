@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-97bbda7ec22a736cd174b51513c72a6372d13d35",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, as it abruptly ends after mentioning Reggie Jackson without providing context about his intentions or the auction details."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key points such as the auction's starting bid, Jackson's humorous remarks about the letters, and his promise to visit the buyer, which are essential for understanding the significance of the auction."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary states that the letters 'failed to find a buyer' but does not clarify that there was only one bid from a Sotheby's employee, which could mislead readers about the auction's dynamics."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'failed to find a buyer at an auction at Sotheby 's' contains an unnecessary space before the apostrophe, which affects the overall fluency."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the auction and the letters."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article without introducing any new facts."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is written in fluent and idiomatic English, making it easy to read."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the auction and the ownership of the letters."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits some interesting details, such as Reggie Jackson's intentions for the letters and the context of their historical significance."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 4,
+      "relevance": 3,
+      "overall_judge": 3.2,
+      "winner_side": {
+        "coherence": "tie",
+        "consistency": "tie",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

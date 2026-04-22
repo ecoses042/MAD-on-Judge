@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-7cba80e83b222801fed8d6f96e8c0aa381c54b28",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from a significant relevance issue: it omits the primary news hook of the article (the couple enjoying sunshine/celebrating off the pitch), focusing only on background facts. Additionally, there is a minor consistency flaw where the summary states 'Premier League appearances,' while the source text specifically mentions '19 league appearances' and notes he has been restricted to cup matches; inferring the specific count applies strictly to the Premier League without explicit textual support for that breakdown constitutes a slight hallucination/inference error."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and strictly consistent with the source text, accurately capturing the key facts about the couple's relationship timeline and Lindegaard's career struggles at Manchester United. It receives a slight deduction on relevance (from 5 to 4) because it omits other significant details present in the article, such as their son, Lindegaard's specific third-choice status due to competition from De Gea and Valdes, and his recent transfer links, though these omissions are acceptable for a brief summary."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is grammatically perfect and coherent, but it fails to capture the main news hook (the couple enjoying their day off/sunshine), focusing instead on background trivia. Furthermore, the claim of '19 Premier League appearances' is a slight hallucination; the source text specifies '19 league appearances' and notes he was restricted to cup matches, meaning the 19 figure likely includes cups or is ambiguous, making the specific inference risky."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate. The summary is well-structured (coherence), contains no hallucinations (consistency), and is grammatically perfect (fluency). It captures the primary narrative arc: relationship history and career struggles. The deduction for relevance is justified because it omits specific details present in the source text, such as their son, the reason for his low playing time (competition from De Gea/Valdes), and transfer rumors, which are significant context points in the article."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding coherence and fluency; the summary is well-structured and grammatically correct. I also accept their point on consistency (scored 4) because while the text says '19 league appearances', inferring this strictly as 'Premier League' without qualification is a minor inconsistency given the text explicitly mentions he was restricted to cup matches within that count. However, regarding relevance, I agree with the lenient judge's lower score (3). The summary misses the primary news hook of the article: the couple enjoying their day off and sunshine in Cheshire. It focuses almost entirely on background trivia (dating history, wedding) and statistics rather than the current event described in the text."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The strict judge's assessment is accurate. The summary effectively captures the core narrative (relationship timeline and career struggles) with perfect structure and grammar. The deduction for relevance is justified as the summary omits significant contextual details from the source text, such as their son, the specific reasons for his low playing time (competition from De Gea/Valdes), and transfer rumors."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.5,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.5
+    }
+  }
+}

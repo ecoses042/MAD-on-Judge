@@ -1,0 +1,71 @@
+{
+  "article_id": "cnn-test-5139ccfabee55ddb83e7937f5802c0a67aee8975",
+  "system_name": "system_8",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow and omits important context about the incident being described."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces a link to an external article that is not present in the original text, which is inconsistent with the source."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention the U.S. response or the Pentagon's statement regarding the incident, which are key points."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is abrupt and does not provide a complete picture of the incident, making it less fluent."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with the U.S. plane's flight and the subsequent interception by the Russian jet."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding the U.S. RC-135U and the Russian SU-27 Flanker without introducing any new facts."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key incident of the interception, which is the main point of the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks a concluding statement or context, making it feel abrupt and less fluent."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits important details such as the U.S. complaint about the incident and the context of previous encounters, which are significant to understanding the situation."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-18243373494a1722ddcd162ec67b63dd749633ab",
+  "system_name": "system_4",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, jumping abruptly from the match result to Pjanic's goal without proper context."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that De Sanctis saved 'shot after a clinical counter-attack,' which misrepresents the sequence of events and the role of the goalkeeper."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits significant details such as the context of the match being crucial for Champions League places and the implications of the win for Roma's winless streak."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The use of abbreviations like 'lrb' and 'rrb' is not standard in fluent English writing and disrupts readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with Roma's position in the league and then detailing the key moment of the match with Pjanic's goal."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, specifically mentioning Pjanic's goal and De Sanctis's performance without introducing any new facts."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most significant aspects of the match, such as the goal and the implications for the league standings, while avoiding trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as the phrase 'saving shot after a clinical counter-attack,' which is unclear and awkwardly phrased."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

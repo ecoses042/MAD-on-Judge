@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-f37fd6e9b6cc18a7132568e307ef3b130931e809",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from a significant relevance issue: it omits the core news hook (the police investigation) which constitutes the majority of the source text's information. Additionally, while mostly consistent, it slightly conflates the timeline by implying the contact happened immediately after inquiries began, whereas the text states he was rebuffed twice before the complaint was passed to Scotland Yard."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and consistent with the source text. It accurately captures the main narrative arc: the incident on the first day, the immediate departure, and the reason for re-contacting officials last year. It receives a score of 4 in relevance because it omits specific details present in the article (such as the date 'January 1978', the threat to keep quiet, or the current status of the police investigation), but given the lenient rules allowing for minor weaknesses and focusing on key points, this is acceptable."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is fluent and coherent but fails significantly on relevance by omitting the primary news hook: the police investigation. Additionally, it slightly misrepresents the timeline regarding when Lawler contacted officials again, ignoring the detail that he was rebuffed twice before the complaint reached Scotland Yard. Therefore, I maintain the strict judge's scores."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The summary is well-structured and accurately reflects the core narrative of the article without introducing external facts. While it omits specific details like the date (January 1978) or the current police investigation status, these are considered minor omissions in a summary context rather than critical failures. The lenient judge's assessment that the relevance score of 4 is appropriate for omitting such details while capturing the main arc is valid."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The strict judge's assessment is accurate. The summary captures the essential narrative arc (the incident, the immediate aftermath, and the catalyst for re-contacting officials) without introducing hallucinations or irrelevant details. While it omits specific dates and the current police investigation status, these are minor omissions acceptable in a short summary format. Therefore, the lenient judge maintains the original scores."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding coherence and fluency; the summary is well-structured and grammatically correct. I also accept their point on consistency, noting the minor timeline simplification (omitting the 'twice rebuffed' detail) which makes it a 4 rather than a perfect 5. However, I raise the relevance score from 3 to 4. While the summary does miss the explicit mention of the police investigation in the first sentence, it accurately captures the core narrative arc: the incident, the immediate aftermath, and the catalyst for re-contacting officials (the child abuse inquiries). The omission of the 'police investigation' label is a significant detail loss, but the summary remains factually grounded and covers the essential human story without introducing hallucinations. Therefore, it deserves a higher relevance score than 3."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.5,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.5
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-54b857a66cbd8473d6732e5da52d48612e636a37",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from a significant relevance flaw: it repeats the same sentence twice ('passenger jin pai... was standing on the rim...') without adding new information, which wastes space and reduces efficiency. Additionally, while consistent with the text provided, it omits key details such as the man's attempt to hide his actions (squatting vs sitting) to avoid compensation and the official police warning, which are central to the article's narrative."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is factually consistent with the source text and covers the key details (who, what, where, why). It is well-grounded in the article. Minor deductions for coherence and fluency are due to the repetitive phrasing of the first two sentences in the summary, which mirrors the slightly disjointed structure of the source text but does not constitute a hallucination or severe error."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary repeats the exact same sentence twice ('passenger jin pai , 35 , was standing on the rim of a toilet when it collapsed...'), which is a significant structural flaw reducing relevance and efficiency. Furthermore, it omits crucial narrative elements like the man's attempt to deceive police about his actions and the official warning, which are central to the story. Therefore, I maintain the strict judge's scores."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 3.8,
+        "adjustment_notes": "Lowered coherence and fluency scores significantly. The summary repeats the exact same sentence twice in a row ('passenger jin pai , 35 , was standing on the rim of a toilet when it collapsed...'), which is a severe structural flaw making it disjointed and redundant. Additionally, the summary fails to include the most critical information from the source: the man's confession that he lied about his story to avoid compensation and the police warning that toilets are for sitting, not standing. This omission makes the summary incomplete regarding the 'key points' of the news event."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I have adjusted the scores based on the strict evaluator's valid points regarding structure and content coverage. The summary repeats the same sentence twice ('passenger jin pai , 35 , was standing on the rim of a toilet when it collapsed...'), which is a severe structural flaw affecting coherence and relevance. Additionally, the summary omits significant narrative elements present in the article, such as the man's attempt to deceive police about his actions and the official warning, further lowering relevance. While the text is grammatically correct (fluency 4) and factually consistent with the source (consistency 5), the repetition and lack of key details prevent a higher score."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I have lowered the coherence and fluency scores further. The strict judge correctly identified a severe structural flaw: the summary repeats the exact same sentence twice consecutively ('passenger jin pai , 35 , was standing on the rim of a toilet when it collapsed...'). This repetition makes the text disjointed, redundant, and grammatically poor (fluency). Regarding relevance, while the summary covers the accident details, it misses the significant narrative arc regarding the man's lie to police and the official warning, which are key points of the news story. I agree with the strict judge's assessment that these are real flaws requiring lower scores."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 5.0,
+      "fluency": 3.0,
+      "relevance": 2.5,
+      "overall_judge": 3.0
+    }
+  }
+}

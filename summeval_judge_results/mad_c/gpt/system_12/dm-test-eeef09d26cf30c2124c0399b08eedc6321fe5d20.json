@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-eeef09d26cf30c2124c0399b08eedc6321fe5d20",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, jumping abruptly between topics without smooth transitions."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the detail about Real Madrid being top of their Euro League division, which is not clearly supported by the article's context."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key information about Neymar's recent performance with the Brazilian national team and the context of the El Clasico match."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains awkward phrasing, such as 'went to watch El Clasico on Thursday night' which could be more fluid."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with Neymar and Alves attending the game and concluding with their upcoming La Liga match."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding the basketball match outcome and the standings of Real Madrid."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key events related to Neymar and Alves, including their attendance at the game and the performance of Barcelona."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary could benefit from smoother transitions between sentences to enhance readability."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "Some important details, such as Neymar's performance in the international match and the context of the treble competition, are omitted."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 4,
+      "relevance": 3,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

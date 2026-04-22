@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-7cba80e83b222801fed8d6f96e8c0aa381c54b28",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from severe fluency issues due to poor capitalization and lack of punctuation (e.g., 'anders lindegaard', 'lindegaard tied knot'). While the content is consistent with the source text and covers relevant points, the low fluency score drags down the overall quality. The structure is repetitive and lacks a logical flow compared to the original article."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is consistent with the source text and covers the main points (relationship, marriage, son, playing struggles). However, it scores lower on fluency due to repetitive phrasing ('tied knot' vs 'tied the knot') and a lack of smooth transitions between sentences. It also misses some specific details like the location of the wedding or the son's existence being mentioned twice in slightly different ways, but given the lenient rules, these are minor omissions rather than hallucinations."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment on fluency (2/5) due to the severe lack of capitalization and punctuation which makes the text difficult to read professionally. I also agree that coherence is low (3/5) because the summary repeats the same fact about their marriage twice in slightly different ways without a logical transition, creating redundancy rather than flow. Consistency is perfect (5/5) as all facts match the source. Relevance is high (4/5) as it captures the main narrative of 'winning away from the pitch' despite on-field struggles, though it misses some specific details like the son's existence in the first sentence before mentioning it later."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the fluency score from 3 to 2 because the summary contains significant grammatical errors and awkward phrasing that go beyond simple repetition. Specifically: 'made the most of' is used incorrectly (should be 'enjoyed'), 'tied knot' is missing the article 'the', and the sentence 'lindegaard tied the knot with the stunning model and the couple have a son together' is a run-on sentence lacking proper punctuation or conjunctions. The repetition of the marriage fact in two slightly different ways also hurts readability. I kept coherence at 3 (down from 4) because the lack of transitions makes it feel like a disjointed list of sentences rather than a flowing paragraph. Consistency remains 5 as there are no hallucinations. Relevance remains 4 as key points are covered despite the poor execution."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary suffers from severe fluency issues due to a complete lack of capitalization and punctuation (e.g., 'anders lindegaard', 'misse beqiri'), making it unprofessional and difficult to read. Coherence is low because the text repeats the marriage fact twice in slightly different phrasings without logical transition, creating redundancy rather than flow. Consistency is perfect as all facts align with the source. Relevance is high as it captures the core narrative of Lindegaard's off-pitch happiness contrasting with his on-pitch struggles."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary suffers from significant grammatical errors (missing articles like 'the', incorrect phrasing like 'made the most of' instead of 'enjoyed') and poor sentence structure (run-on sentences). These issues severely impact readability and fluency, warranting a score of 2. The lack of transitions between disjointed facts also justifies the coherence score of 3. Consistency and relevance are maintained as the content is accurate and covers key points despite the poor execution."
+      }
+    },
+    "final": {
+      "coherence": 3.0,
+      "consistency": 5.0,
+      "fluency": 2.0,
+      "relevance": 4.0,
+      "overall_judge": 3.0
+    }
+  }
+}

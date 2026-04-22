@@ -1,0 +1,71 @@
+{
+  "article_id": "cnn-test-b8b6e729fff27c4eef87887e61d3448de9c063f6",
+  "system_name": "system_3",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information. It abruptly shifts from the launch to the failed landing attempt without connecting these ideas."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details about the mission, such as the specifics of the cargo, the significance of the landing attempt, and the context of SpaceX's goals, which are crucial for understanding the overall importance of the event."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as the incomplete sentence 'in a difficult bid to land a rocket stage on a floating barge for the first time.' This does not form a complete thought."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the idea of Musk wanting to cut costs without providing the context of why this is relevant to the rocket launch and landing attempt."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear opening statement about the launch of the Falcon 9 rocket and its destination, establishing a logical flow."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding the launch and the intention behind SpaceX's efforts."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary includes key points about the launch, the attempt to land the rocket, and Musk's cost-cutting goals, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and lacks proper sentence structure, making it less readable."
+        },
+        {
+          "criterion": "coherence",
+          "reason": "The summary is incomplete and lacks a logical conclusion, leaving out important details about the Dragon spacecraft and its mission."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

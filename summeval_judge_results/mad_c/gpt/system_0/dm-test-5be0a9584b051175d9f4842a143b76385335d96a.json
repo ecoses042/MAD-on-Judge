@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-5be0a9584b051175d9f4842a143b76385335d96a",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, jumping between points without proper transitions."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary incorrectly refers to 'Manuel Aguero' instead of 'Sergio Aguero', introducing an error not present in the source."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention the significant context of the team's performance and the implications of their position in the league."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The use of '#' instead of '£' for currency is non-standard and disrupts the fluency of the text."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear structure by outlining the financial implications for Manchester City players and their current league position."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding the potential loss of bonuses and the team's current standing in the Premier League."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points about the bonuses and the team's performance, avoiding trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, such as 'manchester city are in fourth place and will be just four points in the premier league.'"
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

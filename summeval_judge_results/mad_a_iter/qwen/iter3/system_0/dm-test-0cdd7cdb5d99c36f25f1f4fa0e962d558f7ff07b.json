@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-0cdd7cdb5d99c36f25f1f4fa0e962d558f7ff07b",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary contains a severe hallucination regarding consistency: it claims Herbie Kane and Trent Arnold were included 'for the first time', whereas the source explicitly states they earned a 'recall' after missing the previous round. Additionally, the sentence structure is fragmented ('the 100 per cent record in qualifying'), resulting in poor coherence and fluency."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary contains a significant hallucination regarding Herbie Kane and Trent Arnold. The source text explicitly states they 'earned a recall after missing the Elite Round,' meaning they were NOT in the squad for the first time; this is a direct contradiction to the facts. Additionally, the sentence fragment 'the 100 per cent record in qualifying' lacks proper grammatical connection, affecting fluency and coherence. While it covers some key points like the defending champion status, the factual error regarding player history is severe enough to lower the consistency score significantly."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a critical factual error (hallucination) regarding Herbie Kane and Trent Arnold being included 'for the first time' instead of as a 'recall', which violates consistency. This error also impacts coherence and relevance. The fragmented sentence structure ('the 100 per cent record...') further lowers fluency and coherence. No leniency is warranted for these fundamental flaws."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No adjustment needed. The lenient judge's assessment of the severe factual error (Hallucination) regarding Herbie Kane and Trent Arnold is correct; they were recalled, not included for the first time. The sentence fragment 'the 100 per cent record in qualifying' also remains a significant flaw affecting consistency and fluency. The scores accurately reflect these critical issues."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary contains a critical factual error (hallucination) stating Herbie Kane and Trent Arnold were included 'for the first time' when the source text explicitly states they earned a 'recall'. This violates consistency significantly. Additionally, the sentence structure is fragmented ('the 100 per cent record in qualifying.'), which impacts fluency and coherence. The error regarding the players' status also affects relevance as it misrepresents a key detail about the squad composition."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No adjustment needed. The strict judge correctly identified the critical factual error (hallucination) regarding Herbie Kane and Trent Arnold being included for the first time when they were actually recalled. Additionally, the sentence fragment 'the 100 per cent record in qualifying' is a significant flaw affecting both consistency and fluency. The scores accurately reflect these severe issues."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 1.5,
+      "fluency": 3.5,
+      "relevance": 2.5,
+      "overall_judge": 2.5
+    }
+  }
+}

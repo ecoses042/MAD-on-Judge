@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-b1c3fc03a2b74cf4c79844c1fe2fdce70a8a436e",
+  "system_name": "system_2",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information. It jumps between statistics and quotes without a cohesive structure."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key points such as the increase in migrant deaths and the context of why migrants are dying, which are crucial to understanding the situation."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as inconsistent capitalization and punctuation, which affect readability."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the concept of a rising wave of migrants but does not provide supporting details or context from the article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear timeline of events, starting with the number of migrants rescued and the SOS calls received, which helps to establish a logical flow of information."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points regarding the migrant crisis, including the number of rescues, the potential capsizing of a ship, and the context of the situation in Italy."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not clarify that the Italian coast guard has not confirmed the capsizing incident, which could lead to misunderstandings about the situation."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as inconsistent capitalization and punctuation, which detract from its readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

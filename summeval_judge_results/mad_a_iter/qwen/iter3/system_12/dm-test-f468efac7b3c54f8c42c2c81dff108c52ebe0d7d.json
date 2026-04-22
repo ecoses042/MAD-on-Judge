@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-f468efac7b3c54f8c42c2c81dff108c52ebe0d7d",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.5,
+        "rationale_for_score": "The summary is fluent and coherent. It accurately captures the main points: the score, Hazard's goal, Terry's challenge on Falcao, and the pundits' agreement that it was a foul. However, there is a minor consistency issue: the article states Hazard scored to give Chelsea a 1-0 lead (implying he scored the only goal mentioned so far), but the summary phrasing 'scored the opening goal of the game after John Terry's challenge' could be slightly misleading if interpreted as the *only* event, though it is factually consistent with the text provided. The summary omits specific details like Fabregas/Oscar involvement or the exact nature of the foul (elbow), but these are trivial details given the lenient rules."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source text and fluent enough to read. However, it suffers from a significant relevance flaw by omitting the final score (1-0) in the first sentence while mentioning the goal scorer, creating a slight logical disconnect between 'beat' and the specific score mentioned later or implied. More critically, it lacks the key narrative detail that the goal was scored via a back-heel assist involving Cesc Fabregas and Oscar, which is central to the 'sublime spectacle' described in the text. The summary reduces a complex play sequence to a single sentence about a foul, missing the main event (the goal itself) rather than just the controversy."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary is fluent and coherent. While it omits specific details like Fabregas/Oscar or the 'elbow' nature of the foul (which are trivial in this context), there is a minor consistency nuance: the article states Hazard gave Chelsea a 1-0 lead, implying he scored the only goal mentioned, whereas the summary says 'the opening goal'. While factually true based on the text provided, it creates a slight ambiguity compared to the source's specific phrasing. However, this does not rise to the level of introducing false facts, so a score of 4 is appropriate rather than lower."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the strict judge's assessment regarding relevance. The summary fails to capture the central event (the goal sequence involving Fabregas and Oscar) and instead focuses disproportionately on the foul controversy, which is a secondary point discussed by pundits. The logical flow is slightly disjointed because it mentions the 1-0 score in the first sentence but then describes the goal scorer as if the context of the 'beat' isn't fully integrated with the specific play details. No changes were made to coherence, consistency, or fluency as those aspects remain strong."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "I agree with the strict judge's assessment regarding coherence and fluency; the summary is well-structured and error-free. I have adjusted the consistency score from 4 to 5 because the phrase 'opening goal' is factually consistent with the source text stating Hazard gave Chelsea a '1-0 lead' (implying it was the only goal). The strict judge's hesitation was based on phrasing nuance rather than factual inconsistency. Relevance remains at 4 as the summary omits specific details about Fabregas/Oscar and the pundits' individual quotes, which are minor but present."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I have lowered the coherence score from 4 to 3 because the summary's logical flow is indeed disjointed; it states Chelsea beat United, then immediately describes the goal scorer (Hazard) without mentioning the crucial build-up players (Fabregas and Oscar) who are central to the article's narrative of the 'sublime spectacle'. This makes the connection between the result and the specific play weak. I have lowered the relevance score from 3 to 2 because the summary misses the primary event described in the text (the goal sequence involving Fabregas/Oscar) and focuses almost exclusively on the foul controversy, which is a secondary analysis point rather than the main news of the match report."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 5.0,
+      "fluency": 4.5,
+      "relevance": 3.0,
+      "overall_judge": 3.9
+    }
+  }
+}

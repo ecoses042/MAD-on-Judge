@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-f26d8400ae49b90d109c165d0f44b8f6ca253c08",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from a significant relevance flaw: it includes the sponsorship deal as a standalone fact without capturing the crucial context provided in the source text—that the club president explicitly stated Chelsea's interest in Muto is NOT connected to this deal. By omitting this distinction, the summary presents a misleading causal link between the two events."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from a significant relevance issue by omitting the player's current status (undecided) and key context (the sponsorship deal being unrelated to the transfer). Additionally, it presents the sponsorship deal as a standalone fact rather than clarifying the source's specific point that the offer is not connected to this deal, which slightly impacts consistency with the article's nuance."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment regarding relevance. The summary includes the sponsorship deal as a standalone fact but completely omits the crucial context from the source text that the club president explicitly stated Chelsea's interest in Muto is NOT connected to this deal. By failing to include this distinction, the summary presents a misleading causal link between the two events, which is a significant flaw in relevance."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate: the summary is fluent and coherent but lacks relevance by omitting Muto's undecided status (a key point from the text) and fails to capture the article's specific nuance that the transfer offer is unrelated to the sponsorship deal, instead just stating the deal exists."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding relevance. The summary lists the sponsorship deal as a standalone fact but fails to include the crucial context from the source text that the club president explicitly stated Chelsea's interest in Muto is NOT connected to this deal. By omitting this distinction, the summary presents a misleading causal link between the two events, which is a significant flaw in relevance."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "No changes made. The strict judge's assessment is accurate: while the summary is fluent and coherent, it suffers from a significant relevance issue by omitting Muto's undecided status (a key narrative point) and failing to capture the crucial nuance that the transfer offer is unrelated to the sponsorship deal."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.0,
+      "fluency": 5.0,
+      "relevance": 3.0,
+      "overall_judge": 4.2
+    }
+  }
+}

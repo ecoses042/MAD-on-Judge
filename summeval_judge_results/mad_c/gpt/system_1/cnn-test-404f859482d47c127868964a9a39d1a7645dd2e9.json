@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-404f859482d47c127868964a9a39d1a7645dd2e9",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information and does not connect the points effectively."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the lawsuit outcome, the amount Stiviano was ordered to pay, and the context of Sterling's racist remarks, which are crucial to understanding the situation."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately presents Stiviano's position without mentioning the lawsuit filed by Shelly Sterling, which is a significant aspect of the story."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains fragmented sentences that disrupt the reading flow, making it less fluent."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear narrative about the accusations made by Donald Sterling and the response from Stiviano, maintaining a logical flow of information."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the claims made by both Donald Sterling and Stiviano without introducing any new or unrelated facts."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the lawsuit and the nature of the gifts, which are central to the article's main theme."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as missing articles and punctuation, which can hinder readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

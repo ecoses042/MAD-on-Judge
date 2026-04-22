@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-0f0789390d67698283cc87b2e046b5c5cd77edb7",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow and omits important contextual details, such as the guard's embarrassment and the reactions of the tourists."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention the significant aspect of the incident being recorded by a tourist, which adds to the story's impact."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not clarify that the guard was left red-faced, which is a key emotional detail from the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary has awkward phrasing, such as 'knocking his bearskin on the side of the box,' which could be more clearly articulated."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, detailing how the guard slipped and the consequences of that slip."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the main incident described in the article without introducing any new or unrelated facts."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key event of the guard slipping, which is the central point of the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains awkward phrasing, such as 'knocking his bearskin on the side of the box,' which could be more smoothly expressed."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 4,
+      "fluency": 3,
+      "relevance": 4,
+      "overall_judge": 3.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

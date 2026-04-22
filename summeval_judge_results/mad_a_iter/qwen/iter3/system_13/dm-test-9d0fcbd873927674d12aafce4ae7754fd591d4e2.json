@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-9d0fcbd873927674d12aafce4ae7754fd591d4e2",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from relevance issues by omitting the most significant news: that this is Ella Henderson's 'first brand collaboration' (her first endorsement). It also misses the context of her fame via The X Factor and the involvement of the MILES agency. While consistent with the text, it feels incomplete for a summary of the main event."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is well-structured, fluent, and strictly consistent with the source text. It captures the main announcement and key visual details accurately. It receives a slight deduction on relevance (from 5 to 4) because it omits other significant campaign details mentioned in the article, such as the specific hairstyles shown (wavy hair), the TV advertising launch, and the CEO's quote, though these are not hallucinations."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment regarding relevance. The summary omits the critical detail that this is Ella Henderson's 'first brand collaboration' or endorsement, which is the primary news hook of the article. It also misses the context of her X Factor fame and the agency involved. While the text provided in the summary is consistent with the source (no hallucinations), the omission of these key points makes the summary feel incomplete and less relevant than a score of 4 might suggest."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate. The summary is coherent, consistent, and fluent. It correctly identifies the main points but misses secondary details like the TV ad launch, specific wavy hairstyle description, and the CEO quote, which justifies a relevance score of 4 rather than 5."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I have raised the consistency score from 4 to 5 because the summary strictly adheres to the provided text without introducing any external facts or hallucinations; it only omits details like 'first collaboration' which is a relevance issue, not a consistency one. I have adjusted the overall judge score slightly down to 4.0 to reflect that while the summary is fluent and coherent, its low relevance (missing the primary news hook of 'first endorsement') significantly impacts the overall quality, making it less than a strong 4.2."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge. The summary is well-structured and fluent but omits significant details such as the TV advertising campaign launch, the specific partnership agency (MILES), and the CEO's quote regarding the endorsement being her first. These are key points in the source text that make a perfect relevance score unjustified."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.7
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-d75b043ebefc3098aea84d92bb8bec0f509b1563",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is coherent and consistent with the source text for the specific details it includes (the first paragraph of the article). However, it fails significantly on relevance and fluency. It truncates the summary after the third sentence, omitting all other key information such as the militant group's identity (Jaish al Adal), their claims of responsibility, historical context, Pakistan's response, and the broader geopolitical implications. Additionally, the inclusion of '-lrb- cnn -rrb-' is a formatting artifact that degrades fluency."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "rationale_for_score": "The summary is fluent, coherent, and strictly consistent with the source text (no hallucinations). However, it only covers the first paragraph of the article, omitting significant details such as the militant group's identity (Jaish al Adal), their claims, historical context, and Pakistan's response. Given the lenient rules, it is not penalized for missing information unless it constitutes a failure to cover key points, but since it misses half the story, a perfect score is withheld."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I lowered the fluency score from 3 to 2 because the inclusion of '-lrb- cnn -rrb-' is a significant formatting artifact that breaks readability and looks unprofessional, not just a minor issue. I significantly lowered the relevance score from 2 to 1 because the summary is critically incomplete; it truncates after the third sentence, omitting the identity of the militant group (Jaish al Adal), their claims of responsibility, historical context, and Pakistan's response, which are major key points of the article. The strict judge was correct in identifying these flaws."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "The lenient judge correctly identified that the summary is fluent, coherent, and consistent with the source text. However, regarding relevance, the lenient judge awarded a 3/5 noting the summary only covers the first paragraph. Upon re-evaluation, this assessment holds true: the summary completely omits the identity of the militant group (Jaish al Adal), their specific claims, historical context of previous attacks, and Pakistan's official response. Since these are significant portions of the article's content, the relevance score remains at 3/5. The overall score is adjusted slightly down from 4.5 to 4.0 to better reflect that while the summary is technically accurate for what it covers, it fails to capture the majority of the key information provided in the source text."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 1,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I raised the coherence score from 1 to 2 because the summary presents a logical flow within its truncated scope (Event -> Casualties -> Source/Quote). I maintained consistency at 5 as the text is factually accurate to the source. However, I kept fluency at 1 due to the severe formatting artifact '-lrb- cnn -rrb-' which breaks readability and violates standard English conventions. I also kept relevance at 1 because the summary is critically incomplete, omitting the perpetrator's identity, historical context, and international response, which are major key points of the article."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary is technically accurate and fluent but covers only the first paragraph of the article, omitting critical details such as the militant group's identity (Jaish al Adal), their claims, historical context of previous attacks, and Pakistan's official response. Therefore, the relevance score remains at 3/5, and the overall score is adjusted down to 4.0 to reflect this significant omission."
+      }
+    },
+    "final": {
+      "coherence": 3.5,
+      "consistency": 5.0,
+      "fluency": 3.0,
+      "relevance": 2.0,
+      "overall_judge": 3.2
+    }
+  }
+}

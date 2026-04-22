@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-8b59fa7715418c4bcc0d50e3caeb239129de453e",
+  "system_name": "system_8",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.8,
+        "rationale_for_score": "The summary lacks coherence and relevance, as it misattributes the term 'legend of the game' to Hart instead of Buffon, and fails to capture key details about their achievements and Hart's admiration for Buffon."
+      },
+      "strict": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 1.5,
+        "rationale_for_score": "The summary contains hallucinated facts, misattributes the label of 'legend' to Hart instead of Buffon, and fails to capture key details from the article."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 1,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The summary misattributes the term 'legend of the game' to Hart instead of Buffon, leading to a significant lack of coherence and relevance. It also fails to include key details about both players' achievements and Hart's admiration for Buffon, which affects consistency."
+      },
+      "lenient": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 1.5,
+        "adjustment_notes": "The summary misattributes the label of 'legend' to Hart instead of Buffon, which is a significant error. It also fails to include key details about Hart's admiration for Buffon and his own milestone of 50 caps, leading to a lack of coherence and relevance. The fluency score remains unchanged as the language used is still grammatically correct."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.5,
+        "adjustment_notes": "I adjusted the coherence score to reflect the misattribution of 'legend of the game' to Hart instead of Buffon, which significantly impacts the clarity of the summary. The consistency score remains low due to the omission of key details about both players. Relevance is also lowered as the summary fails to capture the main points of admiration and achievements."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 2,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.2,
+        "adjustment_notes": "I raised the coherence and consistency scores slightly because the summary does mention Hart's 50th cap, which is a relevant detail. However, it still misattributes the label of 'legend' to Hart instead of Buffon, which is a significant error. The relevance score was adjusted to reflect that while it includes some key points, it lacks depth and context. Fluency remains unchanged as the language is grammatically correct."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 2.0,
+      "fluency": 3.5,
+      "relevance": 2.0,
+      "overall_judge": 2.4
+    }
+  }
+}

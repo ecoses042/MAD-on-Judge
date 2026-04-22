@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-b5bc2ae78441e4ac08fb01823d5fc0f1627c3166",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from a significant relevance issue: it truncates the text after the third sentence, completely omitting the core news story regarding Kevin Pietersen's potential return to the England team following Paul Downton's dismissal. While the included sentences are consistent with the source, the failure to cover the main point (Pietersen's motivation and context) makes the summary incomplete."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and consistent with the source text. It captures the main points regarding Paul Downton's dismissal and Kevin Pietersen's upcoming team photo. However, it scores a 4 for relevance because it omits significant context provided in the article, such as the reason for Pietersen's potential return (Downton's controversial axing of him in 2014), his recent disastrous Ashes tour, and his specific goal to force his way back into the Test set-up. While these are details, a summary focusing solely on the photo shoot misses the 'why' behind the story."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. While the summary is grammatically perfect and coherent, it fails significantly on relevance by truncating the text after the third sentence. The core news story—Kevin Pietersen's potential return to the England team following Downton's dismissal—is completely omitted. The summary only covers the photo shoot event without explaining its significance or the context provided in the rest of the article."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary is well-structured and consistent with the text. However, it significantly underperforms on relevance by omitting the core narrative driver: Pietersen's motivation to return to the England team following Downton's dismissal and his desire to force his way back into the Test set-up after a disastrous Ashes tour. These are key points in the article that provide context to the photo shoot, making the summary feel incomplete despite its fluency."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the lenient judge's assessment that the summary is grammatically perfect and coherent, but it fails significantly on relevance by truncating the text after the third sentence. The core news story—Kevin Pietersen's potential return to the England team following Downton's dismissal—is completely omitted. The summary only covers the photo shoot event without explaining its significance or the context provided in the rest of the article."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I agree with the strict judge's assessment regarding relevance. While the summary is fluent and coherent, it fails to capture the central narrative of the article: Kevin Pietersen's motivation to return to the England team following Paul Downton's dismissal and his specific goal to force his way back into the Test set-up after a disastrous Ashes tour. The current summary treats the photo shoot as an isolated event rather than a strategic step in Pietersen's career, making it significantly less relevant than initially scored."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.5,
+      "fluency": 5.0,
+      "relevance": 3.0,
+      "overall_judge": 4.3
+    }
+  }
+}

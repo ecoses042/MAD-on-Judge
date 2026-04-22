@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-b5925c1a02fa9a8f6b1d5ad764c19a732deac0df",
+  "system_name": "system_9",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow and omits important contextual details, such as the dog's ownership and the crocodile's behavior."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to cover key points, such as the location details, the reaction of Tim Weston, and the significance of the crocodile's presence in the area."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary uses lowercase letters for the beginning of sentences, which is grammatically incorrect."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention that the dog belonged to the local bike shop owner, which is a relevant detail from the article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with Tim Weston witnessing the crocodile and concluding with the reactions from social media users."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary captures the key points of the article, including the incident involving the crocodile and the public's reaction, which are central to the story."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits important details, such as the context of the dog's ownership and the description of the crocodile's behavior, which are present in the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization and punctuation, making it less readable and fluent."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-9beaaf73e4517d5bf1bc284f386485d571da96cf",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary accurately reflects the key facts from the article (Priscilla Presley's role, the contest with NBC/Today show, the prize details) without hallucinations. It is well-grounded in the source text. Minor deductions for coherence and fluency are due to slightly repetitive phrasing ('winning duo' vs 'winning couple') and a lack of perfect sentence flow, but these are minor weaknesses rather than failures."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source text and covers key points (Priscilla as witness, contest collaboration, prize details). However, it suffers from poor fluency due to a run-on sentence structure where clauses are concatenated without proper punctuation or conjunctions (e.g., '...in las vegas . the winning duo...' and the long middle clause). Additionally, while relevant, it omits significant context provided in the source, such as the specific date of the wedding, the location details (Westgate Hotel), and Priscilla's strict condition regarding impersonators, which are central to the article's narrative."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 4.2,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary accurately captures the main points (Priscilla Presley's role, the contest origin, and prizes) without hallucinations. The minor issues noted regarding repetitive phrasing ('winning duo' vs 'winning couple') and slightly choppy sentence flow are valid grounds for a score of 4 rather than 5, but do not warrant a harsher penalty."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is factually consistent and covers the main points, but it suffers from a significant fluency issue: it is essentially one long run-on sentence lacking proper punctuation or conjunctions between clauses (e.g., '...in las vegas . the winning duo...' and the subsequent clause). Additionally, it misses key context like the specific date and Priscilla's condition about impersonators. Therefore, I maintain the strict judge's scores without lowering them."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 4.2,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary accurately captures the main points (Priscilla Presley's role, the contest origin, and prizes) without hallucinations. The minor issues noted regarding repetitive phrasing ('winning duo' vs 'winning couple') and slightly choppy sentence flow are valid grounds for a score of 4 rather than 5, but do not warrant a harsher penalty."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding consistency and relevance, but I must lower the fluency score further. The summary is not just a 'run-on sentence'; it is grammatically broken because it lacks necessary conjunctions or punctuation to separate independent clauses (e.g., '...in las vegas . the winning duo...' creates a fragment/run-on structure). It reads like a string of keywords rather than fluent English. Therefore, I will not raise the fluency score and will keep it low to reflect this significant readability issue."
+      }
+    },
+    "final": {
+      "coherence": 3.5,
+      "consistency": 5.0,
+      "fluency": 3.0,
+      "relevance": 4.0,
+      "overall_judge": 3.6
+    }
+  }
+}

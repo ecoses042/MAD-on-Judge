@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-5139ccfabee55ddb83e7937f5802c0a67aee8975",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "rationale_for_score": "The summary is coherent, consistent with the source text, and fluent. However, it only covers the first paragraph of the article, omitting significant context such as the conflicting reports on the transponder status, the diplomatic response, and the historical context of similar incidents. Given the lenient rules, it avoids hallucinations but lacks full relevance to the complete source."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is consistent with the source text and maintains a logical flow for the first half. However, it fails significantly on relevance by cutting off abruptly after the third sentence, omitting the crucial details regarding the conflicting claims (transponder status), the diplomatic response, and the historical context provided in the article. Additionally, the formatting includes unnecessary brackets around 'cnn', which slightly impacts fluency."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is truncated and fails to cover key points such as the conflicting claims about the transponder, the diplomatic response, or historical context, making it incomplete despite being factually consistent with the provided text."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "The lenient judge correctly identified that the summary only covers the first paragraph and omits significant context (transponder dispute, diplomatic response, historical incidents). I agree with the low relevance score of 3 because the summary is incomplete relative to the full article provided. However, I slightly lower the overall score from 4.5 to 4.0 to reflect that while the excerpt itself is high quality, its failure to summarize the majority of the provided text significantly impacts its utility as a summary of the whole article."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No changes to scores. The lenient judge correctly identified that the summary is truncated and misses significant key points (conflicting claims about the transponder, diplomatic response, historical context). While factually consistent with the source text, its low relevance score reflects this incompleteness, which is a valid critique."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I agree with the strict judge's assessment that the summary is incomplete relative to the full article text provided. While the excerpt itself is well-written and factually consistent (scores of 5), it only covers the first paragraph, omitting key details such as the transponder dispute, the diplomatic response, and historical context of similar incidents. Therefore, I maintain the relevance score at 3 and lower the overall score from 4.5 to 4.0 to reflect this significant omission."
+      }
+    },
+    "final": {
+      "coherence": 4.5,
+      "consistency": 5.0,
+      "fluency": 4.0,
+      "relevance": 2.5,
+      "overall_judge": 3.8
+    }
+  }
+}

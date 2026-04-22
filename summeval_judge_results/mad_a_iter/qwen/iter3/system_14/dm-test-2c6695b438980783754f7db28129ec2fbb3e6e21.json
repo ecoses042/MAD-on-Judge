@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-2c6695b438980783754f7db28129ec2fbb3e6e21",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary fails the consistency criterion severely because it attributes the charges (aggravated indecent assault, etc.) to 'she' instead of Kevin Rebbie. The source text clearly states that Rebbie faces these charges. This is a major factual error. Additionally, the relevance is low as the summary omits critical details about the specific nature of the abuse (molesting her while sleeping starting at age 9), the number of videos found, and the specific content of the footage, focusing instead on the already-stated arrest context."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 2,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary contains a major hallucination in the 'consistency' criterion: it incorrectly states that 'she faces several charges,' whereas the source text clearly indicates that Kevin Rebbie (the man) is the one facing the charges. This is a severe factual error relative to the source. However, under lenient rules, since the direction of the summary aligns with the article's negative tone regarding the crime and no other clear hallucinations exist, it avoids a score of 1."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a critical factual error (attributing charges to 'she' instead of Kevin Rebbie), which violates consistency. It also omits significant details regarding the specific nature of the abuse and the evidence found, lowering relevance. The structure is simple but logical enough for coherence 3, and grammar is acceptable for fluency 4."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "The lenient judge correctly identified the critical consistency error where the summary states 'she faces several charges' instead of 'he faces several charges.' This is a severe hallucination regarding the subject of the legal action. I have maintained the low consistency score (2) because this factually contradicts the source text. The coherence and relevance scores were slightly lowered from the lenient judge's assessment to reflect that while the summary covers the main points, the structural error disrupts the logical flow and reduces its overall utility."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is correct. The summary contains a critical factual error where it states 'she faces several charges,' but the subject of the charges is Kevin Rebbie (the man), not the victim girl. This violates consistency. Additionally, the summary omits key details about the specific nature of the abuse (molesting while sleeping) and the evidence found (41 videos, 34 showing showering), which lowers relevance. The structure is simple but logical enough for coherence 3, and grammar is acceptable for fluency 4."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The critical error 'she faces several charges' instead of 'he faces several charges' is a severe consistency failure (hallucination) that must result in a low score. This factual contradiction also disrupts the logical flow, justifying the lowered coherence score. Fluency remains high as the grammar is correct aside from the pronoun error. Relevance is maintained as the key points are covered."
+      }
+    },
+    "final": {
+      "coherence": 3.0,
+      "consistency": 2.0,
+      "fluency": 4.5,
+      "relevance": 2.5,
+      "overall_judge": 2.5
+    }
+  }
+}

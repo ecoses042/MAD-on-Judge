@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-130ff8f2dfb6ab67861d5924b0ff5acd63c7d8ce",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source text and maintains a logical flow. However, it fails to include the concluding information regarding Ze Maria's replacement by Serbian Vanya Radinovic, which is a significant detail in the original article. This omission reduces its relevance as a complete summary of the provided text."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is excellent in coherence, consistency, and fluency, accurately reflecting the source text without hallucinations. It captures all key events (firing, reinstatement, re-firing) and details. The only minor deduction for relevance is that it omits the specific consequence of the latest firing (the appointment of Vanya Radinovic), but given the lenient rules and the high quality of the rest of the summary, a score of 4.5 is appropriate."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is factually consistent and fluent but fails to cover the concluding point about Ze Maria being replaced by Vanya Radinovic, which is a key piece of information in the source text. Therefore, the relevance score remains low (3) as the summary is incomplete."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is well-structured, factually accurate based on the source text, and fluent. The only minor deduction for relevance is justified as the omission of the replacement coach (Vanya Radinovic) is a trivial detail compared to the main narrative of the firing cycle."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "No changes made. The lenient judge correctly identified that the summary omits the final key detail regarding Ze Maria's replacement by Vanya Radinovic, which significantly impacts the relevance score despite the text being factually consistent and fluent."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The strict judge's assessment is accurate; the summary effectively captures the main narrative of the firing cycle while omitting the replacement coach, which is a reasonable trade-off for brevity."
+      }
+    },
+    "final": {
+      "coherence": 4.5,
+      "consistency": 5.0,
+      "fluency": 4.5,
+      "relevance": 3.5,
+      "overall_judge": 4.4
+    }
+  }
+}

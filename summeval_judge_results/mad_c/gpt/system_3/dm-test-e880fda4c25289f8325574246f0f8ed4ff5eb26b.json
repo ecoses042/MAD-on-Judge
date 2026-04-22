@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-e880fda4c25289f8325574246f0f8ed4ff5eb26b",
+  "system_name": "system_3",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, as it only mentions two features of the house and the auction date without connecting them or providing context."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to cover key points such as the house's original features, its condition, and the price range, which are crucial for understanding its significance."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'hoe house' appears to be a typographical error and disrupts the fluency of the text."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the guide price of the property, which is an important detail from the source."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear description of the wood-panelled hall and stained-glass windows, maintaining a logical flow of information."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "It highlights key features of the house, such as the stained-glass windows and the auction date, which are important details from the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits several significant details about the house's features, such as the original bathroom and kitchen, which are mentioned in the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains a typographical error ('hoe house' instead of 'the house'), which affects its readability."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary is too brief and does not cover enough of the key points from the article, missing out on the unique aspects of the property."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

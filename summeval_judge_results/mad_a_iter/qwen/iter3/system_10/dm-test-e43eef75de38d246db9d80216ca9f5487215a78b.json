@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-e43eef75de38d246db9d80216ca9f5487215a78b",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from severe fluency issues due to the inclusion of raw OCR artifacts ('-lrb-', '-rrb-') and a disjointed structure where a direct quote is pasted without context or attribution. While it avoids major hallucinations (consistency is acceptable as the facts are in the text), the poor readability significantly impacts the overall quality."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary fails the consistency criterion severely because it includes the phrase 'he never says anything else', which is a direct quote from Jose Mourinho in the source text but is attributed to Filipe Luis in the summary without context or attribution, creating a hallucinated fact about what Luis said. Additionally, the summary repeats the first sentence of the article and then appends a fragment that looks like a caption ('-lrb- right -rrb-') rather than integrating it into a coherent narrative. The flow is disjointed, and the inclusion of irrelevant caption text as part of the spoken content makes it factually inconsistent with the source."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 3,
+        "fluency": 1,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The lenient judge was too generous on consistency (4) and coherence (3). The inclusion of raw OCR artifacts ('-lrb-', '-rrb-') inside the text makes it technically inconsistent with standard English writing norms and introduces hallucinated formatting not present in the source's intended meaning. Furthermore, pasting a direct quote ('He never says anything else.') without attribution or context is a severe fluency and coherence failure, making the summary disjointed and unreadable. The relevance score should also be lowered because the summary fails to synthesize the information, instead just repeating the headline and an isolated sentence fragment."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a severe consistency error by attributing Mourinho's quote ('He never says anything else') to Filipe Luis without attribution or context, which creates a hallucinated fact. Additionally, the inclusion of the caption text '-lrb- right -rrb-' as part of the narrative flow is disjointed and unprofessional. The summary repeats itself and fails to integrate the source material logically."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 3,
+        "fluency": 1,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "Agreeing with the strict judge's assessment. The inclusion of raw OCR artifacts ('-lrb-', '-rrb-') is a significant flaw that violates consistency and fluency standards. Additionally, pasting an unattributed quote fragment ('He never says anything else.') without context creates a disjointed narrative, justifying the low coherence and fluency scores. The summary fails to synthesize the article's content, merely repeating headlines and fragments, which warrants the low relevance score."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary contains a severe consistency error by including the phrase 'He never says anything else' without attribution; in the source text, this is a direct quote from Filipe Luis about Jose Mourinho, but the summary presents it as a standalone fact or misattributes the context entirely. Additionally, the inclusion of caption artifacts like '-lrb- right -rrb-' breaks coherence and fluency. The repetition of the main point without adding value further reduces relevance and coherence."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 2.0,
+      "fluency": 2.0,
+      "relevance": 2.0,
+      "overall_judge": 2.0
+    }
+  }
+}

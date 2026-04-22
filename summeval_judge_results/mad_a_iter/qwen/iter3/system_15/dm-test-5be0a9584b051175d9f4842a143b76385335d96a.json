@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-5be0a9584b051175d9f4842a143b76385335d96a",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from a critical consistency flaw: it states that Manchester City are 'Premier League title holders,' whereas the source text explicitly identifies them as 'Premier League title holders' only in the context of giving incentives to stay within financial fairplay rules, but the surrounding text (mentioning Chelsea as joint-top and the battle for top four) implies they are currently fighting for a spot, not necessarily holding the title at the time of writing. More importantly, the summary omits the specific condition regarding 'financial fairplay requirements' which is central to why these bonuses exist, making the relevance incomplete. The fluency is slightly affected by the lack of capitalization and punctuation in the provided text, though the content itself is readable."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is consistent with the source text and covers key points like the bonus loss, specific players mentioned, and the current league standing. However, it suffers from fluency issues due to a sentence fragment ('give star players like...') that lacks a verb or object completion, making it grammatically incomplete. Additionally, it omits the significant detail about the total £12 million at stake, which is a key point in the source."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a significant factual error (calling City 'Premier League title holders' when the text implies they are fighting for their spot and mentions Chelsea as joint-top), which violates consistency. Additionally, it omits the crucial context of 'financial fairplay requirements,' making the relevance low. The fluency score is maintained at 4 because while the lack of capitalization/punctuation is poor, the sentence structure itself is readable."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate: the summary contains a grammatical error (sentence fragment) affecting fluency and omits the specific detail about the total £12m stake, affecting relevance. The scores reflect these issues appropriately."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding consistency (the 'title holders' error) and relevance (missing financial fairplay context). The fluency score remains at 4 because, despite the lack of capitalization and punctuation which is poor style, the sentence structure allows for readability. No scores were raised as the errors identified are significant enough to warrant the lower strict scores."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "No changes made. The strict judge's assessment is accurate: the summary contains a grammatical error (sentence fragment) affecting fluency and omits the specific detail about the total £12m stake, affecting relevance. The scores reflect these issues appropriately."
+      }
+    },
+    "final": {
+      "coherence": 3.5,
+      "consistency": 3.5,
+      "fluency": 3.5,
+      "relevance": 3.5,
+      "overall_judge": 3.5
+    }
+  }
+}

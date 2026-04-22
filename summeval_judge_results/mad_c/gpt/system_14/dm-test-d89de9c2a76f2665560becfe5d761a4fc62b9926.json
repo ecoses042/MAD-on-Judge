@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-d89de9c2a76f2665560becfe5d761a4fc62b9926",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, making it difficult to understand the context of the match."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary incorrectly states that Paul McGuinness and Marcus Wood were in the first team, which is not supported by the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention key details such as the significance of the match, the performance of other players, and the overall context of the 'mini-derby'."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as the awkward phrasing 'for a match' which does not convey a complete thought."
+        }
+      ],
+      "provisional_score": 1
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear focus on Callum Gribbin's role as the matchwinner and the victory of Manchester United, which aligns with the main events of the article."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the outcome of the match and the involvement of Paul McGuinness, without introducing any new or misleading information."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary highlights the key points of the match, specifically Gribbin's goal and the context of the 'mini derby', which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and lacks proper sentence structure, making it less readable."
+        },
+        {
+          "criterion": "coherence",
+          "reason": "The mention of 'Paul McGuinness and Marcus Wood were in the first team' is unclear and does not logically connect to the rest of the summary."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 1,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.0,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

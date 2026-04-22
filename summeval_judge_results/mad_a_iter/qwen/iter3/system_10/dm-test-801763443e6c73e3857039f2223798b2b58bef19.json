@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-801763443e6c73e3857039f2223798b2b58bef19",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is excellent in coherence, consistency, and fluency, accurately reflecting the source text without hallucinations or grammatical errors. It captures the main points regarding Van der Wiel's denial of leaving, his relationship with Laurent Blanc, and his happiness at PSG. The score for relevance is slightly reduced (4) because the summary omits the secondary information about Dani Alves being linked to a move to PSG, which was present in the source text, though this omission does not constitute a major flaw given the lenient rules."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 5,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is coherent and relevant, covering the main points of the article. However, it fails the consistency criterion because it omits significant information present in the source text (specifically the details about Dani Alves being linked with PSG and the potential sale of Van der Wiel), effectively truncating the story rather than summarizing it fully. Additionally, the fluency is slightly reduced due to the lack of capitalization for proper nouns (e.g., 'gregory van der wiel', 'paris saint-germain') and inconsistent punctuation around quotes."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is well-structured, factually accurate based on the source text, and fluent. The slight deduction in relevance (4/5) is justified because the summary omits the information regarding Dani Alves being linked to PSG, which was a distinct point in the source article. While not a critical error, it represents a minor omission of secondary information."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 5,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is coherent and relevant but lacks consistency because it omits the significant context regarding Dani Alves and the potential sale of Van der Wiel mentioned in the source text. Additionally, the fluency score is lowered due to the lack of capitalization for proper nouns (e.g., 'gregory van der wiel') and inconsistent punctuation around quotes, which makes the text less professional."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary effectively covers the main narrative regarding Van der Wiel's denial of leaving and his relationship with the manager. The deduction in relevance is justified because the source text explicitly mentions the link between PSG and Dani Alves as a potential factor affecting Van der Wiel's future, which is completely absent from the summary."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 5,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding consistency and fluency. The summary omits the significant context about Dani Alves being linked to PSG and the potential sale of Van der Wiel, which is a key point in the source text (consistency issue). Additionally, the lack of capitalization for proper nouns like 'gregory van der wiel' and 'paris saint-germain', along with inconsistent punctuation around quotes, negatively impacts fluency. The scores remain unchanged."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.5,
+      "fluency": 4.0,
+      "relevance": 4.5,
+      "overall_judge": 4.5
+    }
+  }
+}

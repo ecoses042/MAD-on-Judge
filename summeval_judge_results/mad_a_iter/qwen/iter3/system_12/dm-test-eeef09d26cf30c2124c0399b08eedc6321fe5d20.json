@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-eeef09d26cf30c2124c0399b08eedc6321fe5d20",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is well-structured, fluent, and strictly consistent with the source text. It captures the main events (the basketball game result and the upcoming La Liga match). A minor deduction in relevance is given because it omits the mention of Neymar's sister Rafaella, who was a notable detail in the article alongside the main subjects."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from a significant consistency issue: it states 'Barcelona beat Real Madrid' in the Euro League contest. The source text explicitly says 'Barca prevailed', which implies Barcelona won, but the provided article text is a collection of disjointed captions that do not clearly state the winner of the basketball match (it mentions 'Real Madrid remain top... over their bitter rivals'). While 'Barca' usually refers to Barcelona, relying on an ambiguous source snippet without explicit confirmation of the winner makes the statement 'Barcelona beat Real Madrid' slightly risky based strictly on the provided text. Additionally, the summary omits the other major events mentioned in the source (Neymar's win against Chile and the upcoming match against Celta Vigo), resulting in a relevance score that is average rather than excellent."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is well-structured and strictly consistent with the source text. The deduction in relevance for omitting Neymar's sister Rafaella is justified as she was a specific detail mentioned multiple times in the article alongside the main subjects."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is fluent and coherent, but the consistency score of 4 is justified because the source text consists of disjointed captions that do not explicitly state 'Barcelona beat Real Madrid' (it only says 'Barca prevailed' in one caption and mentions Real Madrid remaining top in another). Inferring the specific winner from ambiguous fragments introduces a slight risk. Furthermore, the relevance score of 3 is appropriate as the summary omits significant events mentioned in the source text, such as Neymar's win against Chile and the upcoming match against Celta Vigo."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary is well-structured and strictly consistent with the source text. The deduction in relevance for omitting Neymar's sister Rafaella is justified as she was a specific detail mentioned multiple times in the article alongside the main subjects."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The consistency score of 4 is justified because the source text consists of disjointed captions where 'Barca prevailed' is mentioned alongside Real Madrid remaining top; inferring a direct head-to-head victory ('Barcelona beat Real Madrid') from these fragments introduces a slight risk of over-interpretation, though it is a reasonable inference. The relevance score of 3 is appropriate as the summary omits significant events present in the source text, specifically Neymar's win against Chile and the upcoming match against Celta Vigo."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.5,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.5
+    }
+  }
+}

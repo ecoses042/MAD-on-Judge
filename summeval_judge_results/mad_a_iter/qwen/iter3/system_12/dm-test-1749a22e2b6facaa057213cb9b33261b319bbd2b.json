@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-1749a22e2b6facaa057213cb9b33261b319bbd2b",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from a significant relevance flaw: it omits the core argument of the article (Carragher's specific support for Rodgers despite the poor season). It also includes a minor consistency issue by stating 'Liverpool are seven points behind...' as a definitive fact, whereas the source text says they 'look set to miss out,' implying a projection rather than a confirmed status at the time of writing. Additionally, it ignores the substantial portion of the text regarding Carragher's Beacon Award and community work."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and consistent with the source text. It captures the main points regarding Carragher's support for Rodgers and the context of Liverpool's season. It receives a 4 instead of 5 on relevance because it omits significant details present in the article, such as Carragher's specific reasons (players not bedded in), his comments on squad signings, and the information about Carragher receiving the Beacon Award."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "The strict judge's assessment is accurate. The summary fails the relevance criterion significantly by omitting Carragher's specific endorsement of Rodgers (the core argument) and ignoring the substantial context regarding his Beacon Award/community work. The consistency issue regarding the 'seven points behind' statistic is valid as the source text frames it as a projection ('look set to miss out') rather than a confirmed fact at the time of writing. Therefore, no leniency is applied; the scores remain unchanged."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate. The summary is well-structured (coherence), contains no hallucinations (consistency), and is grammatically correct (fluency). It correctly identifies the main topic but misses significant secondary details like Carragher's specific reasons for his support, comments on squad signings, and his Beacon Award ceremony, justifying a relevance score of 4 rather than 5."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate: the summary fails relevance by omitting the core argument (Carragher's specific endorsement) and ignoring significant context (Beacon Award). The consistency score of 4 is justified because the source text frames the league position as a projection ('look set to miss out'), making the definitive statement 'Liverpool are seven points behind' technically inconsistent with the article's nuance, despite the statistic being present."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The strict judge's assessment is accurate. While the summary is well-structured and fluent, it omits significant context regarding Carragher's Beacon Award ceremony and his specific reasoning for supporting Rodgers (e.g., squad integration issues), which justifies a relevance score of 4 rather than 5."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.5,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.5
+    }
+  }
+}

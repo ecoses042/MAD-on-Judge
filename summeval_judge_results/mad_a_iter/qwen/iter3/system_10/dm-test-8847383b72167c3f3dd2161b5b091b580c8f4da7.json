@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-8847383b72167c3f3dd2161b5b091b580c8f4da7",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from a significant relevance flaw: it truncates the text abruptly after the first paragraph's worth of information, omitting key details such as the dimensions of the landmass, the lack of tremors/sounds reported by locals, the distinction from the Kathmandu earthquake, and the presence of marine organisms. While the included facts are consistent with the source, the summary fails to cover the 'most important information' comprehensively."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is excellent in coherence, consistency, and fluency, accurately reflecting the source text without hallucinations. It captures the main event (land emergence), location, dimensions, and geological cause. The only minor deduction for relevance is that it omits the human element (residents' surprise, lack of tremors) and the official clarification regarding the earthquake, which were significant parts of the original article."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is fluent and coherent but fails significantly on relevance by truncating the text after the first paragraph. It omits crucial details regarding the dimensions of the landmass, the residents' lack of sensation (no tremors/sounds), the distinction from the Kathmandu earthquake, and the presence of marine organisms. As a lenient evaluator, I must acknowledge that while the included facts are consistent, the summary is incomplete to the point where it misses key points required for a comprehensive overview."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The lenient judge's assessment is accurate. The summary perfectly captures the core event, location, dimensions, and geological cause without hallucinations (Consistency/Fluency). It is well-structured (Coherence). The only valid deduction for Relevance is that it omits the human reaction (surprise, lack of tremors) and the specific clarification regarding the unrelated Kathmandu earthquake mentioned in the source text. Since these are significant details from the article, a score of 4 is appropriate rather than higher."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary is fluent and coherent but fails significantly on relevance by truncating the text after the first paragraph. It omits crucial details regarding the dimensions of the landmass, the residents' lack of sensation (no tremors/sounds), the distinction from the Kathmandu earthquake, and the presence of marine organisms. As a lenient evaluator, I must acknowledge that while the included facts are consistent, the summary is incomplete to the point where it misses key points required for a comprehensive overview."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary is well-structured and fluent, accurately reflecting the core geological event without hallucinations. However, it misses significant contextual details from the source text: the residents' surprise/lack of tremors and the specific clarification that this event is unrelated to the Kathmandu earthquake. These omissions justify a relevance score of 4 rather than higher."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.5,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.5
+    }
+  }
+}

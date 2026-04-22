@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-6372eff07fd3d6f578f90d6115e01747edccc095",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is factually consistent with the source text but suffers from severe relevance issues by omitting key context (e.g., the distinction between power generation and weapons, the specific mechanism of boosting solar panels, and the comparison to other laser projects). Additionally, the fluency is poor due to a lack of capitalization and punctuation, making it read like raw notes rather than a coherent summary."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source text and covers the main points regarding Dr. Quarterman's proposal. However, it receives lower scores for coherence and fluency because the sentences are fragmented and lack proper grammatical structure (e.g., missing articles like 'the', run-on clauses), making it read more like rough notes than a fluent summary. It is leniently scored on relevance as it captures the core idea without hallucinations."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I lowered the coherence score because the summary is a disjointed list of sentences rather than a structured paragraph. I significantly lowered the fluency score due to the complete lack of capitalization and punctuation, which makes it unreadable as standard English. The relevance score was dropped from 2 to 1 because the strict judge's point about omitting key context (weapons debate, specific mechanism details, comparison to other projects) is valid; the summary covers only a tiny fraction of the article's content. Consistency remains 5 as no facts were invented."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "The lenient judge was too generous on fluency and coherence. The summary consists of four fragmented sentences lacking subject-verb agreement (e.g., 'satellites will orbit' vs 'covered in mirrors'), missing necessary articles ('the earth', 'sun beams'), and lacks connecting words to form a logical paragraph. It reads like rough notes rather than a coherent text. While the content is consistent and relevant, the poor grammatical structure significantly impacts readability and flow, warranting lower scores for fluency and coherence."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 1,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary is a disjointed list of sentences lacking capitalization and punctuation (e.g., 'dr adrian quarterman'), resulting in a fluency score of 1. It fails to present a logical flow or structured paragraph, warranting a coherence score of 2. While it accurately reflects the specific details mentioned in the text without inventing facts (consistency 5), it omits significant context regarding the debate on weaponization and comparisons to other projects, leading to a relevance score of 1."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 1,
+        "relevance": 4,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is grammatically broken (e.g., 'satellites will orbit... covered in mirrors' lacks a conjunction or relative clause), lacks articles ('the earth', 'sun beams'), and reads like fragmented notes rather than a coherent paragraph. While the content is consistent and relevant, the severe fluency issues make it difficult to read, warranting a score of 1 for fluency and 2 for coherence."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 5.0,
+      "fluency": 1.0,
+      "relevance": 2.5,
+      "overall_judge": 2.0
+    }
+  }
+}

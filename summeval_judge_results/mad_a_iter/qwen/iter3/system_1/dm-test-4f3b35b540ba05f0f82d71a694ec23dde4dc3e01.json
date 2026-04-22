@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-4f3b35b540ba05f0f82d71a694ec23dde4dc3e01",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is fluent and mostly consistent with the text, but it fails to capture the critical context that the fire was an attempted carjacking involving a gun, which is a major part of the source story. By omitting this key detail, the relevance drops significantly."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent and coherent with the source text. However, it suffers from low relevance because it only covers the first paragraph of the article, omitting significant details such as the carjacking attempt, the driver's grandmother's account, the specific damage to the front end, and the ongoing investigation by the fire department."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I lowered the relevance score from 4 to 3 to align with the strict judge's critique. The summary completely omits the critical context that the incident was an attempted carjacking involving a gun, which is the primary motivation for the arson described in the source text. While the summary is fluent and consistent, this omission makes it significantly incomplete regarding the 'why' of the event."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate: the summary is factually consistent and coherent but suffers from low relevance because it truncates the narrative after the initial act of arson, omitting key context provided in the article such as the carjacking attempt, the grandmother's account, the specific damage details, and the ongoing investigation."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I accepted the lenient judge's adjustment to the relevance score. The summary accurately describes the physical act of arson but completely omits the critical context provided in the source text: that the incident was an attempted carjacking involving a gun. This omission renders the summary significantly incomplete regarding the 'why' of the event, which is a key point in the article."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "No changes made. The strict judge's criticism regarding low relevance is valid; the summary acts as a truncated excerpt rather than a complete summary by omitting the carjacking motive, the grandmother's account, damage specifics, and the investigation status."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 5.0,
+      "fluency": 4.5,
+      "relevance": 3.0,
+      "overall_judge": 4.1
+    }
+  }
+}

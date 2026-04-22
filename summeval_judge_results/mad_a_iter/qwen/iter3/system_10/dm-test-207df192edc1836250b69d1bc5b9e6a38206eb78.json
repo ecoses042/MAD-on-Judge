@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-207df192edc1836250b69d1bc5b9e6a38206eb78",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is coherent and fluent but suffers from severe relevance issues as it only covers the first three sentences of the source text, omitting key data points (sample size, specific statistics on obesity rates), the study's limitations ('didn't prove'), the proposed mechanism (gut bugs), and the broader context regarding superbugs. Additionally, it retains a grammatical error from the source text ('researchers said say') which impacts fluency."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is coherent and consistent with the source text, accurately reflecting the main findings without hallucinations. However, it only covers the first paragraph of the article, omitting significant details such as the specific study demographics (Finnish researchers, 12,000 children), the gender-specific results (boys more prone), the proposed biological mechanism (gut bugs), and the broader context regarding antibiotic resistance and superbugs. Due to this truncation, it misses key points from the full source."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is severely truncated, covering only the introduction and missing critical data (sample size, specific obesity rates), the study's limitations, the proposed biological mechanism, and the broader context of antibiotic resistance. Furthermore, it retains the grammatical error 'researchers said say' from the source text, which prevents a higher fluency score."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate: the summary is grammatically sound and internally consistent but suffers from severe truncation (relevance issue) by omitting the study's specific demographics, key statistical findings, biological mechanisms, and broader context regarding antibiotic resistance found in the source text."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "Lowered coherence and relevance scores significantly. While the summary is grammatically correct (fluency) and factually consistent with the text provided so far (consistency), it is severely truncated. It covers only the first paragraph of the source text, omitting critical details such as the study's sample size (12,000 children), specific statistics (1 in 5 boys, 1 in 10 girls), biological mechanisms (gut bugs), and broader context (antibiotic resistance/superbugs). This makes it a poor summary of the *entire* article."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment that the summary is severely truncated and lacks critical data (sample size, specific rates), mechanisms, and context. However, I disagree with giving a high coherence score (5) because the summary fails to present a logical flow of information; it stops abruptly after the introduction without synthesizing the study's findings or conclusions. The relevance score should be lower than 4 because the summary misses the vast majority of the article's key points (specific statistics, biological explanation, and warnings about antibiotic resistance). I retained the fluency score of 3 to acknowledge the grammatical error 'researchers said say' which is present in both the source text and the summary."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 4.5,
+      "fluency": 3.5,
+      "relevance": 1.5,
+      "overall_judge": 2.5
+    }
+  }
+}

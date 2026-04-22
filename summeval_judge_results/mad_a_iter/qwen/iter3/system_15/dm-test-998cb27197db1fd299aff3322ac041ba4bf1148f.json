@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-998cb27197db1fd299aff3322ac041ba4bf1148f",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 3,
+        "fluency": 1,
+        "relevance": 4,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary fails significantly on fluency due to severe grammatical errors (e.g., 'compling' instead of 'compiling', missing articles like 'the match'). It also lacks coherence as it is a disjointed list of sentences without logical flow or proper punctuation. While the content is consistent with the source text and covers relevant points, the poor language quality makes it unreadable."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from severe fluency issues due to missing spaces between words (e.g., 'compling', 'match . saturday'), making it difficult to read. While the content is consistent with the source and covers relevant points, the grammatical errors significantly impact quality. The direction aligns with the article."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 3,
+        "fluency": 1,
+        "relevance": 4,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains severe grammatical errors ('compling' instead of 'compiling') and lacks basic punctuation and capitalization, making it unreadable (Fluency: 1). It is also a disjointed list of sentences rather than a coherent paragraph (Coherence: 2). While the content is consistent with the source text and covers relevant points, the poor language quality significantly impacts its overall utility."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I have lowered the overall score slightly from the lenient judge's 3.0 to 2.5. While I agree with the lenient judge that the content is consistent and relevant, the fluency issues are severe enough to significantly degrade the quality of the summary. The missing spaces between words (e.g., 'compling', 'match . saturday') make the text nearly illegible in parts, which justifies a low fluency score. Consequently, the overall rating must reflect this major readability failure."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I have lowered the overall score from 3.0 to 2.5. While I initially agreed with the lenient assessment regarding content consistency and relevance, the strict judge's critique of fluency is valid and severe. The summary contains multiple instances of missing spaces between words (e.g., 'compling', 'match . saturday') which renders parts of the text nearly illegible. This readability failure significantly degrades the quality, justifying a lower overall score."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 3,
+        "fluency": 1,
+        "relevance": 4,
+        "overall_judge": 2.0,
+        "adjustment_notes": "No changes made. The lenient judge's points regarding the severe grammatical errors ('compling'), lack of punctuation/capitalization, and disjointed structure are factually supported by the summary text provided. These issues directly justify the low Fluency (1) and Coherence (2) scores. Consistency is lowered to 3 because the summary includes a fragment ('yorkshire side firmly entrenched...') that lacks a clear subject-verb connection in this specific context, making it slightly awkward compared to the source text's flow, though not hallucinating facts."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 3.5,
+      "fluency": 1.5,
+      "relevance": 3.5,
+      "overall_judge": 2.5
+    }
+  }
+}

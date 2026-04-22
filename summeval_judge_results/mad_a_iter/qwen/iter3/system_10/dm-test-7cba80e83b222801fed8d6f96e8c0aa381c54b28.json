@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-7cba80e83b222801fed8d6f96e8c0aa381c54b28",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is highly coherent and relevant, capturing the three main points of the article (marriage, current outing, relationship history) without hallucinations. It is consistent with the source text. The score is slightly reduced from 5 due to minor fluency issues: the first sentence lacks a subject ('tied the knot' instead of 'Lindegaard tied the knot'), and the capitalization is inconsistent (lowercase start). However, under lenient rules, these are minor errors that do not constitute a major flaw."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 3,
+        "overall_judge": 3.8,
+        "rationale_for_score": "The summary is consistent with the source text and covers key facts (marriage, location, dating history). However, it suffers from poor fluency due to a lack of capitalization for proper nouns and sentence starters, making it look unpolished. Regarding relevance, while it captures the main points about the couple, it completely ignores the significant portion of the source text dedicated to Lindegaard's professional struggles at Manchester United (third-choice status, low appearances), which is central to the article's narrative contrast ('failure on the pitch' vs 'winning away from it'). This omission lowers its relevance score."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary effectively captures the three main points (marriage, current outing, relationship history) without hallucinations. The minor fluency issues noted (missing subject in the first sentence and inconsistent capitalization) are indeed minor errors that do not significantly impact readability or constitute a major flaw under the given criteria."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 3,
+        "overall_judge": 3.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is factually consistent but suffers from significant fluency issues due to a complete lack of capitalization (e.g., 'lindegaard', 'swedish', 'mauritius'), which makes it look unpolished and amateurish. Furthermore, the relevance score is correctly lowered because the summary ignores the central theme of the article: the contrast between Lindegaard's professional struggles at Manchester United and his personal happiness. The strict judge was not too harsh; the scores reflect the actual quality of the provided text."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary accurately captures the key points (marriage, current outing, relationship history) without hallucinations. The minor fluency issues (missing subject in the first sentence and inconsistent capitalization) are indeed minor errors that do not significantly impact readability or constitute a major flaw."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 3,
+        "overall_judge": 3.8,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary is factually consistent with the source text and maintains a logical flow of information regarding the couple's relationship timeline. However, the fluency score remains low due to the complete lack of capitalization for proper nouns (names, places) and sentence starters, which makes the text appear unpolished. The relevance score is appropriately lowered because the summary focuses entirely on personal details while omitting the article's central theme: the contrast between Lindegaard's professional struggles at Manchester United and his personal happiness."
+      }
+    },
+    "final": {
+      "coherence": 4.5,
+      "consistency": 5.0,
+      "fluency": 3.5,
+      "relevance": 4.0,
+      "overall_judge": 4.3
+    }
+  }
+}

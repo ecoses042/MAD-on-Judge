@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-8b51a10370a1219137e231192e65b9cd52238ea6",
+  "system_name": "system_8",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, jumping abruptly from Stokes' character to the changes in the England team without proper transitions."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention key points such as Stokes' past incident with the locker, his relationship with coach Peter Moores, and the importance of balancing his aggression, which are crucial to understanding the context."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the idea of a 'new-look set-up' without providing context or details from the article, which could mislead readers about the focus of the changes."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'the problem with Stokes is he is a natural player' is vague and could be rephrased for clarity and better fluency."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear focus on Ben Stokes and his character, aligning well with the article's emphasis on his fiery nature and the need for management."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary captures the key point about Stokes needing to be managed effectively, which is a central theme of the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary lacks some details about Stokes' past incidents and the context of his aggression, which are important for understanding the article's message."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'the problem with Stokes is he is a natural player' could be clearer; it may imply a negative connotation that isn't present in the article."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

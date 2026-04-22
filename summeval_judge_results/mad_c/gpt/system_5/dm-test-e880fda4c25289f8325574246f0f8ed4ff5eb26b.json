@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-e880fda4c25289f8325574246f0f8ed4ff5eb26b",
+  "system_name": "system_5",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, making it difficult to follow."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits key details from the source, such as the stained-glass windows and the specific features of the bathroom and kitchen."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The use of 'collector 's paradise' with an unnecessary space and inconsistent punctuation detracts from readability."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary does not adequately cover the most important aspects of the property, such as its auction date and the potential concerns regarding renovations."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear overview of the property, mentioning its untouched state and key features in a logical manner."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important aspects of the article, including the original features of the home and its price range."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as the use of 'collector 's paradise' instead of 'collector's paradise' and inconsistent spacing."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits several details present in the article, such as the specific features like stained-glass windows and the description of the bathroom."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-d296270ab4a4cf20f2d9c1aae7514687806f2b35",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information and does not connect the details about the jet's cost, customization, and features effectively."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits significant details about the jet's luxury features, such as the number of guests it can accommodate and the various rooms available, which are crucial to understanding its uniqueness."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states 'Boeing 747-8' without mentioning that it is a custom-built luxury jet, which could mislead readers about its purpose."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The use of ' ` state room ' ' with backticks is awkward and disrupts the fluency of the text."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information about the customized Boeing 747-8, including its cost and features."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding the cost and customization of the jet without introducing any new facts."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on key points such as the cost, customization period, and main features of the jet, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains some awkward phrasing, such as 'where travellers can enjoy meals' which could be more smoothly expressed."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits several important features mentioned in the article, such as the number of guests it can accommodate and the luxurious amenities provided."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

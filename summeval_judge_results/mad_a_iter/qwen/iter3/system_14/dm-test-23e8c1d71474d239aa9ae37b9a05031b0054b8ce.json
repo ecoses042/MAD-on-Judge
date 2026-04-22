@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-23e8c1d71474d239aa9ae37b9a05031b0054b8ce",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and strictly consistent with the source text. It captures the main events (match details, Vardy's goal) and the manager's key message. However, it scores a 4 for relevance because it omits significant context provided in the article, such as Leicester remaining 'bottom of the table' despite their slim chance, and the specific warnings about 'overly optimistic' fans which are central to Pearson's argument."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and consistent with the source text. It captures the three most critical facts: the upcoming match context (Swansea, 3 points from safety), the recent key event (Vardy's winner vs West Brom), and the manager's main message (keep cool). It receives a 4 for relevance because it omits the nuance of Pearson's specific warning against 'overly optimistic' fans and the detail about remaining bottom of the table, but given the lenient rules, this is acceptable as these are secondary details."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. While the summary is grammatically perfect and factually consistent, it misses a significant portion of the article's core narrative: Leicester's precarious position (bottom of the table) and the specific warning against 'overly optimistic' fans. These are central to Pearson's message, so the relevance score should remain at 4."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate: the summary captures the three most critical facts (upcoming match context, recent key event, manager's main message) while omitting secondary details like the team's table position and specific warnings about optimism. These omissions are acceptable under the criteria for a concise summary."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The lenient judge correctly identified that the summary misses key context regarding Leicester's position (bottom of the table) and Pearson's specific warning against 'overly optimistic' perceptions. These are central to the article's narrative about maintaining focus. Therefore, the relevance score should not be raised; it remains at 4."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The strict judge's assessment is accurate; the summary effectively captures the three most critical facts (upcoming match context, recent key event, manager's main message) while omitting secondary details like specific table positions and warnings about optimism, which is acceptable for a concise summary."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 4.0,
+      "overall_judge": 4.8
+    }
+  }
+}

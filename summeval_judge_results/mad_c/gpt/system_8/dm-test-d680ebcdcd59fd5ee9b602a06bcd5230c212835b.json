@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-d680ebcdcd59fd5ee9b602a06bcd5230c212835b",
+  "system_name": "system_8",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, abruptly shifting from Dyke's proposals to a vague statement about young players without proper context."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces a claim about the current crop of young players being the most talented ever, which is not supported by the source document."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention the opposition Dyke faces from the Premier League, which is a significant aspect of the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The repetition of the phrase 'the current crop of young players is the most talented ever assembled by the game' indicates poor editing and disrupts the flow."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear focus on Greg Dyke's proposal to increase home-grown players, establishing a logical flow of information regarding the support from former England managers."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary highlights the key point of Dyke's proposal and the backing from former managers, which are central to the article's message."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces a statement about the current crop of young players being the most talented, which is not directly quoted or supported by the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The repetition of the phrase 'the current crop of young players is the most talented ever assembled by the game' indicates a lack of fluency and coherence in the summary."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 4,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

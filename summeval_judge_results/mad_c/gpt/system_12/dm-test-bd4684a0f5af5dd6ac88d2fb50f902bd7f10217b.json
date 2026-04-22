@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-bd4684a0f5af5dd6ac88d2fb50f902bd7f10217b",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, jumping abruptly between topics without clear transitions."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as Falcao's current performance, his goal-scoring record for Colombia, and the complexities of the potential transfer, which are crucial for understanding the context."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that Falcao spent eight years with River Plate; he actually spent around four years in the first team before leaving."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The use of backticks around quotes is unconventional and disrupts the fluency of the text."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding River Plate's interest in Falcao and his current situation."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article without introducing any new facts."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points, such as River Plate's interest in Falcao and his struggles at Manchester United."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains a quote that is not properly formatted, which affects its readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

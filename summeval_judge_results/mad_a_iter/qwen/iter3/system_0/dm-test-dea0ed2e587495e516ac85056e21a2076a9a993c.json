@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-dea0ed2e587495e516ac85056e21a2076a9a993c",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source text and covers the main events (theft, recovery, modifications, cleaning). However, it lacks coherence in its narrative flow; it presents the information as a disjointed list of sentences rather than a smooth paragraph. Additionally, it misses significant relevant details such as the specific modifications (spray paint, detailing), the owner's humorous reaction on Facebook, and the creation of the 'Sexton on Wheels' smoothie to honor the tipster, which are key elements of the story."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is well-structured, fluent, and consistent with the source text. It captures the main narrative arc (theft, recovery, modifications, cleaning). It receives a score of 4 instead of 5 for relevance because it omits the positive resolution regarding Mick Sexton and the smoothie tribute, which are significant details in the original article about how she is 'making the best of a less than ideal situation'."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the coherence score because the summary reads as a disjointed list of sentences rather than a smooth narrative flow. I significantly lowered the relevance score because the strict judge correctly identified that the summary omits key elements of the story: the specific nature of the modifications (spray paint, detailing), the owner's humorous Facebook reaction, and the 'Sexton on Wheels' smoothie tribute. These omissions make the summary feel incomplete despite covering the basic facts."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is well-structured and consistent. While it covers the core narrative of theft and recovery, it omits the significant positive resolution regarding Mick Sexton and the smoothie tribute, which are key to the 'making the best of a less than ideal situation' theme mentioned in the source. Therefore, a relevance score of 4 is appropriate."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I accepted the lenient judge's points regarding coherence and relevance. The summary is indeed a disjointed list of sentences lacking narrative flow (coherence), and it significantly omits key emotional beats and specific details like the Facebook reaction and the smoothie tribute which are central to the story's theme of 'making the best of a situation' (relevance). No scores were raised as the strict evaluation was accurate."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "Adjusted relevance score down from 4 to 3. While the strict judge correctly identified that the smoothie tribute was omitted, I believe this omission is more significant than a simple 'trivial detail.' The source text explicitly frames the story around the theme of 'making the best out of a less than ideal situation,' and the smoothie tribute is the primary evidence of this positive resolution. Without it, the summary feels incomplete regarding the emotional arc and the specific actions taken to honor the helper (Mick Sexton), which are central to the article's message."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 5.0,
+      "fluency": 4.5,
+      "relevance": 2.5,
+      "overall_judge": 3.8
+    }
+  }
+}

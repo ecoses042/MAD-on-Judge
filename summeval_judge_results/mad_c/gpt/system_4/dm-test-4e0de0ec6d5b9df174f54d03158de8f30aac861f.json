@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-4e0de0ec6d5b9df174f54d03158de8f30aac861f",
+  "system_name": "system_4",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, repeating the same fact about Germany beating Georgia without adding new context."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details about Ozil's performance, his injury status, and his upcoming match against Liverpool, which are important for understanding his current situation."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as the lack of capitalization at the beginning of sentences."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that Ozil was in fine form without providing evidence or context from the article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow by mentioning Ozil's relaxation and his performance in the Euro 2016 qualifier."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding Ozil's performance and his social media activity."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is written in grammatically correct and easy-to-read English."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on key points such as Ozil's relaxation, his performance in the qualifier, and his social media post."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary lacks details about Ozil's injury recovery, his upcoming match against Liverpool, and his adjustment to English football, which are important aspects of the article."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

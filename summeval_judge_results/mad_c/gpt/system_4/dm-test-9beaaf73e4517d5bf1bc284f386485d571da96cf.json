@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-9beaaf73e4517d5bf1bc284f386485d571da96cf",
+  "system_name": "system_4",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow and does not connect the ideas presented, making it difficult to understand the overall context."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the location of the wedding, the date, and the additional prizes for the winning couple, which are crucial for understanding the significance of the event."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the specific name of the chapel, which is important for consistency with the source document."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains awkward phrasing and lacks smooth transitions, affecting its readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information by introducing Priscilla Presley and her role in the wedding contest."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding Priscilla's involvement and the contest for the wedding."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is written in fluent and idiomatic English, making it easy to read."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary lacks key details such as the date of the wedding, the location, and the specifics of what the winning couple will receive."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 4,
+      "relevance": 2,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

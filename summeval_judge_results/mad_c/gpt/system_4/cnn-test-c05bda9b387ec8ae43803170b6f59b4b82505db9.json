@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-c05bda9b387ec8ae43803170b6f59b4b82505db9",
+  "system_name": "system_4",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information and does not provide context about the significance of the release or the background of the Yazidi situation."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits critical details such as the number of Yazidis released, the role of Arab tribal leaders, and the humanitarian crisis faced by the Yazidis, which are essential for understanding the event."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary uses a fragmented style with incomplete sentences, making it less readable and fluent."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the discrepancy in the number of Yazidis released as reported by different officials, which could lead to confusion."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the release of Yazidis, specifying the demographics of those released and their subsequent reception by the Peshmerga."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, mentioning that most of those released were women and children, and that the Peshmerga received them."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the article, specifically the release of Yazidis and their transfer to Irbil, which are central to the news."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks grammatical structure, as it is presented in fragmented sentences rather than complete sentences, making it less fluent."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

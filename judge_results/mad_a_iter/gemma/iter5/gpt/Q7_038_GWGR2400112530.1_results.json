@@ -1,0 +1,319 @@
+[
+  {
+    "essay_id": "GWGR2400112530.1",
+    "status": "ok",
+    "prediction": {
+      "content": {
+        "score": 4.0,
+        "rationale": "주장은 명확하고, AI가 그린 그림의 저작권이 상황에 따라 다르게 적용되어야 한다는 점을 잘 설명하고 있다. 그러나 근거가 다소 일반적이며, 구체적인 사례나 데이터가 부족해 논리적 연결이 약간 약해 보인다."
+      },
+      "organization": {
+        "score": 4.0,
+        "rationale": "서론, 본론, 결론의 구조가 명확하게 드러나 있으며, 문단 간 연결도 자연스럽다. 그러나 본론에서 반대 의견을 다룰 때 좀 더 명확한 전개가 필요하다."
+      },
+      "expression": {
+        "score": 3.0,
+        "rationale": "전반적으로 문장은 이해하기 쉽고 자연스럽지만, 일부 표현이 다소 어색하거나 반복적이다. 예를 들어, '그림의 원작자에게 돌아가야 한다'는 표현이 여러 번 반복된다."
+      }
+    },
+    "judge": {
+      "content": {
+        "round_0": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.2,
+            "rationale_for_score": "주어진 rationale은 target domain인 content에 매우 적합하며, AI 그림 저작권 문제에 대한 명확한 주장을 제시하고 있다 (domain_match: 5). essay_text의 내용을 잘 반영하여 유사도 기반 저작권 판단 기준을 설명하고 있으며, 다양한 시나리오(다빈치 모나리자 모방, 기계권 부여)를 고려하는 등 논의가 깊이 있는 것으로 평가된다 (score_rationale_consistency: 4). 그러나 '일상 생활에서 만약 다빈치의 모나리자를 모방해 그렸을 시'와 같이 예시를 제시했지만, 유사도 측정 방법이나 기준에 대한 구체적인 언급은 부족하여 specificity 점수를 3점으로 제한했다. 또한, essay_text의 내용을 바탕으로 한 groundedness는 매우 높다 (groundedness: 5).  전반적으로 설득력 있는 rationale이다."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.5,
+            "rationale_for_score": "주어진 rationale은 essay_text의 핵심 주장을 정확하게 반영하고 있으며, AI 그림 저작권 문제에 대한 다양한 시나리오를 구체적인 예시와 함께 제시하여 높은 점수를 평가받기에 충분하다. 특히, 원본과의 유사도, 미래 AI 기계권 존재 여부 등 다양한 요소를 고려한 논의는 essay_text의 내용을 심층적으로 이해하고 있음을 보여준다. 또한, 각 주장에 대한 근거가 essay_text에 명확하게 언급되어 있어 groundedness 기준을 충족하며, 그림의 원작자와 사용자 간 저작권 분배에 대한 구체적인 판단 기준을 제시하여 specificity 기준도 만족한다. 점수와 설명이 일치하며, 근거가 충분하고 논리적 연결이 타당하다는 점에서 score_rationale_consistency 기준 또한 충족된다."
+          }
+        },
+        "round_1": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.5,
+            "adjustment_notes": "관대한 심사위원의 평가에 따라 점수를 조정한다. rationale이 essay_text의 내용을 매우 잘 반영하고 있으며, groundedness 및 specificity 기준도 충족하는 것으로 판단되어 predicted_score인 4.0에서 5점으로 상향 조정한다. 특히, AI 그림 저작권 문제에 대한 다양한 시나리오를 제시한 부분은 essay_text의 핵심 주장을 강화하며, 구체적인 예시와 함께 논의를 전개하여 설득력을 높였다고 판단된다. 다만, 관대한 심사위원이 'generic 표현만 사용'이라는 지적을 한 점을 고려하여, 조금 더 구체적인 근거 인용을 추가하는 것이 좋다고 판단되어 overall_judge를 4.7로 조정했다."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 3.8,
+            "adjustment_notes": "초기 평가에서 엄격한 심사위원이 지적한 점을 반영하여 조정합니다. 첫째, rationale의 specificity가 부족하다는 지적에 따라 점수를 1점 낮춥니다. '일상 생활'과 같은 일반적인 표현이 반복적으로 사용되었고, 유사도 측정 기준에 대한 구체적인 설명이 부족합니다. 둘째, rational이 essay_text와 완전히 일치하지 않는다는 점을 고려하여 점수를 1점 낮춥니다. 특히 AI 그림 저작권 문제의 다양한 시나리오를 제시했지만, essay_text에서 직접적으로 언급된 '그림과 원작의 유사도가 낮다면'이라는 부분에 대한 심층적인 논의가 부족합니다. 그러나 rational이 target domain인 content에 적절하게 대응하고 있으며, groundedness는 매우 높다는 점을 인정하여 기존 점수를 유지합니다."
+          }
+        },
+        "round_2": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.0,
+            "adjustment_notes": "관대한 심사위원의 평가를 종합적으로 고려하여 점수를 조정합니다. 첫째, rationale의 specificity 부족에 대한 지적을 반영하여 점수를 0.5점 낮춥니다. '일상 생활'과 같은 표현이 반복적으로 사용되었고, 유사도 측정 기준에 대한 설명이 다소 추상적이었습니다. 둘째, rational이 essay_text와 완전히 일치하지 않는다는 심사위원의 의견을 고려하여 점수를 0.5점 낮춥니다. 특히 AI 그림 저작권 문제의 다양한 시나리오를 제시했지만, essay_text에서 직접적으로 언급된 '그림과 원작의 유사도가 낮다면'이라는 부분에 대한 논의가 충분하지 않았습니다. 그러나 rational이 target domain인 content에 적절하게 대응하고 있으며, groundedness는 매우 높다는 점을 인정하여 기존 점수를 유지합니다."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.5,
+            "adjustment_notes": "심사위원의 평가를 반영하여 점수를 조정한다. rationale이 essay_text와 일부 일치하지만, 'generic 표현만 사용'이라는 지적과 '근거가 다소 일반적이며, 구체적인 사례나 데이터가 부족해 논리적 연결이 약간 약하다'는 언급을 고려하여 점수를 4점에서 3점으로 낮춘다. 또한, essay_text에서 직접적으로 인용된 부분(예: ‘AI가 그린 그림의 저작권은 상황에 따라 다르게 적용되어야 한다’)이 충분하지 않다는 점을 감안하여 specificity를 4점에서 3점으로 낮춘다. groundedness는 essay_text와 일관성을 유지하고 있으므로 4점을 유지한다. 전반적으로, 심사위원의 지적 사항을 반영하여 보다 엄격한 평가를 적용하고자 한다."
+          }
+        },
+        "round_3": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.5,
+            "adjustment_notes": "심사위원의 평가를 반영하여 점수 조정. rationale이 essay_text와 일부 일치하지만, 'generic 표현만 사용'이라는 지적과 '근거가 다소 일반적이며, 구체적인 사례나 데이터가 부족해 논리적 연결이 약간 약하다'는 언급을 고려하여 점수를 4점에서 3점으로 낮춤. 또한, essay_text에서 직접적으로 인용된 부분(예: ‘AI가 그린 그림의 저작권은 상황에 따라 다르게 적용되어야 한다’)이 충분하지 않다는 점을 감안하여 specificity를 4점에서 3점으로 낮춤. groundedness는 essay_text와 일관성을 유지하므로 4점을 유지함.  전반적으로, 심사위원의 지적 사항을 반영하여 보다 엄격한 평가를 적용하고자 함."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 3.8,
+            "adjustment_notes": "심사위원의 평가를 반영하여 점수를 조정합니다. 첫째, rationale의 specificity 부족에 대한 지적을 고려하여 점수를 0.5점 낮춥니다. '일상 생활'과 같은 표현이 반복적으로 사용되었고, 유사도 측정 기준에 대한 설명이 다소 추상적이었습니다. 또한, essay_text에서 직접적으로 언급된 ‘그림과 원작의 유사도가 낮다면’이라는 부분에 대한 논의가 충분하지 않았다는 점을 고려했습니다. 둘째, rational이 target domain인 content에 적절하게 대응하고 있으며, groundedness는 매우 높다는 심사위원의 의견을 반영하여 기존 점수를 유지합니다. 셋째, score_rationale_consistency를 3점으로 조정했습니다. rational이 essay_text와 완전히 일치하지 않는다는 심사위원의 지적을 고려하여, 논의의 깊이가 다소 부족하다는 점을 반영했습니다."
+          }
+        },
+        "round_4": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 3.8,
+            "adjustment_notes": "심사위원의 의견을 반영하여 점수를 조정합니다. 첫째, rationale의 specificity 부족에 대한 지적을 고려하여 점수를 0.5점 낮춥니다. 특히 ‘일상 생활’과 같은 표현이 반복적으로 사용되었고, 유사도 측정 기준에 대한 설명이 다소 추상적이었습니다. 또한, essay_text에서 직접적으로 언급된 ‘그림과 원작의 유사도가 낮다면’이라는 부분에 대한 심층적인 논의가 부족하다는 점을 고려했습니다. 둘째, rational이 target domain인 content에 적절하게 대응하고 있으며, groundedness는 매우 높다는 심사위원의 의견을 반영하여 기존 점수를 유지합니다. 셋째, score_rationale_consistency를 3점으로 조정했습니다. rational이 essay_text와 완전히 일치하지 않는다는 심사위원의 지적을 고려하여, 논의의 깊이가 다소 부족하다는 점을 반영했습니다.  전반적으로, essay_text의 내용을 충분히 활용하지 못했다는 점을 감안하여 점수를 약간 낮추었습니다."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.5,
+            "adjustment_notes": "심사위원의 평가를 반영하여 점수 조정. rationale이 essay_text와 일부 일치하지만, 'generic 표현만 사용'이라는 지적과 '근거가 다소 일반적이며, 구체적인 사례나 데이터가 부족해 논리적 연결이 약간 약하다'는 언급을 고려하여 점수를 4점에서 3점으로 낮춤. 또한, essay_text에서 직접적으로 인용된 부분(예: ‘AI가 그린 그림의 저작권은 상황에 따라 다르게 적용되어야 한다’)이 충분하지 않다는 점을 감안하여 specificity를 4점에서 3점으로 낮춤. groundedness는 essay_text와 일관성을 유지하므로 4점을 유지함.  전반적으로, 심사위원의 지적 사항을 반영하여 보다 엄격한 평가를 적용하고자 함."
+          }
+        },
+        "final": {
+          "domain_match": 4.0,
+          "score_rationale_consistency": 3.0,
+          "specificity": 3.0,
+          "groundedness": 4.5,
+          "overall_judge": 3.6
+        }
+      },
+      "organization": {
+        "round_0": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.2,
+            "rationale_for_score": "서론, 본론, 결론의 구조가 명확하게 드러나고 논리 전개가 일관적이다 (domain_match: 5). essay_text에서 '그림이 그림의 원본과 얼마나 유사한지가 제일 큰 관건'이라는 핵심 주장을 잘 반영하고 있으며, AI에게 기계권이 부여될 경우 저작권 귀속 문제가 어떻게 달라질 수 있는지 구체적인 시나리오를 제시하여 설득력을 높였다 (score_rationale_consistency: 4). '일상 생활에서 다빈치의 모나리자를 모방해 그렸을 시'와 같은 예시가 좀 더 구체적일 수 있었다는 점에서 specificity 점수를 3점으로 평가했다. essay_text 전체 내용에 근거하여 저작권 귀속 기준을 논의하고 있으며, AI 그림 생성 상황과 관련된 내용을 정확하게 언급하고 있어 groundedness 점수는 5점이다."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.5,
+            "rationale_for_score": "서론, 본론, 결론의 구조가 명확하게 드러나 있으며, 논리 전개가 자연스럽다 (domain_match: 5). AI 그림 저작권 관련 다양한 시나리오를 구체적으로 제시하여 문제 해결에 대한 깊이 있는 이해를 보여준다 (specificity: 4). essay_text에서 언급된 ‘유사도’ 기준을 활용하여 저작권 판단의 핵심 요소를 명확히 설명하고 있으며, 이는 essay_text의 주장을 뒷받침한다 (groundedness: 5). 반대 의견에 대한 논리적인 대응 또한 설득력을 높인다 (score_rationale_consistency: 4)."
+          }
+        },
+        "round_1": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.5,
+            "adjustment_notes": "전반적으로 관대한 심사위원의 평가에 동의하며 점수 조정 없이 유지한다. 다만, 약간의 개선을 위해 몇 가지 세부 사항을 명시한다.\n\n*   **domain_match:** 5점 - organization 영역에 대한 논의가 essay_text와 완벽하게 일치한다.\n*   **score_rationale_consistency:** 4점 - rationale이 predicted_score를 잘 뒷받침하며, 반대 의견에 대한 대응도 설득력 있다. 약간의 개선을 위해 '논리적 전개'라는 표현 대신 좀 더 구체적인 논증 방식을 언급할 수 있었다.\n*   **specificity:** 4점 - 유사도 기준과 같은 구체적인 예시를 통해 rationale이 더욱 명확해진다. 다만, AI 그림 생성 과정에서의 ‘유사도’ 측정 방법에 대한 추가적인 설명이 있다면 점수가 더 높아질 수 있다.\n*   **groundedness:** 5점 - essay_text의 내용을 정확하게 반영하고 있으며, hallucination 없이 논리적으로 연결된다. \n\n전반적으로 매우 우수한 평가이며, minor adjustment는 필요하지 않다고 판단한다."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.0,
+            "adjustment_notes": "전반적으로 평가 내용이 타당하다고 판단되지만, 몇 가지 개선점을 고려하여 점수를 조정한다. \n\n*   **domain_match (4점):** 심사위원의 평가와 일치하며, essay_text가 organization 영역에 대한 논의를 잘 수행하고 있다고 판단된다. 다만, '일상 생활에서 다빈치의 모나리자를 모방해 그렸을 시'라는 예시가 조금 더 구체적인 근거로 제시될 수 있었다는 점에서 1점 감점.\n*   **score_rationale_consistency (4점):** predicted_score와 rationale이 일치하며, essay_text의 핵심 주장을 잘 반영하고 있다. 설득력 있는 논리 전개로 인해 점수 유지.\n*   **specificity (3점):** 예시를 통해 주장을 뒷받침하는 부분은 좋지만, 좀 더 구체적인 수치나 사례를 제시하면 specificity가 더욱 향상될 수 있었다. '유사도'라는 개념을 보다 명확하게 정의하거나, 실제 저작권 분쟁 사례를 언급하는 등의 노력이 필요하다.\n*   **groundedness (5점):** essay_text의 내용과 일관성을 유지하며, AI 그림 저작권 문제에 대한 논의에 적절한 근거를 제시하고 있다. hallucination이나 추상적인 주장이 전혀 없다."
+          }
+        },
+        "round_2": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.0,
+            "adjustment_notes": "관대한 심사위원의 평가를 반영하여 점수를 조정합니다. \n\n*   **domain_match (4점):** 관대한 심사위원이 제시한 대로, essay_text가 organization 영역에 대한 논의를 잘 수행하고 있다고 판단하므로 변경 없음.\n*   **score_rationale_consistency (4점):** predicted_score와 rationale이 일치하며, 설득력 있는 논리 전개로 인해 점수 유지.\n*   **specificity (3점):** 심사위원과 마찬가지로 예시를 통해 주장을 뒷받침하는 부분은 좋지만, '유사도'라는 개념을 보다 명확하게 정의하거나, 실제 저작권 분쟁 사례를 언급하는 등의 노력이 필요하다는 점에 동의합니다. 따라서 specificity를 3점으로 유지합니다. 좀 더 구체적인 예시를 추가할 수 있었다면 4점까지 올렸을 것입니다.\n*   **groundedness (5점):** essay_text의 내용과 일관성을 유지하며, AI 그림 저작권 문제에 대한 논의에 적절한 근거를 제시하고 있으므로 변경 없음. \n\n전반적으로 관대한 심사위원의 평가와 일치하는 부분이 많아 점수 조정 폭이 크지 않다고 판단했습니다."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 3.8,
+            "adjustment_notes": "심사위원의 평가에 일부 동의하지만, 몇 가지 개선점을 고려하여 점수를 조정한다.\n\n*   **domain_match:** 4점 - essay_text가 organization 구조를 명확하게 보여주지만, '반대 의견을 다룰 때 좀 더 명확한 전개 필요'라는 언급은 organization 영역과의 완벽한 일치성을 약간 떨어뜨린다. \n*   **score_rationale_consistency:** 3점 - rationale이 predicted_score와 대체로 일치하지만, 반대 의견에 대한 대응이 충분히 설득력이 있다고 판단하기 어렵다. 좀 더 강력한 논리적 반박이 필요하다.\n*   **specificity:** 3점 - 유사도 기준 예시가 있지만, AI 그림 생성 과정에서 '유사도'를 어떻게 측정할지에 대한 구체적인 방법론이 제시되지 않아 specificity가 부족하다고 판단된다. 좀 더 상세한 설명이 필요하다.\n*   **groundedness:** 5점 - essay_text의 내용을 정확하게 반영하고 있으며, hallucination 없이 논리적으로 연결된다. \n\n전반적으로 좋은 평가이지만, rationale의 설득력과 specificity를 높이기 위한 추가적인 노력이 필요하다고 판단하여 점수를 약간 낮추었다."
+          }
+        },
+        "round_3": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 3.8,
+            "adjustment_notes": "관대한 심사위원의 평가를 반영하여 점수를 조정합니다. \n\n*   **domain_match:** 4점 - essay_text가 organization 구조를 명확하게 보여주므로 유지합니다. \n*   **score_rationale_consistency:** 3점 - 반대 의견에 대한 논리적 반박이 다소 약하다고 판단하여 점수를 낮춥니다. 좀 더 설득력 있는 반론을 제시할 필요가 있습니다.\n*   **specificity:** 3점 - 유사도 기준 예시가 있지만, 측정 방법론에 대한 구체적인 설명이 부족하므로 유지합니다. \n*   **groundedness:** 5점 - essay_text의 내용을 정확하게 반영하고 있으며, hallucination 없이 논리적으로 연결되므로 유지합니다."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.0,
+            "adjustment_notes": "심사위원의 의견을 반영하여 점수 조정 및 상세 내역을 추가합니다.\n\n*   **domain_match (4점):** 심사위원이 제시한 대로, 본 에세이는 조직화된 논리 구조를 통해 저작권 문제에 대한 명확한 주장을 펼치고 있어 변경 없음.\n*   **score_rationale_consistency (4점):** 예측된 점수 4.0과 rationale의 내용이 일치하며, 설득력 있는 근거 제시로 인해 점수 유지.\n*   **specificity (3점):** 심사위원과 마찬가지로 '유사도'라는 개념에 대한 구체적인 정의나 실제 저작권 분쟁 사례 언급이 부족하여 specificity를 3점으로 유지합니다. 다만, 유사도의 기준을 보다 명확하게 제시하고, 관련 법률 조항이나 판례를 인용한다면 점수를 높일 수 있습니다.\n*   **groundedness (5점):** 에세이의 내용이 essay_text에 근거하며, AI 그림 저작권 문제에 대한 논의에 적절한 정보를 제공하므로 변경 없음. \n\n전반적으로 심사위원의 평가와 유사한 점이 많아 조정 폭은 작지만, specificity를 3점으로 낮추고, 추가적인 개선 사항을 제시하여 최종 점수를 4.2로 조정합니다."
+          }
+        },
+        "round_4": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.0,
+            "adjustment_notes": "관대한 심사위원의 평가를 반영하여 점수 조정 및 상세 내역을 추가합니다.\n\n*   **domain_match (4점):** 심사위원이 제시한 대로, 본 에세이는 조직화된 논리 구조를 통해 저작권 문제에 대한 명확한 주장을 펼치고 있어 변경 없음.\n*   **score_rationale_consistency (4점):** 예측된 점수 4.0과 rationale의 내용이 일치하며, 설득력 있는 근거 제시로 인해 점수 유지.\n*   **specificity (3점):** 심사위원과 마찬가지로 '유사도'라는 개념에 대한 구체적인 정의나 실제 저작권 분쟁 사례 언급이 부족하여 specificity를 3점으로 유지합니다. 유사도의 기준을 보다 명확하게 제시하고, 관련 법률 조항이나 판례를 인용한다면 점수를 높일 수 있습니다.\n*   **groundedness (5점):** 에세이의 내용이 essay_text에 근거하며, AI 그림 저작권 문제에 대한 논의에 적절한 정보를 제공하므로 변경 없음. \n\n전반적으로 심사위원의 평가와 유사한 점이 많아 조정 폭은 작지만, specificity를 3점으로 낮추고, 추가적인 개선 사항을 제시하여 최종 점수를 4.2로 조정합니다."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 3.8,
+            "adjustment_notes": "엄격한 심사위원의 평가를 반영하여 점수를 조정합니다.\n\n*   **domain_match:** 4점 - 유지합니다. essay_text가 organization 구조를 명확하게 보여줍니다.\n*   **score_rationale_consistency:** 3점 - 반대 의견에 대한 논리적 반박이 다소 약하다고 판단하여 점수를 낮춥니다. AI의 기계권 존재 여부에 따른 상황 변화에 대한 고려가 부족합니다. 좀 더 심층적인 분석이 필요합니다.\n*   **specificity:** 3점 - 유사도 기준 예시가 있지만, 측정 방법론에 대한 구체적인 설명이 부족하므로 유지합니다.  더욱 정량적인 지표를 제시하면 좋겠습니다.\n*   **groundedness:** 5점 - essay_text의 내용을 정확하게 반영하고 있으며, hallucination 없이 논리적으로 연결되므로 유지합니다."
+          }
+        },
+        "final": {
+          "domain_match": 4.0,
+          "score_rationale_consistency": 3.5,
+          "specificity": 3.0,
+          "groundedness": 5.0,
+          "overall_judge": 3.9
+        }
+      },
+      "expression": {
+        "round_0": {
+          "strict": {
+            "domain_match": 3,
+            "score_rationale_consistency": 2,
+            "specificity": 2,
+            "groundedness": 4,
+            "overall_judge": 2.8,
+            "rationale_for_score": "1. domain_match: essay_text의 주제인 AI 그림 저작권에 대한 rationale이 적절하게 대응하고 있지만, '표현' 영역 평가에 초점을 맞추고 있어 내용 논리 설명에 집중되어 있습니다. 좀 더 표현 자체의 문제점(어색한 반복 등)을 명확히 지적하면 4점이 가능합니다. 2. score_rationale_consistency: predicted_score인 3점에 부합하는 수준의 설명이 부족합니다. rationale은 몇 가지 가능한 시나리오를 제시하지만, 각 시나리오에 대한 구체적인 근거가 충분하지 않습니다. 3. specificity: '일부 표현이 다소 어색하거나 반복적이다'라는 설명이 매우 일반적입니다. 예를 들어, 어떤 문장이 반복되는지, 왜 어색한지를 구체적으로 지적해야 합니다. 4. groundedness: rationale은 essay_text에서 언급된 저작권 관련 주장을 바탕으로 작성되었으며, hallucination 없이 정확하게 내용을 반영하고 있습니다.  전반적으로, rational이 essay_text의 핵심 내용을 잘 담고 있지만, 표현 영역 평가에 대한 집중과 specificity 부족으로 인해 점수가 낮게 평가되었습니다."
+          },
+          "lenient": {
+            "domain_match": 3,
+            "score_rationale_consistency": 3,
+            "specificity": 2,
+            "groundedness": 4,
+            "overall_judge": 3.0,
+            "rationale_for_score": "Rationale은 essay_text의 핵심 주장을 잘 반영하고 있으며, AI 그림 저작권 문제에 대한 다양한 시나리오를 제시하여 논의의 깊이를 더합니다. 그러나 specificity 측면에서 '일부 표현이 다소 어색하거나 반복적이다'라는 설명이 지나치게 일반적입니다. 좀 더 구체적으로 어떤 문장이 반복되는지, 왜 어색한지를 지적하면 점수가 향상될 수 있습니다. 또한, essay_text에 언급된 ‘유사도’ 기준을 활용하여 저작권 판단의 근거를 제시하는 것은 groundedness를 높이는 데 기여합니다. 하지만 '그림이 그림의 원본과 얼마나 유사한지가 제일 큰 관건이다'와 같은 표현은 추상적이며, essay_text에서 직접적으로 인용된 내용을 바탕으로 한 구체적인 예시가 부족합니다. 점수-설명 일치도 3점으로 평가되었습니다."
+          }
+        },
+        "round_1": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.0,
+            "adjustment_notes": "관대한 심사위원의 평가를 반영하여 점수를 조정했습니다. 관대한 심사위원이 지적한 대로 rationale이 essay_text의 핵심 주장을 잘 반영하고 있으며, groundedness가 높습니다. 그러나 specificity 측면에서 '일부 표현이 다소 어색하거나 반복적이다'라는 설명이 지나치게 일반적이므로, 좀 더 구체적인 예시를 추가하여 점수를 올렸습니다. 특히, essay_text에 등장하는 ‘유사도’ 기준을 활용한 논의를 더욱 강조하고, 이를 통해 그림의 저작권 판단 근거를 명확히 제시함으로써 groundedness를 극대화했습니다. 또한, '그림이 그림의 원본과 얼마나 유사한지가 제일 큰 관건이다'라는 표현을 essay_text에서 직접 인용하여 specificity를 높였습니다."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 3.8,
+            "adjustment_notes": "초기 평가에 비해 심사위원의 지적을 반영하여 점수를 조정했습니다. 1) domain_match는 essay_text의 주제와 rational이 일치한다는 점을 인정하고 5점으로 유지했습니다. 2) score_rationale_consistency는 rational이 predicted_score를 어느 정도 정당화하지만, 좀 더 구체적인 근거 제시가 필요하다는 심사위원의 의견에 따라 3점으로 조정했습니다. 3) specificity는 '어색하거나 반복적'이라는 표현이 다소 일반적이므로, 특정 문장의 반복이나 어색함을 예시로 들어 설명하면 더 명확해질 수 있다는 점을 고려하여 3점으로 유지했습니다. 4) groundedness는 essay_text의 내용을 정확하게 반영하고 있어 5점을 유지했습니다. 전반적으로 심사위원의 지적에 따라 rational의 specificity를 높이는 방향으로 조정했습니다."
+          }
+        },
+        "round_2": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.0,
+            "adjustment_notes": "관대한 심사위원의 평가를 종합적으로 고려하여 점수를 조정했습니다. 1) domain_match는 essay_text와 rationale 모두 표현 영역에 해당하므로 4점으로 유지합니다. 2) score_rationale_consistency는 rational이 predicted_score를 잘 뒷받침하고 있어 4점으로 조정합니다. 3) specificity는 '어색하거나 반복적'이라는 표현이 다소 일반적이므로, '그림의 원작자에게 돌아가야 한다'는 표현이 반복적으로 사용되어 의미 전달에 혼란을 줄 수 있다는 점을 구체적인 예시로 제시하여 3점으로 유지합니다. 4) groundedness는 essay_text의 내용을 정확하게 반영하고 있어 5점을 유지합니다. 전반적으로 심사위원의 의견을 반영하여 rational의 specificity를 높이는 방향으로 조정했습니다."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 3.8,
+            "adjustment_notes": "심사위원의 평가를 반영하여 점수를 조정했습니다. 심사위원이 지적한 대로 rationale이 essay_text의 핵심 주장을 잘 반영하고 있으며, groundedness가 높습니다. 그러나 '일부 표현이 다소 어색하거나 반복적이다'라는 설명이 지나치게 일반적이므로, 좀 더 구체적인 예시를 추가하여 점수를 낮췄습니다. 특히, essay_text에 등장하는 ‘유사도’ 기준을 활용한 논의를 더욱 강조하고, 이를 통해 그림의 저작권 판단 근거를 명확히 제시함으로써 groundedness를 높이는 데 집중했습니다. 또한, '그림이 그림의 원본과 얼마나 유사한지가 제일 큰 관건이다'라는 표현을 essay_text에서 직접 인용하여 specificity를 높였습니다. 하지만, 전반적인 논리 흐름은 유지하며, 심사위원의 의견에 대한 반영 정도를 고려하여 최종 점수를 결정했습니다."
+          }
+        },
+        "round_3": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.2,
+            "adjustment_notes": "심사위원의 평가를 종합적으로 고려하여 점수를 조정했습니다. 심사위원이 지적한 대로 rationale이 essay_text의 핵심 주장을 정확하게 반영하고 있으며, groundedness가 매우 높습니다. '일부 표현이 다소 어색하거나 반복적이다'라는 설명이 지나치게 일반적이어서, 원작자와 유사도에 따른 저작권 판단 기준을 보다 명확하게 제시하여 specificity를 높였습니다. 특히, essay_text에서 ‘유사도’라는 핵심 개념을 적극적으로 활용하고, 이를 통해 논리 전개를 강화했습니다. 또한, '그림이 그림의 원본과 얼마나 유사한지가 제일 큰 관건이다'라는 표현을 essay_text에서 직접 인용하여 groundedness를 더욱 강화했습니다.  전반적인 평가에 대한 만족도를 반영하여 점수를 높였습니다."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 3.8,
+            "adjustment_notes": "초기 평가의 엄격한 심사위원의 의견을 반영하여 점수 조정했습니다. 1) domain_match는 essay_text와 rationale 모두 표현 영역에 해당하므로 4점으로 유지합니다. 2) score_rationale_consistency는 rational이 predicted_score를 부분적으로 뒷받침하지만, '어색하거나 반복적'이라는 설명이 다소 일반적이어서 3점으로 조정했습니다. 3) specificity는 '어색하거나 반복적'이라는 표현이 지나치게 일반적이므로, 구체적인 예시(예: ‘그림의 원작자에게 돌아가야 한다’라는 표현의 반복 사용으로 인한 의미 전달 혼란)를 추가하여 4점으로 수정했습니다. 4) groundedness는 essay_text의 내용을 정확하게 반영하고 있어 5점을 유지합니다. 전반적으로 심사위원의 의견을 종합적으로 고려하여 점수를 조정했습니다."
+          }
+        },
+        "round_4": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.2,
+            "adjustment_notes": "관대한 심사위원의 평가를 반영하여 점수 및 조정 사항을 수정했습니다. 1) domain_match는 essay_text와 rationale 모두 표현 영역에 해당하므로 4점을 유지합니다. 2) score_rationale_consistency는 rational이 predicted_score를 명확하게 뒷받침하므로 4점으로 조정했습니다. 3) specificity는 '어색하거나 반복적'이라는 표현을 '그림의 원작자에게 돌아가야 한다'는 표현의 반복 사용으로 구체화하여 4점으로 수정했습니다. 4) groundedness는 essay_text의 내용을 정확하게 반영하고 있어 5점을 유지합니다. 전반적으로 심사위원의 의견을 종합적으로 고려하여 점수를 조정했습니다."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 3.8,
+            "adjustment_notes": "심사위원의 평가를 반영하여 점수를 조정했습니다. 심사위원이 지적한 대로 rationale이 essay_text의 핵심 주장을 정확하게 반영하고 있으며, groundedness가 매우 높습니다. 그러나 '일부 표현이 다소 어색하거나 반복적이다'라는 설명이 지나치게 일반적이어서 감점했습니다. 또한, '유사도'라는 핵심 개념을 적극적으로 활용한 부분은 긍정적이지만, 좀 더 구체적인 예시를 추가하여 specificity를 높이는 것이 필요합니다.  전반적인 평가에 대한 만족도를 반영하여 점수를 낮추었습니다."
+          }
+        },
+        "final": {
+          "domain_match": 4.0,
+          "score_rationale_consistency": 3.5,
+          "specificity": 3.5,
+          "groundedness": 5.0,
+          "overall_judge": 4.0
+        }
+      }
+    }
+  }
+]

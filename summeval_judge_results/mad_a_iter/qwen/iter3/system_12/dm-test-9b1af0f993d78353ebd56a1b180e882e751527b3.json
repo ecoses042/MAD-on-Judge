@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-9b1af0f993d78353ebd56a1b180e882e751527b3",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.5,
+        "rationale_for_score": "The summary is fluent and coherent, accurately capturing the main events: the shooting of Aaron Siler by Officer Pablo Torres, Torres's current leave status, the controversial billboard erected by the police association, and the family's reaction. It scores a 4 on consistency because it omits specific details present in the source text (such as the exact quote from Kathy Willie 'I felt like they were saying thank you for killing Aaron', the context of Terry Knight's shooting, and the police association's defense), but these omissions do not constitute hallucinations or contradictions. The summary remains well-grounded in the article."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and strictly consistent with the source text. It captures the main conflict (the billboard vs. family reaction) and key facts accurately. It receives a 4 for relevance because it omits significant context provided in the article, such as Siler's legal status (wanted on warrants), the recent shooting of Terry Knight, and the police association's specific defense regarding community support."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.5,
+        "adjustment_notes": "The strict judge's assessment is accurate. The summary is fluent and coherent but lacks full consistency with the source text because it omits significant context provided in the article, specifically the details regarding the second shooting (Terry Knight) and the police association's specific defense statement. While these are omissions rather than hallucinations, they represent a lack of comprehensive coverage of the 'important information' defined in the relevance criteria. Therefore, maintaining the score of 4 is appropriate as it reflects a good but not perfect summary that misses key contextual elements."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate. The summary is well-structured (coherence), contains no hallucinations (consistency), and is grammatically correct (fluency). It receives a 4 for relevance because it correctly omits specific details like Siler's legal status, the Terry Knight shooting, and the police association's full statement, which are secondary to the main conflict of the billboard versus the family's reaction."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The strict judge's assessment is accurate. The summary effectively captures the main conflict (the billboard vs. family reaction) while omitting secondary details like Siler's legal status and the Terry Knight incident, which is appropriate for a concise summary."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The summary is fluent, coherent, and strictly consistent with the provided text (no hallucinations). I am raising the consistency score from 4 to 5 because the lenient judge's concern about 'omissions' does not constitute a violation of the consistency criterion; consistency requires that facts present in the summary match the source, not that every fact in the source is summarized. The relevance score remains at 4 because the summary significantly under-represents the article's scope by omitting the second shooting (Terry Knight) and the police association's specific defense statement, which are key contextual elements of the news story."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 4.0,
+      "overall_judge": 4.8
+    }
+  }
+}

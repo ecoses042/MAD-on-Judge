@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-8764fb95bfad8ee849274873a92fb8d6b400eee2",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is coherent and consistent with the source text, accurately reflecting the opening sentence and the specific tweet quoted. However, it only covers a tiny fraction of the article's content (the restart of the row and one tweet), ignoring the context of the previous argument, Townsend's goal for England, Merson admitting he was wrong, and Townsend's subsequent retort. Due to this severe lack of coverage regarding key points, the relevance score is lowered, though the lenient rule prevents a score below 3."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is factually consistent with the first sentence of the source text but fails significantly on relevance and coherence as a standalone summary. It only covers the very beginning of the article (the restart of the row) and completely ignores the subsequent major developments: Merson's admission of being wrong about Townsend, Townsend scoring for England, and the resolution of the feud. By omitting the main narrative arc where the 'row' is actually resolved and then reignited, the summary provides a trivial and incomplete picture of the source text."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "Coherence and consistency remain high as the summary accurately reflects the specific opening segment of the text without errors. Fluency is maintained at 4 due to minor punctuation spacing issues (e.g., 'team 's'). However, I am lowering Relevance from 3 to 2. While the lenient judge prevented a score below 3, the summary covers only the very first sentence and a tweet, completely ignoring the majority of the article's narrative arc: the previous argument about England selection, Merson admitting he was wrong after Townsend scored against Italy, and Townsend's retort. This is an extreme omission of key points, warranting a stricter penalty than the lenient judge applied."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is factually consistent and grammatically fluent, but it suffers from a critical flaw in relevance and coherence as a standalone piece. It only summarizes the opening sentence of the article, completely ignoring the central narrative arc: Merson being proven wrong about Townsend, his admission of error, and the subsequent exchange of tweets. By omitting the resolution and the 'reigniting' of the row mentioned in the final sentence, the summary fails to capture the main point of the text, making it trivial and incomplete."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. While the summary is coherent and consistent with the provided text, it suffers from a critical flaw in relevance by summarizing only the very first sentence and a tweet, completely omitting the central narrative arc of the article: Merson's previous criticism, his admission of being wrong after Townsend scored against Italy, and the subsequent exchange. This extreme omission makes the summary unrepresentative of the source document as a whole, justifying the lower relevance score."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment that the summary is incomplete and fails to capture the main narrative arc (Merson being proven wrong and admitting it). However, I disagree with raising the consistency score to 4. The summary contains a significant factual error: it states Merson put the tweet on Twitter after the Burnley game ('Sunday'), but the article explicitly states he did so 'initially' after Townsend's England goal against Italy ('Tuesday night'). The Burnley game quote is presented as a new event restarting the row, not the original source of the quote. Therefore, the summary introduces a false timeline regarding when the specific quoted tweet occurred relative to the events described in the text."
+      }
+    },
+    "final": {
+      "coherence": 3.5,
+      "consistency": 4.5,
+      "fluency": 3.5,
+      "relevance": 1.5,
+      "overall_judge": 2.5
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-998cb27197db1fd299aff3322ac041ba4bf1148f",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is coherent and consistent with the source text, accurately reflecting the opening sentences. However, it only covers the first half of the article, completely omitting the humorous anecdote about the media team's struggle to create highlights for a 0-0 draw and the description of the video itself. While this omission isn't a hallucination (consistency is maintained), it represents a significant lack of coverage regarding the main unique content of the piece, thus lowering the relevance score."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is coherent and fluent in its first two sentences but fails significantly on consistency and relevance due to a severe hallucination in the third sentence ('eyeing the beach'). The source text mentions Fleetwood's play-off hopes evaporating, not any desire for the beach. Additionally, the summary cuts off abruptly after the third sentence, failing to cover the main news of the article (the 0-0 draw and the media team's struggle with highlights), resulting in poor relevance."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is coherent and consistent but suffers from low relevance because it completely omits the central anecdote of the article (the media team's struggle to create highlights for a 0-0 draw). This omission represents a significant failure to cover the main unique content, justifying the lower relevance score."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 2,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I lowered the consistency score significantly because the phrase 'eyeing the beach' is a severe hallucination not present in the source text (which mentions play-off hopes). I also lowered the relevance score to reflect that the summary cuts off abruptly after the third sentence, completely missing the main news of the article: the 0-0 draw and the media team's struggle with creating highlights. The fluency score remains low due to the abrupt ending and lack of proper punctuation/capitalization in the provided text."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary fails to capture the main anecdote regarding the media team's struggle and the resulting short highlights video, which is the core unique content of the article. Therefore, the relevance score remains low."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 1,
+        "overall_judge": 1.5,
+        "adjustment_notes": "I have lowered the scores further based on the lenient judge's valid points. The summary contains a severe hallucination ('eyeing the beach' instead of 'play-off hopes'), which is a critical consistency failure. It also completely misses the main news (the 0-0 draw and the media team's struggle), resulting in poor relevance. The abrupt ending and lack of capitalization/punctuation make it grammatically flawed, justifying a low fluency score. The coherence is low because the summary feels incomplete and disjointed due to the missing conclusion."
+      }
+    },
+    "final": {
+      "coherence": 3.5,
+      "consistency": 3.0,
+      "fluency": 3.0,
+      "relevance": 2.0,
+      "overall_judge": 2.9
+    }
+  }
+}

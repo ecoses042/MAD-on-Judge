@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-b5925c1a02fa9a8f6b1d5ad764c19a732deac0df",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and consistent with the source text. It captures the main event and key details (location, victim, viewer count). It receives a slightly lower relevance score because it omits specific context provided in the article, such as the dog's owner identity or the public reaction, but these are not hallucinations."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from a significant relevance issue: it truncates the text abruptly after the third sentence, omitting the majority of the source content (specific details about the dog's owner, the crocodile's behavior over time, public reaction, and context about American crocodiles). While the included facts are consistent with the article, the failure to cover key points results in a low relevance score."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is well-structured, grammatically correct, and strictly adheres to the facts in the source text without hallucination. While it omits some secondary details like the specific owner identity or public reaction (justifying a relevance score of 4 rather than 5), this is appropriate for a concise summary focusing on the primary event."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I agree with the strict judge's assessment. While the summary is grammatically perfect and coherent, it fails significantly on relevance by truncating the text after only three sentences. It omits crucial details such as the dog's owner (bike shop), the duration of the crocodile holding the prey, public reactions, and the context regarding American crocodiles in Puerto Vallarta. Therefore, I maintain the low relevance score."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary is well-structured, grammatically correct, and strictly adheres to the facts in the source text without hallucination. While it omits some secondary details like the specific owner identity or public reaction (justifying a relevance score of 4 rather than 5), this is appropriate for a concise summary focusing on the primary event."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding relevance. The summary is grammatically perfect and coherent, but it truncates the source text significantly after only three sentences. It omits crucial details such as the dog's owner (bike shop), the duration of the crocodile holding the prey, public reactions, and the context regarding American crocodiles in Puerto Vallarta. Therefore, the low relevance score is justified."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.7
+    }
+  }
+}

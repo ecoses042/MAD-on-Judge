@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-b8b6e729fff27c4eef87887e61d3448de9c063f6",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is factually consistent with the source but suffers from severe relevance issues as it only covers the first two sentences of the article, omitting all other key details (the specific reason for failure, cost-saving goals, cargo specifics, and future plans). Additionally, fluency is penalized because the text retains the raw '-lrb- cnn -rrb-' formatting artifacts from the input instead of converting them to standard text like '(CNN)'. Coherence is slightly reduced due to this abrupt ending."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is coherent and consistent with the source text, accurately reporting the launch and landing failure. However, it only covers the first two sentences of the article, omitting significant details about Elon Musk's cost-saving goals, the Dragon spacecraft's cargo (supplies/ISSpresso), the return mission, and the context that this was a second attempt after a weather scrub. Due to these omissions, relevance is limited."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "Lowered fluency to 2 because the summary retains raw formatting artifacts ('-lrb-', '-rrb-') instead of converting them to standard parentheses, which is a significant quality issue. Lowered relevance to 1 and coherence to 3 because the strict judge's assessment was accurate: the summary only covers the first two sentences of the article, completely omitting the reasons for landing attempts (cost reduction), cargo details, mission specifics, and future plans, making it an extremely incomplete summary."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "The lenient judge's assessment is accurate. The summary strictly adheres to the first two sentences of the article (coherence and consistency are perfect). However, it fails to capture the vast majority of the source text, which details the reasons for landing attempts (cost reduction), the specific cargo delivered (supplies/ISSpresso), the return mission process, and the context of this being a second attempt. Therefore, the relevance score of 3 is appropriate and should not be raised."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "No changes to scores. The lenient judge's assessment regarding fluency (due to raw formatting artifacts like '-lrb-', '-rrb-') and relevance (extremely incomplete coverage) is accurate and supported by the source text. The summary fails to convert brackets to parentheses and omits the vast majority of the article's content, including the 'why' (cost reduction), cargo details, and mission specifics."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "The strict judge's assessment is accurate. The summary strictly covers only the first two sentences of the source text, completely omitting the reasons for landing attempts (cost reduction), cargo details (supplies/ISSpresso), return mission process, and the context of it being a second attempt. Therefore, the relevance score of 3 is appropriate and should not be raised."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 5.0,
+      "fluency": 3.0,
+      "relevance": 2.0,
+      "overall_judge": 3.1
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-c6667409fcdea2c89ba9f0d3a72c50e3967b4b1b",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, jumping between points without clear connections."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary incorrectly states that Barkley has scored 15 penalties from 16 attempts, which is misleading as he missed the penalty in the match discussed."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the context of Barkley's penalty miss and the significance of Leighton Baines' penalty record."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary uses lowercase letters for the beginning of sentences, which is grammatically incorrect."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with Barkley's penalty attempt and the context of the match."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding Barkley's penalty attempt and the circumstances surrounding it."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key event of the penalty and the involvement of Barkley and Martinez, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains a factual inaccuracy, stating that Barkley has scored 15 penalties from 16 attempts, which contradicts the article where it mentions Baines' record."
+        },
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow, as it abruptly shifts from Barkley's penalty to Martinez's defense without a clear connection."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

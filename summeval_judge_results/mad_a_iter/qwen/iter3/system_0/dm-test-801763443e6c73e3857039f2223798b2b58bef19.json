@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-801763443e6c73e3857039f2223798b2b58bef19",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 3.8,
+        "rationale_for_score": "The summary is mostly coherent and fluent but contains a clear hallucination in the last sentence: it states Dani Alves is being linked to move 'to the french champions league' (a competition), whereas the source text clearly links him to a move 'to the French champions' (the club PSG). This factual error violates consistency. The summary covers the main points well otherwise."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from a significant hallucination in the last sentence: it states 'Dani Alves is being linked to move to the french champions league,' whereas the source text says he is linked with a move 'to the French champions' (referring to PSG). This changes the meaning entirely. Additionally, the summary lacks proper capitalization and punctuation, reducing fluency. It misses key details like Van der Wiel's specific quotes about loving the club and his willingness to sign a new contract, lowering relevance."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 3.8,
+        "adjustment_notes": "No changes made. The lenient judge correctly identified a factual inconsistency in the summary's final sentence ('move to the french champions league' vs 'move to the French champions'). This hallucination regarding the destination of Dani Alves violates the consistency criteria, justifying the score of 3."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a critical factual error (hallucination) in the final sentence regarding Dani Alves' destination ('French champions league' vs 'French champions/PSG'), which violates consistency and relevance. The lack of capitalization and punctuation also impacts fluency and coherence. No score reduction was necessary as the strict judge's penalties were justified."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No score adjustment is necessary. The lenient judge correctly identified the critical factual error in the final sentence ('French champions league' instead of 'PSG') as a hallucination that violates consistency and relevance. The lack of capitalization and punctuation further impacts fluency and coherence. The strict judge's penalties were fully justified, so no points should be raised."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "Lowered consistency score from 3 to 2. The strict judge correctly identified a hallucination in the summary's final sentence: 'move to the french champions league' implies Dani Alves is moving to the Champions League (a competition), whereas the source text clearly states he is being linked with a move to the 'French champions' (Paris Saint-Germain, a club). This is a significant factual error regarding the subject of the transfer rumor, warranting a lower score than previously given."
+      }
+    },
+    "final": {
+      "coherence": 3.5,
+      "consistency": 2.0,
+      "fluency": 4.0,
+      "relevance": 3.5,
+      "overall_judge": 3.0
+    }
+  }
+}

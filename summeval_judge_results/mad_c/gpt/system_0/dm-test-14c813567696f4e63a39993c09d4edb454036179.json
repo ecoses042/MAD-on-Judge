@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-14c813567696f4e63a39993c09d4edb454036179",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, making it difficult to follow the narrative."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces incorrect information, such as 'the original song was bought our first house and started to build their original trailer,' which is not present in the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as missing punctuation and awkward phrasing."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to cover key points, such as the couple's rapping, the content of the video, and the context of their announcement."
+        }
+      ],
+      "provisional_score": 1
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear announcement of the couple's pregnancy and mentions the video format, maintaining a logical flow of information."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary captures the key point of the couple announcing their pregnancy through a creative video, which is the main focus of the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the phrase 'original trailer,' which is not present in the article and seems to misrepresent the content."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues and awkward phrasing, making it less fluent and harder to read."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

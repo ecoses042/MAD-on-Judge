@@ -1,0 +1,63 @@
+{
+  "article_id": "dm-test-9b1af0f993d78353ebd56a1b180e882e751527b3",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, as it abruptly ends after introducing Aaron Siler and Officer Pablo Torres without providing context about the billboard or the reactions from family and friends."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to cover key points such as the community's reaction to the billboard, the statement from the Kenosha Professional Police Association, and the ongoing investigation, which are crucial for understanding the situation."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as inconsistent capitalization of names and lack of proper punctuation, which affects readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the incident involving Aaron Siler and Officer Pablo Torres."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the key details from the article, including the circumstances of the shooting and the status of Officer Torres."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important information, specifically the shooting incident and the officer's current status."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as the use of lowercase letters for names and lack of punctuation, which affects readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 4,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

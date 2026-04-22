@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-e7d8b6617691ea00d4ddc5fe2b7cbd105ba9a57e",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is fluent and relevant but suffers from a critical grammatical error in the final sentence ('a paedophile with a young girls' instead of 'an obsession'), which hurts fluency and professionalism. Coherence is low because the summary repeats the exact same introductory phrase found in the source text twice, creating redundancy rather than a logical flow. Consistency is high as it accurately reflects the facts without hallucination."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary accurately reflects the key facts from the article (Stephen Munden's age, location, conviction, and current status) without hallucinating new information. It is well-grounded in the source text. However, it receives a score of 4 rather than 5 due to minor structural issues: the first sentence is a fragment lacking a main verb ('described as having...'), and the final sentence repeats the introductory phrase 'A paedophile with a young girls' (which also contains a grammatical error: missing 'an' or pluralization) that was already covered in the text, slightly reducing fluency and relevance efficiency."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary repeats the exact same introductory sentence twice ('A predatory convicted paedophile...'), which is a significant structural flaw reducing coherence. Additionally, the final sentence contains a clear grammatical error ('a paedophile with a young girls' instead of 'an obsession'), impacting fluency and professionalism. While the facts are consistent with the source, these issues prevent a higher score."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I lowered the fluency score from 4 to 3. While the lenient judge noted structural issues, I agree that the summary contains significant grammatical errors that impact readability: the first sentence is a fragment ('described as having...'), and the final sentence has a clear typo ('a paedophile with a young girls' instead of 'an obsession' or 'with young girls'). Additionally, the final sentence repeats the exact same information as the first sentence (obsession + vanishing from unit), which reduces relevance efficiency and makes the summary feel redundant rather than just having a minor structural issue. The coherence remains 4 due to this redundancy and lack of logical progression between sentences."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary repeats the exact same introductory sentence twice, which is a significant structural flaw reducing coherence. Additionally, the final sentence contains a clear grammatical error ('a paedophile with a young girls' instead of 'an obsession'), impacting fluency and professionalism. While the facts are consistent with the source, these issues prevent a higher score."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the coherence score to 3 because the summary's final sentence is a near-exact duplicate of the first sentence, creating significant redundancy and breaking logical flow. I lowered the fluency score to 2 due to severe grammatical errors: the first sentence is a fragment lacking a main verb, and the final sentence contains a typo ('a paedophile with a young girls') that makes it nonsensical. I also lowered relevance to 3 because this redundancy wastes space on information already presented in the opening."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 4.5,
+      "fluency": 2.5,
+      "relevance": 3.5,
+      "overall_judge": 3.0
+    }
+  }
+}

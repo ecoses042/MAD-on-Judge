@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-9b1af0f993d78353ebd56a1b180e882e751527b3",
+  "system_name": "system_8",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow of information, as it abruptly shifts from the shooting incident to the GoFundMe page without connecting the two topics."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The mention of the GoFundMe page is trivial and does not focus on the key points of the incident, such as the community's reaction to the billboard or the ongoing investigation."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary states that Siler 'allegedly armed himself with a weapon,' which introduces ambiguity not present in the original article, where it is stated that he did arm himself."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'after he allegedly 'armed himself with a weapon' after being confronted' is awkwardly constructed and could be more clearly phrased."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with the shooting incident and mentioning the officer's current status, which helps the reader understand the context."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding the circumstances of Siler's death and the involvement of officer Pablo Torres."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key event of the shooting and the officer's leave, which are central to the article's narrative."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary could be improved by ensuring it flows more naturally, as the abrupt mention of the GoFundMe page feels disconnected from the main narrative."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "While the GoFundMe page is mentioned, it may not be as relevant to the main focus of the article, which is the shooting and the community's reaction."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "tie",
+        "consistency": "tie",
+        "fluency": "tie",
+        "relevance": "tie"
+      }
+    }
+  }
+}

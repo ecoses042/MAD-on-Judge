@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-4761dc6d8bdf56b9ada97104113dd1bcf4aed3f1",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary contains severe hallucinations and factual errors that violate the consistency criterion. It incorrectly states the whale swam 'from the Guinness Worlds Records' (the record is on the website, not a location), repeats 'whale whale whale', and creates a nonsensical sentence claiming 'the north coast of mexico is russian for barbara'. The original text says Varvara's name means Barbara in Russian, not that Mexico does. These are clear hallucinations rather than minor phrasing issues."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 1,
+        "overall_judge": 1.5,
+        "rationale_for_score": "The summary contains severe hallucinations and factual errors inconsistent with the source text. Specifically: 1) It claims Varvara swam 'from the Guinness Worlds Records,' whereas the text says her journey surpassed a record listed on that website. 2) It states 'the north coast of mexico is russian for `` barbara ''', which is a complete misinterpretation of the sentence explaining that 'Varvara' is Russian for 'Barbara'. 3) It includes a nonsensical repetition ('whale whale whale'). These are critical failures in consistency and fluency."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The lenient judge's assessment is accurate and well-founded. The summary contains severe hallucinations (e.g., 'swam from the Guinness Worlds Records', 'north coast of mexico is russian for barbara') that violate the consistency criterion. These are not minor phrasing issues but fundamental factual errors derived from misinterpreting the source text. Therefore, the scores remain low."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 1,
+        "overall_judge": 1.5,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary contains severe factual hallucinations (claiming the whale swam 'from' Guinness World Records instead of surpassing a record listed there) and nonsensical phrasing ('the north coast of mexico is russian for'). These are critical failures in consistency and fluency that warrant low scores."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The strict judge's assessment is correct. The summary contains severe hallucinations that fundamentally violate the consistency criterion (e.g., 'swam from the Guinness Worlds Records', 'north coast of mexico is russian for barbara'). These are not minor phrasing issues but factual errors derived from misinterpreting the source text. Therefore, the low scores remain justified."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 1,
+        "overall_judge": 1.5,
+        "adjustment_notes": "No adjustment needed. The lenient judge correctly identified severe factual hallucinations (e.g., 'swam from the Guinness Worlds Records') and nonsensical phrasing ('the north coast of mexico is russian for'). These are critical failures in consistency and fluency that justify the low scores."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 1.0,
+      "fluency": 2.0,
+      "relevance": 2.0,
+      "overall_judge": 1.8
+    }
+  }
+}

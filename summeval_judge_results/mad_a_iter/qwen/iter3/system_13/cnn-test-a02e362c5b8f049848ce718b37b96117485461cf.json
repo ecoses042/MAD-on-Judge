@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-a02e362c5b8f049848ce718b37b96117485461cf",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source and fluent enough to read well. However, it suffers from poor relevance as it omits the central explanation of *why* the sunsets are red (smoke particles filtering light) and the cause of the fires getting out of control (strong winds), focusing only on the initial observation and origin. It feels incomplete."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is fluent and consistent with the source text regarding the specific sentences it quotes. However, it fails significantly on relevance and coherence as a complete summary because it omits the vast majority of the article's key information: the cause of the fire getting out of control (winds), the destruction of villages, the transport of smoke across the Pacific, the scientific explanation for the red color, and the eventual dissipation of the smoke. By stopping after the third sentence of the source, it provides a fragmented overview that misses the main point of the story."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the relevance score from 3 to 2. While the lenient judge correctly identified that the summary omits the 'why' (the scientific explanation and the spread of smoke), a score of 3 implies it covers 'some' key points. Given that the article's primary purpose is to explain the phenomenon of the red sunsets caused by Siberian wildfires, and the summary only describes the observation and origin without explaining the mechanism or the impact on the region, the summary fails to cover the most important information. It reads like an introduction rather than a summary of the full story."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is grammatically correct and factually consistent with the source text for the specific details it includes. However, it fails significantly on relevance because it only covers the first three sentences of the article, omitting the core news event (the cause of the fires, the destruction, the smoke transport, and the scientific explanation). It also lacks coherence as a standalone summary because it feels like an incomplete excerpt rather than a cohesive overview of the story. Therefore, I maintain the low relevance score and do not increase the overall score."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary captures the observation and origin but completely misses the core explanation (why the sunsets are red) and the impact (smoke spread, village destruction), which are central to the article's narrative. A score of 3 implies partial coverage of key points, but this summary covers only the 'what' and 'where', missing the 'why' and 'so what'. Therefore, maintaining the relevance score at 2 is appropriate."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary is factually consistent and grammatically fluent based on the specific details it includes (Tim Durkan's photos and the origin of the fires). However, it fails significantly on relevance by omitting the vast majority of the article's content, including the destruction of villages, the transport of smoke across the Pacific, and the scientific explanation for the red color. It also lacks coherence as a standalone summary because it reads like an incomplete excerpt rather than a cohesive overview. Therefore, I maintain the low relevance score and do not increase the overall score."
+      }
+    },
+    "final": {
+      "coherence": 3.0,
+      "consistency": 5.0,
+      "fluency": 4.5,
+      "relevance": 2.0,
+      "overall_judge": 3.0
+    }
+  }
+}

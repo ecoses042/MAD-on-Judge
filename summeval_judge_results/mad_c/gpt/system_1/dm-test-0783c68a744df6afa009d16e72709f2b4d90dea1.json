@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-0783c68a744df6afa009d16e72709f2b4d90dea1",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information and abruptly shifts topics without proper transitions."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary includes a reference to Bolt winning gold at the London Olympic Games, which is not relevant to the upcoming World Relays event."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention Bolt's positive comments about being fit and ready to run, which are important to understanding his mindset for the event."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is not written in fluent and idiomatic English, as it lacks proper capitalization at the beginning of sentences."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding Usain Bolt's participation in the World Relays."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article without introducing any new facts."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of Bolt's participation and the event details, avoiding trivial information."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization at the beginning of sentences and does not maintain a consistent style."
+        },
+        {
+          "criterion": "coherence",
+          "reason": "The summary does not include Bolt's quotes or the context of his feelings about the event, which would enhance understanding."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 4,
+      "fluency": 3,
+      "relevance": 4,
+      "overall_judge": 3.5,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

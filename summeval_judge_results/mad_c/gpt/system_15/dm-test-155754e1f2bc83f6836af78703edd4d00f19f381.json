@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-155754e1f2bc83f6836af78703edd4d00f19f381",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, jumping between unrelated points without proper transitions."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the idea of Ross Poldark having a baby daughter without mentioning the timeline issues discussed in the article, which is a significant aspect of the source."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to cover key points such as the timeline inconsistency of the pregnancy and the audience's reactions, which are central to the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'at his new baby daughter' which should be 'gaze at his new baby daughter'."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear introduction to the main characters and their relationship, establishing the context of the show."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "It captures the key points about the new addition to the Poldark family and the public's interest in Ross Poldark."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits important details about the timeline of the pregnancy and the reactions from fans, which are significant aspects of the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, such as 'at his new baby daughter' which should be 'with his new baby daughter'."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

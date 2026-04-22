@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-3785743303ddb8b594be7c449a37458b99e83812",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is excellent in terms of coherence, consistency, and fluency. It accurately reflects the source text without hallucinations. The only minor deduction for relevance is that it covers the first paragraph's content thoroughly but omits significant details from the rest of the article (such as specific injured players, upcoming fixtures, or Ronald Koeman's incident with Sadio Mane), though this is acceptable given the summary's brevity."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.8,
+        "rationale_for_score": "The summary is fluent and coherent within its limited scope but fails significantly on relevance and consistency due to severe truncation. It covers only the first two sentences of the source text (approx. 15% of the content) while ignoring critical details such as the specific injury crisis, the upcoming 'nightmare fixtures,' Ronald Koeman's squad issues, and the context of Hull being two points clear of the drop zone. By omitting these key points, it fails to capture the main story effectively."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is a severe truncation that captures only the opening paragraph of the article, omitting critical context such as the injury crisis, specific upcoming fixtures, and the manager's broader comments on team rules. Therefore, the scores for relevance and consistency remain low, and coherence is limited by the abrupt ending."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is well-structured and fluent. It accurately reflects the opening context of the article (Steve Bruce's stance, the specific match result, and the win count discrepancy). While it omits details about injured players, upcoming fixtures, and the Ronald Koeman subplot found in the latter half of the article, this is a reasonable trade-off for a short summary focusing on the primary narrative hook. No harshness adjustment required."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.8,
+        "adjustment_notes": "I agree with the lenient judge's assessment that the summary is a severe truncation. It captures only the first paragraph of the article, completely omitting critical information regarding the injury crisis (Diame, Chester, Dawson, Jelavic, Snodgrass), the specific upcoming fixtures (Liverpool, Arsenal, Tottenham, Man Utd), and the context regarding Ronald Koeman's team rules incident. Consequently, the summary fails to cover key points (low relevance) and leaves the narrative incomplete without essential context provided in the source text (low consistency with the full scope of the article). The scores remain unchanged."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary effectively captures the primary narrative hook (Steve Bruce's confidence and the specific match context) while appropriately omitting secondary details like injuries, fixtures, and the Koeman subplot for a short summary. No adjustment needed."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 3.5,
+      "fluency": 4.5,
+      "relevance": 3.0,
+      "overall_judge": 3.8
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-6721edf88c95f480a4db2c63649dbb03736aeadf",
+  "system_name": "system_4",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information and does not connect the events in a structured manner."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits critical details about Ian Guffick's actions, such as altering answers himself and the consequences of his actions, which are essential for understanding the situation."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to cover key points, such as the annulment of the school's SATs results and the panel's findings regarding Guffick's conduct."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as inconsistent capitalization of names and lack of punctuation, making it harder to read."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with Ian Guffick's actions and leading to the investigation."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article without introducing any new facts."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of Guffick's actions and the subsequent investigation, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as the lack of capitalization for 'Ian Guffick' and 'English,' which affects readability."
+        },
+        {
+          "criterion": "coherence",
+          "reason": "While the summary outlines the events, it lacks some context regarding the consequences of Guffick's actions, such as the annulment of the SATs results."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

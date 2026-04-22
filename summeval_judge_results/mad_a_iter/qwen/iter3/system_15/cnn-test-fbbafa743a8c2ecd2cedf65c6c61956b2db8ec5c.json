@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-fbbafa743a8c2ecd2cedf65c6c61956b2db8ec5c",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from a major consistency flaw: it states that 'original' producers will consult scholars, whereas the source text explicitly says 'Producers' (referring to the new version) will consult scholars. This is a hallucination/misattribution of facts. Additionally, the summary omits key details like the 2016 air date and the specific networks involved in the announcement context beyond just listing them, reducing relevance. Fluency is slightly impacted by the lack of capitalization and punctuation."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is consistent with the source and covers key facts (networks, simulcast, LeVar Burton's role). However, it suffers from poor fluency due to missing punctuation, capitalization, and awkward phrasing ('original '' producers' instead of 'new version described as original'). It also omits the specific context about why the remake is happening now (contemporary relevance), which slightly impacts relevance. Given the lenient rules, it avoids hallucinations but fails on basic readability."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a significant factual error (hallucination) regarding who will consult scholars ('original' producers vs. new producers), which severely impacts consistency. It also lacks key context like the air date and specific announcement details, affecting relevance. Fluency is acceptable but marred by formatting issues. No score increase is warranted."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate: the summary is factually consistent and coherent but suffers from significant fluency issues (lack of capitalization, punctuation, and awkward phrasing like 'original '' producers') and misses some contextual relevance regarding the modern setting. These flaws justify the scores."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "Lowered fluency score from 3 to 2 because the summary contains severe formatting errors (lowercase start, missing punctuation between sentences) and awkward phrasing ('original '' producers' instead of 'new version'). Lowered relevance score from 4 to 3 because the summary omits the significant context regarding the modern setting (Obama era, racial unrest) which is a key point in the source text explaining why the remake is happening now."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No score changes were made. The lenient judge's assessment correctly identified a critical factual error in the summary: it attributes the action of consulting scholars to 'original' producers, whereas the source text explicitly states that 'Producers' (referring to the new production team) will consult scholars. This hallucination severely impacts consistency. Additionally, the summary omits key details like the 2016 air date and the context of the announcement, affecting relevance. The formatting issues impact fluency. Therefore, the strict judge's lower scores are justified."
+      }
+    },
+    "final": {
+      "coherence": 3.5,
+      "consistency": 3.5,
+      "fluency": 3.0,
+      "relevance": 3.0,
+      "overall_judge": 3.0
+    }
+  }
+}

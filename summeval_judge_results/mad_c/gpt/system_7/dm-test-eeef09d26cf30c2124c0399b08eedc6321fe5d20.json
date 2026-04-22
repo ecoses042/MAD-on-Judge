@@ -1,0 +1,63 @@
+{
+  "article_id": "dm-test-eeef09d26cf30c2124c0399b08eedc6321fe5d20",
+  "system_name": "system_7",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow, jumping abruptly from the basketball game to Neymar's performance in a separate match without clear connections."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that Barcelona beat Real Madrid in El Clasico; the article specifies that it was a Euro League basketball match, not a football match."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The mention of Neymar's sister attending the game is trivial and does not contribute significantly to the main points of the article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, starting with the basketball match and then mentioning Neymar's involvement with the Brazilian national team."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the events described in the article, including the outcome of the basketball game and Neymar's performance in the international match."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points, such as the basketball game result and Neymar's contributions, while avoiding unnecessary details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary could benefit from improved sentence structure for better readability, as it currently reads as a list rather than a cohesive narrative."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

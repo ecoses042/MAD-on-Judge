@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-5be0a9584b051175d9f4842a143b76385335d96a",
+  "system_name": "system_6",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, abruptly transitioning from the financial implications of failing to qualify for the Champions League to the recent derby loss without adequate connection."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary incorrectly states 'manuel pellegrini's lost' instead of 'manuel pellegrini's team lost', which misrepresents the subject of the sentence."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as inconsistent spacing around punctuation and awkward phrasing, which detracts from readability."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention the broader context of Manchester City's current league position and the implications of their performance on their Champions League qualification, which are key points in the article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the financial implications for Manchester City players if they do not qualify for the Champions League."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, including the specific amount of bonuses at stake and the names of key players involved."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important points, such as the financial stakes for the players and the context of their performance in the Manchester derby."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as awkward phrasing and punctuation errors, which affect its readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

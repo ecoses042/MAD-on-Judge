@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-bcdb32ae644040a721da880fff9c1d502048cd8b",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and strictly consistent with the source text, accurately reporting the key facts about the discovery, the ship's itinerary, and the port authority's statement. It receives a score of 4 for relevance because it omits the critical context provided in the article regarding the FBI investigation and the cruise line's initial assessment that the deaths appear to be a murder-suicide, which are significant details."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, well-structured, and strictly consistent with the source text without hallucinations. It captures the key facts (who, where, when). It receives a slight deduction on relevance because it omits the crucial context that authorities have determined this was likely a murder-suicide, which is the most significant piece of information in the article."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. While the summary is fluent and consistent, it significantly under-reports the most critical information: the nature of the incident (murder-suicide) and the involvement of the FBI. These are central to the news story, making the omission a genuine flaw in relevance that warrants keeping the score at 4."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is fluent, well-structured, and strictly consistent with the source text. It captures the essential facts regarding the discovery of the bodies and the ship's itinerary. The deduction for relevance is justified because the summary omits the critical context provided in the article: that authorities believe the deaths were a murder-suicide. This is the most significant piece of information in the source text."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary is fluent and consistent but misses the critical context that the deaths appear to be a murder-suicide, which is the most significant piece of information in the source text."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I am raising the relevance score from 4 to 3 (a slight penalty) because the summary omits the critical finding that the deaths appear to be a murder-suicide and the involvement of the FBI. While these are important details, they are secondary to the core fact of the discovery itself; however, their absence does impact the completeness of the news report. I am not raising the score further as the omission is significant enough to prevent a perfect 5."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.7
+    }
+  }
+}

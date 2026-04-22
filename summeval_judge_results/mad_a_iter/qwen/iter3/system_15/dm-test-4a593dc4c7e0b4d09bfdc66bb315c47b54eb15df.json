@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-4a593dc4c7e0b4d09bfdc66bb315c47b54eb15df",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from severe fluency issues due to the repetitive use of 'Jordan Henderson' and 'Henderson' in a very short text, making it read like a broken list of sentences rather than a coherent paragraph. While the facts are consistent with the source (no hallucinations), the relevance is low because it fails to synthesize the information; instead, it repeats the core sentiment multiple times without adding context about the match details (goalscorers) or the specific record mentioned, which were significant parts of the article."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.8,
+        "rationale_for_score": "The summary is factually consistent with the source text (no hallucinations) and fluent enough to read. However, it suffers from significant coherence issues due to extreme repetition of the same core idea ('Henderson thinks Liverpool can catch City') in almost every sentence without adding new information or logical progression. It also lacks relevance by failing to mention key details like the match score, the specific goal scorers (Sterling/Allen), or the context of the 47th game record, which are prominent in the source."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 1,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The strict judge was correct to penalize the summary heavily. The text is not a summary but a fragmented list of sentences that repeats the same core point ('Henderson thinks Liverpool can catch City') and the specific fact about '47th game' three times in different ways. This makes it incoherent as a narrative, grammatically poor (repetitive structure), and irrelevant due to lack of synthesis or inclusion of key match details like the goalscorers (Sterling, Allen) mentioned in the source. I have lowered my initial generous scores to reflect these severe flaws."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "The lenient judge's scores were too high given the summary's severe structural flaws. The summary consists almost entirely of repetitive sentences stating the same core fact ('Henderson thinks Liverpool can catch City') or slightly rephrased versions of it (e.g., 'Henderson played his 47th game...'). This creates a disjointed flow with no logical progression, justifying a lower coherence score. Regarding relevance, while the summary captures the main headline sentiment, it completely ignores significant details present in the source text such as the specific goal scorers (Sterling, Allen), the match context (penalty shout discussion), and the record-breaking nature of the 47th game beyond just stating the number. The lenient judge's score of 3 for relevance was generous given these omissions. Fluency is penalized because the repetition makes the text monotonous and stylistically poor, though grammatically correct."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 1,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The lenient judge correctly identified that the summary is a fragmented list of sentences rather than a cohesive narrative. It repeats the core point about Henderson and the '47th game' fact multiple times without synthesis, resulting in poor fluency and low coherence. Crucially, it fails to include key match details (goalscorers Sterling and Allen) present in the source text, leading to low relevance. The strict judge's harsh penalties are fully justified by these structural and content flaws."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary suffers from severe structural flaws due to extreme repetition of the same core fact ('Henderson thinks Liverpool can catch City') and the 47th game statistic without adding new information or logical progression. This makes it disjointed (low coherence) and stylistically poor/monotonous (low fluency). Furthermore, by failing to mention key details like the goal scorers (Sterling, Allen), the penalty controversy, or the specific context of the record-breaking achievement beyond the number itself, the summary misses significant relevant information from the source text (low relevance). The scores remain unchanged as they accurately reflect these deficiencies."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 5.0,
+      "fluency": 2.0,
+      "relevance": 2.0,
+      "overall_judge": 2.5
+    }
+  }
+}

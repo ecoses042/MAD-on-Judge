@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-cf4ba8f94f2dd5604eb8f8a4e655c10cf0996365",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from severe fluency issues due to missing articles (e.g., 'the fluoro orange sweatshirt' instead of 'a fluoro...'), awkward phrasing ('is described as being ` tall '`), and inconsistent capitalization. It also contains a consistency error by omitting the last digit of the phone number provided in the source text (0800 555 111 vs 0800 555). While it covers the main points, the grammatical errors and factual omission lower its overall quality."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 3.8,
+        "rationale_for_score": "The summary is generally coherent and fluent but contains a significant consistency error: it omits the phone number's last three digits ('0800 555' instead of '0800 555 111'), which constitutes a factual inaccuracy relative to the source. Additionally, the phrasing 'the fluoro orange sweatshirt and oversized mask is described as being ` tall '` is slightly awkward grammatically, though understandable. Given the lenient rules, I penalize only for the clear omission of the full phone number rather than the minor phrasing issue."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains significant fluency issues (missing articles like 'a', awkward phrasing) and a factual inconsistency where the phone number is truncated ('0800 555' instead of '0800 555 111'). These flaws warrant the lower scores assigned by the strict judge, so no upward adjustment is made."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 3.8,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate: the summary contains a factual inconsistency by truncating the phone number (0800 555 vs 0800 555 111). While the phrasing regarding the 'tall' description is slightly awkward, it remains consistent with the source text's description of the offender. The scores reflect this specific error without being overly harsh on minor stylistic points."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No adjustment made. The lenient judge correctly identified the fluency issues (missing articles, awkward phrasing) and the factual inconsistency regarding the truncated phone number ('0800 555' vs '0800 555 111'). These are objective errors that prevent higher scores in fluency and consistency. The summary is also slightly disjointed in its flow (coherence) due to these grammatical breaks, though the key information is present (relevance). Therefore, the strict judge's lower scores are justified."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 3.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary contains a factual inconsistency by truncating the phone number (0800 555 vs 0800 555 111), which lowers the consistency score to 3. The awkward phrasing regarding 'tall' is minor and does not warrant a lower coherence score. No other changes are necessary."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 3.0,
+      "fluency": 3.0,
+      "relevance": 4.0,
+      "overall_judge": 3.4
+    }
+  }
+}

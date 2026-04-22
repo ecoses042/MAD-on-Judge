@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-bd4684a0f5af5dd6ac88d2fb50f902bd7f10217b",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from severe relevance issues as it consists almost entirely of repetitive sentences stating the same fact (that Falcao struggled at Manchester United) without adding new information or covering other key points like River Plate's specific interest ('dream of Falcao'), his past success there (34 goals), or his current form for Colombia. While the facts are consistent with the text, the lack of synthesis and inclusion of trivial/repeated details makes it a poor summary."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is consistent with the source text and uses fluent English. However, it suffers from significant redundancy (stating Falcao struggled at Manchester United twice in two sentences) and lacks a clear logical flow compared to the original. It also misses key relevant details like River Plate's specific interest ('dream of Falcao') and Falcao's recent form for Colombia, which are central to the article's narrative."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment regarding relevance and coherence. The summary is indeed poor because it repeats the same fact (struggled at Man Utd) multiple times in slightly different phrasing without synthesizing the information or covering other key points like River Plate's specific interest ('dream of Falcao') or his past success. While the facts are consistent with the source, the lack of synthesis and inclusion of trivial/repeated details makes it a poor summary. I maintain the strict judge's scores as they accurately reflect these flaws."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the coherence score because the summary repeats the exact same fact (struggling at Manchester United) in two consecutive sentences without a logical transition, creating a disjointed flow. I significantly lowered the relevance score; while the lenient judge noted missing details like 'dream of Falcao' or Colombia form, the summary's primary failure is its own internal redundancy which makes it feel incomplete and poorly structured rather than just lacking specific data points. The summary fails to synthesize the information effectively."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment that the summary is poor due to repetition and lack of synthesis. The summary repeats the fact about struggling at Manchester United twice ('struggled on loan' and 'struggled during a season-long loan spell') without adding value. Furthermore, it fails to include key information from the source text, such as River Plate's specific desire ('dream of Falcao'), his past success (34 goals in 90 appearances), or his current form for Colombia. Therefore, I maintain the strict judge's low scores for relevance and coherence."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary suffers from significant redundancy (stating Falcao struggled at Manchester United twice in consecutive sentences) which severely impacts coherence and relevance. It fails to synthesize the key points like River Plate's specific interest ('dream of Falcao') or his recent international form, making it feel incomplete despite being factually consistent."
+      }
+    },
+    "final": {
+      "coherence": 3.0,
+      "consistency": 5.0,
+      "fluency": 4.0,
+      "relevance": 2.0,
+      "overall_judge": 3.0
+    }
+  }
+}

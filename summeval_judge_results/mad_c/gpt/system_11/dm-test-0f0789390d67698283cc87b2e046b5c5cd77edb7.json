@@ -1,0 +1,66 @@
+{
+  "article_id": "dm-test-0f0789390d67698283cc87b2e046b5c5cd77edb7",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, abruptly ending without mentioning the guard's reaction or the context of the incident being recorded by a tourist."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the guard's embarrassment, the reactions of the crowd, and the fact that the incident was recorded by a tourist, which are important for understanding the full context."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains awkward phrasing, such as 'this is the embarrassing moment,' which could be more fluidly expressed."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention that the guard was wearing full regalia, which is a detail present in the article that adds to the context of the incident."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, detailing the incident in a sequential manner."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the events described in the article without introducing any new facts."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is written in fluent English, with no grammatical errors, making it easy to read."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key event of the guard slipping and falling, which is the main point of the article."
+        }
+      ],
+      "remaining_concerns": [],
+      "provisional_score": 5
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 4,
+      "relevance": 3,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-6372eff07fd3d6f578f90d6115e01747edccc095",
+  "system_name": "system_8",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, repeating phrases and failing to connect ideas effectively."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that space lasers could be used to shoot down debris, which is not the primary focus of Dr. Quarterman's work; it misrepresents the context of the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary does not adequately cover the key points about Dr. Quarterman's solar energy application and the potential benefits of his research."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains awkward phrasing and redundancy, making it less fluent and harder to read."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear focus on the concept of space lasers and their potential uses, maintaining a logical flow of information."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding the capabilities and limitations of the lasers discussed by Dr. Quarterman."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary highlights the key points about the use of space lasers for debris removal and their non-destructive nature, which are central themes in the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains repetitive phrases and lacks variety in sentence structure, which affects its overall fluency."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

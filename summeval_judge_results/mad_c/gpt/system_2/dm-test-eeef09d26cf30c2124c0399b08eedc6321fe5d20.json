@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-eeef09d26cf30c2124c0399b08eedc6321fe5d20",
+  "system_name": "system_2",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, jumping abruptly from Real Madrid's position to Neymar and Alves' support for the basketball team without a smooth transition."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key information about Neymar's recent performance with the Brazilian national team and the upcoming La Liga match, which are significant to the context."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as the lack of capitalization at the beginning of sentences and inconsistent punctuation."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately presents the context of the Euro League division, as it does not clarify that Real Madrid is leading in a different competition than the one Barcelona won."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, starting with Real Madrid's position and then transitioning to Neymar and Dani Alves' support for Barcelona's basketball team."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding the Euro League contest and the teams involved."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the article, including the basketball match outcome and the involvement of Neymar and Dani Alves."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as the lack of capitalization at the beginning of sentences."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits important context about Neymar's recent performance with the Brazilian national team and the La Liga standings."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

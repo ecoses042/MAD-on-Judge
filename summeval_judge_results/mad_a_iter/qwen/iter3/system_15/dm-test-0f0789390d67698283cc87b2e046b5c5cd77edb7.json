@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-0f0789390d67698283cc87b2e046b5c5cd77edb7",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary contains a severe hallucination in the sentence 'the entire incident was caught on a manhole cover'. The source text states he slipped *on* a manhole cover and the incident was caught on a *tourist's camera*. This factual error violates the consistency criterion. Additionally, the summary is somewhat disjointed with minor capitalization issues (e.g., 'holidaymaker', 'david meadwell'), slightly affecting fluency and coherence."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary contains a clear hallucination in the sentence 'caught on a manhole cover'. The source text states he slipped *on* a manhole cover and the incident was caught *on a tourist's camera*. Saying it was caught 'on a manhole cover' is a factual error (hallucination) regarding the medium of recording. While the rest of the summary is fluent and relevant, this specific inconsistency significantly impacts the consistency score."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the consistency score from 4 to 2 because the strict judge correctly identified a severe hallucination: the summary states the incident was 'caught on a manhole cover' instead of 'caught on a tourist's camera'. This is a critical factual error that violates the core requirement of consistency. I also slightly reduced the overall score to reflect this significant flaw, while maintaining the fluency and relevance scores as they were appropriate."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No adjustment needed. The lenient judge correctly identified a critical hallucination in the summary: 'caught on a manhole cover' contradicts the source text which states it was caught 'on a tourist's camera'. This is a factual error regarding the medium of recording, making the consistency score of 2 justified. The coherence is low (3) because the sentence structure is fragmented and lacks proper punctuation/grammar typical of a well-structured summary, though the flow of events is logical. Fluency (4) and Relevance (4) are acceptable as the language is readable and key points are covered."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding consistency. The summary contains a severe hallucination stating the incident was 'caught on a manhole cover' instead of 'caught on a tourist's camera'. This is a critical factual error that invalidates the consistency score, bringing it down to 2. The coherence is rated 3 because the sentence structure breaks down logically at the point of this error ('caught on a manhole cover' makes no sense in context). Fluency and relevance remain high as the rest of the text is readable and covers the key events accurately."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No adjustment needed. The strict judge correctly identified a critical hallucination ('caught on a manhole cover' vs 'caught on a tourist's camera'), which justifies the low consistency score of 2. The fragmented sentence structure and lack of punctuation also support the coherence score of 3. Fluency and relevance are appropriately rated as acceptable given the readability and coverage of key points."
+      }
+    },
+    "final": {
+      "coherence": 3.0,
+      "consistency": 2.0,
+      "fluency": 4.0,
+      "relevance": 4.0,
+      "overall_judge": 3.0
+    }
+  }
+}

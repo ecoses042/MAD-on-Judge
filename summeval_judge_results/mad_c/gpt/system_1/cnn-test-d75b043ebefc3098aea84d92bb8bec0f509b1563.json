@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-d75b043ebefc3098aea84d92bb8bec0f509b1563",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, presenting disjointed sentences that do not connect well."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that 'three of the militants have been killed' without clarifying that this refers to the same three militants mentioned earlier."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the number of Iranian border guards killed, the context of the attack, and the involvement of Pakistani authorities."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as the repetition of 'three of the militants' which creates confusion."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with the clash and mentioning the involvement of Iranian forces and the militant group."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding the militants being killed and the claim of responsibility by Jaish al Adal."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the number of Iranian border guards killed, the context of the attack, and the response from Pakistani authorities, which are important for understanding the incident."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains repetitive phrases, such as 'three of the militants were killed' and 'three of the militants have been killed,' which affects its readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

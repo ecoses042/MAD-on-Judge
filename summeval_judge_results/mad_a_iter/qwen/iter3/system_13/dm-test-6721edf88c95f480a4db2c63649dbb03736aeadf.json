@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-6721edf88c95f480a4db2c63649dbb03736aeadf",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary is extremely poor in relevance and coherence. It consists of three fragmented sentences that merely repeat the first few lines of the source text without synthesizing the information or covering key details like the annulment of results, the teacher's admission, or the specific ban imposed. While it avoids hallucinations (consistency is acceptable), its failure to summarize the main event and outcome renders it useless as a summary."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source text and flows logically. However, it suffers from poor relevance as it only covers the initial events (the actions taken and the tip-off) while completely omitting the significant outcomes: the annulment of SATs results, the teacher's admission of guilt, the specific ban imposed, and the panel's findings. Given the lenient rules, it avoids hallucinations but fails to capture the main points of the article."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is a direct copy-paste of the first three sentences of the source text without any synthesis or coverage of the critical outcomes (annulment of results, job loss, ban). It fails to function as a summary, making the low scores for relevance and coherence justified."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the relevance score from 3 to 2. While the lenient judge correctly identified that the summary omits major outcomes (annulment, ban, admission), a score of 3 implies it captures 'some' key points or is merely 'acceptable'. A summary that ends abruptly after the investigation starts, ignoring the resolution and consequences which constitute the bulk of the article's narrative arc, is significantly lacking in relevance. The coherence was also slightly lowered from 4 to 3 because the abrupt ending makes the flow feel incomplete rather than just 'logical'."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The summary is a direct excerpt of the first three sentences of the source text. It fails to synthesize the information or cover the critical outcomes (annulment of results, job loss, ban), which are the most important parts of the story. Therefore, the low scores for relevance and coherence remain justified."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is factually consistent and grammatically fluent, but it fails significantly on relevance by omitting the resolution of the story (the annulment of results, the ban, and the teacher's admission). It also suffers from coherence issues due to its abrupt ending, which leaves the narrative incomplete. Therefore, I maintain the strict judge's lowered scores."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 4.5,
+      "fluency": 3.5,
+      "relevance": 1.5,
+      "overall_judge": 2.5
+    }
+  }
+}

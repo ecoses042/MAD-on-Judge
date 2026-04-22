@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-e470f0a87d7513bf880412524332047020422c3f",
+  "system_name": "system_5",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, as it abruptly starts with the auction details without providing context about the dress or its significance."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention the auction price of the dress, which is a key detail that highlights its value and significance in the context of the auction."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary refers to the dress as 'gray' without mentioning its original slate blue-gray color or the fact that it has faded, which is an important aspect of its history."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as inconsistent capitalization of 'heritage auctions' and 'academy award-winning film,' which affects its readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the auction and the significance of the dress."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the details from the article about the dress worn by Vivien Leigh and its context within the film."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the auction and the dress's importance in the film, avoiding trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as inconsistent capitalization and punctuation, which affect readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 4,
+      "overall_judge": 3.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-6721edf88c95f480a4db2c63649dbb03736aeadf",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, failing to connect the actions of Ian Guffick with the consequences of those actions."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits critical details such as the annulment of the school's SATs results and the subsequent ban from teaching, which are key points in the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that Guffick asked pupils to make changes to the national curriculum, which is misleading as the article specifies he asked them to change their exam answers."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'pupil 's' instead of 'pupils'' and lacks proper capitalization for names and the beginning of sentences."
+        }
+      ],
+      "provisional_score": 1
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with Guffick's actions and leading to the investigation."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the key actions taken by Ian Guffick as described in the article, without introducing any new or misleading information."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the main points regarding Guffick's actions and the subsequent investigation, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'pupil 's' instead of 'pupils'' and lacks proper capitalization of names."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits important details, such as the consequences of Guffick's actions and the context of the investigation, which are crucial for understanding the full impact of the situation."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

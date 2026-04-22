@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-14c813567696f4e63a39993c09d4edb454036179",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is factually consistent with the source but suffers from severe fluency issues due to poor sentence structure and lack of punctuation (e.g., 'the clip has been viewed over 1.7 million times on youtube . the original song...'). It reads like a disjointed list of sentences rather than a coherent paragraph. While it covers key points, the lack of grammatical correctness significantly impacts readability."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 3,
+        "fluency": 1,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary fails significantly on fluency due to the lack of capitalization and punctuation (e.g., 'the clip', 'will smith', 'livin' it wed'), making it unreadable. It also suffers from poor coherence as it presents disjointed sentences rather than a logical narrative flow. While the information is technically consistent with the source, the relevance is low because it merely lists isolated facts without synthesizing them into a meaningful summary of the event."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 1,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I lowered the coherence score because the summary is not just a disjointed list but lacks logical flow entirely; it jumps between facts without connecting them (e.g., stating the view count immediately before introducing the song and then jumping to a specific lyric). I kept consistency at 5 as all facts are accurate. I lowered fluency from 2 to 1 because the text is grammatically broken, lacking capitalization for proper nouns (YouTube, Will Smith, Oregon), missing articles, and having run-on thoughts that make it nearly unreadable. I slightly lowered relevance because while key points are there, the inclusion of a random lyric ('livin' it wed') without context makes the summary feel trivial rather than informative."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 3,
+        "fluency": 1,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is grammatically broken due to a complete lack of capitalization and punctuation (e.g., 'the clip', 'will smith'), which severely impacts readability and fluency. It also fails coherence by presenting disjointed sentences rather than a logical narrative. While the facts are consistent with the source, the relevance is low because it merely lists isolated phrases without synthesizing them into a meaningful summary."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 1,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is a disjointed list of sentences lacking logical flow (coherence: 2). It contains severe grammatical errors and lacks capitalization for proper nouns like 'YouTube', 'Will Smith', and 'Oregon', making it nearly unreadable (fluency: 1). While all facts are accurate to the source, the inclusion of a truncated lyric without context detracts from relevance (relevance: 3). No score increases were warranted."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 1,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding fluency and coherence. The summary suffers from a complete lack of capitalization and punctuation, making it grammatically broken and difficult to read (Fluency: 1). Consequently, the disjointed sentences fail to form a logical narrative flow (Coherence: 2). However, every fact presented in the summary is strictly derived from the source text without adding external information, so Consistency remains high (5). The relevance is low because the summary merely lists isolated phrases and lacks synthesis of key points like the video's purpose or the couple's reaction, keeping Relevance at 2."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 5.0,
+      "fluency": 1.0,
+      "relevance": 2.5,
+      "overall_judge": 2.0
+    }
+  }
+}

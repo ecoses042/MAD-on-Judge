@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-18243373494a1722ddcd162ec67b63dd749633ab",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information and is disjointed, repeating the same fact about Pjanic scoring without providing context."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary incorrectly states that Roma beat Napoli 4-2, while the article does not provide a final score."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to include key details such as the significance of the match for Champions League places and the context of Roma's winless streak."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary uses lowercase for 'roma' and 'napoli', which is not standard for proper nouns."
+        }
+      ],
+      "provisional_score": 1
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, highlighting Roma's victory and Pjanic's goal."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the key event of Roma beating Napoli and Pjanic scoring, which are consistent with the article."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most significant outcome of the match, which is Roma's win and Pjanic's contribution."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains a grammatical error in stating 'roma beat napoli 4-2' when the article mentions a 1-0 victory."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary repeats the information about Pjanic's goal unnecessarily, which could have been condensed."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 1,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.0,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

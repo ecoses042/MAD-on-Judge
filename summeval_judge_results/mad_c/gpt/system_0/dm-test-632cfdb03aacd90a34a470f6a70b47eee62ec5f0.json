@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-632cfdb03aacd90a34a470f6a70b47eee62ec5f0",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, jumping between points without clear connections."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary incorrectly states that Gnabry played for Bayern Munich, which is not consistent with the source document."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details about Gnabry's recent performance for Arsenal Under 21s and his positive statements about recovery."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as inconsistent capitalization and punctuation."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear progression of information regarding Gnabry's injury status and his feelings about recovery."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article about Gnabry's injury and his return to play."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is written in a straightforward manner, making it easy to read despite some minor issues."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary includes some inaccuracies, such as stating he played for Bayern Munich instead of Arsenal, and it omits key details like his age and the specific match context."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 1,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.0,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

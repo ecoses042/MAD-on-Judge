@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-23e8c1d71474d239aa9ae37b9a05031b0054b8ce",
+  "system_name": "system_3",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow and does not connect the points about the match, Vardy's goal, and Pearson's advice."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as Leicester's position at the bottom of the table and the importance of their recent wins, which are crucial for understanding the context."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention that Leicester is still bottom of the table, which is an important aspect of their situation."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is written in a fragmented style, lacking complete sentences and proper capitalization."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, starting with the upcoming match, followed by a key player highlight, and concluding with the manager's advice."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary captures the most important points from the article, including the team's current standing, a significant match event, and the manager's message."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits some details from the article, such as the context of Leicester being bottom of the table and the importance of their recent wins."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization and punctuation, making it less fluent and harder to read."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

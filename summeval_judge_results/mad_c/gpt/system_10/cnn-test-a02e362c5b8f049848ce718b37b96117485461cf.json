@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-a02e362c5b8f049848ce718b37b96117485461cf",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, jumping abruptly from Tim Durkan's observation to the cause of the sunsets without connecting the two."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the impact of the wildfires, the atmospheric conditions affecting the sunsets, and the geographical areas affected, which are crucial for understanding the context."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as inconsistent capitalization and spacing, which detract from its readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear connection between Tim Durkan's observation of the sunset and the cause of the stunning colors, which is the wildfires in Siberia."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding the cause of the sunsets being the wildfires in Siberia."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the article, specifically the observation of the sunset and its cause."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks grammatical structure and is fragmented, making it less fluent and harder to read."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits important details such as the impact of the wildfires, the atmospheric effects, and the explanation of why the sunsets appear red."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 4,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

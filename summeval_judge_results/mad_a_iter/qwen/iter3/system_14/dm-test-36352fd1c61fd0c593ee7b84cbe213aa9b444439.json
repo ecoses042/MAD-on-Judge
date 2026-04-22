@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-36352fd1c61fd0c593ee7b84cbe213aa9b444439",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is coherent and fluent but suffers from relevance issues by omitting the significant police appeal for witnesses, which is a major point in the source text. It also contains minor consistency/formatting flaws: it uses '# 400,000' instead of '£400,000' (introducing a factual error regarding currency) and fails to mention that the victim was found strangled and beaten, despite this being a key detail in the article."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary accurately captures the key facts (victim details, location, cause of death, and arrest status) with perfect consistency and relevance. The coherence is good, though the fluency is slightly reduced due to minor punctuation issues (e.g., '# 400,000' instead of '£400,000') and a lack of capitalization at the start of sentences, which prevents it from being an 'Excellent' 5."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the consistency score because the strict judge correctly identified a factual error ('#' instead of '£'), which violates the rule against introducing facts not present or altering them. I also significantly lowered the relevance score; while the summary covers the basic facts of death and arrest, it completely omits the police appeal for witnesses, which is a major component of the source text's narrative regarding the ongoing investigation."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary accurately reflects the source text without adding external facts (consistency) and covers the essential details regarding the victim, location, cause of death, and arrest status (relevance). The structure is logical (coherence). Fluency is correctly rated as 4 due to specific mechanical errors present in the text: the use of '#' instead of '£', lack of capitalization for proper nouns and sentence starts, and inconsistent spacing around punctuation. These are minor but prevent a perfect score."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate: the summary contains a factual error ('#' instead of '£') which violates consistency rules, and it omits the significant police appeal for witnesses found in the source text, justifying the low relevance score."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary accurately reflects the source text without adding external facts (consistency) and covers the essential details regarding the victim, location, cause of death, and arrest status (relevance). The structure is logical (coherence). Fluency is correctly rated as 4 due to specific mechanical errors present in the text: the use of '#' instead of '£', lack of capitalization for proper nouns and sentence starts, and inconsistent spacing around punctuation. These are minor but prevent a perfect score."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.0,
+      "fluency": 4.0,
+      "relevance": 3.5,
+      "overall_judge": 3.9
+    }
+  }
+}

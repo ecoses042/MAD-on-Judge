@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-eeef09d26cf30c2124c0399b08eedc6321fe5d20",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow of information, jumping between topics without transitions."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the basketball match outcome and the context of Neymar's activities, which are central to the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that Real Madrid remains top of their Euro League division without mentioning the points difference, which is a crucial detail."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary uses lowercase for proper nouns like 'El Clasico' and 'Euro League', which is grammatically incorrect."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with Neymar and Alves supporting Barcelona and then mentioning Neymar's performance with the Brazilian national team."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article without introducing any new facts or misrepresentations."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on key points such as Neymar and Alves' support for Barcelona and Neymar's recent match with Brazil, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization and punctuation, making it less fluent and harder to read."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

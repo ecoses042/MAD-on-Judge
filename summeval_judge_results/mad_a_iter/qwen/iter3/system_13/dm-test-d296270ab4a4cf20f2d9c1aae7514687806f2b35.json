@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-d296270ab4a4cf20f2d9c1aae7514687806f2b35",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from severe relevance issues. It only covers the first two sentences of the source text (cost, duration, passenger capacity) and completely omits the vast majority of key details provided in the article, such as the specific rooms (dining room, lounge, bedrooms), amenities (kitchen, chef, TV), and the luxurious nature of the interior. By ignoring these central points, it fails to summarize the 'extraordinary images' described in the text."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "rationale_for_score": "The summary is grammatically flawless and perfectly consistent with the source text. However, it only covers the first two sentences of the article (cost, duration, passenger capacity) and completely omits the detailed descriptions of the interior features (bedrooms, restaurant, lounge, etc.) which constitute the bulk of the source content. Under a lenient rubric where minor weaknesses are acceptable, this is not penalized heavily for hallucinations or errors, but it does lack full relevance to the entire article."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "The strict judge's assessment of relevance is correct and justified. The summary only captures the introductory facts (cost, duration, passenger count) and completely ignores the main subject of the article: the specific luxurious features, rooms, and amenities shown in the 'extraordinary images' (bedrooms, dining room, lounge, etc.). Therefore, I maintain the low relevance score and the overall average."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "The lenient judge awarded a relevance score of 3, arguing that minor weaknesses are acceptable. However, the summary covers only the introductory paragraph (cost, duration, passenger count) and completely ignores the vast majority of the source text, which consists of detailed descriptions of specific interior features (bedrooms, restaurant, lounge, conference room, etc.). Since the bulk of the article is dedicated to these features, omitting them constitutes a significant failure in relevance, not a minor weakness. The score should be lowered from 3 to 2."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "The lenient judge's assessment of relevance is incorrect and contradicts the criteria. The summary strictly focuses on the introductory facts (cost, duration, passenger count) and completely omits the main subject of the article: the specific luxurious features, rooms, and amenities described in the 'extraordinary images' (bedrooms, dining room, lounge, etc.). Since the summary fails to cover the key points of the source text, the low relevance score is justified. No adjustment is needed."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "The strict judge correctly identified that the summary only covers the introductory paragraph and ignores the detailed descriptions of interior features which constitute the bulk of the source text. This is a significant failure in relevance, not a minor weakness. Therefore, I maintain the lenient score of 3 for overall quality (averaging high coherence/fluency with low relevance) but acknowledge that the strict judge's assessment of relevance as 2 is accurate and justified."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 2.0,
+      "overall_judge": 3.0
+    }
+  }
+}

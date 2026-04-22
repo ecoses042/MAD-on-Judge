@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-4001b252a072ac149c70840b22299cc6cfab3bae",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, as it jumps between Falcao's regret, his struggles at Manchester United, and his injury without connecting these points effectively."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention the opinion of Nabil Dirar, which is a key point in the article regarding Falcao's feelings about his move."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not clarify that Falcao's struggles are specifically tied to his loan at Manchester United, which could mislead readers about the timeline of his performance."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains inconsistent capitalization (e.g., 'radamel falcao' instead of 'Radamel Falcao'), which affects its readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding Falcao's situation and struggles."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article without introducing any new facts."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points about Falcao's loan move and his performance, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization and punctuation, making it less readable."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary could include Dirar's perspective on Falcao's feelings about his move and the implications of staying at Monaco."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 4,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

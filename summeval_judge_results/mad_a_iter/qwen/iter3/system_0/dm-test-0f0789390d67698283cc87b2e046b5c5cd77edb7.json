@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-0f0789390d67698283cc87b2e046b5c5cd77edb7",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary contains a hallucination regarding the cause of the slip: it claims 'metal shutters' were on the boots, whereas the article explicitly states 'metal protectors'. Additionally, there is a grammatical error ('dropping his rifle' used as a participle phrase incorrectly after 'dropped'), and the repetition of 'camera camera camera' reduces fluency. The summary captures the main events well but fails the strict consistency rule due to the factual error."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 3.5,
+        "rationale_for_score": "The summary captures the main events well but contains a hallucination regarding the cause of the slip (the text says 'metal protectors', not 'shutters'). Additionally, there is a minor grammatical error ('dropping his rifle' repeated) and awkward phrasing ('camera camera camera'), which lowers fluency and consistency scores slightly."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 3.5,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding consistency (hallucination of 'shutters' vs 'protectors') and fluency (repetition of 'dropping his rifle' and 'camera camera camera'). The summary is relevant but suffers from these specific errors. No points need to be raised as the original strict evaluation was accurate."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a factual hallucination ('metal shutters' vs 'metal protectors') which violates consistency. It also has a grammatical error ('dropped... and dropping') and awkward repetition ('camera camera camera'). While the main events are covered (relevance) and the text is readable (fluency), these specific flaws prevent higher scores."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the fluency score from 3 to 2 because the repetition of 'dropping his rifle' (once as a verb phrase and once as a noun phrase) and the stuttered 'camera camera camera' are significant grammatical and stylistic errors that degrade readability. The consistency score remains at 3 due to the factual error regarding 'metal shutters' instead of 'protectors'. The coherence and relevance scores remain unchanged."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding the specific flaws. The summary contains a factual hallucination ('metal shutters' instead of 'metal protectors'), which strictly violates consistency criteria. Additionally, there is a grammatical error ('dropped... and dropping') and awkward repetition ('camera camera camera'). While the main events are covered well (relevance) and the text remains readable (fluency), these specific errors prevent higher scores in consistency and fluency."
+      }
+    },
+    "final": {
+      "coherence": 3.5,
+      "consistency": 2.5,
+      "fluency": 3.0,
+      "relevance": 4.0,
+      "overall_judge": 3.0
+    }
+  }
+}

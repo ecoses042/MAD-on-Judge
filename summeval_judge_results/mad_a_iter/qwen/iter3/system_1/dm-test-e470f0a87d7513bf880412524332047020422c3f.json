@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-e470f0a87d7513bf880412524332047020422c3f",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 5,
+        "overall_judge": 5.0,
+        "rationale_for_score": "The summary is excellent: it accurately captures the main event (the dress selling for $137,000) and includes specific details about the scenes where it was worn, all of which are present in the source text. There are no hallucinations or grammatical errors. It is slightly leniently scored only because it omits other top-selling items mentioned in the article, but this does not constitute a flaw given the brevity."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is coherent and relevant to the source text, covering the main event (the dress sale) and specific scenes mentioned. However, it scores lower on fluency due to a lack of capitalization for proper nouns (Vivien Leigh, Scarlett O'Hara, Gone With the Wind, etc.) and sentence structure, which makes it look unpolished. It also scores 4 for consistency because while the facts are correct, it omits significant details present in the source text (the dress's color fading, the auctioneer Heritage Auctions, the buyer James Tumblin, and other high-value items), making it a partial summary rather than a complete one."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "I raised the relevance score from a potential lower mark to 4 because the summary effectively captures the primary news hook (the dress sale) and key context. While it omits other top-selling items mentioned in the article (which the lenient judge correctly noted is acceptable for brevity), I agree with the lenient judge's assessment that this omission does not constitute a flaw given the constraints of a short summary. The summary is well-structured, factually accurate, and fluent."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is coherent and relevant but suffers from significant fluency issues due to a complete lack of capitalization for proper nouns (names, titles) which makes it look unpolished. It also lacks consistency in terms of completeness; while factually accurate based on the text provided, it omits major details like the color fading, the specific auction house, and other high-value items sold, making it a partial summary rather than a comprehensive one."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The strict judge's assessment is accurate: the summary successfully captures the main news hook and essential context while appropriately omitting secondary details like other auction items due to length constraints. The omission does not constitute a flaw in this context."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding fluency and relevance. The summary is factually consistent with the source text (Consistency: 4) but fails to capitalize proper nouns like 'Vivien Leigh', 'Scarlett O'Hara', 'Gone With the Wind', etc., which significantly impacts readability and professionalism (Fluency: 3). Additionally, while it covers the main event, it omits other high-value items mentioned in the text, making it a partial rather than comprehensive summary (Relevance: 4). The structure is logical (Coherence: 5)."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.5,
+      "fluency": 4.0,
+      "relevance": 4.0,
+      "overall_judge": 4.4
+    }
+  }
+}

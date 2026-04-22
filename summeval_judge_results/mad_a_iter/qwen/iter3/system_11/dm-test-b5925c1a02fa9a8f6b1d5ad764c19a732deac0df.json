@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-b5925c1a02fa9a8f6b1d5ad764c19a732deac0df",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is excellent in coherence, consistency, and fluency, accurately reflecting the source text without hallucinations or grammatical errors. It captures the key details (location, victim, perpetrator, viewer count). It receives a slightly lower relevance score because it omits the context regarding the crocodile sanctuary nearby and the public reaction mentioned in the article, but given the lenient rules to give benefit of the doubt on minor omissions, this is acceptable."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and strictly consistent with the provided text. It captures the main event (video views), location details (Puerto Vallarta), specific visual details (black dog, red collar), and the witness's account. However, it scores a 4 for relevance because it truncates the summary after the first paragraph of information, omitting significant context from the source such as the identity of the victim's owner (bike shop owner), the duration the crocodile held the dog, the reaction of crowds, and the broader context regarding American crocodiles in Mexico. While not 'flawed' in a negative sense, it is incomplete relative to the full source text."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is well-structured, factually accurate based on the source text, and grammatically correct. While it omits details about the nearby sanctuary and public reactions (lowering relevance slightly), these are secondary to the main event described. No harsher penalties were warranted."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is well-written and factually accurate based on the text provided (Consistency/Fluency/Coherence are perfect). However, it suffers from a significant truncation issue regarding Relevance. It stops abruptly after the witness's quote, completely omitting the viral nature of the video beyond the view count, the specific details about the crocodile holding the dog for hours, the crowd reactions, and the important context about American crocodiles in Mexico. These are key points from the source text that make the story complete. Therefore, maintaining a 4 for relevance is appropriate as it captures the 'what' and 'where' but misses the 'how long', 'who else reacted', and 'why this matters' (context)."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary effectively captures the main event and key details (location, victim, witness, duration) while omitting secondary information like public reactions and sanctuary context, which is appropriate for a concise summary. No score reduction was necessary."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary is well-structured, factually accurate, and fluent. While it suffers from truncation by omitting the duration of the event (hours), crowd reactions, and species context found in the source text, these omissions are due to length constraints rather than a lack of focus on key points. The core narrative (what happened, where, who saw it) is captured effectively. Therefore, the relevance score of 4 is appropriate."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 4.0,
+      "overall_judge": 4.8
+    }
+  }
+}

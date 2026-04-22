@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-2377095dda83df778e34304b7a09813808105d3b",
+  "system_name": "system_8",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, abruptly starting with the problem without providing context or a cohesive narrative."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces incorrect figures, stating that £1.5 million of the £2.5 million has been paid out, which contradicts the article's information about only £203,066 being paid out in compensation."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention key details such as the bonuses received by managers and the specific number of compensation applications approved, which are crucial to understanding the extent of the issue."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains fragmented sentences and lacks proper transitions, making it difficult to read and understand."
+        }
+      ],
+      "provisional_score": 1
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary begins with a clear statement about the problem faced by the HM Passport Office, establishing a logical flow of information."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the source document's focus on the struggles of the HM Passport Office and the number of applications."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary includes figures about compensation that are not present in the original article, leading to potential confusion about the context."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains incomplete sentences and lacks clarity, making it difficult to read and understand."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 1,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 1.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-3ba3bde4a1440134bb38ec22ba50db59986b544c",
+  "system_name": "system_9",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, jumping abruptly from the mention of the FA Cup semi-final to the incidents involving Sterling and Ibe without proper context."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key information about Brendan Rodgers' comments on the responsibilities of professional athletes and the lack of disciplinary action taken against Sterling and Ibe, which are crucial to understanding the situation."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary states that Sterling was 'exposed for inhaling' nitrous oxide, which could imply wrongdoing without the context that it was a legal high, potentially misrepresenting the severity of the incident."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary uses lowercase for 'liverpool' and 'aston villa,' which is grammatically incorrect and affects the overall fluency."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, outlining the key events leading up to the FA Cup semi-final."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important information regarding the players' actions and the manager's response, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits important context about Brendan Rodgers' comments on the responsibilities of professional athletes and his decision not to discipline the players."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization and punctuation, making it less fluent and harder to read."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

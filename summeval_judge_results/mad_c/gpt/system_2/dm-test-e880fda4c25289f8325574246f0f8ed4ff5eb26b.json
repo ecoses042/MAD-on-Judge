@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-e880fda4c25289f8325574246f0f8ed4ff5eb26b",
+  "system_name": "system_2",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow and does not effectively connect the various features of the house, making it difficult to understand the significance of the details presented."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details about the unique features of the house, such as the stained-glass windows and the specific vintage items, which are crucial to understanding its appeal as a collector's paradise."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The use of 'collector's paradise' is repeated without variation, which affects the readability and makes the summary feel redundant."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states 'the original bathroom and kitchen' without mentioning the specific features that make them noteworthy, which could mislead readers about their condition."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, outlining the key features of the property and its auction details."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important aspects of the article, including the property's unique features, its historical significance, and the auction date."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits several specific details from the article, such as the stained-glass windows and the original kitchen features, which are important to the overall description of the property."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as the incorrect use of '#' instead of '£' for the price, which affects readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-8847383b72167c3f3dd2161b5b091b580c8f4da7",
+  "system_name": "system_2",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow of information, jumping between details without smooth transitions."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states '1,000 ft of seabed was forced to the surface' without clarifying that this refers to the length of the new landmass, which could mislead readers."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as inconsistent capitalization of 'japan' and 'hokkaido island', which affects readability."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary does not include key details about the local residents' reactions or the lack of tremors, which are significant aspects of the event."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, detailing the unexpected emergence of land and the geological explanation behind it."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information provided in the article, including the details about the location, the height of the new land, and the cause of the emergence."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the article, such as the unexpected change in scenery, the geological explanation, and the local residents' reactions."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as inconsistent capitalization and punctuation, which affect its readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

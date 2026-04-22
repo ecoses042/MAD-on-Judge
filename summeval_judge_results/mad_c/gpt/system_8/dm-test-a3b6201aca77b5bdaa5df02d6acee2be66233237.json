@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-a3b6201aca77b5bdaa5df02d6acee2be66233237",
+  "system_name": "system_8",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, making it difficult to understand the sequence of events."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that Jamie claimed the money was Carol's, which is not supported by the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary does not capture the emotional weight of Dawn's situation or the context of her miscarriages, which are crucial to understanding her distress."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The repetition of 'I was so angry. I was so angry. I wanted to cry and I wanted to cry.' is awkward and does not contribute to the summary's fluency."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the theft and the emotional response of Dawn."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key event of the theft and Dawn's emotional reaction, which are the most important aspects of the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that Jamie claimed the money was Carol's, which is not supported by the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The repetition of 'I was so angry. I was so angry. I wanted to cry and I wanted to cry.' affects the fluency and readability of the summary."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 4,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

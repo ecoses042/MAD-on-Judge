@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-36352fd1c61fd0c593ee7b84cbe213aa9b444439",
+  "system_name": "system_3",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, repeating the same fact about the body being found without providing additional context."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits key details about the investigation, such as the arrest of a suspect and the police's efforts to gather information, which are crucial to understanding the situation."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to include important aspects of Vanessa Santillan's background, such as her profession and her recent activities, which are relevant to the context of her death."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The use of 'vanessa santillan' in lowercase and the awkward phrasing detracts from the overall fluency and professionalism of the summary."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the discovery of Vanessa Santillan's body and the police's appeal for information."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the key details from the article, including the circumstances of her death and the police's request for assistance."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important aspects of the article, such as the discovery of the body and the police's appeal, while avoiding trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as the use of 'vanessa santillan 's body' instead of 'Vanessa Santillan's body', which affects readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

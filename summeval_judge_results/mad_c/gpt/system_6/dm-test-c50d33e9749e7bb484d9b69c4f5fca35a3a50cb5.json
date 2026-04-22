@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-c50d33e9749e7bb484d9b69c4f5fca35a3a50cb5",
+  "system_name": "system_6",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow of information, as it abruptly ends without providing a conclusion or summarizing the key points of the inquest."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits significant details such as the circumstances leading to the incident, the coroner's verdict, and the implications of Mr. Phillips' actions, which are crucial for understanding the context."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as inconsistent capitalization and spacing, which detract from its readability."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the fact that Mr. Phillips was found the next day, which is a critical detail that adds to the narrative of the incident."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, detailing Jacob Phillips' actions leading up to his tragic fall."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article without introducing any new facts or misrepresentations."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is mostly easy to read, maintaining a straightforward narrative style."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary captures the key points of the incident, including the circumstances of the fall and the inquest findings."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "There are minor grammatical issues, such as inconsistent capitalization and spacing, which affect the overall readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

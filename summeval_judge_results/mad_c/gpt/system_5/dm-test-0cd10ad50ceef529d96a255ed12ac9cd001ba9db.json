@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-0cd10ad50ceef529d96a255ed12ac9cd001ba9db",
+  "system_name": "system_5",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, as it abruptly shifts from the woman's experience to Van Ryn's plea without proper context."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary incorrectly attributes the woman's testimony to Maurice Van Ryn, suggesting he spoke about the impact, which is misleading."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits critical details about the woman's feelings and experiences, such as her fear for future relationships and the psychological impact of the abuse."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as the lack of proper capitalization for names and the beginning of sentences."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with the woman's experience of abuse, her decision to speak out, and Van Ryn's guilty plea."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the key facts from the article, including Van Ryn's guilty plea and the woman's decision to break her silence."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary captures the most critical elements of the article, focusing on the woman's experience and the legal outcome."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, such as 'maurice van ryn has told a court of the severe impact it had on her life,' which lacks clarity."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

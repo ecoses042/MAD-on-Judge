@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-bd4684a0f5af5dd6ac88d2fb50f902bd7f10217b",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is factually consistent with the source text and covers the main points regarding Falcao's struggles at Manchester United and River Plate's interest in signing him. However, it suffers from significant redundancy (repeating that he struggled on loan twice) and lacks a clear logical flow compared to the original text. It misses key context like the specific quote from the vice president or Falcao's recent form for Colombia, which lowers its relevance slightly. The repetition makes it feel less polished."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and consistent with the source text (no hallucinations). However, it suffers from significant redundancy by repeating the core fact that Falcao struggled on loan at Manchester United three times in slightly different phrasings within a short span. It also omits key information present in the article, such as River Plate's specific interest ('dream of Falcao'), the vice president's quote regarding open doors, and Falcao's recent form for Colombia or his historical stats for River Plate, resulting in poor relevance due to lack of comprehensive coverage."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.8,
+        "adjustment_notes": "I have lowered the scores for coherence and relevance. The summary suffers from significant redundancy (stating Falcao struggled at Manchester United twice in two sentences) which disrupts the logical flow and makes it feel unpolished rather than just 'less polished'. Additionally, by repeating the struggle point without integrating the key context provided in the article (the VP's quote or his recent international form), the summary fails to capture the most important news elements effectively."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary suffers from significant redundancy by repeating the fact that Falcao struggled at Manchester United multiple times in slightly different phrasings within a very short text. Furthermore, it fails to include key details such as River Plate's specific interest ('dream of Falcao'), the vice president's quote about open doors, and Falcao's recent form or historical stats, leading to poor relevance."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains significant redundancy (stating Falcao struggled at Manchester United in two separate sentences) which negatively impacts coherence and relevance by failing to integrate key context like the VP's quote or his recent international form. No score reduction was necessary as the initial lenient scores were too high given these flaws."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding consistency and fluency; the summary is grammatically correct and factually aligned with the source text without hallucinations. However, I concur with the strict judge's critique on relevance and coherence. The summary repeats the core point (Falcao struggled at Man Utd) three times in slightly different ways within a very short space, creating redundancy that hurts flow. More critically, it omits significant key information present in the article: River Plate's specific desire ('dream of Falcao'), the VP's quote about open doors, and Falcao's recent international form or historical stats for River Plate. These omissions make the summary feel incomplete relative to the source material."
+      }
+    },
+    "final": {
+      "coherence": 3.5,
+      "consistency": 5.0,
+      "fluency": 4.5,
+      "relevance": 3.0,
+      "overall_judge": 4.0
+    }
+  }
+}

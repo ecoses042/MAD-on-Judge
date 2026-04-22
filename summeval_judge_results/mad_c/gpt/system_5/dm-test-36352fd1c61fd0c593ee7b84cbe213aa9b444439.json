@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-36352fd1c61fd0c593ee7b84cbe213aa9b444439",
+  "system_name": "system_5",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, as it repeats information about the location and cause of death without connecting the details effectively."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the arrest of a suspect, the police's appeal for information, and the context of her profession, which are crucial to understanding the case."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The use of lowercase letters for the name 'vanessa santillan' and the phrase 'south west london' is inconsistent with standard capitalization rules."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary states she was found 'in a flat in Fulham' twice, which is redundant and does not add new information."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the discovery of Vanessa Santillan's body and the circumstances surrounding her death."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the details from the article, including her age, nationality, and the cause of death without introducing any new facts."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the article, such as the location of the body, the cause of death, and her profession, while avoiding trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as the use of lowercase letters for names and places, which affects its readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 4,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 3.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "article_id": "cnn-test-b1c3fc03a2b74cf4c79844c1fe2fdce70a8a436e",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, presenting disjointed facts without connecting them."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits critical context about the rising wave of migrants and the conditions leading to their perilous journeys, focusing instead on isolated statistics."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not clarify that the 8,480 migrants rescued occurred over a specific time frame, which is important for understanding the scale of the situation."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as the lack of capitalization at the beginning of sentences."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the number of migrants rescued and the concerns about missing individuals."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, including the number of migrants rescued and the fears regarding missing migrants."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on key statistics and concerns raised in the article, such as the number of migrants rescued and the potential missing individuals."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks grammatical structure, as it consists of fragmented sentences that do not form complete thoughts."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits important context, such as the reasons for the migrant crisis and the dangers faced during the journey, which are crucial for understanding the situation."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

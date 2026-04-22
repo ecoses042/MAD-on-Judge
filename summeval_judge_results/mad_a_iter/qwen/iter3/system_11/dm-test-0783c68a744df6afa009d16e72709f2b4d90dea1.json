@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-0783c68a744df6afa009d16e72709f2b4d90dea1",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source and well-structured (coherence/consistency). However, it only includes the first two sentences of the article and cuts off mid-quote, failing to capture other key points like Bolt's readiness, the JAAA's comments, or the context of Jamaica's relay tradition. Due to these lenient rules, it is not penalized for missing details but receives a lower relevance score for being incomplete."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is factually consistent with the source text and maintains a logical flow for the first half. However, it fails significantly on relevance and fluency by cutting off mid-sentence ('...in the bahamas .'), resulting in an incomplete thought. Additionally, it omits key supporting details such as Bolt's quotes about being fit/ready, the context of Jamaica's relay tradition, and the official comments from JAAA General Secretary Garth Gayle, which are central to the article's narrative."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate: the summary is factually consistent and coherent but suffers from low relevance because it truncates the source text mid-sentence and omits significant supporting details (Bolt's readiness, JAAA comments, team tradition) without penalty for incompleteness under the specific rules provided."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is factually consistent and logically structured for the portion it covers, but it ends abruptly mid-sentence ('...in the bahamas .'), which severely impacts fluency and coherence as a complete piece of writing. Furthermore, by cutting off after the first quote, it omits significant context regarding Bolt's readiness, Jamaica's tradition in relays, and the official reaction from Garth Gayle, leading to a low relevance score. No leniency is applied because the truncation is a fundamental flaw."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "No changes made. The strict judge's assessment is accurate: the summary is factually consistent and coherent but suffers from low relevance because it truncates the source text mid-sentence and omits significant supporting details (Bolt's readiness, JAAA comments, team tradition) without penalty for incompleteness under the specific rules provided."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment that the truncation is a fundamental flaw. The summary ends mid-sentence ('...in the bahamas .'), which severely impacts fluency (making it grammatically incomplete) and coherence (breaking the logical flow). Additionally, by stopping after the first quote, it fails to cover key points from the source text such as Bolt's readiness, Jamaica's tradition in relays, and the official reaction from Garth Gayle, justifying a low relevance score. No leniency is applied."
+      }
+    },
+    "final": {
+      "coherence": 3.5,
+      "consistency": 5.0,
+      "fluency": 3.0,
+      "relevance": 2.5,
+      "overall_judge": 3.5
+    }
+  }
+}

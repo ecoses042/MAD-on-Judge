@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-130ff8f2dfb6ab67861d5924b0ff5acd63c7d8ce",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, as it abruptly shifts from the sacking to Ze Maria's background without connecting the events."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits crucial information about the team's performance and current standing, which are key points in the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention that Ze Maria was reinstated after being sacked, which is a significant detail."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The use of 'sacked Ze Maria for the second time in a week .' contains an unnecessary space before the period."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events regarding Ze Maria's firing and reinstatement, making it easy to follow."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article without introducing any new facts."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is written in fluent and idiomatic English, with no grammatical errors."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of Ze Maria's situation, including his firing, reinstatement, and background."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits important details such as the reasons for his firing, the outcome of the match against FC Botosani, and the club's standing in the league."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 4,
+      "relevance": 3,
+      "overall_judge": 3.2,
+      "winner_side": {
+        "coherence": "tie",
+        "consistency": "tie",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

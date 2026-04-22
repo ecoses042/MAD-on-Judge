@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-e470f0a87d7513bf880412524332047020422c3f",
+  "system_name": "system_7",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, jumping between points without smooth transitions."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits significant details such as the auction price, the fading of the dress, and the background of James Tumblin, which are crucial to understanding the context."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as missing capitalization at the beginning of sentences and inconsistent punctuation."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that the dress is gray without mentioning its original slate blue-gray color and the fading process."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, detailing the auction and the significance of the dress within the context of the film."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, mentioning the key scenes in which the dress was worn and the connection to James Tumblin."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important aspects of the auction and the dress, avoiding trivial details and maintaining relevance to the main topic."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as lack of capitalization at the beginning of sentences and improper noun capitalization, which affects readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

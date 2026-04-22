@@ -1,0 +1,63 @@
+{
+  "article_id": "cnn-test-e2bccd4dec93c9bb7b327827dae004c2d494ec31",
+  "system_name": "system_8",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, failing to convey the context of the discussion about UFOs and the involvement of the Defense Minister."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary oversimplifies the article by stating that Japan's military has never seen an alien, which does not capture the nuances of the discussion or the significance of the political exchange."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the phrase 'apparently never will,' which is not supported by the article and implies a conclusion not drawn in the source."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'and apparently never will' is somewhat awkward and detracts from the overall fluency of the summary."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and concise conclusion about the Japanese military's stance on UFOs, reflecting the main point of the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary oversimplifies the article by omitting key details about the political discussion and the context surrounding the inquiry into UFOs."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the idea that Japan's military 'apparently never will' see an alien, which is not explicitly stated in the article."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

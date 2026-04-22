@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-9b1af0f993d78353ebd56a1b180e882e751527b3",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is well-structured, grammatically correct, and accurately reflects the main points of the article (the billboard, the shooting details, and the officer's status). It loses a slight point on relevance because it omits the significant context regarding the family's reaction ('shock', 'disrespectful') and the specific reason for the shock (the thank you message), which are central to the story's conflict. However, under lenient rules, this is acceptable as it covers the key factual events without hallucination."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 3,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from severe fluency issues due to the lack of capitalization and punctuation (e.g., 'kenosham , wisconsin', 'aaron siler'), making it difficult to read. While the content is consistent with the text, it fails to capture the central conflict regarding the billboard's reception by the victim's family, which constitutes a significant portion of the article's narrative weight. By omitting the family's reaction and the police association's defense, the summary misses key relevant information."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate: the summary covers the key factual events (billboard, shooting details, officer status) but misses the central conflict regarding the family's reaction and the specific message on the billboard, which are crucial to the story's narrative."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the coherence score from 5 to 3 because the summary is a disjointed list of facts without a narrative arc; it introduces the billboard and then immediately jumps to background details about the shooting rather than explaining the conflict between the billboard's intent and the family's reaction. I maintained the consistency score at 4 (lowering slightly from 5) as the strict judge correctly identified that while no external facts were invented, the omission of the central conflict regarding the family's shock makes the summary incomplete relative to the source text's main point. The fluency score remains low due to the lack of capitalization and punctuation. I lowered the relevance score from 4 to 3 because the strict judge is correct: by omitting the family's reaction and the police association's defense, the summary misses the 'central conflict' which constitutes the majority of the article's narrative weight."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "Lowered relevance score from 4 to 3. The strict judge correctly identified that the summary misses the central conflict: the family's shock, their specific reaction ('disrespectful', 'thank you for killing Aaron'), and the billboard's message. These elements are crucial to the narrative of the story provided in the source text. While the factual details of the shooting are present, omitting the core emotional and social conflict renders the summary incomplete regarding the article's main point."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I accepted the lenient judge's reasoning for lowering coherence and relevance. The summary fails to capture the central conflict (the billboard vs. family reaction) which dominates the article, making it a disjointed list of facts rather than a narrative. I maintained consistency at 5 because the summary contains no hallucinations or external facts; it only omits key details. Fluency remains low due to the lack of capitalization and punctuation. Relevance is lowered to 3 because the summary misses the primary news hook (the controversy) in favor of background details."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 5.0,
+      "fluency": 3.5,
+      "relevance": 3.0,
+      "overall_judge": 3.8
+    }
+  }
+}

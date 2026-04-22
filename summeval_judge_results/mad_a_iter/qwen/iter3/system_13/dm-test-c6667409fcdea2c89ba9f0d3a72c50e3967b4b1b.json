@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-c6667409fcdea2c89ba9f0d3a72c50e3967b4b1b",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source text (no hallucinations) and flows logically. However, it suffers from poor relevance by omitting the most critical outcome: Barkley's penalty was saved but ultimately inconsequential because Mirallas scored the winning goal later in the game. By stopping after the save without mentioning the final result or the context of the 'fiasco' being non-costly, the summary leaves the reader with an incomplete and misleading impression of the match event."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is consistent with the source text and flows logically. However, it lacks fluency due to inconsistent capitalization (e.g., 'everton', 'roberto martinez') which makes it look unpolished. It also suffers from relevance issues by omitting the crucial context that Everton won the match 1-0, making Barkley's miss seem less significant in isolation compared to Mirallas' goal mentioned in the source."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the strict judge's assessment regarding relevance. The summary ends abruptly after describing the penalty save, failing to mention that Mirallas scored the winning goal later in the match. This omission creates a misleading impression that the 'fiasco' was costly or that the game ended without a winner, contradicting the headline context of a '1-0 win'. Therefore, I maintain the lower relevance score and do not increase the overall score."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 3,
+        "overall_judge": 3.8,
+        "adjustment_notes": "I lowered the fluency score from 4 to 3 because the lenient judge's critique regarding inconsistent capitalization (e.g., 'everton', 'roberto martinez') is valid and constitutes a significant stylistic flaw that affects readability. The relevance score remains at 3 as the summary fails to mention the match result (1-0 win) or the subsequent goal by Mirallas, which are key contextual details provided in the source text."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding relevance. The summary accurately reflects the source text by including the headline context ('1-0 win') and the specific details of Barkley's miss. While it omits the Mirallas goal mentioned in the body of the article, this is a common summarization trade-off to maintain focus on the primary subject (the penalty fiasco). The omission does not render the summary misleading given the explicit mention of the final scoreline. Therefore, I will not lower the relevance score."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 3,
+        "overall_judge": 3.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary suffers from inconsistent capitalization (e.g., 'everton', 'roberto martinez') which negatively impacts fluency and professionalism, justifying the score of 3. Additionally, the summary omits key details such as the match result (1-0 win) and Mirallas' goal, which are central to the context of the penalty miss, keeping relevance at 3. No changes were made; the strict judge's scores are accurate."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 5.0,
+      "fluency": 3.5,
+      "relevance": 3.0,
+      "overall_judge": 3.9
+    }
+  }
+}

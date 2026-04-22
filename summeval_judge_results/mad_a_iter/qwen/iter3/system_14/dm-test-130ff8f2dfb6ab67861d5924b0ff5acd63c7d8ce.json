@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-130ff8f2dfb6ab67861d5924b0ff5acd63c7d8ce",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from poor fluency due to the lack of capitalization and sentence structure (e.g., 'ze maria', run-on sentences). While it covers key facts present in the text (consistency is good), it fails to capture the most critical narrative arc: the firing, reinstatement, and subsequent re-firing. By omitting the owner's intervention and the specific reason for the second firing (the match result), the summary lacks relevance to the main event described in the article."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is consistent with the source text and covers key facts (25 caps, replacement of Florin Marin, firing). However, it lacks coherence and fluency because it presents disjointed sentences without connecting logic or context (e.g., missing the reason for reinstatement, the specific match result causing the second firing, or who replaces him). It feels like a fragmented list of facts rather than a cohesive summary."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary fails significantly on fluency due to a lack of capitalization and proper sentence structure (e.g., 'ze maria', run-on sentences). It also lacks relevance because it omits the central narrative arc: the firing, reinstatement, and subsequent re-firing, which is the main point of the article."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "The lenient judge's assessment of fluency (3) was too high. The summary consists of three disjointed sentences with no connecting logic or transitional phrases, making it read like a fragmented list rather than a cohesive paragraph. This significantly impacts readability and flow. I have lowered the fluency score to 2 to reflect this structural weakness more accurately. Coherence is also slightly reduced from 4 to 3 because the lack of context (e.g., why he was fired again, who replaces him) makes the narrative feel incomplete."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No changes made. The lenient judge's points regarding fluency (lack of capitalization and sentence structure) and relevance (omission of the firing-reinstatement-firing arc) are valid and supported by the source text and summary content. The strict assessment stands."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment on fluency and coherence. The summary is a disjointed list of facts without transitional phrases or logical flow, making it read like fragmented notes rather than a cohesive paragraph. Therefore, I maintain the fluency score at 2 and the coherence score at 3."
+      }
+    },
+    "final": {
+      "coherence": 3.0,
+      "consistency": 4.5,
+      "fluency": 2.0,
+      "relevance": 3.5,
+      "overall_judge": 3.0
+    }
+  }
+}

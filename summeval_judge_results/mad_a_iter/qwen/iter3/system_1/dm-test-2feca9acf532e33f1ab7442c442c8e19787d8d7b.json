@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-2feca9acf532e33f1ab7442c442c8e19787d8d7b",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is consistent with the source text and flows logically (coherence/consistency are excellent). However, it only covers the very first event described in the article, omitting significant details about the fish's history, the owner's background, and the conclusion of the interaction. While this makes it a partial summary rather than a complete one (lowering relevance), there are no hallucinations or grammatical errors that would warrant a lower score for fluency."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is consistent with the text (no hallucinations) and has a logical flow within its limited scope. However, it suffers from severe relevance issues as it only covers the first sentence of the source text, ignoring the vast majority of the article's content regarding the fish's history, the removal of other fish, feeding habits, and specific breed details. Additionally, there are minor grammatical/typographical errors ('from within side' instead of 'inside', missing capitalization at the start) which impact fluency."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary is internally consistent and grammatically sound (minor typo 'side' instead of 'side' or 'inside' noted in rationale but acceptable for fluency score). It accurately reflects the first part of the text without hallucinations. However, it severely lacks relevance as it omits the context of the fish's history, the owner's actions regarding other fish, and the conclusion of the interaction, making it a very partial summary."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is factually consistent but fails significantly on relevance by summarizing only the first sentence of the source text while ignoring key details about the fish's history, the removal of other fish, feeding habits, and breed information. The fluency score is lowered due to the typo 'within side' and lack of capitalization."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment regarding relevance. The summary is extremely truncated, covering only the first sentence and a fraction of the second paragraph while ignoring the context about the other fish, the history of the pet, and the conclusion where the fish follows the owner. This makes it a very poor summary of the provided text, warranting a lower relevance score than 3."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I raised the coherence score slightly from 1 to 2 because the sentences within the summary itself are grammatically correct and flow logically, even if the content is truncated. I maintained the low relevance score (1) as the summary covers only a tiny fraction of the source text's key points (history, context, breed). I kept consistency at 5 as it is factually accurate to the provided text. Fluency remains 3 due to the specific typo 'within side' and lack of capitalization noted by the lenient judge."
+      }
+    },
+    "final": {
+      "coherence": 3.5,
+      "consistency": 5.0,
+      "fluency": 3.5,
+      "relevance": 1.5,
+      "overall_judge": 2.5
+    }
+  }
+}

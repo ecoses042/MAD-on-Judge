@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-e2bccd4dec93c9bb7b327827dae004c2d494ec31",
+  "system_name": "system_2",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, jumping abruptly from the video game to political discussions without a smooth transition."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details about the political exchange, such as the involvement of Antonio Inoki and the context of his questions, which are crucial for understanding the significance of the discussion."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately presents the information as if it were solely about the video game, failing to maintain the focus on the political discussion regarding UFOs."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The use of parentheses and dashes in the summary disrupts the reading flow, making it less fluent and harder to read."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the discussion about UFOs in Japan, linking the video game reference to the political context."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the main point from the article that Japan's Air Self Defense Force has never encountered extraterrestrial UFOs, consistent with the statements made by Defense Minister Gen Nakatani."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the article, particularly the political discussion surrounding UFOs and the response from the Defense Minister."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as the use of parentheses and dashes, which disrupt the flow and readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

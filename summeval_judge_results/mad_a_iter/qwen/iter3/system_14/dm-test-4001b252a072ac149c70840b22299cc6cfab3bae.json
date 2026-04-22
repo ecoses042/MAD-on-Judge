@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-4001b252a072ac149c70840b22299cc6cfab3bae",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is factually consistent with the source text but suffers from poor relevance and coherence. It lists disjointed facts without connecting them logically or capturing the main narrative (Dirar's opinion that Falcao regrets the move). Crucially, it omits the significant detail regarding Louis van Gaal's side being 'unlikely to take up' the transfer option due to poor performance, which is a key point in the source text. The inclusion of '# 46million' suggests a formatting error or lack of polish."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and consistent with the source text. It captures the main facts: the loan move, Falcao's unhappiness in France, and the transfer fee details. It receives a score of 4 (Good) rather than 5 because it omits the context regarding his injury, his performance stats (four goals), and the specific opinion from Nabil Dirar that he might be regretting the move, which are significant parts of the article's narrative."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary fails to capture the main narrative (Dirar's opinion on Falcao regretting the move) and omits a crucial detail about United being unlikely to make the transfer permanent due to poor performance. The disjointed listing of facts results in low relevance and coherence. I maintain the original scores as they accurately reflect these significant flaws."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "Coherence and Consistency remain high as the summary is well-structured and factually accurate based on the text. Fluency is lowered from 5 to 4 because the summary lacks proper capitalization (e.g., 'radamel falcao', 'old trafford') and uses a hashtag symbol ('#') instead of the pound sign ('£'), which affects professional quality. Relevance is lowered from 4 to 3 because the lenient judge's point about omitting Nabil Dirar's opinion is valid; the summary misses the core narrative driver (Dirar's belief that Falcao regrets the move) and key context (the knee injury and poor performance stats), focusing only on dry transactional facts."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No changes made. The summary is a disjointed list of facts that misses the central narrative (Dirar's opinion) and omits the crucial context regarding United's likelihood of buying Falcao due to his poor performance. The lenient judge correctly identified these significant flaws."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is factually consistent and coherent, but it suffers from formatting errors (lowercase names, incorrect currency symbol) which lowers fluency. Crucially, I maintain the lower relevance score because the summary completely omits the main narrative hook: Nabil Dirar's opinion that Falcao regrets the move. It also misses significant context regarding Falcao's knee injury and his poor goal-scoring record, reducing it to a dry list of transactional facts."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 5.0,
+      "fluency": 4.0,
+      "relevance": 2.5,
+      "overall_judge": 3.6
+    }
+  }
+}

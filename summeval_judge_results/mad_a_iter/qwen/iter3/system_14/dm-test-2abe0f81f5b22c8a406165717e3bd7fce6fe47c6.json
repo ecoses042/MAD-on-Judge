@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-2abe0f81f5b22c8a406165717e3bd7fce6fe47c6",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from a major consistency flaw (hallucination). It combines two separate sentences from the source into one: 'Manuel also recommended that patients stop taking medication he prescribed to them' and 'prove any circumstances surrounding the revocation of his license no longer exist before he can resume practicing'. The resulting sentence ('...medication no longer exist before he can resume...') is grammatically broken and factually inconsistent with the source, as it incorrectly attributes the condition of proving circumstances no longer exist to the medication recommendation. While the direction aligns with the article and other facts are correct, this severe error in consistency prevents a higher score."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary contains a severe hallucination/grammatical error where it merges two distinct sentences from the source into one incoherent clause: 'no longer exist before he can resume practicing chiropractic' (which belongs to the condition for reinstatement) is incorrectly attached to the sentence about recommending patients stop medication. This violates consistency and coherence. Additionally, the summary fails to capture key details like the 10-year ban or the specific nature of the agreement, reducing relevance."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No changes made. The lenient judge's assessment of the severe consistency error (hallucination merging two distinct clauses into a nonsensical one) is accurate and justified. The summary fails to maintain factual integrity regarding the conditions for license reinstatement versus the specific misconducts, warranting the low consistency score."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The strict judge's assessment is accurate and justified. The summary contains a severe grammatical error where the phrase 'no longer exist before he can resume practicing chiropractic' (referring to license revocation conditions) is incorrectly appended to the sentence about recommending patients stop medication, creating an incoherent clause. This violates consistency and coherence significantly. Additionally, the omission of the 10-year ban mentioned in the source text reduces relevance. No leniency is warranted for these fundamental flaws."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No changes made. The strict judge correctly identified a severe consistency error where the summary merged two distinct clauses ('Manuel also recommended that patients stop taking medication' and 'prove any circumstances... no longer exist') into a single nonsensical sentence. This hallucination violates factual integrity, justifying the low consistency score. The coherence is low due to this structural failure. Fluency and relevance remain acceptable but are limited by the coherence issue."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The lenient judge's points are accepted. The summary contains a severe grammatical error where the phrase 'no longer exist before he can resume practicing chiropractic' is incorrectly appended to the sentence about recommending patients stop medication, creating an incoherent clause that violates consistency and coherence. Additionally, the omission of the 10-year ban mentioned in the source text reduces relevance. No leniency is warranted for these fundamental flaws."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 1.5,
+      "fluency": 3.5,
+      "relevance": 3.0,
+      "overall_judge": 2.5
+    }
+  }
+}

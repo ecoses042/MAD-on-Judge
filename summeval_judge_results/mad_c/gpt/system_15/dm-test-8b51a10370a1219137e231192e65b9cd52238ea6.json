@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-8b51a10370a1219137e231192e65b9cd52238ea6",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, jumping between different points without smooth transitions."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key points about Stokes' need for careful management and the importance of controlling his aggression, which are central to the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the context of Stokes' injury or the implications of his aggression on his performance, which are important aspects of the original text."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary uses lowercase letters for the beginning of sentences, which is grammatically incorrect and affects readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events related to Ben Stokes, starting from his reputation to specific incidents, which helps in understanding his character and recent actions."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the events and details mentioned in the article, such as Stokes' injury and his interaction with Marlon Samuels."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on key points about Stokes' character and recent incidents, avoiding trivial details and maintaining relevance to the main themes of the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization and punctuation, which affects its readability and fluency."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

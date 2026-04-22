@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-02c955067d00f38b6978b805d5a8701a787f78ac",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, abruptly ending after mentioning the first two patients without providing further context or details about the incident."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits significant details such as the total number of people involved, the condition of other patients, and the impact on the highway, which are crucial for understanding the full scope of the incident."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains inconsistent capitalization (e.g., 'brisbane' and 'fernvale'), which affects readability."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the involvement of emergency crews or the use of hydraulic cutting gear, which is relevant to the incident's severity."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the multi-vehicle crash, including the location, number of people involved, and details about the first patients airlifted."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article without introducing any new facts, maintaining consistency with the source."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is written in fluent English, although it could benefit from improved punctuation and capitalization."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key details of the incident, such as the number of people involved, the location, and the condition of the first patients, which are the most important points from the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains issues with punctuation and capitalization, which affects its readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

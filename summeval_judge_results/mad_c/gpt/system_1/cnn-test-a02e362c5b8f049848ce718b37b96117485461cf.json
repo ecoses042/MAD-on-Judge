@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-a02e362c5b8f049848ce718b37b96117485461cf",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information. It jumps from Tim Durkan's photography to the cause of the fires without connecting the two ideas."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key information about the impact of the wildfires, such as the destruction of villages and the atmospheric effects leading to the fiery sunsets, which are crucial to understanding the context."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the role of atmospheric winds in carrying the smoke to the Pacific Northwest, which is an important detail from the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as missing capitalization at the beginning of sentences and inconsistent punctuation."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with Tim Durkan's photography and leading into the cause of the fires."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding the origin of the fires and their impact."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is written in grammatically correct English, making it easy to read."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details about the effects of the smoke on sunsets and the broader impact of the fires, which are important to the overall context."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "defender",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

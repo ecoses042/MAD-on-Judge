@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-14c813567696f4e63a39993c09d4edb454036179",
+  "system_name": "system_4",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, abruptly starting with the view count without context or introduction."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to cover key points such as the couple's announcement of their pregnancy, the parody aspect of the video, and the significance of the video for their loved ones."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The use of lowercase letters for names and the inconsistent punctuation (e.g., spaces before commas) detracts from the readability."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the couple's names in full or provide their relationship context, which is essential for understanding the announcement."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow by introducing the couple and their video, followed by the context of their location and life events."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary captures the key points about the couple's announcement and the video's popularity, focusing on the essential details without delving into trivial aspects."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits significant details from the original article, such as the content of the rap lyrics and the couple's motivations for making the video."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as inconsistent capitalization and punctuation, which affect its readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-cf4ba8f94f2dd5604eb8f8a4e655c10cf0996365",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary accurately reflects the key events and details from the source text (the robbery, the mask, the amount taken, and the location) without introducing hallucinations. It is well-grounded in the article. Minor deductions are applied for fluency due to slightly awkward phrasing ('owner 's daughter') and punctuation spacing issues, which affect readability but do not obscure meaning. The summary captures the main points effectively."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is factually consistent with the source text but suffers from poor fluency due to awkward phrasing (e.g., 'owner 's daughter' instead of 'owner's daughter') and a lack of proper capitalization/punctuation which makes it look like raw notes rather than a polished summary. More critically, it fails the relevance criterion by omitting the most important information: the police appeal for public help to identify the suspect. A summary that ignores the main news hook (the call to action) is considered incomplete and trivializes the source content."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "Lowered fluency score from 4 to 3. While the summary is readable, it contains significant punctuation spacing errors (e.g., 'owner 's', '$ 1,500') and awkward phrasing ('owner 's daughter') that reduce professional quality compared to standard English expectations. The lenient judge's points for fluency were accepted as they referenced these specific issues, but the score was adjusted downward to reflect the severity of the spacing errors which impact readability."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I lowered the fluency score from 3 to 2 because the lack of capitalization and punctuation makes it read more like raw notes than a polished summary, which is a significant stylistic flaw. I also lowered the relevance score from 2 to 1 because the strict judge's point about omitting the police appeal (the main news hook) is valid; a summary that ignores the primary purpose of the article (the call to action) is fundamentally incomplete."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "Agreed with the strict judge's assessment on fluency. The spacing errors (e.g., 'owner 's', '$ 1,500') are significant enough to warrant a score of 3 rather than 4, as they detract from professional readability. No other scores required adjustment."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "No changes to scores. The lenient judge's assessment is accurate: the summary lacks basic capitalization and punctuation (fluency issue) and omits the critical 'call to action' regarding the police appeal for information, which is the main news hook of the article (relevance issue). The strict evaluation stands."
+      }
+    },
+    "final": {
+      "coherence": 3.5,
+      "consistency": 5.0,
+      "fluency": 2.5,
+      "relevance": 2.5,
+      "overall_judge": 3.0
+    }
+  }
+}

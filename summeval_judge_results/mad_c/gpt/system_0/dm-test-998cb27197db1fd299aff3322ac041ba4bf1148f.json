@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-998cb27197db1fd299aff3322ac041ba4bf1148f",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, making it difficult to understand the main points."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary incorrectly states that Fleetwood beat Doncaster Rovers, which is not consistent with the source document."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'most fan fan' which is nonsensical."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to capture the key details about the match being a goalless draw and the context of the teams' performances."
+        }
+      ],
+      "provisional_score": 1
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary captures the essence of the match being a goalless draw, which is a central point of the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary incorrectly states that Fleetwood beat Doncaster, which is not supported by the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, making it difficult to read."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary lacks important details such as the context of the match and the media team's challenge in creating highlights."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 1,
+      "fluency": 2,
+      "relevance": 1,
+      "overall_judge": 1.5,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

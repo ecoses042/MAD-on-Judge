@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-f5fead94ee884800e84a212cc0edc78b11c4ba9f",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, as it jumps between points without smooth transitions."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key information, such as the interest from Arsenal and the context of City wanting to build for the future."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary uses inconsistent capitalization, such as 'manchester city' instead of 'Manchester City'."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the age of the player, which is a relevant detail from the article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding Manchester City's interest in Patoulidis."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article without introducing any new facts."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points, such as Patoulidis's age, talent, and the interest from Manchester City."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization and punctuation, making it less readable."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits important details, such as the interest from Arsenal and the context of Patoulidis rejecting Barcelona's offer."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 4,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 3.2,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

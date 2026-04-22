@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-808a439a5d83fc47baaea934c8779a7ebc62470d",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and strictly consistent with the source text. It captures the main points regarding Clattenburg's appointment, Kompany's suspension, and his red card record. It receives a slight deduction on relevance (from 5 to 4) because it omits other significant details from the article, such as the specific players sent off by Clattenburg this season (Tyler Blackett and Luke Shaw), the context of United's recent form, and the match stakes, though these omissions are not hallucinations."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is factually consistent with the source text (no hallucinations) and covers some key points like Kompany's dismissal and Clattenburg's red card count. However, it suffers from poor relevance as it completely omits the main subject of the article: Mark Clattenburg being appointed referee for the Manchester derby. It also lacks fluency in capitalization ('mark clattenburg', 'manchester derby'). The structure is fragmented, presenting isolated facts without a clear logical flow."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate. The summary is well-structured (coherence), contains no hallucinations (consistency), and is grammatically correct (fluency). It correctly identifies the main points but misses secondary details like specific player names beyond Kompany and the match context, justifying a relevance score of 4 rather than 5."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary fails to mention the primary news hook (Clattenburg officiating the derby) despite it being the headline event, making relevance very low. It also suffers from poor capitalization and lacks a logical narrative flow, justifying the lower coherence and fluency scores."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The strict judge's assessment is accurate. The summary effectively covers the primary news (Clattenburg's appointment) and key context (Kompany's suspension), maintaining high coherence, consistency, and fluency. While it omits secondary details like specific red card recipients beyond Kompany or the current league standings, this does not constitute a flaw severe enough to lower the relevance score below 4."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment that the summary is factually consistent and fluent enough for a basic draft, but I concur with the strict evaluation regarding relevance and coherence. The summary misses the primary news hook (Clattenburg officiating the derby) which makes it highly irrelevant to the main story. Additionally, the sentences are presented as a disjointed list of facts without a logical narrative flow or proper capitalization, justifying the lower scores for coherence and fluency."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 5.0,
+      "fluency": 4.5,
+      "relevance": 3.0,
+      "overall_judge": 3.9
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-f37fd6e9b6cc18a7132568e307ef3b130931e809",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and strictly consistent with the source text. It captures the main narrative arc (the incident, the immediate reaction, and the catalyst for re-contacting officials). The only minor deduction in relevance is that it omits specific details like the date of the incident or the outcome regarding the police investigation, but these are secondary to the core story provided."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from a significant relevance issue: it completely omits the core news hook (the police investigation) and specific details like the date (1978) or the outcome (Palace cooperation). It also includes a minor hallucination/inaccuracy by stating he contacted officials 'last year' after inquiries began, whereas the text says he wrote to them last year *after* hearing about the probe, implying the probe was already ongoing or announced, but the phrasing suggests a causal link that might be slightly off depending on strict interpretation of 'inquiries began'. However, the main flaw is missing the police investigation context which makes it an incomplete summary of the article's primary event."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The lenient judge's assessment is accurate. The summary effectively captures the core narrative arc (incident -> immediate reaction -> catalyst for re-contact) without introducing external facts. While it omits specific details like the date (January 1978) or the police investigation outcome, these are indeed secondary to the main story provided in the source text's opening context. No harsher penalties are warranted."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I lowered the overall score slightly from 4.2 to 3.8. While I agree with the strict judge's assessment that the summary is fluent and coherent, I concur that the relevance score of 3 is appropriate because the summary completely omits the 'police investigation' aspect, which is the primary news hook of the article. The strict judge's point about a potential minor inaccuracy regarding the timeline ('inquiries began' vs 'hearing about the probe') is valid; the summary implies the inquiries caused him to contact them last year, whereas the text suggests he contacted them after hearing about an existing probe. This nuance supports keeping the consistency score at 4 rather than inflating it."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The strict judge's assessment is correct. The summary successfully captures the primary narrative arc (incident, immediate reaction, and catalyst for re-contact) without introducing external facts or hallucinations. While it omits specific details like the date (January 1978) or the police investigation outcome, these are indeed secondary to the main story provided in the source text's opening context. No harsher penalties are warranted."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I accepted the lenient judge's reasoning regarding relevance and consistency. The summary indeed omits the critical 'police investigation' hook which is central to the article, justifying a lower relevance score (3). Additionally, the nuance in the timeline regarding when Lawler contacted officials versus when inquiries began is a valid point for maintaining a consistency score of 4 rather than inflating it. The summary remains fluent and coherent."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.5,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.5
+    }
+  }
+}

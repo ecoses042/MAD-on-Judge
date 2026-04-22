@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-096e418a953af86df0d1560bec95bc7bfee2e34b",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary contains a major hallucination regarding the scoreline (claiming Porto beat Bayern 5-0) which directly contradicts the source text stating Bayern led 5-0 and won 6-1. This violates the consistency criterion severely. While the grammar is acceptable and it covers the main anecdote about Guardiola's trousers, the factual error regarding the match result makes it unreliable."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary contains a critical hallucination: it states 'Porto beat 5-0', whereas the source explicitly says Bayern led Porto 5-0 at half-time and won 6-1. This violates the consistency criterion severely (score 1). The coherence is poor due to repetitive phrasing ('underwear was on show' appears twice) and disjointed sentence structure. Fluency is average but marred by the factual error. Relevance is low because it misses the actual match result, key scorers, and context of Porto's previous lead."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding consistency. The summary explicitly states 'Porto beat 5-0', which is a direct contradiction of the source text stating Bayern led 5-0 and won 6-1. This is a severe hallucination that invalidates the summary's reliability, justifying the low consistency score. The coherence and relevance scores remain low because the summary presents disjointed sentences and fails to synthesize the key narrative (Guardiola's trousers) with the correct match outcome effectively."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a critical factual error ('Porto beat 5-0') which contradicts the source text (Bayern led 5-0 and won 6-1), warranting a consistency score of 1. The repetition regarding the underwear and the disjointed sentence structure justify the low coherence score. The failure to mention key scorers or the actual match outcome significantly impacts relevance."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a critical factual error ('Porto beat 5-0') which contradicts the source text (Bayern won 6-1). This is a severe consistency failure that drops the score to 1. Additionally, the sentences are disjointed and lack logical flow, warranting a low coherence score. While the grammar is passable, the content errors make the summary unreliable."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary contains a critical factual error ('Porto beat 5-0') which directly contradicts the source text stating Bayern led 5-0 and won 6-1, warranting a consistency score of 1. The repetition regarding the underwear and the disjointed sentence structure justify the low coherence score. The failure to mention key scorers or the actual match outcome significantly impacts relevance."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 1.0,
+      "fluency": 3.0,
+      "relevance": 2.0,
+      "overall_judge": 2.0
+    }
+  }
+}

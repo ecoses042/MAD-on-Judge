@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-096e418a953af86df0d1560bec95bc7bfee2e34b",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is consistent with the source text and fluent enough, but it repeats the same sentence twice (about the hole in trousers) which hurts coherence and relevance. It also misses key details like the final score or specific scorers, though this is acceptable under lenient rules if the main point is covered."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from severe fluency issues due to extreme redundancy (repeating the same sentence about the trouser rip twice with slight variations) and poor sentence structure. While it is mostly consistent with the text (avoiding major hallucinations), it fails relevance by missing key details like the final score, the specific goalscorers, and the context of Porto's previous lead, focusing almost exclusively on the trivial incident."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the coherence score because the summary repeats the exact same fact (Guardiola ripping his trousers) in two separate sentences with nearly identical wording, which is poor structure. I significantly lowered the relevance score because the summary fails to mention the actual match result (6-1 win), the semi-final qualification, or the specific scorers mentioned in the text, focusing almost exclusively on the trivial anecdote about the torn trousers."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 1,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I have lowered the scores significantly based on the strict judge's valid criticisms. The summary is extremely redundant (repeating the trouser rip incident twice in nearly identical phrasing), which severely impacts fluency and coherence. It also fails relevance by omitting crucial match details like the final score (6-1) and the specific goalscorers, focusing almost entirely on a trivial anecdote."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary suffers from poor structure by repeating the exact same anecdote in two nearly identical sentences (coherence issue). Furthermore, it fails to capture the most critical information regarding the match result and semi-final qualification, focusing almost entirely on a trivial detail (relevance issue). No score increases are warranted."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 1,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I have accepted the lenient judge's assessment. The summary suffers from severe redundancy by repeating the trouser rip incident twice with nearly identical phrasing ('ripped a hole' and 'left with a hole'), which drastically impacts fluency and coherence. Furthermore, it fails relevance by omitting the crucial match outcome (6-1 score) and key goalscorers mentioned in the source text, focusing almost exclusively on the trivial anecdote."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 4.5,
+      "fluency": 2.5,
+      "relevance": 2.0,
+      "overall_judge": 2.5
+    }
+  }
+}

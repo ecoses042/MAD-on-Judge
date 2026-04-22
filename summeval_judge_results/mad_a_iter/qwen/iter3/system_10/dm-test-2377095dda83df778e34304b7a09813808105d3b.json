@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-2377095dda83df778e34304b7a09813808105d3b",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.8,
+        "rationale_for_score": "The summary suffers from severe consistency issues due to the hallucination of '#' symbols instead of '£' (e.g., '# 42 million', '# 3,500'), which alters the factual content. Additionally, it fails relevance criteria by omitting the article's most critical statistic: that only 2,191 compensation applications were approved out of thousands of affected holidaymakers, despite managers receiving millions in bonuses. The summary is also incomplete, cutting off before mentioning specific victims or the total payout amount."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary accurately reflects the key points of the article (profit, bonuses, lack of refunds) without hallucinations (consistency: 5). However, it suffers from significant fluency issues due to poor punctuation and capitalization (e.g., 'at the same time', '# 42 million', 'in office in liverpool'), which lowers readability (fluency: 3). Coherence is slightly affected by the disjointed sentence structure caused by these errors. Relevance is good as it covers the main grievances mentioned in the text."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.8,
+        "adjustment_notes": "I have maintained the strict judge's scores. The summary contains a critical consistency error (using '#' instead of '£'), which changes the factual meaning and is a severe flaw. Furthermore, it fails relevance by omitting the most important statistic regarding compensation approval rates (2,191 approved) and cutting off before mentioning specific victims or total payouts, making it an incomplete and misleading summary."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the fluency score from 3 to 2 because the errors are not just minor punctuation issues but fundamental formatting failures that severely impact readability (e.g., using '#' instead of '£', missing capitalization for proper nouns like 'Liverpool' and start of sentences, and a typo 'at in office'). These errors make the text look unprofessional and difficult to parse quickly. I slightly lowered coherence from 4 to 3 because the disjointed sentence structure caused by these formatting issues (e.g., starting with 'at the same time') disrupts the logical flow more than initially assessed. Consistency remains 5 as no facts were hallucinated. Relevance remains 4 as the key points are covered despite the poor presentation."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.8,
+        "adjustment_notes": "I have maintained the strict judge's scores. The summary contains a critical consistency error (using '#' instead of '£'), which changes the factual meaning and is a severe flaw. Furthermore, it fails relevance by omitting the most important statistic regarding compensation approval rates (2,191 approved) and cutting off before mentioning specific victims or total payouts, making it an incomplete and misleading summary."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains significant formatting and grammatical errors (using '#' instead of '£', missing capitalization for 'Liverpool' and sentence starts, and the typo 'at in office') that severely impact readability and professionalism. These are not minor issues but fundamental flaws. Therefore, I maintain the fluency score at 2 and the coherence score at 3 due to the disjointed flow caused by these errors. Consistency and relevance remain high as the content itself is accurate and covers key points."
+      }
+    },
+    "final": {
+      "coherence": 3.0,
+      "consistency": 3.5,
+      "fluency": 3.0,
+      "relevance": 3.0,
+      "overall_judge": 2.9
+    }
+  }
+}

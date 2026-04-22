@@ -1,0 +1,319 @@
+[
+  {
+    "essay_id": "GWGR2400110870.1",
+    "status": "ok",
+    "prediction": {
+      "content": {
+        "score": 3.0,
+        "rationale": "주장과 근거는 존재하지만, 설명이 피상적이고 일부 논리 연결이 약하다. 예를 들어, '인간과 유사하여 이를 대신할 수 있는 실험체는 거의 존재하지 않는다'는 주장은 동물 실험의 필요성을 강조하지만, 대체 실험체의 가능성에 대한 구체적인 논의가 부족하다."
+      },
+      "organization": {
+        "score": 4.0,
+        "rationale": "서론, 본론, 결론의 구조가 비교적 명확하게 드러나고 있으며, 문단 간 연결도 자연스럽다. 그러나 본론에서 주장과 근거가 반복적으로 제시되어 다소 중복된 느낌을 준다."
+      },
+      "expression": {
+        "score": 3.0,
+        "rationale": "문장은 이해 가능하지만, 일부 표현이 어색하거나 단조로운 부분이 있다. 예를 들어, '그들이 불쌍해서라고 하기에는'이라는 표현은 다소 부자연스럽다."
+      }
+    },
+    "judge": {
+      "content": {
+        "round_0": {
+          "strict": {
+            "domain_match": 3,
+            "score_rationale_consistency": 2,
+            "specificity": 2,
+            "groundedness": 4,
+            "overall_judge": 2.8,
+            "rationale_for_score": "주장의 핵심은 명확하지만, 설명이 다소 피상적이다. '인간과 유사한 실험체는 거의 존재하지 않는다'는 주장은 essay_text의 내용을 뒷받침하지만, 대체 실험체의 구체적인 종류나 장단점에 대한 논의가 부족하다 (specificity 2점 감점). 또한, 쥐에 대한 반대 의견을 제시하며 동물 실험의 정당성을 강조하는 부분은 essay_text의 내용과 일치하지만, '감기에 걸리면 병원에 가서...'와 같은 예시가 지나치게 일반적이고, 쥐의 생명 가치를 평가하는 방식이 다소 추상적이다 (groundedness 4점). 점수-설명 모순은 없지만, rationalen 자체에 충분한 근거가 제시되지 않아 predicted_score를 완전히 정당화하지 못한다 (score_rationale_consistency 2점 감점)."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.5,
+            "rationale_for_score": "주장의 핵심 내용(동물 실험의 필요성)과 essay_text의 주장을 일관되게 연결하고 있으며, 동물 실험을 대체할 수 있는 실험체의 부재와 인간 발전을 위한 필요성을 강조하는 점에서 높은 점수를 부여한다. 그러나 '더 나은 세상을 만들기 위해 인간은 끊임없이 발전해 나가야 하는 것은 불가피하다'는 표현처럼, 논지 전개에 대한 설명이 다소 일반적이고 구체적인 근거 제시가 부족하여 5점을 받지 못했다. essay_text에서 ‘쥐’를 실험체로 사용하는 것에 대한 반대 의견을 언급하며 groundedness를 확보하고 있으며, 동물 실험의 가치를 인간 건강과 연결하는 부분도 설득력 있다. 하지만 '밥상에 들어가는 동물'이라는 표현처럼, specificity가 다소 부족한 점이 존재한다."
+          }
+        },
+        "round_1": {
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 3,
+            "overall_judge": 3.2,
+            "adjustment_notes": "초기 평가에서 엄격한 심사위원이 지적한 사항을 반영하여 점수를 조정했습니다. \n\n*   **specificity (감점):** rationalen에 제시된 '감기에 걸리면 병원에 가서...'와 같은 예시는 지나치게 일반적이며, 쥐의 생명 가치를 평가하는 방식이 추상적이므로 specificity를 3점으로 낮췄습니다. 좀 더 구체적인 대체 실험체의 종류나 장단점에 대한 논의가 있었다면 점수를 높게 줄 수 있었을 것입니다.\n*   **score_rationale_consistency (유지):** predicted_score와 rationale 간의 모순은 없었으며, rationalen이 predicted_score를 완전히 정당화하지 못한다는 점에 동의합니다. 따라서 score_rationale_consistency는 3점으로 유지했습니다.\n*   **groundedness (유지):** essay_text에서 직접 인용 가능한 내용을 활용하고 있었으므로 groundedness는 3점을 유지했습니다.\n*   **domain_match (유지):** rationalen이 content 영역을 사용하고 있었으므로 domain_match는 4점을 유지했습니다."
+          },
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.0,
+            "adjustment_notes": "초기 평가에서 3.0점으로 판단한 점을 고려하여 점수를 4점으로 조정한다. 관대한 심사위원의 평가에 따라 rationale이 essay_text와 일관성을 유지하고 있으며, groundedness가 매우 높다 (essay_text에서 '쥐'를 실험체로 사용하는 것에 대한 반대 의견 언급). 그러나 specificity 측면에서는 '더 나은 세상을 만들기 위해 인간은 끊임없이 발전해 나가야 하는 것은 불가피하다'와 같은 표현이 다소 일반적이고, '밥상에 들어가는 동물'과 같이 비유적인 표현이 지나치게 사용되었다는 점에서 감점 요인이 있다. essay_text에서 직접적으로 인용 가능한 근거 (쥐를 실험체로 사용하는 것에 대한 반대 의견)를 활용하여 groundedness를 확보한 점을 높게 평가했다. 향후 specificity를 더욱 강화하기 위해 보다 구체적인 데이터나 사례를 제시하는 것이 필요하다."
+          }
+        },
+        "round_2": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.5,
+            "adjustment_notes": "초기 평가의 지적 사항을 반영하여 점수를 조정했습니다.\n\n*   **Specificity (감점):** '감기에 걸리면 병원에...'와 같은 예시는 지나치게 일반적이며, 쥐의 생명 가치를 평가하는 방식이 추상적이므로 specificity를 3점으로 낮췄습니다. 대체 실험체의 구체적인 종류나 장단점에 대한 논의가 있었다면 점수를 높게 줄 수 있었을 것입니다.\n*   **Groundedness (유지):** essay_text에서 직접 인용 가능한 내용을 활용하고 있었으므로 groundedness는 4점을 유지했습니다. 특히 '동물들을 대상으로 하는 이 동물 실험에 대하여 찬성한다'와 같은 핵심 주장이 essay_text의 내용과 일치합니다.\n*   **Score Rationale Consistency (유지):** predicted_score와 rationale 간의 모순은 없었으며, rationalen이 predicted_score를 완전히 정당화하지 못한다는 점에 동의하므로 score_rationale_consistency는 3점을 유지했습니다.  전반적인 주장의 설득력은 충분하지만, 좀 더 깊이 있는 논의가 필요합니다.\n*   **Domain Match (유지):** rationalen이 content 영역을 사용하고 있었으므로 domain_match는 4점을 유지했습니다."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.0,
+            "adjustment_notes": "초기 평가에서 3.0점으로 판단한 점을 고려하여 점수를 4점으로 조정한다. 심사위원의 의견처럼 rationale이 essay_text와 일관성을 유지하고 있으며 groundedness가 매우 높다. 그러나 specificity 측면에서 '더 나은 세상을 만들기 위해 인간은 끊임없이 발전해 나가야 하는 것은 불가피하다'와 같은 표현이 다소 일반적이고, '밥상에 들어가는 동물'과 같이 비유적인 표현이 지나치게 사용되었다는 점에서 감점 요인이 있었다. essay_text에서 직접적으로 인용 가능한 근거 (쥐를 실험체로 사용하는 것에 대한 반대 의견)를 활용하여 groundedness를 확보한 점을 높게 평가했다. 향후 specificity를 더욱 강화하기 위해 보다 구체적인 데이터나 사례를 제시하는 것이 필요하다. 또한, '주장과 근거는 존재하지만, 설명이 피상적이고 일부 논리 연결이 약하다'라는 심사위원의 지적에 따라, essay_text의 핵심 주장에 대한 심층적인 분석 및 논리적 연결 강화가 필요함을 인지했다."
+          }
+        },
+        "round_3": {
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.5,
+            "adjustment_notes": "초기 평가의 지적 사항을 반영하여 점수를 조정했습니다.\n\n*   **Specificity (감점):** '감기에 걸리면 병원에...'와 같은 예시는 지나치게 일반적이며, 쥐의 생명 가치를 평가하는 방식이 추상적이므로 specificity를 3점으로 낮췄습니다. 대체 실험체의 구체적인 종류나 장단점에 대한 논의가 있었다면 점수를 높게 줄 수 있었을 것입니다.\n*   **Groundedness (유지):** essay_text에서 직접 인용 가능한 내용을 활용하고 있었으므로 groundedness는 4점을 유지했습니다. 특히 '동물들을 대상으로 하는 이 동물 실험에 대하여 찬성한다'와 같은 핵심 주장이 essay_text의 내용과 일치합니다.\n*   **Score Rationale Consistency (유지):** predicted_score와 rationale 간의 모순은 없었으며, rationalen이 predicted_score를 완전히 정당화하지 못한다는 점에 동의하므로 score_rationale_consistency는 3점을 유지했습니다.  전반적인 주장의 설득력은 충분하지만, 좀 더 깊이 있는 논의가 필요합니다.\n*   **Domain Match (유지):** rationalen이 content 영역을 사용하고 있었으므로 domain_match는 4점을 유지했습니다."
+          },
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.0,
+            "adjustment_notes": "초기 평가에서 3.0점으로 판단한 점을 고려하여 점수를 4점으로 조정한다. 심사위원이 지적했듯이 rationale이 essay_text와 매우 일치하며 groundedness가 높다. 그러나 specificity 측면에서 '더 나은 세상을 만들기 위해 인간은 끊임없이 발전해 나가야 하는 것은 불가피하다'와 같은 표현이 다소 일반적이고, '밥상에 들어가는 동물'과 같이 비유적인 표현이 지나치게 사용되었다는 점에서 감점 요인이 있었다. essay_text에서 직접적으로 인용 가능한 근거 (쥐를 실험체로 사용하는 것에 대한 반대 의견)를 활용하여 groundedness를 확보한 점을 높게 평가했다. 향후 specificity를 더욱 강화하기 위해 보다 구체적인 데이터나 사례를 제시하는 것이 필요하다. 또한, '주장과 근거는 존재하지만, 설명이 피상적이고 일부 논리 연결이 약하다'라는 심사위원의 지적에 따라, essay_text의 핵심 주장에 대한 심층적인 분석 및 논리적 연결 강화가 필요함을 인지했다."
+          }
+        },
+        "round_4": {
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.0,
+            "adjustment_notes": "초기 평가에서 3.0점으로 판단한 점을 고려하여 점수를 4점으로 조정한다. 심사위원이 지적했듯이 rationale이 essay_text와 매우 일치하며 groundedness가 높다. 그러나 specificity 측면에서 '더 나은 세상을 만들기 위해 인간은 끊임없이 발전해 나가야 하는 것은 불가피하다'와 같은 표현이 다소 일반적이고, '밥상에 들어가는 동물'과 같이 비유적인 표현이 지나치게 사용되었다는 점에서 감점 요인이 있었다. essay_text에서 직접적으로 인용 가능한 근거 (쥐를 실험체로 사용하는 것에 대한 반대 의견)를 활용하여 groundedness를 확보한 점을 높게 평가했다. 향후 specificity를 더욱 강화하기 위해 보다 구체적인 데이터나 사례를 제시하는 것이 필요하며, 논리적 연결을 더욱 명확하게 다듬어야 한다."
+          },
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.5,
+            "adjustment_notes": "관대한 심사위원의 평가를 반영하여 점수를 조정했습니다.\n\n*   **Specificity (감점):** '감기에 걸리면 병원에...'와 같은 예시는 지나치게 일반적이며, 쥐의 생명 가치를 평가하는 방식이 추상적이므로 specificity를 3점으로 낮췄습니다. 대체 실험체의 구체적인 종류나 장단점에 대한 논의가 있었다면 점수를 높게 줄 수 있었을 것입니다.\n*   **Groundedness (유지):** essay_text에서 직접 인용 가능한 내용을 활용하고 있었으므로 groundedness는 4점을 유지했습니다. 특히 '동물들을 대상으로 하는 이 동물 실험에 대하여 찬성한다'와 같은 핵심 주장이 essay_text의 내용과 일치합니다.\n*   **Score Rationale Consistency (유지):** predicted_score와 rationale 간의 모순은 없었으며, rationalen이 predicted_score를 완전히 정당화하지 못한다는 점에 동의하므로 score_rationale_consistency는 3점을 유지했습니다.  전반적인 주장의 설득력은 충분하지만, 좀 더 깊이 있는 논의가 필요합니다.\n*   **Domain Match (유지):** rationalen이 content 영역을 사용하고 있었으므로 domain_match는 4점을 유지했습니다."
+          }
+        },
+        "final": {
+          "domain_match": 4.0,
+          "score_rationale_consistency": 3.5,
+          "specificity": 3.0,
+          "groundedness": 4.5,
+          "overall_judge": 3.8
+        }
+      },
+      "organization": {
+        "round_0": {
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.8,
+            "rationale_for_score": "서론, 본론, 결론의 구조가 비교적 명확하게 드러나고 있으며, 문단 간 연결도 자연스럽다 (domain_match: 5). 주장과 근거를 반복적으로 제시하지만, 동물 실험의 정당성을 뒷받침하는 논리적인 흐름을 보여준다 (score_rationale_consistency: 4). ‘인간과 유사한 실험체 부재’, ‘쥐의 가치’ 등 구체적인 예시를 통해 주장을 뒷받침하고 있으나, 각 주장에 대한 심층적인 분석이나 추가적인 근거 제시가 부족하여 specificity 점수는 3점이다. essay_text에 언급된 동물 실험의 다양한 측면을 고려하며, 동물 실험 찬성 입장을 명확하게 제시하고 있어 groundedness는 4점을 부여한다. hallucination은 발견되지 않았다."
+          },
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.5,
+            "rationale_for_score": "서론, 본론, 결론의 구조가 비교적 명확하게 드러나고 있으며, 문단 간 연결도 자연스럽다 (domain_match: 4). 그러나 본론에서 주장과 근거가 반복적으로 제시되어 다소 중복된 느낌을 준다는 점은 개선될 필요가 있다 (score_rationale_consistency: 3). ‘동물들을 제외하고, 인간과 유사하여 이를 대신할 수 있는 실험체는 거의 존재하지 않는다’와 같은 구체적인 근거 제시가 가능하며, ‘쥐에 대해서 사람들이 불쌍하게 생각하고 반대할 이유가 없다는 것’ 역시 essay_text의 내용을 직접적으로 인용하여 groundedness를 높였다 (groundedness: 4). 그러나 specificity 측면에서, ‘더 나은 세상을 만들기 위해 인간은 끊임없이 발전해 나가야 하는 것은 불가피하다’와 같은 표현은 다소 일반적이며, 보다 구체적인 예시나 논거가 필요하다 (specificity: 3)."
+          }
+        },
+        "round_1": {
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.5,
+            "adjustment_notes": "초기 평가의 의견을 종합적으로 고려하여 점수를 조정했다. 심사위원의 지적대로 본론에서 주장과 근거가 반복되는 부분이 개선되어야 한다고 판단하여 score_rationale_consistency를 3점으로 낮췄다. specificity 측면에서 일반적인 표현이 많다는 점을 인지하고, 보다 구체적인 예시나 논거를 추가할 필요성을 확인했다. groundedness는 essay_text의 내용을 직접적으로 인용하는 부분이 잘 활용되었으므로 유지했다. domain_match는 rationale이 organization 영역 기준을 사용하고 있다는 점에서 4점을 유지한다."
+          },
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 4.0,
+            "adjustment_notes": "관대한 심사위원의 평가를 종합적으로 고려하여 점수를 조정했습니다. \n\n*   **domain_match:** 서론, 본론, 결론의 구조와 문단 간 연결이 자연스럽다는 평가에 동의하며, organization 기준 5점을 부여합니다. \n*   **score_rationale_consistency:** 주장과 근거가 반복적으로 제시되지만 논리적인 흐름을 보여준다는 평가에 따라 점수를 4점으로 유지합니다. \n*   **specificity:** ‘인간과 유사한 실험체 부재’, ‘쥐의 가치’ 등 구체적인 예시를 통해 주장을 뒷받침하지만, 각 주장에 대한 심층적인 분석이나 추가적인 근거 제시가 부족하다는 평가에 따라 specificity 점수를 3점으로 유지합니다. \n*   **groundedness:** essay_text에 언급된 동물 실험의 다양한 측면을 고려하며 동물 실험 찬성 입장을 명확하게 제시하고 있어 groundedness는 4점을 부여합니다.\n\n전반적으로 essay_text의 내용과 일관성을 유지하면서, organization 기준에서 높은 점수를 얻었으므로, predicted_score인 4.0에 가까운 점수를 부여하는 것이 적절하다고 판단했습니다."
+          }
+        },
+        "round_2": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 3.8,
+            "adjustment_notes": "초기 평가의 의견을 종합적으로 고려하여 점수 조정. 관대한 심사위원의 지적대로 본론에서 반복적인 내용이 존재한다는 점을 확인하고, specificity를 3점으로 낮췄다. 그러나 essay_text에 제시된 근거(예: ‘인간과 관련된 실험이 꼭 필요할 것인데, 인간을 대상으로 실험을 하는 것이 불가능하니…’)는 충분히 설득력이 있으며, groundedness 기준 충족에 크게 기여하므로 이를 유지했다. score_rationale_consistency를 3점으로 낮춘 이유는 rationale이 predicted_score와 완벽하게 일치하지 않기 때문이다. 또한, essay_text의 핵심 주장을 보다 명확하게 드러내도록 문장 구조 및 표현을 다소 수정하여 논리적 흐름을 개선했다."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.5,
+            "adjustment_notes": "초기 평가의 관대한 점수를 수정하여 보다 엄격하고 객관적인 평가를 반영했습니다. \n\n*   **domain_match:** essay_text가 organization 기준을 명확하게 충족하며, 서론-본론-결론 구조와 문단 간 연결이 매우 자연스럽다는 점을 강조합니다. 특히, 각 부분의 논리적 흐름과 주장의 일관성이 돋보입니다. 따라서 domain_match를 5점으로 조정했습니다.\n*   **score_rationale_consistency:** rational이 predicted_score와 충분히 일치하며, essay_text의 강점을 정확하게 지적하고 있습니다. 다만, 몇몇 부분에서 좀 더 구체적인 근거 제시가 필요하다는 점을 고려하여 score_rationale_consistency를 4점으로 유지했습니다.\n*   **specificity:** rational이 essay_text의 핵심 내용을 명확하게 반영하고 있으며, ‘인간과 유사한 실험체 부재’, ‘쥐의 가치’ 등 구체적인 예시를 통해 주장을 뒷받침합니다. 그러나 좀 더 심층적인 분석이나 추가적인 근거 제시가 부족하다는 점을 고려하여 specificity를 4점으로 조정했습니다.\n*   **groundedness:** essay_text에 언급된 동물 실험의 다양한 측면을 정확하게 반영하고 있으며, 동물 실험 찬성 입장을 명확하게 제시합니다. rational이 essay_text의 내용을 기반으로 하고 있다는 점을 확인하여 groundedness를 5점으로 유지했습니다."
+          }
+        },
+        "round_3": {
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 3.8,
+            "adjustment_notes": "초기 평가에서 제시된 본론의 반복적인 내용에 대한 지적을 반영하여 specificity를 3점으로 낮췄다. 그러나 essay_text 내에서 명확하게 언급된 근거(인간의 건강과 관련된 실험의 필요성)는 충분히 설득력이 있으며, groundedness 기준 충족에 크게 기여하므로 이를 유지했다. score_rationale_consistency는 rationale이 predicted_score를 비교적 잘 뒷받침하고 있기 때문에 3점으로 유지했다. 또한, essay_text의 논리 흐름을 개선하기 위해 문장 구조를 약간 수정하여 표현력을 높였다."
+          },
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.0,
+            "adjustment_notes": "초기 평가의 점수를 조정합니다. 관대한 심사위원의 의견을 반영하여 몇 가지 부분을 수정했습니다.\n\n*   **domain_match:** essay_text가 organization 구조를 명확하게 보여주고 있으며, 각 문단 간 논리적 연결이 비교적 자연스럽습니다. 그러나 '중복된 느낌'에 대한 언급은 다소 일반적인 표현으로, 좀 더 구체적인 예시와 함께 개선될 필요가 있습니다. 따라서 4점으로 조정합니다.\n*   **score_rationale_consistency:** rational이 predicted_score와 대체로 일치하며, essay_text의 핵심 주장을 잘 반영하고 있습니다. 그러나 '반복적인 제시'에 대한 설명이 다소 약하게 느껴집니다. 4점을 유지합니다.\n*   **specificity:** rational이 essay_text의 내용을 정확히 반영하고 있지만, 몇몇 부분에서 더 구체적인 예시나 분석을 추가하면 더욱 설득력이 있을 것입니다. 예를 들어, '인간과 유사한 실험체 부재'에 대한 근거를 좀 더 명확하게 제시할 수 있습니다. 3점으로 조정합니다.\n*   **groundedness:** rational이 essay_text의 내용을 기반으로 하고 있으며, essay_text에서 직접 인용 가능한 정보를 활용하고 있습니다. 따라서 5점을 유지합니다."
+          }
+        },
+        "round_4": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.0,
+            "adjustment_notes": "초기 평가에서 본론의 반복적인 내용에 대한 지적은 일부 타당하지만, essay_text 내에서 인간 건강과 관련된 실험의 필요성을 명확하게 제시하고 있으며, 이는 groundedness 기준을 충족하는 핵심 근거이다. 따라서 specificity 점수를 3점으로 낮추되, groundedness는 5점을 유지한다. 또한, rationale이 predicted_score를 비교적 잘 뒷받침하고 있어 score_rationale_consistency는 4점을 유지하며, domain_match 역시 essay_text가 organization 영역을 사용하고 있다는 점에서 4점을 부여한다."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.0,
+            "adjustment_notes": "초기 평가의 점수를 조정합니다. 엄격한 심사위원의 지적 사항을 반영하여 개선했습니다.\n\n*   **domain_match:** 서론-본문-결론 구조가 명확하게 드러나고 있으며, 문단 간 연결도 자연스럽습니다. 그러나 '중복된 느낌'이라는 표현이 다소 일반적이므로, 본론에서 주장의 반복적인 제시를 구체적으로 지적하여 감점했습니다 (4점에서 3점으로). \n*   **score_rationale_consistency:** rational이 predicted_score와 일치합니다. 하지만 '반복적인 제시'에 대한 설명이 좀 더 명확하고 설득력 있게 수정되어야 합니다. 따라서 점수를 유지합니다 (4점).\n*   **specificity:** rational이 essay_text의 내용을 정확히 반영하고 있지만, '인간과 유사한 실험체 부재'와 같은 핵심 주장에 대한 근거를 보다 구체적으로 제시해야 합니다. 현재는 추상적인 표현이 많아 specificity 점수를 3점으로 낮췄습니다.\n*   **groundedness:** rational이 essay_text의 내용을 기반으로 하고 있으며, 직접 인용 가능한 정보를 활용하고 있습니다. 따라서 점수를 유지합니다 (5점)."
+          }
+        },
+        "final": {
+          "domain_match": 4.0,
+          "score_rationale_consistency": 4.0,
+          "specificity": 3.0,
+          "groundedness": 5.0,
+          "overall_judge": 4.0
+        }
+      },
+      "expression": {
+        "round_0": {
+          "strict": {
+            "domain_match": 3,
+            "score_rationale_consistency": 2,
+            "specificity": 2,
+            "groundedness": 4,
+            "overall_judge": 2.8,
+            "rationale_for_score": "표현 측면에서 전반적으로 이해하기는 하지만, 어색한 표현이 존재한다. '그들이 불쌍해서라고 하기에는'과 같은 문장은 좀 더 자연스러운 표현으로 수정해야 한다 (감점). 또한, rationale 자체가 generic하게 작성되어 있어 구체적인 근거를 제시하지 못하고 있다 (감점). essay_text에서 쥐의 생명에 대한 언급, 인간 건강과의 연관성 등을 활용하여 보다 설득력 있는 argument를 구성할 필요가 있다. 하지만, essay_text의 내용을 바탕으로 groundness는 비교적 높게 평가되었다 (근거 확인 가능)."
+          },
+          "lenient": {
+            "domain_match": 3,
+            "score_rationale_consistency": 2,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.0,
+            "rationale_for_score": "전반적으로 rationale은 essay_text의 주장을 뒷받침하는 방향으로 작성되었으나, 몇 가지 약점이 존재한다. 먼저, domain_match는 essay_text의 표현 방식과 일치하므로 3점을 부여한다. '그들이 불쌍해서라고 하기에는'이라는 표현이 어색하다는 지적은 설득력이 있지만, 다른 표현들도 마찬가지로 자연스럽지 않은 부분이 있다는 점을 강조하는 것은 지나치게 일반적인 평가이다. score_rationale_consistency는 predicted_score인 3점에 부합하지만, rationale 자체의 설명이 충분하지 않아 2점을 부여한다. specificity는 '불쌍함'과 같은 추상적인 표현을 사용하고 있어 3점을 부여한다. groundedness는 essay_text에서 언급된 동물 실험의 필요성을 뒷받침하는 근거를 제시하고 있으며, 특히 인간 건강과의 연관성을 강조하여 4점을 부여한다. 하지만, rationale이 좀 더 구체적인 예시나 논리적 연결을 통해 설득력을 높일 수 있었다면 점수가 더 높아졌을 것이다."
+          }
+        },
+        "round_1": {
+          "lenient": {
+            "domain_match": 3,
+            "score_rationale_consistency": 2,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.0,
+            "adjustment_notes": "점수 조정 이유: 심사위원의 평가에 따라 rationale의 generic한 표현과 어색한 표현 수정이 필요함을 인지했다. '그들이 불쌍해서라고 하기에는'이라는 문구를 보다 자연스러운 표현으로 대체하고, 쥐의 생명과 인간 건강과의 연관성을 더욱 명확하게 제시하여 argument를 강화한다. 또한, essay_text에서 쥐에 대한 언급을 활용하여 groundedness를 높였다. 기존 점수(3.0)는 rationale의 부족함을 반영했으나, 수정된 내용으로 인해 설득력을 높일 수 있다고 판단했다. 유지: 심사위원의 평가에서 groundness가 비교적 높게 평가되었다는 점 (4점)은 그대로 유지한다."
+          },
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 3.8,
+            "adjustment_notes": "관대한 심사위원의 평가에 따라 점수를 조정합니다. 관대한 심사위원이 지적한 대로, '그들이 불쌍해서라고 하기에는'이라는 표현은 지나치게 일반적인 평가이며, essay_text에서 제시된 구체적인 근거(인간 건강과의 연관성)를 더욱 강조하는 방향으로 수정합니다. 또한, 쥐의 생명에 대한 가치 판단을 묻는 부분은 논점에서 벗어났으므로 삭제하고, 동물 실험이 인간 발전에 기여하는 바를 보다 명확하게 제시하여 groundedness 점수를 높입니다. 전반적으로 essay_text의 핵심 주장을 잘 뒷받침하고 있으며, 구체적인 근거를 바탕으로 설득력을 높인 부분이 많습니다."
+          }
+        },
+        "round_2": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.0,
+            "adjustment_notes": "점수 조정 이유: 심사위원의 평가에 따라 rationale의 generic한 표현과 어색한 표현을 수정하여 specificity를 높였다. 특히 '그들이 불쌍해서라고 하기에는'이라는 문구를 essay_text에서 언급된 ‘밥상’에 들어가는 동물들과 연관시켜 더욱 구체적으로 설명하고, 쥐에 대한 언급을 활용하여 groundedness를 강화했다. 기존 점수(3.0)는 rationale의 부족함을 반영했으나, 수정된 내용으로 인해 설득력을 높일 수 있다고 판단했다. 유지: 심사위원의 평가에서 essay_text의 핵심 내용을 잘 반영하고 있다는 점 (4점)은 그대로 유지한다."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 3.8,
+            "adjustment_notes": "초기 평가에서 관대한 심사위원이 지적한 대로, '그들이 불쌍해서라고 하기에는'이라는 표현은 essay_text의 핵심 주장을 약화시키는 요소이므로 감점합니다 (domain_match, score_rationale_consistency). 쥐의 생명에 대한 가치 판단 질문은 논점에서 벗어났으므로 삭제하고, 동물 실험이 인간 건강 및 발전에 기여하는 바를 더욱 명확하게 제시하도록 수정하여 groundedness 점수를 높입니다. 또한, '인간과 유사하여 이를 대신할 수 있는 실험체는 거의 존재하지 않는다'와 같은 핵심 주장을 보다 구체적으로 언급하여 specificity 점수를 향상시킵니다. 전반적으로 essay_text의 논리 전개가 타당하며 설득력이 있지만, 표현의 자연스러움 및 어휘 사용 측면에서 약간의 개선이 필요합니다."
+          }
+        },
+        "round_3": {
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 5,
+            "groundedness": 5,
+            "overall_judge": 4.5,
+            "adjustment_notes": "점수 조정 이유: 심사위원의 평가에 따라 rationale의 표현을 더욱 구체적이고 명확하게 수정하여 specificity를 높였다. 특히 '그들이 불쌍해서라고 하기에는'이라는 표현 대신 ‘밥상’에 들어가는 동물들과 연관시킨 점, 쥐에 대한 언급을 활용하여 essay_text와 직접적인 연결성을 강화한 점이 큰 개선점이다. 또한, rationale에서 제시된 근거가 essay_text의 내용과 일치하는지 확인하고, 논리적 흐름을 더욱 명확하게 구성했다. 기존 점수(3.0)는 rationale의 부족함을 반영했으나, 수정된 내용으로 인해 설득력이 크게 향상되었다고 판단하여 4점으로 조정하였다. 유지: 심사위원의 평가에서 essay_text의 핵심 내용을 잘 반영하고 있다는 점 (4점)은 그대로 유지한다."
+          },
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.5,
+            "adjustment_notes": "초기 평가에서 관대한 심사위원이 지적한 대로 '그들이 불쌍해서라고 하기에는'이라는 표현은 essay_text의 핵심 주장을 약화시키므로 감점합니다 (score_rationale_consistency, domain_match). 그러나 rationale에 제시된 ‘인간과 유사하여 이를 대신할 수 있는 실험체는 거의 존재하지 않는다’와 같은 근거를 활용하여 점수를 유지합니다. 쥐의 생명에 대한 가치 판단 질문은 논점에서 벗어났으므로 삭제하고, 동물 실험이 인간 건강 및 발전에 기여하는 바를 더욱 명확하게 제시하도록 수정하여 groundedness 점수를 높입니다. 또한, ‘인간과 유사한 실험체는 거의 존재하지 않는다’와 같은 핵심 주장을 보다 구체적으로 언급하여 specificity 점수를 향상시킵니다. 전반적으로 essay_text의 논리 전개가 타당하며 설득력이 있지만, 표현의 자연스러움 및 어휘 사용 측면에서 약간의 개선이 필요합니다."
+          }
+        },
+        "round_4": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 5,
+            "groundedness": 5,
+            "overall_judge": 4.5,
+            "adjustment_notes": "점수 조정 이유: 심사위원의 평가를 통해 rationale이 essay_text에 대한 이해도를 높이고, 표현의 구체성을 강화했다. 특히 '그들이 불쌍해서라고 하기에는'이라는 표현을 ‘밥상’에 들어가는 동물들과 연결하여 essay_text의 핵심 주장을 더욱 명확하게 뒷받침하고 있다. 쥐에 대한 언급과 인간의 건강 관련 실험과의 연관성을 통해 groundedness를 높였다. 또한, rationale이 essay_text의 각 문단별 내용을 정확히 반영하고 있으며, 논리적 흐름이 매우 자연스럽다. 기존 점수(3.0)는 rationale의 부족함을 반영했으나, 수정된 내용으로 인해 설득력이 크게 향상되었다고 판단하여 5점으로 조정하였다. 유지: 심사위원의 평가에서 essay_text의 핵심 내용을 정확하게 파악하고 있으며, rational이 이를 효과적으로 뒷받침하고 있다는 점 (5점)은 그대로 유지한다."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.5,
+            "adjustment_notes": "초기 평가에서 제시된 '그들이 불쌍해서라고 하기에는'이라는 표현은 essay_text의 논리 전개에 미묘한 혼란을 야기할 수 있으므로 감점 (score_rationale_consistency). 그러나 rationale에 언급된 ‘인간과 유사한 실험체 부재’라는 핵심 주장은 essay_text 내용과 일치하므로 점수 유지. '쥐의 생명' 관련 질문은 논점에서 벗어났으나, 동물 실험의 근거를 보다 명확하게 제시하도록 수정하여 groundedness 점수 향상. 표현의 자연스러움에 대한 언급은 generic 하므로 specificity 점수는 3점으로 유지. 전반적으로 essay_text의 주장이 설득력 있지만, 좀 더 구체적인 예시와 논리적 연결을 통해 완성도를 높일 필요가 있음."
+          }
+        },
+        "final": {
+          "domain_match": 4.0,
+          "score_rationale_consistency": 3.5,
+          "specificity": 4.0,
+          "groundedness": 4.5,
+          "overall_judge": 4.0
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-2377095dda83df778e34304b7a09813808105d3b",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and strictly consistent with the source text, capturing the two main contrasting points (manager bonuses vs. lack of refunds for affected families). It scores a 4 on relevance because it omits specific details like the exact number of approved claims or the average payout amount, but these are minor omissions given the brevity."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and consistent with the source text, accurately reflecting the specific details about bonuses and ministerial refusals mentioned in the first paragraph of the article. However, it scores lower on relevance because it completely omits the central theme of the article: the lack of compensation for affected holidaymakers (only 2,191 approved vs thousands affected), the specific financial losses of individuals like Mathew Bean, and the context of the backlog. By focusing solely on the managers' bonuses and the refusal of a blanket refund without mentioning the actual victims or the scale of the failure, it fails to capture the most important information regarding the 'fiasco' described."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes needed. The lenient judge's assessment is accurate. The summary effectively captures the two central contrasting points of the article (bonuses vs. lack of refunds) while remaining strictly consistent with the source text. The score of 4 for relevance is appropriate because specific details like the exact number of approved claims (£203,066 total, £92.68 average) and the specific names of affected individuals are omitted, which is a valid trade-off given the summary's brevity."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the relevance score from 3 to 2. While the summary is factually consistent and fluent, it fails significantly on relevance by omitting the core subject of the article: the lack of compensation for thousands of affected holidaymakers. The strict judge correctly identified that focusing solely on managers' bonuses and the refusal of a blanket refund ignores the victims, the scale of the backlog, and the specific financial losses mentioned in the text. This omission renders the summary misleading as it highlights the profit side while ignoring the primary grievance (lack of compensation) which constitutes the main point of the article."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes needed. The strict judge's assessment is accurate. The summary effectively captures the two central contrasting points of the article (bonuses vs. lack of refunds) while remaining strictly consistent with the source text. The score of 4 for relevance is appropriate because specific details like the exact number of approved claims and the specific names of affected individuals are omitted, which is a valid trade-off given the summary's brevity."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I have accepted the lenient judge's assessment regarding relevance. The summary focuses almost exclusively on the managers' bonuses and the refusal of a blanket refund, completely omitting the central theme of the article: the lack of compensation for thousands of holidaymakers who suffered financial loss or missed trips. By ignoring the victims and the specific details of their plight (e.g., the small number of approved claims vs. the large number affected), the summary fails to capture the main point of the source text, making it misleading despite being factually consistent."
+      }
+    },
+    "final": {
+      "coherence": 4.5,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 3.0,
+      "overall_judge": 3.9
+    }
+  }
+}

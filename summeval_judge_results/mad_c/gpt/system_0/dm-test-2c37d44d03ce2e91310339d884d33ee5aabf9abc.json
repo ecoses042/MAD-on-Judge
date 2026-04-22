@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-2c37d44d03ce2e91310339d884d33ee5aabf9abc",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, making it difficult to understand the sequence of events."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that the boy was airlifted to the hospital, which is not mentioned in the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention the parents' actions that led to the incident, which is a key detail in understanding the context."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'the baby boy was airlifted to hospital' is awkward and not idiomatic English."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, detailing the incident of the toddler falling into the cheetah exhibit and his subsequent condition."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, including the child's injuries and the fact that he was not attacked by the cheetahs."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the incident, such as the child's fall, his injuries, and the response from the zoo, without including trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains some grammatical issues, such as the phrase 'the toddler was taken to metrohealth medical center and suffered from minor injuries,' which could be clearer."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'the boy 's mother was holding him and another child when he slipped to 12ft' is awkwardly constructed and could be improved for better readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

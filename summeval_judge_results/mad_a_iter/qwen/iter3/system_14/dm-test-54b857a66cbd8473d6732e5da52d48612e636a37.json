@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-54b857a66cbd8473d6732e5da52d48612e636a37",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source text and flows logically. However, it suffers from relevance issues by omitting the specific location (Hefei Xinqiao International Airport) which is a key detail in the article. Additionally, while it mentions changing the story to the police, it omits the crucial context that he initially confessed to friends before lying to police, making the summary slightly incomplete regarding the narrative arc."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and captures the key events (the accident, the injury, the embarrassment, and the change of story). It is consistent with the source text; the only minor deduction for consistency is that it omits the specific detail about 'avoiding compensation' which was explicitly stated as a reason for changing the story, though the summary correctly notes he changed his story."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is factually consistent and fluent but lacks relevance due to omitting the specific airport name (Hefei Xinqiao International Airport) and failing to capture the nuance of the 'story change' (confessing to friends first, then lying to police). These are significant omissions for a complete summary."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Scores remain unchanged. The lenient judge's assessment is accurate: the summary is fluent and coherent. The consistency score of 4 is justified because the summary omits the specific motivation for changing the story ('to avoid paying compensation'), which was explicitly detailed in the source text, even though it correctly notes that the story was changed."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding relevance. While the summary is factually consistent and fluent, it omits specific details present in the article such as the airport name (Hefei Xinqiao International Airport) and the nuance of the passenger changing his story from friends to police. These are significant omissions that prevent a higher relevance score."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The strict judge's assessment is correct: the summary is fluent and coherent, but it loses a point on consistency because it omits the specific reason for changing the story ('to avoid paying compensation') found in the source text, presenting only that the story was changed."
+      }
+    },
+    "final": {
+      "coherence": 4.5,
+      "consistency": 4.5,
+      "fluency": 4.5,
+      "relevance": 4.0,
+      "overall_judge": 4.4
+    }
+  }
+}

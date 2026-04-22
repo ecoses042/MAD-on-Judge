@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-31114653cd606fd3f4b1035f98dedd71f8282cd2",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, jumping between points without clear connections."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary incorrectly states that Wales plays Belgium at the 1958 World Cup, which is not accurate as the match is a qualifier for Euro 2016."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention the significance of the match being a sell-out or the context of Wales' position in the qualifying campaign."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'wales play belgium at the 1958 world cup on june 1958,' which is awkward and incorrect."
+        }
+      ],
+      "provisional_score": 1
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear date and location for the match, establishing a logical flow of information regarding the event."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary mentions the key teams involved (Wales and Belgium) and the significance of the match in the context of Euro 2016 qualification."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary incorrectly states that Wales played Belgium at the 1958 World Cup, which is not accurate as the match is a qualifier for Euro 2016."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, such as 'wales play belgium at the 1958 world cup on june 1958,' which disrupts readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 1,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.0,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

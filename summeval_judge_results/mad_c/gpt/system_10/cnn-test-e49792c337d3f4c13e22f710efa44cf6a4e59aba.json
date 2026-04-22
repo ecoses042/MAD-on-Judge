@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-e49792c337d3f4c13e22f710efa44cf6a4e59aba",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, abruptly ending without completing the thought about the sentencing phase."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention the emotional plea made by the Richards, which is a key aspect of the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not accurately reflect the parents' position on the death penalty, which is a significant detail in the original article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The use of abbreviations like '-lrb-' and '-rrb-' is inappropriate and disrupts the fluency of the text."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, outlining the main event of the parents' plea and the context of Tsarnaev's conviction."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding the parents' stance on the death penalty and the conviction of Tsarnaev."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the parents' emotional plea and the conviction, avoiding trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, such as the use of '-lrb- cnn -rrb-' and 'it is expected to last four weeks' without context."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.0,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

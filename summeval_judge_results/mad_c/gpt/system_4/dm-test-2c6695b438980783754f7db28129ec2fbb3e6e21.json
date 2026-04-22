@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-2c6695b438980783754f7db28129ec2fbb3e6e21",
+  "system_name": "system_4",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, as it abruptly shifts from the discovery of the hidden camera to listing charges without connecting the two events."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits critical details about the nature of the abuse, the duration of the offenses, and the context of the investigation, which are essential for understanding the severity of the situation."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the specific age of the girl at the time of the abuse, which is a significant detail from the source."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The repeated mention of 'Kevin Rebbie, 56, of Limerick Township, Pennsylvania' is redundant and disrupts the fluency of the text."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information by stating the key event of the arrest and the charges faced by Kevin Rebbie."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding the charges against Rebbie without introducing any new facts."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important details, such as the arrest and the charges, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as inconsistent capitalization and punctuation, which affect its readability."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits significant details about the nature of the crimes and the context of the investigation, which are crucial for understanding the severity of the situation."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

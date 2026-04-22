@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-97bbda7ec22a736cd174b51513c72a6372d13d35",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, jumping between topics without smooth transitions, particularly between the auction of the letters and the Mets bullpen car."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits key details about the letters' ownership by Reggie Jackson and his intentions for the letters, which are crucial for understanding the context of the auction."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The mention of the Mets bullpen car is trivial compared to the main focus on the Yankee Stadium letters and does not contribute significantly to the overall understanding of the auction."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as inconsistent capitalization of 'Yankee Stadium' and 'Sotheby's,' which detracts from its readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the auction of the letters and their history."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the auction, including the estimated value of the letters and the lack of bids, which are the most important details from the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits important details about the current owner, Reggie Jackson, and his intentions for the letters, which are relevant to the context."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as inconsistent capitalization and spacing issues, which affect readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

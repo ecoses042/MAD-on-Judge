@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-b1c3fc03a2b74cf4c79844c1fe2fdce70a8a436e",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is consistent with the source text and covers key statistics accurately. However, it scores lower on fluency because it consists of a series of disjointed sentence fragments lacking proper grammatical structure (e.g., missing articles and connecting words), which makes it read like rough notes rather than fluent English. It also misses some context about the specific capsized boat incident mentioned in the text, slightly affecting relevance."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from severe fluency issues due to the lack of capitalization and punctuation, making it difficult to read (Score 2). While the facts are generally consistent with the text, the summary fails to capture the crucial distinction between Save the Children's fears regarding a capsized boat and the Coast Guard's inability to confirm it, instead presenting them as a single ambiguous statement. Additionally, it omits significant context such as the specific date range of the 8,480 rescues (Friday to Monday) and the high death toll mentioned in the article, reducing its relevance."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary's lack of capitalization and punctuation severely impacts readability and professionalism (Fluency: 2). It also fails to distinguish between the conflicting reports regarding the capsized boat, which is a key narrative point in the source text (Coherence/Relevance issues). Therefore, no upward adjustment is warranted."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the fluency score from 3 to 2 because the summary consists entirely of disjointed sentence fragments without any connecting words or articles (e.g., 'a total of...', 'the group fears...'). This makes it read like rough notes rather than a coherent paragraph. I also slightly reduced coherence to reflect that while the facts are there, the lack of grammatical structure prevents a smooth logical flow between ideas."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No adjustment to scores. The lenient judge's points regarding fluency (lack of capitalization/punctuation) and coherence/relevance (failure to distinguish conflicting reports) are valid based on the actual summary text provided. The summary is indeed fragmented, lacks basic formatting, and omits the crucial nuance between the Save the Children claim and the Coast Guard's denial."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is composed entirely of sentence fragments lacking articles and connecting words (e.g., 'a total of...', 'the group fears...'), which severely impacts fluency and makes it read like rough notes rather than a coherent text. Therefore, I maintain the low fluency score of 2 and the adjusted coherence score of 3."
+      }
+    },
+    "final": {
+      "coherence": 3.0,
+      "consistency": 4.5,
+      "fluency": 2.0,
+      "relevance": 3.5,
+      "overall_judge": 3.0
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-2cfc33d01364162579f46b2764914a03a29453ce",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, jumping between topics without smooth transitions."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key information about the upcoming match, the significance of Ozil's excitement, and the context of Wilshere's fitness, which are crucial to understanding the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the context of Arsenal trailing Chelsea by 10 points, which is an important detail from the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'can not' instead of 'cannot' and lacks proper capitalization."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding Mesut Ozil's excitement about his new Apple Watch and his comparison to Michael Knight."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article about Ozil's visit to the Apple store and his comparison of the watch to a TV character."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on key points, such as Ozil's excitement and the mention of Wilshere being on the bench, which are relevant to the context of the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains some grammatical issues, such as missing articles and awkward phrasing, which affect its readability."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary lacks some important details, such as the context of the upcoming match and the significance of Wilshere's return, which are crucial to understanding the article."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

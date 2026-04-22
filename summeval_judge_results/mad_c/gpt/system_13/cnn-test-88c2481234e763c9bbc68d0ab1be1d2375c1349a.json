@@ -1,0 +1,71 @@
+{
+  "article_id": "cnn-test-88c2481234e763c9bbc68d0ab1be1d2375c1349a",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, as it jumps directly to the performance without providing context about the bus fire."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits critical details about the fire incident, such as the cause of the fire and the dramatic nature of the event, which are essential to understanding the situation."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention that the bus fire occurred on a Texas freeway, which is a significant detail from the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary uses lowercase letters for the band name and the event title, which is not standard and affects readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow by mentioning the upcoming performance and the evacuation of the band members."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding the evacuation of Hillary Scott and others from the bus."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the incident, specifically the evacuation and the upcoming performance, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization at the beginning of sentences and has a fragmented structure, making it less fluent."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits important details such as the cause of the fire and the dramatic nature of the incident, which are significant aspects of the article."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

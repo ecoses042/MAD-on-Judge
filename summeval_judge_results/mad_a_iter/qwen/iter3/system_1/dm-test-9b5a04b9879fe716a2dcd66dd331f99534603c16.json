@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-9b5a04b9879fe716a2dcd66dd331f99534603c16",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from a significant relevance flaw: it omits the most critical context of the article—the domestic violence allegations and criminal history that caused Billy Gordon's expulsion. Without this context, the 'race row' accusation lacks its necessary background, making the summary incomplete regarding the main event described in the source text."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and consistent with the source text. It accurately captures the main points regarding Bob Katter's controversial statement and his background/justification. It receives a score of 4 instead of 5 because it omits significant context from the article, such as the specific allegations against Billy Gordon (domestic violence), the political consequences (Gordon becoming an independent), and the subsequent social media backlash and Katter's defense. However, given the lenient rules to give benefit of the doubt, this omission is treated as a minor weakness in relevance rather than a failure."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment regarding relevance. The summary fails to mention the domestic violence allegations and criminal history, which are the central catalysts for the entire situation (Gordon's expulsion, Katter's statement, and the subsequent controversy). Without this context, the 'race row' accusation is disconnected from its cause. Therefore, I maintain the lower relevance score."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The lenient judge's assessment is accepted. The summary is well-structured (coherence), contains no hallucinations or contradictions with the text (consistency), and uses correct grammar (fluency). While it omits significant details like the domestic violence allegations, the political fallout of Gordon becoming an independent, and the social media backlash (which affects relevance), these omissions are common in summaries that focus on the primary news hook. The lenient judge correctly identified this as a minor weakness rather than a failure, so no score reduction is applied."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding relevance. The summary fails to mention the domestic violence allegations and criminal history, which are the central catalysts for the entire situation (Gordon's expulsion, Katter's statement, and the subsequent controversy). Without this context, the 'race row' accusation is disconnected from its cause. Therefore, I maintain the lower relevance score."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The strict judge's assessment is accepted. The summary effectively captures the primary news hook (Katter's controversial statement) and his defense regarding personal experience with racism. While it omits significant secondary details like the domestic violence allegations, the political fallout of Gordon becoming an independent, and the social media backlash, these omissions are acceptable for a high-level summary focusing on the main event. The lenient judge correctly identified this as a minor weakness in relevance rather than a failure."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.5,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.5
+    }
+  }
+}

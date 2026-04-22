@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-0f0789390d67698283cc87b2e046b5c5cd77edb7",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from significant grammatical errors and awkward phrasing (e.g., 'on the side of the box' instead of 'against the side', 'dropping his rifle' lacks a subject/verb agreement or proper tense connection). While it covers the main events, the poor fluency severely impacts readability. The consistency score is lowered because the summary omits the crucial detail that the incident was caught on camera by a tourist, which is a major point in the source text, and slightly misrepresents the location of the slip (slipped ON the cover vs sliding INTO the box)."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.5,
+        "rationale_for_score": "The summary accurately captures the main event and key details from the source text. The score is slightly reduced from perfect due to a minor grammatical error in the second sentence ('on the side of the box and dropping his rifle' should be 'dropped'), which affects fluency. Additionally, while consistent with the article's implication that he knocked it against the box, the summary phrasing could be slightly more precise, but this is a very minor issue given the lenient rules."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains significant grammatical errors (e.g., 'dropping his rifle' lacks a subject and proper tense connection) which severely impacts fluency. Additionally, it omits the crucial detail that the incident was caught on camera by a tourist, a major point in the source text, justifying the lower consistency score."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 5,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I lowered the fluency score from 4 to 3 because the grammatical error in the second sentence ('...on the side of the box and dropping his rifle') is a significant structural flaw (missing subject/verb agreement) that disrupts readability more than just a 'minor issue.' The lenient judge's assessment of this as a minor point was too generous given the severity of the syntax error. Coherence, consistency, and relevance remain high."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 5,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I accepted the strict judge's criticism regarding fluency. The grammatical error in the second sentence ('...on the side of the box and dropping his rifle') creates a structural flaw where the subject is missing or the verb form is inconsistent with the preceding clause, making it awkward to read. This warrants a reduction from 4 to 3. Scores for coherence, consistency, and relevance remain unchanged as they were appropriately assessed."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding fluency and consistency. The summary contains a significant grammatical error ('dropping his rifle' lacks a subject and proper tense connection), which severely impacts readability (Fluency: 2). Furthermore, it omits the crucial detail that the incident was caught on camera by a tourist, which is a major point in the source text; this omission justifies keeping the Consistency score at 3 rather than raising it."
+      }
+    },
+    "final": {
+      "coherence": 4.5,
+      "consistency": 3.5,
+      "fluency": 2.5,
+      "relevance": 4.5,
+      "overall_judge": 3.6
+    }
+  }
+}

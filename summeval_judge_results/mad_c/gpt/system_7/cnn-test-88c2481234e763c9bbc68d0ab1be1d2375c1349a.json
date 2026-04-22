@@ -1,0 +1,63 @@
+{
+  "article_id": "cnn-test-88c2481234e763c9bbc68d0ab1be1d2375c1349a",
+  "system_name": "system_7",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information and does not provide sufficient context about the incident."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the cause of the fire, the dramatic nature of the event, and the involvement of other band members, which are important for understanding the incident."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary uses lowercase letters for the beginning of sentences, which is grammatically incorrect and affects readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and concise account of the main event, which is the fire on Hillary Scott's tour bus and the safe evacuation of everyone on board."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important information, including the incident of the bus fire and the safety of those involved, which are the key points of the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary lacks some details that provide context, such as the cause of the fire (a blown tire) and the fact that the fire destroyed everything except Scott's Bible."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is written in lowercase and lacks proper capitalization, which affects its readability and fluency."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "tie",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

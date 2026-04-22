@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-8bc8f134bc3ceaeec0df8f29e96e13d319717ab8",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is well-structured, fluent, and consistent with the source text. It captures the main points regarding Bartomeu's stance on Luis Enrique, his tenure start, and the team's proximity to winning the title. It receives a slight deduction on relevance (4) because it omits other significant details from the article, such as the specific contract end date (2016), the Champions League context, and the recent match results against Valencia, though these are not strictly required for a brief summary."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is coherent and consistent with the source text, accurately reflecting the key points about Bartomeu's comments, Enrique's tenure, and the league title race. However, it scores lower on fluency due to awkward phrasing ('took charge of the club last summer' vs 'took only took charge' in source, though corrected here, still feels slightly clunky) and relevance because it omits significant context provided in the article, such as the refutation of replacement rumors, the specific contract details (until 2016), and the recent match results against Valencia which are central to the 'happy' sentiment. The summary is too brief to fully capture the nuance of the source."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate. The summary effectively captures the core narrative (Bartomeu's support for Enrique, his start date, and the league title race). The deduction in relevance is justified because the summary omits specific details present in the article, such as the contract end year (2016), the Champions League context, and the recent match results against Valencia. These are significant supporting details that were excluded."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. While the summary is grammatically correct and logically structured (coherence/consistency), it suffers from a lack of fluency due to slightly clunky phrasing ('took charge... last summer' vs the source's 'took only took charge', though corrected, still lacks the natural flow of the original context). More importantly, I agree that the relevance score should remain low; the summary omits critical context such as the refutation of replacement rumors, the specific contract end date (2016), and the recent match results which provide the evidence for the president's happiness. The summary is too brief to capture the full nuance."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The strict judge's assessment is accurate. While the summary is coherent and fluent, it lacks relevance by omitting significant context provided in the source text, specifically the Champions League match against PSG/Valencia and the specific contract details (ending in 2016), which are key supporting points for the narrative of the club's success."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate: the summary is structurally sound and factually consistent with the source text (correcting the typo in the article), but it lacks fluency due to slightly stiff phrasing and, more critically, fails relevance by omitting key context like the refutation of replacement rumors and specific match details that explain the 'happiness' mentioned."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 4.5,
+      "relevance": 3.5,
+      "overall_judge": 4.5
+    }
+  }
+}

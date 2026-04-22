@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-9beaaf73e4517d5bf1bc284f386485d571da96cf",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is excellent in coherence, consistency, and fluency, accurately reflecting the source text without hallucinations. It captures the main points regarding Priscilla Presley's role, the contest details, and the wedding specifics. It receives a slightly lower relevance score (4) because it omits other significant details from the article, such as the prize package (reception, hotel suite, tickets), the 'no impersonators' rule, and the application process, though this is acceptable for a brief summary."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.5,
+        "rationale_for_score": "The summary is fluent and coherent, accurately reflecting the main points of the article (Priscilla Presley's role, the contest with NBC Today, and the specific wedding details). However, it scores a 4 instead of a 5 because it omits significant context provided in the source text, such as the prize package (reception, hotel suite, airfares), Priscilla's strict 'no impersonators' condition, and the requirement for couples to submit video/photos. While not hallucinating facts, the summary is incomplete regarding the full scope of the event described."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is well-structured, factually accurate, and fluent. While it omits secondary details like the prize package and application rules (justifying a relevance score of 4 rather than 5), this is acceptable for a brief summary focusing on the core event."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I lowered the relevance score from 4 to 3. While the summary is factually consistent and fluent, it misses significant key details regarding the 'ultimate wedding' prize package (reception, suite, tickets) and Priscilla's specific condition ('no impersonators'), which are central to the article's description of the event's scope and nature."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary is well-structured, factually accurate, and fluent. While it omits secondary details like the prize package and application rules (justifying a relevance score of 4 rather than 5), this is acceptable for a brief summary focusing on the core event."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I raised the consistency score from 4 to 5 because the summary strictly adheres to the facts presented in the article without introducing any external information or hallucinations. The lenient judge's point about relevance is valid; the summary omits details about the prize package (reception, suite, tickets) and Priscilla's 'no impersonators' condition, which are significant parts of the source text. Therefore, the relevance score remains at 3."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.7
+    }
+  }
+}

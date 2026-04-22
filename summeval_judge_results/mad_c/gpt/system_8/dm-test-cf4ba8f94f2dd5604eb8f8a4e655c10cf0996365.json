@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-cf4ba8f94f2dd5604eb8f8a4e655c10cf0996365",
+  "system_name": "system_8",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information and does not provide sufficient context about the robbery."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to include key details such as the amount stolen, the description of the robber, and the incident's impact on the victims."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the specific time of the incident or the location, which are relevant details from the source."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "While the summary is grammatically correct, it is overly simplistic and lacks depth, making it less engaging."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical opening statement about the police appeal, setting the context for the robbery."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key aspect of the incident, which is the police appeal for public assistance in identifying the robber."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not include important details from the article, such as the description of the robber or the specifics of the robbery."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "While the summary is grammatically correct, it lacks depth and does not convey the full scope of the incident."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

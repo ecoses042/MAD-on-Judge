@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-6721edf88c95f480a4db2c63649dbb03736aeadf",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from a significant consistency issue: it repeats the same sentence twice with slight variations (once as a full sentence, once as a fragment), which degrades quality. Additionally, while the text is grounded in the article, it omits the crucial outcome of the story (the ban and annulled results) to focus solely on the initial misconduct, making it less relevant as a complete summary."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from a critical relevance flaw: it only covers the first paragraph of the source text (the incident description) while completely omitting the significant consequences detailed in the rest of the article (job loss, annulment of results, ban duration, and admission of guilt). Additionally, while the summary states he 'asked pupils to make changes,' the source text clarifies this was his insistence/interpretation ('insisted... he did not ask... but to make them more legible'), making the summary slightly less consistent with the full nuance of the article's findings."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "No changes made. The lenient judge's assessment of consistency (4/5) is justified because the summary repeats the first sentence twice with slight variations ('Ian Guffick asked pupils...' vs 'ian guffick asked pupils...'), which is a structural flaw. The relevance score (3/5) is also appropriate; while the summary accurately describes the misconduct, it completely omits the article's main points: the investigation, the annulment of results, and the teacher's ban. A summary focusing only on the initial act without the consequences fails to capture the 'most important information'."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I lowered the overall score slightly from 4.2 to 3.8. While the summary is fluent and coherent, I agree with the strict judge's assessment that it suffers from a critical relevance flaw by omitting the major consequences (job loss, annulment of results, ban) which are central to the story. Additionally, I adjusted the consistency score down slightly because the summary states he 'asked' pupils to make changes, whereas the source text explicitly notes his defense was that he did not ask them but rather insisted they make answers more legible; this nuance is important for factual accuracy regarding the specific allegations."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "No changes made. The strict judge's assessment is accurate: the summary suffers from a structural flaw by repeating the first sentence with minor variations, and critically fails on relevance by omitting the investigation, the annulment of results, and the teacher's ban, which are the most important outcomes of the article."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I accepted the lenient judge's point regarding relevance. The summary completely omits the central consequences of the story (job loss, annulment of results, and the ban), which are arguably more important than the specific mechanics of how the changes were requested. I also accepted the consistency adjustment: while the summary states he 'asked' pupils to make changes, the source text explicitly mentions his defense that he did not ask them but insisted they make answers legible. Since the summary presents this as a fact without qualifying it with his defense or the panel's finding on the nature of the request, it introduces a slight factual inaccuracy regarding the specific allegations."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.0,
+      "fluency": 5.0,
+      "relevance": 3.0,
+      "overall_judge": 4.2
+    }
+  }
+}

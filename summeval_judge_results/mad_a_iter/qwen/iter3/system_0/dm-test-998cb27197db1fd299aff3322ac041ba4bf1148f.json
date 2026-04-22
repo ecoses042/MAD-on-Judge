@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-998cb27197db1fd299aff3322ac041ba4bf1148f",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 1,
+        "overall_judge": 1.2,
+        "rationale_for_score": "The summary contains severe hallucinations and factual errors. It claims 'yorkshire side beat doncaster rovers', which directly contradicts the source text stating it was a '0-0 draw'. It also repeats the phrase 'match highlights of the game highlights' awkwardly. The grammar is poor ('faced with sticking up'), and the summary fails to accurately represent the key information."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary contains a severe hallucination in the first sentence ('yorkshire side beat doncaster rovers'), which directly contradicts the source text stating it was a '0-0 draw'. This violates the consistency criterion significantly. Additionally, the summary repeats phrases awkwardly ('match highlights of the game highlights') and fails to capture the key detail about the short video length (27 seconds), reducing relevance."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 1,
+        "overall_judge": 1.2,
+        "adjustment_notes": "The strict judge's assessment was accurate and justified. The summary contains a severe factual hallucination ('yorkshire side beat doncaster rovers') contradicting the source text ('0-0 draw'). It also suffers from poor grammar ('faced with sticking up'), awkward phrasing ('match highlights of the game highlights'), and redundancy. There are no aspects where I was overly generous; the strict scores reflect the actual quality of the summary."
+      },
+      "strict": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 1,
+        "relevance": 2,
+        "overall_judge": 1.2,
+        "adjustment_notes": "The lenient judge's scores were too high given the severity of the errors. The summary contains a catastrophic hallucination in the first sentence ('yorkshire side beat doncaster rovers') which directly contradicts the source text ('0-0 draw'), warranting a consistency score of 1. The fluency is extremely poor due to severe grammatical errors and awkward phrasing ('sticking up', 'most fan fan', 'game highlights of the game highlights'), justifying a fluency score of 1. Coherence is also low (1) because the summary is disjointed and nonsensical. Relevance is slightly higher (2) only because it mentions the correct teams and the draw result in the second sentence, but the overall quality is negligible."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 1,
+        "overall_judge": 1.2,
+        "adjustment_notes": "The lenient judge's assessment was accurate and justified. The summary contains a severe factual hallucination ('yorkshire side beat doncaster rovers') which directly contradicts the source text stating it was a '0-0 draw'. Additionally, the summary suffers from poor grammar ('faced with sticking up'), awkward phrasing ('match highlights of the game highlights'), and redundancy. There are no aspects where I was overly harsh; the strict scores reflect the actual quality of the summary."
+      },
+      "lenient": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 1,
+        "relevance": 2,
+        "overall_judge": 1.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a catastrophic hallucination in the first sentence claiming a 'beat' which directly contradicts the source text's '0-0 draw', making consistency a 1. The fluency is extremely poor due to severe grammatical errors ('most fan fan', 'sticking up'), justifying a 1. Coherence is also 1 as the sentences are disjointed and nonsensical. Relevance is low (2) because while it mentions the correct teams and result in the second sentence, the first sentence invalidates the summary's accuracy entirely."
+      }
+    },
+    "final": {
+      "coherence": 1.0,
+      "consistency": 1.0,
+      "fluency": 1.5,
+      "relevance": 1.5,
+      "overall_judge": 1.2
+    }
+  }
+}

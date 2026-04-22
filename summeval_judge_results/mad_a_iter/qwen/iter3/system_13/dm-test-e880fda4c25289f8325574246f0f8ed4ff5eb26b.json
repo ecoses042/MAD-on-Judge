@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-e880fda4c25289f8325574246f0f8ed4ff5eb26b",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is factually consistent with the source text but suffers from severe redundancy (repeating 'kitchen' and 'stained-glass windows') and poor sentence structure that makes it read like a disjointed list rather than a coherent paragraph. Furthermore, it fails the relevance criterion by omitting critical details such as the guide price (£200k-£250k), the specific auction date/location, and the unique interior features (mint green bathroom, specific window designs) which are central to the article's narrative."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is consistent with the source text and accurately reflects the main points (untouched state, original features like bathroom/kitchen/windows). However, it repeats 'kitchen' twice in one sentence and omits several key details mentioned in the article (e.g., specific items on shelves, guide price, auction date), making it less comprehensive than a perfect score would warrant. It is fluent but slightly repetitive."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I lowered the scores significantly based on the strict judge's valid criticisms. The summary suffers from severe redundancy (repeating 'kitchen' and 'stained-glass windows'), which destroys fluency and coherence. It reads like a disjointed list rather than a paragraph. Crucially, it fails relevance by omitting the most important details: the price range, the auction date/location, and specific unique features like the mint green bathroom or specific window designs. The strict judge was not too harsh; the summary is indeed poor."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "Lowered fluency from 4 to 3 due to the repetitive use of 'kitchen' in the first sentence and slightly awkward phrasing ('comes complete with... comes complete with'). Lowered relevance from 3 to 2 because the summary is extremely truncated; it misses critical high-value details present in the source text such as the specific guide price (£200k-£250k), the auction date, and unique interior details like the 'mint green' bathroom or specific vintage items (Cadbury's Marvel, etc.), which are central to the article's narrative about it being a 'collector's paradise'. The lenient judge was too forgiving on relevance."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 1,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I have lowered the scores further based on the strict evaluator's valid points. The summary is not just disjointed; it contains a severe grammatical error ('kitchen , kitchen') which drastically impacts fluency (dropping to 1). The coherence is poor because the text reads like a fragmented list of sentences rather than a cohesive paragraph. Relevance remains low as critical information like the price and auction date is missing, and redundancy further dilutes the content."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary suffers from a clear fluency issue due to the repetitive use of 'kitchen' in the first sentence and slightly clunky phrasing ('comes complete with... comes complete with'). Furthermore, the relevance score is correctly lowered because the summary omits critical high-value details present in the source text, such as the specific guide price (£200k-£250k), the auction date, and unique interior features like the 'mint green' bathroom or specific vintage items (Cadbury's Marvel, etc.), which are central to the article's narrative about it being a 'collector's paradise'. The lenient judge was indeed too forgiving on relevance."
+      }
+    },
+    "final": {
+      "coherence": 3.0,
+      "consistency": 5.0,
+      "fluency": 2.0,
+      "relevance": 1.5,
+      "overall_judge": 2.5
+    }
+  }
+}

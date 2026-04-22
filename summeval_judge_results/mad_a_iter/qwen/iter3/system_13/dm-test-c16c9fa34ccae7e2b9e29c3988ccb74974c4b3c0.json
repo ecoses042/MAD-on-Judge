@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-c16c9fa34ccae7e2b9e29c3988ccb74974c4b3c0",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from a significant relevance issue: it omits the crucial detail that Juventus has already accepted Tevez's departure and is identifying replacements, which is a major point in the source text. Additionally, while mostly consistent, the phrasing 'end of next season' is slightly less precise than the specific year '2016' mentioned in the text, though not strictly hallucinated."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is excellent in coherence, consistency, and fluency, accurately reflecting the source text without hallucinations. It captures the main points regarding Tevez's contract situation and desire to return to Boca Juniors. It receives a slightly lower relevance score (4) because it omits several key details present in the article, such as Juventus's reluctance to lose him, the specific requirement from the club president, and the context of his past history with Boca, though this is acceptable given the brevity."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment regarding relevance. The summary misses the significant news that Juventus has already accepted Tevez's departure and is looking for replacements, which is a key development in the story. While the text mentions he 'wishes to leave', omitting the club's reaction makes the summary less complete. I maintain the scores as they accurately reflect these strengths and weaknesses."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate. The summary is well-structured (coherence), factually accurate to the source (consistency), and grammatically correct (fluency). The relevance score of 4 is justified because the summary omits significant context from the article, such as Juventus's reluctance to lose a top scorer, the specific quote from President Angelici regarding the contract termination requirement, Tevez's historical connection to Boca (joined youth academy in 1996), and the manager's comments. While acceptable for brevity, these are key points in the source text."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding relevance. The summary accurately captures the core narrative (Tevez must terminate contract to return to Boca) and includes the key detail about his current status (on course for title/European glory). While it omits Juventus's reaction (accepting departure/replacements), this is a secondary development compared to the primary news of the transfer hurdle. The omission does not render the summary factually incomplete regarding the main story beat, so the relevance score remains appropriate."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The strict judge's assessment is accurate. The summary is well-structured, factually consistent with the source text, and grammatically fluent. The relevance score of 4 is justified because the summary omits significant context from the article, such as Juventus's reluctance to lose a top scorer, the specific quote from President Angelici regarding the contract termination requirement, Tevez's historical connection to Boca (joined youth academy in 1996), and the manager's comments. While acceptable for brevity, these are key points in the source text."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.5,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.5
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-4f3b35b540ba05f0f82d71a694ec23dde4dc3e01",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow of information, as it jumps from the act of pouring gasoline to the grandmother's statement without connecting the events."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the presence of passengers in the car, the time of the incident, and the fact that no one was injured, which are important for understanding the context."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention that the suspects were armed with a gun, which is a significant detail from the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary has several grammatical issues, such as inconsistent capitalization of 'california' and 'saturday,' which affects readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with the pouring of gasoline and leading to the car being set on fire."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the main events described in the article without introducing any new or misleading information."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the incident, including the attempted carjacking and the involvement of the grandmother, which are central to understanding the context."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, such as missing articles and inconsistent capitalization, which affect readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "tie",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

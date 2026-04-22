@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-2feca9acf532e33f1ab7442c442c8e19787d8d7b",
+  "system_name": "system_9",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow and omits important details about the interaction between the man and the fish."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to capture key points such as the fish's initial reluctance, the owner's daily interaction routine, and the emotional response of the fish when the hand is removed."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that the owner 'stroked' the fish instead of 'strokes,' which misrepresents the ongoing nature of the interaction."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as inconsistent verb tenses, which disrupt the reading experience."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of actions, showing the interaction between Roland Giroux and his blood parrot cichlid."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the main activities described in the article, such as the owner stroking the fish and the fish's behavior in response."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary captures the key points of the interaction between the owner and the fish, focusing on the unique relationship they share."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'stroking' should be 'stroked' to maintain past tense consistency."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits important details, such as the fish's initial reluctance and the owner's efforts to socialize the fish, which are significant to understanding their relationship."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 4,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 3.2,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

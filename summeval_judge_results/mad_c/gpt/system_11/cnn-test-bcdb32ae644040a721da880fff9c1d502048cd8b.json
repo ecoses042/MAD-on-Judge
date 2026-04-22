@@ -1,0 +1,66 @@
+{
+  "article_id": "cnn-test-bcdb32ae644040a721da880fff9c1d502048cd8b",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information and does not connect the events in a cohesive manner."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the ship's departure location, the duration of the cruise, and the involvement of the cleaning staff in discovering the deceased passengers."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The use of parentheses and dashes in the summary is unconventional and disrupts the reading flow."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the FBI's involvement in the investigation, which is a significant aspect of the original article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, detailing the discovery of the deceased passengers and the response from the cruise line."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, including the details about the cruise line's statement and the involvement of authorities."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is written in fluent English, with no grammatical errors, making it easy to read."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the incident, including the nature of the deaths and the response from the cruise line."
+        }
+      ],
+      "remaining_concerns": [],
+      "provisional_score": 5
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "tie",
+        "relevance": "defender"
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-207df192edc1836250b69d1bc5b9e6a38206eb78",
+  "system_name": "system_6",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, jumping between points without proper transitions."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states 'the researchers said say' which is a grammatical error and introduces confusion."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains multiple grammatical errors, such as 'the may also be fattening' instead of 'they may also be fattening'."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention key findings about the specific effects of antibiotics on boys and girls, which are crucial to understanding the study's implications."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear connection between the use of antibiotics and the potential impact on childhood obesity, reflecting the main argument of the article."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "It highlights the key findings of the study, including the association between antibiotic use in infants and obesity rates in children, which are central themes of the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, such as 'the researchers said say that' and 'the may also be fattening our children,' which detracts from readability."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits important details, such as the specific statistics regarding overweight boys and girls, and the potential mechanisms by which antibiotics may contribute to weight gain."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

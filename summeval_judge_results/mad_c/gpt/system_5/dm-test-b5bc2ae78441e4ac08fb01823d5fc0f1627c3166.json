@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-b5bc2ae78441e4ac08fb01823d5fc0f1627c3166",
+  "system_name": "system_5",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, abruptly shifting from Downton's dismissal to Pietersen's emotions without a smooth transition."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary fails to mention key details about Pietersen's potential return to the England team and the context of his past dismissal, which are crucial for understanding the significance of the events."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary does not adequately cover the most important information, such as the implications of Downton's sacking and the upcoming matches, which are central to the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'do n't' instead of 'don't', which detracts from its readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear connection between the dismissal of Paul Downton and the focus on the county championship season, establishing a logical flow of information."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary captures the key points regarding Paul Downton's dismissal and Kevin Pietersen's emotional state during the team photo, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the context of Pietersen's potential return to the England team, which is a significant aspect of the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'do n't' instead of 'don't', which affects its readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

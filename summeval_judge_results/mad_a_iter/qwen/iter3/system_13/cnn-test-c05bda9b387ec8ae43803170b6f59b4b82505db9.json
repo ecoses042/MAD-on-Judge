@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-c05bda9b387ec8ae43803170b6f59b4b82505db9",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and consistent with the source text. It captures two key points: the Yazidis' background and the Sinjar crisis. However, it scores a 4 for relevance because it omits the main news event of the article—the recent release of over 200 Yazidis by ISIS—which is the primary focus of the report."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is grammatically correct and consistent with the source text, but it suffers from a severe relevance flaw. It only covers two minor details out of the entire article (Yazidi background and Sinjar crisis), completely omitting the main news event: the release of over 200 Yazidis by ISIS. By ignoring the primary subject of the report, the summary fails to capture the most important information."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "The lenient judge's assessment of relevance (4) is incorrect because the summary completely omits the primary news event: the release of over 200 Yazidis by ISIS. The article begins with this specific event as the lead story, but the summary only provides background context and a past crisis description. By failing to mention the recent release, the summary misses the most important information from the source text, warranting a much lower relevance score."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "The strict judge's assessment is correct. The summary completely misses the primary news hook (the release of over 200 Yazidis), focusing instead on background context and a past event mentioned in the article. This is a critical failure in relevance that warrants the low score."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "Agreed with the strict judge. The summary fails to mention the primary news event (the release of over 200 Yazidis), focusing instead on background information and a past crisis. This omission makes it highly irrelevant to the main point of the article."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No adjustment needed. The lenient judge's assessment of 'relevance' as a critical failure is accurate. The summary consists entirely of background information (descent, religion) and a past event (Sinjar crisis), completely omitting the primary news hook: the recent release of over 200 Yazidis by ISIS. This omission renders the summary irrelevant to the main point of the article."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 2.0,
+      "overall_judge": 3.0
+    }
+  }
+}

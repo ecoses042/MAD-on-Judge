@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-e2bccd4dec93c9bb7b327827dae004c2d494ec31",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, jumping abruptly between topics without proper transitions."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the concept of 'Space Invaders' without adequately connecting it to the political discussion about UFOs, which is the main focus of the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to cover key points such as the Defense Minister's statements about UFOs and the context of the political discussion initiated by Inoki."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as improper capitalization and punctuation, making it difficult to read."
+        }
+      ],
+      "provisional_score": 1
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary introduces the topic of political discussion regarding UFOs in Japan, establishing a clear context for the reader."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits key details about the Defense Minister's statements and the context of the discussion, which could mislead readers about the original content."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, such as the use of lowercase letters at the beginning of sentences."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to cover the main points of the article, such as the specifics of the Defense Minister's response and the significance of Inoki's inquiry."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.0,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

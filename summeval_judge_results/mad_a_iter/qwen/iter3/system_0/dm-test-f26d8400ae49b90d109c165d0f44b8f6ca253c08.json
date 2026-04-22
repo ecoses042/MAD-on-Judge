@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-f26d8400ae49b90d109c165d0f44b8f6ca253c08",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary contains a severe hallucination in the first sentence: it claims Muto is FC Tokyo's 'Dutch partner', whereas the text states Chelsea has a Dutch partner (Vitesse Arnhem) and that Muto would join them on loan. This violates the consistency criterion completely. Additionally, the second sentence attributes the 'three goals in four games' statistic to the 'Dutch club' instead of Muto, creating a logical error and factual inconsistency with the source text."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 3.8,
+        "rationale_for_score": "The summary is mostly accurate but contains a significant hallucination in the first sentence: it claims Muto plays for Chelsea's 'Dutch partner' Vitesse Arnhem, whereas the text states he plays for FC Tokyo and would join Vitesse on loan *if* he moves to Chelsea. This misrepresents his current club affiliation. Additionally, the phrase 'deal deal' is a minor fluency error. Despite these issues, the summary captures the main points regarding the offer, the sponsorship denial, and Muto's tenure at FC Tokyo."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains severe factual errors (hallucinations) regarding who the 'Dutch partner' is and misattributes the goal statistics to the wrong entity. These are critical consistency failures that cannot be overlooked. Therefore, I maintain the low scores."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the scores significantly based on the lenient judge's valid point about consistency. The summary states Muto plays for Chelsea's 'Dutch partner', which is a major hallucination; he plays for FC Tokyo and would only join Vitesse (the Dutch partner) on loan if the transfer happens. This violates the consistency criterion severely. I also penalized coherence and fluency further due to the awkward phrasing resulting from this error ('Chelsea's interest... is not linked to # 200million deal deal') and the logical confusion introduced by misidentifying his current club."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary contains severe factual errors (hallucinations) regarding who the 'Dutch partner' is and misattributes the goal statistics to the wrong entity. These are critical consistency failures that cannot be overlooked. Therefore, I maintain the low scores."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a severe factual error (hallucination) stating Muto plays for Chelsea's 'Dutch partner' instead of FC Tokyo, which violates consistency and damages coherence/fluency. No adjustment to the scores is necessary."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 1.5,
+      "fluency": 3.5,
+      "relevance": 3.0,
+      "overall_judge": 2.5
+    }
+  }
+}

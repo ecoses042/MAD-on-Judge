@@ -1,0 +1,66 @@
+{
+  "article_id": "dm-test-f37fd6e9b6cc18a7132568e307ef3b130931e809",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, as it jumps between events without providing context or a chronological order."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details about the nature of the allegations, the context of the investigation, and the background of the accuser, which are crucial for understanding the significance of the claims."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the specific time period of the alleged incident, which is important for context."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains short, choppy sentences that disrupt the flow of reading."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with the incident and concluding with the police notification."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the claims made by Christopher Lawler without introducing any new facts."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is written in fluent and grammatically correct English, making it easy to read."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the incident and the subsequent actions taken, avoiding trivial details."
+        }
+      ],
+      "remaining_concerns": [],
+      "provisional_score": 5
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 4,
+      "fluency": 4,
+      "relevance": 3,
+      "overall_judge": 3.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

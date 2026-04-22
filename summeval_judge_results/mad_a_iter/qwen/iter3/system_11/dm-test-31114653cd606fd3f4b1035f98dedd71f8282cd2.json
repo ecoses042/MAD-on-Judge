@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-31114653cd606fd3f4b1035f98dedd71f8282cd2",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and strictly consistent with the source text regarding the match details, venue, and standings. However, it scores a 4 for relevance because it only covers the first paragraph of the source article, omitting significant information about Gareth Bale's performance, the specific reason for the ticket sell-out (FAW statement), the speculation about the Millennium Stadium, and UEFA rules regarding venue changes."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is well-structured, fluent, and strictly consistent with the source text. It captures the main points regarding the match sell-out, venue, date, team standings, and historical context. The score is slightly reduced from 5 on relevance because the summary omits the significant details about Gareth Bale's performance against Israel that drove the ticket demand, which constitutes a key part of the article's narrative, though this is a minor omission given the lenient rules."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. While the summary is grammatically perfect and factually consistent with the provided text, it significantly under-summarizes the content by ignoring the second half of the article which details Gareth Bale's contribution, the FAW's statement on ticket demand, the stadium speculation, and the UEFA venue rules. These are substantial portions of the source text that should be represented in a complete summary."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The lenient judge's assessment is accurate. The summary effectively covers the primary news (sell-out, venue, date, standings) and historical context. The deduction in relevance is justified because the summary completely omits the catalyst for the sell-out: Gareth Bale's performance against Israel and the resulting ticket demand mentioned in the article. While this is a significant narrative element, it is acceptable to omit secondary details in a short summary if the core facts are present."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I raised the relevance score from 2 to 3 because the summary accurately captures the primary news hook (the sell-out match details and standings) without including trivial details. However, I agree with the lenient judge that the summary is incomplete as it omits significant secondary information regarding Gareth Bale's performance, the FAW statement on ticket demand, and the stadium venue context. While not 'trivial' in a vacuum, these are substantial portions of the source text that make the summary feel like only half the story."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is well-structured and factually accurate based on the text provided. While it omits the specific reason for the sell-out (Gareth Bale's performance against Israel), this omission is acceptable given the brevity of the summary, as the core news facts (sell-out status, venue, date, standings) are clearly presented."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.7
+    }
+  }
+}

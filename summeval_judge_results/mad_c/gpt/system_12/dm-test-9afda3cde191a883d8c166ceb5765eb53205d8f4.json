@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-9afda3cde191a883d8c166ceb5765eb53205d8f4",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, jumping abruptly from Sanchez's transfer to Wenger's comments on Sterling without clear transitions."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention Sanchez's impact on the team and his performance, which are key points in the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary states Sanchez joined Arsenal for £32 million but does not clarify that this was a decision made after interest from multiple clubs, which is a significant aspect of the original article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'the Gunners' is not used, which is a common idiomatic expression for Arsenal, making the summary slightly less fluent."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding Sanchez's transfer and Wenger's comments."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article without introducing any new facts."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points, such as Sanchez's transfer, Wenger's comments on Liverpool's interest, and the mention of Raheem Sterling."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'for £ 32million' should be written as 'for £32 million' for better fluency."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 4,
+      "relevance": 3,
+      "overall_judge": 3.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "tie",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

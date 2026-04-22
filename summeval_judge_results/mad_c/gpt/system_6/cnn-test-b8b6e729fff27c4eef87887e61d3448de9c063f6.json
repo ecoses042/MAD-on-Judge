@@ -1,0 +1,75 @@
+{
+  "article_id": "cnn-test-b8b6e729fff27c4eef87887e61d3448de9c063f6",
+  "system_name": "system_6",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, abruptly ending without completing the thought or providing a conclusion."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits key details about the rocket's landing attempt, including that it tipped over and the context of previous unsuccessful attempts, which are crucial for understanding the situation."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary does not cover important aspects such as the purpose of the mission, the supplies being delivered, or the future plans for rocket landings, which are significant to the overall narrative."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains formatting issues, such as inconsistent capitalization and spacing, which detract from its readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with the launch of the Falcon 9 rocket and mentioning the subsequent attempt to land the rocket stage."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding the launch details and the involvement of Elon Musk."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is written in grammatically correct English, making it easy to read despite some formatting issues."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary captures the key points of the launch and the attempt to land the rocket, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary cuts off abruptly and does not provide a complete picture of the events or the outcomes of the mission."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "While it includes important details, it omits significant information about the cargo being delivered and the future plans for rocket landings."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

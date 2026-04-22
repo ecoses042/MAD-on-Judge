@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-88c2481234e763c9bbc68d0ab1be1d2375c1349a",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 5,
+        "overall_judge": 5.0,
+        "rationale_for_score": "The summary is excellent. It accurately captures the main events (fire, evacuation, specific damage to the Bible, and upcoming performance) without adding any hallucinated details or omitting key information. The writing is fluent and concise."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is coherent, consistent with the source text (no hallucinations), and covers all key points including the fire, evacuation, specific damage details, and the upcoming performance. It loses a point on fluency because it retains the awkward possessive apostrophe placement ('s) found in the original article's title case style (e.g., 'Hillary Scott 's'), which is grammatically incorrect even if stylistically faithful to the source text's header; a high-quality summary should correct such obvious errors for better readability."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 5,
+        "overall_judge": 5.0,
+        "adjustment_notes": "The lenient judge's assessment is accurate. The summary effectively captures the key events (fire, evacuation, specific damage to the Bible, and upcoming performance) without hallucinations or omissions of critical information. The writing is concise and fluent. No score adjustment is necessary."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. While the summary is factually accurate and covers all key points (coherence, consistency, relevance), the repeated use of awkward possessive apostrophes ('Hillary Scott 's', 'bus 's') creates a grammatical error that detracts from fluency. As a lenient evaluator, I initially might have overlooked this as a stylistic choice to mimic the source, but upon reflection, a high-quality summary should correct obvious grammatical errors for better readability. Therefore, maintaining the score of 4 for fluency and an overall 4.8 is appropriate."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 5,
+        "overall_judge": 5.0,
+        "adjustment_notes": "The strict judge's assessment is correct. The summary accurately reflects the source text without hallucinations or omissions of critical details. It captures the main event (fire), the outcome (safe evacuation), specific damage (Bible spared), and future context (ACM Awards). No adjustment is needed."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding fluency. While the summary is factually accurate and well-structured (coherence, consistency, relevance), the repeated use of awkward possessive apostrophes ('Hillary Scott 's', 'bus 's') constitutes a grammatical error that impacts readability. As a strict evaluator revisiting the scores, I acknowledge that this is a minor issue in an otherwise excellent summary, so raising the fluency score to 5 would be unjustified given the clear grammatical flaws. The overall score of 4.8 remains appropriate."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 4.5,
+      "relevance": 5.0,
+      "overall_judge": 4.9
+    }
+  }
+}

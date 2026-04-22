@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-9b5a04b9879fe716a2dcd66dd331f99534603c16",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, making it difficult to understand the context and connections between statements."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that Bob Katter said he would quit after being accused of domestic violence, which is not mentioned in the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details about the controversy surrounding Katter's statement and the implications for Billy Gordon, which are crucial for understanding the situation."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as missing articles and awkward phrasing, which affect readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with Bob Katter's controversial statement and leading to the implications for Billy Gordon."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the main points from the article, including Katter's accusations against the Queensland Government and the situation surrounding Billy Gordon."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key issues of race, accusations, and political implications, avoiding trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, such as 'mr katter said he would quit after he was accused of domestic violence,' which misrepresents the original context."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-5be0a9584b051175d9f4842a143b76385335d96a",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 3.8,
+        "rationale_for_score": "The summary captures the main points and direction of the article well (coherence and relevance are good). However, it introduces a hallucination by including 'click here for all the latest news news', which is not in the source text (consistency issue). Additionally, it omits specific details like the exact bonus amount (£12m total) and the context of the recent loss to Manchester United, though this is acceptable under lenient rules if key points are covered. The fluency is slightly reduced by the inclusion of the non-existent link."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from a major coherence flaw due to the inclusion of 'click here for all the latest news news', which is irrelevant and not present in the source text (likely an artifact). While the factual claims about bonuses and contracts are consistent with the article, the summary fails to capture key context such as the specific match result against Manchester United or the manager's quotes regarding the team's performance ('thrown it into the garbage'), reducing its relevance. The fluency is acceptable but marred by the abrupt ending."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 3.8,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate: the summary suffers from a consistency error due to the hallucinated 'click here' link which is not in the source text. While the core information is relevant and coherent, this specific inconsistency prevents a higher score."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The inclusion of 'click here for all the latest news news' is a significant coherence and consistency flaw as it introduces external artifacts not found in the source text. The summary also misses key narrative elements like the specific match result against Manchester United and the manager's quotes, which reduces relevance. I maintain the strict scores as they accurately reflect these genuine flaws."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 2,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "Lowered consistency score significantly (from 3 to 2) because the hallucinated 'click here' link is a severe violation of the source text constraint, not just a minor error. Also lowered fluency slightly (from 4 to 3) due to the abrupt ending caused by the non-existent link and the lack of proper capitalization/punctuation in the summary text provided."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment that the strict scores were accurate. The inclusion of 'click here for all the latest news news' is a clear violation of consistency (introducing external artifacts) and coherence (breaking the flow). Additionally, the summary omits significant narrative details from the source text, such as the specific result of the Manchester derby against United and the manager's quotes regarding the team's performance, which justifies the lower relevance score. No points should be raised."
+      }
+    },
+    "final": {
+      "coherence": 3.0,
+      "consistency": 2.5,
+      "fluency": 3.5,
+      "relevance": 3.5,
+      "overall_judge": 3.0
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-1747dcd6a007ee97954b6b10cde549bf82f6a4eb",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear structure and logical flow, as it abruptly ends without mentioning other relevant details about Chipotle's delivery service or its competitors."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits significant information about the context of Chipotle's decision, such as its previous reluctance to partner with delivery services and the mention of celebrity customers, which adds to the relevance of the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains inconsistent spacing around punctuation, which affects readability."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the competitive landscape of the food delivery market, which is a key aspect of the original article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding Chipotle's decision to enter the food delivery market."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article without introducing any new facts."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points, such as the partnership with Postmates and the service charge, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as inconsistent capitalization and spacing, which affect readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-2a48112ddee712f2364f128076cb2db555a043b1",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is factually consistent with the source text and presents a logical flow of information (current situation -> player background). However, it scores lower on relevance because it omits the article's central theme: Cambiasso's specific comparison between saving Leicester and winning a trophy. Additionally, while fluent, the lack of capitalization in the summary text is a minor stylistic flaw affecting fluency."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and strictly consistent with the source text. It captures the three main facts: Leicester's position, Cambiasso's signing, and his trophy count. The score is slightly reduced from 5 on relevance because it omits the article's central theme (Cambiasso comparing saving the team to winning a trophy), though this omission is minor given the lenient rules."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is factually accurate and logically structured (current status -> background), but it fails to capture the main point of the article: Cambiasso's statement that saving Leicester feels like winning a trophy. This omission significantly impacts relevance. I maintain the fluency score at 4 due to the lack of capitalization, which is a stylistic error present in the provided text."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is factually accurate (consistent), well-structured (coherent), and grammatically correct (fluent). While it misses the central theme of Cambiasso comparing saving the team to winning a trophy, this omission does not render the summary poor; it simply lacks depth regarding the main narrative hook. Therefore, a relevance score of 4 is appropriate, and no harsher penalty is warranted."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding relevance. The summary accurately reflects the factual details (current standings, signing date, trophy history) but completely misses the central theme of the article: Cambiasso's specific sentiment that saving the team feels like winning a trophy. This omission makes the summary factually consistent but thematically incomplete. I maintain the fluency score at 4 because the lack of capitalization is a stylistic error present in the provided text, which counts against fluency standards."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary is factually accurate and well-structured. While it omits the central narrative hook regarding Cambiasso comparing saving the team to winning a trophy, this omission reduces relevance but does not constitute a critical failure. Therefore, maintaining the score of 4 for relevance and an overall score of 4.8 is appropriate."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 4.5,
+      "relevance": 3.5,
+      "overall_judge": 4.5
+    }
+  }
+}

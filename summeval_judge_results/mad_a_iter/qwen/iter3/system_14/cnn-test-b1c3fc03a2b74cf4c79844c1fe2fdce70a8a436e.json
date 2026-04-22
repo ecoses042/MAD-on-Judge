@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-b1c3fc03a2b74cf4c79844c1fe2fdce70a8a436e",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary fails the consistency criterion because it presents Save the Children's unconfirmed fears as facts ('italian coast guard fears', 'capsized'). The source text explicitly states that the Italian Coast Guard cannot confirm the incident and has found no evidence of a capsized boat. Additionally, the summary omits crucial context regarding the specific date (Monday) and the lack of survivors/bodies found by the Coast Guard, making it misleading."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from a major consistency flaw (hallucination). The source text explicitly states that the Italian Coast Guard 'cannot confirm such an incident' and 'has not yet found evidence' of a capsized boat; the summary presents this unconfirmed fear as a fact ('a migrant boat... capsized'). Additionally, the summary omits the crucial context that the 400 missing migrants are a specific fear regarding one particular event, while the death toll (480) is a separate statistic for the year. Due to the clear contradiction with the source text regarding the main claim, it cannot be rated higher than 2."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the overall score because the strict judge's criticism regarding consistency is valid and severe. The summary presents unconfirmed fears from Save the Children as established facts (e.g., 'capsized', 'coast guard fears'), directly contradicting the source text which states the Coast Guard could not confirm the incident or find evidence. This makes the summary misleading, warranting a lower score than my initial assessment."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No changes made. The lenient judge's assessment of consistency (2) is correct because the summary presents an unconfirmed event as a fact ('a migrant boat... capsized'), directly contradicting the source text which states the Coast Guard 'cannot confirm such an incident'. This hallucination is a critical flaw that prevents a higher score."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding consistency. The summary presents unconfirmed fears and lack of evidence from the source text as established facts (e.g., stating 'a migrant boat... capsized' rather than 'Save the Children fears a boat capsized'). This is a significant factual error relative to the source, justifying the low consistency score. I maintain the strict judge's original scores."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary presents an unconfirmed event (the capsizing of a boat carrying 550 people) as a definitive fact, whereas the source text explicitly states that the Italian Coast Guard 'cannot confirm such an incident' and found no evidence. This constitutes a hallucination and a critical consistency failure, justifying the low score."
+      }
+    },
+    "final": {
+      "coherence": 3.0,
+      "consistency": 2.0,
+      "fluency": 4.0,
+      "relevance": 3.5,
+      "overall_judge": 3.0
+    }
+  }
+}

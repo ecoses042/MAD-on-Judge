@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-4f3b35b540ba05f0f82d71a694ec23dde4dc3e01",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from a significant consistency flaw: it states the driver was not injured while omitting the crucial detail that two passengers were inside the car at the time of the fire. Given the source explicitly mentions 'two passengers inside' and later confirms 'No one was injured,' the summary's omission creates a misleading implication that only the driver was present or that the passenger safety is irrelevant, which contradicts the severity of the event described in the text. Additionally, it misses the motive (carjacking attempt) which is a key point."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.5,
+        "rationale_for_score": "The summary is fluent and well-structured, accurately capturing the main events (argument, arson, injuries, vehicle damage). It is consistent with the source text regarding the specific details provided in the first half of the article. A minor deduction for consistency is applied because the summary omits the grandmother's account of a carjacking attempt involving a gun, which is a significant detail in the source text that explains the motive; however, since the core facts about the fire and lack of injury are correct, it does not warrant a lower score than 'Good'."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary is fluent and coherent but fails on consistency by omitting the critical detail that two passengers were inside the car when it was set on fire, despite the text explicitly stating 'No one was injured' in that context. This omission creates a misleading implication regarding who was present. Additionally, the summary misses the key motive (carjacking attempt), which is a significant part of the event's narrative."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.5,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is fluent and well-structured (Coherence/Fluency: 5). It accurately reflects the core facts of the fire, vehicle damage, and lack of injury found in the text (Consistency: 4, Relevance: 4). The deduction for consistency/relevance is justified because the summary omits the grandmother's account regarding the carjacking attempt with a gun, which constitutes a significant portion of the narrative explaining the motive and sequence of events in the source article. Therefore, no points need to be raised."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "Agreed with the lenient judge's assessment regarding consistency and relevance. The summary omits the critical fact that two passengers were inside the car when it was set on fire, which contradicts the source text's implication of total safety ('No one was injured') if not clarified by context. It also fails to mention the primary motive (carjacking attempt), making the summary less relevant to the full narrative."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.5,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary is fluent and well-structured (Coherence/Fluency: 5). It accurately reflects the core facts of the fire, vehicle damage, and lack of injury found in the text (Consistency: 4, Relevance: 4). The deduction for consistency/relevance is justified because the summary omits the grandmother's account regarding the carjacking attempt with a gun, which constitutes a significant portion of the narrative explaining the motive and sequence of events in the source article. Therefore, no points need to be raised."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.0,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.3
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-998cb27197db1fd299aff3322ac041ba4bf1148f",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, jumping from the match result to the media team's challenge without a smooth transition."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary incorrectly states that Doncaster Rovers are 'rooted to the bottom of League One,' while the article mentions they are 'firmly entrenched in mid-table mediocrity.'"
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits important context about the match being uninspired and the implications of Fleetwood Town's play-off hopes."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "There is a typographical error in 'compling' instead of 'compiling,' which affects readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, starting with the match result and then discussing the media team's challenge."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the key details from the article, including the score, the teams involved, and the media team's response to the match."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important aspects of the article, such as the match outcome and the media team's efforts, while avoiding trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "There are minor grammatical errors, such as 'compling' instead of 'compiling', which affects the overall fluency of the summary."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary incorrectly states that Doncaster is at the bottom of League One, while the article mentions they are in mid-table."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 4,
+      "relevance": 3,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-2abe0f81f5b22c8a406165717e3bd7fce6fe47c6",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information and does not connect the details about the charges and the agreement."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key information about the nature of the charges, such as accepting sex as payment and performing exorcisms, which are central to the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the context of patient satisfaction ratings, which is a significant aspect of the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as inconsistent capitalization and punctuation."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the actions taken by the Iowa Board of Chiropractic and Charles Manuel's admission of wrongdoing."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the key points from the article, specifically mentioning the charges against Manuel and his agreement with the board."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is written in grammatically correct and easy-to-read English."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits important details such as the nature of the charges (accepting sex as payment and performing exorcisms) and the context of patient satisfaction ratings."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

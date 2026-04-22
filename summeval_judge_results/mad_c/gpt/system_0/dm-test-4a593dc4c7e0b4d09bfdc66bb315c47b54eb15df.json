@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-4a593dc4c7e0b4d09bfdc66bb315c47b54eb15df",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, jumping between unrelated points without clear connections."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary incorrectly states that Henderson believes his side can catch Manchester United, which is not mentioned in the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary includes trivial details, such as Mignolet playing the game of the season, without emphasizing key points like the significance of the win or Henderson's comments."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'raheem sterling scored his first goal goal' contains a repetition error, which affects readability."
+        }
+      ],
+      "provisional_score": 1
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear statement about Henderson's belief in Liverpool's potential to catch Manchester City, establishing a logical flow."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects Henderson's views and the context of the match against Newcastle United."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary includes inaccuracies, such as stating Henderson believes they can catch Manchester United instead of Manchester City, and it fails to mention key details like the significance of the match and the contributions of other players."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, such as 'the game of season' and 'first goal goal,' which detracts from readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 1,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 1.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

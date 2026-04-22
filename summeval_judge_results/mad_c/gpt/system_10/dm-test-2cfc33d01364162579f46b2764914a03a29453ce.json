@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-2cfc33d01364162579f46b2764914a03a29453ce",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, abruptly ending after mentioning Ozil's comparison without connecting to the upcoming match or other relevant details."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits significant information about the match context, such as Arsenal's position in the league, the return of Jack Wilshere, and the comments from Ray Parlour, which are crucial for understanding the situation."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention that Ozil is expected to start in the match, which is an important detail from the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The use of 'beneficiary of the timepiece' is awkward and could be phrased more naturally."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, starting with Mesut Ozil's excitement about his new Apple Watch and providing context about the upcoming match."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, mentioning Ozil's comparison of the watch to Michael Knight and the details about the watch's price."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points regarding Ozil's new watch and its significance in relation to the upcoming match, avoiding trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as the use of 'the' before 'Apple Watch' and inconsistent formatting of the price, which affects readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

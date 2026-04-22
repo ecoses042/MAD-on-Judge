@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-d296270ab4a4cf20f2d9c1aae7514687806f2b35",
+  "system_name": "system_5",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, jumping between points without smooth transitions."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details about the luxury features of the jet, such as the dining room, kitchen, and various lounges, which are essential to understanding its opulence."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as inconsistent capitalization and spacing issues, which affect readability."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the term 'mystery billionaire' without context, which may not align with the article's focus on the jet's features."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, outlining the transformation of the jumbo jet into a luxury home and mentioning key features like bedrooms, lounges, and the restaurant."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, including the cost of the jet and its customization for a single owner while still accommodating guests."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important aspects of the article, such as the luxury features of the jet and its intended use, without delving into trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as the use of lowercase letters at the beginning of sentences and the incorrect symbol '#' instead of '£' for the currency."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "tie",
+        "consistency": "tie",
+        "fluency": "critic",
+        "relevance": "tie"
+      }
+    }
+  }
+}

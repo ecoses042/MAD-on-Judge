@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-e06ff0eb7c4fa4416fda84a9a239b15480c5a9d9",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is consistent with the source text and captures key details like the location, platform, and specific requirements (non-drinker/smoker, gym membership). However, it only covers a small portion of the article, omitting significant personal details about 'Rich' himself (age, physical description, lifestyle) and his promises to potential partners. The fluency score is slightly reduced due to minor punctuation/spacing issues inherited from the source text's formatting quirks (e.g., '-lrb-', spacing), but these are not severe enough to be considered hallucinations or major errors under lenient rules."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 2.8,
+        "rationale_for_score": "The summary suffers from severe fluency issues due to the inclusion of raw text artifacts like '-lrb-' and '-rrb-', which makes it unreadable. It also lacks coherence as a standalone paragraph because it is essentially a fragmented excerpt rather than a synthesized summary. While the content is consistent with the source (no hallucinations), it fails to provide a complete overview, omitting key details such as the man's self-description, his specific promises (car, laptop, property), and the outcome of the Daily Mail's attempt to contact him."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 1,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I lowered the fluency score to 1 because the inclusion of raw text artifacts ('-lrb-', '-rrb-') and lowercase formatting makes the summary technically unreadable and grammatically broken, which is a critical failure. I maintained coherence at 2 due to the fragmented nature of the text. Relevance remains low (3) as it only covers half the story (the ad requirements) while missing the self-description and the outcome. Consistency stays high (4) as no facts were invented."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "The lenient judge was too generous on fluency and relevance. The summary inherits severe formatting errors from the source text (e.g., '-lrb-', 'there' instead of 'their', inconsistent capitalization) which makes it difficult to read, warranting a lower fluency score. Regarding relevance, the summary is extremely truncated; it completely omits Rich's self-description (age, tattoos, wealth claims), his specific promises (car, phone, laptop), and the context that he is seeking a partner online, focusing only on the first paragraph of the ad. This constitutes a significant omission of key points."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 1,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "adjustment_notes": "Scores remain unchanged. The lenient judge's assessment of Fluency (1) is correct due to the presence of raw text artifacts ('-lrb-', '-rrb-') and inconsistent casing which renders the text technically unreadable. Coherence (2) is appropriate given the fragmented sentence structure. Relevance (3) is accurate as the summary omits significant details from the source, specifically the man's self-description and the outcome of the contact attempt. Consistency (4) is maintained as no hallucinations were introduced."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary suffers from severe formatting issues (e.g., '-lrb-', inconsistent capitalization) which drastically impacts readability and fluency, justifying a low score. Furthermore, the summary is highly truncated; it omits Rich's self-description, specific material promises (car, phone, laptop), and the broader context of the story, making it irrelevant to the full scope of the article."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 4.5,
+      "fluency": 1.5,
+      "relevance": 2.5,
+      "overall_judge": 2.5
+    }
+  }
+}

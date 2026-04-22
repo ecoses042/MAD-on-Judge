@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-0f0789390d67698283cc87b2e046b5c5cd77edb7",
+  "system_name": "system_3",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow and omits important contextual details, such as the reactions of the crowd and the guard's embarrassment."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention the presence of tourists and the significance of the event, which are key elements of the original article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not clarify that the guard was part of the Changing of the Guard ceremony, which is a crucial detail."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains awkward phrasing, such as 'the queen 's guard' instead of 'The Queen's Guard', which affects readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical sequence of events, detailing the guard's slip and the consequences of the incident."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the main event described in the article without introducing any new or unrelated information."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key moment of the guard slipping, which is the central event of the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as inconsistent capitalization and punctuation, which affect its readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "tie",
+        "consistency": "tie",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-8847383b72167c3f3dd2161b5b091b580c8f4da7",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary contains severe hallucinations and factual errors derived from misinterpreting the source text. Specifically, it claims the 'epicentre' is wide (the article says the mass is 100ft wide), incorrectly states the area of Rausu is on Hokkaido Regional Development Bureau (the bureau is an authority, not a location), and repeats the landslide explanation redundantly with poor grammar ('mass mass'). These are critical consistency failures."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary contains a significant hallucination in the phrase 'and epicentre wide'. The source text states the mass is '100ft wide', while 'epicentre' refers to the center of an earthquake or event and is not mentioned as a width measurement in the article. This introduces a fact not present in the source, violating the consistency criterion severely. Additionally, the sentence structure is somewhat disjointed, affecting coherence."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains severe factual errors (hallucinations) regarding the dimensions ('epicentre wide' instead of '100ft wide') and a nonsensical sentence structure ('area of rausu is on hokaido regional development bureau'). Additionally, it repeats information redundantly ('mass mass', repeating the landslide explanation). These are critical consistency failures that warrant the low scores."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "The lenient judge's assessment is accepted without change. The summary contains a severe hallucination ('epicentre wide') that contradicts the source text ('100ft wide'), violating the consistency criterion. Additionally, the sentence structure is disjointed and grammatically awkward (e.g., 'the mass mass', 'measures roughly... and epicentre wide'), which impacts coherence and fluency. The relevance is low as it fails to capture key details like the lack of tremors or the specific geological explanation regarding melting ice/snow causing a pivot, focusing instead on repeating dimensions with errors."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary contains severe factual errors (hallucinations) such as 'epicentre wide' instead of '100ft wide', redundant phrasing ('mass mass'), and a nonsensical sentence structure ('area of rausu is on hokaido regional development bureau'). These are critical consistency failures that warrant the low scores."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The strict judge's assessment is fully accepted and scores are lowered to reflect the severity of the errors. The summary contains a critical hallucination ('epicentre wide' instead of '100ft wide'), which is a severe consistency failure warranting a score of 1. The repetition of 'mass mass' and the disjointed sentence structure significantly degrade fluency and coherence, justifying lower scores in those categories as well. Furthermore, the summary fails to capture essential context from the source text, such as the lack of tremors or the specific geological mechanism (melting ice/snow causing a pivot), resulting in low relevance."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 1.0,
+      "fluency": 3.0,
+      "relevance": 2.0,
+      "overall_judge": 2.0
+    }
+  }
+}

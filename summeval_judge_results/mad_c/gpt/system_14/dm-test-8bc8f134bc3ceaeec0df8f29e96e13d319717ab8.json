@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-8bc8f134bc3ceaeec0df8f29e96e13d319717ab8",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, making it difficult to understand the relationship between the points presented."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary incorrectly states that Luis Enrique is 'only six games away from winning the title,' which misrepresents the context of the original article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as the lack of proper capitalization for 'Luis Enrique' and 'Josep Maria Bartomeu'."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details about Bartomeu's comments on Enrique's contract and the club's performance, which are important for understanding the context."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding Luis Enrique's tenure and the club's satisfaction with him."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, specifically regarding Bartomeu's comments about Enrique and the club's performance."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points about Luis Enrique's position and the club's feelings towards him, avoiding trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'luis enrique only took charge of the club last summer' which should be capitalized and properly structured."
+        },
+        {
+          "criterion": "coherence",
+          "reason": "The phrase 'the 44-year-old took only six games away from winning the title' is unclear and lacks context, making it difficult to understand."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

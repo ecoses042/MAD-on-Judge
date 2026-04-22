@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-81bd721b16cad47dfd8d24baca5b30b006291db2",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is coherent and consistent with the source text, accurately reflecting the main events without hallucinations. However, it only covers the first few sentences of the article, omitting significant details such as the specific reason for the ban overturn (accidental nature), the public outcry, quotes from teammates, and the current status of Hughes's return to play. Due to this truncation, relevance is limited despite the high quality of the included text."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is factually consistent with the source text and maintains a logical flow based on the first paragraph of the article. However, it fails significantly on relevance because it truncates the summary after the third sentence, omitting the crucial details regarding the specific duration of the ban (three weeks vs three matches), the reason for the overturning (accidental nature confirmed by new evidence), the impact on George North (concussion/stretcher), and the reactions from other players. By ignoring the majority of the source text's key information, it provides an incomplete picture."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "The lenient judge's assessment is accurate. The summary is grammatically sound and logically structured (coherence/fluency), but it strictly adheres to the first paragraph of the source text, omitting the crucial context regarding the appeal outcome, public reaction, specific quotes from teammates, and Hughes' current match status found in the rest of the article. Therefore, the relevance score remains low due to significant truncation, and no points should be raised."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment regarding relevance. The summary is severely truncated after the third sentence, omitting critical details such as the specific ban duration (three weeks), the impact on George North (concussion/stretcher), and the significant reactions from other players which constitute key points of the article. While the text provided in the prompt is grammatically correct and consistent with the source, its failure to cover the majority of the source's information warrants a low relevance score."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No changes to scores. The lenient judge's assessment of relevance (2) is accurate because the summary cuts off abruptly after the third sentence, failing to cover the majority of the article's key information, including the specific ban duration, George North's medical condition, and the significant reactions from other players."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "The strict judge's assessment is correct. The summary is a direct copy of the first two sentences of the source text. While it is coherent and consistent with the provided text, it fails significantly on relevance by omitting the majority of the article's content, including the specific appeal outcome details, public reaction, quotes from teammates, and Hughes' current match status. Therefore, the scores remain unchanged."
+      }
+    },
+    "final": {
+      "coherence": 4.5,
+      "consistency": 5.0,
+      "fluency": 4.0,
+      "relevance": 2.5,
+      "overall_judge": 3.6
+    }
+  }
+}

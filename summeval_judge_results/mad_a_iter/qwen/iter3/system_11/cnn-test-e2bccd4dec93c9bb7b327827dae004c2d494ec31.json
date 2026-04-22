@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-e2bccd4dec93c9bb7b327827dae004c2d494ec31",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is well-structured, fluent, and consistent with the source text. It captures the main points regarding Space Invaders, the ASDF's lack of UFO encounters, and Antonio Inoki's query. It receives a 4 for relevance because it omits significant details about Inoki's background (wrestling career, political history) and the broader context of Japanese politicians discussing aliens, which are present in the source but not summarized."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is coherent and consistent with the source text, but it fails significantly on relevance. It only covers the first two sentences of the article (the intro about Space Invaders and the initial UFO denial), completely omitting the detailed context about Antonio Inoki's background, his specific questions, the Defense Minister's full explanation regarding birds vs. aliens, and the broader historical context mentioned at the end. By truncating the summary after the first paragraph's worth of information, it misses the majority of the key points in the source text."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The lenient judge's assessment is accurate. The summary effectively covers the core news event (ASDF's statement on UFOs) and the context provided in the first paragraph of the article. While it omits details about Antonio Inoki's background and the broader historical context mentioned later in the text, this is a standard trade-off for a short summary focusing on the primary announcement. The omission does not constitute a failure to cover 'key points' but rather a selection of the most immediate news hook. Therefore, no score reduction is necessary."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. While the summary is grammatically correct and consistent with the text, it suffers from a severe relevance issue by truncating the content after the first few sentences. It completely ignores the significant portion of the article dedicated to Antonio Inoki's background, his specific questions, the nuance of the Defense Minister's response regarding birds vs. aliens, and the broader historical context. Therefore, the low relevance score is justified."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The strict judge's assessment is correct. The summary successfully captures the primary news hook (the ASDF statement regarding UFOs) and provides necessary context from the first paragraph of the article. While it omits details about Antonio Inoki's background and the historical context found later in the text, this is an appropriate trade-off for a short summary focusing on the immediate announcement. The omission does not constitute a failure to cover key points but rather a selection of the most relevant information for a brief overview. Therefore, no score reduction is necessary."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No changes needed. The summary strictly truncates the article after the initial news hook regarding UFOs and Antonio Inoki's background. It completely omits the specific details of the Defense Minister's response (birds vs. aliens), Inoki's personal claims, historical context, and the concluding paragraph about previous discussions on alien invasions. This constitutes a severe relevance failure as defined by the criteria."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 4.5,
+      "relevance": 3.0,
+      "overall_judge": 3.9
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-9b1af0f993d78353ebd56a1b180e882e751527b3",
+  "system_name": "system_3",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow of information, as it abruptly ends after introducing the main event without providing context or additional details."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to include significant details such as the community's reaction to the billboard, the implications of the shooting, and the ongoing investigation, which are crucial for understanding the situation."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains inconsistent capitalization and punctuation, such as the use of lowercase for names and the inconsistent use of quotation marks."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the billboard or the reactions from Siler's family and friends, which are key elements of the original article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the incident involving Aaron Siler and Officer Pablo Torres."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the key details from the article, including the circumstances of the shooting and the status of Officer Torres."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important information, specifically the shooting incident and the officer's current status."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as the use of lowercase letters for names and lack of proper punctuation."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

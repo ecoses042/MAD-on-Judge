@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-fadabe346fe95d33eee71299e6596754768f5246",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is coherent and mostly consistent with the text. However, it fails on fluency due to poor capitalization (lowercase names) and incomplete sentences. It also suffers from relevance issues by truncating the final sentence ('she does n't care') without context, making it feel abrupt and failing to capture the full scope of the mother's concerns regarding Gemma's lack of care."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.5,
+        "rationale_for_score": "The summary is fluent and coherent, accurately capturing the main conflict between Gemma and Debbie. It is consistent with the source text regarding the drug use and the threat to ban Gemma. The score is slightly reduced from 'Excellent' because the final phrase 'she does n't care' is a direct quote fragment that lacks context (it refers to Gemma's attitude towards her children, which is explained in the article but not explicitly linked in the summary), making it feel slightly abrupt without being a hallucination."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "Lowered coherence and fluency scores significantly. The strict judge was correct to penalize the lack of capitalization (e.g., 'gemma', 'debbie') and the abrupt ending ('she does n't care'), which makes the summary feel unpolished and incomplete. While the content is consistent with the source, the presentation flaws are severe enough to warrant a lower score than the strict judge's generous 4.0. Relevance was slightly lowered because the truncated ending misses the emotional weight of the mother's final plea."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary is fluent and coherent. While the final phrase 'she does n't care' is a direct quote fragment that lacks immediate context within the summary itself (referring to Gemma's attitude towards her children as per the article), it is not a hallucination. Therefore, I will not lower the consistency score further than 4, accepting the lenient judge's reasoning that the lack of explicit linking does not constitute introducing false facts."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "Adjusted fluency down to 2 due to the severe lack of capitalization for proper nouns (Gemma, Debbie, MKat) and the sentence fragment ending ('she does n't care'), which renders the text unpolished and grammatically incomplete. Coherence is lowered to 3 because the abrupt ending disrupts the logical flow and leaves the reader hanging without a conclusion. Consistency remains 5 as all facts align with the source. Relevance is 4; while it covers the main points, the truncation at the end omits the emotional context provided in the article."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I maintain the strict judge's assessment. The summary is fluent and coherent. While the final phrase 'she does n't care' is a direct quote fragment lacking immediate context within the summary itself (referring to Gemma's attitude towards her children as per the article), it is not a hallucination. Therefore, I will not lower the consistency score further than 4, accepting the lenient judge's reasoning that the lack of explicit linking does not constitute introducing false facts."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 4.5,
+      "fluency": 3.5,
+      "relevance": 4.0,
+      "overall_judge": 3.8
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-bcdb32ae644040a721da880fff9c1d502048cd8b",
+  "system_name": "system_7",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information and does not connect the events surrounding the deaths."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits critical details about the nature of the deaths being a murder-suicide and the involvement of authorities, which are essential to understanding the incident."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to cover key points such as the cruise line's response and the discovery of the bodies by cleaning staff."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary has grammatical issues, such as the lack of capitalization for 'ms ryndam' and missing punctuation."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the discovery of the deceased passengers and the cruise details."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary includes key points about the passengers being found dead and the cruise itinerary, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits important details about the circumstances of the deaths being investigated as a murder-suicide and the involvement of authorities."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks grammatical completeness, as it does not form complete sentences."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-e470f0a87d7513bf880412524332047020422c3f",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow and omits important contextual information about the auction, such as the final sale price and the significance of the dress in the film."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention the historical context of the dress, its original color, and the background of the collector, which are key points in the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary states the dress is gray but does not clarify that it originally was slate blue-gray, which is a significant detail."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary includes unnecessary commas that disrupt the flow of reading, such as in 'the gray jacket and skirt , featuring a black zigzag applique , plus more than 150 other items'."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the auction and the dress's condition."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the details from the article about the dress being worn in key scenes and its fading condition."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important aspects of the auction and the dress, avoiding trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains awkward phrasing, such as 'the gray jacket and skirt , featuring a black zigzag applique ,' which disrupts the flow."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

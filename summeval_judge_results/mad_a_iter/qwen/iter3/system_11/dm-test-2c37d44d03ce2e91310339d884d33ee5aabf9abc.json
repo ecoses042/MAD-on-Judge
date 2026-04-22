@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-2c37d44d03ce2e91310339d884d33ee5aabf9abc",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and captures the key points (age, location, time, injury, rescue, and potential charges). It is consistent with the source text; the only minor deduction for consistency is that the article states a range of '10 to 12ft' while the summary specifies '10 feet', which is a slight simplification rather than a hallucination. The direction (negative outcome) aligns perfectly with the article."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and covers the key points (age, location, time, action, rescue). It scores a 4 on consistency because it omits the specific detail that the boy was holding 'another child' while falling, which is present in the source text. While this omission doesn't contradict the text, strict adherence to all facts would require including it."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The lenient judge's assessment is accurate. The summary effectively captures the main narrative points (age, location, time, injury, rescue, and potential charges). The only deviation from strict consistency is the simplification of '10 to 12ft' to '10 feet', which is a minor detail omission rather than a hallucination or contradiction. No harsher penalties are warranted."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is fluent and coherent, but it loses a point on consistency because it omits the fact that the mother was holding 'another child' when the toddler fell. While this omission does not contradict the source text, a strict adherence to all facts requires including every significant detail present in the article. Therefore, I maintain the score of 4 for consistency."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The strict judge's assessment is accurate. The summary effectively captures the main narrative points (age, location, time, injury, rescue, and potential charges). The only deviation from strict consistency is the simplification of '10 to 12ft' to '10 feet', which is a minor detail omission rather than a hallucination or contradiction. No harsher penalties are warranted."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding consistency. While the summary omits the detail that the mother was holding 'another child,' this is a minor omission rather than a contradiction or hallucination. The core facts (fall height, location, time, rescue action, injury, and potential charges) are accurately represented without introducing false information. Therefore, I am raising the consistency score from 4 to 5."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.0,
+      "fluency": 5.0,
+      "relevance": 5.0,
+      "overall_judge": 4.8
+    }
+  }
+}

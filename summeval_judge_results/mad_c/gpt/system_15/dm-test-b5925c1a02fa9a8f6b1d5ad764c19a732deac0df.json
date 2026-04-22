@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-b5925c1a02fa9a8f6b1d5ad764c19a732deac0df",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, jumping between points without proper transitions."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to capture the most significant aspects of the incident, such as the public reaction and the context of crocodiles in Puerto Vallarta."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the dead dog being in the crocodile's mouth, which is a crucial detail from the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as the lack of capitalization at the beginning of sentences."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear setting by mentioning the location (Puerto Vallarta, Mexico) and the main subject (the crocodile and the dog), which helps the reader understand the context."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, including the identity of Tim Weston and the fact that the dog belonged to the bike shop owner."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is written in grammatically correct English, making it easy to read despite some repetition."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary lacks key details such as the reaction of social media users and the description of the crocodile's behavior, which are important aspects of the original article."
+        },
+        {
+          "criterion": "coherence",
+          "reason": "The summary could be better organized; it repeats the information about Tim Weston being on holiday, which disrupts the flow."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

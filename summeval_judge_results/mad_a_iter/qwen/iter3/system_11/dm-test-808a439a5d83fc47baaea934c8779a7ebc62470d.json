@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-808a439a5d83fc47baaea934c8779a7ebc62470d",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 4,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.8,
+        "rationale_for_score": "The summary is well-grounded in the text and maintains a logical flow. However, it only covers the first paragraph of the source article, omitting significant details about Clattenburg's reputation, the current league standings (United moving above City), team form, and match officials. While this omission makes it less comprehensive (lowering relevance), the content provided is accurate and coherent."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is fluent and coherent but fails the consistency criterion significantly due to a major hallucination: it states Clattenburg sent off 'three players from United and City', whereas the source text explicitly clarifies he has only sent off 'two players' (both from United) in the Premier League this season. Additionally, the summary cuts off abruptly after the first paragraph of the source text, failing to include key relevant information such as the current league standings, team form, or match officials, resulting in poor relevance."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I raised the consistency score to 5 because the summary is factually accurate and contains no hallucinations or contradictions with the source text; the lenient judge's score of 4 was likely influenced by the missing information rather than factual errors. I also adjusted the overall score upward slightly, as the summary effectively captures the primary news hook (Clattenburg's appointment) and the specific context regarding his red cards without introducing false claims."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a significant factual error (hallucination) regarding the number of players sent off (claiming three vs. the text's explicit statement of two), which severely impacts consistency. Additionally, the summary is incomplete as it cuts off mid-sentence and omits key context like team form and match officials found in the source, justifying the lower relevance score. No leniency is applied to these objective flaws."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is factually consistent and coherent, though it suffers from poor relevance by truncating the text after the first paragraph, omitting key context about Clattenburg's reputation, the current league standings (United moving above City), and the match details (assistants, venue). These omissions are significant enough to keep the relevance score at 3. The fluency and coherence scores remain at 4 due to minor punctuation issues (lowercase start) and the abrupt ending."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No changes to scores. The lenient judge correctly identified the critical factual error (claiming 3 players sent off vs. the text's explicit 'two') which invalidates consistency. The summary also cuts off mid-sentence and omits significant context regarding team form and match officials, justifying the lower relevance score. No leniency is applied to these objective flaws."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 3.5,
+      "fluency": 4.0,
+      "relevance": 3.0,
+      "overall_judge": 3.5
+    }
+  }
+}

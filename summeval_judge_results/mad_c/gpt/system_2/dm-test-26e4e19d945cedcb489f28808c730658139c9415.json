@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-26e4e19d945cedcb489f28808c730658139c9415",
+  "system_name": "system_2",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, jumping between topics without clear transitions."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits key details about Hernandez's loan at Real Madrid and the interest from other European clubs, which are crucial for understanding the context."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary does not mention the significant interest from eight European clubs, which is an important aspect of the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The use of lowercase for proper nouns (e.g., 'mls', 'orlando city', 'manchester united') detracts from the professionalism and readability of the summary."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the interest in Javier Hernandez from Orlando City and other clubs."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points about Hernandez's potential move, including the interest from multiple clubs and the commercial appeal for Orlando City."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits important details about Hernandez's loan at Real Madrid and the context of his frustrations, which are relevant to understanding his current situation."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as inconsistent capitalization and the use of '#' instead of '£' for the transfer fee."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 4,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

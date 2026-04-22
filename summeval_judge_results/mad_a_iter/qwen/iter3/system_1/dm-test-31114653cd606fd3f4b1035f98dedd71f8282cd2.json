@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-31114653cd606fd3f4b1035f98dedd71f8282cd2",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source text and maintains a logical flow. However, it suffers from poor relevance as it cuts off abruptly after the third sentence, omitting the crucial context regarding the match venue (Cardiff City Stadium vs. Millennium Stadium), the specific date (June 12), Wales' historical context since 1958, and the recent victory over Israel which drove the ticket demand. The truncation makes it feel incomplete rather than a concise summary of key points."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is consistent with the source text and flows logically. However, it cuts off mid-sentence regarding Marc Wilmots' side, which prevents a full score on fluency and relevance. It captures the main points but misses the context of Wales' recent victory and ticket demand that explains the sell-out status."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the relevance score significantly because the summary is truncated mid-sentence and misses the most critical narrative arc: the reason for the sell-out (the recent victory over Israel) and the venue controversy (Cardiff City vs. Millennium Stadium). The strict judge was correct to penalize this; it feels like an incomplete draft rather than a finished summary. I maintained consistency at 5 as there are no hallucinations, but lowered coherence slightly due to the abrupt ending disrupting the logical flow."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "Lowered fluency from 4 to 3 because the summary ends abruptly mid-sentence ('...Marc Wilmots' side - ranked fourth in the world .'), which is a significant grammatical error affecting readability. Lowered relevance from 3 to 2 because the summary fails to mention the primary reason for the article's focus: the 3-0 victory over Israel that created the 'huge buzz' and led to the sell-out, nor does it mention the ticket demand or the venue preference context which are central to the story."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding relevance and coherence. The summary is indeed truncated mid-sentence (ending abruptly at 'Marc Wilmots' side - ranked fourth in the world'), which disrupts logical flow and prevents a complete narrative arc. Crucially, it misses the primary driver of the story: the 3-0 victory over Israel that caused the sell-out, and the venue controversy between Cardiff City Stadium and the Millennium Stadium. These are central details in the source text. Therefore, the low relevance score is justified as the summary fails to cover key points, and the coherence score remains low due to the abrupt ending."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary ends abruptly mid-sentence ('...ranked fourth in the world .'), which is a significant fluency error warranting a score of 3 rather than 4. Additionally, the summary misses the core narrative driver (the Israel victory) and key context (venue preference), making it irrelevant to the main point of the article; thus, relevance remains at 2."
+      }
+    },
+    "final": {
+      "coherence": 3.5,
+      "consistency": 5.0,
+      "fluency": 3.5,
+      "relevance": 2.0,
+      "overall_judge": 3.0
+    }
+  }
+}

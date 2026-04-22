@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-2feca9acf532e33f1ab7442c442c8e19787d8d7b",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 2,
+        "overall_judge": 1.8,
+        "rationale_for_score": "The summary suffers from severe grammatical errors and awkward phrasing (e.g., 'in they', 'as if he is to stroke it', 'swimming up his finger in the fish'). It fails consistency by hallucinating that the fish swims up the man's finger (the text says the fish swims up his arm), and it omits significant context about the owner's background with the fish. The writing style is poor and lacks fluency."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 2.5,
+        "rationale_for_score": "The summary suffers from severe grammatical errors and awkward phrasing (e.g., 'in they', 'as if he is to stroke it', 'swimming up his finger in the fish'), which impacts fluency and coherence significantly. More critically, it contains a hallucination/consistency error: the source text states the man strokes the fish with his *finger*, but the summary incorrectly claims the fish swims up his *finger* (singular) inside the tank, whereas the text describes swimming up his *arm*. Additionally, the summary is extremely brief and misses key details like the background story about the other fish being removed, making it less relevant than a 3 would suggest."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 2,
+        "overall_judge": 1.8,
+        "adjustment_notes": "The strict judge's assessment is accurate and justified. The summary contains severe grammatical errors ('in they', 'as if he is to stroke it') and factual inconsistencies with the source text (hallucinating the fish swims up the finger instead of the arm). It also fails to capture key context regarding the owner's history with the fish. No leniency is warranted as these are fundamental flaws in writing quality and accuracy."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 1,
+        "relevance": 2,
+        "overall_judge": 1.5,
+        "adjustment_notes": "The lenient judge's scores were too high given the severe quality issues. The summary contains multiple grammatical errors ('in they', 'as if he is to stroke it') and awkward phrasing that makes it difficult to read (fluency=1). It introduces a factual inconsistency regarding the fish swimming up the finger vs arm (consistency=1). The structure is disjointed, jumping between present tense descriptions without clear logical flow (coherence=2). Finally, it misses significant background information provided in the source text, such as the history of the fish and the removal of other tank mates, resulting in low relevance (relevance=2)."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 2,
+        "overall_judge": 1.8,
+        "adjustment_notes": "The lenient judge's points are fully justified by the source text and summary content. The summary contains severe grammatical errors ('in they', 'as if he is to stroke it') and a factual hallucination regarding the fish swimming up the finger (the text specifies the arm). Additionally, the summary fails to capture significant context about the owner's history with the fish. No score adjustment is warranted."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 1,
+        "relevance": 2,
+        "overall_judge": 1.5,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary suffers from severe grammatical errors ('in they', 'as if he is to stroke it'), awkward phrasing, and a disjointed logical flow that makes it difficult to read. It also introduces a factual inconsistency by claiming the fish swims up his finger when the text specifies swimming up his arm. Furthermore, it omits significant background details like the history of the fish breed and the removal of bullying tank mates, resulting in low relevance. The original lenient scores were indeed overly generous given these critical flaws."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 1.0,
+      "fluency": 1.5,
+      "relevance": 2.0,
+      "overall_judge": 1.6
+    }
+  }
+}

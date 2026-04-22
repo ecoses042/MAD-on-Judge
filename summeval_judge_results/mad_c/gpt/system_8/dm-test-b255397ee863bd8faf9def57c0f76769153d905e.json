@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-b255397ee863bd8faf9def57c0f76769153d905e",
+  "system_name": "system_8",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, abruptly transitioning from the incident to the airport's apology without connecting the two."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces a fabricated quote from a spokesperson that is not present in the article, misrepresenting the airport's response."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention key details such as the child's age, the nature of the toy gun, and the father's criticism of the security measures, which are crucial to understanding the incident."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains awkward phrasing and lacks smooth transitions, making it less readable."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, detailing the confiscation of the toy gun and the airport's response."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the situation described in the article without introducing any new or misleading information."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is written in fluent English, making it easy to read and understand."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary includes a quote from the airport spokesperson that is not present in the original article, which detracts from its relevance."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 1,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.0,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

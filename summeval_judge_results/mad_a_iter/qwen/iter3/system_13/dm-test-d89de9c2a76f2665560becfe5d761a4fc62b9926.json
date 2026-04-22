@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-d89de9c2a76f2665560becfe5d761a4fc62b9926",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from a severe relevance flaw by omitting the actual match result (United winning), which is the central event of the article. It also includes a hallucinated detail regarding 'Sunday's big match' when the text explicitly states the match took place on Saturday and was removed from Sunday's game. While the sentences are fluent and mostly consistent with the source text, the failure to capture the main outcome and the inclusion of incorrect temporal details significantly degrade its quality."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is fluent but suffers from a major consistency error: it claims the match was 'probably as far removed from Sunday's big match,' whereas the source text explicitly states the match kicked off on Saturday. Additionally, the summary misses the most critical piece of information (the actual score/victory) and includes trivial details about ticket prices while omitting key context like the formation or specific goals beyond the winner."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary fails to mention the match result (United winning), which is the primary news hook of the article. Furthermore, it incorrectly states the match was removed from 'Sunday's big match' when the text explicitly says it took place on Saturday and was a substitute for Sunday's fixture. These are significant relevance and consistency issues that warrant the low scores."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 5,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I have lowered the scores to align with the lenient judge's valid points regarding consistency and relevance. The summary contains a factual error (claiming 'Sunday' instead of 'Saturday'), which is a significant consistency failure. Furthermore, the summary fails to capture the main event (the match result/victory), making it highly irrelevant despite being grammatically correct."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment that the scores need to be lowered due to significant relevance and consistency issues. The summary fails to mention the primary news hook: Manchester United winning the match. Additionally, it contains a factual inconsistency by stating the match was 'removed from Sunday's big match' when the text clarifies it was played on Saturday as an alternative event. These are critical omissions and errors that justify the low scores."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 5,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a factual error regarding the day of the match (stating 'Sunday' instead of 'Saturday'), which violates consistency. Additionally, it fails to mention the most critical piece of information: Manchester United winning the match, making it highly irrelevant despite its grammatical correctness."
+      }
+    },
+    "final": {
+      "coherence": 3.0,
+      "consistency": 3.0,
+      "fluency": 5.0,
+      "relevance": 1.5,
+      "overall_judge": 2.5
+    }
+  }
+}

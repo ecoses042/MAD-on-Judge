@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-2c37d44d03ce2e91310339d884d33ee5aabf9abc",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from severe fluency issues due to poor punctuation (missing apostrophes like 'toddler's), inconsistent capitalization (lowercase 'the', 'cleveland'), and awkward phrasing ('was listed in stable condition... and was listed in stable condition'). While the content is mostly consistent with the source, it fails to capture key relevant details such as the cause of the fall (parents dangled him) and the legal consequences (child endangerment charges), making it incomplete. The repetition of 'listed in stable condition' indicates a lack of editing."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source text and covers the key points (fall, injury, lack of attack, medical status). However, it suffers from significant fluency issues due to poor punctuation (missing apostrophes like 'toddler's), awkward phrasing ('was listed in stable condition... and suffered'), and a repetitive sentence structure that makes it read poorly. While the content is accurate, the writing quality prevents a higher score."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I have lowered the fluency score from 4 to 2 because the strict judge's criticism regarding punctuation (missing apostrophes), inconsistent capitalization, and awkward phrasing is valid and significantly impacts readability. I also slightly reduced the overall score to reflect that while the summary is factually consistent with the text provided, it misses critical context (the cause of the fall and legal charges) which makes it a poor summary despite being grammatically 'correct' in a vacuum."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the fluency score from 3 to 2 because the issues are more severe than 'awkward phrasing.' The summary contains a glaring grammatical error ('toddler 's' instead of toddler's), and the sentence structure is extremely repetitive ('was listed in stable condition... and suffered from minor bruises and was listed in stable condition'), making it difficult to read. While the content is consistent and relevant, the writing quality is poor enough to warrant a lower score than the lenient judge assigned."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment on fluency. The summary contains a clear typo ('toddler 's') and, more critically, repeats the exact same phrase 'was listed in stable condition' twice within a single sentence, creating significant redundancy that hinders readability. This confirms the score should remain at 2. The other scores (coherence, consistency, relevance) are maintained as they accurately reflect the summary's structure, factual accuracy, and focus on key points."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding fluency. The summary contains significant grammatical errors (missing apostrophes in 'toddler's', inconsistent capitalization of proper nouns like 'Cleveland Metroparks Zoo' and 'MetroHealth Medical Center'), and repetitive phrasing ('listed in stable condition... at the hospital'). These issues severely impact readability, justifying a low fluency score. I have maintained the coherence and relevance scores as they reflect the summary's lack of logical flow due to repetition and its failure to include key context (the cause of the fall and legal charges) found in the source text. Consistency remains high as no false information was introduced."
+      }
+    },
+    "final": {
+      "coherence": 3.0,
+      "consistency": 5.0,
+      "fluency": 2.0,
+      "relevance": 3.5,
+      "overall_judge": 3.0
+    }
+  }
+}

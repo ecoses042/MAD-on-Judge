@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-4fb64a2298e18626db776fccf834be87388827e0",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is excellent in coherence, consistency, and fluency, accurately reflecting the first paragraph of the source text without hallucinations. It captures the key facts (who, what, when, where). The relevance score is slightly reduced because it only summarizes the very beginning of the article, omitting significant details about his recent career move, the current record holder, ticket prices, and other upcoming events mentioned in the full text, though this is a minor weakness for a summary task."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from a significant relevance issue: it only covers the first three sentences of the source text, completely omitting key details such as Wiggins' recent Paris-Roubaix finish, the specific current record holder (Rohan Dennis) and distance, ticket information, and his upcoming Rio Olympics targets. While the included facts are consistent with the article, the summary is incomplete to a degree that limits its overall quality."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is well-structured and fluent, accurately reflecting the opening paragraph of the source text without introducing hallucinations. The relevance score is appropriately lowered because the summary omits significant details present in the rest of the article, such as Wiggins' recent career move (Paris-Roubaix), the specific current record holder (Rohan Dennis) and his mark, ticket prices, and other upcoming events like the Tour de Yorkshire or Alex Dowsett's attempt. While this is a common limitation for short summaries, it justifies the score of 4 rather than 5."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. While the summary is grammatically perfect and coherent within its limited scope, it fails significantly on relevance by truncating the content after the first three sentences. It omits crucial context regarding Wiggins' recent career move (Paris-Roubaix), the specific record he is chasing (Rohan Dennis/52.491km), his upcoming Rio Olympics targets, and logistical details like ticket sales. The strict judge correctly identified that this incompleteness severely limits the summary's quality."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary is well-written and factually accurate based on the provided text, but it only covers the first paragraph of the article. It omits significant details regarding Wiggins' recent career move (Paris-Roubaix), the current record holder (Rohan Dennis) and his specific mark, ticket prices, and other upcoming events like the Tour de Yorkshire or Alex Dowsett's attempt. Therefore, the relevance score is appropriately lowered to 4."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I have raised the consistency score from 4 to 5 because the summary strictly adheres to the provided text without introducing external facts; it only omits information present in the article, which is a relevance issue, not a consistency error. I have slightly lowered the overall judge score from 4.2 to 4.0 to reflect that while the snippet is grammatically perfect and coherent, its extreme brevity (truncating after the first three sentences) makes it functionally incomplete for a general summary of the article, reinforcing the strict judge's view on relevance."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.7
+    }
+  }
+}

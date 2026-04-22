@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-2377095dda83df778e34304b7a09813808105d3b",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, as it abruptly shifts from discussing compensation to bonuses without a smooth transition."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the number of compensation applications approved and the specific impact on holidaymakers, which are crucial for understanding the extent of the issue."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that managers received bonuses during the chaos without mentioning the context of the profit made, which could mislead readers about the situation."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The use of symbols like '#' instead of the word '£' is not standard in fluent English writing and detracts from readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the passport delay fiasco, the lack of compensation for holidaymakers, and the bonuses received by passport agency managers."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the article, including the lack of compensation for holidaymakers and the profits made by the passport agency, which are central to the issue discussed."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the specific number of compensation applications approved or the total amount paid out, which are important details from the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as the use of '#' instead of '£' for currency, which affects its readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 4,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "tie",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

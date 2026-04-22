@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-8e6c8aec6808f66ed0342e128a4e146f3ecd627d",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and strictly consistent with the source text. It accurately captures the main events (arrests, dates, ages, locations). It receives a slightly lower relevance score because it omits significant details present in the article, such as the specific nature of the first arrest (kissing/breasts touching), the school's administrative actions (suspension/leave), and the outcome of the second arrest (bail amount/release), which are key components of the full story."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source text (no hallucinations) and covers the main events chronologically. However, it suffers from severe relevance issues: it repeats the exact same introductory sentence twice verbatim, which is a structural flaw rather than just redundancy. Furthermore, despite the source text providing significant details about the initial arrest (admission of kissing/touching), the administrative leave, and the specific outcome of the second arrest (booking into jail, bail amount), the summary cuts off abruptly after the third sentence without synthesizing these key points or concluding the narrative."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The lenient judge's assessment is accurate. The summary is well-structured and strictly consistent with the source text. While it omits specific details like the nature of the first arrest (kissing/breasts touching), administrative actions (suspension), and the bail outcome for the second arrest, these are secondary to the core narrative of the dual arrests. Therefore, the relevance score of 4 is appropriate, and no harsher penalty is warranted."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "Lowered coherence and relevance scores significantly due to the severe structural flaw identified by the strict judge: the summary repeats the exact same introductory sentence twice verbatim. This is not just redundancy but a failure in organization that disrupts the logical flow. Additionally, the summary cuts off abruptly after the third sentence, failing to include crucial details from the source text such as the specific nature of the first arrest (admission of touching), the administrative leave status, and the outcome of the second arrest (booking into jail and bail amount). While the content is factually consistent and grammatically fluent, the structural repetition and incomplete narrative make it a poor summary."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The strict judge's assessment is accurate. The summary effectively captures the core narrative of the dual arrests without introducing hallucinations. While it omits specific details regarding the nature of the first incident (kissing/breasts touching), administrative actions (suspension), and the bail outcome for the second arrest, these are secondary to the main story arc. Therefore, the relevance score of 4 is appropriate, and no harsher penalty is warranted."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I have lowered the coherence score to 2 and relevance score to 1 based on the strict judge's valid observation of a severe structural flaw: the summary repeats the exact same introductory sentence twice verbatim. This is not merely redundancy but a failure in organization that disrupts logical flow. Furthermore, the summary cuts off abruptly after the third sentence, failing to include crucial details from the source text such as the specific nature of the first arrest (admission of touching), administrative leave status, and the outcome of the second arrest (booking into jail and bail amount). While the content is factually consistent and grammatically fluent, the structural repetition and incomplete narrative make it a poor summary."
+      }
+    },
+    "final": {
+      "coherence": 3.5,
+      "consistency": 5.0,
+      "fluency": 4.5,
+      "relevance": 2.5,
+      "overall_judge": 3.4
+    }
+  }
+}

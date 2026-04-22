@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-8bc8f134bc3ceaeec0df8f29e96e13d319717ab8",
+  "system_name": "system_5",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, as it abruptly ends without discussing Bartomeu's comments on Enrique's contract or the team's performance."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention key points such as the club's potential to win three trophies and the recent match against Valencia, which are significant aspects of the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'took only took charge' contains a typographical error, which disrupts the fluency of the text."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not accurately reflect the timeline of events, as it does not clarify that Enrique's contract runs until 2016, which is an important detail."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the club's stance on Luis Enrique's position."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article without introducing any new facts."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "It focuses on the key points about Bartomeu's comments on Enrique's future and the team's performance."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'only took charge' is repeated, which affects the overall fluency of the summary."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 4,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 3.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

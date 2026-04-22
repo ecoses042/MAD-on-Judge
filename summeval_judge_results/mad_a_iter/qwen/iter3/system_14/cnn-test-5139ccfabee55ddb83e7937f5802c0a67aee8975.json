@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-5139ccfabee55ddb83e7937f5802c0a67aee8975",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is well-structured, grammatically correct, and accurately reflects the key facts from the article (location, aircraft types, Pentagon's assessment). It avoids hallucinations. The only minor deduction for relevance is that it omits the context of previous incidents and diplomatic responses mentioned in the source, but given the lenient rules, this does not constitute a major flaw."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from relevance issues by omitting the critical diplomatic response (filing a petition) and context about previous incidents mentioned in the source. It also presents conflicting claims as absolute facts without attribution (e.g., stating the transponder was off or that the U.S. crew believed specific actions were unsafe, without clarifying these are disputed points), which slightly impacts consistency with the nuanced reporting of the article."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is well-structured and factually consistent with the source text. While it omits the context of previous incidents and diplomatic responses (which lowers relevance slightly), this is a minor omission for a short summary rather than a flaw warranting a lower score. No harsher penalties are applied."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is grammatically correct and flows well (Fluency 5), but it fails to capture the most significant news element: the diplomatic response (filing a petition). It also omits the crucial context of previous dangerous incidents, which frames the current event. Therefore, Relevance remains low (3). Consistency is slightly penalized because the summary presents disputed claims (like the transponder status) as facts without attribution, though this is a minor issue compared to the relevance gap."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary is well-structured, factually accurate, and fluent. While it omits context regarding previous incidents and diplomatic responses (lowering relevance slightly), this is a minor omission for a short summary rather than a flaw warranting a lower score. No harsher penalties are applied."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding Relevance (3) and Consistency (4). The summary is grammatically perfect and flows well (Fluency 5), but it significantly under-reports the source text by omitting the diplomatic response ('file the appropriate petition') and the historical context of previous dangerous incidents, which are key news elements. It also presents disputed claims about the transponder as facts without attribution, warranting a slight penalty on Consistency."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.5,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.5
+    }
+  }
+}

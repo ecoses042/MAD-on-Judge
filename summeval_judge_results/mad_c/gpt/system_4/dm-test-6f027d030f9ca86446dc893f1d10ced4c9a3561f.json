@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-6f027d030f9ca86446dc893f1d10ced4c9a3561f",
+  "system_name": "system_4",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, abruptly shifting from Henderson's contract situation to his performance without a smooth transition."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that Henderson's new deal is 'likely be worth in the region of # 100,000' instead of specifying it as 'around £100,000-a-week' as mentioned in the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key information about Henderson's contributions this season, his potential role as club captain, and the context of his contract extension in relation to other players."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The use of '# 100,000' is not idiomatic and should be corrected to '£100,000' for better fluency."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with Henderson's impact on the team after the FA Cup defeat and leading into the details of his contract negotiations."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding Henderson's contract situation and the financial terms involved."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of Henderson's new contract and its significance for Liverpool, omitting less important details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as the use of 'jordan' instead of 'Jordan' and the incorrect formatting of the currency symbol."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

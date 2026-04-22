@@ -1,0 +1,319 @@
+[
+  {
+    "essay_id": "GWGR2400111090.1",
+    "status": "ok",
+    "prediction": {
+      "content": {
+        "score": 4.0,
+        "rationale": "에세이는 블라인드 채용의 장점에 대해 명확한 주장을 하고 있으며, 두 가지 주요 근거(전공과 성별에 대한 차별)를 제시하고 있다. 그러나 각 근거에 대한 구체적인 사례나 데이터가 부족하여 주장의 설득력이 다소 약해 보인다."
+      },
+      "organization": {
+        "score": 4.0,
+        "rationale": "서론, 본론, 결론의 구조가 잘 드러나 있으며, 각 문단이 주제를 명확히 전달하고 있다. 그러나 문단 간의 연결이 다소 매끄럽지 않은 부분이 있어 논리 전개가 조금 어색하게 느껴질 수 있다."
+      },
+      "expression": {
+        "score": 3.0,
+        "rationale": "전반적으로 문장이 이해하기 쉽고 자연스럽지만, 일부 표현이 다소 어색하거나 반복적인 경향이 있다. 맞춤법이나 문법적 오류는 없으나, 표현의 다양성이 부족하다."
+      }
+    },
+    "judge": {
+      "content": {
+        "round_0": {
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.5,
+            "rationale_for_score": "1) domain_match: rationale는 essay_text의 핵심 주제인 '블라인드 채용의 장점'과 제시된 두 가지 근거 ('전공', '성별')를 정확히 파악하여 평가 기준을 준수함. 2) score_rationale_consistency: predicted_score(4.0)가 '명확한 주장'이라는 강점을 인정하면서도 '구체적 사례 부족'이라는 약점을 지적하는 점수 (매우 좋음이지만 완벽하지 않음) 와 일치함. 3) specificity: '두 가지 주요 근거', '구체적인 사례나 데이터 부족' 등 구체적인 논지 단위를 언급하여 generic한 평이 아님. 4) groundedness: rationale의 모든 지적은 essay_text에 명시된 내용 (전공 선호 경향, 성차별 사례, 헌법 평등권 등) 에 기반하고 있어 hallucination 이 없음."
+          },
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 2,
+            "groundedness": 2,
+            "overall_judge": 3.0,
+            "rationale_for_score": "1. domain_match: content 영역의 평가 기준 (주장, 근거, 논리) 을 명확히 준수함. 2. score_rationale_consistency: predicted_score 4.0 에 대해 '구체적 사례나 데이터 부족'이라는 약점을 지적하여 점수를 낮추는 방향성을 제시했으나, essay_text 에서 직접 인용 가능한 구체적인 강점 (예: '전공 구애 없음', '성별 차별 해소') 을 명시적으로 나열하지 않아 설득력이 다소 떨어짐. 3. specificity: '구체적인 사례나 데이터가 부족하다'는 표현은 generic 한 비판이며, essay_text 에 실제로 존재하는 구체적인 문장이나 예시 (예: '코딩의 경우...', '임산부 10 달과 아이를 낳고...') 를 인용하여 분석하지 못함. 4. groundedness: rationale 의 핵심 근거인 '구체적 사례 부족'을 주장할 때, essay_text 에서 실제로 제시된 구체적인 예시들을 언급하지 않고 추상적으로만 비판함으로써 essay_text 와의 연결이 약함."
+          }
+        },
+        "round_1": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 5,
+            "specificity": 5,
+            "groundedness": 5,
+            "overall_judge": 5.0,
+            "adjustment_notes": "관대한 심사위원의 평가가 타당함을 확인함. rationale 은 essay_text 의 '전공 선호 경향'과 '성별 차별 사례', 그리고 '헌법 평등권' 언급 등 구체적인 내용을 정확히 반영하여 domain_match, specificity, groundedness 기준을 모두 충족함. 또한 predicted_score(4.0) 가 '명확한 주장'이라는 강점과 '구체적 데이터 부족'이라는 약점을 동시에 설명하므로 score_rationale_consistency 역시 5 점 유지."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 2,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 2.0,
+            "adjustment_notes": "엄격한 심사위원의 지적대로 rationale 을 수정해야 합니다. 1) domain_match: content 영역 기준을 명확히 준수하므로 기존 5점 유지. 2) score_rationale_consistency: predicted_score 4.0(무난함)을 위해 구체적인 강점 인용이 필요했으나, rationale 에는 '구체적 사례 부족'이라는 약점만 언급하여 점수 정당화가 불충분함 (기존 4점 하향 조정). 3) specificity: '사례가 부족하다'는 generic 비판이며, essay_text 의 구체적 문장 ('코딩의 경우...', '임산부 10 달...') 을 인용하지 못함 (기존 5점 대폭 감점). 4) groundedness: essay_text 에 있는 구체적인 예시를 언급하지 않고 추상적으로만 비판하여 근거가 약함 (기존 5점 대폭 감점)."
+          }
+        },
+        "round_2": {
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 5,
+            "specificity": 5,
+            "groundedness": 5,
+            "overall_judge": 5.0,
+            "adjustment_notes": "엄격한 심사위원의 평가에 따라 관대한 심사위원의 초기 점수 (4.0) 를 유지합니다. rationale 은 essay_text 의 '전공 선호 경향', '성별 차별 사례', '헌법 평등권' 언급 등 구체적인 내용을 정확히 반영하여 domain_match, specificity, groundedness 기준을 모두 충족합니다. 또한 predicted_score(4.0) 가 '명확한 주장'이라는 강점과 '구체적 데이터 부족'이라는 약점을 동시에 설명하므로 score_rationale_consistency 역시 5 점으로 유지합니다."
+          },
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 2,
+            "groundedness": 2,
+            "overall_judge": 2.8,
+            "adjustment_notes": "관대한 심사위원의 지적대로 rationale 이 essay_text 의 구체적 근거를 인용하지 못하여 specificity 와 groundedness 기준에서 감점을 유지합니다. 또한 predicted_score 4.0(무난함) 을 정당화할 만큼 rationale 에 구체적인 강점 (예: '전공과 성별 차별'이라는 두 가지 명확한 주장 구조 등) 이 명시되지 않아 score_rationale_consistency 역시 하향 조정했습니다. domain_match 는 content 기준을 준수하므로 기존 점수 유지."
+          }
+        },
+        "round_3": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 4,
+            "groundedness": 4,
+            "overall_judge": 4.0,
+            "adjustment_notes": "관대한 심사위원의 평가는 rationale 이 essay_text 의 구체적 내용 (전공 선호 경향, 성별 차별 사례, 헌법 평등권) 을 잘 반영했다고 보았으나, '구체적 데이터 부족'이라는 약점을 고려할 때 4 점보다는 3.8 점으로 조정하는 것이 타당합니다. 또한 관대한 심사위원이 '논리적 연결이 일관적이다'는 표현을 domain_match 기준의 'organization' 요소로 해석하여 5 점을 부여한 것은, rationale 텍스트에 명시된 조직화 (서론/결론 등) 에 대한 구체적 언급이 없어 근거가 부족하므로 감점했습니다. 따라서 모든 항목을 4 점으로 유지하되, 약점 인정과 근거 불충분성으로 인해 전체 점수를 하향 조정합니다."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 2,
+            "specificity": 3,
+            "groundedness": 3,
+            "overall_judge": 3.0,
+            "adjustment_notes": "1. domain_match: rationale 이 essay_text 의 '전공과 성별'이라는 두 가지 핵심 주장을 content 기준 (주장 및 근거) 으로 정확히 분석했으므로 기존 점수 유지.\n2. score_rationale_consistency: predicted_score 가 4.0(무난함) 이었으나, rationale 은 '구체적 사례나 데이터 부족'이라는 약점만 지적하고 강점을 구체적으로 언급하지 않아 점수를 정당화하지 못함. 따라서 하향 조정 (2점).\n3. specificity: '두 가지 주요 근거 제시', '사례나 데이터 부족' 등 구체적인 지시사항을 포함하지만, '논리적 연결이 타당하다'와 같은 generic 표현도 섞여 있어 완전한 구체성에는 미치지 않음. 기존 점수 유지.\n4. groundedness: rationale 의 지적 사항들이 essay_text 에 실제로 존재하는 내용 (전공/성별 차별 언급) 과 일치하므로 hallucination 이 없으나, '설득력이 약해 보인다'는 평가가 텍스트의 논리적 흐름을 직접 인용하지는 못함. 기존 점수 유지.\n5. overall_judge: 주요 결함 (강점 부재로 인한 점수 정당화 실패) 이 존재하므로 4 점은 부여할 수 없으며, 근거가 명확한 3 점으로 조정."
+          }
+        },
+        "round_4": {
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.5,
+            "adjustment_notes": "1. domain_match: 관대한 심사위원이 '논리적 연결'을 organization 요소로 오해하여 감점을 한 것은 옳지 않음. rationale 은 essay_text 의 구체적인 내용 (전공 선호 경향, 성별 차별 사례, 헌법 평등권) 을 정확히 반영하고 있으므로 5 점 유지.\n2. score_rationale_consistency: 관대한 심사위원이 '구체적 데이터 부족'이라는 약점을 인정하면서도 4 점을 부여한 것은 점수-설명 간 모순으로 보임. 명확한 결함 (데이터 부재) 이 존재하므로 3 점이나 4 점보다는 하향 조정 필요하나, rationale 이 이를 지적했으므로 4 점 유지.\n3. specificity: '구체적 사례나 데이터 부족'이라는 지적이 essay_text 의 내용과 일치하므로 4 점 유지.\n4. groundedness: 모든 근거가 essay_text 에 존재하는 사실에 기반하므로 5 점 유지.\n5. overall_judge: 관대한 심사위원의 4 점보다 엄격한 심사위원의 지적 (데이터 부재) 을 반영하여 3.8 점으로 하향 조정."
+          },
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 2,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 3.0,
+            "adjustment_notes": "1. domain_match: 관대한 심사위원이 content 기준 (주장 및 근거) 으로 정확히 분석했다고 인정함. rationale 이 essay_text 의 '전공과 성별' 두 가지 핵심 주장을 명확히 다루었으므로 5 점 유지.\n2. score_rationale_consistency: predicted_score 가 4.0(무난함) 인데, rationale 은 '구체적 사례나 데이터 부족'이라는 약점만 지적하고 강점을 구체적으로 언급하지 않아 점수 정당화가 불충분함. 따라서 하향 조정 (2 점).\n3. specificity: '두 가지 주요 근거 제시', '사례나 데이터 부족' 등 구체적인 지시사항을 포함하나, '논리적 연결이 타당하다'와 같은 generic 표현이 섞여 있어 완전한 구체성에는 미치지 않음. 관대한 심사위원의 유지 의견에 동의하되, 약간의 개선 여지가 있어 4 점으로 조정.\n4. groundedness: rationale 의 지적 사항들이 essay_text 에 실제로 존재하는 내용과 일치하므로 hallucination 이 없으며, '설득력이 약해 보인다'는 평가도 텍스트의 논리적 흐름을 직접 인용할 수 있음 (예: 구체적인 사례 부재). 따라서 5 점 유지.\n5. overall_judge: 주요 결함 (강점 부재로 인한 점수 정당화 실패) 이 존재하므로 관대한 심사위원이 제안한 대로 4 점이 아닌 3 점으로 조정."
+          }
+        },
+        "final": {
+          "domain_match": 5.0,
+          "score_rationale_consistency": 3.0,
+          "specificity": 4.0,
+          "groundedness": 5.0,
+          "overall_judge": 3.8
+        }
+      },
+      "organization": {
+        "round_0": {
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 5,
+            "specificity": 5,
+            "groundedness": 5,
+            "overall_judge": 5.0,
+            "rationale_for_score": "1. domain_match: rationale가 서론-본론-결론의 구조와 문단 간 연결성이라는 조직화 (organization) 영역의 핵심 기준을 정확히 적용했습니다. 2. score_rationale_consistency: predicted_score 4.0(매우 좋음)에 대해 '구조는 잘 드러나지만 연결이 매끄럽지 않음'이라는 명확한 근거를 제시하여 점수를 정당화했습니다. 높은 점수에도 불구하고 구체적인 약점을 인정했으므로 모순이 없습니다. 3. specificity: '문단 간의 연결', '논리 전개'와 같이 평가 대상의 특정 부분을 지목하여 구체적입니다. 4. groundedness: rationale의 내용은 essay_text의 첫 문단 (서론/본론 구조 언급) 과 마지막 문단 (결론적 전망) 의 흐름을 정확히 반영하고 있으며, hallucination이 없습니다."
+          },
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 2,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 2.0,
+            "rationale_for_score": "1. domain_match: 조직 (organization) 영역의 평가 기준을 준수함. 서론-본론-결론 구조와 문단 간 연결성을 지적했으나, '매끄럽지 않다'는 표현이 다소 모호하여 구체적인 개선 방향 제시가 부족함. 2. score_rationale_consistency: predicted_score 4.0(높은 점수) 에 비해 rationale 이 지적하는 결함 ('다소 매끄럽지 않은 부분') 이 너무 경미하여 점수를 정당화하지 못함. 높은 점수를 위해서는 더 명확한 강점이나 구조적 완성도가 필요함. 3. specificity: '매끄럽지 않은 부분'이라는 표현만 사용되어 구체적인 문장 번호나 위치를 명시하지 않음. 4. groundedness: rationale 에 언급된 결함이 essay_text 의 어떤 특정 문장과 직접 연결되어 있는지 확인하기 어려움 (hallucination 가능성 또는 추상적 평가)."
+          }
+        },
+        "round_1": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 5,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.8,
+            "adjustment_notes": "관대한 심사위원의 평가에 따라 domain_match(조직화 기준 적용), score_rationale_consistency(점수-근거 일치성), groundedness(텍스트 근거) 항목은 모두 5점으로 유지합니다. essay_text 의 서론/본론/결론 구조와 마지막 문단의 결론적 흐름이 rationale 에 명확히 반영되어 있으므로 감점 사유가 없습니다. specificity 항목만 4점으로 조정합니다. '문단 간의 연결'이라는 구체적인 지적은 있으나, '논리 전개가 조금 어색하게 느껴질 수 있다'는 표현이 다소 추상적이고 구체적인 예시 (예: 어떤 문장이 어떻게 이어지지 않았는지) 가 부족하여 완벽하지 않은 근거로 판단됩니다."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 2,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 2.0,
+            "adjustment_notes": "엄격한 심사위원의 지적대로 rationale 을 수정해야 함. 1) domain_match: 조직 (organization) 영역 기준을 준수하여 서론-본론-결론 구조와 문단 연결성을 평가했으므로 기존 점수 유지 (5점). 2) score_rationale_consistency: predicted_score 4.0(높은 점수) 에 비해 '매끄럽지 않다'는 매우 경미한 결함만 지적하여 점수를 정당화하지 못하므로, 점수는 낮춰야 함 (2점). 3) specificity: '매끄럽지 않은 부분'이라는 추상적 표현만 사용되어 구체적인 문장이나 위치를 명시하지 않았으므로 감점 (1점). 4) groundedness: rationale 의 지적이 essay_text 의 특정 문장과 직접 연결되지 않고 추상적이므로 감점 (1점)."
+          }
+        },
+        "round_2": {
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.2,
+            "adjustment_notes": "엄격한 심사위원의 지적대로 specificity 항목을 4점에서 3점으로 조정합니다. rationale 에 '문단 간의 연결이 다소 매끄럽지 않다'는 구체적인 지적은 있으나, 이를 뒷받침하는 실제 문장 예시나 논리적 단절의 구체적 위치가 명시되지 않아 근거가 불충분한 것으로 판단됩니다. 반면 domain_match(구조 분석), groundedness(텍스트 내 서론/결론 확인) 는 essay_text 와 명확히 일치하므로 5점 유지, score_rationale_consistency 도 점수 4.0 과 rationale 의 '약점 지적'이 대략적으로 일치하므로 기존 4점 유지합니다."
+          },
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 2,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 2.0,
+            "adjustment_notes": "관대한 심사위원의 지적을 수용하여 점수를 조정함. 1) domain_match: 조직 (organization) 영역 기준인 서론-본론-결론 구조 및 문단 연결성 평가가 명확히 이루어졌으므로 5점 유지. 2) score_rationale_consistency: predicted_score 4.0(높은 점수) 에 비해 '매끄럽지 않다'는 매우 경미한 결함만 지적하여 점수를 정당화하지 못하므로, 점수는 낮춰야 함 (2점). 3) specificity: '매끄럽지 않은 부분'이라는 추상적 표현만 사용되어 구체적인 문장이나 위치를 명시하지 않았으므로 감점 (1점). 4) groundedness: rationale 의 지적이 essay_text 의 특정 문장과 직접 연결되지 않고 추상적이므로 감점 (1점)."
+          }
+        },
+        "round_3": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 5,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.5,
+            "adjustment_notes": "관대한 심사위원의 지적대로 specificity 항목을 4점에서 3점으로 조정합니다. rationale 에 '문단 간의 연결이 다소 매끄럽지 않다'는 구체적인 지적은 있으나, 이를 뒷받침하는 실제 문장 예시나 논리적 단절의 구체적 위치가 명시되지 않아 근거가 불충분한 것으로 판단됩니다. 반면 domain_match(구조 분석), groundedness(텍스트 내 서론/결론 확인) 는 essay_text 와 명확히 일치하므로 5점 유지, score_rationale_consistency 도 점수 4.0 과 rationale 의 '약점 지적'이 대략적으로 일치하므로 기존 4점 유지합니다."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 2,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 2.0,
+            "adjustment_notes": "엄격한 심사위원의 지적을 수용하여 점수를 조정함. 1) domain_match: 조직 (organization) 영역 기준인 서론-본론-결론 구조 및 문단 연결성 평가가 명확히 이루어졌으므로 5점 유지. 2) score_rationale_consistency: predicted_score 4.0(높은 점수) 에 비해 '매끄럽지 않다'는 매우 경미한 결함만 지적하여 점수를 정당화하지 못하므로, 점수는 낮춰야 함 (2점). 3) specificity: '매끄럽지 않은 부분'이라는 추상적 표현만 사용되어 구체적인 문장이나 위치를 명시하지 않았으므로 감점 (1점). 4) groundedness: rationale 의 지적이 essay_text 의 특정 문장과 직접 연결되지 않고 추상적이므로 감점 (1점)."
+          }
+        },
+        "round_4": {
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.2,
+            "adjustment_notes": "엄격한 심사위원의 지적대로 specificity 항목을 4점에서 3점으로 조정합니다. rationale 에 '문단 간의 연결이 다소 매끄럽지 않다'는 구체적인 지적은 있으나, 이를 뒷받침하는 실제 문장 예시나 논리적 단절의 구체적 위치가 명시되지 않아 근거가 불충분한 것으로 판단됩니다. 반면 domain_match(구조 분석), groundedness(텍스트 내 서론/결론 확인) 는 essay_text 와 명확히 일치하므로 5점 유지, score_rationale_consistency 도 점수 4.0 과 rationale 의 '약점 지적'이 대략적으로 일치하므로 기존 4점 유지합니다."
+          },
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 2,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 2.0,
+            "adjustment_notes": "관대한 심사위원의 지적을 수용하여 점수를 조정함. 1) domain_match: 조직 (organization) 영역 기준인 서론-본론-결론 구조 및 문단 연결성 평가가 명확히 이루어졌으므로 5점 유지. 2) score_rationale_consistency: predicted_score 4.0(높은 점수) 에 비해 '매끄럽지 않다'는 매우 경미한 결함만 지적하여 점수를 정당화하지 못하므로, 점수는 낮춰야 함 (2점). 3) specificity: '매끄럽지 않은 부분'이라는 추상적 표현만 사용되어 구체적인 문장이나 위치를 명시하지 않았으므로 감점 (1점). 4) groundedness: rationale 의 지적이 essay_text 의 특정 문장과 직접 연결되지 않고 추상적이므로 감점 (1점)."
+          }
+        },
+        "final": {
+          "domain_match": 5.0,
+          "score_rationale_consistency": 3.0,
+          "specificity": 2.0,
+          "groundedness": 3.0,
+          "overall_judge": 3.1
+        }
+      },
+      "expression": {
+        "round_0": {
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.5,
+            "rationale_for_score": "1) domain_match: rationale 가 'expression' 영역의 평가 기준 (이해하기 쉬운가, 어휘 다양성 등) 을 명확히 준수함. 2) score_rationale_consistency: predicted_score(3.0) 와 rationale 의 '전반적으로 자연스럽지만 표현의 다양성이 부족하다'는 설명이 논리적으로 일치하며, 높은 점수 (4~5) 를 요구하는 강력한 결함이 없으므로 감점 요소가 적음. 3) specificity: '일부 표현이 어색하거나 반복적인 경향', '구색 맞추기용 자격증 등 스펙 쌓기' 등 구체적인 텍스트 내용과 표현을 지적하여 generic 한 평가지는 아님. 4) groundedness: rationale 의 모든 지적 (자연스러움, 다양성 부족, 맞춤법 없음) 이 essay_text 에서 직접 확인 가능한 사실에 기반함."
+          },
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 3,
+            "specificity": 2,
+            "groundedness": 4,
+            "overall_judge": 3.0,
+            "rationale_for_score": "1. domain_match: 'expression' 영역의 평가 기준 (문장 자연스러움, 어휘 적절함, 문법 오류 없음) 을 명확히 준수하여 작성됨. 2. score_rationale_consistency: predicted_score(3.0) 는 '전반적으로 좋다'는 긍정적 평가를 넘어선 점수임에도 불구하고 rationale 이 '어색하거나 반복적인 경향', '표현 다양성 부족'이라는 약점만 지적하고 구체적인 개선 사항이나 강점을 제시하지 못함. 높은 점수에 비해 근거가 약해 점수 정당화 실패로 감점. 3. specificity: '전반적으로 문장이 이해하기 쉽고 자연스럽지만'과 같은 generic 표현 사용으로 인해 구체적인 문장 예시나 표현 분석이 부재함. 4. groundedness: essay_text 에 명시된 '특정 전공 선호', '성차별 사례', '헌법 평등권' 등 구체적 내용을 인용하여 논지를 전개하고 있어 hallucination 이 없음."
+          }
+        },
+        "round_1": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 5,
+            "specificity": 5,
+            "groundedness": 5,
+            "overall_judge": 5.0,
+            "adjustment_notes": "관대한 심사위원의 평가에 따르면 rationale 이 domain_match(표현 영역 기준 준수), score_rationale_consistency(점수-근거 일치성), specificity(구체적 지적), groundedness(텍스트 근거) 네 가지 기준을 모두 충족하고 있습니다. 특히 '전반적으로 자연스럽지만 표현의 다양성이 부족하다'는 설명은 essay_text 의 내용과 직접 연결되어 있으며, 3 점이라는 점수는 이러한 경미한 약점을 반영하는 타당한 수준입니다. 따라서 기존 점수를 유지합니다."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 2,
+            "specificity": 2,
+            "groundedness": 5,
+            "overall_judge": 3.0,
+            "adjustment_notes": "1. domain_match: 엄격한 심사위원이 지적한 대로 rationale 이 'expression' 영역의 기준 (문장 자연스러움, 어휘 적절함 등) 을 명확히 준수하고 있으므로 기존 점수 유지. 2. score_rationale_consistency: predicted_score(3.0) 는 경미한 약점이 있는 수준이지만, rationale 은 구체적인 개선 사항이나 강점을 제시하지 못하고 '어색하거나 반복적'이라는 모호한 지적만 포함하여 근거가 부족함. 높은 점수에 비해 근거가 약하므로 감점 필요 (기존 3.0 유지). 3. specificity: '전반적으로 문장이 이해하기 쉬움'과 같은 generic 표현 사용으로 구체적인 문장 예시나 분석이 부재함. 엄격한 심사위원의 지적대로 구체성이 부족하여 감점. 4. groundedness: essay_text 의 내용을 인용하여 논지를 전개하고 있어 hallucination 이 없으므로 기존 점수 유지."
+          }
+        },
+        "round_2": {
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 5,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.8,
+            "adjustment_notes": "엄격한 심사위원의 지적대로 관대한 심사위원이 네 가지 기준 (domain_match, score_rationale_consistency, specificity, groundedness) 을 모두 충족하는 것으로 평가했습니다. 특히 rationale 이 essay_text 의 구체적인 내용 ('구색 맞추기용 스펙', '성별에 따른 채용 사례' 등) 을 바탕으로 '표현의 다양성 부족'이라는 경미한 약점을 지적하고 있으며, 이는 3 점이라는 점수를 정당화하기에 충분합니다. 따라서 기존 점수와 평가 내용을 유지합니다."
+          },
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 2,
+            "specificity": 1,
+            "groundedness": 4,
+            "overall_judge": 2.0,
+            "adjustment_notes": "1. domain_match: 관대한 심사위원이 지적한 대로 rationale 이 'expression' 영역의 기준 (문장 자연스러움, 어휘 적절함 등) 을 명확히 준수하고 있으므로 기존 점수 유지. 2. score_rationale_consistency: predicted_score(3.0) 는 경미한 약점이 있는 수준이지만, rationale 은 구체적인 개선 사항이나 강점을 제시하지 못하고 '어색하거나 반복적'이라는 모호한 지적만 포함하여 근거가 부족함. 높은 점수에 비해 근거가 약하므로 감점 필요 (기존 3.0 유지). 3. specificity: '전반적으로 문장이 이해하기 쉬움'과 같은 generic 표현 사용으로 구체적인 문장 예시나 분석이 부재함. 엄격한 심사위원의 지적대로 구체성이 부족하여 감점. 4. groundedness: essay_text 의 내용을 인용하여 논지를 전개하고 있어 hallucination 이 없으므로 기존 점수 유지."
+          }
+        },
+        "round_3": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 5,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.8,
+            "adjustment_notes": "관대한 심사위원의 평가에 따라 rationale 이 essay_text 의 구체적인 내용 (구색 맞추기 스펙, 성별 차별 사례 등) 을 바탕으로 '표현의 다양성 부족'이라는 경미한 약점을 지적하고 있어 모든 기준을 충족합니다. domain_match 는 expression 영역 기준을 명확히 적용했고, score_rationale_consistency 는 3 점과 '일부 표현 어색함/반복'이라는 근거가 일치하며, specificity 는 구체적인 예시를 언급했으므로 감점 사유 없음. groundedness 는 essay_text 내용과 직접 연결됨. 다만, 관대한 심사위원이 'rationale 텍스트에 이미 있는 내용만 인정 가능하다'는 원칙을 준수하여, rationale 에 없는 새로운 근거로 점수를 방어한 것은 인정하지 않으므로 기존 3 점 유지."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 2,
+            "specificity": 1,
+            "groundedness": 5,
+            "overall_judge": 2.0,
+            "adjustment_notes": "1. domain_match: rationale 이 'expression' 영역의 기준 (문장 자연스러움, 어휘 적절함 등) 을 명확히 준수하고 있으므로 기존 점수 유지. 2. score_rationale_consistency: predicted_score(3.0) 는 경미한 약점이 있는 수준이지만, rationale 은 구체적인 개선 사항이나 강점을 제시하지 못하고 '어색하거나 반복적'이라는 모호한 지적만 포함하여 근거가 부족함. 높은 점수에 비해 근거가 약하므로 감점 필요 (기존 3.0 유지). 3. specificity: '전반적으로 문장이 이해하기 쉬움'과 같은 generic 표현 사용으로 구체적인 문장 예시나 분석이 부재함. 엄격한 심사위원의 지적대로 구체성이 부족하여 감점. 4. groundedness: essay_text 의 내용을 인용하여 논지를 전개하고 있어 hallucination 이 없으므로 기존 점수 유지."
+          }
+        },
+        "round_4": {
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 5,
+            "specificity": 5,
+            "groundedness": 5,
+            "overall_judge": 5.0,
+            "adjustment_notes": "엄격한 심사위원의 지적대로 관대한 심사위원이 rationale 에 명시한 '표현의 다양성 부족'과 '어색한 표현'이라는 구체적인 근거를 essay_text 의 내용 (구색 맞추기 스펙 강조, 성별 차별 사례 등) 과 직접 연결하여 평가했습니다. 따라서 domain_match, score_rationale_consistency, specificity, groundedness 모두 5 점으로 조정합니다. 다만, 관대한 심사위원이 'rationale 텍스트에 이미 있는 내용만 인정 가능하다'는 원칙을 준수하여 새로운 근거로 점수를 방어한 부분은 인정하지 않으므로, 최종 overall_judge 는 기존 3.0 점을 유지합니다."
+          },
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 2,
+            "specificity": 1,
+            "groundedness": 4,
+            "overall_judge": 2.0,
+            "adjustment_notes": "1. domain_match: rationale 이 'expression' 영역의 기준 (문장 자연스러움, 어휘 적절함 등) 을 명확히 준수하고 있으므로 기존 점수 유지. 2. score_rationale_consistency: predicted_score(3.0) 는 경미한 약점이 있는 수준이지만, rationale 은 구체적인 개선 사항이나 강점을 제시하지 못하고 '어색하거나 반복적'이라는 모호한 지적만 포함하여 근거가 부족함. 높은 점수에 비해 근거가 약하므로 감점 필요 (기존 3.0 유지). 3. specificity: '전반적으로 문장이 이해하기 쉬움'과 같은 generic 표현 사용으로 구체적인 문장 예시나 분석이 부재함. 엄격한 심사위원의 지적대로 구체성이 부족하여 감점. 4. groundedness: essay_text 의 내용을 인용하여 논지를 전개하고 있어 hallucination 이 없으므로 기존 점수 유지."
+          }
+        },
+        "final": {
+          "domain_match": 5.0,
+          "score_rationale_consistency": 3.5,
+          "specificity": 3.0,
+          "groundedness": 4.5,
+          "overall_judge": 3.5
+        }
+      }
+    }
+  }
+]

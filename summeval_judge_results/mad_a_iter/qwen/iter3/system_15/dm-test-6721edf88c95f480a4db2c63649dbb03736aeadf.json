@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-6721edf88c95f480a4db2c63649dbb03736aeadf",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from severe fluency issues due to the lack of capitalization and sentence structure (e.g., starting with a lowercase fragment 'pupils to make changes...'). It also fails coherence by presenting disjointed fragments rather than a logical narrative flow. While it avoids clear hallucinations (consistency is good), it misses key context like the teacher's name in the first clause and omits the ultimate outcome (banning/results annulled), reducing relevance."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 2,
+        "overall_judge": 1.8,
+        "rationale_for_score": "The summary fails the consistency criterion severely because it presents a sentence fragment ('pupils to make changes...') as a complete thought and omits the crucial subject 'Ian Guffick' from the first clause, creating ambiguity about who asked the pupils. It also misses the most significant outcome of the article: the annulment of SATs results and the teacher's ban. The summary is disjointed, lacks proper capitalization/punctuation (fluency issues), and provides an incomplete picture of the event."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 1,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The lenient judge's scores were too high for fluency and coherence. The summary is a disjointed list of sentence fragments lacking capitalization, punctuation, and subject-verb agreement (e.g., starting with 'pupils to make changes...'), which severely impacts readability and grammatical correctness. While the content is consistent with the article, the lack of narrative flow and the omission of the critical outcome (the ban and annulled results) further justify lower scores in coherence and relevance."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 2,
+        "overall_judge": 1.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is severely flawed: it begins with a sentence fragment lacking a subject, fails to mention the critical outcome (annulment of results and the ban), and lacks basic capitalization and punctuation, making it disjointed and difficult to read. No score adjustment was necessary."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 1,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary is a disjointed list of sentence fragments lacking capitalization, punctuation, and proper subject-verb agreement (e.g., starting with 'pupils to make changes...'), which severely impacts readability and grammatical correctness. While the content is consistent with the article, the lack of narrative flow and the omission of the critical outcome (the ban and annulled results) further justify lower scores in coherence and relevance."
+      },
+      "strict": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 1,
+        "relevance": 2,
+        "overall_judge": 1.2,
+        "adjustment_notes": "No score adjustment was necessary. The summary is severely flawed as noted by the lenient judge: it starts with a sentence fragment ('pupils to make changes...'), lacks capitalization and punctuation throughout, fails to mention the critical outcomes (annulment of results and the ban), and presents information in a disjointed manner. It does not meet the criteria for coherence, consistency, fluency, or relevance."
+      }
+    },
+    "final": {
+      "coherence": 1.5,
+      "consistency": 2.5,
+      "fluency": 1.0,
+      "relevance": 2.5,
+      "overall_judge": 1.6
+    }
+  }
+}

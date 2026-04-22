@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-b1f6faac3f406edca1e0cad8cce1319c83e62605",
+  "system_name": "system_8",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, failing to connect the details of the murder with the context of the trial."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits critical information about Costa's mental state, the evidence presented by the forensic psychiatrist, and the implications for the trial, which are essential to understanding the case."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the allegations of dementia and alcohol abuse, which are significant to the case and were present in the source."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'The accused is on trial for the murder of his neighbour' is redundant and does not add value to the summary."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow by stating the key details of the case, including the accused's name, age, and the victim's name, as well as the location and time of the incident."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important information regarding the murder accusation, which is central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits critical details about the accused's mental state and the context of the trial, which are essential for understanding the case."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "While the summary is grammatically correct, it lacks depth and detail, making it feel incomplete."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

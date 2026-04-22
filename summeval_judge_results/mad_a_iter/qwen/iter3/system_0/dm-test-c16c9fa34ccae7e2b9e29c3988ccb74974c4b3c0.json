@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-c16c9fa34ccae7e2b9e29c3988ccb74974c4b3c0",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source text and contains no hallucinations. However, it suffers from minor coherence issues due to a slightly awkward phrasing ('does not expire' instead of 'contract does not expire') and misses some key context regarding the specific action required (terminating the contract) versus just being linked. It covers the main points but lacks the flow of a perfect summary."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from a critical consistency error: it states the contract 'does not expire until the end of next season' but fails to specify the year (the article says 2016), making the statement vague and potentially misleading without context. Additionally, while the main points are covered, the phrasing is slightly disjointed. The summary avoids hallucinations but lacks precision compared to the source text."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the coherence score because the summary's final sentence ('the serie a champions does not expire until the end of next season') is grammatically incorrect and confusing; it lacks the subject 'contract' which makes the flow awkward. I significantly lowered the relevance score because the summary fails to capture the most critical news: that Tevez has been told to *terminate* his contract to join Boca Juniors. The summary mentions he is linked and must terminate, but misses the urgency and the specific instruction from Juventus/Boca regarding the termination as a prerequisite, which is the main point of the article."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a significant consistency flaw by stating the contract expires 'at the end of next season' without providing the specific year (2016) mentioned in the source text, which makes the information vague and potentially misleading. Additionally, the sentence structure is disjointed, jumping between current status, past history, and future expiration dates without a logical flow. While there are no hallucinations, the lack of precision and poor organization warrant the lower scores."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary suffers from a significant grammatical error in the final sentence ('does not expire' lacks a subject), which impacts fluency and coherence. More importantly, the relevance score is correctly penalized because the summary fails to highlight the core news event: the specific instruction for Tevez to terminate his contract as a prerequisite for joining Boca Juniors. The summary treats this as a minor detail rather than the central conflict of the article."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding consistency and coherence. The summary fails to include the specific year (2016) mentioned in the source text when stating the contract expires 'at the end of next season', which constitutes a lack of precision consistent with the strict criteria for consistency. Furthermore, the sentence structure is indeed disjointed, jumping between current status, past history, and future dates without a logical flow, justifying the coherence score. No points were raised based on content not in the original summary."
+      }
+    },
+    "final": {
+      "coherence": 3.0,
+      "consistency": 3.5,
+      "fluency": 4.0,
+      "relevance": 2.5,
+      "overall_judge": 3.0
+    }
+  }
+}

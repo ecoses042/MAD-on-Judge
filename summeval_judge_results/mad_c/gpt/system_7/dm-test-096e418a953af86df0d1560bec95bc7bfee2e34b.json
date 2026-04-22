@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-096e418a953af86df0d1560bec95bc7bfee2e34b",
+  "system_name": "system_7",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, as it abruptly shifts from the match result to Guardiola's trouser incident without connecting the two."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details about the match, such as the significance of the victory for Bayern Munich and the players who scored, which are essential to understanding the context."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that Guardiola ripped a hole in his left trouser leg, while the article mentions it was the left trouser leg specifically."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary could be more fluent; for instance, the phrase 'at the allianz arena on tuesday night' should capitalize 'Allianz Arena' and 'Tuesday' for proper nouns."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, starting with the match result and then transitioning to the incident involving Pep Guardiola."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the article, including the match outcome and Guardiola's humorous reaction to his torn trousers."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is written in fluent and idiomatic English, making it easy to read."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits details about the goals scored by specific players and the context of Porto's previous lead, which are important for understanding the match dynamics."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 4,
+      "relevance": 3,
+      "overall_judge": 3.2,
+      "winner_side": {
+        "coherence": "tie",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

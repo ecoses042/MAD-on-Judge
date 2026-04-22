@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-b1c3fc03a2b74cf4c79844c1fe2fdce70a8a436e",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary contains severe hallucinations and factual errors regarding consistency with the source text. Specifically, it claims '400 migrants have died' and '20 boats are missing,' whereas the article states that 400 could be 'missing' (not confirmed dead) and that 20 boats received SOS calls (not missing). These are clear contradictions to the source material."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary contains severe hallucinations and factual errors regarding consistency. It incorrectly states that the '400 migrants have died' (the text says they are 'missing' and fears they could be missing), claims '20 boats are missing' (the text says SOS calls were received from 20 boats, not that they are missing), and conflates the Save the Children spokesman's fear with the Coast Guard's official stance. These are critical failures in consistency."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "No adjustment needed. The lenient judge's assessment of 'consistency: 1' is correct because the summary explicitly states '400 migrants have died,' which directly contradicts the source text stating they are 'missing' and that no bodies were found. Similarly, the claim that '20 boats are missing' contradicts the text saying '20 boats in distress' received SOS calls. These are severe hallucinations."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains severe factual hallucinations that violate consistency: it states migrants 'have died' when the text says they are 'missing', claims '20 boats are missing' when the text says SOS calls were received from 20 boats, and conflates the fears of a specific group with official Coast Guard statements. These are critical errors that make the summary unreliable."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "No adjustment needed. The strict judge's criticisms regarding consistency are valid and severe: the summary falsely claims 400 migrants have died (source says 'missing' with no bodies found) and incorrectly states 20 boats are missing (source says 20 boats in distress received SOS calls). These are factual hallucinations that fundamentally break consistency. The low relevance score is also justified as the summary fails to capture the main context of rising migrant numbers or the specific details about the capsized ship controversy, focusing instead on these inaccurate claims."
+      },
+      "strict": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding consistency and relevance. The summary contains severe factual hallucinations: it states migrants 'have died' when the text explicitly says they are 'missing' (and no bodies were found), claims '20 boats are missing' when the text says SOS calls were received from 20 boats, and conflates the fears of Save the Children with official Coast Guard statements. These are critical errors that make the summary unreliable, warranting a low consistency score. The coherence is also poor due to the disjointed flow caused by these contradictions. Fluency remains high as the sentences are grammatically correct despite the factual errors."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 1.0,
+      "fluency": 4.0,
+      "relevance": 2.0,
+      "overall_judge": 2.0
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-6721edf88c95f480a4db2c63649dbb03736aeadf",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, jumping abruptly between points without proper transitions."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details about the investigation, the teacher's admission of unacceptable conduct, and the consequences of his actions, which are crucial for understanding the context."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that Guffick asked pupils to change their answers without mentioning that he also altered answers himself, which is a significant part of the original article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains awkward phrasing, such as 'the pupil's exam answers,' which should be pluralized to 'pupils' exam answers' for grammatical accuracy."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with Guffick's actions and concluding with the annulment of the school's SATs results."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the key actions taken by Guffick and the consequences that followed, without introducing any new or misleading information."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most critical aspects of the article, including Guffick's actions and the resulting annulment of the SATs results, which are the main points of the original text."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'pupil 's' instead of 'pupils'' and inconsistent spacing around punctuation, which affects readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "tie",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

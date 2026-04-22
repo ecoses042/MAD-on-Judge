@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-2a48112ddee712f2364f128076cb2db555a043b1",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 1.8,
+        "rationale_for_score": "The summary contains a severe hallucination: it states 'the foxes are also seven points behind leicester city', which is factually impossible as Leicester City IS the Foxes (the subject of the article). This violates consistency and relevance rules. Additionally, the summary lacks coherence by presenting disjointed sentences without logical flow."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary contains a severe hallucination: it states the Foxes are 'seven points behind Leicester City,' whereas the article explicitly says they are at the bottom of the table and seven points adrift (meaning behind the leaders). This is a complete factual error regarding the core subject. Additionally, the sentence about winning a cup is vague compared to the detailed list in the source. The direction aligns with the article's positive tone, but the hallucination makes it factually inconsistent."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 1.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a critical factual error (hallucination) stating 'the foxes are also seven points behind leicester city', which contradicts the source text where Leicester City IS the Foxes. This is a severe consistency failure that invalidates the summary's reliability. Consequently, the scores for coherence and relevance must remain low due to the disjointed nature and lack of accurate information coverage."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The lenient judge's assessment is correct and the scores should not be raised. The summary contains a severe hallucination ('seven points behind Leicester City') which contradicts the source text stating they are 'seven points adrift at the bottom'. This makes the consistency score of 1 justified. The coherence is low due to the disjointed sentences and lack of logical flow, and relevance is low because it misses the main point (Cambiasso's comparison of saving the team to winning a trophy) while including trivial or incorrect details."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 1.8,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary contains a critical factual error (hallucination) stating 'the foxes are also seven points behind leicester city', which contradicts the source text where Leicester City IS the Foxes. This is a severe consistency failure that invalidates the summary's reliability. Consequently, the scores for coherence and relevance must remain low due to the disjointed nature and lack of accurate information coverage."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The strict judge's assessment is accurate and justified. The summary contains a critical hallucination ('seven points behind Leicester City') which contradicts the source text stating they are 'seven points adrift at the bottom'. This severe factual error warrants a consistency score of 1. Additionally, the summary fails to capture the main point (Cambiasso's comparison of saving the team to winning a trophy) and suffers from disjointed sentence structure, justifying the low coherence and relevance scores. No adjustment is needed."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 1.0,
+      "fluency": 3.0,
+      "relevance": 1.5,
+      "overall_judge": 1.9
+    }
+  }
+}

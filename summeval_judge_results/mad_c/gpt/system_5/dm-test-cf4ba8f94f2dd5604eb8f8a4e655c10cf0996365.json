@@ -1,0 +1,63 @@
+{
+  "article_id": "dm-test-cf4ba8f94f2dd5604eb8f8a4e655c10cf0996365",
+  "system_name": "system_5",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information and does not provide a complete picture of the incident."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the amount of cash stolen, the context of the robbery, and the reactions of the victims, which are important for understanding the severity of the incident."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The use of backticks around 'distinctive' and 'very tall' is unconventional and disrupts the fluency of the text."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the robbery incident."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the details from the article, including the description of the robber and the distinctive mask."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the robbery, including the appeal for public assistance and the description of the suspect."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as inconsistent use of quotation marks and lacks proper capitalization."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 4,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

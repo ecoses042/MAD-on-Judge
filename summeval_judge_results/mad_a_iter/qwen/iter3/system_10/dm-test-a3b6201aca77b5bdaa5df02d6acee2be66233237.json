@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-a3b6201aca77b5bdaa5df02d6acee2be66233237",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 5,
+        "overall_judge": 5.0,
+        "rationale_for_score": "The summary is excellent. It accurately captures the main points of the article (Dawn's miscarriages, the theft of money for a grave stone, the appearance on The Jeremy Kyle Show, the accusation against Jamie, and the lie detector test results) without adding any hallucinated information or omitting critical context. The flow is logical and the English is fluent."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is factually consistent with the source text and covers the main narrative arc (Dawn's miscarriages, the theft of money for Daniel James' grave stone, the appearance on The Jeremy Kyle Show, the lie detector test results, and her emotional reaction). It avoids hallucinations. However, it scores a 4 instead of a 5 because it is merely a direct copy-paste of the first paragraph of the source text with minor punctuation adjustments (e.g., adding spaces around apostrophes), rather than being a synthesized summary that condenses or rephrases the information. Additionally, it omits significant details present in the article such as the specific amounts involved (£207 vs £500), the involvement of Jamie's girlfriend Carol, and the revelation about Jamie's Facebook message, which reduces its completeness relative to the full source."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 5,
+        "overall_judge": 5.0,
+        "adjustment_notes": "The summary accurately reflects the source text without hallucinations or omissions of critical context. The flow is logical and the English is fluent. No adjustment needed."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I lowered the relevance score from 5 to 4 because the summary is essentially a direct copy-paste of the first paragraph rather than a synthesized summary. While factually consistent, it fails to condense or rephrase the information as expected of a summary task. I also adjusted the overall judge slightly down to reflect this lack of synthesis, though I maintained high scores for coherence and consistency as there are no logical flaws or hallucinations."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 5,
+        "overall_judge": 5.0,
+        "adjustment_notes": "The strict judge was correct. The summary accurately captures the key narrative points (Dawn's miscarriages, the theft of funds for the grave stone, the lie detector test results, and her emotional reaction) without introducing hallucinations or omitting critical context. The flow is logical and the English is fluent. No adjustment to the scores is needed."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding relevance and fluency. The summary is indeed a near-verbatim copy of the first paragraph of the article rather than a synthesized condensation, which justifies lowering the relevance score from 5 to 4. Additionally, the lack of synthesis and minor punctuation issues (e.g., space before 'grave stone') warrant a fluency score of 4 instead of 5. I maintain the high coherence and consistency scores as the text is logically structured and factually accurate."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 4.5,
+      "relevance": 4.5,
+      "overall_judge": 4.8
+    }
+  }
+}

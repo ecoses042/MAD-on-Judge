@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-9d0fcbd873927674d12aafce4ae7754fd591d4e2",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary contains a severe hallucination: it claims Ella Henderson was the singer's 'first brand in 2012', whereas the text states she joined Batiste for her 'first brand collaboration' in 2015 (her fame came from The X Factor in 2012, but the deal is new). Additionally, the sentence structure is broken and repetitive ('the singer is wearing... the campaign features the singer singer'), leading to poor fluency and coherence. It fails to accurately reflect the source text's timeline and facts."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary contains a severe hallucination in the sentence 'ella henderson has been the singer 's first brand in 2012'. The article states she became famous in 2012, but her *first brand collaboration* was with Batiste in 2015. This contradicts the source text significantly. Additionally, the summary is grammatically awkward ('the singer singer') and lacks clear structure (coherence). However, it does cover the main points of the article regarding the campaign launch."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a critical factual error (hallucination) regarding the 'first brand in 2012' vs the text's 'first brand collaboration in 2015'. Additionally, the sentence structure is broken and repetitive ('singer singer'), which severely impacts fluency and coherence. No score adjustment was necessary as the strict judge correctly identified these flaws."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate and well-supported by the text. Specifically, the summary contains a severe hallucination ('first brand in 2012') which contradicts the article stating her first collaboration was with Batiste in 2015. Additionally, the phrase 'the singer singer' indicates poor fluency/grammar, and the lack of logical flow between sentences affects coherence. The relevance score remains high as it covers the main topic despite the errors."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "No score adjustment was necessary. The lenient judge correctly identified the critical factual error (hallucination regarding 'first brand in 2012' vs 'first collaboration in 2015') and the grammatical issues ('singer singer'). These flaws are severe enough to warrant low scores across all categories, confirming the strict judge's assessment."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I have lowered the scores significantly based on the strict judge's valid criticisms. The summary contains a severe factual hallucination ('first brand in 2012') which directly contradicts the source text (first collaboration was with Batiste in 2015), warranting a low consistency score. The phrase 'the singer singer' is a clear grammatical error, and the sentence structure is disjointed, justifying lower fluency and coherence scores. While the main topic is covered (relevance), the quality of the summary is poor due to these fundamental errors."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 1.0,
+      "fluency": 2.5,
+      "relevance": 2.5,
+      "overall_judge": 2.0
+    }
+  }
+}

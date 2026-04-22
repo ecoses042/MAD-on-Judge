@@ -1,0 +1,319 @@
+[
+  {
+    "essay_id": "GWGR2400108200.1",
+    "status": "ok",
+    "prediction": {
+      "content": {
+        "score": 3.0,
+        "rationale": "주장과 근거는 존재하나, 설명이 피상적이고 일부 논리 연결이 약하다. 예를 들어, '알 권리는 잊힐 권리보다 우선 시 한다'는 주장은 있지만, 그 이유에 대한 구체적인 설명이 부족하다."
+      },
+      "organization": {
+        "score": 3.0,
+        "rationale": "기본적인 구조는 있으나 문단 연결이나 전개 순서가 다소 어색하다. 예를 들어, 각 문단이 독립적으로 존재하나, 전체적인 흐름이 매끄럽지 않다."
+      },
+      "expression": {
+        "score": 3.0,
+        "rationale": "이해는 가능하나, 표현의 단조로움이나 문법적 어색함이 일부 보인다. 예를 들어, '홍위병의 사례다'와 같은 표현은 더 구체적인 설명이 필요하다."
+      }
+    },
+    "judge": {
+      "content": {
+        "round_0": {
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.5,
+            "rationale_for_score": "1. domain_match: content 영역의 평가 기준 (주장, 근거, 논리) 을 명확히 적용함. 2. score_rationale_consistency: 예측 점수 3.0 과 '설명이 피상적', '논리 연결이 약하다'는 설명은 모순되지 않으며, 높은 점수를 요구하는 강력한 근거가 없으므로 점수 정당화 수준으로 적절함 (4점). 3. specificity: '알 권리는 잊힐 권리보다 우선 시 한다'는 구체적인 문장과 '홍위병 사례', '반 고흐의 그림' 등 텍스트 내 구체적 예시를 지적하여 generic 표현을 피함 (4점). 4. groundedness: rationale 의 모든 지적은 essay_text 에 존재하는 내용 (홍위병, 반 고흐, 제목 자극성 등) 에 기반하고 있어 hallucination 이 없음 (5점)."
+          },
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 2,
+            "groundedness": 2,
+            "overall_judge": 2.8,
+            "rationale_for_score": "1. domain_match: target_domain 'content' 기준을 준수하나, essay_text의 핵심 논지인 '역사와 알 권리의 불가분성', '홍위병 사례를 통한 구체적 반증', '알 권리의 정의적 우위' 등을 체계적으로 분석하지 못함. 2. score_rationale_consistency: predicted_score 3.0은 '일부 논리 연결이 약하다'는 설명과 일치하나, '설명이 피상적이다'라는 지적에 대한 구체적인 근거가 부족하여 설득력이 떨어짐. 3. specificity: rationale 전체가 '예를 들어', '주장에 대한 이유' 등 추상적 표현만 사용하며, essay_text 내의 구체적 문장이나 사례 (홍위병, 반 고흐, 제목 자극성 등) 를 직접 인용하지 못함. 4. groundedness: '구체적인 설명이 부족하다'는 지적은 essay_text에 존재하는 구체적인 내용 (예: 홍위병 사례의 상세 설명) 을 언급하지 않은 채 일반화하여 서술함으로써 hallucination 경향이 있음."
+          }
+        },
+        "round_1": {
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 2,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 2.0,
+            "adjustment_notes": "domain_match: target_domain 'content' 기준을 준수하며 글의 핵심 논지와 근거를 평가하고 있으므로 기존 점수 유지. score_rationale_consistency: 엄격한 심사위원이 지적한 대로 predicted_score(3.0)와 rationale('설명이 피상적이다') 간 모순이 명확함. 낮은 점수를 정당화할 구체적인 근거가 rationale 에 없으므로 감점. specificity: '예를 들어', '주장에 대한 이유' 등 추상적 표현만 사용했고 essay_text 의 구체적 사례 (홍위병, 반 고흐 등) 를 언급하지 않아 1 점으로 조정. groundedness: '구체적인 설명이 부족하다'는 지적은 essay_text 에 존재하는 내용을 무시한 일반화로, hallucination 경향이 있어 1 점으로 조정."
+          },
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.0,
+            "adjustment_notes": "1. domain_match: 관대한 심사위원이 content 영역 기준을 명확히 적용했다고 평가했으나, rationale 텍스트에는 '주장', '근거', '논리'라는 단어가 명시적으로 언급되지 않아 근거가 부족함. 따라서 점수를 5점 대신 4점으로 조정함 (관대심위원의 설명이 rationale 텍스트에 존재하지 않음). 2. score_rationale_consistency: 관대한 심사위원은 예측 점수 3.0 과 설명을 모순되지 않는다고 보아 4점을 제안했으나, '설명이 피상적'이라는 근거가 있을 때 3점 기준에 더 부합함. 또한 관대심위원이 '높은 점수를 요구하는 강력한 근거가 없으므로 4점'이라고 한 부분은 rationale 텍스트에 근거하지 않으므로 이를 무시하고, 실제 결함이 있는 경우 3점을 유지해야 함 (관대심위원의 4점 제안은 근거 텍스트 미존재로 인해 수용 불가). 3. specificity: 관대한 심사위원이 구체적 예시를 지적했다고 평가했으나, rationale 텍스트에는 '홍위병', '반 고흐' 등 구체적인 사례가 언급되지 않아 이 기준을 충족하지 못함. 따라서 점수를 5점 대신 4점으로 조정함 (관대심위원의 설명이 rationale 텍스트에 존재하지 않음). 4. groundedness: 관대한 심사위원의 평가는 essay_text 내용을 정확히 반영하고 hallucination 이 없음을 인정했으므로, rationale 텍스트에도 해당 내용이 명시되어 있어 5점을 유지함."
+          }
+        },
+        "round_2": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 2,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 3.0,
+            "adjustment_notes": "domain_match: 관대한 심사위원의 평가대로 target_domain 'content' 기준을 준수하여 글의 핵심 논지와 근거를 평가하고 있으므로 기존 점수 유지. groundedness: 관대한 심사위원이 지적한 대로 rationale 의 내용은 essay_text 에서 확인 가능한 내용 (홍위병 사례, 반 고흐 사례 등) 에 기반하므로 hallucination 이 아니며 기존 5 점 유지. specificity: 관대한 심사위원의 '1 점' 조정은 과다함. rationale 은 '구체적 설명 부족'을 지적했으나, 이는 essay_text 의 구체적 사례를 나열하지 않은 채 추상적으로 서술한 점을 지적한 것으로, generic 표현이 아님. 다만 구체적인 문장 번호나 구절 인용이 없어 4 점으로 조정. score_rationale_consistency: 관대한 심사위원의 '감점' 제안은 타당함. predicted_score(3.0) 는 '설명이 피상적', '논리 연결 약함'이라는 근거를 제시하고 있으나, essay_text 의 구체적 사례 (홍위병, 반 고흐 등) 를 직접 인용하여 이를 뒷받침하지 못해 설득력이 부족함. 따라서 점수 유지 (3.0) 로 조정."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 2,
+            "groundedness": 5,
+            "overall_judge": 3.0,
+            "adjustment_notes": "1. domain_match: 관대한 심사위원이 content 영역 기준을 적용했다고 평가했으나, rationale 텍스트에는 '주장', '근거', '논리'라는 단어가 명시적으로 언급되지 않아 근거가 부족함. 따라서 점수를 5점 대신 4점으로 조정함 (관대심위원의 설명이 rationale 텍스트에 존재하지 않음). 2. score_rationale_consistency: 관대한 심사위원은 예측 점수 3.0 과 설명을 모순되지 않는다고 보아 4점을 제안했으나, '설명이 피상적'이라는 근거가 있을 때 3점 기준에 더 부합함. 또한 관대심위원이 '높은 점수를 요구하는 강력한 근거가 없으므로 4점'이라고 한 부분은 rationale 텍스트에 근거하지 않으므로 이를 무시하고, 실제 결함이 있는 경우 3점을 유지해야 함 (관대심위원의 4점 제안은 근거 텍스트 미존재로 인해 수용 불가). 3. specificity: 관대한 심사위원이 구체적 예시를 지적했다고 평가했으나, rationale 텍스트에는 '홍위병', '반 고흐' 등 구체적인 사례가 언급되지 않아 이 기준을 충족하지 못함. 따라서 점수를 5점 대신 4점으로 조정함 (관대심위원의 설명이 rationale 텍스트에 존재하지 않음). 4. groundedness: 관대한 심사위원의 평가는 essay_text 내용을 정확히 반영하고 hallucination 이 없음을 인정했으므로, rationale 텍스트에도 해당 내용이 명시되어 있어 5점을 유지함."
+          }
+        },
+        "round_3": {
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.5,
+            "adjustment_notes": "1. domain_match: target_domain 'content' 기준을 명확히 준수하여 글의 핵심 논지와 근거를 평가했으므로 기존 5 점 유지. 2. groundedness: rationale 이 essay_text 의 홍위병 사례, 반 고흐 사례 등 구체적 내용을 정확히 반영하고 있어 hallucination 이 없으므로 기존 5 점 유지. 3. specificity: 관대한 심사위원이 지적한 '구체적 설명 부족'은 generic 표현이 아닌, essay_text 의 구체적인 문장이나 구절을 인용하지 않은 서술 방식을 지적한 것으로 판단됨. 따라서 1 점 조정은 과다하여 4 점으로 조정 (구체적 예시 없음). 4. score_rationale_consistency: predicted_score(3.0) 는 '설명이 피상적', '논리 연결 약함'이라는 근거를 제시했으나, essay_text 의 구체적 사례 (홍위병, 반 고흐 등) 를 직접 인용하여 이를 뒷받침하지 못해 설득력이 부족함. 따라서 점수 유지 (3.0) 로 조정."
+          },
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 2,
+            "groundedness": 5,
+            "overall_judge": 3.0,
+            "adjustment_notes": "1. domain_match: 관대한 심사위원이 content 영역 기준을 적용했다고 평가했으나, rationale 텍스트에는 '주장', '근거', '논리'라는 단어가 명시적으로 언급되지 않아 근거가 부족함. 따라서 점수를 5점 대신 4점으로 조정함 (관대심위원의 설명이 rationale 텍스트에 존재하지 않음). 2. score_rationale_consistency: 관대한 심사위원은 예측 점수 3.0 과 설명을 모순되지 않는다고 보아 4점을 제안했으나, '설명이 피상적'이라는 근거가 있을 때 3점 기준에 더 부합함. 또한 관대심위원이 '높은 점수를 요구하는 강력한 근거가 없으므로 4점'이라고 한 부분은 rationale 텍스트에 근거하지 않으므로 이를 무시하고, 실제 결함이 있는 경우 3점을 유지해야 함 (관대심위원의 4점 제안은 근거 텍스트 미존재로 인해 수용 불가). 3. specificity: 관대한 심사위원이 구체적 예시를 지적했다고 평가했으나, rationale 텍스트에는 '홍위병', '반 고흐' 등 구체적인 사례가 언급되지 않아 이 기준을 충족하지 못함. 따라서 점수를 5점 대신 4점으로 조정함 (관대심위원의 설명이 rationale 텍스트에 존재하지 않음). 4. groundedness: 관대한 심사위원의 평가는 essay_text 내용을 정확히 반영하고 hallucination 이 없음을 인정했으므로, rationale 텍스트에도 해당 내용이 명시되어 있어 5점을 유지함."
+          }
+        },
+        "round_4": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 2,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 3.0,
+            "adjustment_notes": "1. domain_match: 관대한 심사위원의 평가대로 target_domain 'content' 기준을 명확히 준수하여 글의 핵심 논지와 근거를 평가했으므로 기존 5 점 유지. 2. groundedness: rationale 이 essay_text 의 홍위병 사례, 반 고흐 사례 등 구체적 내용을 정확히 반영하고 있어 hallucination 이 없으므로 기존 5 점 유지. 3. specificity: 관대한 심사위원이 지적한 '구체적 설명 부족'은 generic 표현이 아닌, essay_text 의 구체적인 문장이나 구절을 인용하지 않은 서술 방식을 지적한 것으로 판단됨. 따라서 1 점 조정은 과다하여 4 점으로 조정 (구체적 예시 없음). 4. score_rationale_consistency: predicted_score(3.0) 는 '설명이 피상적', '논리 연결 약함'이라는 근거를 제시했으나, 관대한 심사위원의 평가에 따르면 rationale 이 essay_text 의 구체적 사례 (홍위병, 반 고흐 등) 를 직접 인용하여 이를 뒷받침하지 못해 설득력이 부족함. 따라서 점수 유지 (3.0) 로 조정."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 2,
+            "groundedness": 1,
+            "overall_judge": 2.0,
+            "adjustment_notes": "1. domain_match: 관대한 심사위원이 content 영역 기준을 적용했다고 평가했으나, rationale 텍스트에는 '주장', '근거', '논리'라는 단어가 명시적으로 언급되지 않아 근거가 부족함. 따라서 점수를 5점 대신 4점으로 조정함 (관대심위원의 설명이 rationale 텍스트에 존재하지 않음). 2. score_rationale_consistency: 관대한 심사위원은 예측 점수 3.0 과 설명을 모순되지 않는다고 보아 4점을 제안했으나, '설명이 피상적'이라는 근거가 있을 때 3점 기준에 더 부합함. 또한 관대심위원이 '높은 점수를 요구하는 강력한 근거가 없으므로 4점'이라고 한 부분은 rationale 텍스트에 근거하지 않으므로 이를 무시하고, 실제 결함이 있는 경우 3점을 유지해야 함 (관대심위원의 4점 제안은 근거 텍스트 미존재로 인해 수용 불가). 3. specificity: 관대한 심사위원이 구체적 예시를 지적했다고 평가했으나, rationale 텍스트에는 '홍위병', '반 고흐' 등 구체적인 사례가 언급되지 않아 이 기준을 충족하지 못함. 따라서 점수를 5점 대신 4점으로 조정함 (관대심위원의 설명이 rationale 텍스트에 존재하지 않음). 4. groundedness: 관대한 심사위원의 평가는 essay_text 내용을 정확히 반영하고 hallucination 이 없음을 인정했으므로, rationale 텍스트에도 해당 내용이 명시되어 있어 5점을 유지함."
+          }
+        },
+        "final": {
+          "domain_match": 4.5,
+          "score_rationale_consistency": 2.5,
+          "specificity": 3.0,
+          "groundedness": 3.0,
+          "overall_judge": 2.5
+        }
+      },
+      "organization": {
+        "round_0": {
+          "strict": {
+            "domain_match": 2,
+            "score_rationale_consistency": 3,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 1.8,
+            "rationale_for_score": "1. domain_match: rationale는 '문단 연결'과 '전개 순서'라는 organization 영역의 기준을 사용하고 있어 타당하나, 구체적인 문장 인용 없이 추상적인 표현만 사용하여 domain 적용이 표면적이다. 2. score_rationale_consistency: predicted_score가 3점 (약점 존재) 인데 rationale은 '기본적인 구조는 있으나...'라고 매우 경미한 수준으로 평가하여 점수 정당화가 부족함. 3. specificity: '문단 연결이나 전개 순서가 다소 어색하다'는 표현은 구체적인 문장이나 논리적 결함을 지적하지 않은 generic한 설명임. 4. groundedness: rationale에 언급된 '각 문단이 독립적으로 존재하나...'라는 구체적 관찰이 essay_text의 실제 내용 (예: 홍위병 사례, 반 고흐 등) 과 연결되지 않아 hallucination 또는 근거 없는 추측으로 판단됨."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 5,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 4.0,
+            "rationale_for_score": "1. domain_match: rationale는 '문단 연결'과 '전개 순서'라는 조직화 (organization) 영역의 핵심 기준을 사용하여 평가하고 있어 타당합니다. 다만, 구체적인 문장 인용이 부족하여 5점보다는 4점으로 제한했습니다.\n2. score_rationale_consistency: predicted_score가 3.0으로 '보통' 수준이며, rationale 또한 '기본적인 구조는 있으나... 어색하다'는 중립적이지만 부정적 뉘앙스를 가진 설명을 제공하여 점수와 설명이 완벽하게 일치합니다.\n3. specificity: '문단 연결이나 전개 순서가 다소 어색하다'는 표현은 다소 일반적입니다. 구체적인 예시 (예: 1 문단의 결론과 2 문단의 시작 사이의 연결 부재 등) 를 명시하지 않아 3점으로 평가했습니다.\n4. groundedness: rationale이 지적하는 '문단 간 독립성' 문제는 essay_text의 각 단락이 주제별로 나열되어 있고, 문단 간의 논리적 전환 (transition) 이 명확하지 않은 실제 내용과 일치합니다. hallucination 없이 텍스트 기반의 관찰입니다."
+          }
+        },
+        "round_1": {
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 2,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 2.0,
+            "adjustment_notes": "엄격한 심사위원의 지적대로 rationale이 구체적인 근거 없이 추상적으로 작성되어 domain_match 기준 (구체적 예시 부재) 과 specificity 기준 (generic 표현 사용) 에 대해 감점합니다. 또한 essay_text에 언급된 '홍위병', '반 고흐' 등 구체적 사례를 인용하지 않은 채 '문단 연결이 어색하다'고만 서술하여 groundedness 기준을 위반하므로 해당 항목도 1점으로 조정합니다. predicted_score(3점) 와 rationale('기본적인 구조는 있으나...') 사이의 괴리가 명확하여 score_rationale_consistency 또한 2점으로 낮춥니다. 이러한 결함들이 존재하므로 기존 3점을 유지할 수 없으며, 주요 결함이 명확히 드러나는 2점으로 최종 점수를 조정합니다."
+          },
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 5,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.5,
+            "adjustment_notes": "관대한 심사위원의 평가에 따라 domain_match(5점), score_rationale_consistency(5점), groundedness(5점) 항목은 rationale 텍스트에 명시된 근거 (조직화 기준 사용, 점수-설명 일치성, 텍스트 기반 관찰) 가 명확하므로 기존 점수를 유지합니다. specificity 항목은 '문단 연결 어색함'이라는 지적이 있으나 구체적인 문장 인용이나 예시 부재로 인해 3점으로 제한된 점은 타당하므로 변경하지 않습니다. 따라서 전체 점수는 관대한 심사위원의 평가인 3.0으로 유지됩니다."
+          }
+        },
+        "round_2": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 2,
+            "groundedness": 1,
+            "overall_judge": 2.0,
+            "adjustment_notes": "관대한 심사위원의 평가에 따라 domain_match(4점)와 score_rationale_consistency(3점)는 유지하되, specificity와 groundedness 항목을 재검토합니다. rationale 텍스트가 '홍위병', '반 고흐' 등 essay_text에 존재하는 구체적 사례를 전혀 언급하지 않고 추상적으로만 서술했으므로 specificity 기준 (구체적 예시 부재) 에 명확히 저점수를 줍니다. 또한 essay_text의 내용을 근거로 삼지 않은 채 평가하므로 groundedness도 1점으로 조정합니다. 이러한 구체적인 결함들이 존재하므로 기존 3점이 아닌 2점으로 최종 점수를 낮춥니다."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 5,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.5,
+            "adjustment_notes": "엄격한 심사위원의 평가에 따라 domain_match(5점), score_rationale_consistency(5점), groundedness(5점) 항목은 rationale 이 조직화 기준을 사용하고 있으며, 점수와 설명이 일치하고 텍스트 근거가 명확하므로 기존 점수를 유지합니다. specificity 항목은 '문단 연결 어색함'이라는 지적이 있으나 구체적인 문장 인용이나 예시 부재로 인해 3점으로 제한된 점은 타당하므로 변경하지 않습니다. 따라서 전체 점수는 관대한 심사위원의 평가인 3.0으로 유지됩니다."
+          }
+        },
+        "round_3": {
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 2,
+            "groundedness": 1,
+            "overall_judge": 2.0,
+            "adjustment_notes": "엄격한 심사위원의 지적대로 rationale이 essay_text 내 구체적 사례 (홍위병, 반 고흐 등) 를 언급하지 않고 추상적으로만 서술하여 specificity 기준을 충족하지 못하므로 3점을 2점으로 하향 조정함. 또한 essay_text 내용을 근거로 삼지 않은 채 평가하여 groundedness도 1점으로 유지함. domain_match와 score_rationale_consistency는 기존 4점과 3점을 유지하되, overall_judge는 구체적인 결함이 명확히 존재하므로 2.5점으로 조정함."
+          },
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 5,
+            "specificity": 2,
+            "groundedness": 5,
+            "overall_judge": 3.0,
+            "adjustment_notes": "관대한 심사위원의 평가에 따라 domain_match(5점), score_rationale_consistency(5점), groundedness(5점)는 rationale 이 조직화 (organization) 도메인의 기준을 준수하고 있으며, 점수와의 일관성 및 텍스트 근거가 명확하므로 유지합니다. specificity 항목은 '문단 연결 어색함'이라는 지적이 있으나, 구체적인 문장 인용이나 예시 부재로 인해 3점으로 제한된 점은 타당하므로 변경하지 않습니다. 따라서 전체 점수는 관대한 심사위원의 평가인 3.0으로 유지됩니다."
+          }
+        },
+        "round_4": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 2,
+            "groundedness": 1,
+            "overall_judge": 2.0,
+            "adjustment_notes": "관대한 심사위원의 평가에 따라 domain_match(4점)와 score_rationale_consistency(3점)는 유지하되, 엄격한 기준을 적용하여 세부 항목을 조정함. specificity는 rationale이 '문단 연결 어색함'이라는 추상적 지적만 하고 홍위병, 반 고흐 등 essay_text 내 구체적 사례를 명시하지 않아 2점으로 하향 조정함. groundedness는 rationale 이 essay_text의 실제 내용을 근거로 하지 않고 일반적 서술에 그쳐 1점을 유지함. 결과적으로 overall_judge는 2.5점으로 조정함."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 5,
+            "specificity": 2,
+            "groundedness": 5,
+            "overall_judge": 3.0,
+            "adjustment_notes": "엄격한 심사위원의 지적대로 domain_match(5점), score_rationale_consistency(5점), groundedness(5점)는 rationale 이 조직화 (organization) 도메인의 기준을 준수하고 있으며, 점수와의 일관성 및 텍스트 근거가 명확하므로 유지합니다. specificity 항목은 '문단 연결 어색함'이라는 지적이 있으나, 구체적인 문장 인용이나 예시 부재로 인해 3점으로 제한된 점은 타당하므로 변경하지 않습니다. 따라서 전체 점수는 관대한 심사위원의 평가인 3.0으로 유지됩니다."
+          }
+        },
+        "final": {
+          "domain_match": 4.5,
+          "score_rationale_consistency": 4.0,
+          "specificity": 2.0,
+          "groundedness": 3.0,
+          "overall_judge": 2.5
+        }
+      },
+      "expression": {
+        "round_0": {
+          "strict": {
+            "domain_match": 3,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 3,
+            "overall_judge": 3.0,
+            "rationale_for_score": "처리 실패"
+          },
+          "lenient": {
+            "domain_match": 3,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 3,
+            "overall_judge": 3.0,
+            "rationale_for_score": "처리 실패"
+          }
+        },
+        "round_1": {
+          "strict": {
+            "domain_match": 3,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 3,
+            "overall_judge": 3.0,
+            "rationale_for_score": "처리 실패"
+          },
+          "lenient": {
+            "domain_match": 3,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 3,
+            "overall_judge": 3.0,
+            "rationale_for_score": "처리 실패"
+          }
+        },
+        "round_2": {
+          "strict": {
+            "domain_match": 3,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 3,
+            "overall_judge": 3.0,
+            "rationale_for_score": "처리 실패"
+          },
+          "lenient": {
+            "domain_match": 3,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 3,
+            "overall_judge": 3.0,
+            "rationale_for_score": "처리 실패"
+          }
+        },
+        "round_3": {
+          "strict": {
+            "domain_match": 3,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 3,
+            "overall_judge": 3.0,
+            "rationale_for_score": "처리 실패"
+          },
+          "lenient": {
+            "domain_match": 3,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 3,
+            "overall_judge": 3.0,
+            "rationale_for_score": "처리 실패"
+          }
+        },
+        "round_4": {
+          "strict": {
+            "domain_match": 3,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 3,
+            "overall_judge": 3.0,
+            "rationale_for_score": "처리 실패"
+          },
+          "lenient": {
+            "domain_match": 3,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 3,
+            "overall_judge": 3.0,
+            "rationale_for_score": "처리 실패"
+          }
+        },
+        "final": {
+          "domain_match": 3.0,
+          "score_rationale_consistency": 3.0,
+          "specificity": 3.0,
+          "groundedness": 3.0,
+          "overall_judge": 3.0
+        }
+      }
+    }
+  }
+]

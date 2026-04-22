@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-b255397ee863bd8faf9def57c0f76769153d905e",
+  "system_name": "system_2",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information. It presents the same information multiple times without a structured narrative."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to cover key points such as the father's criticism of the security measures, the airport's response, and the eventual replacement of the toy gun, which are essential to understanding the full context of the incident."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the father's name or age, which could provide additional context and consistency with the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains awkward phrasing and punctuation issues, such as the inconsistent use of commas and the lack of proper sentence structure."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with James arriving at the airport and ending with the confiscation of his toy gun."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the main event of the article without introducing any new facts or misrepresenting the situation."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key incident of the toy gun confiscation, which is the central theme of the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as awkward phrasing and punctuation errors, which affect its readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

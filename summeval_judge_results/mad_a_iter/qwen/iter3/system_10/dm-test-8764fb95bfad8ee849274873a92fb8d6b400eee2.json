@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-8764fb95bfad8ee849274873a92fb8d6b400eee2",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary suffers from severe hallucinations and inconsistency. It repeats the same fact (Townsend's substitution in the Burnley game) multiple times with slightly different phrasing but no new information, failing to synthesize the text. Crucially, it completely omits the main points of the article: Merson's initial criticism regarding Townsend's England call-up, Townsend scoring for England against Italy, Merson admitting he was wrong about that specific point, and the subsequent Twitter exchange between the two. By ignoring the central narrative arc (the 'row' restarting after a specific event) and focusing only on the substitution detail while hallucinating a repetitive structure, it fails consistency and relevance criteria."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary suffers from severe consistency issues (hallucinations). It repeats the fact that Townsend was brought on in the 83rd minute twice, despite the source text explicitly stating he came on with 'only seven minutes remaining' (which implies the 89th/90th minute). The summary also omits the crucial context of Merson's apology after Townsend scored for England against Italy, which is a major part of the article. While the grammar is fine, the factual repetition and omission of key narrative points make it poor."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is severely flawed because it fails to synthesize the text, instead repeating the same fact (Townsend's substitution) twice in slightly different ways without adding value. More critically, it completely omits the main narrative arc: Merson's initial criticism of Townsend's England call-up, Townsend scoring for England, Merson admitting he was wrong, and the subsequent Twitter exchange. By ignoring these key points, the summary fails both relevance and consistency (as it presents a repetitive structure rather than a coherent summary of events). The score remains low."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "adjustment_notes": "No changes to scores. The lenient judge's assessment of consistency (1) is correct because the summary repeats the fact that Townsend was substituted twice in a way that contradicts the source text (which states he came on with 'seven minutes remaining', implying the 89th/90th minute, not the 83rd). The repetition of the 83rd minute substitution creates a factual hallucination relative to the provided text. Additionally, the summary fails to cover the major narrative arc of Merson admitting he was wrong after Townsend scored for England, which is a significant portion of the source text."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary fails to synthesize the article, repeating the same fact (Townsend's substitution) twice without adding value. It completely omits the main narrative arc: Merson's initial criticism, Townsend scoring for England, Merson admitting he was wrong, and the subsequent Twitter exchange. Consequently, it scores low on relevance and consistency."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary contains a factual inconsistency by stating Townsend was brought on in the '83rd minute' twice, whereas the source text explicitly states he came on with 'seven minutes remaining' (implying the 89th/90th minute). This repetition creates confusion and hallucination relative to the specific details provided. Furthermore, the summary completely omits the central narrative arc of Merson admitting he was wrong after Townsend scored for England, which is a significant portion of the source text, leading to low relevance."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 1.0,
+      "fluency": 4.0,
+      "relevance": 2.0,
+      "overall_judge": 2.0
+    }
+  }
+}

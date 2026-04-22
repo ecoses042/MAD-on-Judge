@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-4a593dc4c7e0b4d09bfdc66bb315c47b54eb15df",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information. It repeats the same idea about Henderson's belief without providing context or progression."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the significance of the match, the performance of other players, and the context of Liverpool's position in the league, which are crucial for understanding the situation."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention that Liverpool is four points behind Manchester City, which is an important detail from the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as missing articles ('the') and lacks proper capitalization, making it less readable."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding Henderson's thoughts on Liverpool's chances in the Premier League."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects Henderson's belief about Liverpool's potential to catch Manchester City, which is consistent with the article."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on key points such as Henderson's opinion and the match result, avoiding trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization and punctuation, making it less fluent and harder to read."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits important context, such as the significance of the match and details about the goals scored."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

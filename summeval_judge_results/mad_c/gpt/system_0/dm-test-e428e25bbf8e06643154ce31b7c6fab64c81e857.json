@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-e428e25bbf8e06643154ce31b7c6fab64c81e857",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, jumping between points without clear connections."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that 'a single fixed device was switched off,' whereas the article mentions that all fixed devices were turned off."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'the speed has been been taken' which is incorrect."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details, such as the context of the camera's malfunction and the council's response."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear focus on the speed camera and its current status, maintaining a logical flow of information regarding its enforcement history."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article about the speed camera's decommissioning and its current pointing direction."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary highlights the key points about the speed camera's functionality and the context of its placement."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, such as 'it is a speed camera has been turned round' which disrupts readability."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits important details, such as the council's response and plans for future enforcement, which are significant to the overall context."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.0,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-bcdb32ae644040a721da880fff9c1d502048cd8b",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information and does not connect the events or provide context about the investigation."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the involvement of the FBI, the timeline of the cruise, and the circumstances of how the bodies were discovered, which are crucial for understanding the situation."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary states 'the cruise line said' but does not specify that it was Holland America Line, which could lead to confusion."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The use of abbreviations like 'ms' for the ship's name is not standard in formal writing and could affect readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the incident, starting with the discovery of the deceased passengers and mentioning the cruise line's statement."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information provided in the article without introducing any new facts or misrepresentations."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the incident, including the nature of the deaths and the involvement of the cruise line."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as the use of parentheses and the lack of proper punctuation, which affects readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

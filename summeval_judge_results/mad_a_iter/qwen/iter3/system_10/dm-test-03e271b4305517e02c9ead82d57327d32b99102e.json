@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-03e271b4305517e02c9ead82d57327d32b99102e",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is fluent and consistent with the source text, but it suffers from severe relevance issues. It consists almost entirely of a direct copy-paste of the first two paragraphs of the article without adding any new information or summarizing the key points (such as Williams' specific quotes about her readiness for clay, her Grand Slam record, or the team's future outlook). By failing to condense or synthesize the information, it fails the core definition of a summary."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is well-structured, grammatically correct, and strictly consistent with the source text without hallucinations. It captures the main narrative arc (Williams' loss in doubles, win in singles, and her reaction). It receives a score of 4 instead of 5 for relevance because it omits significant context from the article, such as the specific match scores (4-6 7-6(3) 6-3), Williams' specific quotes about clay court readiness, and the team's future outlook, focusing only on the immediate events."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is essentially a direct copy-paste of the first two paragraphs of the source text without any synthesis or condensation. It fails to include key information such as Williams' quotes about her readiness for clay, her Grand Slam record, or the team's future outlook, which are significant parts of the article. Therefore, the relevance score remains low (2), and the overall score reflects this failure to summarize effectively."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary is well-structured and strictly consistent with the source text, avoiding hallucinations. While it captures the core narrative (the match result and Williams' reaction), it omits specific details like the exact scores of the singles match and the detailed quotes regarding her clay court readiness, which justifies a relevance score of 4 rather than 5."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding relevance. The summary is indeed a near-direct copy-paste of the first two paragraphs of the source text without synthesis or condensation. It fails to include key information such as Williams' quotes about her readiness for clay, her Grand Slam record, or the team's future outlook, which are significant parts of the article. Therefore, the relevance score remains low (2), and the overall score reflects this failure to summarize effectively."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is well-structured and strictly consistent with the source text, avoiding hallucinations. While it captures the core narrative (the match result and Williams' reaction), it omits specific details like the exact scores of the singles match and the detailed quotes regarding her clay court readiness, which justifies a relevance score of 4 rather than 5."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 4.5,
+      "relevance": 3.0,
+      "overall_judge": 3.9
+    }
+  }
+}

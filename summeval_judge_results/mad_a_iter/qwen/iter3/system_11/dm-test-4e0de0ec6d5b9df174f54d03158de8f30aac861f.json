@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-4e0de0ec6d5b9df174f54d03158de8f30aac861f",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is consistent with the source text and covers the main points well (Ozil's relaxation, Germany match, upcoming Liverpool game). However, it only includes the first paragraph of the source text, omitting significant details like his transfer fee, injury return, specific stats (4 assists, 3 goals), and his comments on English football. Additionally, there is a minor grammatical error in the first sentence ('in a enjoying' instead of 'enjoying'), which affects fluency."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 1,
+        "relevance": 4,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary suffers from severe fluency issues (e.g., 'in a enjoying'), contains a hallucination regarding the World Cup ('World Cup winners' vs source's 'Germany beat Georgia... Euro 2016 qualifier'), and fails to summarize the full article by omitting significant details like his injury return, specific stats (4 assists, 3 goals), and the nightclub rumor. It essentially copies the first paragraph of the source text with errors rather than providing a comprehensive summary."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "Scores remain unchanged. The lenient judge's points regarding the grammatical error ('in a enjoying') and the omission of significant details (transfer fee, injury history, specific stats) are valid references to the actual summary text and source article content. No adjustment is necessary."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 1,
+        "relevance": 3,
+        "overall_judge": 1.8,
+        "adjustment_notes": "I have lowered my scores significantly to align with the strict judge's assessment. The summary contains a severe grammatical error ('in a enjoying'), a factual hallucination regarding the 'World Cup' (the source specifies Euro 2016 qualifier), and it fails to summarize the article by omitting key details about his injury return, performance stats, and the nightclub rumor. It essentially copies the first paragraph of the source text with errors rather than providing a comprehensive summary."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "No adjustment made. The strict judge correctly identified the grammatical error ('in a enjoying') and the omission of significant details (transfer fee, injury history, specific stats) as valid criticisms that lower the fluency and relevance scores. As these flaws are present in the provided summary text, the lenient evaluator agrees with the strict judge's assessment."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 1,
+        "relevance": 3,
+        "overall_judge": 1.8,
+        "adjustment_notes": "Scores remain unchanged. The summary contains a severe grammatical error ('in a enjoying'), a factual hallucination regarding the 'World Cup' (the source specifies Euro 2016 qualifier), and critically fails to summarize the article by omitting key details about his injury return, performance stats, and the nightclub rumor. It essentially copies the first paragraph of the source text with errors rather than providing a comprehensive summary."
+      }
+    },
+    "final": {
+      "coherence": 3.0,
+      "consistency": 3.0,
+      "fluency": 2.0,
+      "relevance": 3.5,
+      "overall_judge": 2.9
+    }
+  }
+}

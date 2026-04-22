@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-c6667409fcdea2c89ba9f0d3a72c50e3967b4b1b",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary contains a severe hallucination: it attributes the statistic '15 penalties from 16 attempts' to Ross Barkley, whereas the source text explicitly states this record belongs to Leighton Baines. This is a critical consistency failure. Additionally, the summary lacks coherence by presenting these facts in a disjointed manner without connecting them logically (e.g., failing to mention that Barkley missed his penalty). The fluency is acceptable but suffers from poor sentence structure due to the factual error."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary contains a severe hallucination regarding consistency: it attributes the statistic '15 penalties from 16 attempts' to Ross Barkley, whereas the source text explicitly states this record belongs to Leighton Baines. This is a clear factual error not supported by the article. While the fluency is acceptable and other details are coherent with the text, the major inconsistency significantly lowers the score."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a critical hallucination by attributing Leighton Baines' penalty record (15 from 16) to Ross Barkley, which is a severe consistency failure. Additionally, the summary fails to mention that Barkley missed the penalty, a key detail making it irrelevant and misleading. The disjointed presentation further lowers coherence."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No adjustment needed. The lenient judge correctly identified a severe hallucination in the summary where the statistic '15 penalties from 16 attempts' is attributed to Ross Barkley instead of Leighton Baines as stated in the source text. This is a critical consistency error that warrants a low score."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary contains a critical hallucination by attributing Leighton Baines' penalty record (15 from 16) to Ross Barkley, which is a severe consistency failure. Additionally, the summary fails to mention that Barkley missed the penalty, a key detail making it irrelevant and misleading. The disjointed presentation further lowers coherence."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I have lowered the overall score from 3.0 to 2.5. While I initially agreed with the strict judge that the hallucination regarding Barkley's penalty statistics was a critical flaw warranting a low consistency score (2), I felt the other dimensions were slightly overrated in my initial assessment. The summary is very short and lacks logical flow due to the jarring factual error, so coherence should remain low (3). Fluency is acceptable but basic (4). Relevance is limited because it misses the actual outcome of the penalty save and the game result, which are key points, so 3 is fair. However, given the severity of the hallucination combined with the poor structural flow caused by it, a slight reduction in the overall score is warranted to reflect the summary's failure to accurately represent the source text."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 1.5,
+      "fluency": 3.5,
+      "relevance": 2.5,
+      "overall_judge": 2.5
+    }
+  }
+}

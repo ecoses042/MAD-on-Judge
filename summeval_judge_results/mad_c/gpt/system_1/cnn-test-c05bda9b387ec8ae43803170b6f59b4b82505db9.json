@@ -1,0 +1,66 @@
+{
+  "article_id": "cnn-test-c05bda9b387ec8ae43803170b6f59b4b82505db9",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow of information, as it abruptly shifts from the release of Yazidis to their reception without providing context about the circumstances of their release."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits critical information about the background of the Yazidis, the humanitarian crisis they faced, and the role of ISIS, which are essential to understanding the significance of the release."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary states 'more than 200 Yazidis' but does not clarify the exact number released, which is reported as 217 or 228 in the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary uses lowercase for 'isis' and 'yazidis', which is not standard practice in English and affects the overall professionalism of the text."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the release of the Yazidis, including details about who was released and their subsequent reception."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, specifically mentioning the release of Yazidis and the demographics of those released."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is written in fluent English, with no grammatical errors, making it easy to read."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the article, such as the number of Yazidis released and their condition, while avoiding unnecessary details."
+        }
+      ],
+      "remaining_concerns": [],
+      "provisional_score": 5
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

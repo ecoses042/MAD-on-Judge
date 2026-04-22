@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-2feca9acf532e33f1ab7442c442c8e19787d8d7b",
+  "system_name": "system_2",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, jumping between different points without proper transitions."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to cover key points such as the fish's initial reactions, the man's interactions, and the background information about the fish, making it incomplete."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'from within side the tank,' which should be 'from inside the tank.'"
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the idea of the man giving the fish a stroke without adequately explaining the context or significance of this action."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of actions, describing how Roland Giroux interacts with his fish, which reflects the structure of the original article."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the main activities described in the article, such as the man massaging the fish and the time spent interacting with it."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the man's interaction with his fish, which is the central theme of the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, such as 'from within side the tank' and inconsistent capitalization."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

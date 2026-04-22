@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-998cb27197db1fd299aff3322ac041ba4bf1148f",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is consistent with the source text and covers the key points (Doncaster's mid-table status, the match against Fleetwood, and the media team's challenge). However, it receives a lower fluency score due to poor punctuation (missing periods between sentences) and minor grammatical awkwardness ('compling' instead of 'compiling', though this is a typo rather than a hallucination). The direction aligns with the article."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from severe fluency issues due to poor punctuation (missing periods between sentences) and awkward phrasing ('compling' instead of 'compiling', missing articles like 'the'). While the content is consistent with the source text and covers relevant points, the lack of grammatical correctness and readability significantly lowers its quality. It fails to present a clear, logical flow due to the run-on style."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the fluency score from 3 to 2 because the summary lacks sentence boundaries (missing periods), making it a run-on string of text rather than a structured summary. Additionally, 'compling' is a significant spelling error that hinders readability more than just 'minor awkwardness.' I kept coherence at 3 (down from 4) because the lack of punctuation disrupts the logical flow and organization. Consistency remains 5 as no facts were hallucinated. Relevance remains 4 as key points are covered despite the poor presentation."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains significant fluency errors (missing periods, typos like 'compling', missing articles) that make it difficult to read and grammatically incorrect. While the content is consistent and relevant, these fundamental issues prevent a higher score in fluency or coherence."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is a run-on string of text lacking sentence boundaries and contains a significant spelling error ('compling'), which severely impacts fluency and readability. Therefore, I maintain the low fluency score (2) and the reduced coherence score (3). Consistency and relevance remain high as the content accurately reflects the source without hallucinations or missing key points."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No changes made. The lenient judge correctly identified that the summary suffers from severe fluency issues (missing punctuation, typos like 'compling', lack of articles) which significantly impact readability and grammatical correctness. These errors justify a low fluency score regardless of the content's consistency or relevance."
+      }
+    },
+    "final": {
+      "coherence": 3.0,
+      "consistency": 4.5,
+      "fluency": 2.0,
+      "relevance": 4.0,
+      "overall_judge": 3.0
+    }
+  }
+}

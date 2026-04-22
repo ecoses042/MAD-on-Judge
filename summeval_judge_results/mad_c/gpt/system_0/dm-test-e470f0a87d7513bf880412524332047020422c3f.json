@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-e470f0a87d7513bf880412524332047020422c3f",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, making it difficult to understand the main points."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces inaccuracies, such as mentioning 'the wind' instead of 'Gone With the Wind' and incorrectly stating 'the gray jackets' instead of 'the gray jacket and skirt ensemble'."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as improper sentence structure and punctuation issues, which hinder readability."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to capture key details about the dress's significance, its condition, and the auction context, focusing instead on trivial aspects."
+        }
+      ],
+      "provisional_score": 1
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary mentions the auction event and the amount fetched, which are key points from the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, making it difficult to understand the context."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces phrases like 'black zigzag applique' without proper context or explanation, which may confuse readers."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, such as 'the wind has fetched' and 'the heritage auctions offer the gray jackets.'"
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to cover important details, such as the significance of the dress and its historical context within the film."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "final": {
+      "coherence": 1,
+      "consistency": 1,
+      "fluency": 2,
+      "relevance": 1,
+      "overall_judge": 1.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-6372eff07fd3d6f578f90d6115e01747edccc095",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, jumping abruptly from the topic of satellites harvesting sunlight to a different topic about Tokyo researchers without a proper transition."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces information about the Tokyo researchers' laser system without establishing its relevance to the main topic of Dr. Quarterman's work, which could mislead readers."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention Dr. Quarterman's name or his role, which is crucial for understanding the context of the satellite project."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'rresearchers' instead of 'researchers', which affects readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear idea about the satellites orbiting the Earth and their purpose of converting sunlight into laser light, maintaining a logical flow."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points regarding the potential of solar power in Scotland and the laser system proposed by Tokyo researchers, which are significant aspects of the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits important details about Dr. Adrian Quarterman's work and the context of the lasers not being powerful enough for weaponization, which are crucial for understanding the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'rresearchers' instead of 'researchers', and lacks proper sentence structure, making it less readable."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

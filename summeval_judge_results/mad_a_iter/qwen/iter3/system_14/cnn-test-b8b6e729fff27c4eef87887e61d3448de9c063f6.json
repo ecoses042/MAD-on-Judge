@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-b8b6e729fff27c4eef87887e61d3448de9c063f6",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 2,
+        "overall_judge": 2.8,
+        "rationale_for_score": "The summary suffers from severe fluency issues due to a lack of capitalization and punctuation (e.g., 'spacex', 'dragon'), making it look unprofessional. More critically, it fails the relevance criterion by omitting the most significant news hook: the successful delivery of Dragon to the ISS and the specific reason for the landing failure (tipping over), reducing the summary to a generic statement about an unsuccessful attempt without context."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is consistent with the source text (no hallucinations) and grammatically acceptable. However, it suffers from poor coherence due to a lack of capitalization and sentence structure issues (e.g., 'spacex on falcon 9 rocket...'). More critically, it fails relevance by omitting the most significant event described in the article: the specific failure of the landing attempt ('too hard for survival', 'tipped over'), reducing the summary to a generic statement that misses the main news hook."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 2,
+        "overall_judge": 2.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary requires significant revision due to severe fluency issues (lack of capitalization and punctuation) and poor relevance (omitting the successful cargo delivery which is the primary news hook). No score reduction was necessary as the strict evaluation accurately identified these flaws."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate: the summary fails relevance by completely missing the core news event (the landing failure), and it suffers from poor fluency/coherence due to a lack of capitalization and sentence structure issues."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 1,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment that no score reduction was necessary. The strict evaluation correctly identified severe fluency issues (lack of capitalization and punctuation) and poor relevance (omitting the successful cargo delivery). The summary is a fragmented list of facts rather than a coherent paragraph, making it difficult to read."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "Lowered coherence and relevance scores significantly. The summary is a fragmented list of phrases rather than a coherent paragraph, failing to connect the launch success with the landing failure logically. Relevance was lowered because the summary misses the primary news hook: the specific reason for the failure (landing too hard/tipped over) and the context of it being the second attempt after a weather scrub. Fluency is lowered from 4 to 3 due to the lack of capitalization and sentence structure issues noted by the strict judge, which makes it read like rough notes rather than fluent English."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 4.5,
+      "fluency": 2.0,
+      "relevance": 1.0,
+      "overall_judge": 2.0
+    }
+  }
+}

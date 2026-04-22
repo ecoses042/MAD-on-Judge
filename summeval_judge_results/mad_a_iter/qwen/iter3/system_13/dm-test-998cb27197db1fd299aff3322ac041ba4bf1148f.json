@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-998cb27197db1fd299aff3322ac041ba4bf1148f",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is consistent with the source text and covers key points (Fleetwood's situation, Doncaster's media challenge, the 0-0 draw). However, it suffers from significant fluency issues due to missing spaces between words (e.g., 'saturday', 'compling'), which makes it difficult to read. It is leniently scored because the content direction aligns perfectly with the article and there are no hallucinations."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from severe fluency issues due to poor punctuation (missing capitalization and apostrophes) and a lack of sentence structure, making it difficult to read. While the content is consistent with the source text and covers relevant points, the mechanical errors significantly degrade quality. Coherence is average as the sentences are fragmented but follow the text's flow."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the fluency score from 3 to 2 because the missing spaces between words (e.g., 'saturday', 'compling') are severe enough to make the text difficult to read and grammatically incorrect, not just a minor issue. The coherence is also slightly reduced to 3 as the lack of spacing disrupts the logical flow and sentence structure. Consistency remains 5 as no facts were hallucinated. Relevance stays at 4 as key points are covered despite the formatting errors."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains severe mechanical errors (missing capitalization for proper nouns like 'Saturday', 'Fleetwood Town', 'Doncaster'; missing apostrophes in 'saturday', 'fleetwood', 'doncaster', 'compling'); and lacks standard sentence structure, making it difficult to read. These issues significantly impact fluency and coherence. The content is consistent with the source and covers relevant points, but the poor execution prevents a higher score."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The missing spaces between words (e.g., 'saturday', 'compling') constitute a severe fluency issue that makes the text difficult to read and grammatically incorrect, warranting a score of 2 rather than 3. Consequently, coherence is also impacted by this structural disruption. Consistency and relevance remain high as the content accurately reflects the source without hallucinations or missing key points."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 1,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding consistency and relevance; the summary accurately reflects the source text without adding external facts or omitting key points like the '0-0 draw' and the specific challenge faced by the media team. However, I must lower my scores for fluency and coherence due to severe mechanical errors that were overlooked in the initial strict evaluation. The summary lacks capitalization for proper nouns (Saturday, Fleetwood Town, Doncaster), contains a typo ('compling'), and uses lowercase for sentence starters ('saturday', 'doncaster'). These errors make the text difficult to read and grammatically incorrect, justifying a score of 1 for fluency. Consequently, coherence also drops to 2 because the lack of standard sentence structure disrupts the logical flow."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 4.5,
+      "fluency": 1.5,
+      "relevance": 3.5,
+      "overall_judge": 2.5
+    }
+  }
+}

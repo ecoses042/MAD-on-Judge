@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-54b857a66cbd8473d6732e5da52d48612e636a37",
+  "system_name": "system_2",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow of information, as it abruptly shifts from the incident to the man's actions without providing context or a cohesive narrative."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the extent of the man's injuries, the response from authorities, and the man's change of story, which are crucial for understanding the incident."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains awkward phrasing and punctuation issues, such as inconsistent spacing around commas and quotation marks, which detracts from readability."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the man's age consistently, as it states 'passenger jin pai , 35 ,' but does not clarify his age in the context of the incident."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, detailing how the incident occurred and the passenger's actions leading up to his injury."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, including the passenger's age, location, and the reason for his actions."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the incident, such as the passenger's actions and the resulting injury, without including trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as the lack of proper capitalization and punctuation, which affects its readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "tie",
+        "consistency": "tie",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

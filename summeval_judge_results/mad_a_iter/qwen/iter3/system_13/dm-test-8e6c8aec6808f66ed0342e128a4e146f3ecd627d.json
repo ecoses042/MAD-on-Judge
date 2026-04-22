@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-8e6c8aec6808f66ed0342e128a4e146f3ecd627d",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is consistent with the source text and uses fluent English. However, it suffers from a significant coherence issue: it repeats the exact same sentence twice (once at the start and once in the middle), which makes the text redundant and poorly structured. Additionally, while relevant to the topic, it omits key details like her admission of prior misconduct, the specific charges regarding breast touching, and the school's response, resulting in a lower relevance score."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is coherent and relevant but suffers from a significant fluency issue (repetitive phrasing) and a minor consistency error regarding the specific dates mentioned in the source text versus the summary's generalization."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "The lenient judge's score for coherence (4) was too high given the summary repeats the exact same sentence twice in a row. This is a severe structural flaw that disrupts logical flow and makes the text redundant; therefore, the score must be lowered to reflect this significant lack of organization. Consistency remains 5 as no hallucinations are present. Fluency is maintained at 4 despite the repetition. Relevance stays at 3 because key details from the article (admission of prior misconduct, specific charges regarding breast touching, school response) are indeed omitted."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "Lowered scores significantly due to severe fluency issues caused by extreme repetition (the summary repeats the exact same sentence structure and facts twice in a row). Also lowered consistency score because the summary fails to distinguish between the two separate incidents described in the source text (one involving kissing/breast touching admitted in April, the other involving sex in January), instead presenting them as identical events."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "Agreed with the strict judge's assessment on coherence. The summary repeats the exact same sentence twice ('now she has been arrested again after another pupil...'), which is a severe structural flaw causing redundancy and poor logical flow. Consistency remains perfect as no facts were hallucinated. Fluency is acceptable despite the repetition. Relevance is low because significant context from the article (the prior arrest details, the specific admission of misconduct, and the school's response) was omitted."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 1,
+        "relevance": 3,
+        "overall_judge": 1.8,
+        "adjustment_notes": "The lenient judge's assessment was correct to lower the scores but perhaps not harsh enough given the severity of the errors. The summary is extremely poor in fluency due to verbatim repetition of the first sentence and a slightly modified second sentence that adds no new information, creating a disjointed and redundant structure (Coherence/Fluency). Crucially, the summary fails consistency checks because it presents two distinct legal incidents (one involving kissing/breast touching admitted in April, the other involving sex in January) as if they are identical events ('sex with pupil... on consecutive nights' repeated for both), which misrepresents the source text's distinction between the charges. Relevance is low because the summary ignores the significant context of her admission to the first charge and the school's response, focusing only on the repetitive accusation."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 3.0,
+      "fluency": 2.5,
+      "relevance": 3.0,
+      "overall_judge": 2.4
+    }
+  }
+}

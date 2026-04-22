@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-d3c9ce137ba24a69253508b3416630465c050ae4",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, making it difficult to understand the main points."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the idea of 'her hope is that the video was to counteract stereotypes,' which is not clearly stated in the original article and misrepresents her intentions."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as the incorrect use of 'was' instead of 'is' in 'her hope is that the video was to counteract stereotypes'."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to include key details about Dayna's experiences with bullying, her motivations for dancing, and her activities like motivational speaking."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear introduction of Dayna Dobias and her background, establishing a logical flow of information about her disability and her intentions."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on Dayna's goal of inspiring others and counteracting stereotypes, which are key points from the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits important details about Dayna's experiences with bullying and her activities, such as motivational speaking, which are present in the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, such as the repetition of 'dayna' and the incorrect tense in 'was to counteract' instead of 'is to counteract'."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-eeef09d26cf30c2124c0399b08eedc6321fe5d20",
+  "system_name": "system_4",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, jumping between unrelated points without clear connections."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary incorrectly states that Neymar's sister Rafaella led the national side, which is factually incorrect as Neymar is the captain."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary includes trivial details like taking a selfie, which detracts from the main points about the basketball match and Neymar's performance."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The use of abbreviations like 'lrb' and 'rrb' disrupts the readability and fluency of the text."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear structure by mentioning Neymar, his team-mate Dani Alves, and the context of their support for Barcelona."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding Neymar's activities and the standings of Real Madrid in the Euro League."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary includes key points about Neymar's involvement in both basketball and football, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as the incorrect phrasing 'led his national side' instead of 'led Brazil' and lacks proper capitalization."
+        },
+        {
+          "criterion": "coherence",
+          "reason": "The flow of information is disrupted by the abrupt transition between topics, making it less cohesive."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

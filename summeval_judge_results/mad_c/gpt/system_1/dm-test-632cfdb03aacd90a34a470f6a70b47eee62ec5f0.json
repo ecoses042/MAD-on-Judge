@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-632cfdb03aacd90a34a470f6a70b47eee62ec5f0",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow and does not connect the information about Gnabry's injury and his return to play."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key information about Gnabry's feelings regarding his recovery and his previous performance before the injury."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that Gnabry has not featured for the first team since March last year without mentioning the specific reason for this absence."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary uses lowercase letters for the name 'Serge Gnabry' and lacks proper sentence structure, making it less readable."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events regarding Gnabry's recent match and his absence from the first team."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article about Gnabry's playing time and his injury history."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of Gnabry's return to play and his previous absence due to injury."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization and punctuation, making it less readable."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits important details such as Gnabry's feelings about his recovery and the context of his performance."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

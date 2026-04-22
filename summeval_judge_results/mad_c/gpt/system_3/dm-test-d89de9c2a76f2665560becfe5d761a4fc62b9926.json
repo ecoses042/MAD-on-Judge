@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-d89de9c2a76f2665560becfe5d761a4fc62b9926",
+  "system_name": "system_3",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, jumping between unrelated points without proper transitions."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details about the match, such as the score, the context of the 'mini-derby', and the performance of other players, focusing instead on trivial aspects."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that entry was 'probably as far removed from Sunday’s big match as you could imagine,' which is vague and does not reflect the article's content accurately."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as the awkward phrasing 'entry was probably as far removed from Sunday’s big match as you could imagine,' which disrupts readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear focus on Callum Gribbin's role as the matchwinner, which is a key point from the article."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary highlights significant aspects of the match, such as the setting and the contrast to a larger event, which are relevant to understanding the context."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits important details about the match, such as the scoreline and the performance of other players, which could mislead readers about the game's significance."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains some awkward phrasing, such as 'entry was probably as far removed from sunday's big match as you could imagine,' which could be clearer."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

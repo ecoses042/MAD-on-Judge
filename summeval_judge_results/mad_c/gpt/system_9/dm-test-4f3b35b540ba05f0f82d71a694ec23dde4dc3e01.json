@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-4f3b35b540ba05f0f82d71a694ec23dde4dc3e01",
+  "system_name": "system_9",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information and does not connect the events in a structured manner."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the presence of passengers in the car and the fact that no one was injured, which are important for understanding the incident."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary uses lowercase letters at the beginning of sentences, which is grammatically incorrect and affects readability."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the time of the incident, which is a relevant detail from the source."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with the argument, followed by the act of arson, and concluding with the investigation."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the key details from the article, such as the attempted carjacking and the investigation by the fire department."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most critical aspects of the incident, including the argument, the arson, and the investigation."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization and punctuation, making it less readable."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary could benefit from more varied sentence structure to enhance readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

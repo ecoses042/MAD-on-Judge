@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-2c37d44d03ce2e91310339d884d33ee5aabf9abc",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 2,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is fluent and covers most key points (time, location, event, injury, charges). However, it contains a significant consistency error: the text states 'his parents jumped in and pulled him to safety,' whereas the source explicitly says 'He was rescued by his parents from the pit' but does not describe them jumping into the pit themselves. This hallucination of an action violates the strict consistency rule. Additionally, the summary omits the crucial detail that the child was 'dangled over the edge,' which is central to the incident's nature and the subsequent charges."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is fluent and covers the main events well. However, it contains a significant consistency error: the source states the child was rescued by his parents *before* firefighters/paramedics arrived, whereas the summary says 'parents jumped in... before paramedics arrived' which implies the rescue happened immediately upon arrival or conflates the timeline slightly (the source explicitly mentions the rescue happened prior to emergency services). Additionally, the summary omits the specific detail that the child was 'dangled,' which is a key fact from the source. Despite these issues, it avoids severe hallucinations and captures the general narrative."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 2,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a significant consistency error by stating 'parents jumped in,' which is not supported by the text (which says they rescued him from the pit). Additionally, the omission of the fact that the child was 'dangled over the edge' is a critical failure in relevance and consistency, as this action is the primary cause of the incident and the reason for the potential charges. The scores remain unchanged."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "No changes made. The lenient judge's assessment of consistency (3) is accurate because the summary omits the critical detail that the child was 'dangled' over the edge, which is a central fact in the source text. Additionally, while the summary mentions parents pulling him to safety before paramedics arrived, it lacks the nuance that the rescue happened immediately upon the fall, not necessarily waiting for arrival, though this is a minor point compared to the missing 'dangling' detail. The scores reflect these specific omissions without being overly harsh."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 2,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "Scores remain unchanged. The lenient judge correctly identified the critical consistency error ('parents jumped in' vs 'rescued him from the pit') and the significant relevance failure (omission of the child being 'dangled over the edge'). These are factual contradictions with the source text and omissions of the primary cause of the incident, warranting low scores."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "No changes made. The strict judge's criticism regarding the omission of the 'dangled' detail is valid; this is a central fact explaining the accident mechanism that the summary misses, justifying the lower consistency score. The summary also fails to mention the specific legal action (child endangerment charges) which was explicitly stated as planned for Monday, further supporting the relevance/consistency critique. The fluency score remains high as the text is grammatically correct and readable."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 2.5,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 3.5
+    }
+  }
+}

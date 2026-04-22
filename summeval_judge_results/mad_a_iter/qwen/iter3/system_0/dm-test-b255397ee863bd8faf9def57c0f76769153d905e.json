@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-b255397ee863bd8faf9def57c0f76769153d905e",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from severe grammatical errors and sentence fragmentation (e.g., 'security officers described as ` over-zealous '` lacks a verb), reducing fluency and coherence. More critically, it fails the consistency criterion by attributing the quote 'ludicrous' to the security staff's reaction ('he has labelled the security checks ` ludicrous ' and said staff reacted in the situation'), whereas the source text explicitly states that the *father* (Phil) labeled the checks ludicrous and criticized how the staff reacted. The summary also omits key context regarding the resolution (replacement toy) which impacts relevance."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from severe fluency issues due to poor sentence structure and run-on sentences (e.g., 'security officers described as ` over-zealous ' by the boy 's father . he took exception...' lacks a clear subject for the second clause). While it captures the main events and quotes accurately (consistency), the lack of grammatical correctness makes it difficult to read. The direction aligns with the source, but the mechanical errors prevent a higher score."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a critical factual error (consistency) by misattributing the quote 'ludicrous' to the security staff instead of the father, which fundamentally changes the meaning. Additionally, the sentence structure is fragmented and grammatically incorrect (e.g., missing verbs), severely impacting fluency and coherence. The omission of the resolution (buying a new toy) further reduces relevance. Therefore, I have lowered my initial generous scores to reflect these significant flaws."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "The lenient judge's scores are accepted without change. The summary indeed suffers from severe fluency issues (run-on sentences, lack of clear subjects in the second clause) and poor sentence structure, which justifies a low fluency score. While the content is consistent with the article and covers relevant points, the mechanical errors prevent it from being well-structured or easy to read, keeping coherence at 3. No points were raised as the lenient judge's assessment aligns with the actual text provided."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary suffers from severe grammatical errors and poor sentence structure (e.g., 'security officers described as ` over-zealous '` lacks a verb), which significantly impacts fluency and coherence. The content is consistent and relevant, but the mechanical flaws prevent it from being well-written."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary contains a critical factual error (consistency) by misattributing the quote 'ludicrous' to the security staff instead of the father, which fundamentally changes the meaning. Additionally, the sentence structure is fragmented and grammatically incorrect (e.g., missing verbs), severely impacting fluency and coherence. The omission of the resolution (buying a new toy) further reduces relevance."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 2.5,
+      "fluency": 2.5,
+      "relevance": 3.0,
+      "overall_judge": 2.5
+    }
+  }
+}

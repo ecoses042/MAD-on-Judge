@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-e880fda4c25289f8325574246f0f8ed4ff5eb26b",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, jumping between points without proper transitions."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the term 'collector’s paradise' without explaining its significance or context, which may mislead readers about the nature of the property."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention the auction date and price range, which are key details that provide context for the property's sale."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'kitchen, kitchen' is repeated, indicating a lack of proofreading and affecting the overall fluency."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, describing the home as a collector's paradise and highlighting its untouched nature and original features."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information in the article, mentioning the original bathroom, kitchen, and stained-glass windows without introducing any new facts."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the article, emphasizing the home's unique features and its status as a collector's paradise."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains some grammatical issues, such as the repetition of 'kitchen' and awkward phrasing, which affects its overall readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 4,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 3.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

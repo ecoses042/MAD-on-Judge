@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-9b5a04b9879fe716a2dcd66dd331f99534603c16",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is well-structured, fluent, and consistent with the source text. It captures the main points: Katter's statement, his background, his sympathy for Gordon, and the resulting criticism. It omits some specific details (like the 'black puppet' quote or the defense of the term), but given the lenient rules to avoid penalizing minor omissions unless they are hallucinations, this is acceptable. The relevance is slightly lower than perfect because it misses the most controversial specific detail ('black puppet') which was central to the article's narrative, but it still covers the key events accurately."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and consistent with the source text, but it suffers from poor relevance due to severe truncation. It omits critical details such as Gordon's admission of a criminal past, his decision to remain in parliament as an independent (which caused chaos), Katter's specific defense regarding his 'dark' skin and Cloncurry origin, and the social media backlash regarding the terminology. By cutting off these key points, the summary fails to capture the full scope and significance of the article."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is grammatically correct and factually consistent, but it suffers from severe truncation that renders it incomplete regarding relevance. It misses the pivotal outcome (Gordon remaining as an independent causing chaos), Katter's specific defense of his terminology, and the nature of the social media backlash. Therefore, I maintain the lower relevance score."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is well-structured and consistent with the source text. While it omits the specific controversial quote ('black puppet') which was central to the article's narrative (affecting relevance), this is a minor omission rather than a hallucination or incoherence. The scores reflect that the summary captures the key events accurately but misses the most significant detail."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding coherence and consistency. The summary is well-structured, factually accurate based on the text provided, and grammatically correct. However, I concur that the relevance score must remain low (3) because the summary is severely truncated. It omits the critical outcome of Billy Gordon remaining as an independent and causing chaos in parliament, Katter's specific defense regarding his 'black puppet' terminology, and the detailed nature of the social media backlash. These omissions mean the summary fails to cover the most important information from the source article."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "Adjusted the relevance score down from 4 to 3. While the summary captures the basic events (Katter's statement, Gordon's situation, Katter's background), it completely omits the central controversy of the article: the specific phrase 'black puppet on a string' and the subsequent defense regarding racial overtones. The strict judge correctly identified this as a significant omission affecting relevance; I agree that missing the core subject matter (the racist terminology debate) makes the summary less relevant than a 4 would suggest."
+      }
+    },
+    "final": {
+      "coherence": 4.5,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 3.0,
+      "overall_judge": 4.3
+    }
+  }
+}

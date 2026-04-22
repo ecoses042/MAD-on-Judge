@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-404f859482d47c127868964a9a39d1a7645dd2e9",
+  "system_name": "system_7",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow of information, as it jumps between points without proper transitions or context."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the specific items Stiviano received, the context of the lawsuit, and the implications of the court's decision, which are crucial for understanding the significance of the case."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that Stiviano was sued by 'Donald Sterling's wife' without mentioning that it was specifically about the gifts, which is a critical aspect of the lawsuit."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains a fragmented structure and lacks smooth transitions, making it less readable."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, outlining the key events of the court ruling and the parties involved."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, including the lawsuit details and the parties' claims."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important aspects of the article, such as the court ruling and the accusations made by Shelly Sterling."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary could be improved with more varied sentence structure and smoother transitions to enhance readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

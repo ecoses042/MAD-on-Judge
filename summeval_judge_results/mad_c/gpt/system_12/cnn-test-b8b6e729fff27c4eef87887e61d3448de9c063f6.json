@@ -1,0 +1,71 @@
+{
+  "article_id": "cnn-test-b8b6e729fff27c4eef87887e61d3448de9c063f6",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, jumping abruptly from Musk's tweet to the docking of the Dragon without connecting the events."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details about the failed landing attempt and the significance of the mission, focusing instead on a single tweet and the docking, which are not the most important aspects of the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the context of the failed landing attempt, which is a critical part of the article's narrative."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The use of colons and spacing in the summary is awkward and disrupts the flow, making it less fluent."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with the successful ascent and the status of the Dragon spacecraft."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding the rocket's landing attempt and the Dragon's mission to the space station."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on key points such as the rocket's landing attempt and the Dragon's docking with the space station, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as the incorrect spacing around punctuation and the use of colons, which affects readability."
+        },
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a complete narrative flow, as it does not mention the context of the launch or the significance of the mission."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

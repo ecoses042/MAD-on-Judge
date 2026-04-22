@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-c6667409fcdea2c89ba9f0d3a72c50e3967b4b1b",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary contains a severe hallucination: it attributes the statistic 'scored 15 penalties from 16 attempts' to Roberto Martinez instead of Leighton Baines (as stated in the source text). This is a critical consistency failure. Additionally, the summary lacks coherence and fluency due to poor sentence structure ('the roberto martinez says') and fails to accurately summarize the main event regarding Barkley's miss."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary contains a severe hallucination in the second sentence: it attributes Leighton Baines' penalty record (15 from 16) to Roberto Martinez, whereas the article clearly states Baines achieved this. This is a major consistency failure. The first and third sentences are accurate but lack grammatical polish (e.g., 'martinez has scored', 'martinez says barkley is in his rights'), affecting fluency and coherence slightly. Due to the clear factual error regarding the manager, the score cannot be leniently raised above 2."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a critical hallucination where it attributes Leighton Baines' penalty record to Roberto Martinez ('roberto martinez has scored 15 penalties...'), which is factually incorrect based on the source text. This is a severe consistency failure that cannot be overlooked. Additionally, the sentence structure is poor and lacks proper capitalization/punctuation, affecting fluency and coherence. The summary fails to capture the main event (Barkley's miss) effectively due to this confusion."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding consistency. The summary explicitly attributes Leighton Baines' penalty record ('15 penalties from 16 attempts') to Roberto Martinez in the second sentence ('roberto martinez has scored...'), which is a severe hallucination contradicting the source text where Baines is clearly identified as the scorer. This factual error is significant enough to warrant a low consistency score (2). The fluency score of 4 is acceptable given the minor capitalization and punctuation issues, but the coherence and relevance are impacted by the disjointed flow caused by the hallucination and the lack of context in the first sentence. No points should be raised for this specific error."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary contains a critical hallucination where it attributes Leighton Baines' penalty record to Roberto Martinez ('roberto martinez has scored 15 penalties...'), which is factually incorrect based on the source text. This is a severe consistency failure that cannot be overlooked. Additionally, the sentence structure is poor and lacks proper capitalization/punctuation, affecting fluency and coherence. The summary fails to capture the main event (Barkley's miss) effectively due to this confusion."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a severe factual error (hallucination) where it attributes Leighton Baines' penalty record to Roberto Martinez. This is a critical consistency failure that significantly impacts the quality of the summary. The coherence and relevance scores are appropriately lowered due to this confusion and the lack of necessary context regarding Barkley's miss or the match outcome details beyond the scoreline."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 1.5,
+      "fluency": 3.5,
+      "relevance": 2.5,
+      "overall_judge": 2.5
+    }
+  }
+}

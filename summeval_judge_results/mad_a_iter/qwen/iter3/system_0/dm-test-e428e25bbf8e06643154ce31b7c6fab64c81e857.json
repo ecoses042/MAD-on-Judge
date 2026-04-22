@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-e428e25bbf8e06643154ce31b7c6fab64c81e857",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary contains severe hallucinations and factual errors regarding consistency. It claims 'a single fixed device was switched off' whereas the article states 'every single fixed device' (approx 300) were turned off. It also incorrectly attributes the enforcement to 'mobile cameras' instead of 'mobile camera units' and omits crucial context about traffic officers, making the summary factually inconsistent with the source."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary contains a significant hallucination in the consistency criterion: it claims 'a single fixed device was switched off,' whereas the article explicitly states 'every single fixed device was switched off.' This is a clear factual error regarding the scope of the event. Additionally, the fluency is poor due to awkward phrasing ('it is a speed camera has been turned round') and grammatical issues ('the speed has been been taken'). While it covers the main points (relevance) and follows the general direction, the hallucination and grammar prevent a higher score."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The strict judge's assessment is accurate and justified. The summary contains significant factual errors (hallucinations) regarding the number of devices switched off ('a single' vs 'every single') and misrepresents the enforcement methods by omitting traffic officers and altering the phrasing of mobile units. These are critical consistency failures that warrant a low score. No adjustment is needed; the strict judge was correct to penalize these errors heavily."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 2.8,
+        "adjustment_notes": "I lowered the fluency score from 3 to 2 because the sentence 'it is a speed camera has been turned round' is grammatically incorrect and awkward, and 'the speed has been been taken' contains a clear typo ('been' repeated) that makes the text difficult to read. I maintained the consistency score at 2 due to the significant factual error regarding 'a single fixed device' versus 'every single fixed device'. The coherence remains low due to the choppy, disjointed sentence structure."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "adjustment_notes": "No adjustment needed. The lenient judge correctly identified that the summary contains critical factual errors (hallucinations) regarding the number of devices switched off ('a single' vs 'every single') and omits key enforcement methods like traffic officers. These are severe consistency failures that justify the low scores."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 2.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. The fluency score is correctly lowered to 2 due to the grammatical error ('it is a speed camera has been...') and the typo ('been been'). The consistency score remains at 2 because the summary incorrectly states 'a single fixed device' was switched off, whereas the source explicitly says 'every single fixed device'. The coherence is low due to the choppy structure. No scores need raising; the strict judge was accurate in identifying these specific flaws."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 1.5,
+      "fluency": 2.0,
+      "relevance": 3.5,
+      "overall_judge": 2.4
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-e428e25bbf8e06643154ce31b7c6fab64c81e857",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information and does not connect the points effectively."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the specific location of the camera, the context of the camera being pointed at a house, and the council's plans for future enforcement."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'around 300 speed and traffic camera' contains a grammatical error; it should be 'cameras'."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately implies that the camera has not been working for two years without mentioning the context of the fixed devices being switched off."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the status of speed cameras in the West Midlands."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article about the decommissioning of speed cameras and the awareness of Birmingham City Council."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points regarding the speed cameras being turned off and the council's awareness, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as missing articles and incorrect verb forms, which affect readability."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits important details, such as the specific camera pointed at the house and the council's plans for future enforcement."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

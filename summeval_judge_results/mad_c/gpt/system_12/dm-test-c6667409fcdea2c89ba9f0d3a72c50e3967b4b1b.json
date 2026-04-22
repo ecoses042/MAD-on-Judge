@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-c6667409fcdea2c89ba9f0d3a72c50e3967b4b1b",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, abruptly ending after mentioning Leighton Baines without completing the thought or providing context."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the term 'untried' to describe Barkley, which is not present in the original article and misrepresents his experience."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention the significance of Barkley's penalty miss and the subsequent goal by Mirallas, which are key points in the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains fragmented sentences that disrupt the flow, making it less readable."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with Barkley's missed penalty and mentioning the context of the match."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the events of the match, including the penalty awarded and the outcome of the game."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key incident of Barkley's missed penalty and its significance in the context of the match."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains a fragment at the end ('Leighton Baines , who has scored 15 penalties from 16 attempts in the Premier League .') that disrupts the flow and lacks a complete thought."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

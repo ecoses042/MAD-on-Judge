@@ -1,0 +1,71 @@
+{
+  "article_id": "cnn-test-88c2481234e763c9bbc68d0ab1be1d2375c1349a",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information and jumps between points without proper transitions."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the evacuation of everyone on board, the cause of the fire, and the context of the band's upcoming performance."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention that the bus belonged to Lady Antebellum, which is a significant detail from the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary has inconsistent capitalization and punctuation, such as 'lady antebellum' instead of 'Lady Antebellum'."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with the bus catching fire and mentioning the video capture, which helps in understanding the situation."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the events described in the article, including the involvement of Michael Barnett and Hillary Scott's response."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the incident, such as the fire, the video capture, and the response from Hillary Scott, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization and punctuation, making it less readable and fluent."
+        },
+        {
+          "criterion": "coherence",
+          "reason": "While the summary is coherent, it could benefit from additional context about the safety of those on board and the cause of the fire for a more complete understanding."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-f468efac7b3c54f8c42c2c81dff108c52ebe0d7d",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, as it abruptly shifts from Hazard's goal to Terry's challenge without connecting the two events."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits the crucial context that pundits believed Terry's challenge was a foul, which is a significant aspect of the original article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention the reactions of the pundits, which are key to understanding the controversy surrounding the goal."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'scored give his side' contains a grammatical error and should be 'scored to give his side'."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events leading to the goal, starting with Hazard's score and detailing the involvement of Fabregas and Oscar."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the events described in the article, including Hazard's goal and Terry's challenge on Falcao."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key moments of the match, specifically the goal and the controversial challenge, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'scored give his side a 1-0 lead' contains a grammatical error and disrupts the flow of the summary."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 4,
+      "relevance": 3,
+      "overall_judge": 3.2,
+      "winner_side": {
+        "coherence": "tie",
+        "consistency": "tie",
+        "fluency": "defender",
+        "relevance": "tie"
+      }
+    }
+  }
+}

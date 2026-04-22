@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-e06ff0eb7c4fa4416fda84a9a239b15480c5a9d9",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information and does not adequately convey the main points of the advertisement."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details about the man's requirements and personal description, which are crucial to understanding the context of the advertisement."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately presents the man's name as 'Rich' without clarifying that this is how he identified himself, which could lead to confusion."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The use of backticks around phrases is unconventional and disrupts the readability of the summary."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow by introducing the main subject, the advertisement, and the key requirements for the potential partner."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important aspects of the advertisement, such as the requirements for the partner and the promise made by Rich."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits several details from the original article, such as Rich's personal description and additional benefits he offers, which could provide a fuller picture."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The use of backticks around 'also a princess when need to be' is unconventional and may disrupt the reading flow."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

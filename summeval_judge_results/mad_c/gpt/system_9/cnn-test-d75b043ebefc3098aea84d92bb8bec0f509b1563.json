@@ -1,0 +1,71 @@
+{
+  "article_id": "cnn-test-d75b043ebefc3098aea84d92bb8bec0f509b1563",
+  "system_name": "system_9",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information and does not provide sufficient context about the incident."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the number of militants killed, the involvement of Pakistani authorities, and the historical context of Jaish al Adal's actions."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary uses lowercase letters for the beginning of sentences, which is grammatically incorrect."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the Iranian officials' request to Pakistan, which is a significant part of the article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information by stating the key event (the killing of Iranian border guards) followed by the identification of the responsible group."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding the attack and the group that claimed responsibility, without introducing any new facts."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important information, specifically the deaths of the border guards and the claim of responsibility by Jaish al Adal, which are the central points of the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization and punctuation, making it less fluent and harder to read."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits additional important context, such as the details about the militants crossing from Pakistan and the response from Iranian and Pakistani authorities."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

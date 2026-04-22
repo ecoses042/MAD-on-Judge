@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-998cb27197db1fd299aff3322ac041ba4bf1148f",
+  "system_name": "system_2",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow and does not effectively convey the main events of the match."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the 0-0 scoreline and the media team's challenge in compiling match highlights, which are essential to understanding the context."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as inconsistent capitalization and spacing around punctuation."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the phrase 'a must-see video for all football fans' without context, which is not directly supported by the article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear narrative about the match between Doncaster and Fleetwood, indicating the lack of excitement and the context of the teams' situations."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary captures the essence of the match being a goalless draw and the implications for both teams, which are key points from the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits important details such as the specific mention of the match highlights and the media team's challenge, which are relevant to understanding the context of the match."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as the lack of proper capitalization and punctuation, which affects readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-eeef09d26cf30c2124c0399b08eedc6321fe5d20",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary contains severe hallucinations and factual errors inconsistent with the source text. It incorrectly states Real Madrid beat Chile (Neymar's Brazil team did), claims Dani Alves scored goals in a basketball match (impossible), and misidentifies Rafaella as 'the club's sister' instead of Neymar's sister. These are clear failures in consistency."
+      },
+      "strict": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 1,
+        "overall_judge": 1.2,
+        "rationale_for_score": "The summary contains severe hallucinations and factual errors inconsistent with the source text. It falsely claims Real Madrid beat Chile (Neymar's Brazil team did), misidentifies the 'El Clasico' match as a basketball game played by Real Madrid against Chile, invents that Dani Alves scored goals in the Euro League contest, and incorrectly states Neymar joined his sister on Sunday when the text says they watched the match on Thursday. The summary is factually broken and fails all consistency criteria."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The lenient judge's assessment is correct and the scores should not be raised. The summary contains severe factual hallucinations that contradict the source text: it claims Real Madrid beat Chile (source says Brazil did), states Dani Alves scored goals in a basketball match (impossible per source context), and misidentifies Rafaella as 'the club's sister' instead of Neymar's sister. These are critical consistency failures."
+      },
+      "lenient": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 1,
+        "overall_judge": 1.2,
+        "adjustment_notes": "The strict judge's assessment is entirely correct. The summary contains severe hallucinations (claiming Real Madrid beat Chile instead of Brazil, inventing that Dani Alves scored goals in a basketball game) and factual errors regarding dates and events. These are not minor issues but fundamental failures of consistency with the source text. Therefore, I maintain the strict judge's low scores without adjustment."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "Agree with the strict judge. The summary contains severe factual hallucinations (Real Madrid beating Chile instead of Brazil, Dani Alves scoring in a basketball game) and misidentifies relationships (Rafaella as 'the club's sister' instead of Neymar's). These are critical consistency failures that cannot be overlooked."
+      },
+      "strict": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 1,
+        "overall_judge": 1.2,
+        "adjustment_notes": "The lenient judge correctly identified that the summary contains severe hallucinations and factual errors not present in the source text (e.g., claiming Real Madrid beat Chile instead of Brazil, inventing goals by Dani Alves in a basketball game). These are fundamental consistency failures. The strict judge's assessment was accurate; no points should be raised."
+      }
+    },
+    "final": {
+      "coherence": 1.5,
+      "consistency": 1.0,
+      "fluency": 2.5,
+      "relevance": 1.5,
+      "overall_judge": 1.6
+    }
+  }
+}

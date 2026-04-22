@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-f5fead94ee884800e84a212cc0edc78b11c4ba9f",
+  "system_name": "system_5",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, as it abruptly ends without connecting the points about Manchester City's interest and the discussions held."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the interest from Arsenal, the discussions with Anderlecht's chairman, and the context of Manuel Pellegrini's intentions, which are crucial for understanding the significance of the signing."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary uses lowercase for the beginning of sentences, which is grammatically incorrect and affects readability."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the player's age explicitly in the context of his talent, which is a significant detail from the article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear focus on Manchester City's interest in Evangelos Patoulidis, maintaining a logical flow of information."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the key points from the article, including the player's age, position, and the fact that he rejected a move to Barcelona."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary highlights the most important information about the player's talent and the interest from Manchester City, avoiding trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization and punctuation, making it less fluent and harder to read."
+        },
+        {
+          "criterion": "coherence",
+          "reason": "The summary does not mention the discussions held with Anderlecht or the context of building for the future, which could enhance the overall coherence."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

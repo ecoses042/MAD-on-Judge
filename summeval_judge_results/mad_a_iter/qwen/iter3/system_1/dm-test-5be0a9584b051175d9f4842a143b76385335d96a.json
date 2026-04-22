@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-5be0a9584b051175d9f4842a143b76385335d96a",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from severe redundancy (stating the same point about incentivized contracts twice) and truncation, cutting off the article mid-sentence without concluding the story. While it avoids hallucinations (consistent with the text), it fails to capture the main narrative arc regarding the specific match result, the stakes of finishing fourth, or the manager's admission of failure, making it an incomplete summary."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary is extremely poor in relevance and coherence because it truncates the text after the second sentence, completely ignoring the majority of the article's content (the specific match result, the financial stakes of £12m, the manager's quotes, the upcoming transfer battle, etc.). While the included sentences are factually consistent with the source, the summary fails to capture the 'most important information' as required by the relevance criterion. The repetition of the fairplay clause suggests a lack of synthesis rather than just summarization."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is severely truncated, ignoring the majority of the article including the specific match result, the total financial stakes (£12m), the manager's quotes about performance, and the transfer market context. While the included text is factually consistent (score 5) and grammatically acceptable (score 4), the lack of synthesis (repeating the fairplay clause twice) and the failure to cover key points result in a very low relevance score."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I raised the consistency score to 5 because the summary strictly adheres to the facts presented in the article without hallucinations. I lowered coherence and fluency slightly due to the repetitive phrasing ('incentivised contracts' mentioned twice) and the lack of capitalization/punctuation which affects readability, though these are minor compared to the content issues. I significantly lowered relevance because the summary fails to capture the core narrative: the specific match result (loss to Man Utd), the precarious league position (4th place), the manager's admission of failure ('thrown it into the garbage'), and the transfer market implications. The lenient judge was correct that the summary is truncated and misses the main story arc."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "No adjustment needed. The summary is severely truncated and repeats the same sentence about financial fairplay twice without adding value, while omitting critical details like the specific match result, the total £12m stake, manager quotes, and transfer market context mentioned in the article. The lenient judge's assessment aligns with the strict criteria."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is severely truncated and fails to cover the main narrative arc (match result, league position, manager quotes, transfer implications). While it is factually consistent with the text, its lack of capitalization, punctuation, and repetitive phrasing significantly impacts fluency and coherence. Therefore, I maintain the low scores."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 5.0,
+      "fluency": 3.5,
+      "relevance": 1.0,
+      "overall_judge": 2.0
+    }
+  }
+}

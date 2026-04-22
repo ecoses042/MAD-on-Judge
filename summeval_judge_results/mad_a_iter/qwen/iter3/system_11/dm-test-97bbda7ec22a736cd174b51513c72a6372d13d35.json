@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-97bbda7ec22a736cd174b51513c72a6372d13d35",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is coherent and fluent but suffers from a significant relevance flaw: it completely omits the second half of the source text regarding the New York Mets bullpen car auction, which was a major event at Sotheby's that Wednesday. Additionally, while mostly consistent, the summary repeats the first paragraph of the source text verbatim without adding new information or synthesizing the content effectively, leading to redundancy."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is excellent in coherence, consistency, and fluency, accurately reflecting the source text without hallucinations. It captures the main event (failed auction) and key details (price expectations vs. employee bid, owner identity). It receives a slight deduction on relevance because it omits the secondary information about the Mets bullpen car mentioned in the article, though this is acceptable for a summary focusing on the primary subject."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I maintained the strict judge's scores. The summary is indeed coherent and fluent, but it suffers from a critical relevance flaw by completely ignoring the second half of the article regarding the Mets bullpen car auction, which was a significant part of the event. Furthermore, the summary repeats the first paragraph of the source text almost verbatim without synthesis or added value, confirming the strict judge's critique on redundancy and lack of effective summarization."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is well-structured and logically flows from the failed auction to the specific bid details and finally to the current owner. It is factually consistent with the source text, accurately reporting the prices and names without hallucination. Fluency is perfect. The slight deduction on relevance is justified because the summary omits the secondary but notable detail about the Mets bullpen car selling for a high price, which was a distinct event in the article."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding relevance. The summary is a near-verbatim copy of the first two sentences and the third sentence of the source text. It fails to synthesize the information or cover the other significant event mentioned in the article (the Mets bullpen car auction), which justifies a lower relevance score despite the high coherence, consistency, and fluency."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary is well-structured and factually accurate. The deduction for relevance is justified as the summary omits the notable detail regarding the Mets bullpen car sale, which was a significant secondary event in the source text."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.7
+    }
+  }
+}

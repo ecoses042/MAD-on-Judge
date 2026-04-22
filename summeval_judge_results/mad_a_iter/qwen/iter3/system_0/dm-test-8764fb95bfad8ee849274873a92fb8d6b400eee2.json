@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-8764fb95bfad8ee849274873a92fb8d6b400eee2",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary contains severe hallucinations and factual errors that violate the consistency criterion. It incorrectly states that 'Paul Merson was brought on' (he is a pundit/former player, not a substitute in this context) and claims he scored for Tottenham, whereas the text says Andros Townsend was brought on by Tottenham. The sentence structure is also confusing and disjointed. These are clear failures rather than minor weaknesses."
+      },
+      "strict": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 1,
+        "overall_judge": 1.2,
+        "rationale_for_score": "The summary contains severe hallucinations and factual errors. It incorrectly states that 'Paul Merson was brought on' (Merson is a pundit/former player, not a current Tottenham midfielder; Townsend was the one brought on). It also claims Townsend scored in the 89th minute, whereas the text says he was brought on in the 83rd minute. The summary includes irrelevant promotional text ('click here...') and fails to capture the actual narrative of Merson's Twitter row with Townsend."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 1,
+        "overall_judge": 1.2,
+        "adjustment_notes": "The strict judge's assessment is entirely correct. The summary contains severe factual hallucinations (claiming Merson was brought on instead of Townsend) and misstates the timeline of events. It also includes irrelevant promotional text ('click here...') which violates consistency and relevance criteria. There are no grounds to maintain or increase these scores; they must remain at the bottom tier."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The lenient judge's assessment was correct; no points were raised. The summary contains severe hallucinations (claiming Paul Merson was brought on and scored for Tottenham) that directly contradict the source text, resulting in a consistency score of 1. The disjointed sentence structure and lack of logical flow justify a coherence score of 2. Fluency is penalized for grammatical awkwardness but not as severely as the factual errors. Relevance is low because the summary fails to capture the main narrative (Merson admitting he was wrong about Townsend) and instead focuses on the hallucinated events."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 1,
+        "overall_judge": 1.2,
+        "adjustment_notes": "The summary contains severe factual hallucinations (claiming Merson was brought on instead of Townsend) and misstates the timeline of events. It also includes irrelevant promotional text ('click here...') which violates consistency and relevance criteria. The lenient judge's points were based on content not present in the original summary; therefore, no scores are raised."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains severe hallucinations (claiming Paul Merson was brought on and scored for Tottenham) which are factually incorrect based on the source text; this warrants a consistency score of 1. The disjointed sentence structure and lack of logical flow justify a coherence score of 2. Fluency is penalized for grammatical awkwardness but not as severely as the factual errors. Relevance is low because the summary fails to capture the main narrative (Merson admitting he was wrong about Townsend) and instead focuses on the hallucinated events."
+      }
+    },
+    "final": {
+      "coherence": 1.5,
+      "consistency": 1.0,
+      "fluency": 2.5,
+      "relevance": 1.5,
+      "overall_judge": 1.6
+    }
+  }
+}

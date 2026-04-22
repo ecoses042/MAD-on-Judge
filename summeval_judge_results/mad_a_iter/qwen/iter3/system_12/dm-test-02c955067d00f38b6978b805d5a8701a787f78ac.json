@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-02c955067d00f38b6978b805d5a8701a787f78ac",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from a significant relevance flaw: it omits the critical detail that ten people were involved in total (specifically missing the two children airlifted by helicopter), presenting an incomplete picture of the event's severity. It also fails to mention the rescue operation for the trapped person, which is a major part of the source text."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is well-structured, fluent, and consistent with the source text. It captures the key details regarding the location, time, specific injuries of the first patient airlifted, and the status of those taken to Ipswich Hospital. It receives a slight deduction on relevance (4) because it omits other significant details from the article, such as the total number of people involved (10), the specific injuries of the second helicopter patient, the trapped victim, and the highway closure information, though this is acceptable for a concise summary."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. While the summary is grammatically correct and flows well (fluency/coherence), it significantly under-reports the scope of the incident by omitting the total number of victims (10 people) and failing to mention the critical rescue operation for the trapped individual. These are major omissions that affect the relevance and completeness of the summary, justifying the lower scores."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is well-structured and consistent with the source text. While it omits several details (total count of 10 people, specific injuries of the second helicopter patient, the trapped victim, and highway closures), these omissions are acceptable for a concise summary focusing on the primary events and outcomes mentioned in the first half of the article. The score remains unchanged."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the lenient judge's assessment that the summary is grammatically correct and flows well (fluency/coherence). However, I also agree that it significantly under-reports the scope of the incident by omitting the total number of victims (10 people) and failing to mention the critical rescue operation for the trapped individual. These are major omissions that affect the relevance and completeness of the summary, justifying the lower scores."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary is well-structured and consistent with the source text. While it omits several details (total count of 10 people, specific injuries of the second helicopter patient, the trapped victim, and highway closures), these omissions are acceptable for a concise summary focusing on the primary events and outcomes mentioned in the first half of the article. The score remains unchanged."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.5,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.5
+    }
+  }
+}

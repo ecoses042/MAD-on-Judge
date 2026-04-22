@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-2cfc33d01364162579f46b2764914a03a29453ce",
+  "system_name": "system_3",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, abruptly shifting from Ozil's excitement about the watch to its price without connecting these ideas effectively."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits significant context about the upcoming match, the importance of Ozil's performance, and the mention of Jack Wilshere, which are key points in the original article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as the use of lowercase letters at the beginning of sentences and inconsistent punctuation."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the price of the watch but does not clarify its relevance to Ozil's excitement or the match, which could mislead readers."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding Mesut Ozil's excitement about his new Apple Watch and its comparison to a TV character."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article about Ozil's visit to the Apple store and his comparison of the watch to Michael Knight."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is written in fluent English, making it easy to read despite some minor formatting issues."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points about Ozil's new watch and his excitement, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits important context about the upcoming match and other players mentioned in the article, which could provide a fuller picture."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "tie",
+        "consistency": "tie",
+        "fluency": "tie",
+        "relevance": "critic"
+      }
+    }
+  }
+}

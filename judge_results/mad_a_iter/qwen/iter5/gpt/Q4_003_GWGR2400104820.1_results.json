@@ -1,0 +1,319 @@
+[
+  {
+    "essay_id": "GWGR2400104820.1",
+    "status": "ok",
+    "prediction": {
+      "content": {
+        "score": 3.0,
+        "rationale": "주장과 근거는 존재하지만, 설명이 피상적이고 반복적인 부분이 많아 논리적 연결이 약하다. 예를 들어, '잊힐권리는 중요하다'는 주장이 여러 번 반복되지만, 구체적인 사례나 근거가 부족하다."
+      },
+      "organization": {
+        "score": 3.0,
+        "rationale": "서론, 본론, 결론의 기본 구조는 있으나, 문단 간 연결이 자연스럽지 않고 논리 전개가 다소 어색하다. 예를 들어, 주장이 반복되면서도 새로운 정보나 논리가 추가되지 않아 흐름이 끊기는 느낌을 준다."
+      },
+      "expression": {
+        "score": 2.0,
+        "rationale": "문장 표현이 자주 어색하고, 문법적 오류가 눈에 띈다. 예를 들어, '잊힐권리가 우선시 되어야한다고 생각합니다'에서 띄어쓰기가 잘못되었고, '우선 시 되어서는 안된다'와 같은 표현이 어색하다."
+      }
+    },
+    "judge": {
+      "content": {
+        "round_0": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 5,
+            "specificity": 2,
+            "groundedness": 2,
+            "overall_judge": 3.0,
+            "rationale_for_score": "1. specificity: '예를 들어'라는 표현으로 시작하지만, rationale 본문에 essay_text의 구체적인 문장이나 단어를 인용하여 지적하는 사례가 전혀 없습니다. '잊힐권리'라는 단어만 언급하고 실제 글의 어떤 구절이 반복되었는지 구체적으로 지칭하지 않았습니다. 2. groundedness: rationale은 '구체적인 사례나 근거가 부족하다'고 평가하지만, essay_text를 분석해보면 오히려 '언론기사의 저작권 또한 잊힐권리보다 우선 시 되어서는 안된다고 생각합니다', '디지털 미디어 세상의 자유로움을 보장해 주다가는 국민들의 잊힐권리를 보장받지 못하게 될 수도 있습니다' 등 구체적인 논거와 주장이 매우 명확하고 풍부하게 제시되어 있습니다. rationale은 essay_text의 실제 내용을 반영하지 못한 채 추상적인 비판만 하고 있어 hallucination에 가깝습니다."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.5,
+            "rationale_for_score": "1) domain_match: rationale는 essay_text의 핵심 주제인 '잊힐권리'와 '알권리', '저작권' 간의 논쟁을 다루며 content 기준에 부합합니다. 다만, '논리적 연결이 약하다'는 평가가 다소 일반적일 수 있으나, essay 내 반복되는 결론 구조를 지적하는 점은 타당합니다. 2) score_rationale_consistency: predicted_score(3.0)와 rationale('주장과 근거 존재하지만 설명이 피상적이고 반복적')의 방향성은 일치합니다. 높은 점수 (4~5) 를 주지 않은 것은 '구체적 사례 부족'과 '반복성'이라는 명확한 약점을 인정했기 때문입니다. 3) specificity: '잊힐권리는 중요하다'는 문장을 구체적으로 지적하여 반복성을 언급했으나, 서론/결론 구조나 표현의 자연스러움 등 다른 차원의 구체적인 예시는 부족합니다. 4) groundedness: essay_text에서 실제로 여러 번 등장하는 '잊힐권리는 중요합니다'라는 문장과 논지 흐름을 근거로 삼아 평가했으므로 hallucination 없이 텍스트에 기반하고 있습니다."
+          }
+        },
+        "round_1": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 2,
+            "groundedness": 4,
+            "overall_judge": 3.0,
+            "adjustment_notes": "1) domain_match: 관대한 심사위원의 평가 (4점) 를 유지합니다. rationale 은 essay 의 핵심 주제인 '잊힐권리'와 관련 논쟁을 다루며 content 기준에 부합하므로 감점 사유가 없습니다. 2) score_rationale_consistency: 관대한 심사위원의 평가 (3점) 를 유지합니다. predicted_score(3.0) 와 rationale('설명이 피상적이고 반복적') 의 방향성은 일치하며, 높은 점수 부여를 막은 근거가 명확하므로 모순이 없습니다. 3) specificity: 관대한 심사위원의 평가 (3점) 를 2점으로 하향 조정합니다. 관대한 심사위원은 '구체적 사례 부족'을 지적했으나, rationale 텍스트에는 '서론/결론 구조', '표현의 자연스러움' 등 다른 차원의 구체적 예시가 없다고 명시하지 않았습니다. 또한 '논리적 연결이 약하다'는 평가가 essay 의 반복적 결론 구조를 지적하는 것 외에는 구체적인 문장이나 논지 흐름을 직접 인용하여 설명하지 않아 generic 표현에 해당합니다. 따라서 specificity 기준에서 2점 (구체적 예시 부족) 을 부여해야 합니다. 4) groundedness: 관대한 심사위원의 평가 (4점) 를 유지합니다. rationale 은 essay_text 에서 실제로 여러 번 등장하는 '잊힐권리는 중요합니다'라는 문장과 논지 흐름을 근거로 삼아 평가했으므로 hallucination 없이 텍스트에 기반하고 있습니다."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 2,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 2.0,
+            "adjustment_notes": "엄격한 심사위원의 지적대로 rationale이 essay_text의 구체적인 내용을 반영하지 못하고 추상적인 비판만 하고 있어 groundedness와 specificity 기준에서 심각한 결함이 있음을 인정합니다. 또한 '구체적 근거 부족'이라는 평가가 사실과 다르므로 score_rationale_consistency도 낮게 조정해야 합니다. domain_match는 content 영역 기준을 사용했으므로 5점 유지합니다."
+          }
+        },
+        "round_2": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 2,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 2.0,
+            "adjustment_notes": "관대한 심사위원의 평가에 따라 domain_match는 content 기준을 사용했으므로 5점 유지합니다. 그러나 specificity와 groundedness 항목에서 관대한 심사위원이 '구체적 근거 부족'이라는 평가를 사실과 다르다고 보아 점수를 높이는 것은 원칙에 위배됩니다. rationale 텍스트에는 '구체적인 사례나 근거가 부족하다', '설명이 피상적이고 반복적이다'라는 명확한 구체적 지적이 포함되어 있어, 이는 essay_text의 내용 (예: '잊힐권리는 중요하다'를 4 번 이상 반복하며 구체적인 반박이나 사례 제시 부재) 을 정확히 반영하고 있습니다. 따라서 specificity와 groundedness는 감점 기준에 해당하므로 관대한 심사위원의 수정 제안대로 점수를 낮게 유지해야 합니다. score_rationale_consistency 또한 낮은 점수 (2점) 에 합당한 근거가 rationale 에 있으므로 2 점 유지합니다."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 2,
+            "groundedness": 4,
+            "overall_judge": 3.0,
+            "adjustment_notes": "엄격한 심사위원의 평가 (3.0 점) 를 유지합니다. 1) domain_match: 관대한 심사위원이 content 기준을 적용하여 주어진 주제와 논쟁을 다루고 있음을 인정했으므로 감점 사유가 없습니다. 2) score_rationale_consistency: predicted_score(3.0) 와 rationale('설명이 피상적이고 반복적') 이 방향성 면에서 일치하며, 높은 점수를 막은 근거가 명확하므로 모순이 없습니다. 3) specificity: 관대한 심사위원의 '구체적 사례 부족' 지적은 essay 의 반복적 결론 구조를 구체적으로 언급하고 있으나, 서론/결론 구조나 표현 오류 등 다른 차원의 구체적 예시를 명시하지 않아 generic 표현에 해당합니다. 따라서 엄격한 심사위원이 지적한 대로 2 점 (구체적 예시 부족) 을 부여해야 합니다. 4) groundedness: rationale 은 essay_text 에서 실제로 여러 번 등장하는 '잊힐권리는 중요합니다'라는 문장과 논지 흐름을 근거로 삼아 평가했으므로 hallucination 없이 텍스트에 기반하고 있습니다."
+          }
+        },
+        "round_3": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 2,
+            "groundedness": 4,
+            "overall_judge": 3.0,
+            "adjustment_notes": "관대한 심사위원의 초기 평가 (3.0 점) 를 유지합니다. 1) domain_match: rationale 이 essay_text 의 핵심 논제인 '잊힐권리'와 '알권리/저작권 충돌'을 content 기준에 맞춰 다루었으므로 4 점 유지. 2) score_rationale_consistency: predicted_score(3.0) 와 rationale('설명이 피상적이고 반복적') 이 방향성 면에서 일치하며, 높은 점수를 막은 근거가 명확하므로 모순이 없으므로 3 점 유지. 3) specificity: 관대한 심사위원의 '구체적 사례 부족' 지적은 essay 의 반복적 결론 구조 ('그러므로... 중요합니다' 등) 를 구체적으로 언급하고 있으나, 서론/결론 구조나 표현 오류 등 다른 차원의 구체적 예시를 명시하지 않아 generic 표현에 해당하므로 2 점 유지. 4) groundedness: rationale 은 essay_text 에서 실제로 여러 번 등장하는 '잊힐권리는 중요합니다'라는 문장과 논지 흐름을 근거로 삼아 평가했으므로 hallucination 없이 텍스트에 기반하고 있으므로 4 점 유지."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 2,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 2.0,
+            "adjustment_notes": "엄격한 심사위원의 평가에 따라 모든 항목을 유지합니다. domain_match는 content 기준을 명확히 적용했으므로 5점 유지합니다. score_rationale_consistency는 낮은 점수 (2점) 에 합당한 '논리적 연결 약함'과 '반복적 설명'이라는 근거가 rationale 에 구체적으로 명시되어 있어 모순이 없으므로 2점 유지합니다. specificity 와 groundedness 는 관대한 심사위원이 지적한 대로, rationale 이 essay_text 의 구체적인 반복 문장 ('잊힐권리는 중요합니다' 등) 을 정확히 인용하고 있으며, 이는 감점 기준에 부합하므로 점수를 낮게 유지해야 합니다."
+          }
+        },
+        "round_4": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 2,
+            "specificity": 1,
+            "groundedness": 1,
+            "overall_judge": 2.0,
+            "adjustment_notes": "관대한 심사위원의 평가가 모든 기준을 정확히 반영하고 있으므로 점수 조정은 유지합니다. domain_match는 content 영역 기준이 명확히 적용되어 5점 유지됩니다. score_rationale_consistency는 낮은 점수에 '논리적 연결 약함'과 '반복적 설명'이라는 구체적인 근거가 rationale 에 명시되어 있어 모순이 없으므로 2점 유지합니다. specificity 와 groundedness 는 관대한 심사위원이 지적한 대로, rationale 이 essay_text 의 구체적인 반복 문장 ('잊힐권리는 중요합니다') 을 정확히 인용하고 있으며, 이는 감점 기준에 부합하므로 점수를 낮게 유지해야 합니다."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 3,
+            "specificity": 2,
+            "groundedness": 4,
+            "overall_judge": 3.0,
+            "adjustment_notes": "1) domain_match: 관대한 심사위원이 content 기준을 적용하여 점수 4 를 주었으나, 엄격한 심사위원의 평가 (rationale) 가 essay_text 의 핵심 논제인 '잊힐권리'와 '알권리/저작권 충돌'을 명확히 다루고 있으므로 결함이 없음을 인정하고 5 점으로 상향 조정. 2) score_rationale_consistency: predicted_score(3.0) 와 rationale('설명이 피상적이고 반복적') 이 방향성 면에서 일치하며, 높은 점수를 막은 근거가 명확하므로 모순이 없어 기존 3 점 유지. 3) specificity: 관대한 심사위원의 '구체적 사례 부족' 지적은 essay 의 반복적 결론 구조 ('그러므로... 중요합니다' 등) 를 구체적으로 언급하고 있으나, 서론/결론 구조나 표현 오류 등 다른 차원의 구체적 예시를 명시하지 않아 generic 표현에 해당하므로 2 점 유지. 4) groundedness: rationale 은 essay_text 에서 실제로 여러 번 등장하는 '잊힐권리는 중요합니다'라는 문장과 논지 흐름을 근거로 삼아 평가했으므로 hallucination 없이 텍스트에 기반하고 있으므로 4 점 유지."
+          }
+        },
+        "final": {
+          "domain_match": 5.0,
+          "score_rationale_consistency": 2.5,
+          "specificity": 1.5,
+          "groundedness": 2.5,
+          "overall_judge": 2.5
+        }
+      },
+      "organization": {
+        "round_0": {
+          "strict": {
+            "domain_match": 3,
+            "score_rationale_consistency": 4,
+            "specificity": 2,
+            "groundedness": 2,
+            "overall_judge": 2.8,
+            "rationale_for_score": "1. domain_match: rationale가 서론-본론-결론의 구조와 문단 연결성 등 organization 영역의 평가 기준을 사용하고 있어 기본 요구는 충족하나, expression(문장 자연스러움)이나 content(주장의 적절성)에 대한 구체적인 언급이 없어 부분적인 영역 혼동 가능성이 있으며, essay_text의 반복적 논증 구조를 지적하는 데에는 적합하나 더 넓은 domain 기준 적용이 부족함. 2. score_rationale_consistency: predicted_score가 3점인데 rationale은 '기본 구조는 있으나'라는 긍정적 표현과 함께 구체적인 결함 (주장 반복, 새로운 정보 부재) 을 명확히 제시하여 점수 정당화에 어느 정도 기여하나, '어색하다'는 표현이 다소 모호하여 완전한 일치라고 보기엔 약간의 간극 존재. 3. specificity: rationale은 '주장이 반복되면서도 새로운 정보나 논리가 추가되지 않아'라는 구체적인 문제점을 지적하고 있어 이 항목에서는 비교적 높은 점수를 받을 수 있으나, '흐름이 끊기는 느낌'이라는 표현이 다소 주관적이고 구체적 문장 인용이 부족하여 2점으로 하향 조정. 4. groundedness: rationale의 핵심 비판인 '주장 반복'과 '새로운 정보 부재'는 essay_text에서 명확히 확인 가능함 (예: '그러므로 자신의 잊힐권리는 중요합니다.'가 3번 이상 반복됨). 그러나 '문단 간 연결이 자연스럽지 않다'는 지적은 essay_text가 단 하나의 긴 문단으로 구성되어 있어 '문단 간'이라는 표현 자체가 essay 구조와 맞지 않을 수 있음. 이는 hallucination에 가깝거나 domain mismatch로 해석될 여지가 있어 groundedness 점수를 2점으로 낮춤."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 5,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 4.0,
+            "rationale_for_score": "1. domain_match: rationale는 서론/본론/결론 구조와 문단 연결성 등 조직화 (organization) 영역의 평가 기준을 명확히 사용하고 있어 타당합니다. 다만, '주장이 반복된다'는 지적은 essay_text의 내용적 논리 (content) 에 대한 해석이 섞여 있어 완전한 domain match 만은 아니지만, 조직화 측면에서는 적절하므로 4점 부여.\n2. score_rationale_consistency: predicted_score(3.0) 와 rationale 의 '구조는 있으나 연결이 어색하고 주장 반복'이라는 설명이 완벽하게 일치합니다. 점수 하락 사유를 명확히 제시했으므로 5점.\n3. specificity: '문단 간 연결이 자연스럽지 않다', '주장이 반복된다'는 표현은 다소 일반적입니다. 구체적인 문장 번호나 특정 논리 전개를 지칭하기보다는 전체적인 흐름에 대한 감상이 위주로 되어 있어 구체성 측면에서는 제한적입니다. 따라서 3점.\n4. groundedness: rationale 이 지적하는 '주장 반복'과 '새로운 정보 부재'는 essay_text 에서 실제로 확인 가능합니다 (예: '그러므로 자신의 잊힐권리는 중요합니다.'가 3 번 이상 반복됨). hallucination 없이 텍스트 기반의 관찰이므로 4점."
+          }
+        },
+        "round_1": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 5,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 4.0,
+            "adjustment_notes": "관대한 심사위원의 평가가 모든 기준을 충족하며 타당하다고 판단됩니다. domain_match 는 조직화 (organization) 영역의 기준을 명확히 적용했고, score_rationale_consistency 는 점수와 근거의 일치가 완벽합니다. specificity 가 3 점은 '주장이 반복된다'는 지적이 essay_text 에서 실제로 확인 가능한 구체적인 사실 ('그러므로 자신의 잊힐권리는 중요합니다.' 문장 반복 등) 에 기반하고 있으므로 유지합니다. groundedness 도 hallucination 없이 텍스트 관찰에 기반하므로 4 점으로 유지합니다. 따라서 기존 점수인 4.0 을 유지합니다."
+          },
+          "lenient": {
+            "domain_match": 3,
+            "score_rationale_consistency": 4,
+            "specificity": 2,
+            "groundedness": 2,
+            "overall_judge": 2.8,
+            "adjustment_notes": "엄격한 심사위원의 평가에 동의합니다. domain_match는 organization 기준을 사용했으나 expression/content 언급 부재로 인해 부분적 영역 혼동 가능성이 있어 3점 유지합니다. score_rationale_consistency는 점수 3점에 대한 근거가 명확하여 모순이 없으므로 4점 유지합니다. specificity와 groundedness는 엄격한 심사위원의 지적대로, '문단 간 연결'이라는 표현이 단 하나의 긴 문단으로 구성된 essay_text에 적용되지 않아 hallucination 또는 domain mismatch 요소가 포함되어 있으므로 2점으로 하향 조정하지 않고 유지합니다. 따라서 전체 점수는 변경 없이 2.8점으로 유지합니다."
+          }
+        },
+        "round_2": {
+          "strict": {
+            "domain_match": 3,
+            "score_rationale_consistency": 4,
+            "specificity": 2,
+            "groundedness": 2,
+            "overall_judge": 2.8,
+            "adjustment_notes": "관대한 심사위원의 평가에 동의합니다. domain_match는 organization 기준 (구조) 을 사용했으나 essay_text가 단 하나의 긴 문단으로 구성되어 있어 서론/본론/결론 구조가 명확히 드러나지 않음에도 '기본 구조는 있다'고 판단한 점은 부분적 영역 혼동 가능성이 있어 3점 유지합니다. score_rationale_consistency는 점수 3점에 대한 근거 (연결 어색함, 논리 전개 문제) 가 명확하여 모순이 없으므로 4점 유지합니다. specificity와 groundedness는 관대한 심사위원의 지적대로 '문단 간 연결'이라는 구체적 예시가 essay_text에 존재하지 않아 hallucination 요소가 포함되어 있으므로 2점으로 하향 조정하지 않고 유지합니다. 따라서 전체 점수는 변경 없이 2.8점으로 유지합니다."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.8,
+            "adjustment_notes": "1. domain_match: 조직화 (organization) 영역의 서론-본론-결론 구조 및 문단 연결성 기준을 명확히 적용했으므로 기존 5점 유지.\n2. score_rationale_consistency: 엄격한 심사위원이 '일치가 완벽함'이라고 평가했으나, rationale 은 '문단 간 연결이 자연스럽지 않고 논리 전개가 어색하다'는 부정적 평가를 내렸음에도 불구하고 predicted_score 를 3.0 으로 낮게 준 것이 아니라 (엄격한 심사위원은 4.0 을 줌), 관대한 심사위원의 초기 평가가 3.0 이었다면 일치는 맞았을 것이다. 하지만 엄격한 심사위원의 평가 결과를 재검토할 때, rationale 의 '결함 지적'이 명확하므로 점수는 낮아야 함. 따라서 관대했던 초기 평가 (4점) 를 내려 3점으로 조정하여 rationale 과 일치성을 확보.\n3. specificity: '주장이 반복된다', '새로운 정보 추가되지 않음'이라는 지적은 essay_text 에서 '그러므로 자신의 잊힐권리는 중요합니다.' 문장이 3 번 이상 반복되고, 유사한 논지가 순환하며 구체적 예시나 새로운 근거가 부재함을 정확히 반영하므로 3 점 유지.\n4. groundedness: 지적된 반복과 논리 전개 문제는 실제 텍스트에서 확인 가능하므로 hallucination 이 없으며 4 점 유지.\n5. overall_judge: domain_match(5), specificity(3), groundedness(4) 의 평균을 고려하고, score_rationale_consistency 를 3 으로 조정하여 전체적으로 3.0 으로 결정."
+          }
+        },
+        "round_3": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 4.0,
+            "adjustment_notes": "1. domain_match: 관대한 심사위원이 조직화 (organization) 영역의 서론-본론-결론 구조 및 문단 연결성 기준을 명확히 적용했으므로 기존 5점 유지.\n2. score_rationale_consistency: 관대한 심사위원은 rationale 의 '문단 간 연결이 자연스럽지 않고 논리 전개가 어색하다'는 구체적 지적에 대해 점수를 낮추지 않고 3.8(약 4점) 을 부여하여 일치를 인정함. 이는 엄격한 기준에서 볼 때, 명확한 결함 지적 (결함 존재) 에 비해 점수가 지나치게 높게 평가된 경우로 판단됨. 따라서 rationale 의 부정적 평가를 반영하여 점수를 낮추어 일치를 확보해야 하므로 3.0 에서 4.0 으로 조정.\n3. specificity: '주장이 반복된다', '새로운 정보 추가되지 않음'이라는 지적은 essay_text 에서 '그러므로 자신의 잊힐권리는 중요합니다.' 문장이 3 번 이상 반복되고 유사한 논지가 순환함을 정확히 반영하므로 기존 3 점 유지.\n4. groundedness: 지적된 반복과 논리 전개 문제는 실제 텍스트에서 확인 가능하므로 hallucination 이 없으며 기존 4 점 유지.\n5. overall_judge: domain_match(5), specificity(3), groundedness(4) 의 평균을 고려하고, score_rationale_consistency 를 4 로 조정하여 전체적으로 4.0 으로 결정."
+          },
+          "lenient": {
+            "domain_match": 3,
+            "score_rationale_consistency": 4,
+            "specificity": 2,
+            "groundedness": 1,
+            "overall_judge": 2.0,
+            "adjustment_notes": "domain_match: 관대한 심사위원의 지적대로 essay_text가 단 하나의 긴 문단으로 구성되어 있어 서론/본론/결론 구조가 명확히 드러나지 않음에도 '기본 구조는 있다'고 판단한 점은 domain 기준 (구조) 과 맞지 않으므로 3점 유지합니다. score_rationale_consistency: 점수 3점에 대한 근거 (연결 어색함, 논리 전개 문제) 가 명확하여 모순이 없으므로 4점 유지합니다. specificity: '문단 간 연결'이라는 구체적 예시가 essay_text에 존재하지 않아 hallucination 요소가 포함되어 있으므로 엄격한 심사위원의 판단대로 2점으로 하향 조정하지 않고 유지합니다. groundedness: rationale 이 '문단 간 연결'을 지적했으나 essay_text 에 문단이 없으므로 해당 근거는 텍스트에 기반하지 않은 허구 (hallucination) 입니다. 따라서 groundedness 기준을 위반하여 1점으로 하향 조정합니다. 전체 점수는 하향 조정을 반영하여 2.5점으로 수정합니다."
+          }
+        },
+        "round_4": {
+          "strict": {
+            "domain_match": 3,
+            "score_rationale_consistency": 4,
+            "specificity": 2,
+            "groundedness": 1,
+            "overall_judge": 2.0,
+            "adjustment_notes": "관대한 심사위원의 평가 내용을 재검토한 결과, 모든 항목이 기존 점수를 유지해야 함을 확인했습니다. domain_match: 관대한 심사위원은 essay_text 가 단 하나의 긴 문단으로 구성되어 있어 서론/본론/결론 구조가 명확히 드러나지 않음에도 '기본 구조는 있다'고 판단한 점이 domain 기준 (구조) 과 맞지 않으므로 3점 유지라고 명시했습니다. 이는 본 규칙의 '관대한 심사위원이 인정한 근거 중, rationale 텍스트에 실제로 존재하는 내용은 인정하라'는 원칙에 따라 그대로 수용합니다. score_rationale_consistency: 점수 3점에 대한 근거가 명확하여 모순이 없으므로 4점 유지입니다. specificity: 관대한 심사위원은 '문단 간 연결'이라는 구체적 예시가 essay_text 에 존재하지 않아 hallucination 요소가 포함되어 있으므로 2점으로 하향 조정하지 않고 유지한다고 판단했습니다. 이는 관대한 심사위원의 평가 내역에 대한 존중으로, 본 규칙상 인정해야 합니다. groundedness: rationale 이 '문단 간 연결'을 지적했으나 essay_text 에 문단이 없으므로 해당 근거는 텍스트에 기반하지 않은 허구 (hallucination) 임을 관대한 심사위원이 1점으로 하향 조정했습니다. 이는 본 규칙의 핵심 원칙인 '관대한 심사위원이 essay_text 에서 새로 발굴한 근거로 rationale 을 방어한 경우는 인정하지 않는다'는 조항과 완벽하게 일치합니다. 즉, 관대한 심사위원이 '문단이 없다'는 사실을 발견하여 groundedness 를 1점으로 수정한 것이므로, 이 수정된 점수 (1점) 가 최종적으로 유효한 근거가 됩니다. 따라서 전체 점수는 하향 조정을 반영하여 2.0점으로 유지합니다."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.8,
+            "adjustment_notes": "1. domain_match: 관대한 심사위원이 조직화 (organization) 영역의 서론-본론-결론 구조 및 문단 연결성 기준을 명확히 적용했으므로 기존 5점 유지.\n2. score_rationale_consistency: 관대한 심사위원은 rationale 의 '문단 간 연결이 자연스럽지 않고 논리 전개가 어색하다'는 구체적 지적에 대해 점수를 낮추지 않고 3.8(약 4점) 을 부여하여 일치를 인정함. 이는 엄격한 기준에서 볼 때, 명확한 결함 지적 (결함 존재) 에 비해 점수가 지나치게 높게 평가된 경우로 판단됨. 따라서 rationale 의 부정적 평가를 반영하여 점수를 낮추어 일치를 확보해야 하므로 3.0 에서 4.0 으로 조정.\n3. specificity: '주장이 반복된다', '새로운 정보 추가되지 않음'이라는 지적은 essay_text 에서 '그러므로 자신의 잊힐권리는 중요합니다.' 문장이 3 번 이상 반복되고 유사한 논지가 순환함을 정확히 반영하므로 기존 3 점 유지.\n4. groundedness: 지적된 반복과 논리 전개 문제는 실제 텍스트에서 확인 가능하므로 hallucination 이 없으며 기존 4 점 유지.\n5. overall_judge: domain_match(5), specificity(3), groundedness(4) 의 평균을 고려하고, score_rationale_consistency 를 4 로 조정하여 전체적으로 4.0 으로 결정."
+          }
+        },
+        "final": {
+          "domain_match": 4.0,
+          "score_rationale_consistency": 3.5,
+          "specificity": 2.5,
+          "groundedness": 2.5,
+          "overall_judge": 2.9
+        }
+      },
+      "expression": {
+        "round_0": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 5,
+            "specificity": 5,
+            "groundedness": 5,
+            "overall_judge": 5.0,
+            "rationale_for_score": "1. domain_match: rationale이 'expression' 영역의 평가 기준 (문법, 띄어쓰기, 어색한 표현) 을 명확히 준수함. 2. score_rationale_consistency: predicted_score(2점) 가 낮은 점수임에도 불구하고 구체적인 문장 오류 ('잊힐권리가 우선시 되어야한다고', '우선 시 되어서는 안된다') 를 지적하여 점수를 정당화함. 모순 없음. 3. specificity: '전반적으로' 같은 추상적 표현 대신 실제 오류가 발생한 구절과 띄어쓰기 문제를 구체적으로 인용함. 4. groundedness: 모든 지적 사항이 essay_text에 존재하는 내용이며, 허구적인 비판이 없음."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 5,
+            "specificity": 4,
+            "groundedness": 4,
+            "overall_judge": 4.2,
+            "rationale_for_score": "1. domain_match: rationale가 'expression' 영역의 평가 기준 (문법, 띄어쓰기, 어색한 표현) 을 명확히 사용하여 글을 분석하고 있어 기준 일치도가 높습니다. 2점이라는 낮은 점수를 정당화하기 위해 구체적인 오류 유형을 언급했으므로 감점이 적절합니다.\n2. score_rationale_consistency: predicted_score(2.0)와 rationale('자주 어색하고', '문법적 오류가 눈에 띈다')의 방향성이 완벽하게 일치합니다. 높은 점수가 아닌 낮은 점수를 내린 이유를 명확히 설명했으므로 모순이 없습니다.\n3. specificity: '잊힐권리가 우선시 되어야한다고 생각합니다'와 같은 구체적인 문장을 인용하여 띄어쓰기 오류를 지적하고, '우선 시 되어서는 안된다'라는 표현을 예시로 들어 어색함을 구체적으로 설명했습니다. generic한 평가가 아닌 실제 텍스트 기반의 분석입니다.\n4. groundedness: rationale에 언급된 모든 오류 (띄어쓰기, 어색한 표현) 는 essay_text에 실제로 존재하는 내용입니다. hallucination 없이 텍스트를 근거로 삼았습니다."
+          }
+        },
+        "round_1": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 5,
+            "specificity": 5,
+            "groundedness": 5,
+            "overall_judge": 5.0,
+            "adjustment_notes": "관대한 심사위원의 평가가 모든 기준 (domain_match, score_rationale_consistency, specificity, groundedness) 을 충족하고 있으며, rationale 에 제시된 구체적인 오류 사례 (띄어쓰기, 어색한 표현) 가 essay_text 에 명확히 존재함을 확인했습니다. 따라서 관대한 심사위원이 부여한 4 점과 일치하는 4 점을 유지합니다."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 5,
+            "specificity": 5,
+            "groundedness": 5,
+            "overall_judge": 5.0,
+            "adjustment_notes": "엄격한 심사위원의 평가가 옳습니다. rationale 은 'expression' 영역 기준을 명확히 준수하며 (문법, 띄어쓰기 지적), 구체적인 오류 예시 ('잊힐권리가 우선시 되어야한다고', '우선 시 되어서는 안된다') 를 제시하여 점수 (2점) 와 일치합니다. 또한 모든 지적 사항이 essay_text 에 근거하고 있어 hallucination 이 없습니다. 따라서 기존 2 점과 모든 기준점을 유지합니다."
+          }
+        },
+        "round_2": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 5,
+            "specificity": 5,
+            "groundedness": 5,
+            "overall_judge": 5.0,
+            "adjustment_notes": "관대한 심사위원의 평가가 옳습니다. rationale 은 'expression' 영역 기준을 명확히 준수하며 (문법, 띄어쓰기 지적), 구체적인 오류 예시 ('잊힐권리가 우선시 되어야한다고', '우선 시 되어서는 안된다') 를 제시하여 점수 (2점) 와 일치합니다. 또한 모든 지적 사항이 essay_text 에 근거하고 있어 hallucination 이 없습니다. 따라서 기존 2 점과 모든 기준점을 유지합니다."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 2,
+            "specificity": 5,
+            "groundedness": 5,
+            "overall_judge": 3.0,
+            "adjustment_notes": "1. domain_match: rationale 이 '띄어쓰기', '문법적 오류' 등 expression 영역의 기준을 사용하여 평가했으므로 5 점 유지.\n2. score_rationale_consistency: 관대한 심사위원이 4 점을 주었으나, 엄격한 심사위원은 2 점을 줌. 이는 essay_text 에 띄어쓰기 오류 ('되어야한다고', '필수 적') 와 문법적 어색함 ('우선 시 되어서는 안된다') 이 명확히 존재하여 낮은 점수 (2 점) 가 정당화되었음을 의미하므로, 관대한 심사위원의 4 점을 낮춰 2 점으로 조정.\n3. specificity: rationale 이 구체적인 문장 예시 ('잊힐권리가 우선시 되어야한다고 생각합니다', '우선 시 되어서는 안된다') 를 제시했으므로 5 점 유지.\n4. groundedness: 지적된 오류들이 essay_text 에 실제로 존재하므로 5 점 유지.\n5. overall_judge: domain_match, specificity, groundedness 가 모두 5 점이지만, score_rationale_consistency 가 2 점으로 조정됨. 따라서 전체 점수는 3.0 으로 조정."
+          }
+        },
+        "round_3": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 2,
+            "specificity": 5,
+            "groundedness": 5,
+            "overall_judge": 3.0,
+            "adjustment_notes": "관대한 심사위원의 평가 내용을 재검토한 결과, 모든 항목이 타당함을 확인했습니다.\n1. domain_match: rationale 이 '띄어쓰기', '문법적 오류' 등 expression 영역의 명확한 기준을 사용했으므로 5 점 유지.\n2. score_rationale_consistency: predicted_score(2.0) 와 rationale 의 지적 내용 (띄어쓰기 오류, 어색한 표현) 이 일치하며, 낮은 점수에 대한 근거가 충분하므로 2 점 유지.\n3. specificity: '잊힐권리가 우선시 되어야한다고 생각합니다', '우선 시 되어서는 안된다' 등 구체적인 문장 예시를 제시하여 5 점 유지.\n4. groundedness: 지적된 오류들이 essay_text 에 실제로 존재하므로 5 점 유지.\n5. overall_judge: 세 가지 항목 (domain_match, specificity, groundedness) 이 완벽하지만 score_rationale_consistency 가 2 점으로 낮아졌으므로, 전체 점수는 3.0 으로 조정하여 유지합니다."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 5,
+            "specificity": 5,
+            "groundedness": 5,
+            "overall_judge": 5.0,
+            "adjustment_notes": "엄격한 심사위원의 평가가 옳습니다. rationale 은 'expression' 영역 기준을 명확히 준수하며 (문법, 띄어쓰기 지적), 구체적인 오류 예시 ('잊힐권리가 우선시 되어야한다고', '우선 시 되어서는 안된다') 를 제시하여 점수 (2점) 와 일치합니다. 또한 모든 지적 사항이 essay_text 에 근거하고 있어 hallucination 이 없습니다. 따라서 기존 2 점과 모든 기준점을 유지합니다."
+          }
+        },
+        "round_4": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 5,
+            "specificity": 5,
+            "groundedness": 5,
+            "overall_judge": 5.0,
+            "adjustment_notes": "관대한 심사위원의 평가가 옳습니다. rationale 은 'expression' 영역 기준을 명확히 준수하며 (문법, 띄어쓰기 지적), 구체적인 오류 예시 ('잊힐권리가 우선시 되어야한다고', '우선 시 되어서는 안된다') 를 제시하여 점수 (2점) 와 일치합니다. 또한 모든 지적 사항이 essay_text 에 근거하고 있어 hallucination 이 없습니다. 따라서 기존 2 점과 모든 기준점을 유지합니다."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 2,
+            "specificity": 5,
+            "groundedness": 5,
+            "overall_judge": 3.0,
+            "adjustment_notes": "엄격한 심사위원의 평가 내용을 재검토한 결과, 모든 항목이 타당함을 확인하여 점수를 유지합니다.\n1. domain_match: rationale 이 '띄어쓰기', '문법적 오류' 등 expression 영역의 명확한 기준을 사용했으므로 5 점 유지.\n2. score_rationale_consistency: predicted_score(2.0) 와 rationale 의 지적 내용 (띄어쓰기 오류, 어색한 표현) 이 일치하며, 낮은 점수에 대한 근거가 충분하므로 2 점 유지.\n3. specificity: '잊힐권리가 우선시 되어야한다고 생각합니다', '우선 시 되어서는 안된다' 등 구체적인 문장 예시를 제시하여 5 점 유지.\n4. groundedness: 지적된 오류들이 essay_text 에 실제로 존재하므로 5 점 유지.\n5. overall_judge: 세 가지 항목 (domain_match, specificity, groundedness) 이 완벽하지만 score_rationale_consistency 가 2 점으로 낮아졌으므로, 전체 점수는 3.0 이 아닌 2.0 으로 조정합니다."
+          }
+        },
+        "final": {
+          "domain_match": 5.0,
+          "score_rationale_consistency": 3.5,
+          "specificity": 5.0,
+          "groundedness": 5.0,
+          "overall_judge": 4.0
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-4a593dc4c7e0b4d09bfdc66bb315c47b54eb15df",
+  "system_name": "system_9",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, as it jumps from the match result to Henderson's belief without connecting the two points effectively."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the significance of the match for Liverpool, Henderson's comments on recent performances, and the context of their position in the league, which are crucial for understanding the situation."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention that Liverpool is four points behind Manchester City, which is an important detail from the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary uses lowercase for 'liverpool' and 'newcastle united', which is not standard in English writing and affects the overall fluency."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, starting with the match result and then mentioning key players and their contributions."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important information, including the match outcome, Henderson's belief in catching Manchester City, and his personal achievement."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits details about the context of Liverpool's recent performances and the significance of the match, which are present in the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization and punctuation, which affects its readability and fluency."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.0,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

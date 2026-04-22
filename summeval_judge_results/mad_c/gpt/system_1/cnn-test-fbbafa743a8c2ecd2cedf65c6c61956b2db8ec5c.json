@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-fbbafa743a8c2ecd2cedf65c6c61956b2db8ec5c",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, as it abruptly ends without providing a complete overview of the article."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key points such as the involvement of A&E, Lifetime, and History networks, the description of the new version as 'original' and 'contemporary', and the context of racial issues that the new adaptation will address."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as inconsistent capitalization of 'roots' and 'african-american', which affects readability."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the consultation with scholars for authenticity, which is a significant aspect of the new adaptation."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, starting with the original miniseries and transitioning to the remake."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, mentioning key details such as the original audience size and LeVar Burton's involvement."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important aspects of the article, including the remake announcement and the involvement of key figures."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as inconsistent capitalization and punctuation, which affect readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

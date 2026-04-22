@@ -1,0 +1,75 @@
+{
+  "article_id": "dm-test-6c1341bedf92a304318545fbf1aad88651de7909",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, jumping between topics without clear connections."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that Kane has been 'released from the awards ceremony,' which is not mentioned in the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention key details such as Kane's achievements this season and the significance of the animation."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as the lack of capitalization at the beginning of sentences."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear focus on Harry Kane's nominations for the PFA awards."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information about Kane's nominations without introducing any new facts."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "It highlights the key point of Kane's nominations, which is the main focus of the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'has been released from the awards ceremony,' which is misleading."
+        },
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow, as it abruptly mentions the animation without context."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "It omits important details about the animation and Kane's achievements during the season."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

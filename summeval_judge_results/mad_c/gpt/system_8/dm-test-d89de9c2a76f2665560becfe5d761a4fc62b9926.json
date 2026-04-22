@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-d89de9c2a76f2665560becfe5d761a4fc62b9926",
+  "system_name": "system_8",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, failing to connect the events and context of the match."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that Rashford scored from a free-kick by Gribbin, which is not supported by the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary does not mention key details such as the match's significance, the final score, or the performance of other players."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'the young Reds coach's team were at their best' is vague and lacks specificity, making it less engaging."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with United taking the lead and mentioning key players involved."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the main outcome of the match and highlights the contributions of significant players, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that Rashford headed home a free-kick from Gribbin, while the article describes Gribbin scoring directly from a free-kick."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'the young Reds coach's team were at their best' is vague and could be more specific about what aspects of their performance were strong."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-c05bda9b387ec8ae43803170b6f59b4b82505db9",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow of information, as it jumps between points without connecting them effectively."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits critical context about the Yazidis' situation, the role of ISIS, and the humanitarian crisis, focusing instead on the release without addressing its significance."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the discrepancy in the number of released Yazidis reported by different officials, which is a relevant detail from the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The use of semicolons is awkward and disrupts the flow, making the summary less fluent and harder to read."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the release of Yazidis, including details about who was released and their reception."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article without introducing any new facts or misrepresenting the events."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the release of Yazidis, including the demographics of those released and the uncertainty surrounding the motivation for their release."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as the use of 'It was n't' instead of 'It wasn't', which affects its overall fluency."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "tie",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

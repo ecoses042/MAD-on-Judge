@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-b1f6faac3f406edca1e0cad8cce1319c83e62605",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, abruptly ending without completing the thought about Costa's state of mind."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits key details about the evidence presented by Professor Mullen regarding Costa's mental state and the implications for the jury's verdict."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as missing articles ('the' before 'case') and inconsistent capitalization."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary does not adequately cover the most important information, such as the nature of the crime and the context of the trial."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the key events and the accused's mental state."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, including the details about the accused, the victim, and the context of the murder."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important aspects of the case, particularly the mental state of Luigi Costa, which is central to the trial."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and lacks proper capitalization, making it less readable."
+        },
+        {
+          "criterion": "coherence",
+          "reason": "The summary ends abruptly and does not complete the thought regarding the critical nature of Costa's state of mind."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

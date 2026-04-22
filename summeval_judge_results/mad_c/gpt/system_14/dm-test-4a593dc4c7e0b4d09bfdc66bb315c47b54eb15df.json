@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-4a593dc4c7e0b4d09bfdc66bb315c47b54eb15df",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow of information, jumping abruptly between points without proper transitions."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as Henderson's comments on the importance of the game and the context of Liverpool's recent performances, which are crucial for understanding the situation."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as missing articles ('the') before 'season' and 'Premier League'."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that Liverpool is four points behind Manchester City without mentioning that City lost their recent match, which is a significant detail."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, starting with the match result and then discussing Henderson's belief about Liverpool's chances in the league."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, including the match details and the standings in relation to Manchester City."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points, such as the match outcome, Henderson's comments, and the context of the league standings."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as missing articles and capitalization issues, which affect its readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "tie",
+        "consistency": "tie",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

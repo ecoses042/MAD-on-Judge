@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-97bbda7ec22a736cd174b51513c72a6372d13d35",
+  "system_name": "system_2",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, repeating information about the auction estimates and bids without proper organization."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the detail about the letters being 10-feet-tall without context, which may not be consistent with the source's emphasis on their significance."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as inconsistent capitalization and spacing, which detract from readability."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention Reggie Jackson's intention for the letters to be owned by a new generation, which is a key point in the article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events regarding the auction of the letters, starting with their estimated value, the lack of bids, and the current ownership by Reggie Jackson."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article without introducing any new facts, such as the auction details and the ownership of the letters."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the auction, including the estimated value of the letters, the lack of bids, and the involvement of Reggie Jackson, which are all central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as inconsistent capitalization and punctuation, which affect its readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "tie",
+        "consistency": "tie",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-8b51a10370a1219137e231192e65b9cd52238ea6",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and strictly consistent with the source text. It captures the three main points mentioned in the first half of the article (fiery reputation, wrist injury incident, positive response to coach). It receives a 4 for relevance because it omits the second half of the article which discusses Stokes' back niggle, his specific actions against Mitchell Johnson, and the team's strategy regarding spinners, but given the lenient rules, this omission is not penalized heavily as the core narrative is preserved."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source text and flows logically. However, it suffers from poor relevance by omitting the article's primary argument: that Stokes' 'fiery character' is a valuable asset that should be nurtured rather than suppressed, provided his aggression is controlled. The summary presents only the background context (the injury and the coach's intervention) without capturing the main point of view expressed in the text."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is fluent, coherent, and strictly consistent with the source text. While it omits significant details from the second half of the article (back niggle, specific Ashes incident, spinner strategy), these are valid omissions for a short summary focusing on the primary narrative arc presented in the first half. No harsher penalties were applied."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the strict judge's assessment regarding relevance. The summary lists three factual events (fiery reputation, wrist injury, coach intervention) but fails to synthesize the article's core argument: that Stokes' aggression is a valuable asset that should be nurtured and controlled, not suppressed. By omitting this central thesis, the summary misses the 'main point of view,' resulting in a low relevance score despite good coherence and consistency."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary accurately captures the primary narrative arc (Stokes' reputation, the specific incident of breaking his wrist, and the positive resolution via Coach Moores) without introducing external facts. While it omits details from the latter half of the article (the back niggle, Ashes context, spinner strategy), these are acceptable omissions for a short summary focusing on the main conflict and resolution presented in the first half. No score reduction is warranted."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding relevance. The summary accurately captures the three key factual events mentioned in the text (fiery reputation, wrist injury incident, and positive response to coach Moores). While it omits the broader context of team strategy or future spinners, these are secondary details compared to the specific narrative arc presented in the source text. Therefore, the relevance score should not be penalized further for missing the 'main point of view' as a separate entity when the summary faithfully reports the article's primary news items."
+      }
+    },
+    "final": {
+      "coherence": 4.5,
+      "consistency": 5.0,
+      "fluency": 4.5,
+      "relevance": 3.5,
+      "overall_judge": 4.4
+    }
+  }
+}

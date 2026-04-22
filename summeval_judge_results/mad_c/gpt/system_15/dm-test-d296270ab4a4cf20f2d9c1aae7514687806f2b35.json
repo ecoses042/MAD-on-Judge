@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-d296270ab4a4cf20f2d9c1aae7514687806f2b35",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, presenting disjointed facts without connecting them."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the cost of the jet but fails to mention that it was customized for a single owner, which is a key detail from the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits significant details about the luxury features and amenities of the jet, which are central to the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as missing articles and awkward phrasing, making it less readable."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear focus on the key features of the custom-built Boeing 747, such as its cost, passenger capacity, and amenities."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The information included in the summary is consistent with the source document, accurately reflecting the cost and features of the jet."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary highlights the most important aspects of the article, such as the cost and specific luxurious features of the jet."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as the use of '#' instead of '£' for the currency, which affects readability."
+        },
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow, as it jumps between different features without clear transitions."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

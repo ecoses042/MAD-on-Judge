@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-b8b6e729fff27c4eef87887e61d3448de9c063f6",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, jumping abruptly between Musk's tweet and the mention of the rocket hitting at an angle without clear connections."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that SpaceX 'hit at an angle and exploded' without clarifying that this refers to a previous attempt, not the recent launch."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details about the mission, such as the purpose of the Dragon spacecraft, the amount of supplies delivered, and the significance of the launch."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as improper punctuation and capitalization, making it less readable."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with Musk's tweet about the launch and the rocket's landing attempt."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects Musk's statement regarding the rocket's landing attempt and the company's commitment to continue trying."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details about the mission, such as the purpose of the Dragon spacecraft, the supplies it carries, and the significance of the launch."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as the incomplete sentence 'spacex has said it will keep trying and , after it hit at an angle and exploded,' which disrupts the flow."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.0,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

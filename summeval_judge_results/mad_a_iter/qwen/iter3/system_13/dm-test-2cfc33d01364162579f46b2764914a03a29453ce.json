@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-2cfc33d01364162579f46b2764914a03a29453ce",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is consistent with the source text and covers key points (Ozil's watch, Knight Rider comparison, Wilshere's return). However, it receives a lower score for fluency due to poor capitalization and punctuation throughout the text (e.g., 'arsenal', 'mesut ozil', 'thursday'). It is also slightly less coherent as a standalone piece because it lacks connecting words between sentences, making it read more like a list of facts than a flowing paragraph."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source text and covers the main points regarding Ozil's new watch and Wilshere's return. However, it scores lower on fluency due to poor capitalization (e.g., 'arsenal', 'mesut ozil') and lack of punctuation, making it look unpolished. It also misses a significant portion of the source text's content regarding Ray Parlour's specific comments on Wilshere's fitness and potential, which reduces its relevance score slightly as it omits key details about the team's situation."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the fluency score from 3 to 2 because the lack of capitalization and punctuation makes the text significantly harder to read than a standard 'list of facts' might imply; it reads more like raw data dump. I also adjusted coherence down slightly to reflect that while the sentences are ordered logically, the absence of any transitional phrases or conjunctions creates a disjointed flow that is worse than just being a list. Consistency and Relevance remain high as the content accurately reflects the source without errors."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is factually accurate (consistent) and covers the two main topics (Ozil's watch and Wilshere's return), but it suffers from significant fluency issues due to a complete lack of capitalization and punctuation, making it look unpolished. Additionally, by omitting Ray Parlour's specific comments on Wilshere's fitness—a major part of the source text—the relevance score is appropriately lowered as key details are missing."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary suffers from a complete lack of capitalization and punctuation, which severely impacts readability and grammatical correctness (fluency). While the content is factually consistent and relevant to the source text, the presentation style makes it feel like a raw data dump rather than a coherent summary. Therefore, I maintain the strict judge's lowered scores for fluency and coherence."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate: the summary is factually consistent and coherent in its logical flow of two distinct topics, but it suffers from severe fluency issues due to a complete lack of capitalization and punctuation (e.g., 'arsenal', 'mesut ozil'). Regarding relevance, while Ray Parlour's specific quotes are omitted, the summary does capture the core news regarding Wilshere's return and his role in the upcoming match context provided in the source. Therefore, the scores remain unchanged."
+      }
+    },
+    "final": {
+      "coherence": 3.5,
+      "consistency": 5.0,
+      "fluency": 2.5,
+      "relevance": 4.0,
+      "overall_judge": 3.5
+    }
+  }
+}

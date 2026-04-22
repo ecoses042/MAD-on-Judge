@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-808a439a5d83fc47baaea934c8779a7ebc62470d",
+  "system_name": "system_9",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, jumping between topics without smooth transitions."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that Clattenburg has sent off three players from United and City this season, while the article specifies he has sent off only two players, both from United."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key context about the significance of the Manchester derby and the implications for both teams, which are crucial for understanding the match's importance."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'english referee has sent off three players from united and city this season' is grammatically incorrect as it lacks a subject and proper capitalization."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding Clattenburg's officiating in the Manchester derby."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, mentioning the players sent off by Clattenburg."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points related to Clattenburg's officiating and the players involved, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks grammatical structure and could be improved for better readability."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits important context about the significance of the derby and the teams' current standings."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

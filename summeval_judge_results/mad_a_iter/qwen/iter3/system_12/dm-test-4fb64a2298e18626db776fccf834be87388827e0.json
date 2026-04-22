@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-4fb64a2298e18626db776fccf834be87388827e0",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and strictly consistent with the source text. However, it scores a 4 for relevance because it omits significant key details present in the article, such as Wiggins' recent career move (finishing Team Sky at Paris-Roubaix), his specific target of an eighth Olympic medal, and the context of other record attempts by Alex Dowsett or Jens Voigt. While not hallucinated, these omissions reduce the coverage of 'important information' relative to the full source."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is excellent in coherence, consistency, and fluency, accurately reflecting the source text without hallucinations. It captures the main event (Wiggins attempting the record), the location, the current record holder/distance, and ticket sale dates. It receives a slight deduction on relevance because it omits other significant details from the article such as Wiggins' recent race at Paris-Roubaix, his specific Olympic targets for Rio, or the context of previous attempts by Voigt and Brandle, but given the lenient rules, this is acceptable as these are secondary to the core announcement."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. While the summary is grammatically perfect and factually consistent, it suffers from a lack of relevance regarding 'important information.' The source text highlights Wiggins' recent career transition (finishing Team Sky), his specific goal for Rio (eighth Olympic medal), and the competitive context of other record attempts. The current summary reduces these significant details to just the event date, location, current record holder, and ticket sales, missing the narrative arc of the athlete's motivation and immediate future plans."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is concise and accurate regarding the core announcement (Wiggins attempting the record). While it omits secondary details like his recent Paris-Roubaix finish or specific Rio targets, these are indeed secondary to the primary news hook. The deduction for relevance is justified but minor."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary effectively captures the primary news hook (Wiggins attempting the record) and includes essential context (location, current record holder, ticket sales). While it omits secondary details like his recent race finish or specific Rio Olympic targets, these are appropriately excluded to maintain conciseness without losing the core message."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "I agree with the lenient judge's points regarding relevance. The summary is factually accurate and well-structured (coherence/consistency/fluency are perfect), but it significantly omits key narrative elements present in the source text: Wiggins' recent completion of his Team Sky career, his specific target for the Rio Olympics (eighth medal), and the competitive context involving other riders like Alex Dowsett. These omissions reduce the summary's ability to capture the full story, justifying a relevance score below 5."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 4.0,
+      "overall_judge": 4.8
+    }
+  }
+}

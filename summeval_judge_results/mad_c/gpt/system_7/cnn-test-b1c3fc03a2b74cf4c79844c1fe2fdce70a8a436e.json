@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-b1c3fc03a2b74cf4c79844c1fe2fdce70a8a436e",
+  "system_name": "system_7",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information and does not connect the points effectively."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits critical details such as the number of migrants rescued, the specific incident involving the capsized boat, and the context of the rising migrant crisis."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the conflicting reports about the capsized boat, which is a significant aspect of the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is written in lowercase, which is not standard for proper nouns and the beginning of sentences, affecting its readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary captures the key points regarding the increase in migrant boats, the origins of the migrants, and the death toll, which are central themes of the article."
+        },
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents information in a logical order, starting with the upsurge in migrant boats, followed by the origins of the migrants, and concluding with the death toll."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits important details about the specific number of migrants rescued and the context of the capsizing incident, which are relevant to understanding the situation."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization at the beginning of sentences and for proper nouns, which affects its overall fluency."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 4,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

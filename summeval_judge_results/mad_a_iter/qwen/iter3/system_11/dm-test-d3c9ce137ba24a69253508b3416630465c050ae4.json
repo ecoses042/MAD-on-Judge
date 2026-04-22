@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-d3c9ce137ba24a69253508b3416630465c050ae4",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is consistent with the source text and fluent, but it only covers the first paragraph of the article, missing key details about her motivation (countering stereotypes), specific achievements (dancing to Taylor Swift, driving, college), and her new role in motivational speaking. While lenient rules allow for a score >= 3, the significant omission of the main body of the story prevents a higher rating."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from a significant relevance issue: it only covers the first paragraph of the source text, completely omitting the core motivation (counteracting stereotypes), specific achievements (dancing to Taylor Swift, driving, college), and current activities (motivational speaking) mentioned in the article. Additionally, there is a minor consistency flaw where the summary quotes Dayna as being 19, while the source text explicitly states she was 18 in one caption and 19 in another; relying on the 19 figure without context makes it slightly less precise than the full text."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate: the summary is consistent and fluent but suffers from low relevance because it only summarizes the first paragraph, omitting the majority of the article's key points (motivation to counter stereotypes, specific achievements like driving/college, and motivational speaking). Therefore, the score remains at 4.0."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is fluent and coherent but fails significantly on relevance by truncating the content after the first paragraph, missing key details about her achievements (driving, college), specific videos (Taylor Swift), and current activities (motivational speaking). I maintain the consistency score of 4 because while the age discrepancy (18 vs 19) is a minor factual inconsistency relative to the full text, it does not constitute a major hallucination like inventing facts would; however, the omission of the bulk of the article's content severely impacts relevance."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "No changes made. The strict judge's assessment is accurate: while the summary is consistent and fluent, it suffers from low relevance because it only covers the first paragraph of the source text, omitting key points such as Dayna's motivation to counter stereotypes, her specific achievements (driving, college), and her new role in motivational speaking."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate: the summary is fluent and coherent but suffers from a severe relevance issue by truncating the content after the first paragraph, omitting key details about her achievements (driving, college), specific videos (Taylor Swift), and current activities (motivational speaking). The consistency score of 4 is maintained because the age discrepancy (18 vs 19) is a minor factual inconsistency relative to the full text, not a major hallucination."
+      }
+    },
+    "final": {
+      "coherence": 4.5,
+      "consistency": 4.5,
+      "fluency": 4.5,
+      "relevance": 3.0,
+      "overall_judge": 4.1
+    }
+  }
+}

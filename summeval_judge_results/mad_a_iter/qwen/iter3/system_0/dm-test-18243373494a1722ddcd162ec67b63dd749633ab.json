@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-18243373494a1722ddcd162ec67b63dd749633ab",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 1.5,
+        "rationale_for_score": "The summary contains severe hallucinations and factual errors inconsistent with the source text. It incorrectly states that Roma beat Inter Milan (the article says they lost to them previously), claims Napoli beat Roma 4-2 (the actual score was 1-0), and includes a nonsensical phrase 'roma beat napoli beat napoli'. These are critical consistency failures."
+      },
+      "lenient": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 1.5,
+        "rationale_for_score": "The summary contains severe hallucinations and factual errors inconsistent with the source text. It incorrectly states that Roma beat Inter Milan (the article says they lost to them previously), claims Napoli beat Roma 4-2 (the actual score was 1-0), and includes a nonsensical phrase 'beat napoli beat napoli'. These are clear failures in consistency and relevance."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 1,
+        "overall_judge": 1.2,
+        "adjustment_notes": "The strict judge's assessment was correct and necessary. The summary contains severe hallucinations (claiming Roma beat Inter Milan instead of losing previously), factual errors regarding the scoreline (claiming Napoli won 4-2 instead of Roma winning 1-0), and nonsensical phrasing ('roma beat napoli beat napoli'). These are critical failures in consistency and coherence that warrant a score of 1 across all categories."
+      },
+      "strict": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 1.5,
+        "adjustment_notes": "The summary contains severe hallucinations and factual errors that are inconsistent with the source text. Specifically: 1) It claims Roma beat Inter Milan (the article states Roma's last home win was against Inter on Nov 30, implying they lost recently). 2) It claims Napoli beat Roma 4-2 (the actual score was a 1-0 victory for Roma). 3) It includes the nonsensical phrase 'beat napoli beat napoli'. These are critical failures in consistency and relevance. The lenient judge's assessment is correct; no points should be raised."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 1,
+        "overall_judge": 1.2,
+        "adjustment_notes": "The summary contains severe hallucinations and factual errors not present in the source text. Specifically: 1) It claims Roma beat Inter Milan, whereas the article states they lost to them previously (4-2). 2) It claims Napoli beat Roma 4-2, which is the exact opposite of the actual result (Roma won 1-0). 3) The phrasing 'roma beat napoli beat napoli' is nonsensical. These are critical failures in consistency and coherence that justify a score of 1 for those categories. Fluency is given a 2 only because the sentences are grammatically complete, despite being factually wrong."
+      },
+      "lenient": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 1.5,
+        "adjustment_notes": "The strict judge's assessment is correct. The summary contains severe hallucinations (claiming Roma beat Inter Milan when the text says their last win was against them, and claiming Napoli beat Roma 4-2 when the text describes a 1-0 Roma victory). It also includes nonsensical phrasing ('beat napoli beat napoli'). These are critical factual errors that make the summary inconsistent with the source and irrelevant to the actual event described. No score adjustment is needed; the low scores accurately reflect the poor quality of the summary."
+      }
+    },
+    "final": {
+      "coherence": 1.0,
+      "consistency": 1.0,
+      "fluency": 2.5,
+      "relevance": 1.0,
+      "overall_judge": 1.4
+    }
+  }
+}

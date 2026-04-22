@@ -1,0 +1,75 @@
+{
+  "article_id": "dm-test-54b857a66cbd8473d6732e5da52d48612e636a37",
+  "system_name": "system_3",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow and does not provide sufficient context about the incident, such as the passenger's initial reason for standing on the toilet."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits important details, such as the passenger's embarrassment, the extent of his injuries, and the response from authorities, which are crucial for understanding the incident."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as inconsistent capitalization of 'passenger' and missing punctuation."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not accurately reflect the passenger's change of story regarding how the incident occurred, which is a significant aspect of the article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical sequence of events, detailing how the incident occurred."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the key details from the article, including the passenger's actions and the resulting injuries."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is written in clear and understandable English, making it easy to read."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important aspects of the incident, such as the passenger's actions and the consequences."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks some context, such as the passenger's initial embarrassment and the involvement of emergency personnel."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "It omits details about the passenger's change of story and the police's comments, which provide additional context to the incident."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "tie",
+        "consistency": "tie",
+        "fluency": "tie",
+        "relevance": "tie"
+      }
+    }
+  }
+}

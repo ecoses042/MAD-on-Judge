@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-e880fda4c25289f8325574246f0f8ed4ff5eb26b",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is excellent in coherence, consistency, and fluency. It accurately captures the main points (untouched status, original features like oil heating and bathroom, and price) without hallucinations. It receives a slightly lower relevance score because it omits some specific details mentioned in the source text (e.g., the specific items on the shelf, the auction date, or the developer concerns), but given the lenient rules to give benefit of the doubt and focus on key points, this is still a very good summary."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and strictly consistent with the source text. It captures the main points (location, age, key features like oil heating and original bathroom, and price). However, it scores a 4 for relevance because it omits other significant details present in the article, such as the specific stained-glass designs (ships/coats of arms), the specific vintage food items on the shelf, and the auction date/location."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The strict judge's assessment is accurate: while the summary is fluent and consistent, it misses specific details like the stained-glass designs (ships/coats of arms), vintage food items, and the auction date, which are significant parts of the source text."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate. The summary perfectly captures the core facts (location, age, key original features like oil heating and bathroom, and price) with excellent fluency and consistency. While it omits specific details like the auction date or developer concerns, this is appropriate for a high-level summary focusing on the 'collector's paradise' aspect, justifying the slight deduction in relevance."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I raised the relevance score from the strict evaluator's likely lower mark (if any) or maintained a high but slightly adjusted score based on the lenient judge's input. The summary is factually consistent and fluent, but it significantly omits key unique details present in the source text: the specific designs of the stained-glass windows (ships/coats of arms), the vintage food items (Cadbury's Marvel, etc.), the auction date, and the developer concerns regarding renovations. These are significant points that define the 'collector's paradise' aspect mentioned in the title. Therefore, while not a failure, the summary is incomplete regarding the most interesting details."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The summary effectively captures the essential details (location, age, key original features, and price) with perfect fluency and consistency. The omission of secondary details like the auction date or developer concerns is appropriate for a concise high-level summary, justifying the slight deduction in relevance."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.7
+    }
+  }
+}

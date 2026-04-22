@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-c6667409fcdea2c89ba9f0d3a72c50e3967b4b1b",
+  "system_name": "system_9",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow of information, jumping abruptly from the match result to Barkley's penalty miss without connecting the events."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits key details about the context of Barkley's penalty taking, such as the previous incident with Mirallas and Baines, which is crucial for understanding the situation."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention that Barkley's penalty was saved, which is a significant detail regarding the outcome of the penalty."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary uses lowercase letters at the beginning of sentences, which is grammatically incorrect and affects readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with the match result, followed by Barkley's penalty miss, and concluding with Martinez's defense of his player."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, including the match outcome and Barkley's penalty situation without introducing any new facts."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary captures the key points of the article, focusing on the penalty miss and the manager's defense, which are central to the narrative."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization and punctuation, making it less readable."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits some context, such as the previous penalty incident involving Baines and Mirallas, which adds depth to the situation."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

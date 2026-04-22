@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-f5fead94ee884800e84a212cc0edc78b11c4ba9f",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, as it jumps from Manchester City's interest to Patoulidis's rejection of Barcelona without connecting these points."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits key details about the interest from Arsenal and the discussions with Anderlecht's chairman, which are important for understanding the context."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'is looked to build for the future' is grammatically incorrect; it should be 'is looking to build for the future'."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary does not mention that Patoulidis is regarded as one of the best talents, which is a significant point from the article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear focus on Manchester City's interest in Evangelos Patoulidis and maintains a logical flow of information regarding his background and the club's intentions."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, including the details about Patoulidis rejecting Barcelona and the club's discussions with Anderlecht."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary highlights the key points about Patoulidis's talent, his decision regarding Barcelona, and Manchester City's interest, avoiding trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'is looked to build' instead of 'is looking to build,' which affects its readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

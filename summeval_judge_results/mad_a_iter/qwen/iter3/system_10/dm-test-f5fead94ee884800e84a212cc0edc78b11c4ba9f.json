@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-f5fead94ee884800e84a212cc0edc78b11c4ba9f",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 5,
+        "overall_judge": 5.0,
+        "rationale_for_score": "The summary is excellent: it captures all key facts (interest from City, rejection of Barcelona move at age 12 due to studies, Pellegrini's involvement) with perfect consistency and fluency. The only minor deduction is that the first sentence in the summary omits the detail about Arsenal's interest mentioned in the source, but given the lenient rules and the fact that the core narrative remains intact, this is a very high-quality summary."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is factually consistent with the source text and covers all key points (interest from City, rejection of Barcelona, family reason, Pellegrini's involvement). It omits minor details like Arsenal's interest and the specific mention of Roger Vanden Stock, but these are trivial omissions rather than hallucinations. The score is slightly reduced from 5 due to minor fluency issues: the summary lacks proper capitalization for names and entities (e.g., 'manchester city', 'evangelos patoulidis') and uses lowercase throughout, which affects readability compared to standard English conventions."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.5,
+        "adjustment_notes": "The lenient judge's point about omitting Arsenal's interest is valid; the summary missed a key detail regarding other interested parties mentioned in the source text. Therefore, consistency and relevance were slightly lowered from 5 to 4 to reflect this omission, while coherence and fluency remain perfect."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is factually accurate and covers the main points while omitting minor details like Arsenal's interest or the specific name of the chairman, which is acceptable for a short summary. The only valid criticism is the lack of capitalization (e.g., 'manchester city' instead of 'Manchester City'), which impacts standard English conventions but does not constitute a severe grammatical error that would warrant a lower score than 4."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.5,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The omission of Arsenal's interest is a significant gap in relevance and consistency relative to the source text, as it represents a key piece of information regarding the player's market value and competition for his signature. No other adjustments are necessary."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary accurately reflects the source text without introducing external facts (consistency). It captures the main narrative flow regarding Patoulidis and City's interest (coherence/relevance). The only deduction is for the lack of capitalization in proper nouns, which affects standard English conventions but does not constitute a severe grammatical error warranting a lower score than 4."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.5,
+      "fluency": 4.5,
+      "relevance": 4.5,
+      "overall_judge": 4.7
+    }
+  }
+}

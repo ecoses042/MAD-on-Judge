@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-f26d8400ae49b90d109c165d0f44b8f6ca253c08",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, as it jumps between topics without clear connections."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary incorrectly states that Yoshinori Muto is a 'dutch partner' of Chelsea, which is misleading and not present in the source."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention key details such as Muto's age, his potential loan to Vitesse Arnhem, and his academic achievement, which are important for context."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'linked to # 200million deal deal' contains a typographical error with the repetition of 'deal'."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding Chelsea's offer for Yoshinori Muto and his current performance."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article about Chelsea's interest in Muto and his background as a player."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on key points such as the offer from Chelsea, Muto's performance, and the sponsorship deal, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, such as 'dutch partner' and 'linked to # 200million deal deal.'"
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The mention of 'dutch partner' is misleading, as it implies Muto is associated with a Dutch club rather than Chelsea's partnership with Vitesse Arnhem."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

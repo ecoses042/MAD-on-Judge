@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-1747dcd6a007ee97954b6b10cde549bf82f6a4eb",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is fluent and consistent with the provided text regarding the partnership details, fees, and contractor model. However, it fails to cover other significant information present in the article, such as Chipotle's history of turning down previous offers, the specific political endorsements (Marco Rubio and Hillary Clinton), and the context of other franchises entering the market. This omission reduces its relevance score."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is consistent with the source text and covers key points regarding the partnership, fees, and delivery model. However, it lacks a clear introductory sentence identifying Chipotle as the subject (the first sentence starts abruptly with 'the fast-casual chain'), which slightly impacts coherence and fluency. It misses other relevant details like the specific cities or celebrity sightings, but given the lenient rules focusing on avoiding hallucinations, this is acceptable."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I maintain the strict judge's scores. The summary is fluent and consistent but suffers from low relevance because it completely omits significant context provided in the article: Chipotle's history of rejecting other offers, the specific political figures (Rubio/Clinton) visiting, and the broader market context involving competitors like Starbucks and Taco Bell. These omissions mean the summary captures only a fraction of the source's key points."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I lowered the relevance score from 4 to 3. While the summary is factually consistent and coherent within its own scope, it fails to cover the most significant portions of the source text: the specific celebrity sightings (Marco Rubio and Hillary Clinton) and the broader context of other franchises entering the delivery market. The lenient judge accepted the omission of these details as 'acceptable' under a strict focus on avoiding hallucinations, but for a general relevance assessment, omitting such major news hooks makes the summary feel incomplete compared to the source."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding relevance. While the summary is fluent and consistent, it fails to capture the broader context of the article, specifically the political celebrity visits (Rubio/Clinton) and the competitive landscape (Starbucks, Taco Bell), which are significant portions of the source text. The omission of these key points justifies a lower relevance score."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the strict judge's assessment regarding relevance. While the summary is factually accurate and coherent within its limited scope, it significantly under-represents the source text by omitting the high-profile celebrity sightings (Marco Rubio and Hillary Clinton) and the context of other major franchises entering the market. These are key news hooks in the original article that make the story newsworthy beyond just the business partnership details. Therefore, maintaining the relevance score of 3 is appropriate as the summary misses substantial portions of the source's narrative focus."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 5.0,
+      "fluency": 4.5,
+      "relevance": 3.0,
+      "overall_judge": 4.1
+    }
+  }
+}

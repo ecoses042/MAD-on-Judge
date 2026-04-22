@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-2c6695b438980783754f7db28129ec2fbb3e6e21",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and consistent with the source text. It accurately captures the defendant's name, charges, and the specific evidence found (41 videos). It receives a score of 4 because it omits other significant details from the article, such as the duration of the abuse, the victim's age at the time of certain incidents, and the bail amount, though this is acceptable for a brief summary."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and strictly consistent with the source text regarding the charges and video evidence. However, it scores a 4 for relevance because it omits significant key details from the article, specifically the nature of the alleged abuse (molestation while sleeping), the duration of the crime (four years), and the specific horrific content of the videos (close-up images of genitalia). A high-quality summary should capture these critical elements of the case."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate. The summary is well-structured (coherence), contains only facts present in the article (consistency), and is grammatically correct (fluency). It focuses on the core elements: the defendant, charges, and specific evidence found. While it omits details like the duration of abuse or bail amount, this is a reasonable trade-off for brevity in a summary, justifying the relevance score of 4 rather than a lower one."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I lowered the relevance score from 4 to 3. While the summary is factually consistent and fluent, it is severely truncated. It omits the most critical aspects of the case: the specific nature of the abuse (molestation while sleeping), the duration of the crimes (four years), and the disturbing content of the videos (close-up images of genitalia). These are not trivial details but central to understanding the severity of the allegations, making the current summary insufficient for a high-quality summary."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The strict judge's assessment is accurate. The summary effectively captures the core facts (defendant, charges, and specific evidence) while maintaining brevity. The omission of secondary details like the duration of abuse or bail amount is a reasonable trade-off for length, justifying the relevance score of 4."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I raised the relevance score from 3 to 4. While the lenient judge correctly identified that the summary omits specific details about the abuse duration and video content, the summary does successfully cover the two most critical pillars of the story: the identity/charges of the accused and the discovery of the hidden camera evidence (the 41 videos). The omission of the victim's age progression or specific video descriptions is a significant gap, but the summary remains coherent and factually accurate regarding the core event. Therefore, a score of 3 feels too harsh for a summary that captures the 'who' and the 'what' of the investigation, even if it misses the 'how long' and 'how graphic'. I adjusted the overall score accordingly."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.7
+    }
+  }
+}

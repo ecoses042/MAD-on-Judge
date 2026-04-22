@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-c05bda9b387ec8ae43803170b6f59b4b82505db9",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.5,
+        "rationale_for_score": "The summary is fluent and coherent, capturing the main event (release of Yazidis) and key details (demographics, destination). It is consistent with the source text, though it omits specific numbers (217 vs 228) and context about Arab tribal leaders or ISIS's broader history, which is acceptable for a brief summary. The score is slightly reduced from 5 only because it misses some relevant context provided in the article, but no hallucinations are present."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from a significant consistency flaw: it omits the specific location 'northern Iraq' mentioned in the source text when describing where ISIS overtook towns, which is crucial context for the Yazidis' plight. Additionally, while it captures the main event, it misses the nuance regarding the conflicting release counts (217 vs 228) and the role of Arab tribal leaders, making it slightly less comprehensive than a 'Good' rating would warrant given the strict criteria."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.5,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is fluent and coherent. It accurately reflects the main event and key details (demographics, destination) without hallucinating facts. The score reduction from 5 to 4 for consistency and relevance is justified because the summary omits specific numbers mentioned in the text (217 vs 228) and lacks context regarding Arab tribal leaders or the broader humanitarian crisis described in the article, which are relevant details even if not exhaustive."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. While the summary is fluent and coherent, it lacks sufficient detail regarding the specific location (northern Iraq) and omits key context about the conflicting release counts and the role of Arab tribal leaders, which are significant details in the source text. Therefore, I maintain the lower relevance score."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.5,
+        "adjustment_notes": "No changes needed. The strict judge's assessment is accurate. While the summary is fluent and coherent, it does miss specific details present in the source text (the conflicting counts of released Yazidis, the role of Arab tribal leaders, and the broader context of the humanitarian crisis), which justifies a deduction from perfect scores for consistency and relevance."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding relevance. The summary accurately captures the main event (release of Yazidis) and key demographics but omits significant context present in the source text: the specific location (northern Iraq), the conflicting counts provided by officials (217 vs 228), and the role of Arab tribal leaders. These omissions prevent a higher relevance score despite the summary being fluent and coherent."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.0,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.3
+    }
+  }
+}

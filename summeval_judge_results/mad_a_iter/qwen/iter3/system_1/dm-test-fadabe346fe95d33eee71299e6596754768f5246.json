@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-fadabe346fe95d33eee71299e6596754768f5246",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary contains a critical hallucination: it states Gemma is 13 years old ('gemma , 13'), whereas the source text explicitly identifies her as a '23-year-old mother-of-two'. This violates the consistency criterion severely (Score 2). The coherence and fluency are acceptable, but the factual error regarding age makes the summary unreliable."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.5,
+        "rationale_for_score": "The summary is fluent and coherent. It captures the main conflict (Debbie threatening to ban Gemma) and key details like drug use and partying. However, it contains a significant consistency error: it states 'gemma , 13', whereas the article explicitly identifies her as a '23-year-old'. This contradicts the source text. Additionally, while accurate, the summary omits specific allegations mentioned in the text (stealing an iPad/money), which slightly impacts relevance, though the core story is covered."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment regarding consistency. The summary explicitly states 'gemma , 13', while the source text clearly identifies her as a '23-year-old'. This is a severe factual hallucination that fundamentally alters the subject's identity and life stage (teenager vs. adult mother). Consequently, the overall score must be lowered to reflect this critical failure in consistency."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 3,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.2,
+        "adjustment_notes": "The lenient judge's score for consistency (4) was too high given the critical factual error regarding Gemma's age. The summary states 'gemma , 13', while the source text explicitly identifies her as a '23-year-old'. This is a direct contradiction of the source material, which lowers the consistency score to 3. The other scores remain largely unchanged as the structure is logical, the English is fluent, and the core conflict is relevant."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No adjustment needed. The lenient judge correctly identified the critical factual error regarding Gemma's age (13 vs 23) which violates the consistency criteria. This hallucination fundamentally changes the subject's identity and life stage, justifying a low consistency score and preventing an overall high rating."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 3,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.2,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary contains a critical factual error stating Gemma is 13 years old, whereas the source text explicitly identifies her as a '23-year-old'. This direct contradiction significantly impacts consistency, justifying the score of 3. The other dimensions (coherence, fluency, relevance) remain strong and warrant the original scores."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 2.5,
+      "fluency": 4.5,
+      "relevance": 3.5,
+      "overall_judge": 3.6
+    }
+  }
+}

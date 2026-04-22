@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-e470f0a87d7513bf880412524332047020422c3f",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from a significant relevance issue: it only covers the first two sentences of the source text, completely omitting the crucial details about the dress's original color (slate blue-gray), the auctioneer James Tumblin's story of saving it for $20, and other top-selling items. By ignoring these key points, the summary fails to capture the main narrative arc of the article."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is well-structured and fluent, accurately reflecting the main points about the auction of Vivien Leigh's dress from Gone With the Wind. It correctly notes the item description, the auction details, and the condition of the dress. However, it omits other significant details present in the source text, such as the specific scenes where the dress was worn, the story of how James Tumblin acquired it for $20, and the prices of other top-selling items. While this makes it less comprehensive than a perfect score, the core information is consistent and coherent."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I lowered the relevance score from 3 to 3.8 (rounding down slightly to reflect the severity of the omission). The strict judge was correct that the summary is severely truncated, covering only the introduction and the condition of the dress while missing the origin story (James Tumblin saving it for $20), the original color details, and other significant auction results. These omissions represent a failure to capture the 'main narrative arc' as noted by the strict judge. I maintained coherence and fluency at 5 as the text is well-written and logical within its limited scope. Consistency remains 4 due to minor phrasing issues like the comma splice in the first sentence."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The lenient judge's assessment is accurate. The summary is well-structured and fluent (Coherence/Fluency 5). It strictly adheres to the source text without adding external facts (Consistency 5). However, it significantly omits key details such as the specific scenes worn, the acquisition story of James Tumblin, and the prices of other top items. Therefore, Relevance is correctly capped at 4, matching the lenient judge's score."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The strict judge's assessment is accurate. The summary is well-structured and fluent (Coherence/Fluency 5) and strictly adheres to the source text without adding external facts (Consistency 5). However, it significantly omits key details such as the specific scenes worn, the acquisition story of James Tumblin, and the prices of other top items. Therefore, Relevance is correctly capped at 4, matching the strict judge's score."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I have accepted the lenient judge's assessment regarding Relevance (3) and Consistency (4). The summary is indeed severely truncated, missing the origin story of James Tumblin saving the dress for $20, the specific original color details (slate blue-gray), and other significant auction results. These omissions constitute a failure to capture the main narrative arc as noted by the strict judge. I maintained Coherence and Fluency at 5 because the text within its limited scope is well-written and logical. The Consistency score of 4 reflects the minor phrasing issue (comma splice) in the first sentence identified by the lenient judge."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.5,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.5
+    }
+  }
+}

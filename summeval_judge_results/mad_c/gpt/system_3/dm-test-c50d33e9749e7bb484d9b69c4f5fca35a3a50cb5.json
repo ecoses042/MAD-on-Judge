@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-c50d33e9749e7bb484d9b69c4f5fca35a3a50cb5",
+  "system_name": "system_3",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, jumping abruptly between points without connecting them."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits critical details about the circumstances leading to Jacob Phillips' death, such as the reason for running from the taxi and the context of the night out."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as inconsistent capitalization and punctuation, which affect readability."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the phrase 'use an ATM' without context, which may confuse readers unfamiliar with the article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with Jacob Phillips' death and mentioning the chase by the taxi driver."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, including the location and circumstances surrounding Jacob's death."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary captures key details such as Jacob's age, the location of the incident, and the reason for his actions, which are central to understanding the event."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as the lack of proper capitalization and punctuation, which affects readability."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits important context, such as the details about the night out and the inquest findings, which are crucial for a complete understanding of the incident."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

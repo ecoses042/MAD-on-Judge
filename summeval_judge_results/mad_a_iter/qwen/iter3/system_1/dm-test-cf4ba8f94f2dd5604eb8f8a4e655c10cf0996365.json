@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-cf4ba8f94f2dd5604eb8f8a4e655c10cf0996365",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is factually consistent with the source text and covers the main points (robbery, mask, amount stolen, police appeal). However, it scores a 4 for fluency because it retains the awkward phrasing from the source text regarding the 'distinctive' cartoon mask (which appears to be a typo or poor style in the original article: 'wearing a ` distinctive ' cartoon mask'), rather than smoothing out the punctuation and spacing issues. A perfect score would have corrected these minor formatting artifacts while maintaining accuracy."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is well-structured, fluent, and strictly consistent with the source text. It captures the main event (robbery), key details (mask, amount taken, no weapons), and the police appeal. It receives a slight deduction on relevance because it omits specific descriptive details like the robber's height or the victim's name, which were present in the article, though these are minor compared to the core facts."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. While the summary is factually accurate and covers the key points (robbery, mask, amount, police appeal), it directly copies the awkward punctuation and spacing from the source text ('wearing a ` distinctive ' cartoon mask') without smoothing out these formatting artifacts. As a lenient evaluator, I acknowledge that this is a minor stylistic flaw rather than a factual error or structural breakdown, so maintaining the score of 4 for fluency (instead of lowering it to 3) is appropriate."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate. The summary effectively captures the core narrative (robbery, mask, amount, police appeal) and maintains strict consistency with the source text. The minor deduction in relevance for omitting specific details like the victim's name or the robber's height is justified as these are secondary to the primary news event."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary accurately reflects the source text and covers all key points. The only deduction for fluency is due to the direct copying of awkward punctuation and spacing artifacts from the source (e.g., 'wearing a ` distinctive ' cartoon mask'), which makes the sentence slightly less polished but does not constitute a grammatical error or structural breakdown."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The strict judge's assessment is accurate. The summary effectively captures the core narrative (robbery, mask, amount, police appeal) and maintains strict consistency with the source text. The minor deduction in relevance for omitting specific details like the victim's name or the robber's height is justified as these are secondary to the primary news event."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 4.5,
+      "relevance": 4.5,
+      "overall_judge": 4.8
+    }
+  }
+}

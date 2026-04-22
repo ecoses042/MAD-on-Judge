@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-207df192edc1836250b69d1bc5b9e6a38206eb78",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary fails the consistency criterion severely due to a major hallucination: it incorrectly attributes the claim that 'antibiotics are used to make farm animals put on weight' to the study itself ('the study did n't prove that antibiotics are used...'), whereas the source text explicitly states this is a comparison made by researchers, not a finding of the study. Additionally, the summary creates a nonsensical sentence fragment regarding children being 'the first to die at an early age,' failing to correctly link this statistic to the obesity epidemic context found in the source. The flow is disjointed and the factual accuracy is compromised."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary fails the consistency criterion due to a severe hallucination/misinterpretation in the final sentence. It incorrectly states that 'the study did n't prove that antibiotics are used to make farm animals put on weight,' whereas the source text explicitly says researchers said 'just as antibiotics are used to make farm animals put on weight, they may also be fattening our children.' The summary conflates a comparison made by researchers with a claim about what the study proved. Additionally, the sentence structure in that final clause is grammatically broken and confusing."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a severe consistency error (hallucination) where it attributes a researcher's analogy about farm animals to the study's findings ('the study did n't prove that antibiotics are used...'). It also fails to coherently link the 'first to die' statistic to the obesity context, resulting in disjointed flow. The grammar is poor ('age age'), and key details from the source (like the specific Finnish study results) are omitted or mangled. No leniency is warranted for these fundamental flaws."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I have lowered the overall score from 3.0 to 2.5. While I agree with the lenient judge's assessment of the severe consistency error (hallucinating that the study didn't prove the farm animal comparison), I also note a significant fluency issue in the final sentence where 'the may' appears to be a typo for 'they', and the phrasing 'die at an early age age' is repetitive. The summary fails to clearly separate the researchers' analogy from the study's actual findings, leading to confusion."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment that no leniency is warranted. The summary contains a critical consistency error (hallucination) by misattributing the 'farm animals' analogy to the study's findings rather than recognizing it as a researcher's comparison. Additionally, the sentence regarding dying early ('the may also be the first to die...') is grammatically broken and logically disjointed from the preceding clause. These are fundamental flaws that prevent the summary from being accurate or readable."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment that the summary contains a severe consistency error by misattributing the 'farm animals' analogy to the study itself rather than the researchers' comparison. This is a hallucination of fact regarding the source text. Additionally, the fluency score is lowered due to the typo ('the may') and repetitive phrasing ('age age'). The coherence and relevance are also impacted because the summary fails to clearly distinguish between the study's findings and the researchers' analogies, leading to confusion about what was actually proven versus what was suggested."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 1.0,
+      "fluency": 3.0,
+      "relevance": 2.0,
+      "overall_judge": 2.0
+    }
+  }
+}

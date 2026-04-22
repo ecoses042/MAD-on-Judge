@@ -1,0 +1,71 @@
+{
+  "article_id": "cnn-test-c05bda9b387ec8ae43803170b6f59b4b82505db9",
+  "system_name": "system_5",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow of information, abruptly ending without mentioning the context of the release or the implications."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to include key details such as the motivations behind the release, the humanitarian crisis faced by the Yazidis, and the broader context of ISIS's actions."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains inconsistent capitalization of 'ISIS' and 'Yazidis', which affects readability."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary states 'more than 200 Yazidis' but does not clarify the exact number released, which is mentioned in the article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the release of Yazidis, including details about who was released and the context of their captivity."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, including the number of Yazidis released and the demographics of those released."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "Despite some formatting issues, the summary is generally easy to read and conveys the information in a straightforward manner."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key event of the release of Yazidis and includes pertinent details about their situation and the context of their captivity."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as inconsistent capitalization and punctuation, which detract from its overall fluency."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

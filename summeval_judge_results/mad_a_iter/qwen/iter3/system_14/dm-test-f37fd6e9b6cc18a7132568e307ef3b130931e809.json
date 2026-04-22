@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-f37fd6e9b6cc18a7132568e307ef3b130931e809",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from significant relevance issues due to extreme brevity. It omits the specific date (January 1978), the victim's age at the time, the fact that he was a former police officer, the Palace's initial refusal to act, and the current status of the investigation (Scotland Yard involvement). While it avoids hallucinations, the lack of key context makes it an incomplete summary of the source text."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and consistent with the source text. It captures the main narrative arc (the incident, the immediate reaction, and the current police investigation). It receives a slight deduction on relevance because it omits specific details like the date (1978), the victim's age at the time, or the context of the recent child abuse probe that prompted the complaint, though these are secondary to the core story."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The lenient judge's assessment is accurate. The summary effectively captures the core narrative (incident, immediate reaction, current investigation). While it omits specific details like the date (1978) and the context of the child abuse probe that triggered the police involvement, these are indeed secondary to the main story as per the lenient judge's rationale. No harsher score is warranted."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I lowered the relevance score from 4 to 3 to align with the strict judge's assessment. The summary is indeed extremely brief and omits significant context provided in the source text, such as the specific date (January 1978), the victim's age at the time, his background as a former police officer, the Palace's initial refusal to act, and the current involvement of Scotland Yard. While the summary is factually consistent and fluent, its extreme brevity renders it an incomplete representation of the article's key points."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The strict judge's assessment is correct. The summary effectively captures the core narrative (incident, immediate reaction, current investigation). While it omits specific details like the date (1978) and the context of the child abuse probe that triggered the police involvement, these are indeed secondary to the main story as per the lenient judge's rationale. No harsher score is warranted."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I raised the overall score from 4.5 to 4.0. While I agree with the lenient judge's assessment that the summary is factually consistent and fluent, the relevance score of 3 remains appropriate because the summary captures only a tiny fraction of the article's narrative arc (the specific incident) while omitting crucial context regarding the investigation timeline, the victim's background, and the Palace's response. The summary is accurate but functionally incomplete as a standalone news report."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.7
+    }
+  }
+}

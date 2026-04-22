@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-a02e362c5b8f049848ce718b37b96117485461cf",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is coherent and fluent in its first sentence but fails significantly on relevance and consistency due to severe truncation. It only covers the very beginning of the article (the event and Tim Durkan's photos) while completely omitting the core explanatory content: the cause (Siberian wildfires), the mechanism (smoke particles filtering light), and the future outlook (air quality improvement). By excluding these key points, it fails to summarize the 'most important information' from the source. Additionally, the use of '-rrb-' instead of a closing parenthesis ')' is a minor consistency/fluency flaw."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "rationale_for_score": "The summary is fluent and consistent with the source text, but it only covers the very first sentence and a small portion of the second paragraph. It completely omits the main explanatory content regarding the cause (Siberian wildfires), the mechanism (smoke scattering light), and the future outlook (air quality improving). Under lenient rules, since there are no hallucinations and the included text is accurate, it avoids a low score, but the lack of key information prevents a higher rating."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "The lenient judge correctly identified that the summary contains no hallucinations and is fluent, justifying high scores for consistency and fluency. However, regarding relevance, the summary covers only the introductory anecdote (Tim Durkan's photos) and completely omits the core news event: the Siberian wildfires causing the phenomenon, the scientific explanation of light scattering, and the future outlook on air quality. The lenient judge awarded a 3 for relevance; I agree with this assessment as the summary fails to capture the main point of the article, making it trivial in terms of information density relative to the source text."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "Lowered coherence and relevance significantly. The strict judge was correct that the summary is a severe truncation; it captures only the 'hook' (the sunset photo) but completely ignores the main body of the article which explains the cause (Siberian wildfires), the scientific mechanism (light scattering), and the resolution (smoke dissipating). A summary that omits 90% of the source text's informational content cannot be considered coherent or relevant. Consistency remains high as it only includes facts present in the text, though the formatting error noted by the strict judge is a minor flaw. Fluency is maintained at 3 due to the truncation making it feel incomplete rather than grammatically incorrect."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I agree with the strict judge's assessment regarding relevance. The summary is a perfect transcription of the first two sentences but fails to summarize the actual news content (Siberian wildfires, smoke transport, scientific explanation). By only covering the anecdotal introduction, it misses the core information entirely, justifying a low relevance score despite high coherence and fluency."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I have raised the consistency score from 4 to 5. The lenient judge's point about consistency being high is valid because the summary strictly adheres to the facts presented in the first paragraph of the article without introducing external information or hallucinations. The formatting artifacts (e.g., '-lrb-') are minor and do not constitute a factual inconsistency. I agree with the strict judge's assessment that coherence, relevance, and fluency must be penalized heavily due to the severe truncation which omits the core explanatory content of the article."
+      }
+    },
+    "final": {
+      "coherence": 3.5,
+      "consistency": 5.0,
+      "fluency": 4.0,
+      "relevance": 2.0,
+      "overall_judge": 3.2
+    }
+  }
+}

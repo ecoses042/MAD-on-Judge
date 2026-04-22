@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-8764fb95bfad8ee849274873a92fb8d6b400eee2",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow and does not connect the events or provide context for the conflict between Merson and Townsend."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary incorrectly states that Merson restarted his row with Burnley, while the row is actually with Townsend."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details about Merson's criticism of Townsend and the context of their interactions, which are crucial for understanding the situation."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as the lack of capitalization for proper nouns and awkward phrasing."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, mentioning Merson's comments, Townsend's late substitution, and his goal for England."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the events and statements made in the article without introducing any new facts."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary captures key moments, such as Merson's criticism and Townsend's response, which are central to the article's narrative."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, such as 'row with burnley' which should specify 'Andros Townsend'."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits important context, such as Merson's admission of being wrong and the nature of their exchange on Twitter."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

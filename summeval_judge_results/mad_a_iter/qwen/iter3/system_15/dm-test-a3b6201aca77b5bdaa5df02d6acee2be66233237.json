@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-a3b6201aca77b5bdaa5df02d6acee2be66233237",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 3,
+        "overall_judge": 3.2,
+        "rationale_for_score": "The summary suffers from poor coherence and fluency due to run-on sentences that lack proper punctuation (e.g., 'revealed she burst into tears' instead of 'revealed... she burst'). It also misses the crucial outcome of the lie detector test regarding Jamie's guilt, which is a major plot point in the source text. While it avoids hallucinations and covers some key events, the fragmented structure and omission of the resolution make it an incomplete summary."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from severe fluency issues due to broken sentence structures and missing verbs (e.g., 'when one of mr kyle 's famous lie detector tests revealed she burst into tears' lacks a connector like 'that'). It also fails relevance by omitting the core conflict: the theft of money intended for a grave stone, which is the primary reason for Dawn's distress. While it avoids hallucinations (consistency is acceptable), the lack of grammatical completeness and omission of the main event makes it a poor summary."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 2.8,
+        "adjustment_notes": "I have lowered the scores for coherence and fluency because the summary contains severe grammatical errors (missing punctuation causing run-on sentences) and a critical logical break where the subject of the sentence changes abruptly ('revealed she burst' instead of 'revealed that Jamie...'). The lenient judge's point about missing the outcome is valid, but I agree with their assessment that the text avoids hallucinations. However, the structural issues are so severe that they impact readability significantly more than a simple omission would."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the overall score slightly from 3.0 to 2.5 because the strict judge's critique regarding fluency is valid and severe; the summary contains multiple run-on sentences and lacks necessary conjunctions (e.g., 'revealed she burst' instead of 'revealed that she burst'), making it grammatically incomplete. Additionally, I adjusted relevance down slightly as the omission of the specific theft amount (£207) and the intended use (grave stone), which are central to the emotional weight of the story, is a significant gap in coverage."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 2.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary suffers from severe grammatical errors (missing punctuation leading to run-on sentences) and a critical logical break ('revealed she burst' instead of 'revealed that Jamie...'), which significantly impacts readability. While the text avoids hallucinations, the structural flaws are too severe to warrant a higher score."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I accepted the lenient judge's assessment regarding fluency and relevance. The summary suffers from severe grammatical issues (run-on sentences, missing conjunctions like 'that', and awkward phrasing) which justifies a low fluency score. Furthermore, the omission of the specific theft amount (£207) and the intended use (grave stone), which are central to the emotional weight of the story as described in the article, is a significant gap in coverage, validating the lower relevance score."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 4.0,
+      "fluency": 2.0,
+      "relevance": 3.0,
+      "overall_judge": 2.9
+    }
+  }
+}

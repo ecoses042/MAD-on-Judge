@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-bcdb32ae644040a721da880fff9c1d502048cd8b",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary accurately reflects the key facts from the source text (location, event, cruise line, ship name, time) without hallucinations. The only minor deduction for fluency is due to the inclusion of XML-style tags ('-lrb-', '-rrb-') which are not standard in natural English prose, though they do not obscure meaning."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary accurately reflects the source text without hallucinations or irrelevant details. However, it scores a 4 for fluency because it retains the raw formatting artifacts (e.g., '-lrb-', '-rrb-') and inconsistent capitalization from the input, failing to produce clean, idiomatic English as required by the strict fluency criterion."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary accurately captures the key facts (location, event, cruise line, ship name, time) without hallucinations. The only valid deduction for fluency is the presence of XML-style tags ('-lrb-', '-rrb-') which are non-standard in natural English prose, though they do not obscure meaning."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 5,
+        "overall_judge": 4.2,
+        "adjustment_notes": "Lowered fluency score from 4 to 3 because the summary retains raw formatting artifacts ('-lrb-', '-rrb-') and inconsistent capitalization (e.g., 'puerto rico', 'holland america line'), which violates the requirement for clean, idiomatic English. Lowered consistency score from 5 to 4 because while no hallucinations were added, the failure to normalize text casing and remove artifacts technically introduces inconsistencies with standard written English conventions."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary accurately captures the key facts without hallucinations. The only valid deduction for fluency is the presence of XML-style tags ('-lrb-', '-rrb-') which are non-standard in natural English prose, though they do not obscure meaning."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 5,
+        "overall_judge": 4.2,
+        "adjustment_notes": "Agreed with the lenient judge's assessment regarding fluency and consistency. The presence of raw formatting artifacts ('-lrb-', '-rrb-') and inconsistent capitalization (e.g., 'puerto rico', 'holland america line') significantly impacts readability and adherence to standard English conventions, justifying a fluency score of 3 rather than 4 or 5. Similarly, the failure to normalize text casing represents a deviation from standard written conventions, warranting a consistency score of 4 instead of 5. No other adjustments were necessary."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.5,
+      "fluency": 3.5,
+      "relevance": 5.0,
+      "overall_judge": 4.5
+    }
+  }
+}

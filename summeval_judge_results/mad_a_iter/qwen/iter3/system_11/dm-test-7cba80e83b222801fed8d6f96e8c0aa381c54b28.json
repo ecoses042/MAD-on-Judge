@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-7cba80e83b222801fed8d6f96e8c0aa381c54b28",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is excellent in coherence, consistency, and fluency, directly supported by the source text without hallucinations. It captures the main points regarding Lindegaard's personal life and his on-pitch struggles. It receives a slight deduction on relevance (4) because it omits several specific details present in the article, such as their son, the date they started dating, Beqiri's background, and the specific context of his third-choice status due to competition from De Gea and Valdes, though this is acceptable given the summary's brevity."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from a significant relevance issue: it only covers the first three sentences of the source text, completely omitting key details such as their son, the specific Instagram post content, career statistics (19 appearances), and transfer rumors. Additionally, there is a minor consistency flaw where the summary states he 'tied the knot... last year' while the source explicitly mentions they have been dating since 2012 and moved to the Premier League in 2010; without the specific date of the wedding in the text provided, this creates ambiguity regarding whether 'last year' is factually supported by the snippet alone."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is well-structured and fluent. It accurately reflects the main narrative of Lindegaard's on-pitch struggles versus his off-pitch happiness without introducing hallucinations. The deduction for relevance is justified as the summary omits specific details present in the article (son, dating history, Beqiri's background, competition context), which is acceptable given the brevity but prevents a perfect score."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is grammatically perfect and flows well (Fluency 5), but it fails to capture the breadth of the source text by stopping after the first few sentences (Relevance 3). Specifically, it misses the son, career stats, transfer rumors, and specific Instagram details mentioned in the article. I also agree with the Consistency score of 4 because while the summary is factually consistent, the phrase 'tied the knot... last year' relies on external knowledge or inference not explicitly present in the provided text snippet (which mentions dating since 2012 but not the specific wedding date), creating a minor ambiguity regarding strict adherence to the source alone."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes required. The strict judge's assessment is accurate. The summary effectively captures the core narrative (on-pitch struggles vs. off-pitch happiness) and maintains high coherence, consistency, and fluency. The deduction for relevance is justified because the summary omits specific details from the source text such as their son, dating history, Beqiri's background, and the context of his competition with De Gea/Valdes, which are present in the article but excluded due to brevity."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary is grammatically perfect and flows well (Fluency 5), but it fails to capture the breadth of the source text by stopping after the first few sentences (Relevance 3). Specifically, it misses the son, career stats, transfer rumors, and specific Instagram details mentioned in the article. I also agree with the Consistency score of 4 because while the summary is factually consistent, the phrase 'tied the knot... last year' relies on external knowledge or inference not explicitly present in the provided text snippet (which mentions dating since 2012 but not the specific wedding date), creating a minor ambiguity regarding strict adherence to the source alone."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.5,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.5
+    }
+  }
+}

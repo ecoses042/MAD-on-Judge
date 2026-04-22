@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-d89de9c2a76f2665560becfe5d761a4fc62b9926",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is factually consistent with the source text but suffers from severe relevance issues. It consists almost entirely of disjointed sentences extracted directly from the article without any synthesis or logical flow. It fails to capture the narrative arc (e.g., the context of the match location, the specific goal details, the manager's intent) and reads like a random collection of facts rather than a coherent summary."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source text and uses correct grammar. However, it suffers from poor coherence due to a disjointed structure; it lists random facts (player stats, venue details) before stating the main headline result ('First blood to United...'). Additionally, while it captures some key points, it misses the specific match outcome (1-0 scoreline) and the identity of the goalscorer in the final sentence, which are central to the article's narrative."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment regarding relevance and coherence. The summary is a disjointed collection of sentences extracted directly from the text without any synthesis, logical flow, or narrative structure. It fails to capture key details like the goal description, the manager's intent, or the match context, making it a poor summary despite being factually consistent."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I have lowered the Relevance score from 3 to 2 because the summary fails to capture the most critical piece of information: the match result (1-0) and the specific goalscorer (Callum Gribbin). The lenient judge correctly identified this but awarded a relevance of 3, which I consider too high given that the main event's outcome is missing. The Coherence score was lowered from 4 to 3 because the summary presents facts in a disjointed list format rather than a logical narrative flow, starting with player demographics and venue details before mentioning the result. Consistency remains 5 as all facts are accurate. Fluency remains 4 as the grammar is correct despite the choppy structure."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary is a disjointed collection of sentences extracted directly from the source text without synthesis or logical flow (Coherence: 2). While it contains only facts present in the article (Consistency: 5) and has minor grammatical issues but is readable (Fluency: 4), it fails to capture key details like the goal description, manager's intent, or match context, making it a poor summary of importance (Relevance: 1). No score adjustment is needed."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is a disjointed list of sentences that fails to establish a logical narrative (Coherence: 3). Crucially, it omits the specific match result (1-0) and the context of the goal scorer being the 'matchwinner' until the very last sentence, making the relevance low (Relevance: 2) as it misses the core event outcome. Fluency is acceptable but choppy due to the list format (4). Consistency is perfect (5)."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 5.0,
+      "fluency": 4.0,
+      "relevance": 1.5,
+      "overall_judge": 2.5
+    }
+  }
+}

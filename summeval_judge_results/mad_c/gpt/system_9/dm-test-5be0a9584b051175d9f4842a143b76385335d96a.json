@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-5be0a9584b051175d9f4842a143b76385335d96a",
+  "system_name": "system_9",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, as it jumps between topics without smooth transitions, making it difficult to follow the narrative."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits key details about the financial implications for the players and the overall context of Manchester City's performance, which are crucial for understanding the situation."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary does not mention the total amount at stake for the City squad (£12 million), which is a significant detail that adds context to the players' bonuses."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains several grammatical issues, such as missing articles and inconsistent capitalization, which detract from its readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding Manchester City's situation and the implications of their performance on player bonuses."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article without introducing any new facts, maintaining consistency with the source."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points about the financial implications for players and the team's current standing in the league, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks some grammatical structure, such as missing articles and conjunctions, which affects its overall fluency and readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 4,
+      "overall_judge": 3.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

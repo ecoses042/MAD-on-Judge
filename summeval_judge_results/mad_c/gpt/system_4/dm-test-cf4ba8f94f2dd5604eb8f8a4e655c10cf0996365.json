@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-cf4ba8f94f2dd5604eb8f8a4e655c10cf0996365",
+  "system_name": "system_4",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, jumping between details without proper transitions."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the context of the robbery, the reaction of the victim's daughter, and the police's request for public assistance."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as missing punctuation and inconsistent capitalization."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not accurately reflect the sequence of events or the urgency conveyed in the original article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, starting with the description of the offender and then mentioning the robbery details."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the key details from the article, including the description of the offender and the amount stolen."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important information regarding the robbery, including the distinctive mask and the appeal for public assistance."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as missing punctuation and capitalization, which affect its readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-c50d33e9749e7bb484d9b69c4f5fca35a3a50cb5",
+  "system_name": "system_9",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow of information, jumping from the fall to the discovery of the body without explaining the events leading to the fall."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The mention of the Samaritans contact information is irrelevant to the main events of the article and distracts from the key points."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the reason for Jacob Phillips running from the taxi, which is a crucial detail from the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as the lack of capitalization at the beginning of sentences and awkward phrasing."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with Jacob Phillips' night out and leading to the discovery of his body."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the key details from the article, such as the location of the incident and the involvement of friends."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "It focuses on the most significant aspects of the incident, including the circumstances leading to the fall and the aftermath."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as the lack of capitalization at the beginning of sentences and awkward phrasing."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The mention of the Samaritans contact information is not relevant to the main narrative of the incident."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

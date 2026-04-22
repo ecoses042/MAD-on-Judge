@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-f468efac7b3c54f8c42c2c81dff108c52ebe0d7d",
+  "system_name": "system_8",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, failing to provide context about the goal and the subsequent analysis by pundits."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary incorrectly states that Terry's challenge 'should not have been punished,' which contradicts the consensus among pundits that it was a foul."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary does not cover key points from the article, such as the details of the goal or the specific comments made by the pundits."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'should not have been punished' is misleading and poorly constructed, as it implies that the foul was acceptable."
+        }
+      ],
+      "provisional_score": 1
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical conclusion regarding the foul committed by Terry on Falcao."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that Terry's challenge should not have been punished, which contradicts the consensus among pundits that it was indeed a foul."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary lacks key details about the context of the goal and the pundits' analysis, which are important to understanding the situation."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'should not have been punished' is misleading and could confuse readers about the pundits' views."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 1,
+      "fluency": 2,
+      "relevance": 1,
+      "overall_judge": 1.5,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

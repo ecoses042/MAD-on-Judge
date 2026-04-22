@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-5be0a9584b051175d9f4842a143b76385335d96a",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source text and well-structured (Coherence/Consistency). However, it suffers from relevance issues as it omits significant context such as the recent defeat to Manchester United, the specific stakes regarding the top-four finish, and the manager's admission of poor performance. Additionally, there are minor fluency issues like the use of '#' instead of '£' and slightly repetitive phrasing about incentivised contracts."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from severe relevance issues as it only covers the first three sentences of the source text, completely omitting the critical context regarding Manchester City's recent defeat to Manchester United, their current league position (4th), and the specific condition that they must finish in the top four to qualify for the Champions League. Without this context, the summary is misleading because the article explicitly states that 4th place requires a qualifying round, whereas the summary implies automatic qualification or simply failure to reach 'the group stages' without explaining the nuance of the current standings. Additionally, the summary lacks fluency in its final sentence which repeats the concept of incentivized contracts without adding new information, making it feel redundant and poorly structured."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is severely lacking in relevance because it truncates the narrative after the first few sentences, missing the crucial context of the recent defeat to Manchester United, the specific league position (4th), and the nuance that 4th place requires a qualifying round rather than automatic entry. This omission makes the summary misleading regarding the stakes. The redundancy in the final sentence further degrades coherence and relevance. No score reduction is necessary as the strict judge was accurate."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the fluency score from 4 to 3 because the use of '#' instead of '£' is a significant formatting error that detracts from professional quality, and the sentence structure is repetitive (mentioning 'incentivised contracts' twice in close proximity). I significantly lowered the relevance score from 3 to 2. While the lenient judge noted missing context like the Manchester Derby defeat or the manager's quotes, the summary fails to capture the *primary* narrative arc: the specific stakes of the upcoming matches (Liverpool vs Newcastle) and the immediate crisis described by the manager ('thrown it into the garbage'). The summary reads like a disjointed list of facts rather than a cohesive summary of the article's main event."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No score adjustment is necessary. The lenient judge correctly identified that the summary truncates the narrative and misses crucial context (the defeat to United, specific league position, and the nuance of qualifying rounds), which severely impacts relevance. The redundancy in the final sentence further degrades coherence. The strict judge's assessment was accurate."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I lowered the fluency score from 4 to 2 because the use of '#' instead of '£' is a critical formatting error that breaks professional standards, and the repetitive phrasing ('incentivised contracts') makes the text clunky. I significantly lowered the relevance score from 3 to 1 because the summary captures only isolated facts (bonuses, contract types) while completely missing the article's central narrative: the team's recent collapse ('thrown it into the garbage'), the specific stakes of the upcoming matches against Liverpool and Newcastle that determine Champions League qualification, and the manager's admission of failure. The strict judge was correct; this is a disjointed list of facts rather than a cohesive summary of the main event."
+      }
+    },
+    "final": {
+      "coherence": 3.0,
+      "consistency": 4.5,
+      "fluency": 3.0,
+      "relevance": 1.5,
+      "overall_judge": 2.5
+    }
+  }
+}

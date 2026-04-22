@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-f26d8400ae49b90d109c165d0f44b8f6ca253c08",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and strictly consistent with the source text regarding the main facts (offer made, player details, sponsorship denial). However, it scores a 4 for relevance because it omits significant key information present in the article, such as the loan move to Vitesse Arnhem, Muto's recent graduation from Keio University, his specific stats/goals, and the potential £4million fee. While not hallucinations, these omissions represent a loss of important context provided in the source."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is excellent in coherence, consistency, and fluency, accurately reflecting the source text without hallucinations. It captures the main news (Chelsea's offer) and a key detail (the sponsorship deal distinction). It receives a slight deduction on relevance because it omits Muto's current form, his university graduation, and his personal reaction to the offer, which are significant parts of the article."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. While the summary is grammatically perfect and factually consistent, it suffers from a significant lack of relevance by omitting major details present in the source text, such as the loan move to Vitesse Arnhem, Muto's recent graduation, his specific statistics, and the mooted transfer fee. These are key points that provide necessary context to the story."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is well-structured, factually accurate, and fluent. The deduction for relevance is justified as the summary omits significant details present in the article, such as Muto's recent graduation, his specific reaction to the offer ('honour'), his current form/goals, and the potential loan move to Vitesse Arnhem."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I am raising the relevance score from the strict judge's likely lower mark (if any) to 3. While the lenient judge correctly identified that the summary omits significant details like the loan move, graduation, and transfer fee, a score of 4 is too high for such a sparse summary. The summary covers only the headline offer and explicitly denies the sponsorship connection, ignoring the player's stats, current form, and future plans which constitute the bulk of the article's substance. Therefore, it fails to cover 'the most important information' effectively."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I have lowered the relevance score from 4 to 3. While the summary is factually accurate and coherent, the strict judge's point about omitting significant details is valid. The article highlights Muto's recent graduation, his specific reaction ('honour'), his current form (goals scored), and the potential loan move to Vitesse Arnhem as key context for the transfer story. The summary only covers the offer itself and the sponsorship denial, missing these substantial narrative elements that provide depth to the news."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 3.0,
+      "overall_judge": 4.5
+    }
+  }
+}

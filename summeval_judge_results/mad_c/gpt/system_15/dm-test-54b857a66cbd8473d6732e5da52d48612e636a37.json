@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-54b857a66cbd8473d6732e5da52d48612e636a37",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, jumping abruptly between points without proper transitions."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits critical details, such as the man's hospitalization and the reason for his embarrassment, which are essential to understanding the incident."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as inconsistent capitalization and punctuation, making it less readable."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to cover key points, such as the man's age, the specific injuries he sustained, and the police's comments, which are important for context."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with Jin Pai's actions and leading to the incident and his injuries."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the main facts from the article, including Jin Pai's age, his actions, and the location of the incident."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the incident, including the reason for Jin Pai's actions and the outcome of the accident."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as the lack of proper capitalization and punctuation, which affects readability."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary uses a fragmented style that makes it less fluid and idiomatic."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

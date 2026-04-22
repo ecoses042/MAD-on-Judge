@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-6372eff07fd3d6f578f90d6115e01747edccc095",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 5,
+        "overall_judge": 5.0,
+        "rationale_for_score": "The summary is an exact verbatim copy of the first three sentences of the source text. It perfectly satisfies all criteria: it is coherent (logical flow), consistent (no hallucinations or external facts), fluent (grammatically correct), and relevant (covers the key points introduced in the article). As a direct excerpt, it contains no flaws."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 5,
+        "overall_judge": 5.0,
+        "rationale_for_score": "The summary is an exact copy of the first paragraph of the source text. It perfectly captures the main points (sci-fi context, Dr. Quarterman's proposal for home heating, and the weaponization concern) without adding any hallucinations or errors. As a lenient evaluator, this is considered excellent."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "While the summary is grammatically correct and consistent with the text, it fails significantly on relevance. It only summarizes the first three sentences of the article, completely omitting the core details about Dr. Quarterman's specific technology (converting sunlight to laser energy), the potential benefits (powering homes in Scotland, disaster relief), the comparison to other laser projects (ISS debris removal), and the nuance regarding control of the satellites. A good summary should capture the main points of the entire article, not just the introduction."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 5,
+        "overall_judge": 5.0,
+        "adjustment_notes": "The summary is an exact verbatim copy of the first paragraph of the source text. It perfectly captures the main points (sci-fi context, Dr. Quarterman's proposal for home heating, and the weaponization concern) without adding any hallucinations or errors. As a strict evaluator, I confirm that since it is faithful to the source and covers the key introductory information accurately, the lenient judge's high score is justified."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "The lenient judge's assessment of relevance (2/5) is correct and should be maintained. The summary provided consists almost entirely of the first three sentences of the article, failing to summarize the subsequent paragraphs which contain the bulk of the factual content: Dr. Quarterman's specific mechanism (converting sunlight to laser energy), the potential benefits (powering homes in Scotland, disaster relief), the comparison to ISS debris removal projects, and the nuance regarding satellite control. Therefore, no points should be raised for relevance."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "While the summary is factually consistent and fluent, it fails significantly on relevance. It only summarizes the first paragraph of the source text, completely omitting the detailed explanation of how the technology works (satellites with mirrors converting sunlight to laser light), its potential benefits (powering homes in Scotland, disaster relief), and the comparison to other space laser projects (ISS debris removal). A good summary should synthesize the key information from the entire article, not just copy the intro."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 2.0,
+      "overall_judge": 3.0
+    }
+  }
+}

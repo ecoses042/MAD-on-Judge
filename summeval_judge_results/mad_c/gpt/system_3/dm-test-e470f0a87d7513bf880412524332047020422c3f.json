@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-e470f0a87d7513bf880412524332047020422c3f",
+  "system_name": "system_3",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, as it only presents a fragment of the article without context or connection to other key details."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to cover the most important information, such as the auction price, the condition of the dress, and the significance of the auction event."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary uses lowercase letters for names and titles, which is not standard in English writing and affects readability."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the auction or the fact that the dress was part of a larger collection, which is crucial to understanding the context."
+        }
+      ],
+      "provisional_score": 1
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow by mentioning the dress and its significance in key scenes of the movie."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects information from the article regarding the dress worn by Vivien Leigh and its context in the film."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary lacks coverage of important details such as the auction price and the dress's condition, which are key points in the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary has grammatical issues, such as the lack of capitalization for proper nouns and the overall structure, making it less fluent."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.0,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

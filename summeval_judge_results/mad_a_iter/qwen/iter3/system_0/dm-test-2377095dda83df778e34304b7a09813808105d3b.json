@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-2377095dda83df778e34304b7a09813808105d3b",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary contains a severe hallucination regarding consistency: it attributes the quote about 'system failure' to Ministers, whereas the source text explicitly states that the Passport Office said this (Ministers rejected the demand for compensation). Additionally, the first sentence conflates 'profit' with 'bonuses', which are distinct figures in the text (£42m profit vs £1.8m bonuses), leading to factual inconsistency. The summary is also disjointed and lacks a logical flow."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary contains a major hallucination in the first sentence: it claims managers received '£42 million profit in bonuses'. The source text states the agency made a £42 million profit and that managers received up to £3,500 in bonuses (totaling £1.8 million), but never links the full £42m directly to bonuses. This is a severe inconsistency. Additionally, the summary attributes the quote about 'system failure' to ministers, whereas the source text explicitly states it was the Passport Office that said this. These factual errors significantly impact consistency and coherence."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a critical factual error (hallucination) by attributing the 'system failure' quote to Ministers instead of the Passport Office, and it conflates the £42m profit with bonuses, which are distinct figures in the source text. These are severe consistency flaws that warrant a score of 1 for consistency. The disjointed structure also justifies low coherence and relevance scores."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I have lowered the consistency score from 3 to 2 because the lenient judge's points regarding factual errors are valid and based on actual text discrepancies. The summary incorrectly attributes a £42 million profit directly to 'bonuses' (the text says the agency made the profit, while bonuses totaled £1.8m), and it misattributes the quote about 'system failure' to ministers instead of the Passport Office. These are significant hallucinations that cannot be overlooked."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary contains a critical factual error (hallucination) by attributing the 'system failure' quote to Ministers instead of the Passport Office, and it conflates the £42m profit with bonuses, which are distinct figures in the source text. These are severe consistency flaws that warrant a score of 1 for consistency. The disjointed structure also justifies low coherence and relevance scores."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I have lowered the overall score from 3.0 to 2.5 because the strict judge's criticism regarding consistency is well-founded and represents a critical failure in summarization. The summary conflates the agency's £42 million profit with manager bonuses (which were actually £1.8 million), and incorrectly attributes the 'system failure' quote to ministers rather than the Passport Office. These are significant factual hallucinations that distort the meaning of the source text, warranting a lower consistency score."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 1.5,
+      "fluency": 3.5,
+      "relevance": 2.5,
+      "overall_judge": 2.5
+    }
+  }
+}

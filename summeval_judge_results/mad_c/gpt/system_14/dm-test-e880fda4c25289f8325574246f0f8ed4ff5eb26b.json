@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-e880fda4c25289f8325574246f0f8ed4ff5eb26b",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information and does not connect the details about the house's features to the auction date and price effectively."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the house's untouched condition for over 80 years, the specific features of the rooms, and the potential appeal to antique lovers, which are crucial to understanding the property's significance."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces 'retro jars of popular food' without specifying that these are original tins from the past, which could mislead readers about their significance."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The use of '#' instead of '£' for the price is unconventional and may confuse readers."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, outlining the key details about the property, including its location, auction date, and notable features."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important information from the article, such as the auction date, original features, and the guide price, while avoiding trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits several specific original features mentioned in the article, such as the original bathroom and kitchen, which could provide a fuller picture of the property."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The use of '#' instead of '£' for the price is unconventional and may confuse readers, affecting the overall fluency of the summary."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

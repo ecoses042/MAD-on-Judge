@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-81bd721b16cad47dfd8d24baca5b30b006291db2",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source text and flows logically. However, it suffers from low relevance as it omits the central news hook: the overturning of Hughes' ban. It reads more like a list of background facts rather than a summary of the main event (the appeal decision). The capitalization errors in the first sentence slightly impact fluency."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is factually consistent and fluent but fails the relevance criterion significantly. It merely lists three disjointed sentences summarizing specific details without providing a coherent narrative or capturing the main news hook: that Nathan Hughes's ban was overturned on appeal. By omitting the resolution of the story (the ban being rescinded), it renders the summary trivial and misleading regarding the article's primary purpose."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary fails to capture the main news hook (the ban being overturned) and merely lists disjointed facts, resulting in low relevance and coherence scores. No adjustment needed; the original lenient scores were too generous given the omission of the central event."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the relevance score from 3 to 2. The lenient judge correctly identified that the summary misses the central news hook (the overturning of the ban), but I agree it is a significant omission rather than a minor one; the summary reads like a list of background facts about the injury and missed game, completely ignoring the main event described in the article. I kept consistency at 5 as all facts are accurate to the source. Fluency remains 4 due to the capitalization errors noted by the lenient judge. Coherence is lowered slightly because the lack of a connecting narrative regarding the appeal decision makes the flow feel disjointed."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The lenient judge correctly identified that the summary fails to capture the main news hook (the ban being overturned), which is the most critical piece of information in the article. The summary merely lists disjointed facts about the collision and North's injury history without connecting them to the resolution of the disciplinary case. Consequently, the relevance score should remain low (1) because it misses the primary topic entirely. Coherence is also low (2) due to the lack of a logical narrative flow leading to the outcome. Fluency is acceptable but slightly choppy (4). Consistency remains perfect (5) as no hallucinations are present."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary fails to capture the primary news event (the overturning of the ban), reducing its relevance significantly. While consistency is perfect and fluency is acceptable despite minor capitalization issues, the lack of narrative flow regarding the appeal decision further impacts coherence. No score increases are warranted."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 5.0,
+      "fluency": 4.0,
+      "relevance": 1.5,
+      "overall_judge": 2.5
+    }
+  }
+}

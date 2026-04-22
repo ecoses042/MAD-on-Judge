@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-f468efac7b3c54f8c42c2c81dff108c52ebe0d7d",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from severe fluency issues due to poor capitalization and lack of punctuation (e.g., 'eden hazard', 'manchester united'), making it look unprofessional. While the content is consistent with the source text and covers the main events, it lacks coherence as a standalone paragraph because it reads like a list of disjointed sentences rather than a flowing narrative. Furthermore, it fails relevance by omitting the specific details of the pundits' analysis (Henry, Redknapp, Souness) which constitutes a significant portion of the source text's information."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is consistent with the source text and captures the main events (Hazard's goal, the foul by Terry on Falcao, and the pundits' reaction). However, it lacks a clear logical flow compared to the original article which builds up the sequence of play. It also misses significant relevant details like the specific actions of Fabregas and Oscar that led to the goal, reducing its relevance slightly. The capitalization is inconsistent (lowercase start), which affects fluency but is minor."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary requires a score of 2 for fluency due to severe lack of capitalization and punctuation, which makes it unprofessional and difficult to read as a narrative. It also scores low on coherence (3) because it reads like a disjointed list rather than a flowing paragraph. While the content is factually consistent with the source (5), the summary fails relevance (3) by completely omitting the detailed analysis of the pundits, which was a major part of the source text."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "Lowered coherence and fluency scores due to the summary's lack of capitalization (e.g., 'eden hazard', 'manchester united') and poor sentence structure which makes it read like a disjointed list rather than a coherent paragraph. Lowered relevance score because the summary completely omits the specific actions of Fabregas and Oscar, which are crucial to explaining how the goal was scored after the foul, as noted by the lenient judge."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 1,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I have lowered the fluency score from 2 to 1 because the lack of capitalization and punctuation renders the text nearly unreadable as a narrative, making it significantly worse than just 'difficult to read'. I also adjusted coherence down to 2; while it is a list, the severe formatting issues break the logical flow even further than a standard disjointed list. Relevance remains at 3 because the summary captures the event and the initial pundit consensus but misses the specific details of the pundits' arguments (Souness's elbow comment, Henry's sympathy, Redknapp's nuance), which constitutes a significant portion of the source text."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary suffers from severe fluency issues due to a complete lack of capitalization and punctuation, making it read like a raw data dump rather than text. Coherence is low because the disjointed sentences fail to form a logical narrative flow. Relevance is critically low as the summary ignores the central event (the goal) and the subsequent analysis by pundits regarding the foul, focusing only on the setup without context or conclusion."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 5.0,
+      "fluency": 1.5,
+      "relevance": 2.0,
+      "overall_judge": 2.0
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-d296270ab4a4cf20f2d9c1aae7514687806f2b35",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary suffers from a severe grammatical and logical error in the second sentence: it claims the jet 'was built for just a lounge and ` state room', omitting the crucial detail that it was built for a single tycoon (owner). This is a hallucination/omission of a key fact present in the source, violating consistency. Additionally, the summary cuts off abruptly after mentioning the sleeping space, failing to cover other significant details like the cost or the dining room, resulting in poor relevance and coherence."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.8,
+        "rationale_for_score": "The summary suffers from a major consistency error (hallucination). It states the plane was 'built for just a lounge and state room', which contradicts the source text that explicitly mentions bedrooms, dining rooms, an aeroloft, and guest areas. Additionally, it omits significant details like the cost (£400million) and the three-year customization period mentioned in the first sentence of the summary itself, making it incomplete and factually inconsistent with the source."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a severe logical error in the second sentence ('built for just a lounge and ` state room'') which contradicts the source text stating it was built for a 'single tycoon'. This is a critical consistency failure. Additionally, the summary is incomplete (cuts off) and misses key details like the cost and dining room, confirming low relevance and coherence. No score reduction needed."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 1.8,
+        "adjustment_notes": "The lenient judge's assessment of consistency (2) and relevance (2) is correct but perhaps too generous given the severity of the errors. The summary contains a catastrophic hallucination: it claims the plane was 'built for just a lounge and state room', completely omitting the bedrooms, dining room, kitchen, and aeroloft mentioned in the source text. Furthermore, the sentence structure is broken ('...built for just a lounge and ` state room ' at the back of the plane . more sleeping space is the ` aeroloft '...'), making it grammatically flawed and confusing. The summary also fails to include the specific cost (£400million) or the three-year period mentioned in its own first sentence, rendering it factually inconsistent with the source text regarding the scope of the conversion."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment that no score reduction is needed. The summary contains a critical consistency error in the second sentence ('built for just a lounge and ` state room'') which contradicts the source text stating it was built for a 'single tycoon'. Additionally, the summary is incomplete (cuts off mid-sentence) and omits significant details like the cost (£400million) and the dining room, confirming low relevance and coherence. The lenient judge correctly identified these issues."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 1,
+        "overall_judge": 1.5,
+        "adjustment_notes": "The strict judge's assessment is accurate and justified. The summary suffers from a catastrophic hallucination where it claims the plane was 'built for just a lounge and state room', which contradicts the source text listing bedrooms, dining rooms, kitchens, etc. Additionally, the summary fails to include key details like the £400m cost or the three-year period mentioned in its own opening sentence, making it factually inconsistent with the source regarding the scope of the conversion. The grammar is also broken ('...built for just a lounge and ` state room ' at the back of the plane . more sleeping space is the ` aeroloft '...'), warranting a low fluency score. I have lowered the consistency and relevance scores slightly below the strict judge's initial generous assessment to reflect the severity of these errors."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 1.0,
+      "fluency": 2.5,
+      "relevance": 1.5,
+      "overall_judge": 1.8
+    }
+  }
+}

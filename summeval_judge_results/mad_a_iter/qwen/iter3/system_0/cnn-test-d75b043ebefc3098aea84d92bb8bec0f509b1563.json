@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-d75b043ebefc3098aea84d92bb8bec0f509b1563",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary contains a major hallucination regarding consistency: it claims 'the sunni muslim group says it is investigating the incident,' whereas the source text explicitly states that the Pakistani government (not Jaish al Adal) is investigating and has asked Iranian authorities to share evidence. This contradicts the article's facts. Additionally, the sentence structure in the summary is slightly disjointed."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary contains a major hallucination regarding the 'Sunni Muslim group' (Jaish al Adal) investigating the incident; the source text explicitly states that Pakistani authorities are investigating, not the militant group. Additionally, the phrase 'militants have been killed in clashes with Pakistan' is factually inconsistent with the source, which clarifies the clash was between Iranian forces and militants near the border, while the militants crossed from Pakistan."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No adjustment needed. The lenient judge correctly identified a critical consistency error where the summary attributes the investigation to 'the sunni muslim group' (Jaish al Adal) instead of the Pakistani government as stated in the source text. This is a hallucination that invalidates the factual accuracy of that specific claim. The coherence and relevance scores remain low due to the disjointed sentence structure and the inclusion of this false detail, while fluency remains high as the English itself is grammatically correct."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the overall score because the strict judge correctly identified a critical hallucination: the summary falsely attributes the investigation to the militant group 'Jaish al Adal' instead of Pakistani authorities as stated in the source. Additionally, the phrase 'clashes with Pakistan' is misleading; the text specifies clashes between Iranian forces and militants who crossed from Pakistan, not a direct clash with the state of Pakistan itself. These are significant factual errors that warrant a lower consistency score than my initial assessment."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "Lowered coherence and relevance scores significantly because the summary is disjointed and fails to capture the main narrative (the death of 8 guards vs 3 militants). Crucially, I lowered the consistency score from 2 to 1 because the hallucination regarding the 'Sunni Muslim group' investigating the incident is a severe factual error; the source explicitly states the Pakistani government is investigating. This false claim invalidates the summary's reliability."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding the critical hallucinations. The summary incorrectly states that 'Jaish al Adal' is investigating the incident (the text says Pakistani authorities are investigating) and uses the misleading phrase 'clashes with Pakistan' instead of 'clashes near the border with Pakistan'. These are significant factual errors that prevent a higher consistency score. No points were raised as the strict judge's deductions were well-founded."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 1.5,
+      "fluency": 4.0,
+      "relevance": 2.5,
+      "overall_judge": 2.5
+    }
+  }
+}

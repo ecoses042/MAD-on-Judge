@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-18243373494a1722ddcd162ec67b63dd749633ab",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from significant relevance issues by truncating the text after the first paragraph's quote, omitting crucial context such as the match significance (Champions League places), specific scoreline implications (moving ahead of Lazio), security details, and key player injuries. While consistent with the source up to the cut-off point, it fails to capture the full scope of the article."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from significant relevance issues as it only covers the first half of the article (the goal and goalkeeper quotes) while omitting key details like the match context regarding Lazio, security measures, injured players, and specific second-half saves. It is penalized slightly on consistency for missing these facts rather than hallucinating them."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "The strict judge's assessment is accurate. The summary is indeed fluent and coherent but critically fails on relevance by cutting off the text after the first quote, omitting the majority of the article's key information (scoreline implications, security context, injuries, and second-half details). Therefore, no score reduction was necessary; the original scores reflect the severe truncation issue correctly."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "The lenient judge's assessment is accurate. The summary is indeed fluent and coherent but fails the relevance criterion significantly by truncating the story after the first paragraph of the source text, omitting crucial context about the match stakes (Lazio), security measures, injured players, and the second-half performance details. No score increase is warranted as the summary does not cover the key points of the full article."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "The lenient judge correctly identified that the summary is truncated and fails to cover key points like security context, injuries, and second-half details, resulting in a low relevance score. The strict judge's assessment aligns with this finding; no adjustment is needed as the scores accurately reflect the severe truncation issue."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the relevance score from 3 to 2. While the summary is grammatically correct and coherent, it is severely truncated, covering only the first paragraph of the source text. It completely omits critical information regarding the match stakes (Lazio rivalry), security measures (fan death context), injured players, specific second-half saves, and the final scoreline implications. The strict judge's assessment that this fails the relevance criterion significantly was correct; a summary must cover the key points of the *entire* article, not just the opening segment."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.0,
+      "fluency": 5.0,
+      "relevance": 2.5,
+      "overall_judge": 3.6
+    }
+  }
+}

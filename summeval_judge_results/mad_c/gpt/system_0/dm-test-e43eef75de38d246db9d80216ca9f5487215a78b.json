@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-e43eef75de38d246db9d80216ca9f5487215a78b",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, jumping between topics without proper transitions."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary incorrectly states that Filipe Luis signed a deal with Atletico Madrid, while the article specifies he signed with Chelsea."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key points about Luis's happiness at Chelsea and the context of Chelsea's title run-in, which are important to the overall message."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'refusing to let his league leaders rest on their return' is unclear and does not accurately reflect the original context."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear statement of Filipe Luis's desire to stay at Chelsea, which is the main point of the article."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects Luis's commitment to Chelsea and his contract situation without introducing any incorrect information."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points regarding Luis's intentions and the context of his situation at Chelsea."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as the phrase 'signed a three-year deal with atletico madrid' which incorrectly states the team he signed with."
+        },
+        {
+          "criterion": "coherence",
+          "reason": "The mention of 'refusing to let his league leaders rest on their return' is unclear and does not accurately represent the content of the article."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

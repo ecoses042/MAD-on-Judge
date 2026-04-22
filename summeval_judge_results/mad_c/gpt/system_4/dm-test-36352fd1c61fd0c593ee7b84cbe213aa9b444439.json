@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-36352fd1c61fd0c593ee7b84cbe213aa9b444439",
+  "system_name": "system_4",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, as it repeats details about the location and cause of death without providing context or a narrative structure."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits key details from the source, such as the arrest of a suspect, the police appeal for information, and the victim's background, which are essential for understanding the case."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses too narrowly on the circumstances of the death and fails to mention the investigation's context or the victim's life, which are important for a comprehensive understanding."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains awkward phrasing, such as 'the 33-year-old national,' which should specify 'Mexican national' for clarity."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the circumstances of Vanessa Santillan's death."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the details from the article, including her age, profession, and the nature of her injuries."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the article, specifically the discovery of the body and the cause of death."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as the incorrect use of 'national' instead of 'Mexican national'."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The use of '#' in front of '400,000' is unconventional and disrupts the readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

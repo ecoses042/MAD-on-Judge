@@ -1,0 +1,63 @@
+{
+  "article_id": "dm-test-14c813567696f4e63a39993c09d4edb454036179",
+  "system_name": "system_8",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow and does not adequately convey the context of the announcement video."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary incorrectly states that the Meeks have three children together, while the article mentions they are expecting their first child."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary introduces details about the couple being together for over a decade and having three children, which are not relevant to the main focus of the pregnancy announcement."
+        }
+      ],
+      "provisional_score": 1
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the Meeks' pregnancy announcement."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the couple's announcement of expecting a child, which is consistent with the source document."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary introduces incorrect information about the couple having three children together, which is not mentioned in the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "While the summary is generally easy to read, the introduction of incorrect details affects its overall clarity and reliability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 1,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.0,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

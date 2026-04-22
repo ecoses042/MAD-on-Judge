@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-5be0a9584b051175d9f4842a143b76385335d96a",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow and does not connect the information about bonuses to the implications of failing to qualify for the Champions League."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits critical details such as the current standings of Manchester City, the impact of their recent losses, and the total amount at stake for the squad, which are essential for understanding the context."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The use of '# 500,000-a-man' is awkward and not idiomatic; it should be '£500,000 per player' for better fluency."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the specific players who are affected by the bonuses, which is a significant detail in the original article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the financial implications for Manchester City players if they fail to qualify for the Champions League."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article about the players' potential loss of bonuses and the incentivized contracts."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key point of the financial consequences for the players, which is the main theme of the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as the use of '#' instead of '£' for the currency, which affects readability."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits important context about the team's current standings and the implications of their performance, which are crucial to understanding the situation."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

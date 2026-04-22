@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-31114653cd606fd3f4b1035f98dedd71f8282cd2",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary contains severe hallucinations regarding the year '1958'. The source text mentions Wales' best position since the 1958 World Cup, but the summary incorrectly states they play Belgium at the '1958 world cup' and that both teams have points from games in '1958'. This is a clear factual error not present in the article. While the fluency is acceptable and some key facts (dates, names) are correct, the consistency failure regarding the year significantly impacts the score."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary contains severe hallucinations that contradict the source text. It incorrectly states the match is against 'Wales' play belgium at the 1958 world cup' (the match is in 2016, not 1958) and claims Belgium and Wales have 11 points 'in 1958'. The source explicitly mentions 1958 only as a historical reference for Wales' last major tournament appearance. These are critical factual errors violating consistency rules."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No adjustment needed. The lenient judge correctly identified severe hallucinations regarding the year '1958' (confusing the historical reference to Wales' best position since 1958 with the actual match date and points accumulation). These are critical factual errors that violate consistency criteria, justifying a low score."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The strict judge's assessment is correct and justified. The summary contains severe hallucinations where it conflates the historical reference to the 1958 World Cup with the current match details (claiming the match is in 1958 or related to that year). This violates the consistency criterion fundamentally. I have lowered my scores slightly from a potential 'generous' 2-3 range to reflect the severity of these factual errors, aligning with the strict judge's low scores."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No adjustment needed. The strict judge correctly identified severe hallucinations regarding the year '1958' (confusing a historical reference with the actual match date and points accumulation). These are critical factual errors that violate consistency criteria, justifying a low score."
+      },
+      "strict": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 1.8,
+        "adjustment_notes": "The summary contains severe factual hallucinations that violate the consistency criterion. Specifically, it claims 'Wales play belgium at the 1958 world cup' and states they have '11 points from five games in 1958'. The source text mentions the 1958 World Cup only as a historical benchmark for Wales' best position since then; the match is clearly set in the present (Euro 2016 qualifiers). These are not minor errors but fundamental fabrications of time and context. Therefore, the consistency score must remain at 1. The coherence and relevance scores are also lowered to 1 because the hallucinations disrupt the logical flow and render the summary irrelevant to the actual news event described in the source."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 1.5,
+      "fluency": 4.0,
+      "relevance": 2.0,
+      "overall_judge": 2.4
+    }
+  }
+}

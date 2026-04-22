@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-f5fead94ee884800e84a212cc0edc78b11c4ba9f",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from a significant relevance flaw: it omits the primary news hook regarding Manchester City's active negotiations with Anderlecht chairman Roger Vanden Stock to agree on a compensation package. By excluding this key development, the summary presents the situation as merely background information rather than current events, failing to capture the full importance of the article."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and strictly consistent with the source text. It captures all key facts regarding Patoulidis's age, reputation, previous rejection of Barcelona, and reason for that decision. It receives a 4 on relevance because it omits the specific details about Manchester City's current negotiations (discussions with Roger Vanden Stock) and Manuel Pellegrini's interest, which are significant parts of the source article."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment regarding relevance. The summary successfully captures the background context (player profile, previous rejection of Barcelona) but completely misses the primary news hook: the active negotiations between Manchester City and Anderlecht chairman Roger Vanden Stock to finalize a compensation package. Without this, the summary reads like a generic player bio rather than a news update about a specific transfer development."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is well-structured, strictly consistent with the source text (no hallucinations), and fluent. It correctly omits specific details about current negotiations with Roger Vanden Stock and Pellegrini's involvement to focus on the core facts about Patoulidis's profile and history, which justifies a slight deduction in relevance rather than a harsh penalty."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding relevance. The summary captures the player's background and previous rejection of Barcelona well, but it completely omits the primary news hook: the active negotiations between Manchester City and Anderlecht chairman Roger Vanden Stock to finalize a compensation package. Without this key detail, the summary reads like a generic biography rather than a report on current transfer developments."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary is well-structured, strictly consistent with the source text (no hallucinations), and fluent. It correctly omits specific details about current negotiations with Roger Vanden Stock and Pellegrini's involvement to focus on the core facts about Patoulidis's profile and history, which justifies a slight deduction in relevance rather than a harsh penalty."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.5,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.5
+    }
+  }
+}

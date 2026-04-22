@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-8847383b72167c3f3dd2161b5b091b580c8f4da7",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is excellent in coherence, consistency, and fluency, accurately reflecting the source text without hallucinations. It captures the main event (land emergence), location, dimensions, and geological cause. The only minor deduction for relevance is that it omits details about the lack of tremors/sounds and the official clarification regarding the earthquake, which are significant points in the full article, but given the lenient rules, this is acceptable as a summary of the primary narrative."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and covers the main points of the article (location, event, dimensions, cause). It scores a 4 on consistency because it omits several specific details present in the source text, such as the exact measurements (1,640ft length), the lack of tremors/sounds reported by locals, the distinction from the Kathmandu earthquake, and the presence of marine organisms. While not hallucinating, the omission of these key contextual facts prevents it from being a perfect summary."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is well-structured, factually accurate based on the source text, and fluent. While it omits details about the lack of tremors and the earthquake comparison (which are relevant context), these omissions do not detract significantly from the core narrative of the land emergence event, justifying a high relevance score."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is fluent and coherent but fails to capture key contextual details from the source text (specific measurements like 1,640ft length, the lack of tremors/sounds, the distinction from the Kathmandu earthquake, and marine organisms). Therefore, I maintain the consistency score at 4 rather than inflating it, as these omissions represent a significant gap in coverage relative to the source."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary effectively captures the core narrative of the land emergence event. While it omits details regarding the lack of tremors and the comparison to the Kathmandu earthquake (which are relevant context), these omissions do not detract significantly from the main story, justifying a high relevance score."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding consistency; the summary contains only facts present in the source text and does not introduce hallucinations. However, I am adjusting the relevance score down from 5 to 4. While the summary covers the main event (the emergence of land), it omits several significant details provided in the source text that add context and importance: the specific dimensions (length/width), the residents' experience (no tremors/sounds), the distinction from the Kathmandu earthquake, and the presence of marine life. These omissions mean the summary does not fully capture the 'most important information' relative to the full scope of the article."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 4.0,
+      "overall_judge": 4.8
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-e2bccd4dec93c9bb7b327827dae004c2d494ec31",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow and structure, making it difficult to follow the main points."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits significant details about the context of the discussion, such as Inoki's background and the implications of the UFO discussion, which are crucial for understanding the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The use of abbreviations like 'ASDF' without explanation can confuse readers unfamiliar with the term."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention Inoki's claim of having seen a UFO, which is a notable point from the article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, starting with the context of the discussion about UFOs and leading into the response from the Defense Minister."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information provided in the article, specifically regarding the statements made by Defense Minister Gen Nakatani about the ASDF's encounters with UFOs."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the article, including the political discussion initiated by Antonio Inoki and the response from the Defense Minister, without delving into trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains some grammatical issues, such as the use of dashes and parentheses, which disrupt the flow and readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

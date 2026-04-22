@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-808a439a5d83fc47baaea934c8779a7ebc62470d",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.8,
+        "rationale_for_score": "The summary contains a major hallucination regarding consistency: it states Vincent Kompany was dismissed 'against Wales', whereas the source text explicitly says he is suspended for the match against Wales because he was dismissed during the qualifier against Israel. Additionally, the summary fails relevance by omitting key details about Clattenburg's actual red card record (sent off 3 players total, 2 to United) and the specific context of Kompany's suspension, focusing instead on generic accusations without the supporting evidence provided in the text."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary contains a significant hallucination regarding Vincent Kompany: the text states he was dismissed against 'Wales', but the article explicitly says he was suspended for the match against Wales because of an offense during the qualifier against Israel. This is a clear factual error (consistency). Additionally, the summary misses key context about Clattenburg's actual red card record and the specific players sent off, focusing only on the accusation which is less important than the facts provided in the source."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a significant factual error (hallucination) regarding Kompany's dismissal match (stating 'against Wales' instead of 'against Israel'), which violates consistency. Furthermore, it omits crucial context about Clattenburg's actual red card record and the specific details of his season performance, failing relevance. The scores remain unchanged."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No adjustment needed. The lenient judge's assessment of consistency (score 2) is correct because the summary states Kompany was dismissed 'against Wales', whereas the source text clarifies he was suspended for a match against Wales due to an offense committed during a qualifier against Israel. This is a factual hallucination. The relevance score remains low as the summary omits key details about Clattenburg's actual red card record (2 cards, both to United) and the specific context of his season performance provided in the source."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.8,
+        "adjustment_notes": "No changes made. The lenient judge correctly identified a factual hallucination regarding the match where Kompany was dismissed (stating 'against Wales' instead of 'against Israel'), which violates consistency. Additionally, the summary omits key details about Clattenburg's actual red card record and the specific context of his season performance, failing relevance. The scores remain unchanged."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No adjustment needed. The strict judge correctly identified a factual inconsistency regarding Vincent Kompany's dismissal (attributed to Wales in the summary vs. Israel in the source) and noted the omission of key details about Clattenburg's red card record. These are valid criticisms that warrant the lower scores."
+      }
+    },
+    "final": {
+      "coherence": 3.0,
+      "consistency": 2.0,
+      "fluency": 4.0,
+      "relevance": 2.5,
+      "overall_judge": 2.9
+    }
+  }
+}

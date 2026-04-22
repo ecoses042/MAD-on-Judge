@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-9b5a04b9879fe716a2dcd66dd331f99534603c16",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from a significant relevance flaw: it truncates the text after the first paragraph of the source, omitting the crucial context that Billy Gordon was forced to quit the Labor party due to domestic violence accusations and withholding criminal history, as well as his subsequent decision to remain in parliament as an independent. This omission makes the summary incomplete regarding the main event."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and consistent with the source text. It captures the main event (Katter's statement) and key context (Gordon's situation). It receives a 4 for relevance because it omits significant details present in the article, such as Gordon becoming an independent, the resulting political chaos, the social media backlash, and Katter's defense of his comments."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "The strict judge's assessment is accurate. The summary fails to capture the core narrative arc: Billy Gordon's resignation from the Labor party and his subsequent decision to remain in parliament as an independent. Without this context, the significance of Katter's statement (which questions why the government assumed Gordon would quit) is lost. Therefore, I maintain the low relevance score."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The lenient judge's assessment is accurate. The summary effectively captures the core narrative (Katter's statement and context) but significantly omits the consequences of Gordon's actions (becoming an independent, political chaos), the public reaction (social media criticism), and Katter's subsequent defense. These omissions justify a relevance score of 4 rather than higher, as the summary covers only the 'what' and not the 'so what' or the full scope of the story."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agree with the strict judge's assessment. The summary accurately reflects the provided text but fails to cover significant portions of the story, specifically the consequences of Gordon's actions (becoming an independent), the resulting political chaos, and the public reaction/criticism. Therefore, the relevance score of 4 is appropriate."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding relevance. The summary captures the initial accusation and Katter's background but completely omits the critical narrative arc: Billy Gordon's forced resignation from the Labor party, his admission of a criminal past, and his subsequent decision to remain in parliament as an independent. Without these details, the context for Katter's statement (specifically his question about why the government assumed Gordon would quit) is lost, making the summary incomplete despite its fluent and coherent structure."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.5,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.5
+    }
+  }
+}

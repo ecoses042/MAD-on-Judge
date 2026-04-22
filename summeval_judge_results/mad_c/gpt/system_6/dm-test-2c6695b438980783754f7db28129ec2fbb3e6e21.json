@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-2c6695b438980783754f7db28129ec2fbb3e6e21",
+  "system_name": "system_6",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, as it starts with a sentence that is incomplete and confusing."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary fails to mention the specific details of the abuse and the hidden camera's discovery, which are crucial to understanding the severity of the case."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains awkward phrasing and punctuation issues, making it difficult to read smoothly."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary does not adequately cover the key points of the investigation, including the number of videos found and the nature of the charges."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the arrest of Kevin Rebbie and the charges he faces."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article without introducing any new facts."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the case, including the charges against Rebbie and the context of the crime."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, making it less fluent and harder to read."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

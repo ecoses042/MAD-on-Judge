@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-e470f0a87d7513bf880412524332047020422c3f",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is factually consistent with the source text and flows logically within its own scope. However, it suffers from a severe relevance flaw: it only covers the first two sentences of the article (approx. 15% of the content) while completely omitting major details such as the specific sale price ($137,000), the color change due to age, the collector James Tumblin's story, and other top-selling items. By ignoring these key points, it fails to summarize the article effectively."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is well-grounded in the source text, accurately reporting the auction details and specific scenes where the dress was worn. It avoids hallucinations. The score is slightly reduced from 5 due to minor capitalization errors (e.g., 'heritage auctions', 'saturday') which affect fluency/idiomatic correctness, though the content is excellent."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is factually consistent and fluent but fails significantly on relevance by omitting the most critical piece of information (the sale price) and ignoring the narrative arc regarding the collector James Tumblin and other top-selling items mentioned in the text. It reads more like an excerpt than a summary."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary accurately reflects the source text regarding the auction details and specific scenes. The only deduction is for capitalization errors (e.g., 'heritage auctions', 'saturday'), which impacts fluency but not coherence or consistency."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's points regarding consistency and fluency as they are accurate. However, I maintain the low relevance score (2) because the summary omits the most critical fact from the article: the sale price of $137,000. Additionally, it ignores the significant narrative about James Tumblin saving the dress from being thrown away and the other top-selling items, making it feel more like a truncated excerpt than a comprehensive summary."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "While the summary is grammatically acceptable (minus capitalization), it suffers from severe relevance issues. It only covers the first two sentences of the source text, completely omitting the dress's color change due to age, the backstory of James Tumblin saving the dress, the other high-value auction items (hat, suit, bonnet), and the historical context regarding Hattie McDaniel. A summary that ignores 80% of the provided text cannot be considered relevant."
+      }
+    },
+    "final": {
+      "coherence": 4.5,
+      "consistency": 5.0,
+      "fluency": 4.0,
+      "relevance": 2.5,
+      "overall_judge": 3.6
+    }
+  }
+}

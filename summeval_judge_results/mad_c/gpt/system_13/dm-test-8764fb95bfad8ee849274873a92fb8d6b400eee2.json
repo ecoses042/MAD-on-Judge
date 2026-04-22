@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-8764fb95bfad8ee849274873a92fb8d6b400eee2",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, as it jumps between topics without proper transitions."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that Merson had a dig at Townsend after he scored for England, which is misleading as the criticism was about Townsend's performance prior to that match."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention the context of Merson's initial criticism and Townsend's response, which are key points in the original article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains awkward phrasing, such as 'after scoring for england against italy,' which is misleading and grammatically unclear."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with Merson's comments about Townsend's late substitution and concluding with Townsend's performance for England."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the events and opinions expressed in the article without introducing any new or misleading information."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary captures the key points of the article, focusing on the conflict between Merson and Townsend and the context of their interactions."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains some awkward phrasing and lacks smooth transitions, which could affect readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

@@ -1,0 +1,148 @@
+[
+  {
+    "essay_id": "GWGR2400108970.1",
+    "source_id": null,
+    "prompt_id": null,
+    "status": "ok",
+    "gold": null,
+    "prediction": {
+      "content": {
+        "score": 2.0,
+        "rationale": "글의 주제가 '블라인드 채용 폐지'에 대한 의견 제시인 반면, 본론 전체가 블라인드 채용의 장점과 단점을 나열하는 방식으로 전개되어 있다. 특히 서론에서 '블라인드 채용은 다양한 장점을 갖고 있다'고 명시적으로 주장한 후, 본론에서 이를 뒷받침하는 예시 (서울대 vs 지방대) 와 비용 절감 효과를 논하며 오히려 폐지 반대 입장을 취하고 있어 문제의 요구사항에 정면으로 배치된다. 결론에서도 '단점을 고치면 공정한 채용 방법이 될 것'이라 하여 폐지를 지지하지 않는 태도를 유지함으로써 논리적 일관성이 부족하다."
+      },
+      "organization": {
+        "score": 3.0,
+        "rationale": "서론, 본론, 결론의 기본 구조는 갖추고 있으나, 문단 간의 논리적 연결이 문제적이다. 서론에서 '장점'을 주장한 후 본론 첫 번째 문단에서 구체적인 예시를 들어 장점을 설명하고, 두 번째 문단으로 넘어가며 비용 절감 등 추가 장점을 나열하는 과정에서 주제가 흐트러진다. 또한 마지막 단락에서 갑자기 단점을 언급하며 결론을 맺는 방식은 전형적인 '장점-단점' 비교 구조를 따르지만, 이는 '폐지 여부'라는 핵심 질문에 대한 명확한 입장을 제시하는 데 실패한다."
+      },
+      "expression": {
+        "score": 3.0,
+        "rationale": "전반적으로 문장은 이해하기 쉬우나, 구어체 표현과 비유적 표현이 섞여 있어 학술적 에세이의 어조와는 다소 거리가 있다. '생각해보자면', '아닐까라는 생각이고', '이미지는 별로 안 좋지만' 등의 표현은 문장 연결을 자연스럽지 않게 만든다. 또한 '인서울 대학'과 같은 구어적 약어를 사용하거나, '스펙을 쌓느라 들인 시간, 노력, 비용 등이 필요 없어진다'는 표현에서 주술 호응이 다소 어색하다 (시간/노력/비용 자체가 없어지는 것이 아니라, 그 필요성이 줄어드는 것임)."
+      }
+    },
+    "judge": {
+      "content": {
+        "strict_initial": {
+          "domain_match": 3,
+          "score_rationale_consistency": 4,
+          "specificity": 3,
+          "groundedness": 4,
+          "overall_judge": 3.5,
+          "rationale_for_score": "domain_match에서 본론이 블라인드 채용의 장점과 단점을 나열하는 방식으로 전개되어 있어 주제와의 적절한 대응이 부족하므로 2점 감점. score_rationale_consistency는 예시와 주장의 불일치로 인해 1점 감점. specificity는 구체적인 예시가 부족하여 2점 감점. groundedness는 essay_text와의 연결이 비교적 잘 이루어졌으나 일부 내용이 추상적이어서 1점 감점."
+        },
+        "lenient_initial": {
+          "domain_match": 4,
+          "score_rationale_consistency": 4,
+          "specificity": 3,
+          "groundedness": 4,
+          "overall_judge": 3.8,
+          "rationale_for_score": "rationale은 블라인드 채용의 장점과 단점을 나열하는 방식으로 전개된 점을 지적하며, 서론과 본론 간의 일관성 부족을 강조하고 있다. 이는 content 기준에 부합하며, 논리적 연결이 부족하다는 점에서 4점을 부여했다. 그러나 본론에서 제시된 예시와 주장 간의 연결이 다소 모호하여 specificity는 3점으로 평가하였다. groundedness는 essay_text의 내용을 바탕으로 하고 있어 4점을 부여하였다. 전반적으로 rationale이 essay_text와의 연결이 잘 이루어졌으나, 논리적 일관성 부족으로 인해 predicted_score와의 일치성에서 약간의 차이가 있어 4점을 부여하였다."
+        },
+        "strict_adjusted": {
+          "domain_match": 4,
+          "score_rationale_consistency": 4,
+          "specificity": 3,
+          "groundedness": 4,
+          "overall_judge": 3.8,
+          "adjustment_notes": "domain_match는 관대한 심사위원과 동일하게 유지하였으며, rationale이 블라인드 채용의 장점과 단점을 나열하는 방식으로 전개된 점을 지적한 부분은 적절하다고 판단하였다. score_rationale_consistency도 유지하였는데, 논리적 일관성 부족이 명확하게 드러나므로 4점이 적절하다고 보았다. specificity는 관대한 심사위원과 동일하게 3점으로 유지하였고, groundedness는 essay_text와의 연결이 잘 이루어졌으므로 4점으로 유지하였다. 전반적으로 rationale이 essay_text와의 연결이 잘 이루어졌으나, 논리적 일관성 부족으로 인해 predicted_score와의 일치성에서 약간의 차이가 있어 4점을 부여하였다."
+        },
+        "lenient_adjusted": {
+          "domain_match": 3,
+          "score_rationale_consistency": 4,
+          "specificity": 3,
+          "groundedness": 4,
+          "overall_judge": 3.5,
+          "adjustment_notes": "domain_match는 본론이 블라인드 채용의 장점과 단점을 나열하는 방식으로 주제와의 적절한 대응이 부족하다는 점을 인정하여 2점 감점. score_rationale_consistency는 예시와 주장의 불일치로 인해 1점 감점한 부분을 유지. specificity는 구체적인 예시가 부족하다는 점을 인정하여 2점 감점. groundedness는 essay_text와의 연결이 비교적 잘 이루어졌다는 점을 유지."
+        },
+        "final": {
+          "domain_match": 3.5,
+          "score_rationale_consistency": 4.0,
+          "specificity": 3.0,
+          "groundedness": 4.0,
+          "overall_judge": 3.6
+        }
+      },
+      "organization": {
+        "strict_initial": {
+          "domain_match": 3,
+          "score_rationale_consistency": 3,
+          "specificity": 3,
+          "groundedness": 4,
+          "overall_judge": 3.2,
+          "rationale_for_score": "domain_match에서 문단 간의 논리적 연결 문제를 지적했으나, 구체적인 예시가 부족하여 3점으로 평가됨. score_rationale_consistency는 예시가 부족한 점과 점수 간의 일관성이 떨어져 3점으로 처리됨. specificity는 문단 간 연결 문제를 언급했으나, 구체적인 문장 인용이 부족하여 3점으로 평가됨. groundedness는 essay_text와의 연결이 비교적 잘 이루어졌으나, 일부 내용이 추상적이어서 4점으로 평가됨."
+        },
+        "lenient_initial": {
+          "domain_match": 4,
+          "score_rationale_consistency": 4,
+          "specificity": 3,
+          "groundedness": 4,
+          "overall_judge": 3.8,
+          "rationale_for_score": "조직 구조에 대한 평가가 이루어졌으며, 서론, 본론, 결론의 기본 구조가 갖추어져 있다는 점에서 domain_match가 높게 평가됨. 그러나 문단 간의 논리적 연결이 부족하다는 지적은 구체적인 예시를 통해 설명되었고, 이는 essay_text와의 연결이 확인됨. score_rationale_consistency는 rationale이 predicted_score와 일치하며, 약간의 약점이 지적되었으나 전반적으로 설득력이 있음. specificity는 다소 일반적인 표현이 포함되어 있어 3점으로 평가되었고, groundedness는 essay_text에 기반한 평가가 이루어져 있어 높은 점수를 부여함."
+        },
+        "strict_adjusted": {
+          "domain_match": 4,
+          "score_rationale_consistency": 4,
+          "specificity": 3,
+          "groundedness": 4,
+          "overall_judge": 3.8,
+          "adjustment_notes": "domain_match와 groundedness는 관대한 심사위원의 평가와 일치하여 유지하였고, score_rationale_consistency도 rationale이 predicted_score와 일치하므로 유지하였다. specificity는 구체적인 예시가 부족하다는 점에서 3점으로 유지하였다."
+        },
+        "lenient_adjusted": {
+          "domain_match": 3,
+          "score_rationale_consistency": 3,
+          "specificity": 3,
+          "groundedness": 4,
+          "overall_judge": 3.2,
+          "adjustment_notes": "domain_match는 문단 간 논리적 연결 문제를 지적했으나, 예시가 부족하여 3점으로 유지. score_rationale_consistency는 점수와 설명 간의 일관성이 떨어져 3점으로 유지. specificity는 구체적인 문장 인용이 부족하여 3점으로 유지. groundedness는 essay_text와의 연결이 비교적 잘 이루어져 4점으로 유지."
+        },
+        "final": {
+          "domain_match": 3.5,
+          "score_rationale_consistency": 3.5,
+          "specificity": 3.0,
+          "groundedness": 4.0,
+          "overall_judge": 3.5
+        }
+      },
+      "expression": {
+        "strict_initial": {
+          "domain_match": 3,
+          "score_rationale_consistency": 3,
+          "specificity": 2,
+          "groundedness": 3,
+          "overall_judge": 2.8,
+          "rationale_for_score": "domain_match에서 구어체 표현과 비유적 표현의 사용이 학술적 어조와 거리가 있다는 점은 표현 영역의 평가 기준에 부합하나, 구체적인 예시가 부족하여 3점으로 평가함. score_rationale_consistency는 predicted_score가 3점인데 비해 rationale의 근거가 약해 3점으로 처리함. specificity는 '전반적으로 좋다'와 같은 일반적인 표현이 포함되어 있어 2점으로 평가함. groundedness는 일부 표현이 essay_text에서 확인 가능하나, 구체적인 인용이 부족하여 3점으로 처리함."
+        },
+        "lenient_initial": {
+          "domain_match": 4,
+          "score_rationale_consistency": 4,
+          "specificity": 3,
+          "groundedness": 4,
+          "overall_judge": 3.8,
+          "rationale_for_score": "전반적으로 문장은 이해하기 쉬우나, 구어체 표현과 비유적 표현이 섞여 있어 학술적 에세이의 어조와는 다소 거리가 있다는 점에서 표현의 적절성에 대한 경미한 약점이 존재합니다. '생각해보자면', '아닐까라는 생각이고'와 같은 표현은 문장 연결을 자연스럽지 않게 만들며, '스펙을 쌓느라 들인 시간, 노력, 비용 등이 필요 없어진다'는 표현에서 주술 호응이 어색하다는 점도 지적되었습니다. 그러나 이러한 약점에도 불구하고, rationale은 essay_text의 내용과 잘 연결되어 있으며, 구체적인 예시를 통해 표현의 문제점을 지적하고 있습니다. 따라서 전체적으로는 무난한 평가를 받을 수 있습니다."
+        },
+        "strict_adjusted": {
+          "domain_match": 4,
+          "score_rationale_consistency": 4,
+          "specificity": 3,
+          "groundedness": 4,
+          "overall_judge": 3.8,
+          "adjustment_notes": "domain_match 점수를 4로 조정한 이유는 rationale이 target_domain의 평가 기준을 적절히 사용하고 있기 때문입니다. score_rationale_consistency 점수도 4로 유지한 이유는 근거가 적절하게 제시되었기 때문입니다. specificity 점수는 3으로 유지했으며, 구체적인 예시가 부족하다는 점에서 약간의 약점이 존재합니다. groundedness 점수는 4로 유지한 이유는 rationale이 essay_text와 잘 연결되어 있기 때문입니다."
+        },
+        "lenient_adjusted": {
+          "domain_match": 3,
+          "score_rationale_consistency": 3,
+          "specificity": 2,
+          "groundedness": 3,
+          "overall_judge": 2.8,
+          "adjustment_notes": "domain_match는 구어체 표현과 비유적 표현의 사용이 학술적 어조와 거리가 있다는 점을 인정하여 3점으로 유지. score_rationale_consistency는 rationale의 근거가 약하다는 점을 인정하여 3점으로 유지. specificity는 구체적인 예시가 부족하다는 점을 인정하여 2점으로 유지. groundedness는 일부 표현이 essay_text에서 확인 가능하나 구체적인 인용이 부족하다는 점을 인정하여 3점으로 유지."
+        },
+        "final": {
+          "domain_match": 3.5,
+          "score_rationale_consistency": 3.5,
+          "specificity": 2.5,
+          "groundedness": 3.5,
+          "overall_judge": 3.3
+        }
+      }
+    }
+  }
+]

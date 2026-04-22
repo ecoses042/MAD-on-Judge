@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-2abe0f81f5b22c8a406165717e3bd7fce6fe47c6",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is well-structured, fluent, and consistent with the source text. It captures the main points regarding Charles Manuel's admission, the agreement terms, and the license surrender. It receives a slight deduction on relevance because it omits the specific detail about performing exorcisms, which was a significant part of the original article's narrative, though this is a minor omission given the lenient scoring rules."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source text and covers the main events (charges, agreement, license surrender). However, it suffers from relevance issues by omitting significant details present in the article, such as the specific allegations of performing exorcisms, recommending patients stop taking medication, and the ironic detail about receiving perfect patient satisfaction reviews despite his misconduct. Additionally, there is a minor grammatical awkwardness in the final sentence ('a chiropractor... has admitted') which slightly impacts fluency."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate: the summary is well-structured and consistent with the source text. The only valid deduction for relevance is the omission of the 'exorcisms' detail, which was a key narrative element in the article but absent from the summary. The scores reflect this minor gap appropriately."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is factually consistent and coherent but lacks relevance because it omits key details like the exorcisms, medication advice, and the ironic patient satisfaction ratings which are central to the article's narrative. I maintain the scores as they accurately reflect these strengths and weaknesses."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "Adjusted relevance score down from 4 to 3. While the summary covers the license surrender and admission of sex bartering, it completely omits the 'exorcisms' detail. The strict judge correctly identified this as a key narrative element missing from the text. Given that the article highlights both 'swapping services for sex' AND 'performing exorcisms' as the specific misdeeds, omitting one of these two major charges significantly impacts the summary's completeness regarding the core subject matter."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "No changes made. The lenient judge's assessment aligns with the strict criteria: while the summary is factually consistent and coherent, it significantly underperforms on relevance by omitting the 'exorcisms' and the ironic 'perfect patient satisfaction ratings,' which are central to the article's narrative."
+      }
+    },
+    "final": {
+      "coherence": 4.5,
+      "consistency": 5.0,
+      "fluency": 4.5,
+      "relevance": 3.0,
+      "overall_judge": 4.2
+    }
+  }
+}

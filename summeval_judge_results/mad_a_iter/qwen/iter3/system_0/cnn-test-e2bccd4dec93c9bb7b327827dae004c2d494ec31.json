@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-e2bccd4dec93c9bb7b327827dae004c2d494ec31",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 1,
+        "relevance": 1,
+        "overall_judge": 1.0,
+        "rationale_for_score": "The summary is a complete failure. It suffers from severe hallucinations where it conflates the video game 'Space Invaders' with Antonio Inoki (claiming the game is in WWE or served in politics). The sentences are grammatically broken and nonsensical ('the is the of', 'the former is the founder'). It fails all criteria: it introduces facts not in the article, lacks logical flow, and is unreadable."
+      },
+      "strict": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 1,
+        "relevance": 1,
+        "overall_judge": 1.0,
+        "rationale_for_score": "The summary is a complete failure. It suffers from severe hallucinations and logical incoherence, likely due to a tokenization or parsing error where the model confused 'Space Invaders' (a game) with Antonio Inoki (a wrestler). The sentences are nonsensical ('the classic video game is the latest in the u.s.-based wwe', 'the former is the founder of new japan's new japan'). It fails all criteria: it introduces false facts, lacks logical flow, and contains grammatical errors. It does not accurately summarize the source text."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 1,
+        "relevance": 1,
+        "overall_judge": 1.0,
+        "adjustment_notes": "The summary is a complete failure with no redeeming qualities. It suffers from severe hallucinations (conflating the video game 'Space Invaders' with politician Antonio Inoki), grammatical incoherence ('the is the of'), and total irrelevance to the source text's actual content. The lenient judge's assessment of 1s across all categories is accurate and justified; no score increase is warranted."
+      },
+      "lenient": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 1,
+        "relevance": 1,
+        "overall_judge": 1.0,
+        "adjustment_notes": "The strict judge's assessment is entirely correct. The summary suffers from catastrophic hallucinations and logical incoherence (e.g., claiming the video game 'Space Invaders' is in the WWE or entered politics). It fails every criterion: it introduces false facts, lacks any logical flow, contains severe grammatical errors, and completely misses the actual content of the article. No leniency is warranted."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 1,
+        "relevance": 1,
+        "overall_judge": 1.0,
+        "adjustment_notes": "The strict judge's assessment is entirely correct. The summary contains severe hallucinations (claiming the video game 'Space Invaders' is in WWE or a politician), grammatical nonsense ('the is the of'), and fails to summarize any actual information from the source text. There are no redeeming qualities to justify increasing the scores."
+      },
+      "strict": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 1,
+        "relevance": 1,
+        "overall_judge": 1.0,
+        "adjustment_notes": "The summary is completely hallucinated and incoherent. It falsely claims the video game 'Space Invaders' is part of WWE, entered politics, or was founded by Antonio Inoki. The sentences are grammatically broken ('the is the of', 'the former is'). It fails all criteria: it introduces false facts (consistency), lacks logical flow (coherence), contains severe grammatical errors (fluency), and misses the actual content of the article (relevance). No adjustment upwards is possible."
+      }
+    },
+    "final": {
+      "coherence": 1.0,
+      "consistency": 1.0,
+      "fluency": 1.0,
+      "relevance": 1.0,
+      "overall_judge": 1.0
+    }
+  }
+}

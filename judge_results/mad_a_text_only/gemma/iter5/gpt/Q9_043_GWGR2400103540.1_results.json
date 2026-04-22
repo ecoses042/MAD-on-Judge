@@ -1,0 +1,319 @@
+[
+  {
+    "essay_id": "GWGR2400103540.1",
+    "status": "ok",
+    "prediction": {
+      "content": {
+        "score": 3.0,
+        "rationale": "주장과 근거는 존재하지만, 설명이 다소 피상적이며 논리적 연결이 약한 부분이 있다. 예를 들어, 촉법소년의 연령 하향에 대한 찬성 이유로 범죄 예방을 언급했으나, 구체적인 사례나 통계가 부족하여 설득력이 떨어진다."
+      },
+      "organization": {
+        "score": 3.0,
+        "rationale": "서론, 본론, 결론의 기본 구조는 갖추고 있으나, 문단 간 연결이 다소 어색하고 논리 전개 순서가 일관되지 않다. 예를 들어, 본론에서 촉법소년의 문제를 언급한 후 다시 연령 하향에 대한 주장을 제시하는 방식이 매끄럽지 않다."
+      },
+      "expression": {
+        "score": 3.0,
+        "rationale": "문장은 이해 가능하나, 표현이 다소 단조롭고 어색한 부분이 있다. 예를 들어, '법의 처벌을 받지않고 보호한다면'에서 '받지않고'는 띄어쓰기가 필요하며, '반성한면'은 '반성한다면'으로 수정해야 한다."
+      }
+    },
+    "judge": {
+      "content": {
+        "round_0": {
+          "strict": {
+            "domain_match": 3,
+            "score_rationale_consistency": 2,
+            "specificity": 2,
+            "groundedness": 4,
+            "overall_judge": 2.8,
+            "rationale_for_score": "1. domain_match: essay_text의 내용과 일치하며 촉법소년 연령 하향에 대한 우려를 제기하고 있으므로 적절함 (5점). 2. score_rationale_consistency: rational이 predicted_score와 완전히 일치하지 않음. rational은 문제점을 지적하지만, 해결 방안 제시가 부족하여 설득력이 떨어짐 (3점). 3. specificity: rational에 제시된 '만 8세 이상 만 13세나 만 12세 미만정도로 조절' 등의 구체적인 연령대 제안은 essay_text에서 직접 인용 가능한 강점 중 하나이지만, 다른 부분은 일반적이고 설명이 부족함 (2점). 4. groundedness: rational은 essay_text의 내용을 바탕으로 작성되었으며, hallucination 없이 정확하게 언급된 내용들을 활용하고 있음 (5점). 전반적으로 rational은 문제점을 지적하는 데는 효과적이지만, 보다 구체적인 근거와 설득력 있는 논리로 보완되어야 함."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.5,
+            "rationale_for_score": "주요 내용은 essay_text와 일치하며, 촉법소년 연령 하향에 대한 우려를 잘 설명하고 있다 (domain_match: 4). 논리 전개가 비교적 명확하지만, 구체적인 사례나 통계 제시가 부족하여 설득력이 다소 떨어진다. 소셜매체를 통한 청소년의 성장과 관련된 언급은 essay_text와 연결되어 있지만, 좀 더 구체적인 내용으로 확장될 여지가 있다 (specificity: 3). essay_text에서 ‘인터넷, SNS 등 여러 소셜매체를 통해 많은 걸 접하고 빠르게 성장하는 세대’라는 표현을 인용하여 groundedness를 확보했다 (groundedness: 4). 점수와 설명이 어느 정도 일치하지만, 좀 더 강력한 근거 제시가 필요하다 (score_rationale_consistency: 3)."
+          }
+        },
+        "round_1": {
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.0,
+            "adjustment_notes": "초기 평가에서 엄격한 심사위원이 지적한 사항을 반영하여 점수를 조정했습니다. 우선 domain_match는 essay_text의 내용과 일치하고 문제 제기가 적절하므로 5점을 유지합니다. score_rationale_consistency는 rational이 predicted_score와 완전히 일치하지 않는다는 점을 인정하며, 설득력 부족에 대한 심사위원의 지적을 반영하여 3점으로 조정했습니다. specificity는 구체적인 연령대 제안은 강점이지만, 다른 부분의 설명 부족을 고려하여 3점으로 유지합니다. groundedness는 essay_text 내용을 바탕으로 작성되었으므로 5점을 유지합니다. 전반적으로 rational이 문제점을 지적하는 데는 효과적이지만, 보다 구체적인 근거와 설득력 있는 논리로 보완되어야 한다는 심사위원의 의견을 반영하여 점수를 조정했습니다."
+          },
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.5,
+            "adjustment_notes": "초기 평가에서 제시된 문제점 (설득력 부족, 구체적인 사례/통계 부족)을 고려하여 점수를 3.0에서 3.8로 상향 조정한다. rationale에 essay_text의 핵심 내용을 잘 반영하고 있으며, ‘인터넷, SNS 등 여러 소셜매체를 통해 많은 걸 접하고 빠르게 성장하는 세대’라는 근거를 활용하여 groundedness를 확보했으므로 4점을 부여한다. 그러나 논리적 연결을 더욱 강화하고, 구체적인 예시나 통계 자료를 추가하면 설득력을 높일 수 있을 것이다. 따라서 specificity와 score_rationale_consistency는 3점으로 유지한다."
+          }
+        },
+        "round_2": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 3,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.2,
+            "adjustment_notes": "초기 평가에서 관대한 심사위원이 지적한 사항을 반영하여 점수를 조정했습니다. domain_match는 essay_text의 내용과 일치하고 문제 제기가 적절하므로 5점을 유지합니다. score_rationale_consistency는 rational이 predicted_score와 완전히 일치하지 않는다는 점을 인정하며, 설득력 부족에 대한 심사위원의 지적을 반영하여 3점으로 조정했습니다. specificity는 구체적인 연령대 제안은 강점이지만, 다른 부분의 설명 부족을 고려하여 4점으로 유지합니다. groundedness는 essay_text 내용을 바탕으로 작성되었으므로 5점을 유지합니다. 전체적으로 rational이 문제점을 지적하는 데는 효과적이지만, 보다 구체적인 사례와 통계 자료를 추가하고 논리적 연결성을 강화해야 한다는 심사위원의 의견을 반영하여 점수를 조정했습니다."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.5,
+            "adjustment_notes": "초기 평가에서 제시된 문제점 (설득력 부족, 구체적인 사례/통계 부족)을 고려하여 점수를 3.0에서 4.0으로 상향 조정한다. rationale에 essay_text의 핵심 내용을 잘 반영하고 있으며, ‘인터넷, SNS 등 여러 소셜매체를 통해 많은 걸 접하고 빠르게 성장하는 세대’라는 근거를 활용하여 groundedness를 확보했으므로 점수를 높였다. 그러나 논리적 연결을 더욱 강화하고, 구체적인 예시나 통계 자료를 추가하면 설득력을 높일 수 있을 것이다. 따라서 specificity는 3점으로 유지하며, score_rationale_consistency도 essay_text의 내용과 일치한다는 점을 고려하여 3점으로 유지한다."
+          }
+        },
+        "round_3": {
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 3,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.2,
+            "adjustment_notes": "초기 평가에서 심사위원이 지적한 바와 같이, rational의 설명이 다소 피상적이고 논리적 연결이 약하다는 점을 인정합니다. 특히 범죄 예방 효과에 대한 구체적인 근거 부족은 설득력을 떨어뜨리는 주요 요인입니다. 따라서 predicted_score를 3.0에서 2.5로 낮추고, rational의 내용을 보강하여 설득력을 높이는 방향으로 조정했습니다. 또한, '만 8세 이상 만 13세 미만'과 같이 구체적인 연령대 제안은 강점이지만, 다른 부분의 설명 부족을 고려하여 specificity를 4점으로 유지합니다. groundedness는 essay_text 내용을 바탕으로 작성되었으므로 5점을 유지합니다."
+          },
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.0,
+            "adjustment_notes": "초기 평가에서 rational에 제시된 문제점 (설득력 부족, 구체적인 사례/통계 부족)을 명확히 인정한 점은 긍정적이다. 그러나 essay_text의 핵심 내용을 잘 반영하고 있으며, ‘인터넷, SNS 등 여러 소셜매체를 통해 많은 걸 접하고 빠르게 성장하는 세대’라는 근거를 활용하여 groundedness를 확보한 점이 매우 강점이다. 또한, rational에 제시된 문제점을 해결하기 위한 방안(연령 조정)을 essay_text에서 직접 언급했으므로 score_rationale_consistency도 높게 평가할 수 있다. 논리적 연결을 더욱 강화하고, 구체적인 예시나 통계 자료를 추가하면 설득력을 높일 수 있다는 점을 고려하여 specificity는 3점으로 유지한다. 따라서 predicted_score를 3.0에서 4.5로 상향 조정한다."
+          }
+        },
+        "round_4": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 3.8,
+            "adjustment_notes": "초기 평가에서 지적된 대로 rationale의 설명이 다소 일반적이고, 논리적 연결이 충분하지 않다는 점을 인정합니다. 특히 범죄 예방 효과에 대한 구체적인 근거 제시가 부족하여 점수를 낮추었습니다 (predicted_score: 3.0 -> 3.5). 그러나 essay_text에서 언급된 '소셜매체를 통해 빠르게 성장하는 세대'와 '촉법소년 연령을 줄여 만 8세 이상 만 13세 미만' 등의 내용을 활용하여 rationale을 보강했습니다.  specificity는 essay_text의 내용에 기반한 구체적인 제안이 포함되어 있어 4점으로 유지합니다. groundedness는 essay_text를 바탕으로 작성되었으므로 5점을 유지합니다."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.0,
+            "adjustment_notes": "초기 평가에서 rational에 제시된 문제점 (설득력 부족, 구체적인 사례/통계 부족)을 명확히 인정한 점을 인정한다. essay_text의 핵심 내용을 잘 반영하고 있으며, 특히 ‘인터넷, SNS 등 여러 소셜매체를 통해 많은 걸 접하고 빠르게 성장하는 세대’라는 근거를 활용하여 groundedness를 확보한 점이 매우 긍정적이다. 논리 전개가 다소 피상적이라는 지적에 따라 specificity를 3점으로 유지하되, 제시된 문제점을 해결하기 위한 구체적인 방안(연령 조정)을 essay_text에서 직접 언급했으므로 score_rationale_consistency는 4점으로 높게 평가했다. 또한, 촉법소년의 연령 하향에 대한 찬성 이유로 범죄 예방을 언급한 부분은 content 기준 충족에 기여한다고 판단하여 domain_match를 4점으로 유지했다. 전반적으로 essay_text의 내용을 잘 반영하고 있으며, rational과의 일관성을 확보했으므로 predicted_score를 3.0에서 4.5로 상향 조정한다."
+          }
+        },
+        "final": {
+          "domain_match": 4.0,
+          "score_rationale_consistency": 3.5,
+          "specificity": 3.0,
+          "groundedness": 5.0,
+          "overall_judge": 3.9
+        }
+      },
+      "organization": {
+        "round_0": {
+          "lenient": {
+            "domain_match": 3,
+            "score_rationale_consistency": 2,
+            "specificity": 2,
+            "groundedness": 4,
+            "overall_judge": 2.8,
+            "rationale_for_score": "서론, 본론, 결론의 구조는 갖추고 있지만 (domain_match: 3), 문단 간 연결이 다소 어색하고 논리 전개 순서가 일관되지 않다는 점을 지적한 것은 타당하다. 촉법소년 연령 하향에 대한 주장을 제시하는 essay_text와 rationale 모두 일치한다. 그러나 specificity는 '전반적으로 좋다', '논리적이다' 와 같은 generic 표현이 사용되어 2점을 부여했다. groundedness는 essay_text의 내용을 바탕으로 논지를 전개하고 있으며, hallucination은 없다 (groundedness: 4). score_rationale_consistency는 점수(3)와 rationale(2) 간의 일치 정도가 다소 미흡하여 2점을 부여했다."
+          },
+          "strict": {
+            "domain_match": 3,
+            "score_rationale_consistency": 2,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.0,
+            "rationale_for_score": "1. domain_match: essay_text의 내용과 일치하며 조직화된 구조를 갖추고 있지만, 논리 전개에 약간의 어색함이 존재합니다. 특히 본론에서 촉법소년 문제와 연령 하향에 대한 주장을 연결하는 방식이 매끄럽지 않습니다. (감점 1점) 2. score_rationale_consistency: predicted_score인 3.0과 rationale이 어느 정도 일치하지만, 논리 전개에 대한 구체적인 설명 부족으로 2점을 부여합니다. (감점 1점) 3. specificity: essay_text에서 언급된 '소셜매체', '유튜브' 등 구체적인 예시를 활용하여 주장을 뒷받침하고 있으며, 연령 제한 시 제안하는 구체적인 연령대(만 8세 이상 만 13세나 만 12세 미만)도 제시하고 있습니다. (감점 없음) 4. groundedness: essay_text의 내용을 정확하게 반영하며, hallucination 없이 논리적으로 연결되어 있습니다. (감점 없음)"
+          }
+        },
+        "round_1": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 3.8,
+            "adjustment_notes": "관대한 심사위원의 평가에 따라 점수를 조정합니다. rationale이 essay_text와 더 일치하는지 확인하고, specificity를 개선하기 위해 보다 구체적인 표현을 사용했습니다. 특히, essay_text에서 제시된 '만 8세 이상 만 13세나 만 12세 미만정도로 조절' 제안에 대한 언급을 명확히 하여 groundedness를 높였습니다. 또한, 관대한 심사위원이 지적한 문단 간 연결의 어색함과 논리 전개 순서의 일관성 부족 문제를 더욱 구체적으로 평가하여 score_rationale_consistency를 3점으로 조정했습니다."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.0,
+            "adjustment_notes": "초기 평가에서 엄격한 심사위원이 지적한 사항을 반영하여 점수를 조정했습니다. 우선, domain_match는 essay_text의 내용과 일치하고 organization 측면에서도 서론-본론-결론 구조를 갖추고 있어 5점을 부여합니다. score_rationale_consistency는 rationale이 predicted_score와 어느 정도 일치하지만, 논리 전개에 대한 설명이 다소 부족하여 3점을 부여합니다. specificity는 소셜매체 등 구체적인 예시를 활용하고 연령 제한 시 제안하는 구체적인 연령대를 제시하여 4점을 부여합니다. groundedness는 essay_text의 내용을 정확하게 반영하여 5점을 부여합니다. 전반적으로 평가 내용에 대한 심사위원의 의견을 충분히 고려하여 점수를 조정했습니다."
+          }
+        },
+        "round_2": {
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 3.8,
+            "adjustment_notes": "초기 평가에서 엄격한 심사위원이 지적한 사항을 반영하여 점수를 조정했습니다. 우선 domain_match는 essay_text의 핵심 내용인 촉법소년 연령 하향 문제에 대한 논의를 잘 다루고 있어 5점을 유지합니다. score_rationale_consistency는 rationale이 essay_text의 주장을 충분히 반영하고 있지만, '만 8세 이상 만 13세나 만 12세 미만정도로 조절' 제안에 대한 언급이 좀 더 명확하게 제시되어야 한다는 점에서 3점으로 조정했습니다. specificity는 rational이 전반적으로 적절하지만, 보다 구체적인 예시를 활용하여 설명의 깊이를 더할 수 있었으므로 3점을 부여합니다. groundedness는 essay_text에서 직접 인용된 내용을 바탕으로 논리를 전개하고 있어 5점을 유지합니다.  전반적으로 essay_text의 핵심 주장을 잘 파악하고 있으며, 제시된 해결책에 대한 근거를 명확하게 설명했으므로 점수 조정은 최소화했습니다."
+          },
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.5,
+            "adjustment_notes": "초기 평가에서 관대한 심사위원이 지적한 사항을 반영하여 점수를 조정했습니다. domain_match는 essay_text의 내용과 완벽하게 일치하며, organization 측면에서도 서론-본론-결론 구조가 명확하게 드러납니다. score_rationale_consistency는 rationale이 predicted_score와 매우 일치하며, 논리 전개에 대한 설명도 충분합니다. specificity는 소셜매체 등 구체적인 예시를 활용하고, 촉법소년 연령 제한 시 제안하는 연령대(만 8세 이상 만 13세나 만 12세 미만)가 essay_text의 내용과 일치합니다. groundedness는 essay_text의 내용을 정확하게 반영하여, hallucination 없이 논리적으로 연결되어 있습니다. 따라서 점수를 3.0에서 4.0으로 상향 조정했습니다."
+          }
+        },
+        "round_3": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.5,
+            "adjustment_notes": "초기 평가에서 제시된 문제점들을 고려하여 점수를 조정했습니다. domain_match는 essay_text의 핵심 내용을 정확하게 반영하고 있어 5점을 유지합니다. score_rationale_consistency는 rationale이 essay_text의 주장을 잘 뒷받침하며, 제시된 해결책에 대한 논리적 연결도 비교적 명확하므로 4점으로 조정했습니다. specificity 측면에서, 몇몇 부분에서 보다 구체적인 예시나 근거를 추가하여 설명의 깊이를 더할 수 있었음에도 불구하고, essay_text 자체의 내용이 충분히 상세하게 제시되어 있어 4점을 유지합니다. groundedness는 essay_text에 기반한 논리 전개가 잘 이루어져 있어 5점을 유지합니다. 전체적으로 점수 조정은 최소화했으며, essay_text의 강점과 rationale 간의 일관성을 최대한 반영했습니다."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.0,
+            "adjustment_notes": "초기 평가에서 엄격한 심사위원이 지적한 바와 같이, 본론의 논리 전개 흐름이 다소 매끄럽지 않다는 점을 인정합니다. 특히 촉법소년 연령 하향에 대한 주장을 제시하는 방식이 개선될 필요가 있습니다. 그러나 essay_text의 내용을 정확하게 반영하고 있으며, 소셜매체 등 구체적인 예시를 활용하여 논지를 뒷받침하고 있습니다. 따라서 점수를 3.0에서 4.0으로 조정합니다. 또한, '논리적'이라는 generic한 표현 대신, '본론에서 촉법소년의 연령 하향에 대한 주장을 제시하는 방식이 개선될 필요가 있다'는 구체적인 내용을 추가하여 specificity를 높였습니다."
+          }
+        },
+        "round_4": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.2,
+            "adjustment_notes": "초기 평가에서 제시된 문제점(문단 간 연결의 어색함, 논리 전개 순서의 일관성 부족)을 정확히 파악했습니다. essay_text에 언급된 소셜매체 활용 및 연령 조절 방안 제시 등 핵심 내용을 잘 반영하고 있습니다. 다만, '논리적'이라는 표현 대신 구체적인 개선점을 명시하여 specificity를 높였습니다. 또한, essay_text의 내용과 일치하는지 groundeedness 측면에서 확인했습니다. 점수 조정은 rational이 essay_text에 근거하고 있음을 고려하여 3.0에서 4.0으로 상향 조정했습니다."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.0,
+            "adjustment_notes": "초기 평가에서 엄격한 심사위원이 지적한 바와 같이, 본론의 문단 간 연결이 다소 매끄럽지 않고 논리 전개 순서가 완벽하게 일관되지 않다는 점을 고려하여 점수를 조정했습니다. 특히, 촉법소년 연령 조절에 대한 제안이 좀 더 구체적인 근거 (예: 관련 통계 자료, 유사 사례 분석 등)를 포함하면 5점으로 평가할 수 있었겠지만, essay_text 자체의 내용이 충분히 상세하게 제시되어 있어 specificity 점수를 3점으로 유지했습니다. 또한, '소셜매체를 접하며 많은 걸 알고 빠르게 성장하는 만큼'과 같은 표현은 generic한 측면이 있으므로, 좀 더 구체적인 예시를 추가하면 좋았을 것입니다. 하지만, essay_text의 핵심 내용을 잘 반영하고 있으며, rationale이 essay_text의 주장을 뒷받침한다는 점에서 score_rationale_consistency는 4점을 유지합니다. groundedness는 essay_text에 기반한 논리 전개가 잘 이루어져 있어 5점을 유지합니다."
+          }
+        },
+        "final": {
+          "domain_match": 4.0,
+          "score_rationale_consistency": 4.0,
+          "specificity": 3.5,
+          "groundedness": 5.0,
+          "overall_judge": 4.1
+        }
+      },
+      "expression": {
+        "round_0": {
+          "lenient": {
+            "domain_match": 3,
+            "score_rationale_consistency": 3,
+            "specificity": 2,
+            "groundedness": 4,
+            "overall_judge": 3.0,
+            "rationale_for_score": "표현 평가에서 3점을 부여합니다. 문장의 표현이 다소 단조롭고 어색한 부분이 있다는 점을 지적했지만, essay_text의 내용과 일관성을 유지하고 있습니다. '받지않고'와 '반성한면' 부분에 대한 수정 제안은 essay_text의 논지를 뒷받침하며, 구체적인 예시(인터넷, SNS 등 소셜매체)를 통해 문제 상황을 설명하고 있습니다. 그러나 specificity 측면에서 좀 더 구체적인 표현이나 구조적 개선 방안이 부족하여 2점을 부여했습니다. groundedness는 essay_text의 내용을 정확하게 반영하고 있으며, hallucination은 존재하지 않습니다. 점수와 rational이 대체로 일치합니다."
+          },
+          "strict": {
+            "domain_match": 3,
+            "score_rationale_consistency": 2,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.0,
+            "rationale_for_score": "1. domain_match: essay_text의 주제인 촉법소년 연령 하향에 대한 논의를 다루고 있으므로 적절함 (5점). 그러나 표현 방식이 다소 추상적이며, 구체적인 예시나 해결 방안 제시가 부족하여 3점을 부여함. 2. score_rationale_consistency: predicted_score인 3점에 부합하는 근거를 제시하고 있지만, 개선할 점에 대한 설명이 충분하지 않음 (2점). 문장 수정 제안 외에는 구체적인 문제점을 지적하지 못함. 3. specificity: '법의 처벌을 받지않고 보호한다면'과 같은 표현은 다소 모호하며, 더 구체적인 예시나 설명을 통해 이해도를 높일 수 있음 (3점). 4. groundedness: essay_text에 언급된 인터넷, SNS 등 소셜매체의 영향력과 촉법소년 연령 조정 필요성에 대한 주장을 뒷받침하는 근거를 제시하고 있으므로 높은 점수를 부여함 (5점)."
+          }
+        },
+        "round_1": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.0,
+            "adjustment_notes": "관대한 심사위원의 평가를 반영하여 점수를 조정했습니다. 관대한 심사위원이 지적한 표현의 단조로움과 어색함은 일부 인정하되, essay_text의 논지를 충분히 뒷받침하고 있다는 점을 강조합니다. '반성한면' 수정 제안 역시 essay_text 내용에 부합하며, 소셜매체 언급 등 구체적인 예시를 통해 문제 상황을 명확하게 설명하고 있습니다. specificity 측면에서 좀 더 세부적인 개선 방안 제시가 필요하지만, 현재 수준으로도 충분히 설득력 있는 평가라고 판단했습니다. 점수와 rational의 일관성을 유지하며 3점을 부여합니다."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 3.8,
+            "adjustment_notes": "초기 평가에서 제시된 내용과 비교하여 다음과 같이 조정했습니다.\n\n*   **domain_match:** rationale이 target_domain인 'expression' 기준을 충족하고 있으므로 점수를 4점으로 유지합니다. essay_text의 주제에 대한 논의를 잘 다루고 있습니다.\n*   **score_rationale_consistency:** rational이 predicted_score와 어느 정도 일치하지만, 개선점을 제시하는 부분에서 더 구체적인 지적이 필요했습니다. 따라서 점수를 3점으로 조정합니다. '문장의 단조로움'과 '어색한 부분'에 대한 설명은 좀 더 명확하게 할 수 있습니다.\n*   **specificity:** rational이 essay_text의 특정 부분을 언급하고 있지만, 예시를 추가하여 더욱 구체적으로 만들 수 있었습니다. 따라서 점수를 3점으로 조정합니다. 예를 들어, '반성한면 정말 다행이지만' 부분에 대한 수정 제안을 더 자세하게 설명할 수 있습니다.\n*   **groundedness:** essay_text의 내용을 바탕으로 한 주장을 뒷받침하는 근거를 제시하고 있으므로 점수를 5점으로 유지합니다. 소셜매체의 영향력과 연령 조정 필요성에 대한 논의가 잘 연결되어 있습니다."
+          }
+        },
+        "round_2": {
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.0,
+            "adjustment_notes": "초기 평가에서 제시된 문제점을 고려하여 점수를 조정했습니다. 심사위원의 지적대로 표현이 다소 단조롭고 어색한 부분이 존재하지만, essay_text의 핵심 논지를 뒷받침하고 있으며, 소셜매체 언급 등 구체적인 예시를 통해 문제 상황을 명확하게 설명하고 있습니다. '반성한면' 수정 제안 역시 essay_text 내용에 부합합니다. specificity 측면에서 좀 더 세부적인 개선 방안 제시가 필요하지만, 현재 수준으로도 충분히 설득력 있는 평가라고 판단했습니다. 점수와 rational의 일관성을 유지하며 3점을 부여합니다."
+          },
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 3.8,
+            "adjustment_notes": "관대한 심사위원의 평가를 반영하여 점수를 조정했습니다.\n\n*   **domain_match:** rationale이 'expression' 영역을 명확히 사용하고 있으며, essay_text의 내용과 일관성을 유지하므로 점수를 4점으로 유지합니다. \n*   **score_rationale_consistency:** rational이 predicted_score와 어느 정도 일치하지만, 개선점을 제시하는 부분에서 더 구체적인 지적이 필요했습니다. '문장의 단조로움'과 '어색한 부분'에 대한 설명은 좀 더 명확하게 할 수 있습니다. 점수를 3점으로 조정합니다.\n*   **specificity:** rational이 essay_text의 특정 부분을 언급하고 있지만, 예시를 추가하여 더욱 구체적으로 만들 수 있었습니다. 예를 들어, '반성한면 정말 다행이지만' 부분에 대한 수정 제안을 더 자세하게 설명할 수 있습니다. 점수를 3점으로 조정합니다.\n*   **groundedness:** essay_text의 내용을 바탕으로 한 주장을 뒷받침하는 근거를 제시하고 있으므로 점수를 5점으로 유지합니다."
+          }
+        },
+        "round_3": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.0,
+            "adjustment_notes": "관대한 심사위원의 평가를 반영하여 점수를 조정했습니다. rational에 제시된 문제점(단조로운 표현, 어색한 부분)이 일부 존재하지만, essay_text의 핵심 논지를 뒷받침하고 있으며, 소셜매체 언급 등 구체적인 예시를 통해 문제 상황을 명확하게 설명하고 있습니다. '반성한면' 수정 제안 역시 essay_text 내용에 부합합니다. specificity 측면에서 좀 더 세부적인 개선 방안 제시가 필요하지만, 현재 수준으로도 충분히 설득력 있는 평가라고 판단했습니다. 점수와 rational의 일관성을 유지하며 3.5점을 부여합니다."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 3.8,
+            "adjustment_notes": "심사위원의 평가를 반영하여 점수 및 조정 사항을 수정했습니다.\n\n*   **domain_match:** 심사위원이 제시한 대로 'expression' 영역에 대한 rational이 적절하게 사용되었으므로 점수를 4점으로 유지합니다. \n*   **score_rationale_consistency:** rational이 predicted_score와 일치하지 않는 부분이 있다는 심사위원의 지적을 반영하여 점수를 3점으로 낮춥니다. 특히, '문장의 단조로움'과 '어색한 부분'에 대한 설명이 더 구체적으로 제시될 필요가 있습니다. \n*   **specificity:** rational이 essay_text의 특정 부분을 언급하고 있지만, 예시를 추가하여 더욱 구체적으로 만들 수 있다는 심사위원의 의견을 반영하여 점수를 3점으로 낮춥니다. 예를 들어, '반성한면 정말 다행이지만' 부분에 대한 수정 제안을 더 자세하게 설명할 수 있습니다.\n*   **groundedness:** essay_text의 내용을 바탕으로 한 주장을 뒷받침하는 근거를 제시하고 있으므로 점수를 5점으로 유지합니다."
+          }
+        },
+        "round_4": {
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.0,
+            "adjustment_notes": "초기 평가에서 엄격한 심사위원이 지적한 사항을 반영하여 점수를 조정했습니다. rational에 제시된 '단조로운 표현' 및 '어색한 부분'이 일부 존재한다는 점을 인정하며, essay_text의 핵심 논지를 뒷받침하는 부분을 강조했습니다. 또한, 소셜매체 언급 등 구체적인 예시를 통해 문제 상황을 명확하게 설명하고 있다는 점을 확인했습니다. 다만, specificity 측면에서 '반성한면' 수정 제안 외에 더 구체적인 표현 개선 방안이 부족하다는 점을 고려하여 점수를 3.5점으로 조정했습니다. groundedness는 essay_text의 내용을 잘 반영하고 있어 유지했습니다."
+          },
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 3.8,
+            "adjustment_notes": "심사위원의 평가를 반영하여 점수 및 조정 사항을 수정했습니다.\n\n*   **domain_match:** 심사위원이 제시한 대로 'expression' 영역에 대한 rational이 적절하게 사용되었으므로 점수를 4점으로 유지합니다. \n*   **score_rationale_consistency:** rational이 predicted_score와 일치하지 않는 부분이 있다는 심사위원의 지적을 반영하여 점수를 3점으로 낮춥니다. 특히, '문장의 단조로움'과 '어색한 부분'에 대한 설명이 더 구체적으로 제시될 필요가 있습니다. rational에서 언급된 '반성한면' 부분을 좀 더 명확하게 수정 제안하는 방식으로 조정합니다.\n*   **specificity:** rational이 essay_text의 특정 부분을 언급하고 있지만, 예시를 추가하여 더욱 구체적으로 만들 수 있다는 심사위원의 의견을 반영하여 점수를 3점으로 낮춥니다. '반성한면 정말 다행이지만' 부분에 대한 수정 제안을 좀 더 자세하게 설명할 수 있습니다. 예를 들어, '반성한면' 대신 '반성한다면'으로 수정하는 것을 구체적으로 제시합니다.\n*   **groundedness:** essay_text의 내용을 바탕으로 한 주장을 뒷받침하는 근거를 제시하고 있으므로 점수를 5점으로 유지합니다."
+          }
+        },
+        "final": {
+          "domain_match": 4.0,
+          "score_rationale_consistency": 3.5,
+          "specificity": 3.0,
+          "groundedness": 5.0,
+          "overall_judge": 3.9
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-cf4ba8f94f2dd5604eb8f8a4e655c10cf0996365",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 5,
+        "overall_judge": 5.0,
+        "rationale_for_score": "The summary is excellent: it accurately captures the key facts (robbery location, time, amount taken, suspect description) without hallucinations or irrelevant details. The only minor deduction from a perfect 5.0 is that it omits the police appeal for public help, which is a significant part of the article's intent, but given the lenient rules and the high quality of the factual summary, it remains a very strong match."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 5,
+        "overall_judge": 5.0,
+        "rationale_for_score": "The summary accurately captures the key facts (robbery location, time, victim details, amount stolen, and physical description of the suspect) without adding any hallucinated information or omitting critical context provided in the source text. It is fluent, well-structured, and strictly adheres to the source material."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The summary is factually accurate and well-structured (Coherence, Consistency, Fluency = 5). However, the lenient judge's point about omitting the police appeal was valid but slightly overstated in its impact on the 'Relevance' score. The article's primary intent is the public appeal; the summary focuses entirely on the event details. While the factual summary is strong, missing the main call to action (the appeal) makes it less relevant to the full scope of the source text than a perfect 5 would imply. Therefore, Relevance is adjusted down slightly to 4."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The summary is excellent in coherence, consistency, and fluency. However, I lowered the relevance score slightly because the summary omits the police appeal for public assistance and the specific contact details (Crimestoppers/online message), which are critical actionable information in a news report about an ongoing investigation. The strict judge was correct on facts but missed this omission of key context."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment on Relevance. While the summary is factually accurate and well-written (Coherence, Consistency, Fluency = 5), it completely omits the primary purpose of the article: the police appeal to the public for information. The source text is an appeal notice; the summary reads like a news report of the event itself. This omission significantly impacts relevance to the source's intent, justifying the score of 4 rather than 5."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is well-structured and factually accurate based on the text. While it captures the core event and suspect description perfectly, it omits the police appeal for public assistance and contact details, which are significant actionable information in a news report about an ongoing investigation. Therefore, the relevance score of 4 is appropriate."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 4.0,
+      "overall_judge": 4.8
+    }
+  }
+}

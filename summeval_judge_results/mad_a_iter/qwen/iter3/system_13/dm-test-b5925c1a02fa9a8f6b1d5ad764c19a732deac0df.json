@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-b5925c1a02fa9a8f6b1d5ad764c19a732deac0df",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is coherent and covers the main points of the article. However, it suffers from significant fluency issues due to poor punctuation (missing periods between sentences) and awkward phrasing ('bike shop 's owner' instead of 'bike shop's owner'). It also fails consistency slightly by omitting the crucial detail that the dog was dead ('lifeless'), which is a major part of the source text, making the description of the scene incomplete. The relevance is good as it focuses on the key event."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary accurately captures the key facts from the article (Tim Weston's identity, location, the crocodile incident, and the dog's owner) without hallucinations. The direction aligns perfectly with the source. It is deducted one point for fluency because the text is formatted as a single run-on sentence rather than being broken into proper sentences, which slightly impacts readability, though the grammar itself is correct."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary accurately reflects the source text without hallucinations (consistency) and maintains a logical flow of information (coherence). While the content is highly relevant, the fluency score remains at 4 because the summary is presented as a single run-on sentence rather than being broken into distinct sentences, which impacts readability despite correct grammar."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary lacks proper sentence segmentation (missing periods), resulting in a run-on structure that impacts fluency significantly. Additionally, while the text includes 'lifeless', the strict judge correctly noted that omitting the explicit state of death makes the description incomplete regarding the core event's gravity, warranting a deduction for consistency/completeness relative to the source's emphasis."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary accurately reflects the source text without hallucinations (consistency) and maintains a logical flow of information (coherence). While the content is highly relevant, the fluency score remains at 4 because the summary is presented as a single run-on sentence rather than being broken into distinct sentences, which impacts readability despite correct grammar."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I have lowered the fluency score from 3 to 2 because the summary is a single run-on sentence with no punctuation or capitalization, making it difficult to read and grammatically incorrect. I also adjusted coherence slightly down to 3 due to this lack of structural segmentation. The consistency score remains at 4 as the content is accurate to the source, though the 'lifeless' descriptor is present in both. Relevance stays at 4 as key facts are covered."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 4.5,
+      "fluency": 3.0,
+      "relevance": 4.5,
+      "overall_judge": 3.9
+    }
+  }
+}

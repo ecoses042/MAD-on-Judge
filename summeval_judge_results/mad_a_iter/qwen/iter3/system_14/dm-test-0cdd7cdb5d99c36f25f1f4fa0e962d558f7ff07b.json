@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-0cdd7cdb5d99c36f25f1f4fa0e962d558f7ff07b",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is coherent and fluent but suffers from a minor consistency error: it omits the apostrophe in 'next month's' (written as 'next month 's'). Regarding relevance, while it covers the main points, it misses significant details present in the source text such as England's 100% qualifying record, their status as defending champions (specifically beating Holland on penalties), and the full list of other key players included, which limits its completeness relative to the source."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary accurately captures the main points: the coach's name, the tournament details, the defending champion status, and the specific match against Italy. It correctly identifies Chris Willock's first call-up. The score is slightly reduced from 5 due to minor punctuation issues (missing apostrophe in 'next month's' and missing period at the end), which affects fluency slightly but does not impact the core information."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is coherent and fluent, but it contains a minor consistency error (missing apostrophe in 'next month's'). More importantly, regarding relevance, the summary is indeed too sparse; it omits significant context like the 100% qualifying record, the specific details of their defending champion status (beating Holland on penalties), and the inclusion of other key players mentioned in the source text. Therefore, I maintain the lower scores for consistency and relevance."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary accurately reflects the key information from the article (coach, tournament, opponent, date, and specific player call-up). The minor punctuation errors noted by the lenient judge are valid grounds for a slight deduction in fluency but do not detract significantly from the overall quality or accuracy."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The strict judge's assessment is accurate. While the summary captures all key facts (coach, tournament, opponent, date, and specific player call-ups), it omits significant details present in the source text, such as England's status as defending champions with a perfect qualifying record, the full squad composition, and other notable players like Jay Dasilva or Ike Ugbo. However, since the prompt does not specify a required length or coverage percentage, omitting these details is not necessarily a flaw in relevance if the summary focuses on the most immediate news (the call-up). The minor punctuation error ('next month 's') justifies the fluency deduction of 4 rather than 5."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary is well-structured and fluent (Coherence/Fluency: 5). It contains a minor typo regarding the apostrophe in 'next month's' which affects Consistency slightly (4). Regarding Relevance, while the summary captures the main headline events (squad named, opponent details, Willock's debut), it is indeed sparse compared to the source text which lists many other players and specific tournament context. However, since the goal of a summary is often to capture the 'lead' story rather than every detail, a score of 3 is fair but not harsh; I will maintain this score as the lenient judge correctly identified that the omission of secondary details (like the full squad list or qualifying record) does not necessarily make the summary factually wrong, just brief."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.5,
+      "fluency": 4.5,
+      "relevance": 4.0,
+      "overall_judge": 4.5
+    }
+  }
+}

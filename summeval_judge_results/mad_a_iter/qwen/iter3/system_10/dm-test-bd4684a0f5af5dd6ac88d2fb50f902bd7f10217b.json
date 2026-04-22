@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-bd4684a0f5af5dd6ac88d2fb50f902bd7f10217b",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source text and coherent in its flow. However, it suffers from poor relevance because it completely omits the significant context regarding Falcao's current struggles at Manchester United (the primary driver for the transfer interest) and his recent form for Colombia. It also fails to mention the specific quote 'We dream of Falcao Garcia' or the vice president's name, focusing only on generic statements found in the text. The repetition of 'The doors are open' as a standalone sentence is stylistically weak."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from significant relevance issues by omitting the most critical news: Falcao's struggles at Manchester United (scoring only 4 goals) and his recent record-breaking form for Colombia. These details are essential to understanding the context of River Plate's interest. Additionally, while consistent with the text, it misses the nuance that the deal is complicated due to these factors."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is factually consistent and coherent, but it suffers from significant relevance issues by omitting the crucial context of Falcao's struggles at Manchester United and his recent form for Colombia, which are the main drivers of the story. Additionally, the standalone sentence 'The doors are open' is stylistically weak and redundant given the previous sentence. No score reduction was necessary as the strict judge's scores were appropriate."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding relevance. The summary is grammatically correct and coherent, but it fails to capture the essential context of why River Plate is interested (Falcao's struggles at Man Utd) or the current situation (his record-breaking form for Colombia). These are key points in the source text that make the news story complete. Therefore, the relevance score remains low."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "No changes made. The lenient judge correctly identified that the summary omits key context (Falcao's struggles at Man Utd and recent form) which significantly impacts relevance. The standalone sentence 'The doors are open' is indeed redundant given the preceding text, affecting fluency slightly but not enough to drop below 4. The strict judge's scores were appropriate."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment regarding relevance. While the summary is grammatically correct and coherent, it significantly misses the 'news hook' of the article: Falcao's struggles at Manchester United and his record-breaking form for Colombia. These are the primary reasons for the current transfer interest mentioned in the text. The summary only covers the historical background (8 years at River, move to Porto) and a direct quote without context, making it trivial compared to the source material."
+      }
+    },
+    "final": {
+      "coherence": 4.5,
+      "consistency": 4.5,
+      "fluency": 4.5,
+      "relevance": 3.0,
+      "overall_judge": 4.1
+    }
+  }
+}

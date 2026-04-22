@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-a02e362c5b8f049848ce718b37b96117485461cf",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but lacks sufficient detail regarding the cause of the fires (farmers burning grass) and the scientific explanation for the red color, which are key points in the source text. It also omits the resolution that air quality will improve as smoke dissipates. While it avoids hallucinations, the omission of these significant details prevents a higher relevance score."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from relevance issues by omitting the specific location 'Washington' mentioned in the title and intro, instead using the vague 'Northwest'. It also misses the scientific explanation for the red color (smoke filtering wavelengths), which is a key point of the article. Consistency is slightly reduced because the summary omits the nuance that rescue crews put out the flames, implying they are still raging or uncontrolled in the final sentence without context."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "The lenient judge's assessment is accurate. The summary is grammatically perfect and flows well (Fluency/Coherence 5). It strictly adheres to the facts presented in the article without adding external information (Consistency 4). However, it significantly under-represents the source text by omitting the specific cause of the fires (farmers burning grass), the scientific explanation for the red color (Rayleigh scattering/smoke filtering wavelengths), and the future outlook regarding air quality. These are substantial portions of the article's content, justifying a lower Relevance score."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is grammatically perfect and flows well (Fluency/Coherence), but it fails to capture the 'why' of the article (the scientific explanation for the red color) and omits specific details like 'Washington' in favor of the vaguer 'Northwest'. Furthermore, omitting the fact that rescue crews extinguished the fires creates a slight inconsistency regarding the current status of the wildfires. Therefore, I maintain the lower relevance score and the overall average."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. While the summary is grammatically perfect and factually consistent (with minor nuance regarding 'Northwest' vs 'Pacific Northwest'), it fails to capture the core explanatory content of the article: the specific cause of the fires (farmers burning grass), the scientific reason for the red color (wavelength filtering), and the future outlook. These omissions make the summary a very thin representation of the source text, justifying the lower relevance score."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate: the summary is grammatically perfect and flows well (Fluency/Coherence), but it misses the key scientific explanation for the red color (Relevance) and omits the fact that the fires were extinguished, which creates a slight inconsistency regarding the current status of the event (Consistency). The scores reflect these specific content gaps."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.0,
+      "fluency": 5.0,
+      "relevance": 3.0,
+      "overall_judge": 4.2
+    }
+  }
+}

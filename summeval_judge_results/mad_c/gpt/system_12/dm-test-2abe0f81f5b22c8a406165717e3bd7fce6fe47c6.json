@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-2abe0f81f5b22c8a406165717e3bd7fce6fe47c6",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow and omits critical context about the nature of the accusations against Manuel, such as accepting sex as payment and performing exorcisms."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention the significant detail regarding Manuel's patient satisfaction ratings, which is a notable aspect of the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not include the specific charges against Manuel, which are essential for understanding the severity of his actions."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains a fragmented structure that makes it less engaging and harder to read."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding Charles Manuel's agreement and the conditions for potential reinstatement."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article about Manuel's admission of wrongdoing and the stipulations of his agreement."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the article, specifically the agreement and the conditions for reinstatement, which are central to the story."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary could benefit from improved fluency by incorporating more varied sentence structures and transitions."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits important details such as the nature of the misdeeds (accepting sex as payment and performing exorcisms), which are significant to understanding the context of the license revocation."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

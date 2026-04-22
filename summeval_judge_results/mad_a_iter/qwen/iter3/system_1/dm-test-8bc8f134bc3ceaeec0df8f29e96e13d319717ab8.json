@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-8bc8f134bc3ceaeec0df8f29e96e13d319717ab8",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is consistent with the source text and captures the main points regarding Bartomeu's comments on Luis Enrique. However, it repeats the same core sentiment twice (once in the first sentence and again in the last sentence), which reduces relevance by including redundant information rather than synthesizing the full context. It also omits significant details like the Champions League match results mentioned at the end of the article, though this is acceptable given the lenient rules focusing on hallucinations."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is consistent with the source text and maintains a logical flow for the first half. However, it suffers from severe redundancy by repeating the exact same quote and sentiment ('very happy') twice in close succession without adding new information. Furthermore, it completely omits the significant details regarding the Champions League match against Valencia, the specific goals scored by Messi and Suarez, and the context of Bartomeu's comments on Enrique's contract and workload, failing to capture the full scope of the article."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary suffers from significant redundancy by repeating the 'very happy' sentiment and Bartomeu's name twice in close proximity without adding value. Additionally, it fails to include key details from the source text regarding the Champions League match against Valencia and the goals scored by Messi and Suarez, which are central to the article's narrative. Therefore, the scores remain unchanged."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I accept the lenient judge's assessment. The summary is factually consistent with the source text (no hallucinations) and flows logically. However, it suffers from significant redundancy by stating Bartomeu's sentiment about being 'very happy' twice in separate sentences without adding new information, which lowers relevance. Additionally, it completely omits the specific match results (Suarez and Messi goals against Valencia) mentioned at the end of the article, further impacting relevance. The scores reflect a good summary that fails to synthesize information effectively."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I am raising the fluency score slightly from 2 to 3 because while the text is repetitive and lacks polish, it is grammatically correct and readable; it does not contain severe errors that would warrant a lower score. I am lowering the relevance score from 2 to 1 because the summary completely ignores the specific match details (Valencia win, Messi/Suarez goals) which constitute the bulk of the article's narrative, making it highly incomplete regarding the 'most important information' as per the criteria."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary repeats the core sentiment ('very happy') twice in a way that adds no value, and it completely ignores the specific match details (goals by Suarez and Messi) provided in the source text. These are significant flaws in relevance and synthesis that warrant the lower scores."
+      }
+    },
+    "final": {
+      "coherence": 3.5,
+      "consistency": 5.0,
+      "fluency": 3.0,
+      "relevance": 2.0,
+      "overall_judge": 3.0
+    }
+  }
+}

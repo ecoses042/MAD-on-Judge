@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-9beaaf73e4517d5bf1bc284f386485d571da96cf",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is excellent in coherence, consistency, and fluency, accurately reflecting the source text without hallucinations. It captures the main points regarding Priscilla Presley's role, the contest details, and the wedding specifics. It receives a slightly lower relevance score (4) because it omits other significant details from the article, such as the prize package (reception, hotel suite, tickets), the 'no impersonators' rule, and the application process, but given the lenient rules allowing for benefit of the doubt on minor omissions, it remains a strong summary."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.5,
+        "rationale_for_score": "The summary is fluent and coherent, accurately reflecting the main points of the article (Priscilla Presley's role, the contest details, and the wedding specifics). However, it scores a 4 instead of a 5 because it omits significant context provided in the source text, such as the prize package (reception, hotel suite, tickets), Priscilla's specific condition regarding impersonators, and her involvement in the chapel's design. While not hallucinations, these omissions reduce the completeness relative to the full source."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is well-structured, factually accurate, and fluent. While it omits secondary details like the prize package and application rules (which lowers relevance slightly), these are not critical to the core news event described. No harsher penalties were applied."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. While the summary is grammatically perfect and coherent, it suffers from a lack of relevance/completeness by omitting key details present in the source text: the specific prize package (reception, suite, tickets), Priscilla's condition against impersonators, and her involvement in the chapel's design. These are significant elements of the story that make the summary feel incomplete relative to the full article."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary is well-structured, factually accurate, and fluent. While it omits secondary details like the prize package and application rules (which lowers relevance slightly), these are not critical to the core news event described. No harsher penalties were applied."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The lenient judge's assessment regarding relevance is valid. The summary accurately reflects the core narrative (Priscilla as witness, contest launch, winner details) but omits significant secondary details present in the source text, such as the specific prize package (reception, suite, tickets), Priscilla's condition against impersonators, and her involvement in the chapel's design. These omissions prevent the summary from being a comprehensive representation of the article, justifying a relevance score below 5."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 4.0,
+      "overall_judge": 4.8
+    }
+  }
+}

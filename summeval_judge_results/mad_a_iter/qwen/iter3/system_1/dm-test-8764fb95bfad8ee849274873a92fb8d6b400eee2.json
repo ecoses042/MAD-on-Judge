@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-8764fb95bfad8ee849274873a92fb8d6b400eee2",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source text and flows logically. However, it suffers from a significant relevance issue: it completely omits the central conflict of the article, which is Paul Merson's public admission that he was wrong about Townsend after Townsend scored for England. By ignoring this key narrative arc (the 'row' restarting despite Merson admitting fault), the summary fails to capture the most important information."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is consistent with the source text and fluent, but it lacks coherence as a standalone piece because it presents two distinct events (the Burnley game and the Italy game) without connecting them to the main topic of the 'row' or Merson's reaction. It misses the crucial context that Merson admitted he was wrong about Townsend after the Italy goal, which is the central theme of the article."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the strict judge's assessment regarding relevance. The summary lists two events (the row restarting and Townsend's goal) but fails to connect them or mention the crucial context that Merson admitted he was wrong about Townsend before the 'row' restarted. This omission makes the summary feel disjointed and misses the main point of the article, which is the reconciliation and Merson's admission of error. Therefore, I maintain the lower relevance score."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I have lowered the relevance score from 3 to 2. While the lenient judge correctly identified that the summary misses the 'row' context and Merson's admission of being wrong, I agree with their assessment but believe the impact is even more severe than a simple lack of coherence. The summary lists two disjointed events (Burnley game and Italy goal) without any narrative thread connecting them to the central theme: the public dispute between Merson and Townsend. By omitting the conflict, the admission of error, and the subsequent Twitter exchange, the summary fails to capture the essence of the article, which is about a 'row' that has been 'restarted'. The events are merely listed as facts rather than being summarized as a story."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding relevance. The summary lists two events (the row restarting and Townsend's goal) but fails to connect them or mention the crucial context that Merson admitted he was wrong about Townsend before the 'row' restarted. This omission makes the summary feel disjointed and misses the main point of the article, which is the reconciliation and Merson's admission of error. Therefore, I maintain the lower relevance score."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary lists two disjointed events (the Burnley game and the Italy goal) without connecting them to the central theme: the public dispute ('row') between Merson and Townsend. By omitting the conflict, Merson's admission of error, and the subsequent Twitter exchange, the summary fails to capture the essence of the article. The events are merely listed as facts rather than being summarized as a story, making the relevance score appropriate at 2."
+      }
+    },
+    "final": {
+      "coherence": 3.0,
+      "consistency": 5.0,
+      "fluency": 4.0,
+      "relevance": 2.0,
+      "overall_judge": 3.0
+    }
+  }
+}

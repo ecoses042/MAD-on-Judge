@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-051db270afc32571a08c15124330efe89d80fea8",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 1,
+        "relevance": 1,
+        "overall_judge": 1.0,
+        "rationale_for_score": "The summary fails on all criteria. It ends abruptly mid-sentence ('using the .'), making it incoherent and grammatically broken (Fluency: 1). Crucially, it hallucinates a fact not present in the source text by stating 'the man stole... a cable lock'; the article states the thief used momentum to break the case free from the lock, but does not state the lock itself was stolen (Consistency: 1). Due to these severe flaws and the incomplete nature of the text, it receives the lowest possible score."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 2.8,
+        "rationale_for_score": "The summary suffers from a severe grammatical failure and hallucination in the final sentence ('the man stole the rifle and a cable lock , and using the .'). The source text states the thief used momentum to break the case free; it never says the thief stole the cable lock. This introduces a fact not present in the article (hallucination) and creates a nonsensical ending, violating consistency and fluency criteria significantly."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 1,
+        "relevance": 2,
+        "overall_judge": 1.2,
+        "adjustment_notes": "The strict judge's assessment is entirely correct. The summary ends abruptly mid-sentence ('using the .'), which makes it incoherent and grammatically broken (Fluency: 1). It also hallucinates that a cable lock was stolen, whereas the source text says the thief used momentum to break the case free from the lock (Consistency: 1). The summary is incomplete and factually inaccurate based on the provided text. I maintain the strict judge's low scores."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 2.8,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate: the summary ends with a severe grammatical error and hallucinates that the thief stole the cable lock (the article states the thief used momentum to break the case free from the lock, implying the lock remained or was part of the mechanism, not necessarily stolen). This confirms the low consistency and fluency scores."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 1,
+        "relevance": 2,
+        "overall_judge": 1.2,
+        "adjustment_notes": "The lenient judge's points are valid and supported by the text. The summary ends abruptly mid-sentence ('using the .'), rendering it incoherent and grammatically broken (Fluency: 1). It also hallucinates that a cable lock was stolen, whereas the source text states the thief used momentum to break the case free from the lock (Consistency: 1). The summary is incomplete and factually inaccurate. I maintain the strict judge's low scores."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 2.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary ends abruptly mid-sentence ('and using the .'), resulting in a severe fluency failure. Additionally, it hallucinates that the thief stole the cable lock, whereas the article states the thief used momentum to break the case free from the lock (implying the lock was not stolen). These issues justify the low consistency and fluency scores."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 1.5,
+      "fluency": 1.5,
+      "relevance": 3.0,
+      "overall_judge": 2.0
+    }
+  }
+}

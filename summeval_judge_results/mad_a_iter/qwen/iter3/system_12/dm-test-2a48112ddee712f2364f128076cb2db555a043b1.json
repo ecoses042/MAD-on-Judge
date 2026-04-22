@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-2a48112ddee712f2364f128076cb2db555a043b1",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is well-structured, fluent, and consistent with the source text. It captures the main points regarding Cambiasso's quote about keeping Leicester in the Premier League feeling like winning a trophy, the team's current standing (7 points adrift, 8 games left), and his background (signed in summer after leaving Italy). It is slightly penalized on relevance because it omits the significant detail that Cambiasso considers saving the team 'like another cup' or comparable to winning the Champions League, which was a major part of the article's narrative."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and strictly consistent with the source text. It captures the main points: Cambiasso's quote about saving Leicester feeling like winning a trophy, the team's current standing (7 points adrift, 8 games left), and his background (signed in summer after leaving Italy). It loses one point on relevance because it omits the significant detail that Cambiasso previously won all major European trophies, which provides crucial context for why he compares saving Leicester to winning a trophy. However, this is a minor omission compared to the inclusion of hallucinated facts."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The lenient judge's assessment is accurate. The summary effectively captures the headline quote and the immediate context (league position). While it omits the detailed trophy list and specific comparisons to his Inter Milan/Real Madrid career found in the article, these are secondary details compared to the main news hook regarding Leicester's survival chances. Therefore, the relevance score of 4 is appropriate, and no harsher penalty is warranted."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is well-structured, fluent, and factually consistent with the source text. While it omits the specific list of trophies Cambiasso has won (which provides context for his quote), this omission does not constitute a hallucination or a critical failure in relevance given the summary's brevity. The strict judge correctly penalized relevance slightly but did not over-penalize, so no score reduction is necessary."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The strict judge's assessment is accurate. The summary successfully captures the primary news hook (Cambiasso's quote about saving Leicester feeling like a trophy) and provides necessary context (league position, recent signing). While it omits the detailed trophy list and specific career comparisons mentioned in the article, these are secondary details relative to the main story focus. Therefore, the relevance score of 4 is appropriate, and no harsher penalty is warranted."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is well-structured and fluent. While it omits the detailed list of past trophies (which provides context to his quote), this omission is acceptable given the brevity of the summary and does not constitute a hallucination or a critical failure in relevance. The slight penalty on relevance is justified but not excessive."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 4.0,
+      "overall_judge": 4.8
+    }
+  }
+}

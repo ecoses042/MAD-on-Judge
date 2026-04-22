@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-2feca9acf532e33f1ab7442c442c8e19787d8d7b",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, making it difficult to understand the sequence of events."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the idea of 'marine pets' which is not mentioned in the article, leading to inconsistencies."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'in they can interact' instead of 'in that they can interact'."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to cover key points, such as the man's name, the specific interactions, and the emotional connection between the man and the fish."
+        }
+      ],
+      "provisional_score": 1
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, describing the interaction between the man and the fish."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the main actions and interactions described in the article without introducing unrelated facts."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, making it less readable."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details about the man's relationship with the fish and the context of their interactions, which are important for understanding the significance of the video."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.0,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

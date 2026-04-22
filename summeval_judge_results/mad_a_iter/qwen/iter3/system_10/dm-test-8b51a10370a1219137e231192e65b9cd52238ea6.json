@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-8b51a10370a1219137e231192e65b9cd52238ea6",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is consistent with the source text and uses fluent English, but it suffers from a major flaw in coherence and relevance. It consists of three disjointed sentences that simply list facts without connecting them logically or providing a clear narrative flow. Furthermore, it fails to capture the main argument of the article (the need for careful management of Stokes' aggression while preserving his character) and omits significant details like the coach's intervention and the team's strategic goals, making it an incomplete summary."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary suffers from severe relevance issues as it only covers the first three sentences of the source text, completely omitting the majority of the article's content regarding Stokes' back injury, his specific interactions with coach Peter Moores, the strategic implications for the spinners (Adil Rashid/Chris Jordan), and the author's broader analysis of managing his aggression. While the included facts are consistent with the text, the summary is incomplete to the point of being trivial. Fluency is penalized because the model failed to capitalize proper nouns and sentence starters, resulting in poor readability."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No adjustment needed. The lenient judge's assessment is accurate: the summary consists of disjointed sentences that list facts without a logical narrative flow (low coherence) and fails to capture the article's main argument regarding the management of Stokes' aggression or the team's strategic goals (low relevance). The summary is consistent with the text and uses fluent English, but these strengths do not outweigh the structural and content deficiencies."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is severely truncated, covering only the first three sentences of the source text while ignoring the majority of the content regarding the back injury, the coach's intervention, and the strategic analysis. This makes it trivial and irrelevant to the full article. The lack of capitalization further penalizes fluency."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "No adjustment needed. The summary is indeed severely truncated, covering only the first three sentences of the source text while ignoring the majority of the content regarding the back injury, the coach's intervention, and the strategic analysis. This makes it trivial and irrelevant to the full article. The lack of capitalization further penalizes fluency."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I maintain the strict judge's low scores. The summary is a disjointed list of sentences with no logical flow (coherence: 2). It completely misses the article's central theme regarding the management of Stokes' aggression and the team's strategic goals for spinners (relevance: 1). While it is factually consistent and grammatically correct, these minor strengths cannot compensate for the lack of narrative structure and failure to summarize the main argument."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 5.0,
+      "fluency": 3.5,
+      "relevance": 1.0,
+      "overall_judge": 2.0
+    }
+  }
+}

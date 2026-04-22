@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-bd4684a0f5af5dd6ac88d2fb50f902bd7f10217b",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary contains a severe hallucination: it claims Falcao has been in good form for Manchester United and is scoring well there, whereas the source text explicitly states he 'has struggled' at Old Trafford with only four goals. This contradicts the source on a major factual point (consistency). Additionally, the summary misses the primary news hook of the article, which is River Plate's interest in signing him (relevance)."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is fluent but contains a major hallucination: it claims Falcao has been in 'good goalscoring form for Manchester United,' whereas the article explicitly states he has 'struggled' there and scored only four goals (his good form was with Colombia). This contradiction significantly impacts consistency. Additionally, the summary misses the primary news hook (River Plate's interest) and repeats the struggle stat twice without adding new information, hurting relevance."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a critical factual error (hallucination) regarding Falcao's performance at Manchester United, claiming he was in 'good form' when the text explicitly states he 'struggled'. This is a severe consistency failure. Furthermore, the summary completely misses the main news story: River Plate's interest in signing him, making it highly irrelevant to the source text's primary purpose."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 5,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The summary contains a critical factual error (hallucination) claiming Falcao is in good form at Manchester United, while the article explicitly states he has 'struggled' there and scored only four goals; his good form was with Colombia. This makes consistency very low. Furthermore, the summary completely misses the primary news hook of the article: River Plate's keen interest in signing him. It also repeats the same statistic about his struggles at United twice without adding value, making it highly irrelevant to the main story."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "No adjustment needed. The summary contains a direct contradiction to the source text ('good form' vs 'struggled'), which is a severe consistency failure warranting a score of 1. Additionally, it completely omits the primary news hook (River Plate's interest), resulting in low relevance. The fluency is acceptable but the content errors are fatal."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 5,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a critical factual error (hallucination) regarding Falcao's form at Manchester United, which severely impacts consistency. Additionally, it completely misses the main news hook about River Plate's interest, making it highly irrelevant despite its grammatical correctness."
+      }
+    },
+    "final": {
+      "coherence": 3.0,
+      "consistency": 1.5,
+      "fluency": 4.5,
+      "relevance": 1.5,
+      "overall_judge": 2.0
+    }
+  }
+}

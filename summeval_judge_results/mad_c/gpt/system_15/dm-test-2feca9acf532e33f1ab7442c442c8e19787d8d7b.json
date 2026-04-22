@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-2feca9acf532e33f1ab7442c442c8e19787d8d7b",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, jumping between actions without connecting them."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the phrase 'but that doesn't prevent one man from dipping his hand' without context, which is misleading and inconsistent with the article's focus on the interaction."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details about the fish's behavior and the man's interactions, which are crucial for understanding the relationship."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'from within side the tank,' which is awkwardly phrased."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a sequence of actions that logically follows the interaction between Roland Giroux and the fish, maintaining a clear flow of information."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the events described in the article without introducing any new facts or altering the original context."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is written in clear English, making it easy to read despite some minor grammatical issues."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details about the fish's background, the man's daily interactions, and the emotional connection, which are important aspects of the original article."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

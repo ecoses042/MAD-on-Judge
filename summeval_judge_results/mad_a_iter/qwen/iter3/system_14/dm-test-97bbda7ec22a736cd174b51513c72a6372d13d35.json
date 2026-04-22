@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-97bbda7ec22a736cd174b51513c72a6372d13d35",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is factually consistent with the source text but suffers from poor relevance and fluency. It fails to mention the most critical piece of information: that the letters failed to sell because only a Sotheby's employee bid $260,000, whereas the summary implies they received 'no bids' (which contradicts the reality that one bid was placed). Additionally, the summary is written entirely in lowercase, violating standard English capitalization rules and reducing fluency. It also omits the outcome of the Mets car auction, which was a significant part of the article."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 4.5,
+        "rationale_for_score": "The summary is factually consistent with the source text and presents a logical flow of information regarding the auction failure and context. It captures key details like the price estimates, dates, and the Mets car. However, it receives a slightly lower score for relevance (missing the outcome that Reggie Jackson bought them) and fluency (minor capitalization issues in proper nouns like 'Yankee Stadium' and 'Bronx', though this is leniently treated as a minor weakness per the rubric)."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 2,
+        "overall_judge": 2.8,
+        "adjustment_notes": "I lowered the scores to align with the strict judge's valid criticisms. The summary fails consistency slightly by implying 'no bids' when a Sotheby's employee did bid (though this is a minor nuance). Fluency is penalized heavily for the complete lack of capitalization and sentence structure issues, making it unreadable. Relevance is low because it omits the critical outcome of the main story (the failed sale due to the single employee bid) and ignores the Mets car auction details which were significant context."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I lowered the relevance score from 4 to 3. While the summary captures the auction failure and context, it completely omits the most critical piece of information: that Reggie Jackson purchased the letters for $260,000. The source text explicitly states this outcome, making it a key point rather than a trivial detail. The lenient judge's comment about 'missing the outcome' was correct; omitting the actual buyer and price significantly reduces the summary's relevance to the main event described in the article."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary fails to mention that Reggie Jackson purchased the letters for $260,000, which is the central outcome of the story described in the source text. Omitting the actual buyer and price makes the summary significantly less relevant than initially scored."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 2,
+        "overall_judge": 2.8,
+        "adjustment_notes": "I have accepted the lenient judge's lowered scores. The summary suffers from severe fluency issues due to a complete lack of capitalization and sentence structure, making it difficult to read (Score 2). It also lacks relevance by omitting the critical detail that the letters failed to sell despite an employee bid, which is the main point of the story, and ignores the significant context of the Mets car auction (Score 2). Consistency is slightly penalized for implying 'no bids' rather than noting the single employee bid, though this is a minor nuance (Score 4). Coherence remains low due to the disjointed presentation caused by poor formatting (Score 3)."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 4.5,
+      "fluency": 3.0,
+      "relevance": 2.5,
+      "overall_judge": 3.5
+    }
+  }
+}

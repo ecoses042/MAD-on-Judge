@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-8b51a10370a1219137e231192e65b9cd52238ea6",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and consistent with the source text. It captures the main points regarding Stokes' reputation and the specific incident with Marlon Samuels. However, it scores a 4 for relevance because it omits other significant details from the article, such as the context of his wrist injury, the coach's advice on managing his aggression, and the strategic discussion about playing Adil Rashid alongside him."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from poor relevance due to severe truncation. It captures only the first three sentences of the source text, completely omitting the context regarding Stokes' wrist injury, the specific incident at Kensington Oval (punching a locker), the broader discussion on managing his aggression, and the strategic points about spinners (Adil Rashid/Chris Jordan). By ignoring the majority of the article's content, it fails to provide a comprehensive summary."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate: the summary is well-structured and factually consistent with the source text. While it misses some secondary details (wrist injury context, specific advice content, spin strategy), these are not central to the main narrative of Stokes' character and the immediate incident resolution, justifying a relevance score of 4 rather than lower."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. While the summary is grammatically correct and coherent within its own limited scope, it suffers from severe truncation. It captures only the opening anecdote and the immediate resolution (the chat with Peter Moores), completely ignoring the significant context regarding Stokes' wrist injury, his history of aggression (punching the locker), the strategic discussion about spinners, and the broader theme of managing his 'fiery' nature versus his performance. Therefore, the relevance score remains low."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate: the summary is grammatically sound and coherent within its truncated scope but fails significantly on relevance by omitting major context (wrist injury history, locker incident, strategic spinner discussion) present in the source text."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary accurately captures the core narrative arc (Stokes' reputation, the specific incident with Samuels, and the positive resolution via coaching) without introducing hallucinations. While it omits secondary details like the wrist injury context or future spin strategy, these are not central to the main story of character management and immediate conflict resolution, so a relevance score of 4 is appropriate."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.5,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.5
+    }
+  }
+}

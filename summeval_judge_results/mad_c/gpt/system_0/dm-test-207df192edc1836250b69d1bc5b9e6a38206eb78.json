@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-207df192edc1836250b69d1bc5b9e6a38206eb78",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, making it difficult to understand the main points."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the idea that antibiotics are used to make farm animals gain weight, but it incorrectly states that the study did not prove this, which is misleading."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as missing articles and incorrect phrasing, which hinder readability."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary includes trivial details, such as the mention of children being the first to die at an early age, which is not directly related to the study's findings."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear connection between the use of antibiotics in babies and the potential link to obesity in toddlers, reflecting the main findings of the study."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary highlights the key points regarding the association between antibiotic use and obesity, as well as the statistics on overweight children in England."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that the study did not prove antibiotics are used to make farm animals gain weight, which is not a claim made in the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, such as 'the may also be the first to die at an early age age,' which affects readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

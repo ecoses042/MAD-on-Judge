@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-632cfdb03aacd90a34a470f6a70b47eee62ec5f0",
+  "system_name": "system_3",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow and does not connect the information about Gnabry's injury and return to play."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key information about Gnabry's feelings regarding his recovery and his previous performance before the injury, which are important for understanding his situation."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary uses lowercase letters for the name 'Serge Gnabry' and does not capitalize the beginning of sentences, affecting readability."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary states he has not featured since March last year but does not clarify that this was due to a serious knee injury, which is a crucial detail."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with Gnabry's recent match and mentioning his absence due to injury."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding Gnabry's injury and his recent performance."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of Gnabry's return to play and his injury history, which are the main topics of the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization and punctuation, making it less readable and fluent."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 4,
+      "fluency": 2,
+      "relevance": 4,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

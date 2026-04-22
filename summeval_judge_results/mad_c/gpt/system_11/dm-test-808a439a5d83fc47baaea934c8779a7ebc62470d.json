@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-808a439a5d83fc47baaea934c8779a7ebc62470d",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, jumping between topics without smooth transitions, making it difficult to follow."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary incorrectly states that Clattenburg has sent off three players this season, while the article specifies he has sent off only two in the Premier League."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'two players season' which should be 'two players this season'."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The mention of Kompany's suspension for the match against Wales is irrelevant to the Manchester derby context and distracts from the main focus."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding Clattenburg's officiating history and the context of the upcoming Manchester derby."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, including the details about the players sent off and the context of Clattenburg's officiating."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points related to Clattenburg's role in the derby and the implications of his previous decisions, avoiding trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as missing articles and awkward phrasing, which affect its readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

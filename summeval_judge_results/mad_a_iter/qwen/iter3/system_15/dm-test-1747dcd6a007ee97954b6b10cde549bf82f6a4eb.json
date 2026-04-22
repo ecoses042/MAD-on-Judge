@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-1747dcd6a007ee97954b6b10cde549bf82f6a4eb",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is consistent with the source text (no hallucinations) and covers key points like the partnership, service charge, and market size. However, it suffers from poor coherence due to its repetitive structure (repeating the 'tap into $70 billion' point twice in slightly different ways) and lack of logical flow between sentences. It also lacks fluency because it reads like a disjointed list of facts rather than a cohesive paragraph, failing to synthesize the information smoothly."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.8,
+        "rationale_for_score": "The summary is factually consistent with the source text (no hallucinations). However, it suffers from poor coherence and relevance due to significant redundancy; the first sentence is repeated almost verbatim at the end, and the middle sentences are just a list of facts without logical flow. It misses the specific details about cities, fees structure beyond the charge, and political figures mentioned in the text, which reduces its overall quality."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is factually consistent but suffers from significant coherence issues due to repetition (mentioning the $70 billion market size twice in slightly different phrasings) and a disjointed, list-like structure that lacks logical flow or synthesis. The fluency score of 3 reflects its choppy nature. No leniency is applied as these are structural flaws rather than minor errors."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "The lenient judge's scores for coherence and relevance were too high given the severe structural flaws in the summary. The summary repeats the exact same sentence twice (the first and last sentences are identical), which is a major coherence failure. Furthermore, it lists facts without any logical transition or narrative flow, making it disjointed. Regarding relevance, while it covers the main topic, it fails to include significant details present in the source text such as the specific number of cities (67), the delivery fee structure ($5+), and the notable political figures (Clinton/Rubio) mentioned in the article, which are key points for a comprehensive summary. The fluency score was lowered slightly due to the repetitive nature and lack of smooth transitions."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary suffers from significant coherence issues due to repetitive phrasing (mentioning the $70 billion market size twice) and a disjointed, list-like structure that lacks logical flow. Fluency is rated low (3/5) because of this choppy nature. Consistency is perfect as all facts are drawn from the text. Relevance is high as it covers the main points despite the poor structure."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I have lowered the overall score from 3.0 to 2.5. The strict judge's criticisms regarding coherence (repetition of identical sentences) and relevance (omission of key details like city count, specific fees, and political figures) are valid and represent significant flaws that cannot be overlooked. While consistency is perfect as no hallucinations occurred, the structural redundancy and lack of narrative flow severely impact the quality of the summary."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 5.0,
+      "fluency": 3.0,
+      "relevance": 3.0,
+      "overall_judge": 3.0
+    }
+  }
+}

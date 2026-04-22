@@ -1,0 +1,319 @@
+[
+  {
+    "essay_id": "GWGR2400110710.1",
+    "status": "ok",
+    "prediction": {
+      "content": {
+        "score": 4.0,
+        "rationale": "주장은 비교적 분명하고, 동물 실험의 필요성과 규제의 중요성을 잘 설명하고 있다. 그러나 주장과 근거 사이의 논리적 연결이 다소 약한 부분이 있어, 더 구체적인 사례나 데이터가 필요하다."
+      },
+      "organization": {
+        "score": 4.0,
+        "rationale": "서론, 본론, 결론의 구조가 비교적 명확하게 드러나 있으며, 문단 간 연결도 자연스럽다. 그러나 본론에서의 세부 사항 전개가 조금 더 체계적이면 좋을 것이다."
+      },
+      "expression": {
+        "score": 4.0,
+        "rationale": "전반적으로 문장이 자연스럽고 이해하기 쉬우나, 일부 표현에서 어색함이 느껴질 수 있다. 예를 들어, '도움일 될 것 이라'와 같은 문법적 오류가 있다."
+      }
+    },
+    "judge": {
+      "content": {
+        "round_0": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 2,
+            "groundedness": 2,
+            "overall_judge": 2.8,
+            "rationale_for_score": "1. domain_match: content 영역 평가 기준 (주장, 근거, 논리) 을 사용했으나, organization(서론/결론 구조 명시) 과 expression(문법 오류 지적 등) 에 대한 언급이 없어 부분적 불일치로 감점. 2. score_rationale_consistency: predicted_score 4.0 은 '경미한 약점'을 허용하지만, rationale 이 제시하는 '논리적 연결의 약함'이라는 단점이 essay_text 에서 명확히 드러나지 않아 점수 정당화가 부족함. 3. specificity: '구체적인 사례나 데이터가 필요하다'는 지적은 generic 한 표현이며, essay_text 에 존재하는 구체적인 문장이나 표현을 인용하지 못함. 4. groundedness: rationale 의 핵심 비판점인 '논리적 연결의 약함'에 대한 구체적 근거 (예: 어떤 주장과 근거가 어떻게 연결되지 않았는지) 가 essay_text 기반 없이 추상적으로 서술되어 있음."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 4.0,
+            "rationale_for_score": "1) domain_match: rationale 가 essay_text 의 핵심 주제인 '동물 실험의 필요성과 규제'를 정확히 파악하여 content 기준을 적용함. 2) score_rationale_consistency: predicted_score(4.0) 는 '주장은 분명하고 설명이 잘 되어 있다'는 긍정적 평가와 일치하며, '논리적 연결 약점'이라는 경미한 단점을 지적함으로써 점수 하락 요소를 배제하여 4 점을 정당화함. 3) specificity: '주장과 근거의 논리적 연결', '구체적 사례나 데이터' 등 rationale 의 내용을 구체적으로 언급했으나, essay_text 내 특정 문장 번호나 구체적인 표현을 직접 인용하지는 못해 5 점보다는 낮게 평가됨. 4) groundedness: rationale 이 지적하는 '논리적 연결 약점'은 essay_text 에서 '인간 권리 보장 → 동물 실험 동의'라는 추상적 논증 구조를 비판적으로 해석한 것으로, hallucination 이 아니며 essay 의 맥락과 일치함."
+          }
+        },
+        "round_1": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 4.0,
+            "adjustment_notes": "관대한 심사위원의 평가에 따라 기존 점수를 유지합니다. domain_match는 essay_text 의 '동물 실험 필요성과 규제' 주제를 정확히 파악하여 content 기준을 적용했으므로 5 점으로 인정합니다. score_rationale_consistency 는 긍정적 평가와 경미한 단점 지적이 점수 (4.0) 와 일치하므로 4 점으로 유지합니다. specificity 는 '논리적 연결 약점'과 '구체적 사례 필요성'이라는 추상적 표현만 사용되어 essay_text 의 구체적 문장이나 표현을 직접 인용하지 못했으므로, 관대한 심사위원의 지적대로 5 점보다는 낮은 3 점으로 조정합니다. groundedness 는 rationale 이 지적하는 논리적 약점이 essay_text 의 추상적 논증 구조를 비판적으로 해석한 것으로 허위 정보 (hallucination) 가 아니며 맥락과 일치하므로 4 점으로 유지합니다."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 2,
+            "groundedness": 2,
+            "overall_judge": 2.8,
+            "adjustment_notes": "엄격한 심사위원의 지적대로 조정합니다. 1) domain_match: content 기준만 사용했으므로 organization 및 expression 평가 누락으로 감점 유지 (4점). 2) score_rationale_consistency: 예측 점수 4.0 은 '경미한 약점' 허용이지만, rationale 의 핵심 비판인 '논리적 연결의 약함'이 essay_text 에서 명확히 드러나지 않아 정당화 부족함을 인정하여 점수 하향 유지 (3점). 3) specificity: '구체적 사례 필요'라는 지적이 generic 하며 essay_text 인용 부재로 감점 유지 (2점). 4) groundedness: 추상적 비판 근거가 essay_text 기반 없이 서술되어 있음으로 감점 유지 (2점). 따라서 기존 엄격한 심사위원의 평가 (2.8 점) 를 그대로 유지합니다."
+          }
+        },
+        "round_2": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 2,
+            "groundedness": 2,
+            "overall_judge": 2.8,
+            "adjustment_notes": "관대한 심사위원의 초기 평가 (4점) 를 유지하지 않고 엄격한 기준에 따라 하향 조정합니다. 1) domain_match: rationale 이 content(논리적 연결 약함) 만 지적하고 organization/structure 에 대한 구체적 분석이 없어 감점 유지 (4점). 2) score_rationale_consistency: 예측 점수 4.0 은 '경미한 약점' 허용이지만, rationale 의 핵심 비판인 '논리적 연결의 약함'이 essay_text 에서 명확히 드러나지 않아 정당화 부족함을 인정하여 점수 하향 유지 (3점). 3) specificity: '구체적 사례 필요'라는 지적이 generic 하며 essay_text 인용 부재로 감점 유지 (2점). 4) groundedness: 추상적 비판 근거가 essay_text 기반 없이 서술되어 있음으로 감점 유지 (2점). 따라서 기존 엄격한 심사위원의 평가 (2.8 점) 를 그대로 유지합니다."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 3,
+            "specificity": 2,
+            "groundedness": 4,
+            "overall_judge": 3.0,
+            "adjustment_notes": "1. domain_match (유지): essay_text 가 '동물 실험의 필요성'과 '규제/투명성'을 핵심 주제로 다루고 있어 content 기준에 명확히 부합하므로 5 점 유지.\n2. score_rationale_consistency (하향 조정): rationale 은 '논리적 연결 약점'과 '구체적 사례 부족'이라는 결함을 지적했으나, predicted_score 는 4.0(경미한 약점 허용) 으로 설정함. 그러나 해당 결함이 essay_text 의 핵심 논증 구조를 훼손하는 수준인지 명확하지 않아 점수 정당화가 다소 애매하므로 3 점으로 조정.\n3. specificity (하향 조정): rationale 은 '논리적 연결이 약하다', '구체적 사례가 필요하다'는 추상적 표현만 사용하며, essay_text 의 구체적인 문장이나 논지를 직접 인용하거나 지목하지 못함. 따라서 2 점으로 감점.\n4. groundedness (유지): rationale 이 지적하는 내용은 essay_text 의 추상적 주장 구조에 대한 비판적 해석일 뿐 허위 정보(hallucination) 가 아니며, 텍스트 내 논증 흐름과 일치하므로 4 점 유지."
+          }
+        },
+        "round_3": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 3,
+            "specificity": 2,
+            "groundedness": 4,
+            "overall_judge": 3.0,
+            "adjustment_notes": "관대한 심사위원의 평가 결과를 그대로 유지합니다.\n1. domain_match (유지): essay_text 가 '동물 실험의 필요성'과 '규제/투명성'을 핵심 주제로 다루고 있어 content 기준에 명확히 부합하므로 5 점 유지.\n2. score_rationale_consistency (하향 조정): rationale 은 '논리적 연결 약점'과 '구체적 사례 부족'이라는 결함을 지적했으나, predicted_score 는 4.0(경미한 약점 허용) 으로 설정함. 그러나 해당 결함이 essay_text 의 핵심 논증 구조를 훼손하는 수준인지 명확하지 않아 점수 정당화가 다소 애매하므로 3 점으로 조정.\n3. specificity (하향 조정): rationale 은 '논리적 연결이 약하다', '구체적 사례가 필요하다'는 추상적 표현만 사용하며, essay_text 의 구체적인 문장이나 논지를 직접 인용하거나 지목하지 못함. 따라서 2 점으로 감점.\n4. groundedness (유지): rationale 이 지적하는 내용은 essay_text 의 추상적 주장 구조에 대한 비판적 해석일 뿐 허위 정보(hallucination) 가 아니며, 텍스트 내 논증 흐름과 일치하므로 4 점 유지."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 2,
+            "groundedness": 2,
+            "overall_judge": 2.8,
+            "adjustment_notes": "관대한 심사위원의 초기 평가 (4점) 를 엄격한 심사위원의 지적에 따라 하향 조정합니다. 1) domain_match: rationale 이 'content' 기준을 사용했으나, essay_text 의 서론-본론-결론 구조나 문단 연결성 등 organization/structure 에 대한 구체적 분석이 없어 감점 유지 (4점). 2) score_rationale_consistency: 예측 점수 4.0 은 경미한 약점 허용이지만, rationale 의 핵심 비판인 '논리적 연결의 약함'이 essay_text 에서 명확히 드러나지 않아 정당화 부족함을 인정하여 점수 하향 유지 (3점). 3) specificity: '구체적 사례 필요'라는 지적이 generic 하며 essay_text 인용 부재로 감점 유지 (2점). 4) groundedness: 추상적 비판 근거가 essay_text 기반 없이 서술되어 있음으로 감점 유지 (2점). 따라서 기존 엄격한 심사위원의 평가 (2.8 점) 를 그대로 유지합니다."
+          }
+        },
+        "round_4": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 2,
+            "groundedness": 2,
+            "overall_judge": 2.8,
+            "adjustment_notes": "관대한 심사위원의 초기 평가 (4점) 를 엄격한 심사위원의 지적에 따라 하향 조정합니다. 1) domain_match: rationale 이 'content' 기준을 사용했으나, essay_text 의 서론-본론-결론 구조나 문단 연결성 등 organization/structure 에 대한 구체적 분석이 없어 감점 유지 (4점). 2) score_rationale_consistency: 예측 점수 4.0 은 경미한 약점 허용이지만, rationale 의 핵심 비판인 '논리적 연결의 약함'이 essay_text 에서 명확히 드러나지 않아 정당화 부족함을 인정하여 점수 하향 유지 (3점). 3) specificity: '구체적 사례 필요'라는 지적이 generic 하며 essay_text 인용 부재로 감점 유지 (2점). 4) groundedness: 추상적 비판 근거가 essay_text 기반 없이 서술되어 있음으로 감점 유지 (2점). 따라서 기존 엄격한 심사위원의 평가 (2.8 점) 를 그대로 유지합니다."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 3,
+            "specificity": 2,
+            "groundedness": 4,
+            "overall_judge": 3.0,
+            "adjustment_notes": "엄격한 심사위원의 평가와 내 판단을 종합하여 기존 점수를 유지합니다.\n1. domain_match (유지): essay_text 가 '동물 실험의 필요성'과 '규제/투명성'을 핵심 주제로 다루고 있어 content 기준에 명확히 부합하므로 5 점 유지.\n2. score_rationale_consistency (하향 조정): rationale 은 '논리적 연결 약점'과 '구체적 사례 부족'이라는 결함을 지적했으나, predicted_score 는 4.0(경미한 약점 허용) 으로 설정함. 그러나 해당 결함이 essay_text 의 핵심 논증 구조를 훼손하는 수준인지 명확하지 않아 점수 정당화가 다소 애매하므로 3 점으로 조정.\n3. specificity (하향 조정): rationale 은 '논리적 연결이 약하다', '구체적 사례가 필요하다'는 추상적 표현만 사용하며, essay_text 의 구체적인 문장이나 논지를 직접 인용하거나 지목하지 못함. 따라서 2 점으로 감점.\n4. groundedness (유지): rationale 이 지적하는 내용은 essay_text 의 추상적 주장 구조에 대한 비판적 해석일 뿐 허위 정보(hallucination) 가 아니며, 텍스트 내 논증 흐름과 일치하므로 4 점 유지."
+          }
+        },
+        "final": {
+          "domain_match": 4.5,
+          "score_rationale_consistency": 3.0,
+          "specificity": 2.0,
+          "groundedness": 3.0,
+          "overall_judge": 2.9
+        }
+      },
+      "organization": {
+        "round_0": {
+          "strict": {
+            "domain_match": 3,
+            "score_rationale_consistency": 2,
+            "specificity": 2,
+            "groundedness": 2,
+            "overall_judge": 2.2,
+            "rationale_for_score": "1. domain_match: rationale가 organization 영역의 평가 기준 (구조, 연결성) 을 사용하고 있어 표면적으로는 맞으나, '본론에서의 세부 사항 전개'라는 추상적 지적만 제시하여 content(주장과 근거의 구체성) 측면을 간과함. 2. score_rationale_consistency: predicted_score 4.0은 '경미한 약점 1개 이하'를 허용하지만, rationale은 '체계적이지 못한 세부 사항 전개'라는 명확한 본론 구성 결함을 지적함. 이는 점수 정당화에 모순이 있음 (결함이 명확하므로 3점 수준에 더 가까움). 3. specificity: '본론에서의 세부 사항 전개가 조금 더 체계적이면 좋을 것이다'라는 표현은 구체적인 문장이나 논지 인용이 전혀 없음. generic한 조언일 뿐임. 4. groundedness: essay_text의 본론 (2, 3 단락) 을 살펴보면, 규제와 투명성 공개에 대한 구체적인 논거 (연구자 노력, 검증 가능성, 치료법 개발 기여 등) 가 이미 상세히 서술되어 있음. rationale이 이를 '체계적이지 못함'으로 평가하는 근거가 essay_text의 실제 내용과 맞지 않으며, 오히려 essay_text는 본론 전개가 매우 구체적이고 체계적으로 구성되어 있음."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 4.0,
+            "rationale_for_score": "1. domain_match: rationale가 서론-본론-결론의 구조와 문단 연결 등 조직화 (organization) 영역의 평가 기준을 명확히 적용하고 있습니다. 2. score_rationale_consistency: predicted_score 4.0(매우 좋음)에 대해 '구조가 비교적 명확', '연결 자연스럽다'는 긍정적 근거를 제시하여 점수를 정당화하지만, '체계적이지 못한 세부 사항 전개'라는 약점을 지적함으로써 완벽한 5점보다는 4점에 적합한 균형을 보여줍니다. 3. specificity: 서론/본론/결론의 구조와 문단 간 연결이라는 구체적인 요소들을 언급하고 있으나, 본론 내의 구체적 논지나 표현에 대한 더 깊은 분석이 부족하여 3점으로 제한합니다. 4. groundedness: rationale의 모든 주장 (구조 명확성, 연결 자연스러움, 세부 사항 전개 필요성) 이 essay_text의 실제 구성과 내용 (강형욱 인용, 규제 강조, 투명성 논의 등) 과 일치하며 hallucination 없이 텍스트를 잘 반영하고 있습니다."
+          }
+        },
+        "round_1": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 4.0,
+            "adjustment_notes": "관대한 심사위원의 평가에 따라 모든 항목을 유지합니다. domain_match는 조직화 (organization) 영역 기준이 명확히 적용되었고, score_rationale_consistency는 긍정적 근거와 약점 지적이 점수 4.0과 균형을 이루며 타당합니다. specificity는 '구조'와 '연결'이라는 구체적인 요소가 언급되었으나 본론 논지 분석 부재로 3점이 적절하며, groundedness는 essay_text의 실제 구성 (강형욱 인용, 규제/투명성 논의 등) 과 일치하여 hallucination 없이 반영되었습니다."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 2,
+            "groundedness": 2,
+            "overall_judge": 2.8,
+            "adjustment_notes": "1. domain_match: 엄격한 심사위원이 지적한 대로 rationale 은 organization 기준 (구조, 연결성) 을 사용했으나 content 측면을 간과했다. 그러나 essay_text 는 서론-본론-결론 구조가 명확하고 문단 간 연결이 자연스럽아 조직화 측면에서 4점 수준 (경미한 약점 허용) 으로 조정 가능하나, content 의 구체성 부족으로 인해 5점은 불가함. 2. score_rationale_consistency: predicted_score 4.0 은 '경미한 약점'을 전제로 하지만, rationale 은 '본론 전개가 체계적이지 못함'이라는 명확한 결함을 지적함. 이는 점수 정당화에 모순이므로 점수를 낮춰야 함. 3. specificity: '체계적이면 좋을 것이다'라는 표현은 구체적인 문장이나 논지 인용이 전혀 없어 generic 한 조언임. 따라서 2점 유지. 4. groundedness: rationale 의 '체계적이지 못함'이라는 지적과 essay_text 의 본론 (규제, 투명성, 구체적 이점 등) 에 대한 상세 서술이 모순됨. 오히려 essay 는 체계적이므로 근거가 허위임. 따라서 2점 유지."
+          }
+        },
+        "round_2": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 2,
+            "groundedness": 2,
+            "overall_judge": 2.8,
+            "adjustment_notes": "관대한 심사위원의 초기 평가 (4점) 를 유지하되, 엄격한 기준에 따라 점수 조정 사유를 명확히 합니다. 1. domain_match: rationale 은 organization(구조, 연결성) 기준을 사용했으나 content(주장 및 근거의 구체성) 측면을 간과했습니다. essay_text 는 서론-본론-결론 구조가 명확하고 문단 간 논리적 연결이 자연스럽아 조직화 측면에서 4점 수준 (경미한 약점 허용) 으로 적절하나, content 의 구체성 부족으로 인해 5점은 불가합니다. 2. score_rationale_consistency: predicted_score 4.0 은 '경미한 약점'을 전제로 하지만, rationale 은 '본론 전개가 체계적이지 못함'이라는 명확한 결함을 지적함. 이는 점수 정당화에 모순이므로 점수를 낮춰야 함. 3. specificity: '체계적이면 좋을 것이다'라는 표현은 구체적인 문장이나 논지 인용이 전혀 없어 generic 한 조언임. 따라서 2점 유지. 4. groundedness: rationale 의 '체계적이지 못함'이라는 지적과 essay_text 의 본론 (규제, 투명성, 구체적 이점 등) 에 대한 상세 서술이 모순됨. 오히려 essay 는 체계적이므로 근거가 허위임. 따라서 2점 유지."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 4.0,
+            "adjustment_notes": "엄격한 심사위원의 평가와 일치하여 모든 항목을 유지합니다. domain_match는 조직화 (organization) 영역 기준이 명확히 적용되었고, score_rationale_consistency는 긍정적 근거와 약점 지적이 점수 4.0과 균형을 이루며 타당합니다. specificity는 '구조'와 '연결'이라는 구체적인 요소가 언급되었으나 본론 논지 분석 부재로 3점이 적절하며, groundedness는 essay_text의 실제 구성 (강형욱 인용, 규제/투명성 논의 등) 과 일치하여 hallucination 없이 반영되었습니다."
+          }
+        },
+        "round_3": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 4.0,
+            "adjustment_notes": "관대한 심사위원의 평가와 일치하여 모든 항목을 유지합니다. domain_match는 조직화 (organization) 영역 기준이 명확히 적용되었고, score_rationale_consistency는 긍정적 근거와 약점 지적이 점수 4.0 과 균형을 이루며 타당합니다. specificity 는 '구조' 와 '연결'이라는 구체적인 요소가 언급되었으나 본론 논지 분석 부재로 3 점이 적절하며, groundedness 는 essay_text 의 실제 구성 (강형욱 인용, 규제/투명성 논의 등) 과 일치하여 hallucination 없이 반영되었습니다."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 2,
+            "groundedness": 2,
+            "overall_judge": 2.8,
+            "adjustment_notes": "엄격한 심사위원의 평가에 동의합니다. 1. domain_match: rationale 은 organization(구조) 기준을 충족하지만 content(주장의 구체성 및 근거) 측면을 간과하여 5점 대신 4점을 유지하는 것이 타당합니다. 2. score_rationale_consistency: predicted_score 4.0 은 '경미한 약점'을 전제해야 하나, rationale 은 '본론 전개가 체계적이지 못함'이라는 명확한 결함을 지적하고 있습니다. 이는 점수 정당화에 모순이므로 점수를 낮추는 것이 옳습니다. 3. specificity: '체계적이면 좋을 것이다'라는 표현은 구체적인 문장이나 논지 인용이 없어 generic 한 조언으로, 2점 유지가 필요합니다. 4. groundedness: rationale 의 지적과 essay_text 의 본론에 대한 상세 서술이 모순되어 근거가 허위임을 확인했으므로 2점 유지합니다."
+          }
+        },
+        "round_4": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 2,
+            "groundedness": 2,
+            "overall_judge": 2.8,
+            "adjustment_notes": "관대한 심사위원의 초기 평가 (4점) 를 유지합니다. 1. domain_match: rationale 은 서론-본론-결론 구조를 지적하여 organization 기준을 충족하나, content(주장의 구체성 및 근거) 측면에서 essay_text 의 논리적 연결성을 충분히 분석하지 못해 5 점 대신 4 점으로 조정합니다. 2. score_rationale_consistency: predicted_score 4.0 은 '경미한 약점'이 있어야 하지만, rationale 은 '본론 전개가 체계적이지 못함'이라는 명확한 결함을 지적하여 점수 정당화에 모순이 있으므로 점수를 낮추어 3 점으로 조정합니다. 3. specificity: '체계적이면 좋을 것이다'라는 표현은 구체적인 문장이나 논지 인용이 없어 generic 한 조언으로, 2 점 유지합니다. 4. groundedness: rationale 의 지적과 essay_text 의 본론 서술 간 모순으로 근거가 허위임을 확인했으므로 2 점 유지합니다."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 4.0,
+            "adjustment_notes": "엄격한 심사위원의 평가와 일치하여 모든 항목을 유지합니다. domain_match는 조직화 (organization) 영역 기준이 명확히 적용되었고, score_rationale_consistency는 긍정적 근거와 약점 지적이 점수 4.0 과 균형을 이루며 타당합니다. specificity 는 '구조' 와 '연결'이라는 구체적인 요소가 언급되었으나 본론 논지 분석 부재로 3 점이 적절하며, groundedness 는 essay_text 의 실제 구성 (강형욱 인용, 규제/투명성 논의 등) 과 일치하여 hallucination 없이 반영되었습니다."
+          }
+        },
+        "final": {
+          "domain_match": 4.5,
+          "score_rationale_consistency": 3.5,
+          "specificity": 2.5,
+          "groundedness": 3.0,
+          "overall_judge": 3.4
+        }
+      },
+      "expression": {
+        "round_0": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 2,
+            "groundedness": 2,
+            "overall_judge": 3.0,
+            "rationale_for_score": "1. domain_match: expression 영역의 문장 자연스러움, 어휘 적절성, 문법 오류 지적 등 평가 기준을 준수함. 2. score_rationale_consistency: predicted_score 4.0(높은 점수)에 대해 '일부 표현에서 어색함', '문법적 오류'라는 명확한 결함을 제시하여 점수를 정당화하나, 5점 기준인 '결함 없음'에는 미치지 못해 4점으로 적절함. 3. specificity: '도움일 될 것 이라'와 같은 구체적인 문장 인용이 있어 특정성을 확보했으나, '전반적으로 자연스럽다'는 평가에 대한 구체적인 긍정적 예시 (잘된 문장 등) 가 부족하여 2점 이하로 감점됨. 4. groundedness: rationale 에 언급된 오류 ('도움일 될 것 이라') 는 essay_text 의 마지막 문장에 정확히 존재하므로 hallucination 이 없으나, '어색함'이라는 추상적 표현에 대한 구체적인 근거가 부족하고, 긍정적 측면의 구체적 근거가 없어 전반적인 설득력이 약해 2점 이하로 감점됨."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.2,
+            "rationale_for_score": "1) domain_match: rationale가 'expression' 영역의 평가 기준 (문장 자연스러움, 어휘 적절성, 문법 오류 등) 을 명확히 사용하고 있어 완벽함. 2) score_rationale_consistency: predicted_score(4.0) 가 '전반적으로 자연스럽으나 일부 어색함'이라는 설명과 일치하며, 높은 점수에 합당한 근거가 제시됨. 다만 '도움일 될 것 이라'라는 구체적인 오류를 지적하는 부분에서 점수 4.0 을 완벽히 정당화하기에는 약간의 여지가 있어 4점 처리. 3) specificity: '도움일 될 것 이라'와 같은 구체적인 문장 예시를 들어 설명하여 구체적임. 다만 '전반적으로 좋다' 등 일반적 표현이 섞여 있어 5점보다는 낮게 평가. 4) groundedness: rationale에 언급된 오류는 essay_text의 마지막 문장에 실제로 존재하므로 hallucination 없이 텍스트에 근거함."
+          }
+        },
+        "round_1": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.2,
+            "adjustment_notes": "관대한 심사위원의 평가 내용을 바탕으로 각 항목을 재검토함. 1) domain_match: rationale 이 'expression' 영역 기준 (문법 오류 등) 을 명확히 사용하여 점수 5 유지. 2) score_rationale_consistency: predicted_score(4.0) 와 '전반적으로 자연스럽으나 일부 어색함'이라는 설명이 일치하며, 구체적인 문법 오류 ('도움일 될 것 이라') 가 제시되어 점수 정당화가 충분하므로 점수 4 유지. 3) specificity: '도움일 될 것 이라'라는 구체적인 예시가 있으나 '전반적으로 좋다' 등 일반적 표현이 섞여 있어 5점 기준 미달로 점수 3 유지. 4) groundedness: 지적된 오류가 essay_text 마지막 문장에 실제로 존재하여 hallucination 없음으로 점수 5 유지. 종합적으로 관대한 심사위원의 평가와 일치하므로 최종 점수는 4.0 으로 조정."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 4.0,
+            "adjustment_notes": "1. domain_match: 엄격한 심사위원이 지적한 대로 rationale 이 expression 영역의 기준 (문법, 어휘) 을 사용하고 있으며, essay_text 의 오류를 정확히 지적했으므로 기존 5 점 유지. 2. score_rationale_consistency: predicted_score 4.0 은 '경미한 약점'을 허용하는 등급이나, rationale 에 '문법적 오류'라는 명확한 결함이 포함되어 있어 점수 정당화가 타당하므로 기존 4 점 유지. 3. specificity: 엄격한 심사위원이 긍정적 예시 부족으로 감점했으나, 본래 4 점 기준은 '경미한 약점 1 개 이하'를 허용하므로, 하나의 구체적인 오류 지적만으로도 충분함을 인정하여 감점을 취소하고 3 점으로 조정 (기존 2 점 → 3 점). 4. groundedness: 엄격한 심사위원이 긍정적 근거 부족을 이유로 감점했으나, '도움일 될 것 이라'라는 구체적인 오류 인용은 essay_text 에 존재하므로 hallucination 이 없음을 인정하여 기존 2 점을 유지하거나 최소한 3 점으로만 조정할 수 있으나, 본 평가 기준상 명확한 근거가 있는 항목은 유지해야 하므로 엄격한 심사위원의 감점 사유 (긍정적 근거 부족) 는 '4 점 허용 범위 내'로 해석하여 기존 2 점 유지. 최종 종합 점수는 domain_match(5), score_rationale_consistency(4), specificity(3), groundedness(2) 의 평균인 3.5 로 조정."
+          }
+        },
+        "round_2": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 4.0,
+            "adjustment_notes": "1. domain_match: 관대한 심사위원이 expression 영역 기준을 사용했으므로 유지 (5점). 2. score_rationale_consistency: 예측 점수 4.0 은 '경미한 약점' 허용 범위이며, rationale 에 구체적인 문법 오류 지적이 있어 정당화되므로 유지 (4점). 3. specificity: 관대한 심사위원이 긍정적 예시 부족으로 감점했으나, 본 평가 기준상 '구체적 오류 지적'만으로도 충분하므로 감점 취소하여 기존 점수인 3 점 유지. 4. groundedness: 관대한 심사위원이 긍정적 근거 부족을 이유로 감점 (2점) 했으나, 이는 essay_text 에 없는 내용을 요구하는 것이므로 허용되지 않음. '도움일 될 것 이라'라는 구체적인 오류가 essay_text 에 존재하므로 hallucination 이 없음을 인정하여 점수를 4 점으로 상향 조정."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.2,
+            "adjustment_notes": "엄격한 심사위원의 평가 내용을 재검토한 결과, 관대한 심사위원의 점수 (4.0) 와 일치함을 확인함. 1) domain_match: rationale 이 'expression' 영역 기준을 명확히 사용하여 점수 5 유지. 2) score_rationale_consistency: predicted_score(4.0) 와 '전반적으로 자연스럽으나 일부 어색함'이라는 설명이 일치하며, 구체적인 문법 오류 ('도움일 될 것 이라') 가 제시되어 점수 정당화가 충분하므로 점수 4 유지. 3) specificity: '도움일 될 것 이라'라는 구체적인 예시가 있으나 '전반적으로 좋다' 등 일반적 표현이 섞여 있어 5점 기준 미달로 점수 3 유지. 4) groundedness: 지적된 오류가 essay_text 마지막 문장에 실제로 존재하여 hallucination 없음으로 점수 5 유지. 종합적으로 기존 평가와 일치하므로 최종 점수는 4.0 으로 조정."
+          }
+        },
+        "round_3": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.2,
+            "adjustment_notes": "관대한 심사위원의 평가 내용을 재검토한 결과, 기존 점수 (4.0) 를 유지합니다. 1) domain_match: rationale 이 'expression' 영역 기준을 명확히 사용하여 점수 5 유지. 2) score_rationale_consistency: predicted_score(4.0) 와 '전반적으로 자연스럽으나 일부 어색함'이라는 설명이 일치하며, 구체적인 문법 오류 ('도움일 될 것 이라') 가 제시되어 점수 정당화가 충분하므로 점수 4 유지. 3) specificity: '도움일 될 것 이라'라는 구체적인 예시가 있으나 '전반적으로 좋다' 등 일반적 표현이 섞여 있어 5점 기준 미달로 점수 3 유지. 4) groundedness: 지적된 오류가 essay_text 마지막 문장에 실제로 존재하여 hallucination 없음으로 점수 5 유지. 종합적으로 기존 평가와 일치하므로 최종 점수는 4.0 으로 조정."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 4.0,
+            "adjustment_notes": "1. domain_match: 관대한 심사위원이 expression 영역 기준을 적용했으므로 유지 (5점). 2. score_rationale_consistency: 예측 점수 4.0 은 경미한 약점을 허용하는 수준이며, rationale 에 '도움일 될 것 이라'라는 구체적인 문법 오류 지적이 있어 점수를 정당화하므로 유지 (4점). 3. specificity: 관대한 심사위원이 긍정적 예시 부족으로 감점했으나, 본 평가 기준상 '구체적 오류 지적'만으로도 충분하므로 감점 취소하여 기존 점수인 3 점 유지. 4. groundedness: 관대한 심사위원이 긍정적 근거 부족을 이유로 감점 (2점) 했으나, 이는 essay_text 에 없는 내용을 요구하는 것이므로 허용되지 않음. '도움일 될 것 이라'라는 구체적인 오류가 essay_text 에 존재하므로 hallucination 이 없음을 인정하여 점수를 4 점으로 상향 조정."
+          }
+        },
+        "round_4": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 4.0,
+            "adjustment_notes": "1. domain_match: 관대한 심사위원이 expression 영역 기준을 적용했으므로 유지 (5점). 2. score_rationale_consistency: 예측 점수 4.0 은 경미한 약점을 허용하는 수준이며, rationale 에 '도움일 될 것 이라'라는 구체적인 문법 오류 지적이 있어 점수를 정당화하므로 유지 (4점). 3. specificity: 관대한 심사위원이 긍정적 예시 부족으로 감점했으나, 본 평가 기준상 '구체적 오류 지적'만으로도 충분하므로 감점 취소하여 기존 점수인 3 점 유지. 4. groundedness: 관대한 심사위원이 긍정적 근거 부족을 이유로 감점 (2점) 했으나, 이는 essay_text 에 없는 내용을 요구하는 것이므로 허용되지 않음. '도움일 될 것 이라'라는 구체적인 오류가 essay_text 에 존재하므로 hallucination 이 없음을 인정하여 점수를 4 점으로 상향 조정."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.2,
+            "adjustment_notes": "엄격한 심사위원의 평가와 일치하여 기존 점수를 유지합니다. 1) domain_match: rationale 이 'expression' 영역 기준 (문법, 어휘 등) 을 명확히 사용하여 점수 5 유지. 2) score_rationale_consistency: predicted_score(4.0) 와 '전반적으로 자연스럽으나 일부 어색함'이라는 설명이 일치하며, 구체적인 문법 오류 ('도움일 될 것 이라') 가 제시되어 점수 정당화가 충분하므로 점수 4 유지. 3) specificity: '도움일 될 것 이라'라는 구체적인 예시가 있으나 '전반적으로 좋다' 등 일반적 표현이 섞여 있어 5점 기준 미달로 점수 3 유지. 4) groundedness: 지적된 오류가 essay_text 마지막 문장에 실제로 존재하여 hallucination 없음으로 점수 5 유지. 종합적으로 기존 평가와 일치하므로 최종 점수는 4.0 으로 조정."
+          }
+        },
+        "final": {
+          "domain_match": 5.0,
+          "score_rationale_consistency": 4.0,
+          "specificity": 3.0,
+          "groundedness": 4.5,
+          "overall_judge": 4.1
+        }
+      }
+    }
+  }
+]

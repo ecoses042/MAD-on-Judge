@@ -1,0 +1,75 @@
+{
+  "article_id": "dm-test-2feca9acf532e33f1ab7442c442c8e19787d8d7b",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information and abruptly starts with 'but' without context."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details about the man's interactions with the fish, such as the fish's previous bullying by other fish and the daily routine of massaging."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention that the fish is a hybrid or its breeding background, which is relevant information from the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'from within side the tank' is awkward and grammatically incorrect."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with the man's interaction with the fish and describing the fish's response."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the content of the article, focusing on the man's actions and the fish's reactions without introducing any new facts."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "Despite some minor grammatical issues, the summary is generally easy to read and conveys the intended meaning."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary captures key moments of the interaction between the man and the fish, highlighting the unique relationship they share."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains some grammatical errors, such as inconsistent capitalization and punctuation, which affect its overall readability."
+        },
+        {
+          "criterion": "coherence",
+          "reason": "The summary could benefit from a more structured flow, as it jumps into the man's actions without providing context about the fish or the relationship."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

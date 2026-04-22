@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-bcdb32ae644040a721da880fff9c1d502048cd8b",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is coherent and consistent with the source text, accurately reporting the main facts without hallucination. However, it scores lower on fluency due to the inclusion of raw tokenization artifacts (e.g., '-lrb-', '-rrb-') which make the text unpolished. It also scores lower on relevance because it truncates the summary after the initial quote, omitting significant details from the source such as the ship's itinerary, current location, and how the bodies were discovered."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary accurately reflects the source text's key facts (location, event, cruise line, time) without hallucinations. The only minor deduction is for fluency due to the inclusion of raw XML-style tags ('-lrb-', '-rrb-') which are not standard in natural English text, though they do not obscure meaning."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary accurately captures the key facts from the source text without hallucinations. The only valid deduction is for fluency due to the presence of raw XML-style tags ('-lrb-', '-rrb-') which break standard English readability, even though they do not obscure meaning."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "Lowered fluency from 4 to 3 because the presence of raw tokenization artifacts ('-lrb-', '-rrb-') significantly degrades readability and professionalism, making it feel unpolished rather than just 'unpolished'. Lowered relevance from 3 to 2 because the summary is extremely truncated; it captures only the headline and the first sentence of the quote, completely ignoring the ship's name (ms Ryndam), the specific time (11:30 a.m.), the FBI involvement details, the cruise itinerary, current location in San Juan, and how the bodies were found. The strict judge was correct to penalize heavily for missing these key facts."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No changes to scores. The lenient judge's assessment is accurate: the summary contains raw tokenization artifacts ('-lrb-', '-rrb-') which severely impact fluency/readability, and it fails relevance by omitting critical details like the ship name (ms Ryndam), specific time, FBI involvement, itinerary, and discovery method found in the source text."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 5,
+        "overall_judge": 4.5,
+        "adjustment_notes": "Lowered the fluency score from 4 to 3. While the strict judge noted a deduction for XML-style tags, a score of 4 implies near-native readability. The presence of raw tags like '-lrb-' and '-rrb-' significantly disrupts the reading flow and constitutes a clear grammatical/formatting error that prevents the text from being 'easy to read' as per the criteria. Therefore, a lower score is warranted."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 3.0,
+      "relevance": 3.5,
+      "overall_judge": 3.8
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-404f859482d47c127868964a9a39d1a7645dd2e9",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is consistent with the source text and uses fluent English. However, it suffers from coherence issues due to a disjointed structure: it lists expensive gifts first, then abruptly pivots to 'did n't just include' without listing the cheap items mentioned in the article (Easter bunny, blender, thong), making the sentence confusing. Additionally, while relevant, it omits the core context of the lawsuit (the judge's order to repay money) and the reason for the gifts (Sterling's racist remarks/audio tape), focusing only on the accusations."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary is extremely poor in relevance and coherence because it consists of only two sentences that repeat the same information found in the first half of the source text without adding any new insights or covering other key points (such as Stiviano's defense, the specific list of trivial gifts mentioned, the racist audio tape context, or the NBA ban). It fails to synthesize the article into a complete summary. While grammatically fluent and consistent with the text provided so far, its brevity renders it a failure in summarization quality."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the coherence score because the summary's structure is indeed disjointed; it introduces a list of expensive items and then immediately negates it with 'did n't just include' without ever listing the cheap items mentioned in the source text, creating a confusing logical flow. I also significantly lowered the relevance score. The lenient judge correctly identified that the summary omits the core context (the lawsuit/judge's order) and the reason for the gifts (racism), but they gave it a 3/5. Given that the summary fails to mention the main event (the repayment order) or the cause of the controversy (Sterling's racist tape), which are the most important information in the article, a score of 2 is more appropriate than 3."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is severely flawed in relevance and coherence because it merely repeats the first two sentences of the source text without synthesizing the information or covering other critical elements like Stiviano's defense, the specific trivial gifts (Easter bunny, blender), the racist audio tape context, or the NBA ban. It fails to function as a summary by omitting half the story and providing no new insight."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I lowered the coherence score to 2 because the summary's internal logic is flawed: it lists expensive items and then immediately negates them with 'did n't just include' without ever listing the cheap items mentioned in the source text, creating a confusing logical flow that feels incomplete. I also lowered the relevance score to 1 (from 3) because the summary fails to mention the main event (the judge's order for repayment) or the cause of the controversy (Sterling's racist tape), which are the most important information in the article; omitting these core elements makes the summary trivial and misleading."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary is severely flawed in relevance and coherence because it merely repeats the first two sentences of the source text without synthesizing the information or covering other critical elements like Stiviano's defense, the specific trivial gifts (Easter bunny, blender), the racist audio tape context, or the NBA ban. It fails to function as a summary by omitting half the story and providing no new insight."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 5.0,
+      "fluency": 4.0,
+      "relevance": 1.0,
+      "overall_judge": 2.0
+    }
+  }
+}

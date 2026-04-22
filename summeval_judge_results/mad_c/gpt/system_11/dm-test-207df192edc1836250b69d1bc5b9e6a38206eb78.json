@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-207df192edc1836250b69d1bc5b9e6a38206eb78",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information and does not effectively connect the points made in the article."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the idea that antibiotics may be fattening children without adequately representing the study's caution that it did not prove causation."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'the may also be fattening our children,' which should be 'they may also be fattening our children.'"
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details, such as the specific statistics about obesity rates in boys and girls and the implications of antibiotic use."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, starting with the main finding of the study and then explaining the implications."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the findings of the study regarding the association between antibiotic use in infants and increased likelihood of obesity in toddlers."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the article, including the connection between antibiotics and obesity, without delving into trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'the may also be fattening our children,' which affects readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-d3c9ce137ba24a69253508b3416630465c050ae4",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and consistent with the source text, accurately capturing Dayna's background and key quote. However, it scores lower on relevance because it omits significant details present in the article, such as her specific goal to counteract stereotypes, her previous viral video ('Shake It Off'), her ability to drive and attend college despite medical warnings, and her new role in motivational speaking. As a lenient evaluator, I acknowledge the accurate core facts but note that the summary feels incomplete compared to the full story."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is fluent and consistent with the source text, but it suffers from a severe relevance flaw by omitting the vast majority of key information (e.g., her specific goal to counter stereotypes, her achievements like driving/college, her motivational speaking, and the context of her videos). It reads as a generic snippet rather than a comprehensive summary."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate: the summary is fluent and consistent but lacks relevance due to omitting major plot points like the 'Shake It Off' video, her college status, and her motivational speaking role. As a strict evaluator, I agree that these omissions significantly reduce the summary's coverage of key information."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. While the summary is grammatically correct and factually consistent, it fails significantly on relevance by omitting major key points such as her specific goal to counter stereotypes, her achievements (driving, college), and her new role in motivational speaking. It reads more like a single sentence excerpt than a comprehensive summary of the article."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "No changes made. The strict judge's assessment is accurate: while the summary is fluent and consistent, it fails to cover key plot points such as the specific 'Shake It Off' video, her college status, and her motivational speaking engagements, resulting in low relevance."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding relevance. The summary is extremely sparse, covering only the introduction and one quote while omitting the core narrative of her achievements (driving, college), her specific goal to counter stereotypes in media/fashion, and her new role as a motivational speaker. It reads more like an excerpt than a summary. I slightly lowered coherence from 4 to 3 because the abrupt ending without a concluding thought or broader context makes the flow feel incomplete rather than just 'well-structured'. Fluency is lowered slightly from 5 to 4 due to minor punctuation issues (missing period at the end, inconsistent spacing around quotes) which affect readability, though they are not severe grammatical errors."
+      }
+    },
+    "final": {
+      "coherence": 3.5,
+      "consistency": 5.0,
+      "fluency": 4.5,
+      "relevance": 2.5,
+      "overall_judge": 3.6
+    }
+  }
+}

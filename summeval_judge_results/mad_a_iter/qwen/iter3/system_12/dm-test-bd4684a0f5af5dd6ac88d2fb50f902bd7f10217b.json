@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-bd4684a0f5af5dd6ac88d2fb50f902bd7f10217b",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and consistent with the source text. It captures the main points regarding River Plate's interest in Falcao, Patanian's quotes, his history with the club, and his current struggles at Manchester United. It receives a slight deduction on relevance (4) because it omits specific details present in the article such as the 2009 move to Porto, Falcao's goal-scoring record for Colombia, and his previous stats for River Plate, though these are not hallucinations."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and consistent with the source text, accurately quoting Patanian and summarizing Falcao's history and current struggles. However, it scores lower on relevance because it omits significant details present in the article, such as the specific goal statistics (4 goals for United, 34 for River Plate), the context of his international form, and the uncertainty regarding his future at Manchester United versus Monaco."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate. The summary is well-structured (coherence), contains no hallucinations (consistency), and is grammatically correct (fluency). The only valid criticism is the omission of specific details like the 2009 Porto move, Colombia goal records, and previous River Plate stats, which justifies a relevance score of 4 rather than 5."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I agree with the strict judge's assessment. While the summary is grammatically perfect and factually consistent, it suffers from a significant lack of relevance by omitting key statistics (goals scored) and crucial context regarding his future at Manchester United versus Monaco, which are central to the article's narrative."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The strict judge's assessment is accurate. The summary is well-structured, factually consistent with the source text, and fluent. The only valid criticism is the omission of specific details like the 2009 Porto move, Colombia goal records, and previous River Plate stats, which justifies a relevance score of 4 rather than 5."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding coherence, consistency, and fluency; the summary is well-structured, factually accurate based on the text, and grammatically correct. However, I also agree that the relevance score should remain low (3) because the summary omits significant details present in the article, specifically the specific goal statistics (4 goals at United, 24 for Colombia, 34 for River Plate) and the crucial context regarding Falcao's potential return to Monaco versus staying at Manchester United. These omissions mean the summary does not fully capture the 'important information' from the source."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.7
+    }
+  }
+}

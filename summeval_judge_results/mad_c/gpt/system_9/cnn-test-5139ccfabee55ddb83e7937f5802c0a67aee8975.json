@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-5139ccfabee55ddb83e7937f5802c0a67aee8975",
+  "system_name": "system_9",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information and does not provide context for the incident."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the U.S. complaint to Moscow, the Russian claim about the transponder, and the historical context of previous incidents."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the conflicting statements regarding the transponder, which is a significant aspect of the incident."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is written in lowercase, which is not standard for proper nouns and could affect readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information by stating the key event of the U.S. reconnaissance plane being intercepted and the U.S. crew's reaction."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important information from the article, specifically the interception incident and the U.S. crew's assessment of the Russian pilot's actions."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits important details such as the context of the incident occurring in international airspace and the U.S. plans to file a complaint, which are crucial for understanding the situation."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization and punctuation, making it less readable and fluent."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

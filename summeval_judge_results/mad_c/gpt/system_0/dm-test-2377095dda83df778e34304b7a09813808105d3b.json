@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-2377095dda83df778e34304b7a09813808105d3b",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, making it difficult to understand the context and significance of the details presented."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that managers made a profit in bonuses, whereas the article specifies that they made a profit of £42 million, and bonuses were a separate figure."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the number of compensation applications approved and the context of the passport delays, which are crucial to understanding the situation."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The use of symbols like '#' and incomplete sentences detracts from the fluency and readability of the summary."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the passport agency's profits and the refusal of refunds to families."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article about the profits made by the passport agency and the lack of compensation for families."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on key points such as the agency's profit, the refusal of refunds, and the issue with the complaint system, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, such as 'made # 42 million profit in bonuses,' which is unclear and incorrect."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits important details, such as the specific number of compensation applications approved and the context of the passport delays, which are crucial for understanding the full situation."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

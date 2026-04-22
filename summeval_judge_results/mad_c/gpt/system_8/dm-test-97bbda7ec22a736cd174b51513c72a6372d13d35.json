@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-97bbda7ec22a736cd174b51513c72a6372d13d35",
+  "system_name": "system_8",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow and omits crucial details about the auction outcome."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary incorrectly states that the Yankees' stadium was sold, while the article mentions only the letters were auctioned."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention the significance of the letters and the context of their auction."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'were expected to bring in' is vague and could be more precise."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the auction and the expected value of the letters."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the auction, specifically the expected value of the letters and their significance."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that the Yankees' stadium was sold, while the article mentions that the letters failed to find a buyer."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary could be more fluent by providing additional context and details that enhance readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

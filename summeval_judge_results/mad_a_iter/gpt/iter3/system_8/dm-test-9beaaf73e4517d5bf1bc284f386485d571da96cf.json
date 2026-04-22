@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-9beaaf73e4517d5bf1bc284f386485d571da96cf",
+  "system_name": "system_8",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 1.5,
+        "rationale_for_score": "The summary contains hallucinated facts, such as a $1 million cash prize and quotes from individuals not mentioned in the article. It lacks coherence and relevance, failing to accurately represent the source material."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.5,
+        "rationale_for_score": "The summary contains several inaccuracies and introduces information not present in the article, such as a $1 million cash prize and a quote from the bride's mother, which are not mentioned in the source. While it is somewhat coherent and fluent, the inconsistencies and lack of relevance to the key points significantly lower the score."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 1.5,
+        "adjustment_notes": "I accepted the strict judge's criticisms regarding hallucinated facts and the lack of coherence and relevance. The summary introduced incorrect information and failed to accurately reflect the source material."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The coherence score remains the same as the summary lacks a clear logical flow. The consistency score was lowered due to the introduction of inaccurate information, such as the $1 million cash prize and the quote from the bride's mother, which are not present in the article. The fluency score is retained as the summary is grammatically correct. The relevance score was lowered because the summary fails to cover the key points of the article."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I raised coherence slightly due to the mention of the wedding date, but the summary still lacks a logical flow and introduces incorrect information about a cash prize and the bride's mother, which is not present in the article. Consistency remains low due to these inaccuracies, while relevance is adjusted to reflect the summary's focus on key points, albeit incorrectly."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The coherence score remains the same as the summary lacks a clear logical flow. The consistency score was lowered due to the introduction of inaccurate information, such as the $1 million cash prize and the quote from the bride's mother, which are not present in the article. The fluency score is retained as the summary is grammatically correct. The relevance score was lowered because the summary fails to cover the key points of the article."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 1.0,
+      "fluency": 3.5,
+      "relevance": 1.5,
+      "overall_judge": 2.0
+    }
+  }
+}

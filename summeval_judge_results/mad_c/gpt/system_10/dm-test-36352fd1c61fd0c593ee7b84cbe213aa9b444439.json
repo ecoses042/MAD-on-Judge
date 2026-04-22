@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-36352fd1c61fd0c593ee7b84cbe213aa9b444439",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow and is repetitive, stating that Vanessa Santillan was killed at the end of March twice without adding new information."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to include key details such as the circumstances of her death, the arrest of a suspect, and the police's appeal for information, which are crucial to understanding the context of the case."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The use of lowercase letters for the name 'vanessa santillan' and the inconsistent formatting of '£400,000' detracts from the overall fluency and professionalism of the summary."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention that she was a transgender escort, which is a significant aspect of the article and relevant to the investigation."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the discovery of Vanessa Santillan's body and the circumstances surrounding her death."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the details from the article, including the location of the body and the cause of death."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the article, specifically the discovery of the body and the manner of death, which are central to the story."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as the use of lowercase letters for proper nouns and inconsistent punctuation, which affects readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

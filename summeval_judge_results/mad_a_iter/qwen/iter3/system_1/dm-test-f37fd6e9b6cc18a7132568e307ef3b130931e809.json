@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-f37fd6e9b6cc18a7132568e307ef3b130931e809",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and strictly consistent with the source text. It captures the main narrative arc (the incident, the immediate reaction, and the reason for re-contacting officials). It receives a score of 4 instead of 5 on relevance because it omits specific details present in the article, such as the date of the incident (1978), the fact that he was followed/threatened afterwards, and the Palace's current stance on cooperating with police. However, given the lenient rules to give benefit of the doubt, these omissions are not considered hallucinations or severe failures."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from a significant relevance issue: it completely omits the core allegation of an 'orgy' or group sexual assault, reducing the event to a single act of groping. This omission distorts the severity and nature of the incident described in the source text. Additionally, while mostly consistent, the summary misses key details like the specific date (January 1978) and the fact that he was threatened afterwards, which are important context points."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is well-structured and strictly consistent with the source text. While it omits specific details like the date (1978) and the Palace's current stance, these are considered minor omissions rather than severe failures or hallucinations under the given criteria. The score of 4 for relevance appropriately reflects that it covers the main narrative arc but misses some key contextual points present in the full article."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "The strict judge's assessment is accurate. The summary fails to capture the central allegation of an 'orgy' or group assault, significantly underrepresenting the severity of the event described in the source text. This constitutes a major relevance flaw that warrants the low score. The omission of specific dates and post-incident threats further supports the consistency/relevance deductions. No leniency is applied as these are substantive omissions rather than minor phrasing issues."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary accurately captures the main narrative arc (the incident, the immediate reaction, and the catalyst for re-contacting officials) without introducing hallucinations. While it omits specific details like the date (1978), the victim's background (police officer), or the Palace's current stance, these are minor omissions that do not constitute a failure of relevance under the provided criteria, as the core story remains intact."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "The lenient judge's assessment regarding the low relevance score is justified because the summary omits the central allegation of an 'orgy' or group assault described in the source text, significantly underrepresenting the severity and nature of the event. The omission of specific dates (January 1978) and post-incident threats further supports the consistency/relevance deductions. No leniency is applied as these are substantive omissions rather than minor phrasing issues."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.5,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.5
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-9afda3cde191a883d8c166ceb5765eb53205d8f4",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is well-structured, grammatically correct, and strictly consistent with the source text. It captures the main points regarding Sanchez's choice of club and the potential leverage involving Luis Suarez. The only minor deduction for relevance is that it omits other significant details from the article, such as Sanchez's goal count, Wenger's praise for his qualities, and the comments on Raheem Sterling, but given the lenient rules, this does not constitute a failure."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source text (no hallucinations) and flows logically. However, it suffers from poor relevance by omitting significant key information present in the article, such as Sanchez's goal tally (19 goals), Wenger's specific praise of his qualities, and the discussion regarding Raheem Sterling. Additionally, the summary lacks proper capitalization for names and places (e.g., 'arsenal', 'liverpool'), which impacts fluency."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The lenient judge's assessment is accurate. The summary strictly adheres to the source text (consistency), flows logically (coherence), and is grammatically correct (fluency). While it omits details about Sanchez's goal count, Wenger's specific praise of his qualities, and the Raheem Sterling transfer speculation, these are secondary points compared to the main narrative regarding Sanchez's club choice and the Suarez negotiation leverage. Therefore, a relevance score of 4 is appropriate, and no harsher penalty is warranted."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the fluency score from 4 to 3 because the strict judge correctly identified that the summary lacks proper capitalization for names and places (e.g., 'arsenal', 'liverpool'), which is a significant grammatical/orthographic error in English. I also lowered the relevance score from 3 to 2 because the omission of Sanchez's goal tally (19 goals) and Wenger's specific praise regarding his qualities represents a substantial loss of key information, making the summary feel incomplete compared to the source text."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary captures the primary narrative regarding Sanchez's club choice and the Suarez negotiation leverage perfectly. While it omits specific details like goal counts, Wenger's qualitative praise of Sanchez, and the Raheem Sterling transfer speculation, these are indeed secondary to the main story arc presented in the source text. Therefore, the relevance score of 4 is justified as a reflection of missing secondary points rather than a failure to summarize the core message."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I accepted the lenient judge's points regarding fluency and relevance. The lack of capitalization for proper nouns (Arsenal, Liverpool, etc.) is a clear grammatical/orthographic error that impacts readability, justifying the drop to 3 for fluency. Similarly, the omission of specific key details like Sanchez's goal tally (19 goals) and Wenger's direct praise of his qualities represents a significant loss of important information from the source text, warranting the lower relevance score of 2."
+      }
+    },
+    "final": {
+      "coherence": 4.5,
+      "consistency": 5.0,
+      "fluency": 4.0,
+      "relevance": 3.0,
+      "overall_judge": 3.9
+    }
+  }
+}

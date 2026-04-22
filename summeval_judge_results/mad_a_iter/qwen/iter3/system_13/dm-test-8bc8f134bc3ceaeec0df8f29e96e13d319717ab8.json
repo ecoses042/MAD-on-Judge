@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-8bc8f134bc3ceaeec0df8f29e96e13d319717ab8",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from severe fluency issues due to the repetition of the exact same sentence twice (once at the beginning and once in the middle) with only minor capitalization changes, making it redundant and poorly structured. It also fails to cover key relevant details from the source text, such as the specific contract length, the upcoming Champions League context, or the recent match results against Valencia, which constitute significant portions of the article's content."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is consistent with the source text and covers key points (Bartomeu's quotes, Enrique's tenure, and title race status). However, it suffers from significant fluency issues: it repeats information verbatim without synthesis (e.g., stating Bartomeu's quote about being 'very happy' twice in slightly different ways) and contains a minor typo ('took only took charge'). While the direction is correct and no hallucinations exist, the lack of editing makes it feel redundant rather than concise."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 1,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I have lowered the scores significantly based on the strict judge's valid criticisms. The summary is structurally flawed due to near-duplicate sentences (coherence/fluency) and fails to capture key details like the specific match results or contract context mentioned in the source text (relevance). While it avoids hallucinations (consistency), the severe redundancy makes it a poor summary."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the fluency score from 3 to 2 because the repetition of the 'very happy' sentiment and the specific typo ('took only took charge') are severe enough to significantly impact readability, making it feel unedited rather than just slightly flawed. The coherence is also adjusted down slightly due to the disjointed structure caused by this redundancy."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 1,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary suffers from severe redundancy (repeating the 'very happy' sentiment and Bartomeu's name twice in close proximity), which negatively impacts coherence and fluency. It also fails to include key relevant details such as the specific match results or the contract context provided in the source text. While it is consistent with the source, the structural flaws make it a poor summary."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a significant typo ('took only took charge') and repetitive phrasing regarding the club being 'very happy' with Enrique, which severely impacts fluency and coherence. No score increase is warranted."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 4.5,
+      "fluency": 1.5,
+      "relevance": 3.0,
+      "overall_judge": 2.5
+    }
+  }
+}

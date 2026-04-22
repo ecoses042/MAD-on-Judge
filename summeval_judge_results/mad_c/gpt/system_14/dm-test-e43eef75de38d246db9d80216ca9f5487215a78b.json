@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-e43eef75de38d246db9d80216ca9f5487215a78b",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, jumping between unrelated points without clear connections."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that Atletico Madrid has struggled to make the left back position his own, which misrepresents the article's content."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key points about Luis's happiness at Chelsea and the context of the Premier League title run-in, focusing instead on less significant details."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as the lack of proper capitalization for 'Filipe Luis' and 'Atletico Madrid'."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear statement of Filipe Luis's desire to stay at Chelsea, which is the main point of the article."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects Luis's comments about wanting to remain at Chelsea and mentions his recent participation in friendly matches for Brazil."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details about Atletico Madrid's interest in re-signing him and the context of Chelsea's Premier League title run-in."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'have struggled to make the left back position his own at Stamford Bridge' is misleading as it implies Luis's struggles rather than Chelsea's, which could confuse readers."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

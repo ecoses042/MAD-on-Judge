@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-9b1af0f993d78353ebd56a1b180e882e751527b3",
+  "system_name": "system_9",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, jumping abruptly from the shooting incident to the billboard without adequately connecting the two events."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits important context about Siler's criminal background and the circumstances leading to the shooting, which are crucial for understanding the situation."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'asking for it be taken down' instead of 'asking for it to be taken down.'"
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention the police association's statement regarding the billboard, which is a key point in understanding the controversy."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with the shooting incident and leading to the community's reaction to the billboard."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information in the article without introducing any new facts or misrepresenting the events."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the article, including the shooting, the billboard, and the reactions from Siler's family and friends."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as the lack of capitalization at the beginning of sentences and the phrase 'asking for it be taken down,' which should be 'asking for it to be taken down.'"
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 4,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "tie",
+        "consistency": "tie",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-9beaaf73e4517d5bf1bc284f386485d571da96cf",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, as it abruptly jumps from the contest announcement to the wedding details without proper transitions."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits important details such as Priscilla Presley serving as a witness and the specifics about the contest requirements, which are crucial for understanding the context."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary does not mention the significance of the Westgate Hotel as the venue where Elvis performed, which adds context to the event."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'the winning duo - announced next Monday - will tie the knot' is awkwardly structured and could be more fluid."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information about the contest and the wedding event."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key details of the contest, the wedding date, and the involvement of Priscilla Presley, which are the most important points from the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits important details such as the location of the chapel and the specifics of the contest requirements, which could lead to a lack of context."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains some awkward phrasing, such as 'the winning duo - announced next Monday - will tie the knot,' which could be improved for better readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 4,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

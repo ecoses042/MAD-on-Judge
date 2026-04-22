@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-f37fd6e9b6cc18a7132568e307ef3b130931e809",
+  "system_name": "system_4",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, jumping between different points without proper transitions."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits significant details about the nature of the alleged abuse and the context of Lawler's complaints, which are crucial for understanding the gravity of the situation."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not specify that the alleged incident occurred in January 1978, which is an important detail from the source."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as inconsistent capitalization and punctuation, which affect readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with Lawler's experience on his first day and leading to the police investigation."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the claims made by Lawler without introducing any new or unrelated information."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "It focuses on the key points of Lawler's allegations and the subsequent police investigation, omitting trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as the lack of proper capitalization at the beginning of sentences."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 4,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "tie",
+        "consistency": "tie",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

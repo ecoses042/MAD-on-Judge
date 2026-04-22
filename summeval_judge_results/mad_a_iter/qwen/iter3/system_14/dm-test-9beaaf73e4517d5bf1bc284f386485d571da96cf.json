@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-9beaaf73e4517d5bf1bc284f386485d571da96cf",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.5,
+        "rationale_for_score": "The summary is fluent and consistent with the source text. However, it lacks a clear logical flow by abruptly appending a standalone fact ('Elvis performed more than 830 sold-out shows') at the end without connecting it to the main narrative about the wedding or the contest. It also omits several key details from the article (the prize package, the 'no impersonators' rule, and the application process), which slightly reduces its relevance compared to a more comprehensive summary."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is well-structured, fluent, and consistent with the source text. It captures the main points: Priscilla Presley's role, the contest details, the specific wedding date/location, and the historical fact about Elvis's shows. The only minor deduction for relevance is that it omits other significant details mentioned in the article (like the prize package contents or the 'no impersonators' rule), but given the lenient rules, this does not constitute a failure."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is well-structured and consistent with the source text. While it omits details about the prize package (reception, hotel suite) and the 'no impersonators' rule, these are secondary to the core news event (the contest launch and first wedding). Therefore, a minor deduction for relevance is appropriate, but not a failure."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I lowered the relevance score from 4 to 3. While the summary is factually consistent and fluent, the strict judge's critique regarding the 'abrupt' inclusion of the Elvis show statistic at the end is valid; it feels like an orphaned detail that disrupts the logical flow rather than enhancing the narrative about the wedding contest. Additionally, the omission of significant key points like the prize package (reception, suite, tickets) and the specific rules ('no impersonators') further justifies a reduction in relevance, as these are central to the article's content."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary effectively covers the core news event (contest launch and first wedding details). While it omits secondary details like the prize package specifics and the 'no impersonators' rule, these omissions do not constitute a failure of relevance but rather a focus on primary information. No score reduction is necessary."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I accepted the lenient judge's reduction of the relevance score from 4 to 3. The strict critique regarding the 'abrupt' inclusion of the Elvis show statistic is valid; it acts as an orphaned detail that disrupts the logical flow of the summary. Furthermore, the omission of significant key points mentioned in the article, such as the prize package (reception, suite, tickets) and the specific rules ('no impersonators'), justifies lowering the relevance score, as these are central to the article's content."
+      }
+    },
+    "final": {
+      "coherence": 4.5,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.5
+    }
+  }
+}

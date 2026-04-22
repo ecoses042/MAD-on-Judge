@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-8e6c8aec6808f66ed0342e128a4e146f3ecd627d",
+  "system_name": "system_8",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, jumping abruptly from Granado's arrest to a quote from the school district without proper context."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that Granado was arrested on Monday for having sex with a pupil, omitting the fact that this was her second arrest and failing to mention the details of the first incident."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary includes a quote from the school district that does not directly relate to the specifics of Granado's case, making it less relevant to the main points."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'and was released on bail' is awkwardly placed and disrupts the flow of the summary."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events regarding Kaitlyn Granado's arrests and the allegations against her."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the article, including the arrests, the nature of the allegations, and the response from the school district."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits important details about the second arrest and the context of the allegations, which could mislead readers about the severity of the situation."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains a quote from the school district that feels out of place and disrupts the flow of information."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 4,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

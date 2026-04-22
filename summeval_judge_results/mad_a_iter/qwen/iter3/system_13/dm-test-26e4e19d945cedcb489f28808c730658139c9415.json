@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-26e4e19d945cedcb489f28808c730658139c9415",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from a significant relevance issue: it completely omits the second half of the article regarding Andreas Pereira, which constitutes nearly 50% of the source text's information. While it accurately summarizes the first paragraph, failing to cover the main subject (Pereira) makes it an incomplete summary of the provided article."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is excellent in coherence, consistency, and fluency, accurately reflecting the source text without hallucinations. It captures the main points regarding Orlando City's interest in Javier Hernandez. It receives a slight deduction on relevance (4) because it omits information about other interested clubs and Andreas Pereira, which are present in the source; however, under lenient rules, this is acceptable as the summary focuses well on the primary subject."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is fluent and coherent but fails significantly on relevance by omitting the second half of the article regarding Andreas Pereira, which covers nearly 50% of the source text's information. Therefore, I maintain the original scores."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate. The summary perfectly captures the primary news (Orlando City's interest in Hernandez) and includes supporting details from the text (coach, fanbase). While it omits secondary stories about other clubs and Andreas Pereira, this is a standard trade-off for a short summary focusing on the main event, justifying the slight deduction in relevance rather than a harsher penalty."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "No changes made. The lenient judge correctly identified that the summary covers only the first half of the article (Javier Hernandez) and completely omits the second half regarding Andreas Pereira, which constitutes nearly 50% of the source text's information. This significant omission justifies the low relevance score despite the high fluency and coherence."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The strict judge's assessment is accurate. The summary effectively captures the main news story regarding Orlando City's interest in Javier Hernandez and includes relevant supporting details (coach, fanbase). The omission of the secondary story about Andreas Pereira is a standard trade-off for a short summary focusing on the primary event, justifying the slight deduction in relevance."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.5,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.5
+    }
+  }
+}

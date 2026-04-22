@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-808a439a5d83fc47baaea934c8779a7ebc62470d",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow and does not connect the events or details effectively."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that Clattenburg has sent off two players from United and City this season, while the article specifies that both red cards were issued to United players."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as Clattenburg's reputation, the significance of the derby, and the context of the teams' performances leading up to the match."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as missing articles ('the' before 'Manchester derby') and awkward phrasing."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear focus on Mark Clattenburg's role in the Manchester derby and mentions key details about player dismissals."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding Clattenburg's officiating history and the players involved."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary highlights the most important aspects of the article, specifically Clattenburg's appointment and the context of player suspensions."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks grammatical completeness, as it contains sentence fragments that affect readability."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits some important context, such as the significance of the derby and the performance of the teams involved."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

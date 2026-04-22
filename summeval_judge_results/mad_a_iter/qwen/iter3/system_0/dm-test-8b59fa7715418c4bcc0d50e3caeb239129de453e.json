@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-8b59fa7715418c4bcc0d50e3caeb239129de453e",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 2,
+        "overall_judge": 1.8,
+        "rationale_for_score": "The summary contains a severe hallucination: it falsely claims that Gianluigi Buffon labelled himself a 'legend of the game', whereas the source text explicitly states that Joe Hart labelled Buffon as such. Additionally, the summary is grammatically broken ('labelled buffon , who won...'), lacks proper punctuation and capitalization, and fails to coherently present the key information about Hart's own milestone."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 2,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 2.2,
+        "rationale_for_score": "The summary contains a severe hallucination: it incorrectly states that 'Gianluigi Buffon has labelled Buffon', whereas the source text clearly attributes the praise to Joe Hart. Additionally, the sentence structure is disjointed and grammatically poor ('labelled the ` legend of the game '`), failing basic fluency standards. While it captures the main topic (Hart praising Buffon after the match), the factual error regarding who made the statement is a major flaw."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 2,
+        "overall_judge": 1.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a critical factual error (hallucination) regarding who made the quote, which is a severe consistency failure. Additionally, the grammar and punctuation are broken to the point of being unreadable, justifying low fluency and coherence scores. No leniency is warranted for these fundamental flaws."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The lenient judge's scores were too high given the severity of the errors. The summary contains a critical hallucination ('Gianluigi Buffon has labelled Buffon') which contradicts the source text where Joe Hart is the one praising Buffon. This is a major consistency failure (score 1). The sentence structure is also disjointed and grammatically poor, warranting a low fluency score (2). Coherence remains low (2) due to the disjointed flow caused by the error. Relevance is slightly higher (3) as it does capture the main topic despite the errors."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 2,
+        "overall_judge": 1.8,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary contains a critical factual error (hallucination) where it attributes the quote 'legend of the game' to Buffon instead of Hart, which is a severe consistency failure. Additionally, the grammar and punctuation are broken to the point of being unreadable, justifying low fluency and coherence scores. No leniency is warranted for these fundamental flaws."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a severe hallucination ('Gianluigi Buffon has labelled Buffon') which fundamentally breaks consistency and coherence. The grammar is also poor (lowercase start, fragmented sentences). Therefore, the scores remain low."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 1.0,
+      "fluency": 2.0,
+      "relevance": 2.5,
+      "overall_judge": 1.9
+    }
+  }
+}

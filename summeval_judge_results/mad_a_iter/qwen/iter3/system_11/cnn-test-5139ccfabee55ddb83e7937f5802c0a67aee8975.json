@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-5139ccfabee55ddb83e7937f5802c0a67aee8975",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is consistent with the source and fluent, but it only covers the first paragraph of the article, omitting key context such as the conflicting reports on the transponder status, the diplomatic response, and the historical context of similar incidents. While not a hallucination, the truncation limits its relevance to the full story."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is consistent with the source text and maintains logical flow, but it suffers from severe relevance issues by truncating the content abruptly after the third sentence, omitting the core conflict (the US complaint), the Russian counter-claim regarding the transponder, the diplomatic response, and historical context. Additionally, the formatting includes unnecessary LaTeX-style delimiters ('-lrb-', '-rrb-') which negatively impacts fluency."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary is factually consistent and fluent but suffers from low relevance because it truncates the story after the first paragraph, omitting significant details like the conflicting reports on the transponder status, the specific diplomatic actions taken, and the historical context of similar dangerous incidents mentioned in the source text."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is severely truncated, omitting the core conflict (US complaint), Russian counter-claims, diplomatic response, and historical context, which drastically reduces relevance. The inclusion of LaTeX-style delimiters ('-lrb-', '-rrb-') instead of standard punctuation or plain text negatively impacts fluency. Therefore, I maintain the strict judge's scores."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. While the summary is factually consistent and fluent, it suffers from low relevance because it truncates the story significantly. It omits key details such as the conflicting reports on the transponder status, the specific diplomatic actions planned (filing a petition), and the historical context of similar dangerous incidents mentioned in the source text."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment that the summary is severely truncated and lacks key information such as the US complaint details, Russian counter-claims, diplomatic response, and historical context, which significantly impacts relevance. The inclusion of LaTeX-style delimiters ('-lrb-', '-rrb-') instead of standard punctuation negatively impacts fluency. Therefore, I maintain the strict judge's scores."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 5.0,
+      "fluency": 3.5,
+      "relevance": 2.5,
+      "overall_judge": 3.5
+    }
+  }
+}

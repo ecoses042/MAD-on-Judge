@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-f26d8400ae49b90d109c165d0f44b8f6ca253c08",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information and is poorly structured, making it difficult to follow."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the phrase 'bid for japan,' which is unclear and inconsistent with the source document."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary includes trivial details, such as 'brings the ball forward against albirex niigata,' which is not a key point from the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as inconsistent capitalization and awkward phrasing."
+        }
+      ],
+      "provisional_score": 1
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear statement about Chelsea's offer for Yoshinori Muto, establishing the main subject and context effectively."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding Chelsea's interest in Muto and the involvement of FC Tokyo's president."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of Chelsea's offer and Muto's background, avoiding unnecessary details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, such as 'yoshinori niigata brings the ball forward,' which is unclear and incorrect."
+        },
+        {
+          "criterion": "coherence",
+          "reason": "The flow of information is disrupted by the abrupt mention of 'yoshinori niigata,' which does not connect logically to the rest of the summary."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

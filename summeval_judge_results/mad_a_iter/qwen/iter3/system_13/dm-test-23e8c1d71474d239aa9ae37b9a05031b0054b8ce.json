@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-23e8c1d71474d239aa9ae37b9a05031b0054b8ce",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.5,
+        "rationale_for_score": "The summary is fluent and coherent, accurately reflecting the main points of the article (Pearson's advice, upcoming match context, and recent win). However, it scores slightly lower on relevance because it omits significant details present in the source text, such as Jamie Vardy's specific contribution (the injury-time winner), the fact that Leicester is currently bottom of the table despite their slim chance, and Pearson's warnings about 'overly optimistic' fans. It captures the 'what' but misses the 'who' and some crucial context."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is well-structured, grammatically correct, and accurately reflects the key facts from the article (Pearson's advice, upcoming match context, and previous win). It omits the detailed quotes and specific warnings about optimism found in the second half of the article, but this is a minor omission rather than a flaw, as the core message is preserved. No hallucinations are present."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I lowered the relevance score from 4 to 3. While the summary captures the main narrative arc (Pearson's advice + match context), the strict judge correctly identified that it omits significant specific details present in the source text: Jamie Vardy's injury-time winner, Leicester being bottom of the table, and Pearson's warning about overly optimistic fans. These omissions mean the summary misses key 'who' and crucial context elements, making a score of 4 too generous."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The lenient judge's assessment is accurate. The summary effectively captures the main points (Pearson's advice, match context, previous win) without hallucinations. While it omits the detailed quotes and warnings about optimism found in the latter half of the article, this constitutes a minor omission rather than a flaw, as the core message remains intact. Therefore, no score reduction is necessary."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I have raised the consistency score from 4 to 5 because the summary strictly adheres to the source text without adding external facts; the previous deduction was unjustified. I agree with the lenient judge's decision to lower relevance to 3, as the summary omits significant specific details mentioned in the article (Vardy's goal, Leicester being bottom of the table, and Pearson's comments on optimism) which are key contextual elements."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The strict judge's assessment is accurate. The summary successfully captures the core narrative: Pearson's advice to ignore rivals, the immediate context of the Swansea match, and the significance of the previous win against West Brom. While it omits the detailed quotes regarding optimism and the 'run-in' strategy found in the latter half of the article, this is a standard level of summarization where secondary details are condensed for brevity rather than a flaw. The summary remains coherent, consistent, fluent, and relevant to the main point."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.7
+    }
+  }
+}

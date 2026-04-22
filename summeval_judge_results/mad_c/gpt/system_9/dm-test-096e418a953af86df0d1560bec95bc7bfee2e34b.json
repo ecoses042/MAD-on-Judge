@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-096e418a953af86df0d1560bec95bc7bfee2e34b",
+  "system_name": "system_9",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, as it abruptly shifts from the match result to Guardiola's wardrobe malfunction without a smooth transition."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details about Porto's initial two-goal lead and the significance of Bayern's performance, which are crucial for understanding the context of the match."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that Bayern Munich 'beat Porto 6-1' without mentioning that Porto had a two-goal lead prior to this match, which is misleading."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains a lack of punctuation in the sentence listing the players who scored, making it slightly harder to read."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, starting with the match result and then mentioning the incident with Guardiola's trousers."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the match, including the score and the players who scored, which are the most important details from the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is written in fluent and idiomatic English, making it easy to read."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits the detail about Porto having a two-goal lead before the match, which is an important context for understanding the significance of Bayern's victory."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 4,
+      "relevance": 4,
+      "overall_judge": 3.5,
+      "winner_side": {
+        "coherence": "tie",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

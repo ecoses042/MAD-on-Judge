@@ -1,0 +1,148 @@
+[
+  {
+    "essay_id": "GWGR2400108190.1",
+    "source_id": null,
+    "prompt_id": null,
+    "status": "ok",
+    "gold": null,
+    "prediction": {
+      "content": {
+        "score": 4.0,
+        "rationale": "주장이 비교적 분명하고 근거도 대체로 충분하지만, 일부 설명이 피상적이다. 예를 들어, '정보의 정확성을 위해서 보장되어야 한다'는 주장에 대한 구체적인 사례나 설명이 부족하다."
+      },
+      "organization": {
+        "score": 4.0,
+        "rationale": "전체 구조가 비교적 분명하고, 서론, 본론, 결론이 잘 드러나 있다. 그러나 문단 간 연결이 다소 어색한 부분이 있어 논리 흐름이 완벽하지는 않다."
+      },
+      "expression": {
+        "score": 3.0,
+        "rationale": "이해는 가능하나, 표현의 단조로움과 문법적 어색함이 일부 보인다. 예를 들어, '잊힐 권리가 더욱 보장 되어야 한다'에서 '보장 되어야 한다'는 어색한 표현이다."
+      }
+    },
+    "judge": {
+      "content": {
+        "strict_initial": {
+          "domain_match": 3,
+          "score_rationale_consistency": 2,
+          "specificity": 2,
+          "groundedness": 3,
+          "overall_judge": 2.5,
+          "rationale_for_score": "domain_match에서 주장과 근거의 연결이 부족하여 2점 감점, score_rationale_consistency에서 높은 점수에 비해 근거가 약해 2점 감점, specificity에서 구체적인 예시가 부족하여 3점으로 평가, groundedness에서 일부 내용은 essay_text와 연결되지만 구체성이 떨어져 2점 감점."
+        },
+        "lenient_initial": {
+          "domain_match": 4,
+          "score_rationale_consistency": 4,
+          "specificity": 3,
+          "groundedness": 4,
+          "overall_judge": 3.8,
+          "rationale_for_score": "주장은 비교적 분명하고 근거도 대체로 충분하나, 일부 설명이 피상적이라는 점에서 약간의 결함이 존재합니다. 특히 '정보의 정확성을 위해서 보장되어야 한다'는 주장에 대한 구체적인 사례나 설명이 부족하다는 지적은 타당합니다. 그러나 전체적으로는 주장의 방향성과 근거가 essay_text와 일치하며, 논리적 연결도 어느 정도 유지되고 있습니다. 따라서 domain_match와 groundedness는 높게 평가되었으나, specificity에서 다소 일반적인 표현이 사용된 점이 감점 요인으로 작용했습니다."
+        },
+        "strict_adjusted": {
+          "domain_match": 4,
+          "score_rationale_consistency": 4,
+          "specificity": 3,
+          "groundedness": 4,
+          "overall_judge": 3.8,
+          "adjustment_notes": "domain_match와 groundedness는 관대한 심사위원과 동일하게 유지하였으며, 주장의 방향성과 근거가 essay_text와 일치하는 점을 인정했습니다. score_rationale_consistency는 기존 점수를 유지하였고, rationale에서 언급된 피상적인 설명이 실제로 존재하는 점을 반영했습니다. specificity는 여전히 일반적인 표현이 사용된 점을 고려하여 3으로 유지했습니다."
+        },
+        "lenient_adjusted": {
+          "domain_match": 3,
+          "score_rationale_consistency": 2,
+          "specificity": 2,
+          "groundedness": 3,
+          "overall_judge": 2.5,
+          "adjustment_notes": "domain_match에서 주장과 근거의 연결이 부족하다는 점을 인정하여 4점에서 3점으로 조정. score_rationale_consistency에서 높은 점수에 비해 근거가 약하다는 지적을 반영하여 4점에서 2점으로 조정. specificity에서 구체적인 예시가 부족하다는 점을 인정하여 3점으로 조정. groundedness는 일부 내용이 essay_text와 연결되지만 구체성이 떨어진다는 점을 인정하여 3점으로 유지."
+        },
+        "final": {
+          "domain_match": 3.5,
+          "score_rationale_consistency": 3.0,
+          "specificity": 2.5,
+          "groundedness": 3.5,
+          "overall_judge": 3.1
+        }
+      },
+      "organization": {
+        "strict_initial": {
+          "domain_match": 3,
+          "score_rationale_consistency": 3,
+          "specificity": 2,
+          "groundedness": 3,
+          "overall_judge": 2.8,
+          "rationale_for_score": "domain_match에서 문단 간 연결이 어색하다는 점은 organization 기준에 부합하나, 구체적인 예시가 부족하여 2점 감점. score_rationale_consistency는 predicted_score가 4점인데 근거가 약해 1점 감점. specificity는 구체적인 문장이나 표현이 부족하여 3점으로 처리. groundedness는 essay_text와의 연결이 일부 확인되나, 전반적으로 약해 2점 감점."
+        },
+        "lenient_initial": {
+          "domain_match": 4,
+          "score_rationale_consistency": 4,
+          "specificity": 3,
+          "groundedness": 4,
+          "overall_judge": 3.8,
+          "rationale_for_score": "전체 구조가 비교적 분명하다는 점에서 organization 기준에 부합하며, 서론, 본론, 결론이 잘 드러나 있다고 평가한 점은 긍정적이다. 그러나 문단 간 연결이 어색하다는 지적은 주요 결함으로 작용하여 점수를 낮추는 요소가 된다. 따라서 4점으로 평가하였고, rationale이 essay_text와 잘 연결되어 있으나 구체적인 예시가 부족하여 specificity는 3점으로 평가하였다."
+        },
+        "strict_adjusted": {
+          "domain_match": 4,
+          "score_rationale_consistency": 4,
+          "specificity": 3,
+          "groundedness": 4,
+          "overall_judge": 3.8,
+          "adjustment_notes": "domain_match와 score_rationale_consistency는 관대한 심사위원의 평가와 일치하여 유지하였고, 문단 간 연결이 어색하다는 지적은 여전히 유효하므로 점수를 낮추지 않았다. specificity는 구체적인 예시가 부족하다는 점에서 3점을 유지하였다. groundedness는 essay_text와의 연결이 잘 이루어졌으므로 유지하였다."
+        },
+        "lenient_adjusted": {
+          "domain_match": 3,
+          "score_rationale_consistency": 3,
+          "specificity": 2,
+          "groundedness": 3,
+          "overall_judge": 2.8,
+          "adjustment_notes": "domain_match에서 문단 간 연결이 어색하다는 점을 인정하여 4점에서 3점으로 조정. score_rationale_consistency는 근거가 약하다는 점을 반영하여 4점에서 3점으로 조정. specificity는 구체적인 예시가 부족하다는 점을 인정하여 3점에서 2점으로 조정. groundedness는 essay_text와의 연결이 일부 확인되나 약하다는 점을 반영하여 4점에서 3점으로 조정. 전체적으로 점수는 2.8로 유지."
+        },
+        "final": {
+          "domain_match": 3.5,
+          "score_rationale_consistency": 3.5,
+          "specificity": 2.5,
+          "groundedness": 3.5,
+          "overall_judge": 3.3
+        }
+      },
+      "expression": {
+        "strict_initial": {
+          "domain_match": 4,
+          "score_rationale_consistency": 3,
+          "specificity": 3,
+          "groundedness": 4,
+          "overall_judge": 3.5,
+          "rationale_for_score": "domain_match에서 표현의 단조로움과 문법적 어색함을 언급했으나, 구체적인 예시가 부족하여 4점에서 1점 감점. score_rationale_consistency는 predicted_score가 3점인데 비해 근거가 약해 3점으로 평가. specificity는 '보장 되어야 한다'의 어색함을 지적했으나, 다른 구체적 예시가 부족하여 3점. groundedness는 essay_text에서 확인 가능한 내용이므로 4점."
+        },
+        "lenient_initial": {
+          "domain_match": 4,
+          "score_rationale_consistency": 4,
+          "specificity": 3,
+          "groundedness": 4,
+          "overall_judge": 3.8,
+          "rationale_for_score": "domain_match에서 표현의 단조로움과 문법적 어색함을 지적하며, 특정 문장 예시를 통해 문제를 설명하고 있어 적절한 평가 기준을 사용하고 있다. score_rationale_consistency는 예측 점수와 rationale이 일치하며, 표현의 문제를 언급하고 있어 설득력이 있다. specificity는 문법적 어색함에 대한 구체적인 예시가 제시되었으나, 전반적인 표현에 대한 구체적인 지적이 부족하다. groundedness는 essay_text에서 확인 가능한 내용을 바탕으로 하고 있어 높은 점수를 부여할 수 있다."
+        },
+        "strict_adjusted": {
+          "domain_match": 4,
+          "score_rationale_consistency": 4,
+          "specificity": 3,
+          "groundedness": 4,
+          "overall_judge": 3.8,
+          "adjustment_notes": "domain_match 점수를 4로 조정한 이유는 표현의 단조로움과 문법적 어색함이 지적되었고, 이는 essay_text에서 확인 가능한 내용이기 때문입니다. score_rationale_consistency 점수도 4로 유지한 이유는 예측 점수와 rationale이 일치하며, 표현의 문제를 언급하고 있어 설득력이 있기 때문입니다. specificity는 여전히 구체적인 지적이 부족하므로 3으로 유지했습니다. groundedness는 essay_text와의 연결이 명확하므로 4로 유지했습니다."
+        },
+        "lenient_adjusted": {
+          "domain_match": 4,
+          "score_rationale_consistency": 3,
+          "specificity": 3,
+          "groundedness": 4,
+          "overall_judge": 3.5,
+          "adjustment_notes": "domain_match는 표현의 단조로움과 문법적 어색함이 확인되므로 4점 유지. score_rationale_consistency는 근거가 약하다는 점에서 3점 유지. specificity는 구체적 예시가 부족하다는 점에서 3점 유지. groundedness는 essay_text와의 연결이 명확하므로 4점 유지."
+        },
+        "final": {
+          "domain_match": 4.0,
+          "score_rationale_consistency": 3.5,
+          "specificity": 3.0,
+          "groundedness": 4.0,
+          "overall_judge": 3.6
+        }
+      }
+    }
+  }
+]

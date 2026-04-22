@@ -1,0 +1,75 @@
+{
+  "article_id": "dm-test-130ff8f2dfb6ab67861d5924b0ff5acd63c7d8ce",
+  "system_name": "system_5",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, as it abruptly ends without mentioning the subsequent events, such as the team's loss to FC Botosani or Ze Maria's replacement."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key information about the team's standing and the context of Ze Maria's dismissal, which are crucial for understanding the situation."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as inconsistent capitalization of proper nouns (e.g., 'romanian' should be 'Romanian')."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention that Ze Maria was replaced by Vanya Radinovic, which is an important detail from the article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events regarding the sacking and reinstatement of Ze Maria, making it easy to follow."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article without introducing any new facts."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is written in grammatically correct English and is easy to read."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key events of Ze Maria's firing and reinstatement, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks the context of Ze Maria's second firing and the implications for the club's standings, which are important for understanding the situation."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary does not mention the outcome of the match against FC Botosani or the fact that Ze Maria will be replaced by Vanya Radinovic, which are significant details."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 4,
+      "relevance": 3,
+      "overall_judge": 3.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "tie",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

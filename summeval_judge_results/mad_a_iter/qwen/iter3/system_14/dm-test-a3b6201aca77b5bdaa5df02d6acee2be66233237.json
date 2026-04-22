@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-a3b6201aca77b5bdaa5df02d6acee2be66233237",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source text and covers key events (the theft, the lie detector test, the confession). However, it suffers from poor fluency due to a lack of punctuation and capitalization, making it difficult to read. Additionally, while it captures the main points, it omits specific details like the amount stolen or the context of the miscarriages which adds emotional weight, slightly reducing relevance compared to a more complete summary."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is factually consistent with the source text and covers the main points (Dawn's distress, Jamie's theft, lie detector results, and his message). It is well-structured. Minor deductions for fluency are due to slightly clunky phrasing ('who lives with dawn and her partner who is also called jamie' could be smoother), but no hallucinations or severe errors exist."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is factually consistent and covers the main events, but it lacks proper punctuation and capitalization (e.g., 'dawn', 'mr kyle'), which significantly impacts readability and fluency. I maintain the score of 3 for fluency as this is a clear stylistic flaw in a text-based summary. The omission of specific details like the money amount or the emotional context of the miscarriages is noted, but since the prompt asks to maintain scores where the strict judge was not too harsh, and their criticism regarding relevance is mild ('slightly reducing'), I keep the original scores."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "Lowered fluency score from 4 to 3. While the summary is factually consistent and covers key points, the sentence structure is significantly clunky and repetitive (e.g., 'who lives with dawn and her partner who is also called jamie' creates a confusing relative clause chain). The lack of proper capitalization for names ('dawn', 'jamie') further impacts readability. The lenient judge's comment that it was 'well-structured' overlooks these specific syntactic awkwardnesses."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "Agreed with the strict judge's assessment on fluency. The summary suffers from poor sentence structure (run-on sentences) and a lack of capitalization for proper nouns ('dawn', 'jamie'), which significantly impacts readability despite the content being factually consistent."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding consistency and coherence. The summary accurately reflects the source text without adding external facts. While the strict judge penalized fluency for lack of punctuation/capitalization, I maintain that score of 3 because these are significant stylistic errors in a formal summary context, making it difficult to read despite the content being accurate. The relevance score is also maintained at 4 as the summary captures the core narrative arc (theft, lie detector result, emotional reaction) even if some specific details like the money amount were omitted."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 5.0,
+      "fluency": 3.0,
+      "relevance": 4.0,
+      "overall_judge": 4.0
+    }
+  }
+}

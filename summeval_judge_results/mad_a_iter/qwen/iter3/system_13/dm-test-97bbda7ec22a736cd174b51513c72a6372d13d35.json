@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-97bbda7ec22a736cd174b51513c72a6372d13d35",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is factually consistent with the source text but fails significantly on relevance and coherence. It completely omits the central event of the article: the failure to sell the letters at auction (the 'no buyer' outcome). By ignoring this critical plot point, the summary presents a misleading narrative that implies the sale was successful or simply focuses on background details without context. Additionally, the formatting is poor (lowercase text, inconsistent spacing), affecting fluency."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is consistent with the source text and contains no hallucinations. However, it lacks coherence as a standalone piece because it starts mid-thought without context (missing the main event: the failed auction). It also misses the most relevant information regarding the outcome of the auction (no buyer found), focusing instead on background details. The capitalization is inconsistent (e.g., 'grand concourse', 'yankee stadium'), slightly affecting fluency."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I lowered the relevance score from 2 to 1 because the summary completely misses the main point of the article (the failure to sell), which is a critical omission making it misleading. I kept fluency at 3 due to the poor formatting (lowercase, spacing) noted by the strict judge, and maintained consistency at 5 as all facts present are accurate."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the relevance score from 3 to 2 because the summary completely misses the central event of the article: the failed auction where no buyer was found. The lenient judge correctly identified this but gave a partial credit (3) for background details; however, omitting the main outcome makes the summary trivial and disconnected from the source's primary purpose. I kept coherence at 3 (not 4) because starting mid-sentence without context creates a disjointed reading experience. Consistency remains 5 as all facts are accurate to the text."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate: the summary fails to mention the central event (the failure to sell), making it misleading (Relevance 1). It also suffers from poor formatting and lack of capitalization (Fluency 3). While the facts included are consistent with the text, the omission of the main point is a critical flaw that justifies the low scores."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary fails to mention the central event (the failed auction) and instead focuses entirely on background details and a quote. This makes it irrelevant to the main news story. I maintain the low relevance score of 2. Coherence is kept at 3 because the sentences lack a clear narrative thread without the missing context of the auction failure. Consistency and fluency remain high as the facts cited are accurate and the grammar is sound."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 5.0,
+      "fluency": 3.5,
+      "relevance": 1.5,
+      "overall_judge": 2.5
+    }
+  }
+}

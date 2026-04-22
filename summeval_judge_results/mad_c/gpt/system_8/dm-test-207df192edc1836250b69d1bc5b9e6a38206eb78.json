@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-207df192edc1836250b69d1bc5b9e6a38206eb78",
+  "system_name": "system_8",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information and does not adequately convey the main findings of the study."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that 'we now know that antibiotics are fattening our children,' which implies a definitive conclusion not supported by the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention key details such as the specific statistics regarding obesity rates in boys and girls, which are crucial to understanding the study's implications."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'We should be concerned that the widespread use of antibiotics in infancy may be contributing to the obesity epidemic' is awkwardly constructed and could be more concise."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear concern regarding the impact of antibiotics on childhood obesity, reflecting the main theme of the article."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the findings of the study regarding the association between antibiotic use in infancy and increased obesity risk, without introducing unrelated facts."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary captures the key point that the widespread use of antibiotics in infancy may contribute to the obesity epidemic, which is a central focus of the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'We now know that antibiotics are fattening our children' is somewhat informal and could be rephrased for better fluency."
+        },
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks details about the study's findings, such as the specific statistics regarding overweight children and the implications of repeated antibiotic prescriptions."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

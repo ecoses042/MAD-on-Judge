@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-e428e25bbf8e06643154ce31b7c6fab64c81e857",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary is extremely poor in relevance and coherence. It consists of a repetitive loop of the first two sentences from the source text, failing to summarize the article's main points (the camera being re-pointed at a house, the mystery of who did it, council response, or future plans). The phrase 'however, it has not been working for more than two years' is redundant and adds no new information. While grammatically acceptable (fluency 4), the lack of coverage of key events makes it a very poor summary."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.8,
+        "rationale_for_score": "The summary suffers from severe coherence issues due to repetitive phrasing ('it has not been working for two years' vs 'more than two years') and fails to capture the main news hook (the camera being re-pointed at a specific house). While the facts are consistent with the text, the lack of logical flow and focus on trivial repetition makes it a poor summary."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is a poor repetition of the first two sentences and fails to capture the main news event (the camera being re-pointed at a house) or the council's response. It contains redundant information ('it has not been working for two years' vs 'more than two years') and misses almost all key points, making it highly irrelevant."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.8,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate: the summary repeats the same fact twice with slight variation ('two years' vs 'more than two years'), lacks logical flow, and completely misses the primary news event (the camera being re-pointed at a house). The scores reflect these severe flaws."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "No changes to scores. The summary is indeed a poor repetition of the first two sentences of the article, failing to capture the main news event (the camera being re-pointed) or the council's response. It contains redundant information and misses almost all key points, making it highly irrelevant. The lenient judge's assessment aligns with the strict criteria."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I lowered the relevance score from 2 to 1 because the summary is critically flawed; it repeats the exact same sentence twice with only a minor variation ('two years' vs 'more than two years'), failing to summarize any new information. It completely misses the primary news event (the camera being re-pointed at a house) and offers no logical flow, confirming the strict judge's assessment."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 3.5,
+      "fluency": 3.5,
+      "relevance": 1.0,
+      "overall_judge": 2.0
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-0cdd7cdb5d99c36f25f1f4fa0e962d558f7ff07b",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, as it jumps from the squad announcement to the opening match without connecting these points effectively."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the squad composition, the other teams in the group, and the context of their qualifying success, which are important for understanding the significance of the announcement."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'for first time' is missing the article 'the', making it grammatically incorrect."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention that England has a 100% record in qualifying, which is a significant achievement that adds context to their status as defending champions."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the squad announcement and the upcoming matches."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "It focuses on the key points, such as the squad announcement, the defending champion status, and the opening match."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits several details about the squad members and their clubs, which are present in the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as missing articles and awkward phrasing."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

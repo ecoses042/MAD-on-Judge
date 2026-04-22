@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-4001b252a072ac149c70840b22299cc6cfab3bae",
+  "system_name": "system_4",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information. It jumps between Falcao's struggles, Dirar's beliefs, and the financial aspect of the transfer without a cohesive structure."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that Falcao's loan move to Manchester United was 'failed,' which is not explicitly mentioned in the article. The article discusses his struggles but does not label the move as a failure."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key points such as Dirar's comments about Falcao's potential regret and the context of his unhappiness in France, which are important for understanding the situation."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as the lack of capitalization at the beginning of sentences and inconsistent formatting with the use of '# 46million' instead of '£46million'."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding Falcao's struggles at Manchester United and Dirar's perspective on his situation."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, including Falcao's loan situation and the financial implications for Manchester United."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of Falcao's performance and Dirar's opinion, avoiding trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as the use of lowercase letters at the beginning of sentences and the awkward phrasing of 'failed loan move.'"
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

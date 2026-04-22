@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-0cdd7cdb5d99c36f25f1f4fa0e962d558f7ff07b",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is excellent in coherence, consistency, and fluency, accurately reflecting the source text without hallucinations. It captures the main points regarding the coach, team status, group stage, and opening match. It receives a slightly lower relevance score (4) because it omits specific squad details (player names/positions) and the context about Liverpool players' recalls, which are significant parts of the original article, though this is acceptable given the summary's brevity."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is coherent and consistent with the source text, accurately reflecting the first paragraph of the article. However, it scores lower on relevance because it completely omits the second half of the article, which details the specific squad list (players by position) and mentions key context like Chelsea/Arsenal players and Liverpool recalls. By ignoring these significant details, the summary fails to capture the full scope of the source text."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is well-structured and factually accurate based on the source text. While it omits specific player names (like Dasilva, Willock) and the context regarding Liverpool players' recalls, this omission is a standard trade-off for brevity in summarization tasks rather than a flaw requiring a lower score. The relevance of 4 is appropriate as it captures the primary news (squad announcement, group stage, opening match) while excluding secondary details."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is well-structured and factually accurate regarding the introductory context (coach, tournament, group stage), but it completely ignores the bulk of the article which lists the specific squad members and highlights key players like Jay Dasilva, Ike Ugbo, and the Liverpool recalls. Therefore, the relevance score remains low as it fails to cover the most significant content of the source text."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary effectively captures the core news (squad announcement, group stage, opening match) while appropriately omitting secondary details like specific player names and recall contexts for brevity. No score reduction is necessary."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "No changes made. The lenient judge's points regarding relevance were accepted because the summary indeed omits the specific squad list and key player highlights (Jay Dasilva, Ike Ugbo, Liverpool recalls) which constitute the majority of the source text's informational content. The strict judge's assessment that the relevance score should be low is correct."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 4.5,
+      "relevance": 3.5,
+      "overall_judge": 4.5
+    }
+  }
+}

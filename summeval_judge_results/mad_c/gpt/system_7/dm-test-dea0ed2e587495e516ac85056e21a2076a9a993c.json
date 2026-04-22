@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-dea0ed2e587495e516ac85056e21a2076a9a993c",
+  "system_name": "system_7",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, jumping abruptly from the car being stolen to its return without adequately connecting the events."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits significant details such as Schoenig's humorous reaction on Facebook and the context of her creating a smoothie to honor the man who found her car, which are key points in the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the strong smell of cigarettes and marijuana in the car, which is a notable detail from the original article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary uses a lowercase format for the name and location, which is not standard and affects readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with the theft of the car and concluding with its return and modifications."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the key details from the article, including the theft, the return of the car, and the changes made to it."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most significant aspects of the story, such as the theft, recovery, and the modifications made to the car."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization and punctuation, making it less fluent and harder to read."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "tie",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

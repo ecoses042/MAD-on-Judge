@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-26e4e19d945cedcb489f28808c730658139c9415",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary contains a major hallucination: it claims Orlando City is keen on signing Adrian Heath (the coach), whereas the article states Orlando City *is coached by* Adrian Heath. This violates consistency and introduces false information. Additionally, the summary misses key details about other interested clubs and contract offers, reducing relevance."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary contains a severe hallucination: it claims Orlando City is keen on signing Adrian Heath (the coach), whereas the source text states Orlando City *is coached by* Adrian Heath. This violates the consistency criterion entirely. Additionally, the summary repeats information redundantly without adding value and fails to mention other key details like the transfer fee or other interested clubs, impacting relevance."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "The lenient judge's assessment is accurate and justified. The summary contains a significant hallucination where it states Orlando City is 'keen on signing' Adrian Heath, while the source text explicitly identifies him as their current coach ('coached by former Everton... striker Adrian Heath'). This violates the consistency criterion. Additionally, the summary omits key information regarding other interested clubs (Southampton, Stoke, etc.) and contract details for both Hernandez and Pereira, which impacts relevance. The scores remain unchanged."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a critical factual error (hallucination) claiming Orlando City wants to sign Adrian Heath, who is explicitly identified in the source text as their current coach. This makes the consistency score of 1 justified. The redundancy and lack of key details (transfer fee, other interested clubs) also warrant low scores for coherence and relevance. No leniency is applied due to the severity of the hallucination."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a critical factual error (hallucination) stating Orlando City is keen on signing Adrian Heath, whereas the text identifies him as their coach. This violates consistency. Furthermore, the summary fails to cover significant relevant details regarding other interested clubs and contract situations for both players, impacting relevance. The scores remain unchanged."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary contains a severe hallucination stating Orlando City is keen on signing Adrian Heath, whereas the source text explicitly identifies him as their current coach. This factual error justifies a consistency score of 1. Additionally, the summary fails to mention key details like the transfer fee (£8m) and other interested clubs (Southampton, Stoke, etc.), warranting low scores for relevance and coherence. The fluency is acceptable but marred by the poor structure and errors."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 1.5,
+      "fluency": 3.5,
+      "relevance": 2.5,
+      "overall_judge": 2.5
+    }
+  }
+}

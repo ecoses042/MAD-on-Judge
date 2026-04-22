@@ -1,0 +1,319 @@
+[
+  {
+    "essay_id": "GWGR2400109490.1",
+    "status": "ok",
+    "prediction": {
+      "content": {
+        "score": 3.0,
+        "rationale": "주장과 근거는 존재하지만, 설명이 피상적이고 논리적 연결이 약한 부분이 있다. 예를 들어, 조력존엄사와 안락사의 차이를 언급하면서도 그 차이가 왜 중요한지에 대한 구체적인 설명이 부족하다."
+      },
+      "organization": {
+        "score": 3.0,
+        "rationale": "서론, 본론, 결론의 기본 구조는 있으나 문단 간 연결이 다소 어색하고 논리 전개가 일관되지 않다. 예를 들어, 조력존엄사에 대한 찬성 이유가 명확하게 정리되지 않고 중복된 내용이 나타난다."
+      },
+      "expression": {
+        "score": 2.0,
+        "rationale": "문장 표현이 자주 어색하고 문법적 오류가 눈에 띈다. 예를 들어, '전문가들과 몇 차례 상담을 진행 한 후에도'에서 '진행 한'은 '진행한'으로 수정되어야 하며, 문장 구조가 복잡하여 이해하기 어려운 부분이 있다."
+      }
+    },
+    "judge": {
+      "content": {
+        "round_0": {
+          "lenient": {
+            "domain_match": 3,
+            "score_rationale_consistency": 3,
+            "specificity": 2,
+            "groundedness": 3,
+            "overall_judge": 2.8,
+            "rationale_for_score": "주장의 핵심은 essay_text에 명확하게 드러나 있지만, 설명이 다소 일반적이고 구체적인 근거 제시가 부족하다는 점을 고려하여 3점을 부여한다. 특히 조력존엄사와 안락사의 차이에 대한 설명이 essay_text의 내용과 일치하지만, 그 중요성에 대한 심층적인 논의가 이루어지지 않아 specificity가 낮게 평가되었다. groundedness는 essay_text에서 직접적으로 인용된 내용을 바탕으로 판단했으므로 3점을 부여한다. 점수와 rational이 어느 정도 일치한다고 볼 수 있지만, 더 구체적인 근거 제시 및 심층적인 분석을 통해 점수를 높일 수 있었다."
+          },
+          "strict": {
+            "domain_match": 3,
+            "score_rationale_consistency": 2,
+            "specificity": 2,
+            "groundedness": 3,
+            "overall_judge": 2.5,
+            "rationale_for_score": "주장은 essay_text의 내용과 일치하지만, 설명이 다소 피상적이다. 예를 들어, ‘자신의 결정’을 중요하게 생각하는 주장을 펼치지만, 이는 단순히 개인의 자유를 강조하는 수준에 그친다. 또한, ‘오진일 수 있다’는 점을 언급하며 반대 의견에 대한 대응을 시도하지만, 오진 가능성에 대한 구체적인 논의나 해결 방안 제시가 부족하다. specificity 측면에서, ‘약물 투여를 담당하는 사람은 의사가 아닌 다른 사람과거나 로봇과 같은 기계’라는 표현은 essay_text에 직접적으로 언급된 내용이 아니므로 2점을 감점했다. groundedness는 essay_text의 내용을 바탕으로 한 주장이지만, 논리적 연결이 다소 약하여 3점을 부여한다."
+          }
+        },
+        "round_1": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 3.8,
+            "adjustment_notes": "관대한 심사위원의 평가를 종합적으로 고려하여 점수를 조정한다. 관대한 심사위원이 지적한 대로 essay_text에서 핵심 주장을 명확하게 드러내고 있으며, groundedness는 텍스트 기반으로 잘 평가되었다. 그러나 rational이 좀 더 구체적인 근거 제시와 심층적인 분석을 요구하고 있다는 점을 고려하여 specificity를 3점으로 유지한다. score_rationale_consistency는 rational과 predicted_score가 어느 정도 일치한다고 판단되어 3점을 부여한다. essay_text의 내용에 대한 이해도가 높고, 논리적 연결도 비교적 타당하다는 점에서 4점을 부여하는 것이 타당하지만, 좀 더 심층적인 분석을 요구하는 rational의 지적을 반영하여 최종적으로 3.2점으로 조정한다. 특히, '오진일 수 있다고 할 수 있다'는 부분에 대한 추가적인 논의가 필요함을 강조하고, 이를 통해 점수를 높일 수 있었다면 4점 이상이 가능했을 것이다."
+          },
+          "lenient": {
+            "domain_match": 3,
+            "score_rationale_consistency": 2,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.0,
+            "adjustment_notes": "전반적으로 점수 조정이 필요하다고 판단된다. 엄격한 심사위원의 평가에서 지적된 피상적인 설명과 구체적인 근거 부족 문제를 해결하기 위해 점수를 낮추고, rational에 대한 추가 설명을 제공한다.\n\n*   **domain_match:** 3점 유지 - essay_text의 내용과 일치하는 주장이다.\n*   **score_rationale_consistency:** 2점에서 3점으로 조정 - rational이 predicted_score를 완전히 정당화하지 못하므로, 추가적인 설명이 필요하다. ‘자신의 결정’을 강조하는 부분에 대한 구체적인 윤리적/법적 고려 사항을 언급하여 설득력을 높인다.\n*   **specificity:** 3점 유지 - essay_text의 내용을 바탕으로 한 주장이지만, 좀 더 구체적인 예시를 추가하여 specificity를 강화한다. 예를 들어, ‘오진’ 가능성에 대한 의료 기술 발전 및 진단 정확도 향상에 대한 언급을 포함할 수 있다.\n*   **groundedness:** 4점 유지 - essay_text의 내용을 바탕으로 한 주장이므로 groundedness는 높게 평가된다.\n\n결론적으로, rational에 대한 추가 설명과 specificity를 강화하여 점수를 3.0에서 3.2로 조정한다."
+          }
+        },
+        "round_2": {
+          "lenient": {
+            "domain_match": 3,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.2,
+            "adjustment_notes": "심사위원의 평가를 종합적으로 고려하여 점수를 조정한다. 초기 평가에서 제시된 문제점(피상적인 설명, 약한 논리적 연결)을 반영하여 specificity를 3점으로 유지했다. groundedness는 essay_text에 대한 이해도가 높고, 논리적 연결도 비교적 타당하다는 점에서 4점을 부여했다. score_rationale_consistency는 rational과 predicted_score가 어느 정도 일치한다고 판단되어 3점을 부여했다. 그러나 essay_text의 주장을 더욱 심층적으로 분석하고, '오진일 수 있다'와 같은 부분에 대한 추가적인 논의를 통해 점수를 높일 수 있었다면 4점 이상이 가능했을 것이다. 따라서 최종적으로 3.2점으로 조정한다."
+          },
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.5,
+            "adjustment_notes": "관대한 심사위원의 평가를 반영하여 점수 조정 및 상세 설명 추가. 주요 변경 사항은 다음과 같다.\n\n*   **domain_match:** 4점으로 유지 - essay_text의 핵심 주장을 정확하게 반영하고 있다.\n*   **score_rationale_consistency:** 3점으로 조정 - rational이 predicted_score를 충분히 뒷받침한다. 다만, ‘자신의 결정’에 대한 윤리적/법적 고려 사항을 명확히 제시하여 설득력을 더욱 강화했다. 또한, ‘오진’ 가능성에 대한 언급을 통해 논의의 폭을 넓혔다.\n*   **specificity:** 3점으로 유지 - essay_text의 내용을 바탕으로 한 주장이지만, 추가적인 설명과 예시를 통해 specificity를 높였다. 특히, 의료 기술 발전 및 진단 정확도 향상에 대한 간략한 언급을 포함하여 논지를 더욱 구체화했다.\n*   **groundedness:** 4점으로 유지 - essay_text의 내용을 바탕으로 한 주장이므로 groundedness는 높게 평가된다. \n전반적으로 rational의 설득력을 높이고, specificity를 강화하여 점수를 3.0에서 3.2로 조정한다."
+          }
+        },
+        "round_3": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.5,
+            "adjustment_notes": "초기 평가에서 rational이 essay_text의 내용을 충분히 활용하지 못했다는 지적에 동의한다. 특히 '오진일 수 있다'는 주장에 대한 심층적인 논의가 부족했음을 인정한다. essay_text에서 ‘자신이 스스로 삶을 결정하고 타인에게 피해가 가지 않는 행동이라면 당사자의 의견을 따라서 시행하는 것이 맞을 것이다’라는 부분을 강조하여 조력존엄사의 근거로 명확히 제시했다. 또한, '살아날 확률이 있을 수도 있겠지만 그 매우 적은 확률로 인해 조력존엄사를 진행하지 않는 것은 의사들이 살릴 확률이 더 높은 다른 환자에 쓸 수 있는 기회를 빼앗는 것 일 수 있기 때문에 더욱 조력존엄사는 필요하다고 생각한다'라는 부분도 essay_text에 명시적으로 언급하여 groundedness를 4점으로 높였다. score_rationale_consistency는 rational과 predicted_score 간의 연결이 개선되었으므로 3점으로 유지했다. domain_match는 essay_text의 핵심 내용(자유 의지에 따른 존엄사 결정)을 반영하고 있으므로 4점을 부여한다."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.5,
+            "adjustment_notes": "심사위원의 평가를 반영하여 점수 조정 및 상세 설명 추가. 주요 변경 사항은 다음과 같다.\n\n*   **domain_match:** 4점으로 유지 - essay_text의 핵심 주장을 정확하게 반영하고 있다. 심사위원이 지적한 rational의 피상적인 설명 부족 문제는, 제시된 내용으로 인해 충분히 확인된다고 판단했다.\n*   **score_rationale_consistency:** 3점으로 조정 - rational이 predicted_score를 비교적 잘 뒷받침한다. ‘자신의 결정’에 대한 윤리적/법적 고려 사항을 명확히 제시하여 설득력을 강화했으며, ‘오진’ 가능성에 대한 언급으로 논의의 폭을 넓혔다. 하지만, rational이 predicted_score를 완벽하게 뒷받침한다고 보기는 어렵다.\n*   **specificity:** 3점으로 유지 - essay_text의 내용을 바탕으로 한 주장이지만, 추가적인 설명과 예시를 통해 specificity를 높였다. 특히, 의료 기술 발전 및 진단 정확도 향상에 대한 간략한 언급을 포함하여 논지를 더욱 구체화했다. 심사위원이 지적한 generic 표현 사용 문제는, 제시된 내용으로 인해 크게 문제가 있다고 보지 않는다.\n*   **groundedness:** 4점으로 유지 - essay_text의 내용을 바탕으로 한 주장이므로 groundedness는 높게 평가된다. 심사위원이 지적한 hallucination 문제는 확인되지 않았다."
+          }
+        },
+        "round_4": {
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.5,
+            "adjustment_notes": "초기 평가에서 rational이 essay_text의 내용을 충분히 활용하지 못했다는 지적에 동의한다. 특히 '오진일 수 있다'는 주장에 대한 심층적인 논의가 부족했음을 인정한다. essay_text에서 ‘자신이 스스로 삶을 결정하고 타인에게 피해가 가지 않는 행동이라면 당사자의 의견을 따라서 시행하는 것이 맞을 것이다’라는 부분을 강조하여 조력존엄사의 근거로 명확히 제시했다. 또한, '살아날 확률이 있을 수도 있겠지만 그 매우 적은 확률로 인해 조력존엄사를 진행하지 않는 것은 의사들이 살릴 확률이 더 높은 다른 환자에 쓸 수 있는 기회를 빼앗는 것 일 수 있기 때문에 더욱 조력존엄사는 필요하다고 생각한다'라는 부분도 essay_text에 명시적으로 언급하여 groundedness를 4점으로 높였다. score_rationale_consistency는 rational과 predicted_score 간의 연결이 개선되었으므로 3점으로 유지했다. domain_match는 essay_text의 핵심 내용(자유 의지에 따른 존엄사 결정)을 반영하고 있으므로 4점을 부여한다."
+          },
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.5,
+            "adjustment_notes": "관대한 심사위원의 평가를 반영하여 점수 조정 및 상세 설명 추가. 주요 변경 사항은 다음과 같다.\n\n*   **domain_match:** 4점으로 유지 - essay_text의 핵심 주장을 정확하게 반영하고 있다. 심사위원이 지적한 rational의 피상적인 설명 부족 문제는, 제시된 내용으로 인해 충분히 확인된다고 판단했다.\n*   **score_rationale_consistency:** 3점으로 조정 - rational이 predicted_score를 비교적 잘 뒷받침한다. ‘자신의 결정’에 대한 윤리적/법적 고려 사항을 명확히 제시하여 설득력을 강화했으며, ‘오진’ 가능성에 대한 언급으로 논의의 폭을 넓혔다. 하지만, rational이 predicted_score를 완벽하게 뒷받침한다고 보기는 어렵다.\n*   **specificity:** 3점으로 유지 - essay_text의 내용을 바탕으로 한 주장이지만, 추가적인 설명과 예시를 통해 specificity를 높였다. 특히, 의료 기술 발전 및 진단 정확도 향상에 대한 간략한 언급을 포함하여 논지를 더욱 구체화했다. 심사위원이 지적한 generic 표현 사용 문제는, 제시된 내용으로 인해 크게 문제가 있다고 보지 않는다.\n*   **groundedness:** 4점으로 유지 - essay_text의 내용을 바탕으로 한 주장이므로 groundedness는 높게 평가된다. 심사위원이 지적한 hallucination 문제는 확인되지 않았다."
+          }
+        },
+        "final": {
+          "domain_match": 4.0,
+          "score_rationale_consistency": 3.0,
+          "specificity": 3.0,
+          "groundedness": 4.0,
+          "overall_judge": 3.5
+        }
+      },
+      "organization": {
+        "round_0": {
+          "lenient": {
+            "domain_match": 3,
+            "score_rationale_consistency": 2,
+            "specificity": 2,
+            "groundedness": 3,
+            "overall_judge": 2.5,
+            "rationale_for_score": "Rationale은 essay_text의 주장을 일부 반영하고 있지만, 문단 간 연결이 다소 어색하며 논리 전개가 완벽하지 않다는 점을 지적했습니다 (domain_match: 3). predicted_score인 3.0과 일치하는 평가를 내렸습니다. specificity는 구체적인 내용보다는 일반적인 문제점을 지적하고 있어 2점을 부여했습니다. groundedness는 essay_text의 내용을 바탕으로 rationale이 구성되어 있어 3점을 부여했습니다. 조력존엄사에 대한 찬성 이유가 명확하게 정리되지 않고 중복된 내용이 나타나는 부분, 그리고 가족 및 지인들의 감정에 대한 언급 등이 좀 더 구체적으로 다뤄질 필요가 있습니다."
+          },
+          "strict": {
+            "domain_match": 3,
+            "score_rationale_consistency": 2,
+            "specificity": 2,
+            "groundedness": 4,
+            "overall_judge": 2.8,
+            "rationale_for_score": "서론, 본론, 결론의 구조는 확인했지만, 문단 간 연결이 다소 어색하고 논리 전개가 일관되지 않다는 점을 지적했다 (domain_match: 3). ‘조력존엄사 찬성 이유가 명확하게 정리되지 않고 중복된 내용이 나타난다’는 설명은 구체적인 개선점을 제시하지 못해 specificity를 2점으로 평가했다. essay_text에서 '자신이 스스로 삶을 결정하고 타인에게 피해가 가지 않는 행동이라면 당사자의 의견을 따라서 시행하는 것이 맞을 것이다'와 같은 핵심 주장을 확인하여 groundedness를 4점으로 평가했다. score_rationale_consistency는 predicted_score(3.0)와 rationale의 내용이 어느 정도 일치한다고 판단했으나, 개선점 제시가 부족하여 2점을 부여했다."
+          }
+        },
+        "round_1": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.0,
+            "adjustment_notes": "관대한 심사위원의 평가에 따라 점수를 조정합니다. 관대한 심사위원이 지적한 것처럼 essay_text의 주장을 보다 명확하게 반영하고 있습니다. 특히, ‘자신의 결정’이라는 핵심 주장을 강조하고, 오진 가능성에 대한 반론을 제시하며, 의사의 역할에 대한 우려를 해소하는 부분에서 essay_text의 내용을 효과적으로 활용했습니다. 문단 간 연결이 다소 어색하다는 지적은 일부 수정하여 논리 전개를 더욱 강화했습니다. specificity는 essay_text의 구체적인 내용(‘자신의 결정’, ‘오진 가능성’)을 언급하고 있어 3점을 부여합니다. groundedness는 essay_text의 내용을 바탕으로 rationale이 구성되어 있어 5점을 부여합니다.  전반적으로, 관대한 심사위원이 제시한 평가를 반영하여 점수를 높이고, 논리적 흐름을 개선했습니다."
+          },
+          "lenient": {
+            "domain_match": 3,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.2,
+            "adjustment_notes": "심사위원의 평가에 따라 점수 조정 및 상세 내용 수정. \n\n**조정 사항:**\n*   **domain_match: 3 → 3** - 심사위원이 제시한 '문단 간 연결이 다소 어색하고 논리 전개가 일관되지 않다'는 지적에 동의하며, rational이 organization 영역을 사용하고 있음을 인정한다. 다만, 개선점을 명확히 제시하지 못했다는 점을 고려하여 점수를 유지한다.\n*   **specificity: 3 → 4** - '중복된 내용이 나타난다'는 구체적인 표현을 추가하여 specificity를 향상시켰다. 특히, ‘자신이 스스로 삶을 결정하고 타인에게 피해가 가지 않는 행동이라면 당사자의 의견을 따라서 시행하는 것이 맞을 것이다’와 같은 핵심 주장을 명확히 언급하여 심사위원의 지적에 대한 대응력을 강화했다.\n*   **groundedness: 4 → 5** - essay_text에서 제시된 '자신이 스스로 삶을 결정하고 타인에게 피해가 가지 않는 행동이라면 당사자의 의견을 따라서 시행하는 것이 맞을 것이다'라는 주장을 근거로 사용했음을 명확히 하였으므로 groundedness를 높였다.\n*   **score_rationale_consistency: 3 → 4** - rational이 predicted_score와 어느 정도 일치한다는 점을 유지하면서, specificity 향상 및 groundedness 강화에 따른 논리적 연결성을 더욱 강조하여 score_rationale_consistency를 개선했다."
+          }
+        },
+        "round_2": {
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.0,
+            "adjustment_notes": "초기 평가에서 제시된 문제점을 고려하여 점수를 조정했습니다. 우선, domain_match는 essay_text가 organization 영역에 대한 논의를 명확하게 수행하고 있음을 인정합니다 (4점). score_rationale_consistency는 rationale이 predicted_score와 어느 정도 일치하지만, '자신의 결정'과 '오진 가능성'이라는 핵심 주장을 더욱 강조하고, 논리 전개를 다소 개선하여 3점을 부여합니다. specificity는 essay_text의 주요 내용을 구체적으로 언급하고 있어 4점을 유지합니다. groundedness는 essay_text의 내용에 근거한 rationale이 잘 구성되어 있어 5점을 유지합니다.  전반적인 흐름을 더욱 명확하게 하고, 핵심 주장을 강조하는 방향으로 수정하여 점수를 3.0에서 3.2로 조정했습니다."
+          },
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 5,
+            "groundedness": 5,
+            "overall_judge": 4.5,
+            "adjustment_notes": "관대한 심사위원의 평가에 따라 점수 조정 및 상세 내용 수정. 심사위원이 지적한 문단 간 연결 부족과 논리 전개의 일관성 부족 문제를 해결하기 위해 essay_text에서 더 구체적인 근거를 활용하고, rational이 predicted_score와 더욱 일치하도록 조정했다. 특히, '자신이 스스로 삶을 결정하고 타인에게 피해가 가지 않는 행동이라면 당사자의 의견을 따라서 시행하는 것이 맞을 것이다'라는 핵심 주장을 essay_text의 해당 부분에서 직접 인용하여 groundedness를 높였다. 또한, rational에 대한 설명의 specificity를 강화하여 심사위원의 지적에 더욱 명확하게 대응했다."
+          }
+        },
+        "round_3": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.2,
+            "adjustment_notes": "초기 평가에서 rationale이 essay_text의 핵심 주장을 충분히 반영하지 못했다는 점을 인지했습니다. 특히 '자신의 결정'과 '오진 가능성'이라는 중요한 논거를 더욱 명확하게 강조하고, 문단 간 연결성을 개선하여 점수를 3.0에서 4점으로 조정합니다. 또한, essay_text의 내용을 보다 구체적으로 언급하여 specificity를 4점으로 유지하며, groundedness는 5점을 유지합니다.  전반적인 흐름을 더욱 논리적이고 설득력 있게 만들고, 핵심 주장을 강조하는 방향으로 수정했습니다."
+          },
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 3.8,
+            "adjustment_notes": "초기 평가에서 제시된 문제점을 고려하여 점수 조정 및 상세 내용 수정. 심사위원이 지적한 문단 간 연결 부족과 논리 전개의 일관성 부족 문제를 해결하기 위해 essay_text의 핵심 주장을 보다 명확하게 인용하고, rational에 대한 설명의 specificity를 강화했다. 특히, '자신이 스스로 삶을 결정하고 타인에게 피해가 가지 않는 행동이라면 당사자의 의견을 따라서 시행하는 것이 맞을 것이다'라는 문구를 essay_text에서 직접 인용하여 groundedness를 높였다. 또한, rational의 설명이 predicted_score와 일치하도록 수정했다. 1점 하향 조정 이유는 rational에 대한 설명이 여전히 다소 일반적이며, 심사위원이 강조한 부분 (예: 의사의 역할) 에 대한 깊이 있는 논의가 부족하다는 점을 고려했기 때문이다."
+          }
+        },
+        "round_4": {
+          "lenient": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.0,
+            "adjustment_notes": "초기 평가에서 rationale이 essay_text의 핵심 주장을 충분히 반영하지 못했다는 점을 인지했습니다. 특히 '자신의 결정'과 '오진 가능성'이라는 중요한 논거를 더욱 명확하게 강조하고, 문단 간 연결성을 개선하여 점수를 3.0에서 4점으로 조정합니다. 또한, essay_text의 내용을 보다 구체적으로 언급하여 specificity를 4점으로 유지하며, groundedness는 5점을 유지합니다.  전반적인 흐름을 더욱 논리적이고 설득력 있게 만들고, 핵심 주장을 강조하는 방향으로 수정했습니다. 특히 '자신의 결정'이라는 핵심 주장을 더 명확하게 제시하고, 오진 가능성에 대한 언급을 강화하여 rationale의 설득력을 높였습니다."
+          },
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 4,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 4.0,
+            "adjustment_notes": "관대한 심사위원의 평가를 반영하여 점수를 3.0에서 4.0으로 조정했습니다. rational에 대한 설명이 보다 구체적이고 essay_text의 내용을 명확하게 반영하도록 수정했습니다. 특히, '자신이 스스로 삶을 결정하고 타인에게 피해가 가지 않는 행동이라면 당사자의 의견을 따라서 시행하는 것이 맞을 것이다'라는 문구를 essay_text에서 직접 인용하여 groundedness를 높였습니다. 또한, rational에 대한 설명이 predicted_score와 일치하도록 수정했습니다.  논리 전개 및 문단 간 연결의 어색함을 완전히 해결하지는 못했지만, 심사위원의 지적 사항을 반영하여 개선 노력을 보였습니다."
+          }
+        },
+        "final": {
+          "domain_match": 4.0,
+          "score_rationale_consistency": 3.5,
+          "specificity": 3.5,
+          "groundedness": 5.0,
+          "overall_judge": 4.0
+        }
+      },
+      "expression": {
+        "round_0": {
+          "strict": {
+            "domain_match": 1,
+            "score_rationale_consistency": 2,
+            "specificity": 2,
+            "groundedness": 4,
+            "overall_judge": 2.0,
+            "rationale_for_score": "문장 표현의 어색함과 문법적 오류가 존재한다 (감점 1점). '진행 한' -> '진행한', 복잡한 문장 구조로 인해 이해하기 어려움 (감점 1점). 그러나 rational은 essay_text에서 '당사자의 의견을 따라서 시행하는 것이 맞을 것이다'와 같은 핵심 주장을 뒷받침하고 있으며, 오진 가능성 및 다른 환자에게 미치는 영향에 대한 논의를 통해 조력존엄사의 필요성을 설득력 있게 제시하고 있다 (감점 없음). 또한 essay_text에서 '전문가들과 몇 차례 상담을 진행 한 후에도'라는 구체적인 표현을 인용하여 groundedness 점수를 4점으로 평가했다."
+          },
+          "lenient": {
+            "domain_match": 2,
+            "score_rationale_consistency": 1,
+            "specificity": 3,
+            "groundedness": 3,
+            "overall_judge": 2.0,
+            "rationale_for_score": "평가 대상은 표현이며, rationale은 essay_text의 표현에 대한 평가를 수행해야 한다. 그러나 rationale은 문법적 오류와 어색한 표현을 지적하지만, 구체적인 개선 방안이나 예시를 제시하지 못하고 있다. '진행 한' -> '진행한' 수정과 같은 간단한 사항을 언급했지만, 더 심층적인 분석이나 제안이 부족하다. 또한, 점수(2.0)와 rationale의 설명이 일치하지 않는다. 긍정적인 측면 (자신의 결정 존중 등)을 간략하게 언급했지만, 설득력 있는 근거를 제시하지 못했다. specificity는 essay_text에서 발견된 문제점을 지적하고 있지만, 더 구체적인 예시나 해결책을 제시하여 점수를 높일 수 있었다. groundedness는 essay_text의 내용을 바탕으로 평가했으므로 3점으로 평가한다. 전반적으로, rationale은 표현에 대한 기본적인 문제를 인식했지만, 설득력 있는 평가를 위해서는 더 많은 노력과 분석이 필요하다."
+          }
+        },
+        "round_1": {
+          "lenient": {
+            "domain_match": 3,
+            "score_rationale_consistency": 2,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.0,
+            "adjustment_notes": "predicted_score를 2.0에서 2.5로 조정합니다. 심사위원의 평가에 따라 rational이 essay_text의 핵심 주장을 뒷받침하고 있다는 점을 인정하지만, 문장 표현의 어색함과 복잡한 구조가 여전히 문제점으로 남아있다고 판단했습니다. 특히 '진행 한' -> '진행한' 수정과 같은 기본적인 문법 오류는 감점 요인으로 작용해야 합니다. groundedness 점수는 essay_text에서 인용한 구체적인 내용을 바탕으로 4점을 유지합니다. 그러나 전반적인 표현의 미흡함은 점수를 낮추는 데 영향을 미쳤습니다."
+          },
+          "strict": {
+            "domain_match": 3,
+            "score_rationale_consistency": 2,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.0,
+            "adjustment_notes": "관대한 심사위원의 평가를 반영하여 점수를 조정한다. rationale은 essay_text의 표현에 대한 평가를 수행했지만, 구체적인 개선 방안이나 예시가 부족했다는 지적에 동의한다. 특히 '진행 한' -> '진행한' 수정과 같은 간단한 사항을 언급하는 것은 specificity 기준에 미흡하다. 또한, 점수와 설명이 완전히 일치하지 않는다는 지적도 타당하다. essay_text에서 발견된 어색한 표현과 문법 오류를 좀 더 구체적으로 지적하고, 개선 방안을 제시하여 설득력을 높여야 한다. groundedness는 essay_text의 내용을 바탕으로 평가했으므로 유지한다. 점수를 3점으로 낮추고, 추가적인 설명과 함께 개선 방향을 제시한다."
+          }
+        },
+        "round_2": {
+          "strict": {
+            "domain_match": 3,
+            "score_rationale_consistency": 2,
+            "specificity": 2,
+            "groundedness": 4,
+            "overall_judge": 2.8,
+            "adjustment_notes": "predicted_score를 2.0에서 3.0으로 조정합니다. 심사위원의 평가에 따라 rational이 essay_text의 핵심 주장을 일부 뒷받침하고 있다는 점을 인정하지만, 여전히 문장 표현의 어색함과 복잡한 구조가 존재한다는 점을 지적했습니다. 특히 '진행 한' -> '진행한' 수정과 같은 기본적인 문법 오류는 감점 요인으로 작용해야 합니다. 또한, essay_text에서 인용한 구체적인 내용을 바탕으로 groundedness 점수를 4점으로 유지합니다. 그러나 전반적인 표현의 미흡함은 점수를 낮추는 데 영향을 미쳤습니다.  expression 기준을 강화하여, 문장 구조의 복잡성과 어색함을 더욱 명확히 지적하고, 더 간결하고 명확한 표현으로 수정할 필요가 있음을 강조합니다."
+          },
+          "lenient": {
+            "domain_match": 3,
+            "score_rationale_consistency": 2,
+            "specificity": 2,
+            "groundedness": 5,
+            "overall_judge": 3.0,
+            "adjustment_notes": "심사위원의 지적을 반영하여 점수를 조정한다. rationale이 essay_text의 표현에 대한 구체적인 평가가 부족했다는 점을 인정하며 점수를 2점으로 낮춘다. 특히 '진행 한' -> '진행한' 수정과 같은 간단한 문법 오류를 더 명확하게 지적하고, 개선 방안을 제시하여 specificity 기준 충족도를 높여야 한다. 또한, rational에 제시된 설명이 predicted_score와 완전히 일치하지 않는다는 점을 고려하여 score_rationale_consistency를 2점으로 조정한다. groundedness는 essay_text의 내용을 바탕으로 평가했으므로 유지한다. 개선 방향으로는 문장 구조를 단순화하고, 어색한 표현을 수정하며, 더 구체적인 예시를 활용하는 것이 필요하다."
+          }
+        },
+        "round_3": {
+          "lenient": {
+            "domain_match": 3,
+            "score_rationale_consistency": 2,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.0,
+            "adjustment_notes": "predicted_score를 2.0에서 3.0으로 조정합니다. 심사위원의 지적대로 essay_text의 문장 표현이 어색하고 복잡하다는 점을 인정하며, 특히 '진행 한' -> '진행한' 수정과 같은 기본적인 문법 오류가 존재한다는 점을 명확히 합니다. 그러나 rational에서 제시된 문제점들이 essay_text 전체에 걸쳐 나타나는 심각한 수준은 아니라고 판단하여 감점을 최소화합니다. specificity 기준을 3점으로 유지하며, 보다 구체적인 표현 수정의 필요성을 강조합니다. groundedness는 essay_text의 내용을 잘 반영하고 있으므로 4점을 유지합니다. 점수-설명 모순은 없으며, rational이 predicted_score를 정당화하는 데 충분한 근거를 제공합니다."
+          },
+          "strict": {
+            "domain_match": 3,
+            "score_rationale_consistency": 2,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.0,
+            "adjustment_notes": "심사위원의 지적을 반영하여 점수를 조정한다. rationale이 essay_text의 표현에 대한 구체적인 평가가 부족했다는 점을 인정하며 점수를 2점으로 낮춘다. 특히 '진행 한' -> '진행한' 수정과 같은 간단한 문법 오류를 더 명확하게 지적하고, 개선 방안을 제시하여 specificity 기준 충족도를 높였다. 또한, rational에 제시된 설명이 predicted_score와 완전히 일치하지 않는다는 점을 고려하여 score_rationale_consistency를 2점으로 조정했다. groundedness는 essay_text의 내용을 바탕으로 평가했으므로 유지한다. 개선 방향으로는 문장 구조를 단순화하고, 어색한 표현을 수정하며, 더 구체적인 예시를 활용하는 것이 필요하다.  '전문가들과 몇 차례 상담을 진행 한 후에도'와 같이 어색한 표현을 '전문가들과 몇 차례 상담을 거쳐'로 수정하여 문장 표현의 자연스러움을 높였다. 또한, '당사자의 의견을 따라서 시행하는 것이 맞을 것이다.'라는 표현을 '개인의 의사에 따라 시행하는 것이 타당할 것이다.'로 변경하여 더 명확하고 간결하게 표현했다."
+          }
+        },
+        "round_4": {
+          "strict": {
+            "domain_match": 4,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 5,
+            "overall_judge": 3.8,
+            "adjustment_notes": "predicted_score를 2.0에서 4.0으로 조정합니다. 심사위원의 지적대로 essay_text의 문장 표현이 어색하고 복잡하다는 점을 인정하며, rational에 제시된 문제점들이 essay_text 전체에 걸쳐 나타나는 심각한 수준이라는 점을 명확히 합니다. 특히 '진행 한' -> '진행한' 수정과 같은 기본적인 문법 오류가 존재한다는 점을 강조합니다. specificity 기준을 3점으로 유지하며, 보다 구체적인 표현 수정의 필요성을 강조합니다. groundedness는 essay_text의 내용을 잘 반영하고 있으므로 5점을 부여합니다. 점수-설명 모순은 없으며, rational이 predicted_score를 정당화하는 데 충분한 근거를 제공합니다. 또한, essay_text에서 '진행 한' -> '진행한' 수정과 같은 구체적인 표현 개선을 확인하여 rational의 설득력을 높였습니다."
+          },
+          "lenient": {
+            "domain_match": 3,
+            "score_rationale_consistency": 2,
+            "specificity": 3,
+            "groundedness": 4,
+            "overall_judge": 3.0,
+            "adjustment_notes": "심사위원의 지적에 따라 몇 가지 개선 사항을 반영했습니다. 첫째, rationale에서 제시된 문법 오류 수정 (예: '진행 한' -> '진행한')과 표현 개선(예: '당사자의 의견을 따라서 시행하는 것이 맞을 것이다.' -> '개인의 의사에 따라 시행하는 것이 타당할 것이다.')에 대한 설명이 부족했던 점을 인지하고, 이러한 부분들을 좀 더 구체적으로 언급했습니다. 둘째, essay_text의 내용과 rational이 일관성을 유지하도록 수정했습니다. 셋째, specificity 기준 충족도를 높이기 위해 보다 명확한 표현을 사용하도록 노력했습니다.  기존 점수(2.0)를 유지하는 대신, 심사위원의 지적 사항을 반영하여 점수를 2.5점으로 조정했습니다.  rationale에 제시된 문제점을 해결하기 위한 노력을 통해 score_rationale_consistency가 개선되었음을 보여줍니다."
+          }
+        },
+        "final": {
+          "domain_match": 3.5,
+          "score_rationale_consistency": 2.5,
+          "specificity": 3.0,
+          "groundedness": 4.5,
+          "overall_judge": 3.4
+        }
+      }
+    }
+  }
+]

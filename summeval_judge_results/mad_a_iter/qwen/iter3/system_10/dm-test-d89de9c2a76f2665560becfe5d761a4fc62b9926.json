@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-d89de9c2a76f2665560becfe5d761a4fc62b9926",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is factually consistent with the source text and contains no hallucinations. However, it suffers from a severe relevance flaw: it acts as a mere excerpt rather than a summary, omitting the match result (United winning), key players like Marcus Rashford, the context of the 'mini-derby', and the broader implications mentioned in the article. It fails to synthesize the information into a coherent whole."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source text and uses fluent English. However, it only covers a small fraction of the article's content (the opening paragraph details), missing key information such as the match result, the specific goalscorer details, and the broader context about player development. While lenient rules allow for lower scores if direction aligns, the severe truncation of relevant information prevents a higher relevance score."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "No adjustment needed. The summary is factually consistent and fluent but suffers from severe truncation, covering only the opening paragraph's details while missing the match result, specific goal events, and broader context mentioned in the article. This confirms the lenient judge's assessment that relevance is low due to incomplete coverage."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is merely a copy-paste of three sentences from the beginning of the article rather than a synthesized summary. It completely misses the most critical piece of information: the match result (United winning). It also omits key context like the 'mini-derby' nature, other significant players (Rashford), and the broader implications discussed at the end. Therefore, the relevance score remains low."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the relevance score from 3 to 2. While the summary is factually consistent and fluent, it suffers from severe truncation, covering only a tiny fraction of the article's content (the opening details) while completely missing the match result, specific goal events, player highlights, and broader context which are central to the source text."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment that the summary is a direct copy-paste of the first three sentences rather than a synthesized summary. While it is consistent and fluent, it fails significantly on relevance by missing the match result (United winning), key context ('mini-derby'), other significant players mentioned in the text (Rashford), and the broader implications discussed at the end. The strict judge's low scores are justified."
+      }
+    },
+    "final": {
+      "coherence": 3.5,
+      "consistency": 5.0,
+      "fluency": 4.0,
+      "relevance": 2.0,
+      "overall_judge": 3.0
+    }
+  }
+}

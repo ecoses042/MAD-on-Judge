@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-0783c68a744df6afa009d16e72709f2b4d90dea1",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary includes a sentence ('Bolt reacts as he wins 4x100m gold at the London Olympic Games in 2012') that describes an image caption rather than summarizing the article's text content. This constitutes a hallucination regarding the source document's information, violating the consistency criterion. Additionally, by including this irrelevant image description, the summary fails to focus on the key points of the announcement (Bolt's availability and quotes), hurting relevance."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 3.8,
+        "rationale_for_score": "The summary is fluent and coherent in structure. However, it includes a caption ('Bolt reacts as he wins 4x100m gold at the London Olympic Games in 2012') which appears to be an image caption from the source text rather than part of the news story's content. Including this as a factual claim about Bolt's current participation violates the consistency criterion (introducing irrelevant context) and relevance (focusing on a past event unrelated to the main news). Given the lenient rules, it is not penalized severely for hallucination but loses points for including non-story text."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 2,
+        "fluency": 5,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The inclusion of 'Bolt reacts as he wins 4x100m gold at the London Olympic Games in 2012' is a hallucination relative to the provided text, which only contains an image caption or description not present in the article body. This severely impacts consistency (factually inconsistent with the source text) and relevance (includes trivial/irrelevant detail). I have lowered the consistency score from 3 to 2 and the relevance score from 4 to 1 to reflect this critical flaw."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.8,
+        "adjustment_notes": "The lenient judge's points for consistency and relevance were not fully justified. The summary includes a sentence ('Bolt reacts as he wins 4x100m gold at the London Olympic Games in 2012') which is clearly an image caption from the source text, not part of the news story's narrative. Including this as a standalone sentence creates a logical break (coherence) and introduces irrelevant information regarding a past event unrelated to the current news about the Bahamas relays (consistency/relevance). Therefore, the scores should be lowered to reflect these significant flaws in structure and content focus."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 2,
+        "fluency": 5,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding the hallucination. The phrase 'Bolt reacts as he wins 4x100m gold at the London Olympic Games in 2012' describes an image caption or a separate visual element not contained within the provided article text. Including this information violates the consistency criterion (introducing facts not present in the source) and significantly harms relevance by adding trivial/irrelevant detail. Therefore, I maintain the strict judge's lower scores for consistency and relevance."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The inclusion of 'Bolt reacts as he wins 4x100m gold at the London Olympic Games in 2012' is a fatal flaw. It is an image caption inserted into the narrative text, creating a logical break (coherence) and introducing irrelevant historical information not part of the current news story (consistency/relevance). The summary fails to focus on the key point: Bolt's upcoming participation in the Bahamas relays. Scores are lowered to reflect these significant structural and content errors."
+      }
+    },
+    "final": {
+      "coherence": 3.0,
+      "consistency": 1.5,
+      "fluency": 4.5,
+      "relevance": 1.0,
+      "overall_judge": 2.0
+    }
+  }
+}

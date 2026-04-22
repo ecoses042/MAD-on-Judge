@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-8b59fa7715418c4bcc0d50e3caeb239129de453e",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is highly coherent and relevant, accurately capturing the main points of the article (Hart praising Buffon, the specific cap counts, the match result, and Hart's quote). It contains no hallucinations. The score is capped at 4 because the summary ends abruptly mid-sentence ('...at 37 years old .'), which affects fluency and completeness compared to a polished summary."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is excellent in coherence and fluency, accurately reflecting the source text's content without hallucinations. It captures the main points (Hart praising Buffon, Buffon's milestone, Hart's milestone). The only minor deduction for relevance is that it omits the second half of the article where Hart discusses his own future goals ('I want to keep going'), but given the lenient rules and the high quality of the included information, this is a very strong summary."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The strict judge's assessment is accurate. The summary captures the key information (Hart praising Buffon, specific cap counts, match result) with perfect coherence and consistency. However, the abrupt ending mid-sentence ('...at 37 years old .') is a genuine flaw that impacts fluency and completeness, justifying the deduction from a potential 5.0 to 4.8. No further lowering is necessary as the strict judge was not overly harsh."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The lenient judge's assessment is accurate. The summary effectively captures the primary news (Hart praising Buffon) and the immediate context (milestones achieved). While it omits Hart's specific future goals mentioned in the second half of the article, this is a standard trade-off for summarization where brevity is key. The omission does not render the summary poor; it simply focuses on the most prominent event. Therefore, the scores remain high."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The summary is well-structured and logically flows from the main headline to specific quotes and context. It remains strictly consistent with the source text without adding external facts. While the content is highly relevant, the summary ends abruptly mid-sentence ('...at 37 years old .'), which creates a grammatical error and reduces fluency. The lenient judge correctly identified this flaw as the sole reason for the deduction from a perfect score, so no further adjustment is needed."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The strict judge's assessment is accurate. The summary successfully captures the main headline and immediate context (milestones) while appropriately omitting secondary details like Hart's future goals to maintain brevity. No score reduction is necessary."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 4.5,
+      "relevance": 4.5,
+      "overall_judge": 4.8
+    }
+  }
+}

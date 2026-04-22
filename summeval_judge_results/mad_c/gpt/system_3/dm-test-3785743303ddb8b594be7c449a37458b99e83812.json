@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-3785743303ddb8b594be7c449a37458b99e83812",
+  "system_name": "system_3",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, jumping abruptly from Bruce's confidence to the match result and then to player injuries without clear connections."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key points such as Bruce's initial target of 10 wins, the context of their performance, and the significance of upcoming fixtures, which are crucial for understanding the situation."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention Bruce's comments about the team's struggles due to injuries, which is a significant aspect of the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary could be more fluent; the sentence structure is somewhat choppy and lacks variety."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, starting with Bruce's confidence and then mentioning the recent match result and player returns."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, including the match result and the status of key players returning from injury."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important points, such as Bruce's confidence, the match outcome, and player injuries, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization at the beginning of sentences, which affects its overall fluency."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "While it covers key points, it omits some context about Hull's struggles and the upcoming fixtures that could provide a fuller picture."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

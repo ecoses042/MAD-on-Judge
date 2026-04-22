@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-6f027d030f9ca86446dc893f1d10ced4c9a3561f",
+  "system_name": "system_8",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary incorrectly states that Henderson is set to make a £10million move to Manchester City, which is not mentioned in the article."
+        },
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, abruptly ending with 'Henderson last week said he was 'rel', leaving the reader without a complete thought."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary does not mention Henderson's potential role as club captain, which is a significant point in the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'Henderson last week said he was 'rel' is incomplete and disrupts the fluency of the summary."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear focus on Jordan Henderson's new contract and his performance, maintaining a logical flow of information."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects Henderson's contract details and his contributions to the team, consistent with the information provided in the article."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary highlights key points about Henderson's contract and his performance, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains an incomplete sentence at the end, which disrupts the fluency and readability."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The mention of a £10 million move to Manchester City is inconsistent with the article, which indicates Henderson is keen to stay at Anfield."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

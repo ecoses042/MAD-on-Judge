@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-03e271b4305517e02c9ead82d57327d32b99102e",
+  "system_name": "system_2",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, jumping from Williams' victory to the doubles defeat without adequately connecting the events."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention the significant context of Williams' struggle during the match and her reflections on her readiness for the claycourt season, which are key points in the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that Williams 'fought back to beat' Errani, while the match was a close contest that required a comeback, which could mislead readers about the nature of the victory."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains awkward phrasing, such as 'the us were beaten 3-2 as williams and alison riske were thrashed,' which could be more smoothly articulated."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with Williams' victory over Errani and concluding with the US team's overall defeat."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the outcomes and details from the article, such as the match scores and the relegation of the US team."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the match and the implications for the US team, avoiding trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as inconsistent capitalization and awkward phrasing, which affect readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

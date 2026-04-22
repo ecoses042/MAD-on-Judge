@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-6c1341bedf92a304318545fbf1aad88651de7909",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is consistent with the source text and covers key points (nominations, specific goal mentioned). It is slightly less coherent than a full paragraph because it reads more like a list of sentences without connecting transitions, but this is a minor weakness given the lenient rules. No hallucinations are present."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source text (no hallucinations) and covers key points like Kane's nominations and specific goals mentioned in the article. However, it suffers from poor fluency due to a lack of capitalization for proper nouns (Harry Kane, Tottenham, PFA, etc.) and sentence structure that feels fragmented rather than a cohesive paragraph. It also omits the context regarding the Copa90 animation video itself, focusing only on the content within the video rather than the article's main subject."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 4.2,
+        "adjustment_notes": "No adjustment needed. The lenient judge's assessment is accurate: the summary is factually consistent with the source text (no hallucinations), covers the key points regarding Kane's nominations and specific achievements mentioned in the article, and while it lacks transitional flow (reading like a list), this is a minor structural issue that does not significantly impact readability or information density. The scores reflect this balanced view."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "Lowered fluency score significantly (from 3 to 2) because the summary lacks basic capitalization for proper nouns (Harry Kane, Tottenham, PFA, etc.) and reads like a fragmented list of sentences rather than a cohesive paragraph. Lowered coherence slightly (from 4 to 3) as the lack of capitalization and sentence structure makes the flow disjointed. Consistency remains high as no facts were invented. Relevance is maintained at 4; while it misses the 'Copa90 animation' context mentioned in the strict judge's critique, the core subject matter (Kane's achievements and nominations) is covered well enough to avoid a lower score."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 4.2,
+        "adjustment_notes": "No adjustment needed. The strict judge correctly identified that the summary is factually consistent and covers key points despite a lack of transitional flow. The 'list-like' structure is a minor issue that does not significantly detract from readability or information density in this context. The lenient assessment remains accurate."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary suffers from a lack of capitalization for proper nouns (Harry Kane, Tottenham, PFA, etc.) and sentence structure issues, making it read like a fragmented list rather than a cohesive paragraph. This significantly impacts fluency and coherence. Consistency is perfect as no external facts were added. Relevance is good as it covers the main nominations and specific goals mentioned in the text."
+      }
+    },
+    "final": {
+      "coherence": 3.5,
+      "consistency": 5.0,
+      "fluency": 3.0,
+      "relevance": 4.0,
+      "overall_judge": 3.6
+    }
+  }
+}

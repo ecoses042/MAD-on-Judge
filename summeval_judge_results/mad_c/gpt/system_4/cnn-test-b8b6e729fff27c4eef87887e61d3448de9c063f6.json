@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-b8b6e729fff27c4eef87887e61d3448de9c063f6",
+  "system_name": "system_4",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, abruptly ending without completing the thought about SpaceX's attempts to land the Falcon 9."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details about the mission, such as the successful ascent, the cargo being delivered, and the significance of the mission as the sixth SpaceX mission to the ISS."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as the lack of proper capitalization for 'spacex' and 'dragon,' which affects readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with the launch of the Falcon 9 rocket and then discussing the attempt to land it on a barge."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding SpaceX's launch and the unsuccessful landing attempt."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the launch and the landing attempt, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as the lack of capitalization at the beginning of sentences and inconsistent punctuation."
+        },
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a complete narrative, omitting important details about the Dragon spacecraft's mission and the context of SpaceX's goals."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 4,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

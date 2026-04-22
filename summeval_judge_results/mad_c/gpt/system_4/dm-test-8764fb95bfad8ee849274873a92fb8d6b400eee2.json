@@ -1,0 +1,63 @@
+{
+  "article_id": "dm-test-8764fb95bfad8ee849274873a92fb8d6b400eee2",
+  "system_name": "system_4",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, as it abruptly shifts from Merson's criticism to the match details without connecting the two."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key points, such as Townsend's response to Merson and the context of Merson admitting his mistake after Townsend scored for England, which are crucial to understanding the ongoing conflict."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical inconsistencies, such as the use of lowercase letters for names and the awkward phrasing of 'townsend was brought on in the 83rd minute for tottenham as they drew 0-0 against burnley.'"
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with Merson's comments and leading to Townsend's late appearance in the match."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding Merson's criticism of Townsend and the context of the match."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the conflict between Merson and Townsend, particularly Merson's initial comments and Townsend's late substitution."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as inconsistent use of punctuation and formatting, which affect readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 4,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 3.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

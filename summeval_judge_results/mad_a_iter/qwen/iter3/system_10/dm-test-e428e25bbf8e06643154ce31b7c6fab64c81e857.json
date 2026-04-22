@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-e428e25bbf8e06643154ce31b7c6fab64c81e857",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is consistent with the source text and uses fluent English. However, it only covers the background context (the camera being off for two years) and completely misses the main news hook: that the camera was recently re-pointed at a specific house, the council's response, and the potential removal of the device. Due to this significant omission of key information, the relevance score is lowered."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary is extremely poor in relevance and coherence. It consists almost entirely of a direct copy-paste of the first two sentences of the source text, failing to synthesize the information or cover any other key points (such as the mystery of who re-pointed the camera, the council's response, or the future plans). While it is consistent with the text and grammatically acceptable, its failure to summarize the article beyond a trivial excerpt results in a very low overall score."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is not a summary at all; it is merely a copy-paste of the first two sentences of the source text. It fails to synthesize information, misses the core news (the camera being re-pointed and the council's response), and lacks logical flow beyond the original text structure. Therefore, the low scores for coherence and relevance are justified."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I raised the coherence score slightly to 3 because the summary is internally consistent and flows logically as a background statement, though it lacks a narrative arc due to missing the main event. I kept consistency at 5 as it strictly adheres to the text provided in the first two sentences of the article. Fluency remains 4; while grammatically correct, the repetition of 'the speed camera has not been working for more than two years' makes it slightly redundant. I lowered relevance from 3 to 2 because the summary fails to mention the core news event (the camera being re-pointed at a house) or the council's response, which constitutes the majority of the article's information. The lenient judge's assessment that this is a significant omission is correct."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment that the summary is merely a copy-paste of the first two sentences of the source text. It fails to synthesize information, misses the core news (the camera being re-pointed and the council's response), and lacks logical flow beyond the original text structure. Therefore, the low scores for coherence and relevance are justified."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is internally consistent and grammatically correct (Fluency 4), but it fails to capture the main news event—the camera being re-pointed at a house or the council's response—which constitutes the majority of the article's information. Therefore, Relevance must remain low (2). Since the summary lacks a narrative arc by omitting the core event, Coherence remains at 3. No score increases are warranted as the strict judge correctly identified significant flaws."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 4.5,
+      "fluency": 3.5,
+      "relevance": 1.5,
+      "overall_judge": 2.5
+    }
+  }
+}

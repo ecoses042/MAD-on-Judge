@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-dea0ed2e587495e516ac85056e21a2076a9a993c",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from a significant relevance issue: it truncates the story after the initial setup, completely omitting the key twist (the car's modifications), the owner's humorous reaction, and the subsequent actions (cleaning, smoothie creation). While consistent with the text provided so far, it fails to capture the main point of the article."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "rationale_for_score": "The summary is grammatically perfect and consistent with the source text. However, it only covers the first half of the article (the theft and return), completely omitting the key details about the car's modifications, Schoenig's positive reaction ('pimping out'), the smell issues, and the smoothie tribute. Due to the lenient rules regarding direction alignment, it avoids a low score for missing content, but the significant omission of the main story arc keeps relevance at 3."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is grammatically perfect and coherent, but it fails significantly on relevance by cutting off the story before the main event (the car modifications) and the protagonist's reaction. It reads like an incomplete draft rather than a finished summary of the article."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I raised the relevance score from 2 to 3 because while the summary is incomplete, it accurately captures the primary narrative arc (theft and recovery) which constitutes the bulk of the article's setup. However, I kept the overall judge lower than the lenient judge's 4.5 because the omission of the 'pimping' reaction, the specific modifications, and the smoothie tribute represents a significant loss of the story's unique character and emotional resolution, making it feel like only half a story rather than just a partial summary."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding relevance. The summary is indeed incomplete as it cuts off after the car's return and before describing the specific modifications (red rims, detailing) or the protagonist's reaction ('pimping out my vehicle'), which are central to the article's narrative. Therefore, the low relevance score is justified."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment regarding relevance. The summary covers only the theft and recovery (the setup), completely omitting the unique 'pimping' modifications, the owner's humorous reaction, the cleaning issues, and the smoothie tribute which form the emotional core and resolution of the story. Therefore, the score remains at 2 to reflect that it captures less than half of the significant content."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.5,
+      "fluency": 5.0,
+      "relevance": 2.5,
+      "overall_judge": 3.6
+    }
+  }
+}

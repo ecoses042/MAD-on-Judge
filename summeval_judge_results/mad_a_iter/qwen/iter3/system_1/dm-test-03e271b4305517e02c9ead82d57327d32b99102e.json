@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-03e271b4305517e02c9ead82d57327d32b99102e",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is consistent with the source text and covers key points like the match result, score, and Williams' Grand Slam count. However, it suffers from a significant coherence issue: it repeats the core fact (Williams beating Errani) twice in slightly different ways within a short span, creating redundancy rather than a logical flow. Additionally, the fluency is impacted by this repetition and the lack of smooth transitions between sentences."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary contains a severe hallucination in the second sentence where it states 'prevailed... against the us tennis star serena williams', incorrectly identifying Sara Errani as Serena Williams. This violates the consistency criterion completely (Score 1). The coherence is poor because the summary repeats the same core fact twice with slightly different phrasing, creating redundancy rather than a logical flow (Score 2). While the grammar is generally acceptable (Fluency 4) and it covers relevant points like the score and Grand Slam count (Relevance 3), the hallucination makes the summary fundamentally flawed."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the fluency score from 3 to 2 because the repetition of the core fact (Williams beating Errani) in two consecutive sentences is not just a coherence issue but a severe grammatical and stylistic flaw that makes the text read poorly. The first sentence ends with 'serena williams defeated sara errani...', and the second sentence immediately restates this with 'williams ... fought back to beat italian sara errani...'. This redundancy disrupts the flow significantly more than a simple lack of transition. I kept coherence at 3 (down from 4) as the structure is indeed disjointed due to this repetition. Consistency and Relevance remain high as the content is accurate and covers key points."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The hallucination in the second sentence ('prevailed... against the us tennis star serena williams') is a critical factual error that violates consistency completely (Score 1). Furthermore, the summary suffers from severe redundancy by stating the same match result and player names in two consecutive sentences without adding new information or improving flow, justifying a low coherence score (2). The grammar is acceptable but the content flaws are too significant to maintain higher scores."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The repetition of the core fact in consecutive sentences ('serena williams defeated sara errani...' followed immediately by 'williams ... fought back to beat italian sara errani...') is a severe stylistic flaw that significantly impacts readability and fluency, justifying the score of 2. The coherence is also low (3) because this redundancy creates a disjointed narrative flow rather than a logical progression. Consistency and relevance remain high as the content is accurate to the source text and covers the main points without hallucinations or trivial details."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary contains a critical hallucination in the second sentence where it states Williams prevailed 'against the us tennis star serena williams', which is factually impossible and violates consistency (Score 1). Additionally, the summary repeats the core event (Williams beating Errani) in two consecutive sentences with almost no new information, resulting in poor coherence (Score 2). While the grammar is passable (Fluency 4), the severe content errors prevent a higher overall score."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 3.0,
+      "fluency": 3.0,
+      "relevance": 3.5,
+      "overall_judge": 2.5
+    }
+  }
+}

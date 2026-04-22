@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-130ff8f2dfb6ab67861d5924b0ff5acd63c7d8ce",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from a significant relevance flaw: it omits the crucial context of the 2-0 defeat by FC Botosani that triggered the second firing. Additionally, while mostly consistent, it misses specific details like Ze Maria's age or his previous tenure duration (January), which are present in the source. The omission of the match result makes the summary less complete regarding the 'why' of the event."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.5,
+        "rationale_for_score": "The summary is well-structured and flows logically. It accurately captures the main events (firing, reinstatement, replacement) consistent with the source text. The only minor deduction for consistency is that the summary omits the specific reason for the second firing (the 2-0 loss to FC Botosani), but since the instruction is to be lenient and penalize only clear hallucinations or complete failures, this omission of a detail rather than an error does not warrant a low score. The fluency is excellent."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is fluent and coherent but lacks relevance because it omits the specific reason for the second firing (the 2-0 defeat by FC Botosani), which is a key piece of information explaining the 'poor run' mentioned. It also misses minor details like Ze Maria's age or the specific start date of his tenure, further reducing its completeness relative to the source text."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.5,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate: the summary is well-structured and fluent. The deduction for consistency regarding the omitted reason for the second firing (the 2-0 loss) is justified as a missing detail rather than a hallucination or error, fitting the criteria for a high score in this context."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.5,
+        "adjustment_notes": "No changes made. The strict judge's assessment is accurate. The summary is well-structured and fluent. The deduction for consistency regarding the omitted reason for the second firing (the 2-0 loss) is justified as a missing detail rather than a hallucination or error, fitting the criteria for a high score in this context."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "No changes made. The lenient judge's points regarding coherence and fluency are valid as the summary is grammatically correct and logically structured. The consistency score of 4 is maintained because the summary accurately reflects the events in the article without adding external facts (e.g., it does not invent a reason for the firing). The relevance score of 3 is upheld because, while the summary covers the main narrative arc (firing -> reinstatement -> firing again), it omits the specific catalyst for the second firing (the 2-0 defeat by FC Botosani) and other details like Ze Maria's age or previous tenure dates, which are present in the source text."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.0,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.3
+    }
+  }
+}

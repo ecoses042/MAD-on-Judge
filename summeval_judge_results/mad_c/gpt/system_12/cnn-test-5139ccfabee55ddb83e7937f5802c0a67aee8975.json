@@ -1,0 +1,71 @@
+{
+  "article_id": "cnn-test-5139ccfabee55ddb83e7937f5802c0a67aee8975",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow of information, jumping abruptly from the incident to a previous event without proper context or transition."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to include key details about the incident, such as the U.S. response, the claims made by both sides, and the context of the complaint to Moscow."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the U.S. official's statement that the claim about the transponder being off was false, which is a significant detail in understanding the incident."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains awkward phrasing and punctuation issues, such as unnecessary spaces before punctuation marks and inconsistent quotation mark usage."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with the interception of the U.S. plane and mentioning the Pentagon's response."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding the incident and the Pentagon's characterization of the Russian pilot's actions."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary highlights the key incident involving the U.S. RC-135U and the Russian SU-27, as well as the Pentagon's concerns, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as the use of quotation marks and spacing, which affect readability."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The mention of a previous incident is somewhat relevant but lacks context and does not connect well to the current event, making it feel abrupt."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

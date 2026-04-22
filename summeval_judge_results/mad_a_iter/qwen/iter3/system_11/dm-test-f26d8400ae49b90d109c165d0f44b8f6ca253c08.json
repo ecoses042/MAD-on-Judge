@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-f26d8400ae49b90d109c165d0f44b8f6ca253c08",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and covers the most critical facts (the offer, the loan clause, and the sponsorship clarification). It scores a 4 on consistency because it truncates the article's additional context regarding Muto's stats, his university graduation, and his personal reaction to the offer. However, under lenient rules, this is not considered a hallucination or a major flaw, as the summary remains strictly grounded in the provided text."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and covers the main points of the article (Chelsea's offer, loan move to Vitesse, sponsorship context). However, it scores a 4 for consistency because it omits significant details present in the source text, such as Muto's recent graduation from Keio University, his specific stats (16 goals in 37 appearances), and his own uncertainty about joining Chelsea. While not hallucinating facts, the omission of these key biographical and statistical elements makes it less complete than a perfect summary."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The lenient judge's assessment is accurate. The summary is well-structured (coherence), grammatically correct (fluency), and focuses on the primary news story (relevance). The score of 4 for consistency is appropriate because the summary omits specific details present in the article, such as Muto's recent university graduation, his specific stats (16 goals/37 appearances), his personal reaction ('honour'), and the potential pre-season tour. However, these omissions are truncations rather than hallucinations or contradictions, so the score should not be lowered further."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. While the summary is fluent and coherent, it suffers from a lack of completeness regarding 'consistency' in terms of information coverage (often conflated with fidelity to the full scope of the source). The strict judge correctly identified that omitting key biographical details like his recent graduation and specific statistics makes the summary less complete than an ideal one. As a lenient evaluator, I do not penalize for missing every single detail if the core narrative is intact, but since the omitted facts are significant (graduation, stats, player's hesitation), I maintain the score of 4 rather than inflating it to 5."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is well-structured and fluent. While it omits specific details like Muto's graduation, stats, and personal quotes (which justifies a consistency score of 4 rather than 5), these are omissions of detail rather than factual errors or hallucinations. Therefore, no further reduction in scores is necessary."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding consistency. While the summary omits specific biographical details (graduation) and statistics found in the article, these are secondary to the core news event (the transfer offer). The summary accurately reflects the main points without introducing hallucinations or contradictions. Therefore, a score of 4 is appropriate as it acknowledges the omission of non-essential details while maintaining high fidelity to the central narrative."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.0,
+      "fluency": 5.0,
+      "relevance": 5.0,
+      "overall_judge": 4.8
+    }
+  }
+}

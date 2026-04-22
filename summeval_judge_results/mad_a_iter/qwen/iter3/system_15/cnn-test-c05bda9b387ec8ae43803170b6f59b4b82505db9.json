@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-c05bda9b387ec8ae43803170b6f59b4b82505db9",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is consistent with the source text and covers key points (release count, demographics, Peshmerga involvement). However, it suffers from poor fluency due to a lack of proper sentence structure and punctuation (it reads like a run-on list of phrases rather than complete sentences). It also omits significant context regarding the humanitarian crisis, ISIS's specific atrocities (slaughter, enslavement), and the international response, which are major components of the source article, slightly impacting relevance."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is consistent with the source text and captures key facts (number released, demographics, Peshmerga involvement). However, it lacks a clear logical flow or introductory context compared to the article's structure, making it feel slightly disjointed. It also omits significant background details like the humanitarian crisis and ISIS's specific actions against Yazidis, which lowers relevance slightly. Fluency is good but could be improved with better sentence transitions."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.8,
+        "adjustment_notes": "Lowered coherence and relevance scores. The summary presents facts in a disjointed list format without transitional phrases or a clear narrative arc (e.g., it jumps from the release to past releases back to reception). While consistent with the text, it fails to synthesize the information into a cohesive paragraph. Relevance was lowered because the summary omits the critical context of *why* this event is significant: the specific atrocities committed by ISIS (slaughter, enslavement, displacement) and the resulting humanitarian crisis mentioned in the source text."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the fluency score from 3 to 2 because the summary is not just a run-on list; it lacks subject-verb agreement and proper sentence structure entirely (e.g., 'more than 200 yazidis... were killed' is a fragment when combined with the next clause without punctuation). I also lowered coherence and relevance slightly. While the strict judge gave high marks for consistency, the summary's fragmented nature makes it hard to follow logically (coherence), and by omitting the context of the humanitarian crisis and international response which constitutes half the article's content, its relevance is lower than a 4."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "Maintained coherence and fluency scores as the strict judge's assessment was accurate regarding the disjointed structure and lack of narrative flow. Consistency remains high as no external facts were introduced. However, I lowered the relevance score from 3 to 2 because the strict judge correctly identified a critical omission: the summary completely ignores the context of ISIS atrocities (slaughter, enslavement, displacement) which constitutes the vast majority of the source text's informational weight. The summary focuses almost exclusively on the release event while treating it as an isolated fact rather than part of the broader humanitarian crisis described in the article."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding fluency and relevance. The summary consists of a series of sentence fragments lacking proper punctuation or conjunctions (e.g., 'more than 200 yazidis... were killed . most of those released...'), which severely impacts readability and grammatical correctness, justifying a score of 2. Regarding coherence, the lack of connecting words makes the logical flow choppy rather than smooth, supporting a low-to-mid score. On relevance, while the summary captures the specific event of the release mentioned in the first paragraph, it completely omits the significant portion of the article detailing the humanitarian crisis, ISIS atrocities, and international response, which constitutes roughly half the source text; thus, a score below 4 is appropriate."
+      }
+    },
+    "final": {
+      "coherence": 3.0,
+      "consistency": 5.0,
+      "fluency": 3.0,
+      "relevance": 2.5,
+      "overall_judge": 3.0
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-e49792c337d3f4c13e22f710efa44cf6a4e59aba",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 2,
+        "overall_judge": 1.8,
+        "rationale_for_score": "The summary contains severe hallucinations and factual errors inconsistent with the source text. Specifically, it claims Tsarnaev was 'sentenced to death' (the article states he is facing sentencing and parents are asking to drop the death penalty), and it nonsensically states he is 'sentenced to last four weeks in the edition of the landmark race,' confusing the duration of the upcoming sentencing phase with a sentence for the defendant. The grammar is also poor."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary contains severe hallucinations and factual errors inconsistent with the source text. Specifically, it claims Tsarnaev was 'sentenced to death' (the article states he is facing sentencing and parents want the penalty dropped), and it nonsensically states he is 'sentenced to last four weeks in the edition of the landmark race,' confusing the duration of the upcoming sentencing phase with the event itself. These are clear failures in consistency and coherence."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 2,
+        "overall_judge": 1.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains severe factual hallucinations (claiming Tsarnaev was already sentenced to death when the text says he is facing sentencing) and nonsensical phrasing ('sentenced to last four weeks in the edition of the landmark race'). These are critical errors that make the summary factually inconsistent with the source and grammatically poor. No leniency is warranted."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The lenient judge's assessment is correct and should be upheld. The summary contains severe hallucinations: it falsely states Tsarnaev was 'sentenced to death' (the article says he was found guilty and sentencing begins) and creates a nonsensical sentence claiming he is 'sentenced to last four weeks in the edition of the landmark race,' which conflates the duration of the upcoming legal phase with the marathon event itself. These are critical consistency errors that cannot be overlooked."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 2,
+        "overall_judge": 1.8,
+        "adjustment_notes": "I agree with the lenient judge's assessment that the summary contains severe factual hallucinations and nonsensical phrasing. Specifically, the summary claims Tsarnaev was 'sentenced to death' when the source text explicitly states he is facing sentencing and the parents are asking to take the death penalty off the table. Additionally, the phrase 'sentenced to last four weeks in the edition of the landmark race' is grammatically broken and factually incorrect (the sentencing lasts four weeks, not Tsarnaev). These are critical errors that make the summary inconsistent with the source and poor in fluency. No leniency is warranted."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The strict judge's assessment is correct and should be upheld. The summary contains severe hallucinations: it falsely states Tsarnaev was 'sentenced to death' (the article explicitly says sentencing begins later) and creates a nonsensical sentence claiming he is 'sentenced to last four weeks in the edition of the landmark race,' which conflates the duration of the upcoming legal phase with the marathon event itself. These are critical consistency errors that cannot be overlooked."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 1.0,
+      "fluency": 2.5,
+      "relevance": 2.0,
+      "overall_judge": 1.9
+    }
+  }
+}

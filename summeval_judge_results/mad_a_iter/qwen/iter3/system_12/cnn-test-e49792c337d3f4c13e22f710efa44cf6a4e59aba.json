@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-e49792c337d3f4c13e22f710efa44cf6a4e59aba",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and consistent with the source text. It captures the main points: Tsarnaev's conviction, the upcoming sentencing, the victims (Martin Richard), and the parents' plea to drop the death penalty. The only minor deduction for relevance is that it omits specific details about the parents' emotional reasoning (e.g., their children's names or the desire to avoid prolonged appeals), but these are secondary to the core message of their plea."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from a significant relevance issue: it omits the core news hook (the parents' specific plea to drop the death penalty in exchange for life without parole). Additionally, while mostly consistent, the phrase 'end the case' is slightly imprecise compared to the article's specific proposal of a deal ('taking the death penalty off the table... waiving all rights'), which could be interpreted as ending the legal process entirely rather than just the sentencing phase. However, it avoids hallucinations."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The lenient judge's assessment is accurate. The summary effectively captures the core narrative: conviction, upcoming sentencing, victim impact, and the specific plea to drop the death penalty. While it omits specific emotional details (like the names of other children or the reasoning about appeals), these are indeed secondary to the main news hook. No harsher score is warranted."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is fluent and coherent but fails to capture the specific 'news hook' of the parents' plea regarding the death penalty exchange, which is the central point of the article. The phrase 'end the case' is also slightly imprecise compared to the specific legal deal proposed in the text. Therefore, I maintain the strict judge's scores."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The summary accurately captures the main news hook (conviction, sentencing start) and the specific plea from the parents to drop the death penalty. While it omits emotional details like the names of other children or the reasoning regarding appeals, these are secondary to the primary information requested. The strict judge's assessment is correct; no harsher score is warranted."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the lenient judge's assessment that the summary is fluent and coherent but lacks the central 'news hook' regarding the specific plea for a death penalty exchange. The phrase 'end the case' is indeed imprecise compared to the text's description of a specific deal (life without parole in exchange for waiving appeals). Therefore, I maintain the strict judge's lower relevance score."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.5,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.5
+    }
+  }
+}

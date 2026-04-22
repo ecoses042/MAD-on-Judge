@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-f5fead94ee884800e84a212cc0edc78b11c4ba9f",
+  "system_name": "system_8",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary incorrectly states that 'Anderlecht are keen to sign' Patoulidis, while the article mentions that Manchester City is interested."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary fails to mention Manchester City's interest and discussions with Anderlecht, which is a key point in the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits the information about Manuel Pellegrini's intentions to build for the future, which is relevant to the context of the signing."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information about Evangelos Patoulidis, including his age, talent, and background."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article without introducing any new facts."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points regarding Patoulidis's talent and his decision to reject a move to Barcelona, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains a repetition of 'Anderlecht' at the beginning, which may confuse readers."
+        },
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks the mention of Manchester City's interest and discussions with Anderlecht, which are important aspects of the article."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 4,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-9afda3cde191a883d8c166ceb5765eb53205d8f4",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, making it difficult to understand the main points."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the phrase 'alexis sanchez is glad' which is misleading; Sanchez's feelings are not mentioned in the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to capture key points such as Wenger's comments on Sanchez's impact and the context of Liverpool's interest."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, such as 'has scored 19 goals in 19 goals'."
+        }
+      ],
+      "provisional_score": 1
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear focus on Alexis Sanchez and his impact at Arsenal, maintaining a logical flow of information regarding his performance and Wenger's comments."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article about Sanchez's goal tally and Wenger's comments without introducing any new facts."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary highlights key points such as Sanchez's goal count and Wenger's thoughts on the player's choice to join Arsenal, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, such as 'alexis sanchez is glad chile forward will be lining up for his side,' which affects readability."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "Some details, such as the mention of the World Cup and Liverpool's interest, are vague and do not provide clear context or significance."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

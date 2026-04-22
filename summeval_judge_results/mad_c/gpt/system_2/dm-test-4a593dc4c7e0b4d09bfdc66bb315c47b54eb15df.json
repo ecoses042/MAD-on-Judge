@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-4a593dc4c7e0b4d09bfdc66bb315c47b54eb15df",
+  "system_name": "system_2",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, jumping abruptly between Henderson's thoughts, the match result, and Manchester City's performance without smooth transitions."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as Henderson's comments on the importance of the match and the contributions of Raheem Sterling and Joe Allen, which are crucial for understanding the context of the game."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as missing articles ('the' before 'season') and inconsistent capitalization of team names."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that Liverpool is four points behind Manchester City without mentioning that City lost their recent match, which is a significant detail."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, outlining Henderson's belief in Liverpool's potential to catch Manchester City and mentioning the recent match result."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, including Henderson's comments and the context of Liverpool's position in the league."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points, such as Henderson's thoughts, the match outcome, and Liverpool's standing in relation to Manchester City."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization and punctuation, which affects its readability and fluency."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

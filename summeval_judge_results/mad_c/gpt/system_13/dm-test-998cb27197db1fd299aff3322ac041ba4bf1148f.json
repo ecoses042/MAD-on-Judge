@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-998cb27197db1fd299aff3322ac041ba4bf1148f",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, jumping between points without smooth transitions."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits key details from the article, such as the specific mention of the match highlights being only 27 seconds long and containing only 14 seconds of action."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "There are grammatical errors, such as 'compling' instead of 'compiling' and missing articles, which disrupt the readability."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary does not adequately cover the most important information, such as the context of the match being a goalless draw and the implications for both teams."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear narrative about the match between Doncaster Rovers and Fleetwood Town, maintaining a logical flow of information."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key aspects of the match, including the lack of excitement and the challenge faced by the media team in compiling highlights."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits the detail about the match ending in a goalless draw, which is a crucial fact from the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, such as 'compiling the match highlights of 0-0 draw' which affects readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

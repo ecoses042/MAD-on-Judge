@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-808a439a5d83fc47baaea934c8779a7ebc62470d",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source text and maintains a logical flow. However, it suffers from poor relevance by repeating the same core information (Clattenburg officiating the derby) multiple times in slightly different ways without adding new context or synthesizing the full picture provided in the article (e.g., team form, other officials). It also fails to capture the nuance regarding the specific red cards sent off this season versus the total count mentioned in the first sentence."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is well-structured, fluent, and consistent with the source text. It captures the main news (Clattenburg's appointment) and provides relevant context about his recent red cards and Kompany's suspension. It receives a score of 4 instead of 5 for relevance because it omits other significant details from the article, such as the current form of both teams, the specific players Clattenburg sent off in the Premier League (Tyler Blackett, Luke Shaw), and the match context regarding Chelsea finishing second."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary repeats the core fact (Clattenburg officiating) three times in slightly different sentences without synthesizing the information or including other key details like team form or assistant referees. This redundancy significantly impacts relevance and overall quality, so I maintain the lower scores."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The lenient judge's assessment is accurate. The summary effectively covers the primary news (Clattenburg's appointment) and necessary context regarding his red card history and Kompany's suspension. While it omits secondary details like team form or specific Premier League incidents mentioned in the article, this does not constitute a failure of relevance for a short summary; rather, it represents a standard selection of key facts. Therefore, no harsher penalty is warranted."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding the redundancy and lack of synthesis in the summary. The summary repeats the core fact (Clattenburg officiating) three times without adding value or covering other key details like team form or assistant referees mentioned in the source text. Therefore, I maintain the lower scores for relevance and overall quality."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The strict judge's assessment is accurate. The summary successfully captures the main news (Clattenburg's appointment) and essential context regarding his red card history and Kompany's suspension. While it omits secondary details like team form or specific match results mentioned in the article, this is acceptable for a short summary and does not constitute a failure of relevance. No harsher penalty is warranted."
+      }
+    },
+    "final": {
+      "coherence": 4.5,
+      "consistency": 5.0,
+      "fluency": 4.5,
+      "relevance": 3.5,
+      "overall_judge": 4.4
+    }
+  }
+}

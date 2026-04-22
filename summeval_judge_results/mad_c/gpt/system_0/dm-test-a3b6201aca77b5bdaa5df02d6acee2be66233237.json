@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-a3b6201aca77b5bdaa5df02d6acee2be66233237",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, making it difficult to understand the sequence of events."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that Dawn was found to be lying, which contradicts the source document where it is Jamie who was found to be lying."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as improper punctuation and awkward phrasing, which hinder readability."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary includes trivial details, such as the mention of both Jamies, without focusing on the emotional impact of the situation."
+        }
+      ],
+      "provisional_score": 1
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a sequence of events related to Dawn's experience on the show, maintaining a logical flow from her appearance to the revelation of the theft."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the main events and characters involved, such as Dawn, Jamie, and the context of the lie detector test."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, such as 'was found to be lying after taking a test' which is unclear."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary includes some trivial details, such as the mention of the partner's name being the same as Dawn's, which does not add significant value to the main narrative."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 1,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 1.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

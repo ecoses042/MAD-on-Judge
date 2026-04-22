@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-b1c3fc03a2b74cf4c79844c1fe2fdce70a8a436e",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, presenting disjointed facts without clear connections between them."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that the Italian coast guard fears 400 migrants could be missing, while the article indicates that this is a fear expressed by Save the Children, not the coast guard."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits important context regarding the increase in migrant rescues and the circumstances surrounding the capsizing, which are crucial to understanding the situation."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary uses lowercase letters at the beginning of sentences, which is grammatically incorrect and affects readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the migrant situation, highlighting the concerns of the Italian coast guard and the tragic events at sea."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most critical points from the article, including the potential missing migrants, the capsizing incident, and the death toll, which are central to the overall narrative."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that the Italian coast guard fears 400 migrants are missing, while the article attributes this concern to Save the Children."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper sentence structure and capitalization, making it less readable and fluent."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

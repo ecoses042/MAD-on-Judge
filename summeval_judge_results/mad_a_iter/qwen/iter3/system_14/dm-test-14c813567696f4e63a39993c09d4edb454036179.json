@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-14c813567696f4e63a39993c09d4edb454036179",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 2,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.2,
+        "rationale_for_score": "The summary contains a severe hallucination where it merges two distinct lines of rap lyrics into one nonsensical sentence ('when our family and friends would take longer than the two months'). The source text clearly separates these thoughts: Melissa raps about family asking questions, while Jesse raps about the conception timeline. This creates a factual inconsistency and breaks coherence. Additionally, the summary omits key details like the video's view count placement and the specific context of the 'two months' line."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 1,
+        "relevance": 2,
+        "overall_judge": 1.5,
+        "rationale_for_score": "The summary fails the consistency criterion severely due to hallucinations and misattributions of facts not present in the source text. Specifically: 1) It incorrectly attributes the quote 'When our family and friends... started asking questions about parenthood' to Melissa, whereas the source explicitly states Jesse raps that line. 2) It claims the video was viewed over 1.7 million times, but the source places this statistic in a separate sentence describing the clip generally, not as part of the specific rap lyrics quoted. 3) The summary fragments the text into disjointed sentences without proper punctuation or capitalization, resulting in poor fluency and coherence."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 1,
+        "relevance": 2,
+        "overall_judge": 1.5,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains severe factual errors (hallucinations) regarding who rapped specific lines and misattributes the view count statistic as part of the lyrics. Additionally, the text is fragmented with poor punctuation and capitalization, making it incoherent and difficult to read. No score adjustment was necessary."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 2,
+        "overall_judge": 1.8,
+        "adjustment_notes": "The lenient judge's assessment was too generous given the severity of the errors. The summary suffers from a critical consistency failure by merging two distinct quotes attributed to different people (Melissa and Jesse) into a single sentence, creating a hallucination not present in the source text. This also severely impacts coherence, as the resulting sentence is grammatically broken and logically confusing ('when our family... would take longer than the two months'). Furthermore, the summary fails fluency standards by including raw, unformatted lyrics with missing punctuation and capitalization (e.g., 'livin ', 'wed ,'), making it difficult to read. The relevance score was lowered because the summary omits the specific attribution of the 'two months' quote to Jesse, which is a key detail in the source text."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 1,
+        "relevance": 2,
+        "overall_judge": 1.2,
+        "adjustment_notes": "The summary is severely flawed. It contains multiple hallucinations: it incorrectly attributes the view count (1.7 million) as part of the lyrics, misquotes Jesse's line about conception time by omitting the subject ('Jesse raps that the couple thought...'), and fails to mention the sonogram or the reason for the video. Furthermore, the text is grammatically broken with missing punctuation and capitalization, making it incoherent. The lenient judge correctly identified these issues; no score increase is warranted."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 2,
+        "overall_judge": 1.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a critical hallucination where it merges two distinct quotes from different speakers (Melissa and Jesse) into one sentence, attributing Jesse's line to Melissa. This is a severe consistency failure. Additionally, the text includes raw lyrics with missing punctuation and capitalization, resulting in poor fluency and coherence. The relevance is also low due to the omission of key attribution details."
+      }
+    },
+    "final": {
+      "coherence": 1.5,
+      "consistency": 1.0,
+      "fluency": 1.5,
+      "relevance": 2.0,
+      "overall_judge": 1.5
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-b1c3fc03a2b74cf4c79844c1fe2fdce70a8a436e",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, jumping between points without connecting them effectively."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately presents the information about the capsized ship as confirmed by Save the Children, while the article states that the Italian coast guard cannot confirm it."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits critical details such as the number of migrants rescued and the context of the rising migrant crisis, which are essential for understanding the situation."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'can not' should be written as 'cannot' for better fluency."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the migrant situation, starting with the capsizing incident and moving to the broader context of migrant arrivals."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on key points such as the capsizing incident, the response from the Italian coast guard, and the overall increase in migrant arrivals, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the concerns raised about the missing migrants, which is a significant aspect of the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'says a ship carrying 550 people capsized' could be more clearly stated as 'reported that a ship carrying 550 people had capsized' for better fluency."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 4,
+      "relevance": 3,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

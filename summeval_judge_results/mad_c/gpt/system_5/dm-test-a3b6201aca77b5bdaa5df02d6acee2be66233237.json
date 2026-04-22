@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-a3b6201aca77b5bdaa5df02d6acee2be66233237",
+  "system_name": "system_5",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, jumping abruptly between points without proper transitions."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the detail of 'long-term chum, convicted burglar Jamie' without clarifying the relationship dynamics, which could mislead readers about the context."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The use of commas and spacing around names and phrases is inconsistent and disrupts the readability of the summary."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention the emotional impact on Dawn and the significance of the money for the gravestone, which are key points in the original article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with Dawn's accusation and leading to the revelation from the lie detector test."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the main points from the article, including the involvement of the lie detector test and the amount of money stolen."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key elements of the story, such as the theft of the money and the emotional impact on Dawn."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as inconsistent spacing and punctuation, which affect readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

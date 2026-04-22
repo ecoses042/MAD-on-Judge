@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-18243373494a1722ddcd162ec67b63dd749633ab",
+  "system_name": "system_6",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow of information, as it abruptly shifts from discussing the match outcome to a quote from De Sanctis without proper transition."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits significant details such as the context of Napoli's winless streak, the security measures taken for the match, and the absence of key players for Roma, which are important for understanding the match's significance."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains inconsistent capitalization (e.g., 'roma' instead of 'Roma' and 'napoli' instead of 'Napoli'), which affects its readability."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the specific score of the match, which is a critical detail that should be included for consistency with the source document."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, starting with Roma's win and highlighting key moments such as Pjanic's goal and De Sanctis's performance."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important aspects of the match, including the significance of the victory for Champions League places and the context of Roma's winless streak."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits details about Napoli's extended winless streak and the security measures taken for the match, which are relevant to the overall context."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as inconsistent capitalization and punctuation, which affect its readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-14c813567696f4e63a39993c09d4edb454036179",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 1,
+        "overall_judge": 1.5,
+        "rationale_for_score": "The summary is extremely poor. It fails consistency by truncating sentences mid-stream (e.g., 'not a pair' without context) and omitting the main subject (the pregnancy announcement). It lacks relevance as it ignores the core news event entirely, focusing only on disjointed quotes. Fluency is low due to the fragmented nature of the text."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is very poor in fluency because it consists of disjointed sentence fragments that do not form a coherent paragraph (e.g., starting with a quote mark and ending abruptly). While the content is consistent with the source text (no hallucinations), the lack of grammatical structure and complete sentences makes it difficult to read. It also fails relevance by omitting the main news hook (the pregnancy announcement) and only including minor details."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 1,
+        "relevance": 1,
+        "overall_judge": 1.0,
+        "adjustment_notes": "The strict judge's assessment was accurate but perhaps slightly generous regarding the 'coherence' score of 2. The summary is not just poor; it is functionally broken. It truncates sentences mid-stream ('not a pair'), completely omits the main subject (the pregnancy announcement), and fails to provide any logical flow or context. It consists almost entirely of disjointed quotes without attribution or setup. Therefore, I have lowered the coherence score from 2 to 1 to reflect that it is incoherent. All other scores remain at 1 as per the strict judge's valid criticisms."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 1,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The lenient judge's scores were too high given the severity of the summary's flaws. The text is not a summary but a collection of disjointed sentence fragments and quote snippets that lack grammatical structure, making it nearly unreadable (Fluency: 1). It fails to present a logical flow or organize information (Coherence: 2). While the facts included are consistent with the source, the summary completely misses the main point—the pregnancy announcement—focusing only on trivial details like view counts and specific lyrics (Relevance: 2). The consistency score remains 4 because no hallucinations were introduced."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 1,
+        "relevance": 1,
+        "overall_judge": 1.0,
+        "adjustment_notes": "The summary is functionally broken. It truncates a sentence mid-stream ('not a pair'), completely omits the main subject (the pregnancy announcement), and consists of disjointed quotes without attribution or context. The lenient judge's assessment to lower coherence from 2 to 1 was correct; no score increase is warranted as the summary fails all criteria."
+      },
+      "lenient": {
+        "coherence": 1,
+        "consistency": 5,
+        "fluency": 1,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The strict judge was correct to lower the scores significantly. The text is not a summary but a disjointed collection of sentence fragments and quote snippets that lack grammatical structure (Fluency: 1). It fails to present a logical flow or organize information (Coherence: 1). While the facts included are consistent with the source, the summary completely misses the main point—the pregnancy announcement—focusing only on trivial details like view counts and specific lyrics (Relevance: 1). I have lowered the consistency score from 4 to 5 because while there are no hallucinations, the 'summary' is so fragmented that it barely functions as a coherent unit of information, though strictly speaking, every word is in the source."
+      }
+    },
+    "final": {
+      "coherence": 1.0,
+      "consistency": 3.0,
+      "fluency": 1.0,
+      "relevance": 1.0,
+      "overall_judge": 1.5
+    }
+  }
+}

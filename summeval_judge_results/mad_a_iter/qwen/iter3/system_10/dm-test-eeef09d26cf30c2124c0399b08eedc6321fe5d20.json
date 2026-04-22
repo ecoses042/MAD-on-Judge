@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-eeef09d26cf30c2124c0399b08eedc6321fe5d20",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source text and flows logically based on the first few sentences of the article. However, it suffers from poor relevance because it completely ignores the majority of the provided text, which contains significant details about Neymar's performance against Chile, Barcelona's La Liga standing, and their upcoming match against Celta Vigo. By truncating the summary after the basketball event, it fails to capture the full scope of the source document."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is consistent with the source text and flows logically. However, it only covers the first three sentences of the article, omitting significant details about Real Madrid's standing, Neymar's recent international win against Chile, and the upcoming match against Celta Vigo. While lenient rules allow for a score >= 3, the omission of half the content makes it an incomplete summary."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is factually consistent and fluent but suffers from a critical flaw in relevance: it truncates the content after the first paragraph of the source text, ignoring significant details about Neymar's international match against Chile, Barcelona's La Liga standing, and their upcoming fixture. Therefore, no score reduction is necessary."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "The lenient judge's assessment is accurate. The summary strictly adheres to the first three sentences of the source text and omits significant information regarding Real Madrid's standing, Neymar's international win against Chile, and the upcoming match against Celta Vigo. Since the goal is to refine scores based on actual content rather than debate, I accept the lenient judge's points for relevance (3) and overall (4.0). The summary is coherent, consistent, and fluent, but its brevity results in low relevance due to missing key context from the article."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "No changes made. The lenient judge correctly identified that while the summary is factually consistent and fluent, it suffers from a critical relevance flaw by truncating the source text after the first paragraph, omitting key details about Neymar's international match, La Liga standings, and upcoming fixtures. The strict evaluation of Relevance (3) was appropriate."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "No changes needed. The strict judge correctly identified that while the summary is grammatically perfect and logically structured (high coherence/fluency), it fails to capture the broader context of the article, specifically Real Madrid's league standing, Neymar's international performance, and upcoming fixtures. Therefore, the relevance score of 3 is justified as the summary covers only a small fraction of the source text's key information."
+      }
+    },
+    "final": {
+      "coherence": 4.5,
+      "consistency": 5.0,
+      "fluency": 4.5,
+      "relevance": 3.0,
+      "overall_judge": 4.2
+    }
+  }
+}

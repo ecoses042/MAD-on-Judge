@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-c16c9fa34ccae7e2b9e29c3988ccb74974c4b3c0",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 1.8,
+        "rationale_for_score": "The summary fails the consistency criterion severely because it ends with 'carlos tevez 17', which is a hallucinated fact (likely misinterpreting the source text's list of top scorers where Tevez has 17 goals) presented as part of the narrative. This introduces information not present in the article's main story and creates a nonsensical ending. The coherence is poor due to this abrupt, unconnected fragment. Relevance is low because the summary includes trivial details (the goal count) while omitting key context like the contract expiration date or the club president's specific demands."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.8,
+        "rationale_for_score": "The summary suffers from a severe coherence and relevance issue due to the final sentence 'carlos tevez 17'. The number '17' appears in the source text as Tevez's goal count for the season, but including it as a standalone fragment at the end of the summary is nonsensical and hallucinates a meaning that isn't there. This breaks the logical flow and makes the summary confusing. While the first two sentences accurately reflect the article, the inclusion of this disjointed fragment significantly lowers the overall quality."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 1.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary ends with 'carlos tevez 17', which is a hallucination/misinterpretation of the source text's list of top scorers (Tevez has 17 goals), presented as a narrative fact. This violates consistency and severely damages coherence. It also fails relevance by including trivial data while omitting key context like the contract termination requirement."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 1.8,
+        "adjustment_notes": "The lenient judge's scores were too high given the severe flaws in the summary. The final sentence 'carlos tevez 17' is a critical failure: it introduces a number without context (hallucinating meaning or simply truncating data), making the summary nonsensical and grammatically broken. This drastically impacts coherence, fluency, and relevance. Consistency is also penalized because presenting a raw number as a standalone fact implies a specific metric not clearly defined in that fragment, violating the 'no hallucinated facts' rule relative to a readable summary. The lenient judge gave a 2 for consistency and 2 for relevance; I agree these are too generous given the disjointed nature of the text."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 1.8,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary ends with 'carlos tevez 17', which is a hallucination/misinterpretation of the source text's list of top scorers (Tevez has 17 goals), presented as a narrative fact. This violates consistency and severely damages coherence. It also fails relevance by including trivial data while omitting key context like the contract termination requirement."
+      },
+      "lenient": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 1,
+        "relevance": 1,
+        "overall_judge": 1.0,
+        "adjustment_notes": "The strict judge was correct to penalize heavily. The final sentence 'carlos tevez 17' is a catastrophic failure of fluency and coherence, rendering the summary broken and nonsensical. It appears to be a truncation error or a hallucination that introduces an undefined number. This flaw invalidates the summary's utility entirely, making low scores across all categories justified."
+      }
+    },
+    "final": {
+      "coherence": 1.5,
+      "consistency": 1.0,
+      "fluency": 2.0,
+      "relevance": 1.0,
+      "overall_judge": 1.4
+    }
+  }
+}

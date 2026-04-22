@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-8b51a10370a1219137e231192e65b9cd52238ea6",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, jumping between unrelated points without proper transitions."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that Stokes broke his neck, while the original article mentions he broke his wrist."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to capture key points about Stokes' aggression management and his importance to the team, focusing instead on trivial details."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as incomplete sentences and awkward phrasing, making it difficult to read."
+        }
+      ],
+      "provisional_score": 1
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear focus on Ben Stokes and his reputation within the England cricket team, establishing a central theme."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary maintains consistency with the source by mentioning Stokes' reputation and his past incident at the Kensington Oval."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'broke his neck' instead of 'broke his wrist,' which affects readability."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary lacks key points, such as the importance of managing Stokes' aggression and the context of his return to the team."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 1,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 1.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

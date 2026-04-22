@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-1747dcd6a007ee97954b6b10cde549bf82f6a4eb",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source text and covers the two main points (partnership details and fees). However, it suffers from poor relevance because it completely omits significant context provided in the article, such as Chipotle's history of turning down other offers, the specific political figures (Rubio/Clinton) visiting the restaurants, and the broader market competition from other franchises like Starbucks and Taco Bell. Additionally, the formatting is slightly rough with inconsistent spacing around numbers and punctuation."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is well-structured, fluent, and consistent with the source text. It captures the two most critical pieces of information: the partnership with Postmates to enter the delivery market and the specific financial details (9% service charge and $5 minimum fee). It receives a score of 4 instead of 5 only because it omits other significant context from the article, such as Chipotle's recent political celebrity endorsements (Rubio/Clinton) and the fact that they previously rejected similar offers, which were substantial parts of the source text."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is factually accurate and coherent but fails significantly on relevance by omitting major contextual details (political figures, competitor moves, history of rejections) that constitute a large portion of the source text. The formatting issues noted (spacing) also prevent a higher fluency score."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate: the summary effectively captures the primary news (partnership and costs) but omits significant secondary details like political celebrity endorsements and previous rejections of offers found in the source text. Therefore, a relevance score of 4 is appropriate."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "Adjusted relevance score down from 4 to 3. While the summary accurately covers the primary news (partnership and costs), the strict judge's criticism regarding omitted significant secondary details is valid. The source text devotes substantial space to political celebrity endorsements (Marco Rubio, Hillary Clinton) and a list of other franchises entering the market. These are major components of the article's narrative that the summary completely ignores, making the omission more severe than initially assessed."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the fluency score from 4 to 3 due to significant formatting issues (excessive spaces around numbers and punctuation) which hinder readability. I also lowered the relevance score from 3 to 2 because the summary omits a vast amount of the source text's content, including details about other competitors (Starbucks, Taco Bell, etc.), political figures (Clinton, Rubio), and Chipotle's history with delivery services, making it feel like only the first two paragraphs were summarized while ignoring the rest of the article."
+      }
+    },
+    "final": {
+      "coherence": 4.5,
+      "consistency": 5.0,
+      "fluency": 4.0,
+      "relevance": 2.5,
+      "overall_judge": 3.8
+    }
+  }
+}

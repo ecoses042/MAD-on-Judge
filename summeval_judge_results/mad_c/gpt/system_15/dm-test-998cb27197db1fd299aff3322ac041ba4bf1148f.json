@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-998cb27197db1fd299aff3322ac041ba4bf1148f",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, making it difficult to follow."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the idea of Fleetwood Town 'eyeing the beach' without context, which is not clearly supported by the original text."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "There are grammatical errors, such as 'compling' instead of 'compiling' and awkward phrasing."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary includes trivial details like the media team's challenge without focusing on the key points of the match."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, mentioning the match between Doncaster and Fleetwood Town, the outcome of the game, and the context of the teams' standings."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary captures the key points of the article, including the goalless draw and the challenges faced by Doncaster's media team."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, such as 'compiling the match' which is incomplete and unclear."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces phrases like 'eyeing the beach' without proper context, which may confuse readers as it lacks clarity on what it refers to."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-6721edf88c95f480a4db2c63649dbb03736aeadf",
+  "system_name": "system_6",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow and is poorly structured, repeating information unnecessarily and failing to connect the events in a coherent manner."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the idea that Guffick asked pupils to change their answers without mentioning that he claimed it was to make them more legible, which is a significant detail from the source."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'the the' and inconsistent spacing around hyphens, which detracts from readability."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key points such as the investigation, the annulment of the school's SATs results, and the consequences faced by Guffick, which are crucial to understanding the full context."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events regarding Ian Guffick's actions related to the SATs exam."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article without introducing any new facts."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key actions taken by Guffick that led to the investigation and the annulment of the SATs results."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, such as 'the the' and inconsistent spacing around punctuation."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "tie",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

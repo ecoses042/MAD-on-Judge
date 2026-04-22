@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-2c6695b438980783754f7db28129ec2fbb3e6e21",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is consistent with the source text and covers key facts (identity, arrest, charges). However, it suffers from severe fluency issues due to poor capitalization and punctuation (e.g., 'kevin rebbie', 'a pennsylvania man'). More critically, it fails the relevance criterion by being a near-verbatim copy of the first two sentences of the article without adding any new information or synthesis. It completely omits significant details present in the source, such as the specific nature of the abuse (molesting while sleeping), the number of videos found (41), and the victim's age at the time of the initial crimes, making it an incomplete summary."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is well-structured, grammatically correct, and strictly consistent with the source text without hallucinations. It captures the key facts (arrest, victim age, charges). It receives a score of 4 instead of 5 solely because it omits specific details present in the article, such as the duration of the abuse starting at age nine, the number of videos found, and the bail amount, though this is acceptable for a summary."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate. The summary is well-structured and consistent with the source text. The deduction in relevance is justified because the summary omits significant details present in the article (e.g., the specific timeline of abuse starting at age nine, the count of videos found, and the bail amount), which are key facts in a news report about such a serious crime."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I lowered the coherence score because the summary is repetitive (stating the arrest and identity twice in slightly different ways) rather than synthesizing information into a logical flow. I significantly lowered the fluency score from 3 to 2 due to the complete lack of capitalization for names, locations, and proper nouns, as well as missing punctuation between sentences, which makes it difficult to read. I drastically lowered the relevance score from 2 to 1 because the summary is essentially a copy-paste of the first two paragraphs of the source text without any summarization or synthesis; it fails to condense the information or highlight the most critical details (like the specific nature of the abuse or the volume of evidence) effectively, instead just repeating the lead-in facts."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The strict judge's assessment is accurate. While the summary is well-structured and fluent, it omits significant factual details from the source text (specific timeline of abuse starting at age nine, number of videos found, bail amount) which are crucial for a complete news report on such a serious crime. Therefore, the relevance score of 4 is justified."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 1,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding fluency and relevance. The summary fails basic grammatical standards (no capitalization for names/places, no punctuation between sentences), making it unreadable (Fluency: 1). It is also not a summary but a direct copy-paste of the first two paragraphs of the source text, failing to synthesize or condense information (Relevance: 1). Coherence is low because the repetition of the arrest details creates a disjointed flow rather than a logical progression. Consistency remains high as no external facts are introduced."
+      }
+    },
+    "final": {
+      "coherence": 3.5,
+      "consistency": 5.0,
+      "fluency": 3.0,
+      "relevance": 2.5,
+      "overall_judge": 3.4
+    }
+  }
+}

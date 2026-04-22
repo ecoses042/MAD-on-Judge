@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-a02e362c5b8f049848ce718b37b96117485461cf",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, jumping between unrelated points without clear connections."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits key details about the smoke's journey to the Pacific Northwest and its effects on the sunsets, which are crucial for understanding the context."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'the blaze have destroyed' contains a grammatical error; it should be 'the blaze has destroyed'."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention the atmospheric effects that caused the intense red sunsets, which is a significant aspect of the article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear focus on the cause of the sunsets, linking Tim Durkan's observation to the wildfires in Siberia."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding the origin of the fires and their impact on the region."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'the blaze have destroyed' which should be 'the blaze has destroyed'."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details about the atmospheric effects on the sunsets and the broader impact of the smoke on air quality."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

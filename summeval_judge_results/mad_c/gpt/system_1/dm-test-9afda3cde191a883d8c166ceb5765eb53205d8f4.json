@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-9afda3cde191a883d8c166ceb5765eb53205d8f4",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, jumping between topics without proper transitions."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key points, such as Sanchez's impact at Arsenal and Wenger's comments on his qualities, which are crucial to understanding the significance of Sanchez's choice."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as missing punctuation and awkward phrasing, making it less readable."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the idea of Sanchez's selection of clubs but does not clarify that he ultimately chose Arsenal, which could confuse readers."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear structure by introducing Wenger's uncertainty about Sanchez's choice and then discussing the context of Liverpool's interest."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding Sanchez's selection of clubs and the potential leverage Liverpool could have used."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on key points such as Sanchez's choice and the implications of Liverpool's interest, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as missing punctuation and awkward phrasing, which affect readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 4,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 3.2,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

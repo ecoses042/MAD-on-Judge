@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-2c6695b438980783754f7db28129ec2fbb3e6e21",
+  "system_name": "system_7",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, as it jumps from the arrest to the girl's discovery of the camera without adequately connecting the events."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits critical details such as the nature of the charges against Rebbie, the duration of the abuse, and the context of the investigation, which are essential for understanding the severity of the situation."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the specific ages involved in the abuse, which is a significant detail in the original article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary uses lowercase letters for names and places, which is not standard in English writing and affects readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with the arrest of Kevin Rebbie and leading into the discovery of the hidden camera and the subsequent investigation."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the case, including the arrest, the victim's discovery of the camera, and the nature of the evidence found."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits important details about the charges against Rebbie and the context of the abuse, which are critical to understanding the severity of the situation."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization and punctuation, making it less readable and less formal."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

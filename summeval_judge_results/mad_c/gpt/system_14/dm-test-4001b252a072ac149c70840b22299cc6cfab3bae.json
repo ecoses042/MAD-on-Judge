@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-4001b252a072ac149c70840b22299cc6cfab3bae",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, as it jumps between topics without proper transitions."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key points, such as Falcao's struggles at Manchester United and the comments from Nabil Dirar, which are crucial for understanding the context of his situation."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention Falcao's serious knee injury, which is a significant factor in his performance and should be included for consistency with the source."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as the lack of proper capitalization at the beginning of sentences and awkward phrasing."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with Falcao's move to Manchester United and mentioning his previous unhappiness in France."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding Falcao's loan move and the financial implications of a permanent transfer."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of Falcao's loan situation and his feelings about his time in France, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization and punctuation, making it less readable and fluent."
+        },
+        {
+          "criterion": "coherence",
+          "reason": "The summary does not include the context of Falcao's struggles at Manchester United or the opinion of Nabil Dirar, which are important for understanding the full picture."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

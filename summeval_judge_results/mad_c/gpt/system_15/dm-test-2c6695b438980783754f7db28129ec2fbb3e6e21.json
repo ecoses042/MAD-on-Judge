@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-2c6695b438980783754f7db28129ec2fbb3e6e21",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, jumping between points without proper transitions."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits critical details about the nature of the charges and the extent of the abuse, which are essential for understanding the severity of the situation."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as missing verbs in sentences, making it awkward to read."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention the number of videos found or the specific nature of the content, which is crucial to the case."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with the discovery of the hidden camera and leading to the arrest and charges against Kevin Rebbie."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, including the age of the victim, the nature of the charges, and the context of the investigation."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the case, such as the discovery of the camera, the allegations of abuse, and the charges faced by Rebbie."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, such as 'he allegedly sexually abusing a girl' which should be 'he allegedly sexually abused a girl'."
+        },
+        {
+          "criterion": "coherence",
+          "reason": "The summary could benefit from better organization, as it repeats the age of the victim and the discovery of the camera without clear transitions."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "tie",
+        "consistency": "tie",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

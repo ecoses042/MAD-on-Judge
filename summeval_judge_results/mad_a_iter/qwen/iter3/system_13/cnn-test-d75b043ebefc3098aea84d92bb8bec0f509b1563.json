@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-d75b043ebefc3098aea84d92bb8bec0f509b1563",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and consistent with the source text. It accurately captures the key facts regarding the casualties, location, and the militant group's claims. A minor deduction on relevance is given because it omits other significant details from the article, such as the death of eight border guards, the specific identity of the militant group (Jaish al Adal), and Pakistan's response, though these are not hallucinations."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is factually consistent with the source text and grammatically fluent. However, it suffers from a severe relevance flaw by omitting the primary event: the death of eight Iranian border guards. By focusing exclusively on the militants' casualties and the group's claims, the summary fails to capture the main news hook of the article, reducing its overall quality significantly."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is factually consistent and grammatically fluent, but it critically fails on relevance by omitting the primary event (the death of eight Iranian border guards) which constitutes the main news hook of the article. Focusing only on the militants' casualties and the group's claims renders the summary incomplete regarding the source text's most important information."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is grammatically correct and logically structured (coherence/fluency). It strictly adheres to the facts presented in the article without adding external information (consistency). A minor deduction on relevance is appropriate because the summary omits significant context provided in the source text, specifically the death of eight border guards, the group's history/targets, and Pakistan's official response, focusing only on the immediate event and the group's claims."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No score changes were necessary. The lenient judge's assessment of 'relevance: 2' is accurate because the summary completely omits the primary event (the death of eight Iranian border guards), which is the main news hook of the article. By focusing only on the militants' casualties and the group's claims, the summary fails to cover the most important information from the source text."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary is grammatically correct and logically structured (coherence/fluency). It strictly adheres to the facts presented in the article without adding external information (consistency). A minor deduction on relevance is appropriate because the summary omits significant context provided in the source text, specifically the death of eight border guards, the group's history/targets, and Pakistan's official response, focusing only on the immediate event and the group's claims."
+      }
+    },
+    "final": {
+      "coherence": 4.5,
+      "consistency": 5.0,
+      "fluency": 4.5,
+      "relevance": 3.0,
+      "overall_judge": 3.9
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-4761dc6d8bdf56b9ada97104113dd1bcf4aed3f1",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is factually consistent with the source text but suffers from severe relevance issues as it only covers the first two sentences of the article while completely ignoring the significant scientific findings regarding Varvara's unexpected breeding grounds and potential reclassification as an eastern gray whale. Additionally, the fluency score is lowered due to the inclusion of raw LaTeX-style formatting artifacts ('-lrb-', '-rrb-') which makes the text unnatural and difficult to read."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source and well-structured (coherence/consistency). However, it only covers the first half of the article, omitting significant details about the whale's specific route, the scientific implications regarding eastern vs. western gray whales, and the expert quotes. While lenient rules allow for partial coverage, the omission of the main scientific discovery makes relevance average."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is factually consistent but fails significantly on relevance by omitting the crucial scientific implications (potential reclassification of the whale species) and suffers from fluency issues due to the inclusion of raw formatting artifacts ('-lrb-', '-rrb-'). No score reduction was necessary as the strict evaluation accurately identified these flaws."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "The summary is factually consistent and well-structured (Coherence/Consistency/Fluency = 5). The lenient judge correctly identified that the summary only covers the first half of the article, omitting the specific route, scientific implications regarding eastern vs. western gray whales, and expert quotes. Since these are significant portions of the source text, the relevance score remains low (3) as the summary fails to cover the key points of the full article."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment that no score reduction was necessary; in fact, I slightly lowered my initial strict scores to align with their accurate identification of flaws. The summary is consistent (5) as it only contains facts from the text. However, fluency is poor (2) due to the inclusion of raw formatting artifacts ('-lrb-', '-rrb-') which break readability. Relevance is critically low (1) because the summary completely omits the main scientific discovery regarding the whale's potential species reclassification and its origin, focusing only on the record-breaking distance. Coherence is reduced (3) because the summary feels incomplete without the context of *why* this record matters."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I agree with the strict judge's assessment that the summary is factually accurate and well-written (Coherence/Consistency/Fluency = 5). However, I lower the overall score slightly from 4.5 to 4.0 because the relevance issue is more severe than initially thought. The summary covers only the first sentence of the source text's narrative arc, completely ignoring the specific route taken, the surprising discovery about breeding areas, the potential reclassification of the whale species, and the conservation implications regarding the endangered western gray whales. Since these constitute the vast majority of the article's content, a score of 3 for relevance is justified, which pulls the overall average down."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 5.0,
+      "fluency": 3.5,
+      "relevance": 2.0,
+      "overall_judge": 3.2
+    }
+  }
+}

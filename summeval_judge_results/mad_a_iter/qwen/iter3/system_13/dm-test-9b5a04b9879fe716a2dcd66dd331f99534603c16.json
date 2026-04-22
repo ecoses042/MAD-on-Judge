@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-9b5a04b9879fe716a2dcd66dd331f99534603c16",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and captures the main points of the article (Katter's accusation, his personal experience with racism, and Gordon's situation). It is slightly penalized on consistency because it omits the specific detail that Gordon was accused of 'withholding his criminal history,' which was a key part of the original text explaining why he quit. However, given the lenient rules to give benefit of the doubt and avoid penalizing for missing minor details unless they are hallucinations, the score remains high."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from a significant relevance flaw: it omits the critical context that Billy Gordon was accused of domestic violence AND withholding his criminal history, which explains why Katter felt he could sympathize with Gordon's position. By omitting the 'withholding criminal history' detail, the summary presents an incomplete picture of the controversy. Additionally, while mostly consistent, the phrasing 'forced to quit after he was recently accused' slightly understates the severity implied by the source text regarding the specific combination of accusations."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The summary is fluent and coherent, capturing the main narrative arc: Katter's controversial statement, his defense based on personal experience, and the context of Gordon's departure. The lenient judge correctly identified that the omission of 'withholding his criminal history' as a reason for Gordon quitting is a minor detail rather than a hallucination or major inconsistency, warranting only a slight penalty (4/5) rather than a harsher one. No changes to scores are necessary."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is grammatically correct and flows well (Fluency/Coherence), but it fails to capture the full context of the controversy by omitting that Billy Gordon withheld his criminal history alongside the domestic violence accusation. This omission significantly impacts Relevance, as Katter's sympathy is framed around the specific circumstances of Gordon's exit. Therefore, I maintain the lower relevance score and do not increase the overall rating."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The strict judge's assessment is accurate. The summary effectively captures the main narrative arc (Katter's statement, his defense, and Gordon's context). While it omits the detail about 'withholding criminal history,' this is a minor omission rather than a hallucination or major inconsistency, justifying the slight deduction in consistency. No further score adjustments are needed."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding Relevance. While the summary is grammatically sound and coherent, it omits a critical detail from the source text: that Billy Gordon withheld his criminal history in addition to being accused of domestic violence. This omission changes the context of Katter's sympathy and the nature of the controversy, making the summary less relevant to the full story than a score of 3 might suggest. Therefore, I maintain the lower relevance score and do not increase the overall rating."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.0,
+      "fluency": 5.0,
+      "relevance": 4.0,
+      "overall_judge": 4.5
+    }
+  }
+}

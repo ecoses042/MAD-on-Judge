@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-b8b6e729fff27c4eef87887e61d3448de9c063f6",
+  "system_name": "system_9",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, jumping abruptly from Musk's tweet to the cargo spacecraft without proper context."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details about the mission's challenges, the significance of the landing attempt, and the contents of the Dragon spacecraft, which are crucial for understanding the overall context."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains a grammatical error with the phrase 'the rocket is carrying,' which should be in the past tense to match the context of the article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information by mentioning the rocket's landing attempt and its cargo mission to the International Space Station."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article regarding the rocket's landing status and the purpose of the Dragon spacecraft."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the launch and the mission of the Dragon spacecraft, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains a grammatical error with the phrase 'the rocket landed, but tipped over,' which could be better structured for clarity."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits important details such as the context of the landing attempt, the significance of reusability, and the specifics of the cargo being delivered."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 4,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

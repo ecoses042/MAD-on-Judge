@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-e880fda4c25289f8325574246f0f8ed4ff5eb26b",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, making it difficult to understand the key points."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the phrase 'a windows and kitchen,' which is unclear and inconsistent with the original text."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention important features like stained-glass windows and the unique characteristics of the property."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'the # 250,000 house' which is awkwardly phrased."
+        }
+      ],
+      "provisional_score": 1
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear focus on the house being a collector's paradise and mentions its untouched state for over 80 years, which aligns with the main theme of the article."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary includes key details such as the auction date and the guide price, which are important points from the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, such as 'the 1930s is up for sale with original features including a windows and kitchen.'"
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states 'a windows and kitchen' instead of 'stained-glass windows and kitchen,' which misrepresents the original details."
+        },
+        {
+          "criterion": "coherence",
+          "reason": "The flow of information is disrupted by the incomplete phrases and unclear references, such as 'it has been the original bathroom and kitchen and a ` guide ' for the.'"
+        }
+      ],
+      "provisional_score": 2
+    },
+    "final": {
+      "coherence": 1,
+      "consistency": 1,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 1.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

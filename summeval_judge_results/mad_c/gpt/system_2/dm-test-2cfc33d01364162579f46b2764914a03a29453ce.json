@@ -1,0 +1,75 @@
+{
+  "article_id": "dm-test-2cfc33d01364162579f46b2764914a03a29453ce",
+  "system_name": "system_2",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow and omits important context about the upcoming match and other relevant details about the players and their performances."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses too narrowly on Ozil's new watch and his Instagram post, neglecting significant information about the match against Chelsea, the team's standings, and Jack Wilshere's situation."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The use of symbols like '#' instead of the word 'pound' for currency is not standard in formal writing and disrupts fluency."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the context of the match or the significance of the players' performances, which are crucial to understanding the article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding Mesut Ozil's new Apple Watch and his comparison to Michael Knight."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article without introducing any new facts."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is written in grammatically correct English, making it easy to read."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points about Ozil's new watch and his excitement, which are central to the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks context about the upcoming match and other relevant details about the team and players mentioned in the article."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits important information about Jack Wilshere and the implications of his fitness on the team, which is a significant part of the article."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 4,
+      "relevance": 2,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

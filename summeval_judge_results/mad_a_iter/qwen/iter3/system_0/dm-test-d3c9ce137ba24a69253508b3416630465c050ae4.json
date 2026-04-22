@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-d3c9ce137ba24a69253508b3416630465c050ae4",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is factually consistent with the source text and covers the main points (Dayna's condition, her goal to inspire, and her specific quote). However, it receives a lower score due to coherence issues: the inclusion of the full quote breaks the flow of the summary significantly, and there are minor punctuation/formatting inconsistencies (e.g., 'downers' instead of 'Downers Grove', spacing around punctuation). As per lenient rules, no hallucinations are present."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is consistent with the source text and covers key points (Dayna's age, location, condition, motivation, and specific quote). However, it scores lower on fluency because it includes a large block of direct speech without proper quotation marks or sentence structure, making it read like a raw copy-paste rather than a polished summary. It also omits significant relevant details present in the source, such as her age correction (the text mentions both 18 and 19), her specific achievements (driving, college), and her new role in motivational speaking, which impacts relevance slightly."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 3.8,
+        "adjustment_notes": "Lowered coherence and fluency scores. While the lenient judge accepted the content, the summary's structure is poor due to the inclusion of a long, unformatted direct quote that disrupts the narrative flow ('she has created a video in which she dances do n't judge : ...'). Additionally, there are significant formatting errors (lowercase start, missing spaces around punctuation like 'do n't', and truncation of the location name 'Downers Grove' to 'downers') which impact readability and professional quality. These issues warrant a lower score than 4."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is factually consistent and covers the main points, but the inclusion of a large block of unformatted direct speech ('do n't judge : ...') significantly hurts fluency, making it read like a raw extraction rather than a polished summary. Additionally, the omission of her specific achievements (driving, college) and new role in motivational speaking means it misses some relevant details from the source text. Therefore, I maintain the strict judge's scores as they accurately reflect these flaws."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the fluency score from 3 to 2. While the strict judge noted formatting errors, I agree that the inclusion of a long, unformatted direct quote ('do n't judge : ...') within the summary body is a severe structural flaw that makes the text difficult to read and breaks the narrative flow entirely. This goes beyond minor typos; it fundamentally disrupts the reading experience. The truncation of 'Downers Grove' to 'downers' also hurts fluency significantly. Therefore, the strict judge was not too harsh on this aspect."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary is factually consistent and covers the main points regarding Dayna Dobias, her condition, and her motivation. However, the inclusion of a large block of unformatted direct speech ('do n't judge : ...') significantly hurts fluency, making it read like a raw extraction rather than a polished summary. Additionally, the omission of her specific achievements (driving, college) and new role in motivational speaking means it misses some relevant details from the source text. Therefore, I maintain the strict judge's scores as they accurately reflect these flaws."
+      }
+    },
+    "final": {
+      "coherence": 3.5,
+      "consistency": 5.0,
+      "fluency": 2.5,
+      "relevance": 4.0,
+      "overall_judge": 3.5
+    }
+  }
+}

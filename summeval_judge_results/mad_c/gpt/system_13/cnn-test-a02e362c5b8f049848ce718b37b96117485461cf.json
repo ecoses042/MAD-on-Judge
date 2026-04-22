@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-a02e362c5b8f049848ce718b37b96117485461cf",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information. It jumps from Tim Durkan's observation to the cause of the fires without connecting the two ideas."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key information about the impact of the wildfires, such as the destruction of villages and the atmospheric effects leading to the sunsets, which are crucial to understanding the context."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the role of atmospheric winds in carrying the smoke, which is an important detail from the source."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as inconsistent capitalization and punctuation, which affect readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow by starting with Tim Durkan's observation and then linking it to the cause of the sunset."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the source document by mentioning the fires in southeastern Siberia as the cause of the sunset."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points, such as the observation of the sunset and its cause, without including trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as missing articles and inconsistent capitalization, which affect readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

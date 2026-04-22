@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-c50d33e9749e7bb484d9b69c4f5fca35a3a50cb5",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary accurately reflects the key facts of the article (who, what, where, why) without hallucinations. The only minor deduction is for fluency due to inconsistent capitalization and punctuation style (e.g., lowercase start of sentences, lack of spaces after periods), which makes it look like a raw transcript rather than polished prose."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source text and covers key points (who, what, where, why). However, it suffers from poor fluency due to a lack of capitalization and punctuation, making it look like raw notes rather than a proper summary. Coherence is slightly reduced because it repeats the victim's name and age in two separate sentences within a short span without connecting them smoothly. Relevance is good as it avoids trivial details like specific friend names or job titles not essential to the main narrative arc."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The lenient judge's assessment is accurate. The summary captures the essential facts (who, what, where, why) without hallucinations. The only valid deduction is for fluency due to the inconsistent capitalization and punctuation (e.g., lowercase start of sentences, missing spaces after periods), which gives it a raw transcript feel rather than polished prose. No points should be raised as the summary does not contain trivial details or errors beyond style."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the fluency score from 3 to 2 because the lack of capitalization and punctuation is severe enough that it reads more like raw data or notes than a coherent summary text, violating standard English conventions significantly. I also slightly reduced coherence from 4 to 3 due to the disjointed repetition of 'Jacob Phillips, 23' in separate sentences without transitional phrasing, which disrupts the flow. Consistency and relevance remain high as the content is accurate and focused."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The strict judge's assessment is correct. The summary accurately reflects the source text without hallucinations or missing key details. The only valid deduction remains for fluency due to the lack of standard capitalization and punctuation (e.g., lowercase 'graduate', missing spaces after periods), which gives it a raw transcript quality rather than polished prose. No further adjustments are needed."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding fluency and coherence. The summary suffers from a complete lack of capitalization (e.g., 'graduate', 'jacob phillips') and punctuation, which severely impacts readability and adherence to standard English conventions, justifying a score of 2 for fluency. This formatting issue also disrupts the logical flow, making the repetition of the subject name feel disjointed rather than emphatic, supporting a coherence score of 3. Consistency and relevance remain high as the content accurately reflects the source text without adding external facts or omitting key details."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 5.0,
+      "fluency": 3.0,
+      "relevance": 4.5,
+      "overall_judge": 3.9
+    }
+  }
+}

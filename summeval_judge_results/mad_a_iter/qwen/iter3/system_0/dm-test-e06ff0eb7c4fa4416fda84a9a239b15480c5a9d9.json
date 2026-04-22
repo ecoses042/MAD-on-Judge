@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-e06ff0eb7c4fa4416fda84a9a239b15480c5a9d9",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from severe fluency issues due to poor punctuation and sentence structure (e.g., 'he is also ` also a princess ' need to be' which is grammatically incorrect and confusing). While the content is consistent with the source text and covers relevant points, the lack of proper capitalization, quotation mark usage, and sentence flow makes it difficult to read. The coherence is low because the fragmented sentences do not form a logical narrative."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is consistent with the source and covers key points (location, Gumtree ad, specific quotes). However, it suffers from significant fluency issues due to poor punctuation and sentence structure (e.g., 'he is also ` also a princess ' need to be' which is grammatically incorrect and confusing). As a lenient evaluator, I award a 3 because the content is grounded in the text, but the readability is compromised."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains severe grammatical errors and poor sentence structure (e.g., 'he is also ` also a princess ' need to be'), which significantly impacts readability and fluency. While the content is consistent with the source text and covers the main points, the lack of proper capitalization, punctuation, and logical flow prevents it from being a high-quality summary. No score reduction was necessary as the strict judge's scores accurately reflect these flaws."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I raised the coherence score slightly to 3 because while the flow is choppy, it follows a logical sequence of events (who -> what -> specific quotes). I maintained consistency at 5 as all facts are accurate. I lowered fluency from 3 to 2 because the summary contains severe grammatical errors and broken sentence structures that go beyond simple punctuation issues; for example, 'he is also ` also a princess ' need to be' is syntactically incoherent and makes the text difficult to read without significant mental effort. Relevance remains at 4 as it captures the main points despite the lack of polish."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No score changes were necessary. The summary suffers from severe grammatical errors (e.g., 'he is also ` also a princess ' need to be'), lack of capitalization, and poor punctuation, which aligns with the lenient judge's assessment that fluency is significantly impacted. The content accurately reflects the source text without adding external facts, maintaining consistency and relevance."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary suffers from severe grammatical errors and broken syntax (e.g., 'he is also ` also a princess ' need to be'), which drastically impacts readability and fluency, warranting a score of 2. While the content is consistent with the source and covers the main points, the lack of polish prevents a higher relevance or coherence rating."
+      }
+    },
+    "final": {
+      "coherence": 3.0,
+      "consistency": 4.5,
+      "fluency": 2.0,
+      "relevance": 4.0,
+      "overall_judge": 3.0
+    }
+  }
+}

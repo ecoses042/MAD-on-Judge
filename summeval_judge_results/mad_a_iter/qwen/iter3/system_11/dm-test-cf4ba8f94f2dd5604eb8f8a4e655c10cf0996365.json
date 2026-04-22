@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-cf4ba8f94f2dd5604eb8f8a4e655c10cf0996365",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is factually consistent with the source text and maintains a logical flow regarding the robbery details. However, it fails significantly on relevance by omitting the core purpose of the article: the police appeal for public assistance to identify the suspect. It also lacks fluency due to poor punctuation (missing periods between sentences) and inconsistent capitalization, which degrades readability."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is well-structured, fluent, and consistent with the source text. It captures the key details (location, suspect description, amount stolen). It receives a slightly lower relevance score because it omits the specific context of who was robbed (the owner's daughter) and the police appeal for information, which are significant parts of the article, though the core event is accurately summarized."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is well-structured and consistent. While it misses the specific victim (owner's daughter) and the call to action (contact Crimestoppers), these are secondary details compared to the core event description. The score of 4 for relevance is appropriate as the summary captures the main points but omits significant context."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is factually consistent and logically structured regarding the robbery details, but it critically fails on relevance by omitting the main news hook: the police appeal for public help. Additionally, the fluency score remains low due to the lack of sentence separation (missing periods) and inconsistent capitalization, which makes the text difficult to read as a standard summary."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary effectively captures the core event (robbery details, suspect description) but omits the specific victim and the police appeal for information, which are significant contextual elements. The score of 4 for relevance is appropriate."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding consistency (all facts are accurate) and coherence (logical flow of the robbery details). However, I maintain the low relevance score because the summary completely omits the primary news hook: the police appeal for public assistance. A summary of a news story about an active investigation must include the call to action. Similarly, the fluency score remains low due to the lack of sentence separation (missing periods) and inconsistent capitalization, which violates standard English conventions for readability."
+      }
+    },
+    "final": {
+      "coherence": 4.5,
+      "consistency": 5.0,
+      "fluency": 4.0,
+      "relevance": 3.0,
+      "overall_judge": 3.9
+    }
+  }
+}

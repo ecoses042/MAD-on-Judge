@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-9beaaf73e4517d5bf1bc284f386485d571da96cf",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and consistent with the source text, but it suffers from poor relevance due to omitting critical details such as Priscilla Presley's role as a witness, the specific date (April 23), and the prize package details (airfares/concert tickets). It also fails to mention the 'No impersonators' rule or the application process, which are significant parts of the article."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.5,
+        "rationale_for_score": "The summary is fluent and consistent with the source text, accurately capturing the main points about the contest, the winner's announcement, and the prizes. It omits some details like Priscilla Presley's specific role as a witness or her quote about no impersonators, but this is acceptable for a summary focusing on the core event. The omission of the specific date 'April 23' (just keeping the day) is a minor detail loss that slightly affects relevance and coherence compared to the full text, but it does not constitute a hallucination or major flaw."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is fluent and consistent but lacks relevance because it omits key details: Priscilla Presley's specific role as a witness (which was the headline news), the 'No impersonators' rule, and the full prize package including airfares and concert tickets. These omissions make the summary incomplete regarding the article's main points."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "Adjusted relevance from 4 to 3. The lenient judge's comment that omitting the specific date 'April 23' is a minor detail loss is incorrect; the summary explicitly states 'on April 23', so no date was omitted. However, the summary completely fails to mention Priscilla Presley serving as a witness, which is the primary subject of the article's headline and opening sentence. The lenient judge incorrectly attributed this omission to 'acceptable for a summary focusing on the core event,' but given the text focuses heavily on her role (witness, appearance, involvement in look/feel), omitting her entirely makes the summary significantly less relevant than the lenient score suggested."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "No changes made. The lenient judge's points regarding relevance were valid and referenced actual content in the article (Priscilla's role as witness, 'No impersonators' rule, airfares/tickets). The summary indeed omits these key details, making it incomplete despite being fluent and consistent."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "Agreed with the strict judge's assessment on relevance. The summary completely omits Priscilla Presley serving as a witness, which is the central theme of the article (headline and opening sentence). While the core event details are present, the absence of the primary subject makes the summary significantly less relevant than the lenient score of 4 suggested. No other scores were adjusted."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 3.0,
+      "overall_judge": 4.2
+    }
+  }
+}

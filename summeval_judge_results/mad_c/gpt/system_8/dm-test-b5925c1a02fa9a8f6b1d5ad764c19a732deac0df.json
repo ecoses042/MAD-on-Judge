@@ -1,0 +1,59 @@
+{
+  "article_id": "dm-test-b5925c1a02fa9a8f6b1d5ad764c19a732deac0df",
+  "system_name": "system_8",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information and does not provide sufficient context about the incident."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to cover key points such as the location, the identity of the dog, and the reactions of witnesses and social media users."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention that the dog belonged to the local bike shop's owner, which is an important detail."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'in between its jaws' is awkward; 'between its jaws' would be more idiomatic."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and straightforward depiction of the main event, which is the crocodile swimming with a dead dog."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary lacks important details such as the location, the context of the incident, and the reactions of witnesses, which are crucial for understanding the significance of the event."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

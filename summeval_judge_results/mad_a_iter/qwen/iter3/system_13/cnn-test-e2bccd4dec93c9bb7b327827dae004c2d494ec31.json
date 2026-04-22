@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-e2bccd4dec93c9bb7b327827dae004c2d494ec31",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary fails the consistency criterion severely because it hallucinates a direct causal link between 'Space Invaders' and Antonio Inoki ('space invaders '' is the founder...'), whereas the article states they are two completely unrelated topics (a game vs. a politician). The summary also ignores the main point of the article regarding UFOs and government statements, failing relevance. It includes generic descriptions not specific to the article's unique content."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 1.8,
+        "rationale_for_score": "The summary contains a severe hallucination and factual error: it incorrectly states that 'Space Invaders' is the founder of New Japan Pro Wrestling (the article identifies Antonio Inoki as the founder). Additionally, the summary completely ignores the main topic of the article (the discussion about UFOs) and only includes minor biographical details about Inoki. This constitutes a major failure in consistency and relevance."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a severe hallucination linking 'Space Invaders' to Antonio Inoki, which is factually incorrect based on the text. It also completely misses the main topic of the article (UFOs and government statements), failing relevance. While the grammar is acceptable (fluency 4), the fundamental errors in consistency and relevance make it a very poor summary."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 1.8,
+        "adjustment_notes": "The lenient judge's assessment is accurate and justified. The summary contains a severe hallucination by attributing the founding of New Japan Pro Wrestling to 'Space Invaders' instead of Antonio Inoki, which violates consistency. Furthermore, it completely misses the article's primary focus on the UFO discussion, failing relevance. No points should be raised."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 1.8,
+        "adjustment_notes": "The summary is factually incorrect (hallucinated) by stating 'Space Invaders' is the founder of New Japan Pro Wrestling; the text identifies Antonio Inoki as the founder and mentions Space Invaders only as a game title. It also completely fails to cover the main topic of the article regarding UFOs and government statements, resulting in a score of 1 for consistency and relevance. The grammar is acceptable, so fluency remains at 4."
+      },
+      "lenient": {
+        "coherence": 1,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 1,
+        "overall_judge": 1.2,
+        "adjustment_notes": "The strict judge's assessment is correct and the summary is fundamentally flawed. The first sentence contains a severe hallucination: 'Space Invaders' is a video game, not a person who founded New Japan Pro Wrestling; Antonio Inoki did that. This makes the text inconsistent with reality and the source. Additionally, the summary completely ignores the article's main topic (the UFO discussion between Nakatani and Inoki), resulting in zero relevance. The grammar is also poor due to the lack of capitalization and sentence structure issues. No leniency is warranted."
+      }
+    },
+    "final": {
+      "coherence": 1.0,
+      "consistency": 1.0,
+      "fluency": 3.0,
+      "relevance": 1.0,
+      "overall_judge": 1.5
+    }
+  }
+}

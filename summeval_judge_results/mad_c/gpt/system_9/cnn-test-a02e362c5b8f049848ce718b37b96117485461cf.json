@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-a02e362c5b8f049848ce718b37b96117485461cf",
+  "system_name": "system_9",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information and does not connect the cause (wildfires) to the effect (fiery sunsets) adequately."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the origin of the wildfires, the impact on local communities, and the scientific explanation for the sunset colors, which are crucial for understanding the context."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the specific role of atmospheric winds in carrying the smoke, which is an important detail from the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains a grammatical error with the phrase 'the stunning sunsets were the result of raging wildfires,' which could be more clearly stated."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical connection between the fiery sunset and its cause, which is the wildfires in Siberia."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary captures the key point of the article, which is the connection between the sunsets in Washington and the Siberian wildfires."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits important details about the wildfires, such as their origin and impact, which are present in the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks fluency due to the use of a fragmented sentence structure, making it less readable."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

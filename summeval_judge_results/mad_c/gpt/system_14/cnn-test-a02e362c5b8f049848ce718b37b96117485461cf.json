@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-a02e362c5b8f049848ce718b37b96117485461cf",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow and does not connect the events of the wildfires to the resulting sunsets, which is a key aspect of the article."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits important details such as the impact of the smoke on the Pacific Northwest and the scientific explanation for the intense red sunsets."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that the smoke 'grew out of control,' which misrepresents the original context of the fires starting due to farmers burning grass."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is written in a fragmented style, lacking complete sentences and proper capitalization, making it difficult to read."
+        }
+      ],
+      "provisional_score": 1
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events regarding the fires in Siberia, starting from their origin to their impact."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article about the fires being started by farmers and their destructive consequences."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary lacks important details about the cause of the fires, the effect on the Pacific Northwest, and the scientific explanation for the sunsets."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is somewhat choppy and lacks fluidity, making it less engaging to read."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

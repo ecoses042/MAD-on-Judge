@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-d89de9c2a76f2665560becfe5d761a4fc62b9926",
+  "system_name": "system_6",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow and omits important context about the match, such as the significance of the 'mini-derby' and the performance of other players."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention key details such as the match's atmosphere, the venue, and the implications of the result for both teams, which are crucial for understanding the match's importance."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary uses inconsistent capitalization and spacing, which detracts from readability."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not accurately reflect the competitive nature of the match, as it simplifies the outcome without mentioning the context of the play-off series."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, starting with the outcome of the match and highlighting key details such as the players' nationalities and the matchwinner."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important information from the article, including the match result, the players involved, and the significance of the goal scored by Callum Gribbin."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits several details from the article, such as the context of the match, the performance of other players, and the implications of the result for both teams."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains awkward phrasing and punctuation issues, such as inconsistent spacing around hyphens and lack of capitalization in certain places, which affects readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

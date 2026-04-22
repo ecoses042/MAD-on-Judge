@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-b8b6e729fff27c4eef87887e61d3448de9c063f6",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary is extremely poor in relevance and coherence. It fails to capture the main news hook of the article: the failure of the rocket landing attempt. Instead, it merely repeats the first two sentences of the source text (including a direct quote) without adding any new information or summarizing the key details about the cargo delivered, the mission history, or the reasons for reusability. It reads like an incomplete excerpt rather than a summary."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is consistent with the source text and grammatically acceptable (with minor punctuation quirks). However, it suffers from severe relevance issues by cutting off mid-sentence ('Dragon enroute to space station.') and failing to summarize the main news hook: the landing failure. A lenient evaluator might argue the direction aligns, but the truncation makes it an incomplete summary rather than a poor one due to hallucination."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The strict judge's assessment is accurate and justified. The summary fails the primary test of a summary: it does not summarize the content but rather copies the first two sentences verbatim (including the quote 'Dragon enroute to Space Station'). Consequently, it completely misses the article's main point—the failed landing attempt—and omits all other significant details like cargo specifics or mission history. The low scores for relevance and coherence are appropriate."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The lenient judge's points regarding consistency are valid as the summary does not hallucinate facts. However, I will not raise the relevance score despite the 'leniency' because the summary is critically incomplete; it cuts off mid-sentence ('Dragon enroute to space station.') and completely misses the primary news hook (the landing failure), which violates the core definition of a summary. The fluency score remains low due to the abrupt truncation making the text feel unfinished rather than just having 'minor punctuation quirks'."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "No adjustment needed. The lenient judge's points are valid: the summary is essentially a copy-paste of the first two sentences (including a tweet fragment) and fails to summarize the main event (the failed landing) or any other details from the article. It lacks relevance and coherence as a standalone summary."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary is critically flawed because it truncates mid-sentence and completely omits the primary news hook (the landing failure), which renders it irrelevant despite being factually consistent with the source text."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 4.5,
+      "fluency": 3.0,
+      "relevance": 1.0,
+      "overall_judge": 2.0
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-97bbda7ec22a736cd174b51513c72a6372d13d35",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from a significant relevance flaw: it omits the most critical piece of information regarding the 'no buyer' outcome—the fact that the only bid was placed by an employee trying to jumpstart the auction. This omission makes the summary misleading about the nature of the failure. Additionally, while consistent with the text, it lacks the specific detail about the letters being 10 feet tall or wide which adds context to Jackson's reaction."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is well-structured, fluent, and consistent with the source text. It captures the main event (failed auction) and key details (price estimate, lack of bids). It receives a score of 4 instead of 5 because it omits the specific reason for the failure (the Sotheby's employee bidding $260k), which is a significant detail in the source text that explains why 'no buyer' was technically incorrect, though the summary remains factually consistent."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I lowered the relevance score from 4 to 3 to align with the strict judge's critique. The summary indeed omits the crucial detail that the only bid came from a Sotheby's employee attempting to jumpstart the auction, which fundamentally changes the interpretation of 'failed to find a buyer' (it wasn't a total lack of interest, but a lack of genuine market demand). While the text does mention the letters are 10 feet tall/wide, that detail is secondary to the core narrative failure identified by the strict judge. The summary remains coherent, consistent, and fluent."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is well-structured and fluent. While it accurately reflects the headline 'failed to find a buyer' based on the lack of external bids, it omits the specific detail about the Sotheby's employee bidding $260,000, which clarifies that the auction did not end in a total failure but rather a low-ball private sale. This omission impacts relevance slightly as it misses a key nuance of the event described in the source text."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I accepted the lenient judge's adjustment to the relevance score. The summary fails to capture the nuance that the auction was essentially a formality with only a 'jump start' bid from an employee, which is a critical detail regarding the 'failure' to sell. While the summary is coherent, consistent, and fluent, it misses this key context, justifying the lower relevance score."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary is well-structured and fluent, but it omits a crucial nuance: the Sotheby's employee bidding $260,000. This detail clarifies that the 'failure' was not a total lack of interest or sale, but rather a low-ball private transaction after the public bidding failed to meet expectations. Omitting this impacts relevance by presenting an incomplete picture of the event."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.7
+    }
+  }
+}

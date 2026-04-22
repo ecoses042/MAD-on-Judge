@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-5139ccfabee55ddb83e7937f5802c0a67aee8975",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow of information, abruptly ending without covering the full context of the incident or the U.S. response."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the aggressive maneuvers of the Russian jet, the U.S. response regarding the transponder, and the historical context of similar incidents."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The use of parentheses and dashes in the summary is unconventional and disrupts the reading flow."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not clarify the conflicting claims about the transponder status, which is a significant aspect of the incident."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, outlining the key event of the interception and the subsequent U.S. complaint."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the details from the article, including the type of aircraft involved and the location of the incident."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important aspects of the incident, such as the nature of the interception and the U.S. response."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The use of parentheses and dashes in the summary disrupts the flow and makes it less readable."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

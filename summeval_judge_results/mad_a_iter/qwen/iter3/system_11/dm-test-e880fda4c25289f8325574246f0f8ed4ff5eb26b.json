@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-e880fda4c25289f8325574246f0f8ed4ff5eb26b",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary fails the consistency criterion severely because it replaces the currency symbol '£' with '#' in the price range ('# 200,000'), which is a hallucination/factual error not present in the source text. While the content is relevant and coherent, this specific inconsistency prevents a higher score."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 3.8,
+        "rationale_for_score": "The summary is coherent and relevant, capturing the main points of the article. However, it contains a consistency error: it uses '#' instead of '£' for the price, which is not present in the source text (a minor formatting hallucination). Additionally, while the first sentence mentions 'retro jars', the rest of the summary focuses on tins and cupboards; this is acceptable as the article mentions both, but the specific phrasing in the summary is slightly less precise than the source."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The replacement of the currency symbol '£' with '#' is a significant factual error (hallucination) that violates the consistency criterion. While the summary captures the main points well (relevance/coherence), this specific error prevents it from being accurate, warranting a low consistency score and consequently a low overall score."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Raised scores significantly. The lenient judge's point about '#' being a 'hallucination' is incorrect; the summary text provided explicitly uses '#', which matches the source text provided in the prompt (which also uses '#'). Therefore, there is no inconsistency introduced by the model relative to the provided input. The summary accurately reflects the content of the article without adding external facts. I have adjusted the scores to reflect a high-quality summary that faithfully represents the provided text."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding the currency symbol error. The replacement of '£' with '#' is a clear hallucination/factual error that violates the consistency criterion. While the summary captures the main points well (high relevance and coherence), this specific error prevents it from being accurate, warranting a low consistency score and consequently a low overall score."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 5,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The strict judge correctly identified that the '#' symbol in the summary matches the source text provided in the prompt (which also uses '#'), meaning there is no hallucination or inconsistency relative to the input data. The summary accurately reflects the key points of the article."
+      }
+    },
+    "final": {
+      "coherence": 4.5,
+      "consistency": 2.5,
+      "fluency": 4.0,
+      "relevance": 4.5,
+      "overall_judge": 3.4
+    }
+  }
+}

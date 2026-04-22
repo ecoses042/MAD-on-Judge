@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-2feca9acf532e33f1ab7442c442c8e19787d8d7b",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information and does not provide a complete picture of the interaction between the man and the fish."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details about the fish's behavior, the man's background, and the context of their relationship, making it insufficiently informative."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as 'from within side the tank,' which should be 'from inside the tank.'"
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the fish's previous interactions with other fish, which is relevant to understanding the context of the man's relationship with the cichlid."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information by describing the interaction between Roland Giroux and the fish in a straightforward manner."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is easy to read and conveys the main action without grammatical errors."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits important details about the fish's behavior and the context of their relationship, which could misrepresent the source material."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary lacks coverage of key points, such as the fish's initial reactions and the man's daily interactions, which are crucial to understanding the relationship."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

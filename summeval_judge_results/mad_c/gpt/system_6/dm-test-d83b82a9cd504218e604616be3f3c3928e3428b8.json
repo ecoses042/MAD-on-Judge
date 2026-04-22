@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-d83b82a9cd504218e604616be3f3c3928e3428b8",
+  "system_name": "system_6",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, abruptly ending without concluding thoughts or a summary of Henry's main points."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary does not mention Henry's comparison of Arsenal's situation to Chelsea's successful signings, which is a key point in the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains inconsistent capitalization, such as 'thierry henry' instead of 'Thierry Henry', which affects readability."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not accurately reflect the nuance of Henry's comments on Giroud, which could mislead readers about his actual stance."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, outlining Henry's criticisms and suggestions for Arsenal in a structured manner."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the key points made by Henry in the article without introducing any new or unrelated facts."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important aspects of Henry's comments, including the need for specific player positions and his critique of Giroud."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains some grammatical issues, such as inconsistent capitalization and punctuation, which affect its overall readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 4,
+      "overall_judge": 3.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

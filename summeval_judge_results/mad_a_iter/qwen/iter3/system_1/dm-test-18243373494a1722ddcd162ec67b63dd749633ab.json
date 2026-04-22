@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-18243373494a1722ddcd162ec67b63dd749633ab",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source text and well-structured (coherence). However, it suffers from significant redundancy by repeating the same sentence about Pjanic scoring in the 25th minute twice with slightly different wording. Additionally, it omits other key details mentioned in the article, such as De Sanctis's specific saves, the context of the win regarding Champions League places, and the security measures taken, which lowers its relevance score."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is fluent and consistent with the source text for the first two sentences. However, it fails significantly on relevance and coherence because it repeats the exact same event (Pjanic scoring in the 25th minute) twice with slightly different phrasing ('finished off' vs 'slots home'), wasting space and failing to synthesize information. Furthermore, it completely omits other critical details from the article such as De Sanctis's specific saves, the context of the winless streak ending (7 matches), the security situation, and the final scoreline implications, making it an incomplete summary."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary is factually consistent and coherent but suffers from significant redundancy (repeating the Pjanic goal event twice) and lacks key context regarding Champions League qualification and security measures mentioned in the source text. Therefore, no score adjustment is necessary."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I lowered the scores significantly based on the strict judge's valid points. The summary suffers from severe redundancy by repeating the same scoring event twice in slightly different ways ('finished off' vs 'slots home'), which destroys coherence and wastes valuable space. Consequently, it fails to cover other critical details like the security situation, the specific context of the winless streak (7 matches), or the goalkeeper's performance beyond a general statement. The relevance score was lowered from 2 to 1 because the summary is so incomplete regarding key context that it barely summarizes the article."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I maintain the strict judge's scores. The summary is factually accurate and coherent but suffers from significant redundancy (stating Pjanic scored in the 25th minute twice) and misses crucial context regarding Champions League qualification stakes and security measures mentioned in the source text."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I raised the coherence score from 2 to 3 because, while the repetition of Pjanic's goal is poor style, the sentences do form a grammatically correct and logically connected sequence describing the match outcome. I raised consistency to 5 as all facts are strictly derived from the text. Fluency remains at 4 due to minor capitalization issues (e.g., 'roma', 'napoli') which affect readability but don't break grammar. Relevance was raised from 1 to 2; while the summary misses significant context like security and specific player injuries, it accurately summarizes the core event (the win) and key actions, so it is not 'barely' a summary, just an incomplete one."
+      }
+    },
+    "final": {
+      "coherence": 3.5,
+      "consistency": 5.0,
+      "fluency": 4.0,
+      "relevance": 2.5,
+      "overall_judge": 3.5
+    }
+  }
+}

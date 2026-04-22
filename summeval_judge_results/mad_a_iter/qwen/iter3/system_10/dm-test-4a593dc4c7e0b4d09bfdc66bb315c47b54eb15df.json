@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-4a593dc4c7e0b4d09bfdc66bb315c47b54eb15df",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 3.8,
+        "rationale_for_score": "The summary is consistent with the source text and covers the main points regarding Henderson's comments and the match details. However, it suffers from poor coherence due to significant repetition (the first sentence is almost identical to the second), which disrupts the logical flow. Fluency is slightly impacted by this redundancy. It is leniently scored as a 3 because the content is accurate and relevant, despite the structural flaws."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is factually consistent with the source text but suffers from severe relevance issues by repeating the exact same sentence twice verbatim (the first and second sentences are identical). This redundancy wastes space and fails to synthesize information. Furthermore, it omits significant details present in the article, such as the specific goal scorers (Sterling, Allen), the match context regarding City's faltering form, and Henderson's quotes about the season, making it an incomplete summary despite being grammatically fluent."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the scores for coherence and fluency. The lenient judge awarded a 3 based on 'accuracy' despite the severe structural flaw where the first two sentences are nearly identical duplicates of each other. This repetition is not just a minor stylistic issue; it fundamentally breaks the logical flow (coherence) and makes the text difficult to read (fluency). A summary with such blatant redundancy cannot be considered well-structured or fluent, warranting a lower score than 3."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary repeats the exact same sentence twice verbatim, which is a severe flaw in relevance and coherence (redundancy). It also fails to synthesize key information like goal scorers or specific quotes, making it an incomplete summary. No score reduction was necessary as the initial scores accurately reflected these significant issues."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a severe structural flaw where the first two sentences are nearly identical duplicates of each other. This blatant redundancy fundamentally breaks logical flow (coherence) and makes the text difficult to read (fluency). Therefore, I maintain the low scores for these categories and do not increase them despite the content being factually consistent with the source."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No score adjustment was necessary. The lenient judge correctly identified the severe redundancy (verbatim repetition of the first sentence) which drastically impacts relevance and coherence. The failure to include key details like goal scorers or specific quotes further justifies the low relevance score. The initial assessment accurately reflected these significant flaws."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 5.0,
+      "fluency": 3.0,
+      "relevance": 3.0,
+      "overall_judge": 3.0
+    }
+  }
+}

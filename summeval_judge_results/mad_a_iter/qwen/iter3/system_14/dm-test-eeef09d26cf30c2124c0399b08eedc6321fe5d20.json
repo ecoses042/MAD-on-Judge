@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-eeef09d26cf30c2124c0399b08eedc6321fe5d20",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source text and fluent in English. However, it suffers from relevance issues by omitting the primary subject of the article (Neymar and Dani Alves supporting the basketball team) and including a minor detail about Real Madrid's standing that was not central to the main narrative. The coherence is slightly reduced due to the abrupt transition between unrelated topics."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and consistent with the source text. It captures three key facts mentioned in the article (Neymar's win vs Chile, Real Madrid's standing in Euro League, and Barcelona's La Liga position). It receives a slight deduction on relevance because it omits the significant portion of the text regarding Neymar and Dani Alves supporting the basketball team, which is a major theme of the source."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the relevance score significantly (from 3 to 2) because the strict judge correctly identified that the summary misses the article's primary subject: Neymar and Dani Alves supporting the basketball team. The summary focuses almost entirely on football results (Chile match, La Liga standings), treating the main event as a minor detail or omitting it entirely. I also slightly lowered coherence (from 4 to 3) because the abrupt transition between unrelated topics (football results vs. the missing basketball context) makes the flow feel disjointed rather than just 'slightly reduced'. Consistency and fluency remain high."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The lenient judge's assessment is accurate. The summary successfully captures the three distinct news items present in the source text (Neymar vs Chile, Real Madrid's Euro League status, and Barcelona's La Liga standing). While it omits the detailed narrative about Neymar and Dani Alves attending the basketball game, this omission is justified as a summarization task where brevity is key; including every detail would likely degrade coherence. Therefore, no points need to be raised."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I have accepted the lenient judge's points regarding relevance and coherence. The summary fails to capture the primary subject of the article (Neymar and Dani Alves supporting the basketball side), focusing instead on football results which are secondary details in this context. This omission creates a disjointed flow, justifying the lower scores."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The strict judge's assessment is accurate. The summary effectively condenses the three main news points from the source text (Neymar/Chile, Real Madrid/Euro League, Barcelona/La Liga). The omission of the basketball game details is a valid summarization choice to maintain brevity and focus on the primary football-related updates. No score reduction is necessary."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 5.0,
+      "fluency": 4.5,
+      "relevance": 3.0,
+      "overall_judge": 3.9
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-051db270afc32571a08c15124330efe89d80fea8",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, as it repeats phrases and does not connect ideas effectively."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the detail about President Obama's visit without adequately explaining its relevance to the theft, which could mislead readers."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as missing articles and awkward phrasing, making it less readable."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to include key details, such as the method of theft and the police's findings, which are crucial for understanding the incident."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events regarding the theft of the FBI agent's sniper rifle, starting from the incident and mentioning the circumstances surrounding it."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the details from the article, such as the rifle being secured properly and the method used by the thief to steal it."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary includes key points such as the theft occurring before President Obama's visit and the condition of the car after the theft, which are significant details from the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, such as 'fbi agent ' s sniper was ripped out of his car ' s window,' which affects readability."
+        },
+        {
+          "criterion": "coherence",
+          "reason": "The repetition of the phrase 'an fbi agent 's sniper rifle was ripped out of his car 's window and stolen from a salt lake city hotel' disrupts the flow and makes the summary feel disjointed."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-f468efac7b3c54f8c42c2c81dff108c52ebe0d7d",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is coherent and consistent with the source text, accurately describing the sequence of events leading to the goal. However, it only covers the first half of the article (the play-by-play description) and completely omits the Sky Sports pundits' analysis and their specific opinions on whether a foul occurred, which constitutes a significant portion of the source content. Therefore, relevance is penalized."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is coherent and consistent with the first half of the article but fails significantly on relevance and fluency. It reproduces a large block of text from the source almost verbatim (including minor capitalization errors like 'chelsea' and 'eden hazard') without adding any new information or synthesizing the key points regarding the pundits' opinions, which constitute the majority of the article's content. By omitting the analysis from Henry, Redknapp, and Souness entirely, it misses the main point of the text."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "The lenient judge's assessment is accurate. The summary perfectly mirrors the first paragraph of the source text but completely ignores the second half, which details the pundits' specific analysis and quotes regarding the foul. Since the prompt implies a need to revisit scores after seeing a 'lenient' assessment, I am maintaining the strict evaluation that relevance should be penalized for missing this significant portion of the content."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I lowered the scores significantly based on the strict judge's valid criticisms. The summary is not just a partial summary; it is a direct copy-paste of the first paragraph of the source text (minus capitalization). This results in a severe failure of relevance (missing the main topic: pundits' analysis) and fluency (lowercase errors, lack of synthesis). While the copied text is internally consistent with the article's start, the act of copying without summarizing or including the bulk of the content warrants a much lower score than my initial lenient assessment."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. While the summary is coherent and consistent, it fails to capture the main point of the article, which is the Sky Sports pundits' analysis and agreement that John Terry fouled Radamel Falcao. By summarizing only the first paragraph and ignoring the second half entirely, the summary misses the core subject matter, warranting a low relevance score."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "No adjustment needed. The summary is a direct copy-paste of the first paragraph of the source text (with only capitalization changes). This constitutes a severe failure in relevance as it completely omits the main topic: the Sky Sports pundits' analysis of the foul. It also fails fluency due to the lack of synthesis and lowercase errors. The lenient judge's initial assessment was too high given these critical failures."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 4.5,
+      "fluency": 3.0,
+      "relevance": 2.0,
+      "overall_judge": 3.1
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-a3b6201aca77b5bdaa5df02d6acee2be66233237",
+  "system_name": "system_2",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information. It jumps between details without a structured narrative, making it difficult to follow."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the detail about the grave stone being for 'her babies' without clarifying that it specifically refers to the one baby she was able to bury, which is misleading."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains awkward phrasing and punctuation issues, such as unnecessary spaces before commas and inconsistent capitalization, which detracts from readability."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary does not adequately cover key points, such as the emotional impact on Dawn and the context of the lie detector test, which are crucial to understanding the situation."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear narrative of the events, detailing Dawn's accusation against Jamie and the outcome of the lie detector test."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the key details from the article, including the relationship between Dawn and Jamie, and the context of the stolen money."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important aspects of the story, such as the theft, the emotional impact on Dawn, and the lie detector test."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains awkward phrasing and punctuation issues, such as unnecessary spaces before commas and inconsistent capitalization."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

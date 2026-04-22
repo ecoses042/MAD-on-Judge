@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-c16c9fa34ccae7e2b9e29c3988ccb74974c4b3c0",
+  "system_name": "system_9",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, as it jumps abruptly from Tevez wanting to leave to Boca Juniors confirming a deal without explaining the context of his contract situation."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits important details about Tevez's contract duration and the fact that Juventus is reluctant to lose him, which are crucial for understanding the situation."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary does not mention Tevez's performance or his status as the league's top scorer, which are significant aspects of the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary uses lowercase for 'juventus' and 'boca juniors,' which is not standard capitalization for proper nouns."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding Tevez's desire to leave Juventus and the conditions set by Boca Juniors."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of Tevez wanting to leave, Boca Juniors' interest, and the requirement to terminate his contract, which are the most important details from the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention that Tevez's contract with Juventus runs until 2016, which is an important detail that adds context to his situation."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "While the summary is mostly clear, it could benefit from more varied sentence structure to enhance readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 4,
+      "relevance": 4,
+      "overall_judge": 3.5,
+      "winner_side": {
+        "coherence": "tie",
+        "consistency": "tie",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

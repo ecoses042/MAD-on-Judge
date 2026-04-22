@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-2c37d44d03ce2e91310339d884d33ee5aabf9abc",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 2,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary contains a significant hallucination regarding the mode of transport to the hospital. The source text states the child was 'taken to MetroHealth Medical Center' and rescued by parents before paramedics arrived, but the summary claims the boy was 'airlifted'. This is a major consistency flaw. Additionally, the summary omits the critical detail that the fall occurred because the parents 'dangled him over the edge,' which is central to the event's nature (child endangerment), reducing relevance."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is fluent and covers the main points well. However, it contains a clear hallucination/error: the article states the child was a 'two-year-old boy', but the summary refers to him as a 'baby boy'. Additionally, the article mentions the fall was between 10 to 12ft, while the summary specifies exactly '12ft' without acknowledging the range. These minor inaccuracies prevent a higher score under strict consistency rules, though the lenient rule allows for some benefit of the doubt."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 2,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary introduces a significant hallucination ('airlifted') which is not supported by the text (it says 'taken to' and parents rescued him before paramedics arrived). This is a critical consistency failure that warrants a low score. Additionally, omitting the specific cause of the fall ('dangled him over the edge') significantly reduces relevance as it misses the core context of the incident."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "The lenient judge's assessment is accepted. The summary contains factual inconsistencies with the source text: it refers to a 'two-year-old boy' as a 'baby boy', and it narrows the fall height from '10 to 12ft' to exactly '12ft'. While these are minor errors, they violate strict consistency rules. No points were raised because the lenient judge correctly identified these specific content-based issues."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 2,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding consistency. The summary introduces the fact that the toddler was 'airlifted' to the hospital, whereas the source text explicitly states he was 'taken to' MetroHealth Medical Center and rescued by his parents before emergency services arrived. This is a clear hallucination not supported by the text. Additionally, the omission of the specific cause of the fall ('dangled him over the edge') significantly impacts relevance, as this detail explains how the accident occurred."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary contains specific factual inconsistencies: referring to a 'two-year-old boy' as a 'baby boy' and narrowing the fall height from '10 to 12ft' to exactly '12ft'. These are objective errors regarding the source text that lower the consistency score."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 2.5,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 3.5
+    }
+  }
+}

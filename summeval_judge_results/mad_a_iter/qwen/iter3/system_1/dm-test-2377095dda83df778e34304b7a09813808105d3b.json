@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-2377095dda83df778e34304b7a09813808105d3b",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.5,
+        "rationale_for_score": "The summary accurately captures the main points of the article: lack of compensation for holidaymakers, profits made by the agency, and bonuses received by managers. It is well-structured and fluent. Minor deductions are applied because the summary uses '#' symbols instead of '£' (a formatting inconsistency) and omits specific details like the number of approved claims or individual stories, though this omission does not constitute a hallucination or a failure to cover key points given the brevity."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 2,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from a critical consistency flaw: it uses the '#' symbol instead of '£' for currency values, which is not present in the source text and constitutes a hallucination/formatting error. Additionally, while the summary captures the main points, it omits significant details like the specific number of approved claims or the average payout, slightly reducing relevance compared to a more comprehensive summary."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I have accepted the lenient judge's scores. The summary accurately reflects the main points of the article (lack of compensation, profits, bonuses, refusal of blanket refunds). The only valid deduction is for the formatting inconsistency where '#' was used instead of '£', which does not affect the semantic consistency or fluency significantly enough to warrant a lower score in this context. No harsher penalties were applied."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 2,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the consistency score from 2 to 2 (maintained) because the use of '#' instead of '£' is a clear formatting error that deviates from the source text's style and could be considered a hallucination in strict terms. I slightly reduced the overall judge score to reflect this specific flaw more accurately, acknowledging that while the content is relevant and coherent, the presentation error is significant enough to impact the quality negatively."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I maintain the strict judge's assessment. The summary captures the core narrative effectively. While there is a formatting inconsistency using '#' instead of '£', this is a minor typographical error that does not significantly impact semantic consistency or fluency in the context of a short summary. The content accurately reflects the source text without introducing hallucinations or missing key points."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 2,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I maintained the lenient judge's scores. The consistency score remains low (2/5) because the summary uses '#' instead of '£', which is a factual/formatting deviation from the source text where currency symbols are explicitly used. This counts as an inconsistency in strict evaluation. The fluency score (3/5) reflects the poor readability caused by the lack of capitalization and punctuation, which makes the text difficult to read despite being grammatically simple. I did not raise these scores because the flaws are objective errors relative to the source material."
+      }
+    },
+    "final": {
+      "coherence": 4.5,
+      "consistency": 3.0,
+      "fluency": 3.5,
+      "relevance": 4.5,
+      "overall_judge": 3.8
+    }
+  }
+}

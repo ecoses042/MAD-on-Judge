@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-6f027d030f9ca86446dc893f1d10ced4c9a3561f",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, jumping between topics without clear connections."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the idea that Henderson is the third major player in Liverpool's FA Cup, which is not mentioned in the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention key details such as the specifics of Henderson's contract, his contributions, and the context of his potential captaincy."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as the lack of capitalization for 'jordan' and awkward phrasing."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear focus on Jordan Henderson's new contract, which is the main topic of the article."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information about Henderson's contract situation and his role as vice-captain."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary highlights Henderson's contract signing, which is the most significant point of the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, such as 'the third major player in liverpool 's fa cup' which is unclear."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The mention of Raheem Sterling returning to Liverpool in the summer is not directly related to the main focus of Henderson's contract."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

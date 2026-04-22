@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-f37fd6e9b6cc18a7132568e307ef3b130931e809",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, making it difficult to understand the sequence of events."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits critical details, such as the context of the allegations and the specific timeline, which could mislead readers about the seriousness of the claims."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as the incomplete sentence 'he left him in tears and left the job the same day' which lacks a subject."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to cover key points, such as the threats made to Mr. Lawler and the response from the Palace, which are essential to understanding the full scope of the allegations."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting from the initial incident to the subsequent actions taken by Mr. Lawler."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the claims made by Mr. Lawler without introducing any new or unrelated information."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the incident and the investigation, avoiding trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and lacks proper sentence structure, making it difficult to read."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

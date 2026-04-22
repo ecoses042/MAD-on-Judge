@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-4e0de0ec6d5b9df174f54d03158de8f30aac861f",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.5,
+        "rationale_for_score": "The summary is fluent and mostly consistent with the text, but it suffers from poor relevance and coherence due to a lack of logical flow and missing key context. It presents disjointed sentences without connecting ideas (e.g., jumping from Twitter post to World Cup win to transfer fee). Crucially, it omits the specific 'home comforts' aspect (dog/picture) which is the main news hook, and fails to mention the upcoming Liverpool match or the injury return context, making it feel like a fragmented list of facts rather than a summary."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 3,
+        "overall_judge": 3.2,
+        "rationale_for_score": "The summary is consistent with the source text (no hallucinations) and covers key facts like the Twitter post, match result, and transfer fee. However, it lacks coherence due to poor sentence structure and flow (e.g., awkward phrasing 'the world cup winners' without context, repetitive listing of the score). It also misses significant relevant details from the source, such as Ozil's current form (assists/goals), his injury return, and his comments on English football, making it feel incomplete. The fluency is slightly affected by these structural issues."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the relevance score from 3 to 2. The strict judge correctly identified that the summary misses the main news hook (the 'home comforts'/dog picture) and crucial context (upcoming Liverpool match, injury return). While I previously gave a 3, acknowledging it was 'mostly consistent' but poorly structured, the omission of the primary subject matter (why he posted the photo) combined with the disjointed flow makes it significantly less relevant than a standard summary. The coherence remains low due to the lack of logical connection between sentences."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 3,
+        "overall_judge": 3.2,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate: the summary suffers from poor flow (listing facts without logical connection), includes awkward phrasing ('the world cup winners' lacks context as Germany isn't explicitly identified as such in that specific sentence structure relative to the previous clause), and omits significant details like Ozil's injury return, current form stats, and quotes. The scores reflect these genuine deficiencies."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I raised the consistency score from 3 to 4 because the summary strictly adheres to facts present in the article (Twitter post, return to London, match result, transfer fee) without inventing details. I lowered the fluency score from 4 to 3 due to the repetitive phrasing ('Germany beat Georgia' appearing twice with slightly different contexts) and the lack of connecting words which makes it read like a list rather than a paragraph. I significantly lowered the relevance score from 2 to 1 because the summary fails to capture the primary subject matter: the 'home comforts' photo with his dog, which is the main news hook. Additionally, it omits crucial context regarding his upcoming match against Liverpool and his return from injury, rendering the summary trivial despite covering minor facts."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 3,
+        "overall_judge": 3.2,
+        "adjustment_notes": "I have slightly lowered the overall score from 3.2 to 3.0. While the strict judge's points about flow and missing context are valid, I agree that the summary is factually consistent with the text (no hallucinations). However, the 'world cup winners' phrasing is indeed confusing without explicit mention of Germany in that specific clause, and the lack of logical connection between sentences makes it feel like a disjointed list rather than a narrative. The omission of key details like his injury return and current form stats significantly impacts relevance. Therefore, maintaining the lower scores for coherence and fluency is appropriate."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 4.0,
+      "fluency": 3.0,
+      "relevance": 2.0,
+      "overall_judge": 2.6
+    }
+  }
+}

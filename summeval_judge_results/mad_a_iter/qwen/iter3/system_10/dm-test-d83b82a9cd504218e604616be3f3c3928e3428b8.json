@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-d83b82a9cd504218e604616be3f3c3928e3428b8",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is fluent and consistent with the source text regarding Henry's main points (criticism of transfer dealings, need for four players, and doubt about Giroud). However, it suffers from a major flaw in coherence and relevance due to the inclusion of 'Sunderland -lrb- home -rrb- May 20' at the end. This is a trivial detail from the source text's schedule list that does not fit logically into the narrative flow of the summary, making the ending abrupt and disjointed. Under lenient rules, it avoids hallucinations but fails to focus on key points effectively."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary fails the consistency criterion severely by including 'Sunderland - (home) - May 20', which is a specific fixture detail from the source text's list of upcoming games and not part of Henry's criticism or transfer advice. This constitutes hallucinated context regarding the main topic. Additionally, the relevance is poor because it omits the core message: the specific four positions needed (goalkeeper, centre back, defensive midfielder, striker) and the comparison to Chelsea's signings, focusing instead on trivial schedule details."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I am raising the scores slightly to align with the lenient judge's assessment that the summary is factually consistent and fluent. However, I maintain a low relevance score (1) because the inclusion of 'Sunderland -lrb- home -rrb- May 20' is not just a trivial detail but a complete non-sequitur that adds zero value to the summary's purpose. The lenient judge correctly identified this as a major flaw in coherence and relevance, so I will not penalize further for hallucination (consistency remains high) but acknowledge the structural failure."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The inclusion of 'Sunderland - (home) - May 20' is a severe consistency error as it introduces irrelevant fixture data not part of Henry's argument. Furthermore, the summary fails relevance by omitting the specific four positions Henry demanded and the crucial Chelsea comparison, focusing instead on trivial details."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary includes a specific match fixture ('Sunderland - (home) - May 20') which is present in the source text but is completely irrelevant to Thierry Henry's argument about transfer needs and Olivier Giroud. This constitutes a consistency error regarding the focus of the summary and a relevance error by including trivial details while omitting key points like the four specific positions required and the Chelsea comparison."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. While the summary is grammatically correct and factually consistent with the text (excluding the hallucinated date), the inclusion of 'Sunderland -lrb- home -rrb- May 20' is a severe flaw. It breaks the logical flow (coherence) by inserting an unrelated match schedule detail into a summary about transfer targets, and it drastically reduces relevance by wasting space on trivial information that does not support the main argument. The low scores reflect this significant structural failure."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 2.5,
+      "fluency": 4.5,
+      "relevance": 1.0,
+      "overall_judge": 2.0
+    }
+  }
+}

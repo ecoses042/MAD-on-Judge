@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-e470f0a87d7513bf880412524332047020422c3f",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and consistent with the source text, accurately reporting the main event (the dress sale) and key details like the price and condition. However, it scores lower on relevance because it only covers the first two paragraphs of the article, omitting significant context such as the collector's story (James Tumblin), other top-selling items, and historical background about the film and Hattie McDaniel."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and consistent with the source text. However, it scores lower on relevance because it truncates the information significantly. It omits key details such as the specific color change (slate blue-gray to light gray), the history of how James Tumblin acquired the dress for $20, the other high-value items sold at the auction, and the context regarding Hattie McDaniel's historic Oscar win, which are substantial parts of the source article."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate: the summary is factually consistent and fluent but suffers from low relevance because it truncates the story after the first few sentences, missing the collector's background, other auction highlights, and historical context provided in the source text."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "The strict judge's assessment is accurate. The summary is indeed fluent and consistent but fails significantly on relevance by omitting major details like the specific color change, the acquisition story of James Tumblin, other high-value items, and the context about Hattie McDaniel. No adjustment to the scores is needed as they correctly reflect these omissions."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "No changes made. The strict judge's assessment is accurate: while the summary is factually consistent and fluent, it suffers from low relevance because it truncates the story after the first few sentences, missing significant details about the collector (James Tumblin), other top-selling items, and historical context provided in the source text."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "No adjustment needed. The lenient judge correctly identified that while the summary is fluent and consistent, it suffers from low relevance due to omitting significant details present in the source text (e.g., the specific color fading, the story of James Tumblin acquiring the dress for $20, other high-value auction items, and the context regarding Hattie McDaniel). The strict judge's lower relevance score accurately reflects these omissions."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 3.0,
+      "overall_judge": 4.2
+    }
+  }
+}

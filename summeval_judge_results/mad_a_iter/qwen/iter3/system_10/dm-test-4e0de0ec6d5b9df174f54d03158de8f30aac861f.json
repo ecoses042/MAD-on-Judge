@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-4e0de0ec6d5b9df174f54d03158de8f30aac861f",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is fluent and mostly consistent with the text, but it suffers from severe redundancy (repeating the Germany vs Georgia match result twice) and poor structure. Crucially, it fails the relevance criterion by completely omitting the main subject of the article: Mesut Ozil's return to Arsenal, his specific upcoming match against Liverpool at the Emirates, his injury recovery status, and his comments on English football. It focuses almost exclusively on the international duty aspect while ignoring the club context which is the primary focus."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is consistent with the source text and fluent enough to read, but it suffers from significant redundancy by repeating the exact same sentence about Germany's match result twice. Additionally, it fails to include other key details present in the article, such as Ozil's injury return, his specific stats (4 assists, 3 goals), or his comments on adjusting to English football, which lowers its relevance score."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary suffers from severe redundancy by repeating the Germany vs Georgia match result twice in a short text. More critically, it fails relevance by ignoring the article's main focus: Ozil's return to Arsenal, his upcoming match against Liverpool, and his comments on English football. The club context is entirely missing."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate: the summary repeats the sentence regarding Germany's match result verbatim (consistency is perfect, but coherence suffers slightly due to redundancy). Crucially, it omits significant key details from the source text such as Ozil's injury return, his specific performance stats (4 assists, 3 goals), and his quotes about adjusting to English football. Therefore, the relevance score of 3 is justified and should not be raised."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No changes needed. The summary repeats the Germany vs Georgia match result twice (once in the first sentence and again in the third), which is a significant redundancy issue. Furthermore, it completely omits the article's primary focus: Ozil's return to Arsenal, his specific upcoming match against Liverpool, his injury recovery status, and his comments on adapting to English football. The lenient judge correctly identified these critical flaws."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "No changes made. The strict judge's assessment is accurate: the summary suffers from significant redundancy by repeating the match result and player name twice in a short space, which impacts coherence. More importantly, it fails to capture key narrative elements from the source text, such as Ozil's return from injury, his specific performance statistics (4 assists, 3 goals), and his comments on adapting to English football. These omissions justify the low relevance score."
+      }
+    },
+    "final": {
+      "coherence": 3.5,
+      "consistency": 4.5,
+      "fluency": 4.5,
+      "relevance": 2.5,
+      "overall_judge": 3.5
+    }
+  }
+}

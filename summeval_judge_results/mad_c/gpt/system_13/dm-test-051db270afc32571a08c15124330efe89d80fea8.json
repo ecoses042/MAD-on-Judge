@@ -1,0 +1,62 @@
+{
+  "article_id": "dm-test-051db270afc32571a08c15124330efe89d80fea8",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow and does not connect the details about the theft to the context of President Obama's visit, which is a significant aspect of the original article."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits important details such as the theft of the agent's gear bag and clothing, the police's findings at the scene, and the lack of surveillance cameras at the hotel, which are all relevant to understanding the incident."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains inconsistent capitalization (e.g., 'fbi' instead of 'FBI') and lacks proper sentence structure, making it less fluent."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, detailing how the rifle was stolen and the method used by the thief."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article without introducing any new facts or misrepresenting the events."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is written in grammatically correct English and is easy to read, maintaining a professional tone."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key details of the theft, including the method of theft and the context of the incident, which are the most important aspects of the article."
+        }
+      ],
+      "remaining_concerns": [],
+      "provisional_score": 5
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 5,
+      "fluency": 4,
+      "relevance": 3,
+      "overall_judge": 3.8,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

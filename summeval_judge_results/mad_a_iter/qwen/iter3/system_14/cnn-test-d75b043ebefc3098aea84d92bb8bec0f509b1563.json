@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-d75b043ebefc3098aea84d92bb8bec0f509b1563",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source text and uses fluent English. However, it suffers from poor relevance as it omits the most critical information: the death of eight Iranian border guards. It focuses only on minor details (3 militants killed) and background info about the group's ideology, failing to capture the main event."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and consistent with the source text. It accurately captures key facts (casualties, group name, group's stated goals). It receives a slightly lower relevance score because it omits the specific location 'Negur' mentioned in the article, but given the lenient rules to give benefit of the doubt and avoid penalizing for missing minor details like specific town names unless they are central to the narrative, this is acceptable."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the relevance score from 3 to 2. The strict judge correctly identified that the summary omits the most critical fact: the death of eight Iranian border guards. By focusing only on the three militants killed and background details about Jaish al Adal's ideology, the summary fails to capture the primary news event (the attack on Iranian forces). This is a significant omission for a news summary, making it less relevant than initially scored."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is fluent, coherent, and strictly consistent with the source text. While it omits specific details like the town name 'Negur' or the death of Iranian guards, these are minor details compared to the core narrative of the militant group's identity and goals. Penalizing for missing a location name when the broader context (border clashes) is present is appropriate under lenient evaluation standards."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding relevance. The summary fails to mention the primary event: the death of eight Iranian border guards. Instead, it focuses on background information about the militant group Jaish al Adal (its goals and targets). This omission of the main news hook significantly reduces the summary's relevance to the source text, justifying the score of 2."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary is fluent, coherent, and strictly consistent with the source text. While it omits specific details like the town name 'Negur' or the death of Iranian guards, these are minor details compared to the core narrative of the militant group's identity and goals. Penalizing for missing a location name when the broader context (border clashes) is present is appropriate under lenient evaluation standards."
+      }
+    },
+    "final": {
+      "coherence": 4.5,
+      "consistency": 5.0,
+      "fluency": 4.5,
+      "relevance": 3.0,
+      "overall_judge": 3.9
+    }
+  }
+}

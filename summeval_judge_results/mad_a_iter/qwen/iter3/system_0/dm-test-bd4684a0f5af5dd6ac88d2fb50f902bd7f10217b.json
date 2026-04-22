@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-bd4684a0f5af5dd6ac88d2fb50f902bd7f10217b",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from severe fluency issues due to poor sentence segmentation (e.g., 'countrythis week') and awkward phrasing ('the argentine club ` dream of falcao '`). While the content is largely consistent with the source text and covers relevant points, the lack of grammatical correctness and readability significantly lowers the quality. The coherence is average as the fragmented sentences make the flow disjointed."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 3.5,
+        "rationale_for_score": "The summary captures the main points and aligns with the article's direction (lenient rule). However, it suffers from significant fluency issues due to poor sentence structure and awkward phrasing (e.g., combining two distinct thoughts into one run-on sentence: '...scoring just four premier league goals . the argentine club ` dream of falcao...' which lacks a subject for the second clause). It also slightly misattributes the quote source by omitting 'vice president Matias Patanian' in the second half, though the sentiment is consistent. The coherence is reduced because the flow is choppy."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains severe mechanical errors (e.g., 'countrythis week') and awkward phrasing that significantly impact readability and grammatical correctness. These flaws justify a low fluency score of 2. The coherence is also affected by these disjointed sentences, warranting a 3. Consistency and relevance are maintained as the content accurately reflects the source text without hallucinations or missing key points."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 3.5,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate: the summary suffers from significant fluency issues (run-on sentences, lack of subjects in clauses) and choppy coherence. While the content is consistent with the article, the poor sentence structure prevents a higher score."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No changes to scores. The lenient judge correctly identified the severe mechanical errors (e.g., 'countrythis week') and disjointed sentence structure as valid reasons for low fluency (2) and coherence (3). The content accurately reflects the source text without hallucinations, justifying consistency (4) and relevance (4)."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "Lowered fluency score from 3 to 2 because the summary contains severe grammatical errors and run-on sentences (e.g., 'colombia forward spent eight years...', 'scoring just four premier league goals' lacks a subject). The strict judge was correct that these structural flaws prevent a higher rating, so no increase is warranted."
+      }
+    },
+    "final": {
+      "coherence": 3.0,
+      "consistency": 4.0,
+      "fluency": 2.0,
+      "relevance": 4.0,
+      "overall_judge": 3.0
+    }
+  }
+}

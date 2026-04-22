@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-0cd10ad50ceef529d96a255ed12ac9cd001ba9db",
+  "system_name": "system_8",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, abruptly transitioning from Van Ryn's guilty plea to the victim's feelings without proper context or connection."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to cover key points from the article, such as the victim's background, the impact of the abuse on her life, and her specific statements about her fears and experiences."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces a quote from the victim that is not present in the original article, which could mislead readers about her statements."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains fragmented sentences that disrupt the flow and make it harder to read, such as the abrupt ending with 'I don't know what to do.'"
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear statement about Maurice Van Ryn's guilty plea, which is a central point of the article."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary captures the essence of the young woman's feelings of fear and distrust, which are key themes in the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits significant details about the young woman's experiences and the impact of the abuse, which are crucial for understanding the context."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains fragmented sentences that disrupt the flow and make it less readable."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

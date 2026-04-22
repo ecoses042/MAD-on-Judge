@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-207df192edc1836250b69d1bc5b9e6a38206eb78",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is fluent and consistent with the source text, capturing the main analogy about farm animals and the specific statistic for 10-11 year olds in England. However, it scores lower on relevance because it omits the study's core methodology (the large-scale Finnish study of 12,000 two-year-olds) and the crucial nuance that the study did not prove causation but suggested a mechanism (gut bugs). It also misses the warning about superbugs mentioned at the end. Despite these omissions, no hallucinations are present."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is consistent with the source text and coherent in its flow. However, it suffers from severe relevance issues: it omits the core study details (Finnish researchers, sample size of 12,000, specific age cutoffs like 'by two years-old', gender differences, and the proposed biological mechanism regarding gut bugs). It also includes a generic comparison to farm animals which is a minor point compared to the missing scientific context. Additionally, fluency is penalized due to grammatical errors ('the may also be fattening' instead of 'they may', 'die at an earlier age' phrasing issues) and lack of proper punctuation/capitalization."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate: the summary is fluent and consistent but lacks relevance due to omitting the study's specific findings (Finnish study, 12,000 children, age 2), the lack of causal proof, and the superbug warning. These are significant omissions for a summary of this length."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary fails to capture the core scientific findings (sample size, specific age cutoffs, gender differences) which are central to the article's main point. It relies too heavily on the 'farm animal' analogy and general obesity statistics rather than the study's specific results. Furthermore, it contains grammatical errors ('the may', missing capitalization/punctuation), justifying the lower fluency score."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "No changes made. The strict judge's assessment is accurate; the summary fails to cover key points such as the study's specific demographics (Finnish, 12,000 children), the lack of causal proof, and the superbug warning, resulting in low relevance."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's points regarding fluency and relevance. The summary contains grammatical errors ('the may', missing capitalization) which lowers fluency to 2. It fails to cover key details like the sample size (12,000), specific age cutoffs for the study results (2 years old), and gender differences, making it less relevant than a score of 3 would suggest. The coherence is low because the summary jumps from the main finding to an analogy and then to general statistics without a clear logical flow connecting them effectively."
+      }
+    },
+    "final": {
+      "coherence": 3.5,
+      "consistency": 5.0,
+      "fluency": 3.0,
+      "relevance": 2.5,
+      "overall_judge": 3.5
+    }
+  }
+}

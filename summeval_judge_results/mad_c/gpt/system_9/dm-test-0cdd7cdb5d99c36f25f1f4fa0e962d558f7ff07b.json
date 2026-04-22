@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-0cdd7cdb5d99c36f25f1f4fa0e962d558f7ff07b",
+  "system_name": "system_9",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear structure and does not logically flow from one point to another."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the squad list, the significance of players called up for the first time, and the context of their qualifying matches."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the specific players included in the squad, which is a significant aspect of the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary uses lowercase for 'John Peacock' and 'European Under-17 Championship', which is not standard for proper nouns."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the squad announcement and the upcoming tournament."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, including the team's status as defending champions and their group placement."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points, such as the squad announcement, the defending champion status, and the opening match."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization and punctuation, which affects its readability."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits details about the squad members and their clubs, which could provide additional context and significance."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "tie",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

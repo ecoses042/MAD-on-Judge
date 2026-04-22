@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-5be0a9584b051175d9f4842a143b76385335d96a",
+  "system_name": "system_8",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, abruptly listing dates and teams without context or connection to the main topic."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary includes irrelevant match dates and opponents that do not pertain to the main issue of Manchester City's financial situation and Champions League qualification."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that Manchester City will miss out on their £12 million budget, whereas the article specifies that this amount is related to bonuses, not the entire budget."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is poorly structured and difficult to read due to the inclusion of a list of dates without explanation, affecting overall fluency."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear focus on Manchester City's financial implications related to their Champions League qualification."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information about the £12 million budget and the consequences of failing to qualify for Europe."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary includes irrelevant match dates that do not pertain to the main points of the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks fluency due to the inclusion of a list format that disrupts the flow of information."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-4fb64a2298e18626db776fccf834be87388827e0",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is factually consistent with the source text but suffers from severe relevance issues by repeating the same core fact (the bid for the hour record) multiple times without adding new information or context. It omits significant details such as the venue, ticket sales, specific record distances, and other competitors mentioned in the article. Additionally, the fluency is poor due to repetitive sentence structures and a lack of logical flow."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source text and contains no hallucinations. However, it suffers from significant redundancy (stating Wiggins will bid for the record twice) and lacks a clear logical flow or structure, simply listing sentences. It also omits key details like the location (London's Olympic Velodrome) and the current record holder, which impacts relevance. The capitalization is inconsistent ('sir bradley wiggins' vs 'Wiggins'), slightly affecting fluency."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I lowered the scores to align with the strict judge's assessment. The summary is factually consistent (Consistency 5), but it suffers from severe relevance issues (Relevance 1) by repeating the main headline fact ('Wiggins will bid for hour record') three times in four sentences without adding any new information, context, or details from the source text (venue, ticket info, specific records, competitors). This repetition makes the summary extremely poor in terms of Relevance and Coherence. The lack of sentence variety and logical progression also impacts Fluency significantly."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I raised the coherence score slightly from 2 to 3 because while the sentences are disjointed, they do follow a chronological narrative (announcement -> bio -> recent event -> future goal). I kept consistency at 5 as there are no hallucinations. Fluency remains 4; despite capitalization errors and lack of conjunctions, the English is understandable. I lowered relevance from 3 to 2 because the summary repeats the main point ('bid for hour record') twice in two separate sentences without adding value, and it misses critical context like the venue (Olympic Velodrome) and the specific target (beating Rohan Dennis), making it a very thin summary of the source."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The summary is factually consistent with the source text (Consistency 5). However, it suffers from severe relevance issues (Relevance 1) by repeating the core fact ('Wiggins will bid for hour record') in sentences 1 and 4 without adding any new information. It omits key details like the venue, ticket prices, specific records being broken, or competitors. This lack of variety and depth also negatively impacts Coherence (2) and Fluency (3), as the text feels repetitive and lacks logical progression."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary suffers from significant redundancy (stating Wiggins will bid for the record twice) and lacks essential context provided in the source text, such as the venue (Olympic Velodrome), the specific target (beating Rohan Dennis), and the upcoming team pursuit at Rio. These omissions make it a very thin summary, justifying the low relevance score. The coherence is acceptable due to chronological flow despite disjointed sentences, consistency is perfect as no facts are invented, and fluency is understandable despite minor stylistic issues."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 5.0,
+      "fluency": 3.5,
+      "relevance": 1.5,
+      "overall_judge": 2.5
+    }
+  }
+}

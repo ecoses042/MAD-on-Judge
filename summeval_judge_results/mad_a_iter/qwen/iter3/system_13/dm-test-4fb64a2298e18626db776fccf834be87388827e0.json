@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-4fb64a2298e18626db776fccf834be87388827e0",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is factually consistent with the source text and flows logically based on the provided sentences. However, it fails significantly on relevance by truncating the content abruptly after only three sentences. It omits the core motivation ('holy grail'), the specific record being broken (52.491km), the context of previous attempts, the upcoming Tour de Yorkshire, the Rio Olympics target, and ticket information. By cutting off mid-story without concluding the main narrative arc, it provides an incomplete summary that misses key points."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is well-structured, grammatically correct, and strictly consistent with the source text. It captures the main event (Wiggins' bid for the hour record) and key context (his career achievements and recent race). It receives a score of 4 instead of 5 only because it omits other significant details present in the article, such as the current record holder, the specific distance he aims to beat, ticket information, and his upcoming Olympic targets, though this is acceptable for a short summary."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. While the summary is factually consistent and grammatically correct, it suffers from a severe relevance issue by truncating the narrative after only three sentences. It completely omits the 'why' (holy grail status), the specific record details, previous attempts, future targets (Rio Olympics), and logistical info, rendering it an incomplete summary of the source text."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate. The summary is well-structured and consistent with the source text. It captures the primary news (Wiggins' hour record bid) and immediate context (recent Paris-Roubaix finish). The score of 4 for relevance is justified because the summary omits other significant details present in the article, such as the current record holder (Rohan Dennis), the specific distance to be beaten, ticket information, and Wiggins' upcoming Olympic targets, which are substantial parts of the source text."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No changes needed. The lenient judge correctly identified that while the summary is factually accurate and grammatically sound, it fails significantly on relevance by truncating the content after only three sentences, omitting key details such as the record's significance, previous attempts, future targets, and logistical information."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The strict judge's assessment is accurate. While the summary is well-written and factually consistent, it significantly under-represents the source text by omitting key context such as the current record holder (Rohan Dennis), the specific distance to be beaten, ticket availability, and Wiggins' upcoming Olympic targets. These omissions justify a relevance score of 4 rather than higher."
+      }
+    },
+    "final": {
+      "coherence": 4.5,
+      "consistency": 5.0,
+      "fluency": 4.5,
+      "relevance": 3.0,
+      "overall_judge": 3.9
+    }
+  }
+}

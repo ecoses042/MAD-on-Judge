@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-2c6695b438980783754f7db28129ec2fbb3e6e21",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information, repeating the arrest details without providing a structured narrative."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits critical details about the nature of the abuse, the charges against Rebbie, and the context of the investigation, focusing instead on the relationship with the girl's family, which is less relevant."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains inconsistent capitalization and punctuation, making it less readable."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces the phrase 'that police were able to trace back to the man,' which is vague and does not align with the detailed information provided in the article."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with the arrest of Kevin Rebbie and the discovery of the hidden camera."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the main facts from the article, including the age of the victim and the nature of the charges against Rebbie."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the case, including the arrest and the discovery of the hidden camera, which are central to the story."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as inconsistent capitalization and punctuation, which affect readability."
+        },
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow, as it repeats information about the arrest without providing additional context or details about the abuse or the investigation."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

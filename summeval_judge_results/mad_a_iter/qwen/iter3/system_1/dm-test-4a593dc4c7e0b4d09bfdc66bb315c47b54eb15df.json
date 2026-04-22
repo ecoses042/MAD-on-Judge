@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-4a593dc4c7e0b4d09bfdc66bb315c47b54eb15df",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is well-structured, grammatically correct, and accurately reflects the key facts from the article (Henderson's quote, the match result, and the record-breaking appearances). It avoids hallucinations. The only minor deduction for relevance is that it omits the specific context of Liverpool catching Manchester City in the race for Champions League mentioned in the headline and text, focusing strictly on the immediate match details."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "rationale_for_score": "The summary is grammatically correct and consistent with the source text (no hallucinations). However, it suffers from a significant relevance flaw: it completely omits the match result (2-0 win), the goalscorers (Sterling, Allen), and Henderson's specific motivation regarding Manchester City's faltering form. It reads like a truncated sentence fragment rather than a complete summary of the article's key points."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate: the summary is well-structured and factually consistent with the source text. The only valid deduction for relevance (score of 4) is that it omits the specific context regarding the race for Champions League mentioned in the article, focusing strictly on the immediate match details and Henderson's quote about catching City."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I lowered the overall score from 4.5 to 4.0 because the strict judge's criticism regarding 'relevance' is valid and significant. The summary fails to capture the core news of the article: the specific match result (2-0), the key goalscorers (Sterling, Allen), and the context of Liverpool catching Manchester City. While the grammar and consistency are perfect, the omission of these central facts makes it a poor summary of the provided text."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The strict judge's assessment is accurate. The summary is well-structured and factually consistent with the source text. The only valid deduction for relevance (score of 4) is that it omits the specific context regarding the race for Champions League mentioned in the article, focusing strictly on the immediate match details and Henderson's quote about catching City."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I accepted the lenient judge's point regarding relevance. The summary is grammatically perfect and consistent with the text, but it fails to cover the essential details of the article: the specific match result (2-0), the key goalscorers (Sterling and Allen), and the context of Liverpool catching Manchester City. These are central facts that make the news story significant. Therefore, the relevance score remains low (3) and the overall score is adjusted down to 4.0."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.7
+    }
+  }
+}

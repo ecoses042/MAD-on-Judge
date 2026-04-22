@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-c16c9fa34ccae7e2b9e29c3988ccb74974c4b3c0",
+  "system_name": "system_3",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, as it abruptly shifts from Tevez's contract situation to Boca's confirmation without a smooth transition."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits crucial details about Tevez's current performance and the context of his desire to leave, which are present in the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary does not mention the importance of Tevez's scoring record or the implications of his potential departure for Juventus, which are key points in the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary has inconsistent capitalization (e.g., 'carlos tevez' instead of 'Carlos Tevez'), which affects its overall fluency."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding Tevez's situation with Juventus and his desire to return to Boca Juniors."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, including Tevez's contract status and his intention to leave Juventus."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of Tevez's contract termination and his return to Boca Juniors, avoiding trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization and punctuation, which affects its readability and fluency."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

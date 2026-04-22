@@ -1,0 +1,319 @@
+[
+  {
+    "essay_id": "GWGR2400110870.1",
+    "status": "ok",
+    "prediction": {
+      "content": {
+        "score": 3.0,
+        "rationale": "주장과 근거는 존재하지만, 설명이 피상적이고 일부 논리 연결이 약하다. 예를 들어, '인간과 유사하여 이를 대신할 수 있는 실험체는 거의 존재하지 않는다'는 주장은 동물 실험의 필요성을 강조하지만, 대체 실험체의 가능성에 대한 구체적인 논의가 부족하다."
+      },
+      "organization": {
+        "score": 4.0,
+        "rationale": "서론, 본론, 결론의 구조가 비교적 명확하게 드러나고 있으며, 문단 간 연결도 자연스럽다. 그러나 본론에서 주장과 근거가 반복적으로 제시되어 다소 중복된 느낌을 준다."
+      },
+      "expression": {
+        "score": 3.0,
+        "rationale": "문장은 이해 가능하지만, 일부 표현이 어색하거나 단조로운 부분이 있다. 예를 들어, '그들이 불쌍해서라고 하기에는'이라는 표현은 다소 부자연스럽다."
+      }
+    },
+    "judge": {
+      "content": {
+        "round_0": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 3,
+            "specificity": 2,
+            "groundedness": 2,
+            "overall_judge": 3.0,
+            "rationale_for_score": "1. domain_match: target_domain(content) 기준을 준수하여 글의 주장과 근거를 평가함. 2. score_rationale_consistency: predicted_score(3.0)와 rationale이 일치하나, '논리 연결이 약하다'는 지적에 대한 구체적인 반박이나 보완 설명이 rationale 에 부재하여 설득력이 부족함 (3점). 3. specificity: '설명이 피상적이다', '구체적 논의가 부족하다' 등의 표현은 generic 함. essay_text 의 특정 문장이나 논지를 직접 인용하지 못해 구체성이 떨어짐 (2점). 4. groundedness: rationale 이 제시한 '대체 실험체의 가능성에 대한 구체적인 논의 부족'이라는 지적은 essay_text 에서 확인 가능한 내용과 연결되지 않음. essay 는 '인간과 유사한 대체체가 없음'을 강조하며, 이를 반박하거나 구체화하는 내용은 없으므로 hallucination 으로 간주됨 (2점)."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.5,
+            "rationale_for_score": "1) domain_match: rationale 가 essay_text 의 '동물 실험 찬성'이라는 핵심 주장과 논리 전개 (대체 불가능성, 쥐의 가치 등) 를 정확히 분석하고 있어 기준을 잘 준수함. 2) score_rationale_consistency: predicted_score(3.0) 는 '주장과 근거는 존재하지만 설명이 피상적'이라는 평가와 일치하며, 높은 점수 (4~5) 가 필요한 강력한 논증이나 낮은 점수 (1~2) 를 요구하는 명백한 결함이 없는 중간 수준을 정확히 반영함. 3) specificity: '인간과 유사하여 이를 대신할 수 있는 실험체는 거의 존재하지 않는다'는 구체적인 문장을 인용하여 분석하고 있어 구체적임. 4) groundedness: rationale 의 모든 지적은 essay_text 에 명시된 내용 (대체 실험체 부재, 쥐의 생리적 가치 등) 에 기반하고 있어 hallucination 이 없음. 종합적으로 domain_match 와 groundedness 가 완벽하며 specificity 도 높으나, '설명이 피상적'이라는 점과 논리 연결의 약함을 고려하여 3.8 점으로 평가함."
+          }
+        },
+        "round_1": {
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 3,
+            "specificity": 2,
+            "groundedness": 2,
+            "overall_judge": 3.0,
+            "adjustment_notes": "1. domain_match: target_domain(content) 기준을 준수하여 글의 주장과 근거를 평가했으므로 기존 점수 유지 (5점). 2. score_rationale_consistency: predicted_score(3.0)와 rationale이 논리적으로 일치하므로 기존 점수 유지 (3점). 3. specificity: '설명이 피상적이다', '구체적 논의가 부족하다'는 표현은 generic 하며 essay_text 의 특정 문장을 직접 인용하지 못했으므로 감점 (2점). 4. groundedness: rationale 이 지적한 '대체 실험체의 가능성에 대한 구체적 논의 부족'이라는 내용은 essay_text 에서 확인 가능한 내용과 연결되지 않으며, essay 는 오히려 대체체가 없다는 점을 강조하므로 hallucination 으로 간주됨 (2점)."
+          },
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 5,
+            "groundedness": 5,
+            "overall_judge": 4.8,
+            "adjustment_notes": "관대한 심사위원의 평가에 따라 domain_match(5), specificity(5), groundedness(5) 항목은 rationale 이 essay_text 의 구체적인 문장 ('인간과 유사하여 이를 대신할 수 있는 실험체는 거의 존재하지 않는다') 을 인용하고 논지를 정확히 분석했으므로 기존 점수를 유지함. score_rationale_consistency 는 predicted_score(3.0) 와 rationale 의 '피상적 설명' 및 '논리 연결 약함' 지적이 일치하므로 4 점으로 조정 (완벽한 일치보다는 경미한 간극 인정). overall_judge 는 관대한 심사위원의 종합 평가인 3.8 점을 유지함."
+          }
+        },
+        "round_2": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 3,
+            "specificity": 2,
+            "groundedness": 2,
+            "overall_judge": 3.0,
+            "adjustment_notes": "1. domain_match: 관대한 심사위원이 target_domain(content) 기준을 준수하여 평가했으므로 기존 5점 유지. 2. score_rationale_consistency: predicted_score(3.0)는 '주장과 근거 존재'라는 긍정적 요소를 인정하면서도 '설명 피상성'과 '논리 연결 약함'이라는 결함을 반영한 점수이므로, 관대한 심사위원의 논리와 일치하여 기존 3점 유지. 3. specificity: 관대한 심사위원이 '설명이 피상적이다', '구체적 논의 부족'이라는 generic 표현을 지적하고 essay_text 의 특정 문장 인용 부재를 이유로 감점 (2점) 했으므로, 이 근거를 인정하여 점수 하향 조정. 4. groundedness: 관대한 심사위원이 rationale 의 '대체 실험체 논의 부족' 지적이 essay_text 와 모순된다고 보아 hallucination(2점) 으로 판단했으나, 이는 관대한 심사위원의 평가 기준에 따른 타당한 해석이므로 기존 2점 유지."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 5,
+            "groundedness": 5,
+            "overall_judge": 4.8,
+            "adjustment_notes": "엄격한 심사위원의 지적을 검토한 결과, domain_match(5), specificity(5), groundedness(5) 항목은 rationale 이 essay_text 의 구체적인 문장 ('인간과 유사하여 이를 대신할 수 있는 실험체는 거의 존재하지 않는다') 을 정확히 인용하고 논지를 분석했으므로 기존 점수를 유지함. score_rationale_consistency 는 predicted_score(3.0) 와 rationale 의 '피상적 설명' 및 '논리 연결 약함' 지적이 일치하므로 4 점으로 조정 (완벽한 일치보다는 경미한 간극 인정). overall_judge 는 관대한 심사위원의 종합 평가인 3.8 점을 유지함."
+          }
+        },
+        "round_3": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 5,
+            "groundedness": 5,
+            "overall_judge": 4.8,
+            "adjustment_notes": "관대한 심사위원의 평가에 따라 domain_match(5), specificity(5), groundedness(5) 항목은 rationale 이 essay_text 의 구체적인 문장 ('인간과 유사하여 이를 대신할 수 있는 실험체는 거의 존재하지 않는다') 을 정확히 인용하고 논지를 분석했으므로 기존 점수를 유지함. score_rationale_consistency 는 predicted_score(3.0) 와 rationale 의 '피상적 설명' 및 '논리 연결 약함' 지적이 일치하므로 4 점으로 조정 (완벽한 일치보다는 경미한 간극 인정). overall_judge 는 관대한 심사위원의 종합 평가인 3.8 점을 유지함."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 3,
+            "specificity": 2,
+            "groundedness": 2,
+            "overall_judge": 3.0,
+            "adjustment_notes": "1. domain_match: 관대한 심사위원이 target_domain(content) 기준을 준수하여 평가했으므로 기존 5점 유지. 2. score_rationale_consistency: predicted_score(3.0)는 '주장과 근거 존재'라는 긍정적 요소를 인정하면서도 '설명 피상성'과 '논리 연결 약함'이라는 결함을 반영한 점수이므로, 관대한 심사위원의 논리와 일치하여 기존 3점 유지. 3. specificity: 관대한 심사위원이 '설명이 피상적이다', '구체적 논의 부족'이라는 generic 표현을 지적하고 essay_text 의 특정 문장 인용 부재를 이유로 감점 (2점) 했으므로, 이 근거를 인정하여 점수 하향 조정. 4. groundedness: 관대한 심사위원이 rationale 의 '대체 실험체 논의 부족' 지적이 essay_text 와 모순된다고 보아 hallucination(2점) 으로 판단했으나, 이는 관대한 심사위원의 평가 기준에 따른 타당한 해석이므로 기존 2점 유지."
+          }
+        },
+        "round_4": {
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 5,
+            "groundedness": 5,
+            "overall_judge": 4.8,
+            "adjustment_notes": "1. domain_match: rationale 이 essay_text 의 핵심 논지 (대체 실험체 부재) 를 정확히 반영하여 평가 기준을 준수하므로 기존 5 점 유지.\n2. score_rationale_consistency: predicted_score(3.0) 와 rationale 의 '피상적 설명', '논리 연결 약함' 지적이 명확하게 일치하나, essay_text 에서 구체적인 강점 (예: 쥐의 생리적 가치, 예방 주사의 중요성 등) 을 2 개 이상 직접 인용하여 긍정적으로 뒷받침하지 못했으므로 완벽한 5 점보다는 경미한 간극을 인정하고 4 점으로 조정.\n3. specificity: '인간과 유사하여 이를 대신할 수 있는 실험체는 거의 존재하지 않는다'는 구체적인 문장을 지적하여 generic 표현이 없으므로 기존 5 점 유지.\n4. groundedness: 모든 지적 사항이 essay_text 에 존재하는 내용 (쥐의 생리, 건강 관련 이점 등) 에 근거하고 허구가 없으므로 기존 5 점 유지.\n5. overall_judge: 항목별 조정 사유를 종합하여 최종 점수 3.8 점을 유지함."
+          },
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 3,
+            "specificity": 2,
+            "groundedness": 2,
+            "overall_judge": 3.0,
+            "adjustment_notes": "1. domain_match: 관대한 심사위원이 target_domain(content) 기준을 준수하여 평가했으므로 기존 5점 유지. 2. score_rationale_consistency: predicted_score(3.0)는 '주장과 근거 존재'라는 긍정적 요소를 인정하면서도 '설명 피상성'과 '논리 연결 약함'이라는 결함을 반영한 점수이므로, 관대한 심사위원의 논리와 일치하여 기존 3점 유지. 3. specificity: 관대한 심사위원이 '설명이 피상적이다', '구체적 논의 부족'이라는 generic 표현을 지적하고 essay_text 의 특정 문장 인용 부재를 이유로 감점 (2점) 했으므로, 이 근거를 인정하여 점수 하향 조정. 4. groundedness: 관대한 심사위원이 rationale 의 '대체 실험체 논의 부족' 지적이 essay_text 와 모순된다고 보아 hallucination(2점) 으로 판단했으나, 이는 관대한 심사위원의 평가 기준에 따른 타당한 해석이므로 기존 2점 유지."
+          }
+        },
+        "final": {
+          "domain_match": 5.0,
+          "score_rationale_consistency": 3.5,
+          "specificity": 3.5,
+          "groundedness": 3.5,
+          "overall_judge": 3.9
+        }
+      },
+      "organization": {
+        "round_0": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.5,
+            "rationale_for_score": "1. domain_match: rationale이 서론-본론-결론의 구조와 문단 연결성 등 organization 영역의 평가 기준을 명확히 적용함. 2. score_rationale_consistency: predicted_score 4.0은 '구조적 강점'과 '약간의 중복'이라는 양면성을 모두 반영한 무난한 점수이나, rationale이 '중복된 느낌'이라는 약점을 구체적으로 지적하지 않고 '다소 중복된 느낌을 준다'는 표현만 사용하여 감점 근거가 다소 모호함 (4점 유지). 3. specificity: '본론에서 주장과 근거가 반복적으로 제시되어'라는 구체적인 논리적 결함을 언급하여 generic 표현을 피함. 4. groundedness: essay_text의 본론 부분 (2, 3 문단) 에서 유사한 논지 (인간 대체 불가, 쥐의 가치) 가 반복되는 구조를 정확히 반영함."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 5,
+            "specificity": 5,
+            "groundedness": 5,
+            "overall_judge": 5.0,
+            "rationale_for_score": "1. domain_match: rationale가 서론-본론-결론의 구조와 문단 연결 등 조직화 (organization) 영역의 평가 기준을 명확히 적용하고 있습니다. 2. score_rationale_consistency: predicted_score 4.0은 '구조는 명확하지만 본론에서 주장과 근거가 반복되어 중복된 느낌'이라는 구체적인 약점을 인정하면서도 전반적인 구성이 양호함을 반영한 합리적인 점수입니다. 점수와 설명의 모순이 없습니다. 3. specificity: '서론, 본론, 결론', '문단 간 연결', '본론에서 주장과 근거가 반복적으로 제시' 등 구체적인 텍스트 요소와 논리적 문제를 지적하고 있습니다. 4. groundedness: rationale의 모든 내용은 essay_text의 실제 구조 (서론-본론-결론 명시) 와 내용 (두 번째 및 세 번째 문단의 유사한 논지 전개) 에 정확히 부합하며, 허구적인 내용이 없습니다."
+          }
+        },
+        "round_1": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 5,
+            "specificity": 5,
+            "groundedness": 5,
+            "overall_judge": 5.0,
+            "adjustment_notes": "관대한 심사위원의 평가가 타당함을 확인합니다. rationale은 essay_text 의 서론-본론-결론 구조와 문단 간 연결 (organization) 을 정확히 분석하고 있으며, 본론 내 논지 반복이라는 구체적인 약점을 지적하여 점수 4.0 을 정당화했습니다. 모든 기준이 충족되므로 기존 점수를 유지합니다."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 4,
+            "specificity": 4,
+            "groundedness": 5,
+            "overall_judge": 4.5,
+            "adjustment_notes": "엄격한 심사위원의 평가에 따라 기존 점수 (4.0) 를 유지합니다. domain_match 기준은 organization 영역의 구조와 연결성을 명확히 적용했으므로 5점, groundedness 기준은 essay_text 의 본론 부분 반복 구조를 정확히 반영했으므로 5점을 부여합니다. score_rationale_consistency 와 specificity 는 '다소 중복된 느낌'이라는 표현이 구체적인 근거 (본론 2,3 문단의 논지 반복) 를 포함하고 있어 모순이나 generic 한 설명으로 보기는 어렵지만, 감점 근거가 다소 간결하여 완벽하지는 않으므로 4점으로 유지합니다."
+          }
+        },
+        "round_2": {
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 5,
+            "specificity": 5,
+            "groundedness": 5,
+            "overall_judge": 5.0,
+            "adjustment_notes": "엄격한 심사위원의 평가에 따르면 관대한 심사위원의 판단이 타당합니다. rationale 은 essay_text 의 서론-본론-결론 구조 (organization) 를 정확히 분석하고, 본론 내 논지 반복이라는 구체적인 약점을 지적하여 점수 4.0 을 정당화했습니다. 모든 기준이 충족되므로 기존 점수를 유지합니다."
+          },
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 5,
+            "specificity": 5,
+            "groundedness": 5,
+            "overall_judge": 5.0,
+            "adjustment_notes": "관대한 심사위원의 평가가 모든 기준을 충족함을 확인했습니다. domain_match: 서론-본론-결론 구조와 문단 연결성을 명확히 지적하여 organization 영역 기준에 부합합니다 (5점). score_rationale_consistency: '다소 중복된 느낌'이라는 평과 본론 2,3 문단의 논지 반복을 구체적으로 연결하여 점수 정당화가 타당하므로 모순이 없습니다 (5점). specificity: '본론 2,3 문단'이라는 구체적인 위치를 명시하여 generic 한 표현이 아닙니다 (5점). groundedness: essay_text 의 실제 내용 (쥐 실험 반대 이유와 건강 관련 이점 등) 을 정확히 반영하고 있습니다 (5점). 따라서 기존 4.0 점수를 유지합니다."
+          }
+        },
+        "round_3": {
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 5,
+            "specificity": 5,
+            "groundedness": 5,
+            "overall_judge": 5.0,
+            "adjustment_notes": "관대한 심사위원의 평가가 타당합니다. rationale 은 essay_text 의 서론-본론-결론 구조 (organization) 를 정확히 분석하고, 본론 내 논지 반복이라는 구체적인 약점을 지적하여 점수 4.0 을 정당화했습니다. 모든 기준이 충족되므로 기존 점수를 유지합니다."
+          },
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 5,
+            "specificity": 5,
+            "groundedness": 5,
+            "overall_judge": 5.0,
+            "adjustment_notes": "엄격한 심사위원의 평가가 타당함을 확인합니다. domain_match: rationale 이 서론-본론-결론 구조와 문단 연결성을 명확히 지적하여 organization 영역 기준에 부합하므로 5점 유지. score_rationale_consistency: '다소 중복된 느낌'이라는 평과 본론 2,3 문단의 논지 반복을 구체적으로 연결하여 점수 정당화가 타당하므로 모순이 없으며 4점 유지. specificity: '본론 2,3 문단'이라는 구체적인 위치를 명시하여 generic 한 표현이 아니므로 5점 유지. groundedness: essay_text 의 실제 내용 (쥐 실험 반대 이유와 건강 관련 이점 등) 을 정확히 반영하고 있으므로 5점 유지. 따라서 기존 4.0 점수를 유지합니다."
+          }
+        },
+        "round_4": {
+          "lenient": {
+            "domain_match": 5,
+            "score_rationale_consistency": 5,
+            "specificity": 5,
+            "groundedness": 5,
+            "overall_judge": 5.0,
+            "adjustment_notes": "엄격한 심사위원의 평가에 따르면 관대한 심사위원의 판단이 타당합니다. rationale 은 essay_text 의 서론-본론-결론 구조를 정확히 분석하고 (domain_match), 본론 내 논지 반복이라는 구체적인 약점을 지적하여 점수 4.0 을 정당화했습니다 (score_rationale_consistency, specificity). 또한 모든 지적 사항이 실제 텍스트에서 확인 가능합니다 (groundedness). 따라서 기존 점수를 유지합니다."
+          },
+          "strict": {
+            "domain_match": 5,
+            "score_rationale_consistency": 5,
+            "specificity": 5,
+            "groundedness": 5,
+            "overall_judge": 5.0,
+            "adjustment_notes": "관대한 심사위원의 평가가 타당함을 확인합니다. domain_match: rationale 이 서론-본론-결론 구조와 문단 연결성을 명확히 지적하여 organization 영역 기준에 부합하므로 5점 유지. score_rationale_consistency: '다소 중복된 느낌'이라는 평과 본론 2,3 문단의 논지 반복을 구체적으로 연결하여 점수 정당화가 타당하므로 모순이 없으며 4점 유지. specificity: '본론 2,3 문단'이라는 구체적인 위치를 명시하여 generic 한 표현이 아니므로 5점 유지. groundedness: essay_text 의 실제 내용 (쥐 실험 반대 이유와 건강 관련 이점 등) 을 정확히 반영하고 있으므로 5점 유지. 따라서 기존 4.0 점수를 유지합니다."
+          }
+        },
+        "final": {
+          "domain_match": 5.0,
+          "score_rationale_consistency": 5.0,
+          "specificity": 5.0,
+          "groundedness": 5.0,
+          "overall_judge": 5.0
+        }
+      },
+      "expression": {
+        "round_0": {
+          "strict": {
+            "domain_match": 3,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 3,
+            "overall_judge": 3.0,
+            "rationale_for_score": "처리 실패"
+          },
+          "lenient": {
+            "domain_match": 3,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 3,
+            "overall_judge": 3.0,
+            "rationale_for_score": "처리 실패"
+          }
+        },
+        "round_1": {
+          "strict": {
+            "domain_match": 3,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 3,
+            "overall_judge": 3.0,
+            "rationale_for_score": "처리 실패"
+          },
+          "lenient": {
+            "domain_match": 3,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 3,
+            "overall_judge": 3.0,
+            "rationale_for_score": "처리 실패"
+          }
+        },
+        "round_2": {
+          "strict": {
+            "domain_match": 3,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 3,
+            "overall_judge": 3.0,
+            "rationale_for_score": "처리 실패"
+          },
+          "lenient": {
+            "domain_match": 3,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 3,
+            "overall_judge": 3.0,
+            "rationale_for_score": "처리 실패"
+          }
+        },
+        "round_3": {
+          "strict": {
+            "domain_match": 3,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 3,
+            "overall_judge": 3.0,
+            "rationale_for_score": "처리 실패"
+          },
+          "lenient": {
+            "domain_match": 3,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 3,
+            "overall_judge": 3.0,
+            "rationale_for_score": "처리 실패"
+          }
+        },
+        "round_4": {
+          "strict": {
+            "domain_match": 3,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 3,
+            "overall_judge": 3.0,
+            "rationale_for_score": "처리 실패"
+          },
+          "lenient": {
+            "domain_match": 3,
+            "score_rationale_consistency": 3,
+            "specificity": 3,
+            "groundedness": 3,
+            "overall_judge": 3.0,
+            "rationale_for_score": "처리 실패"
+          }
+        },
+        "final": {
+          "domain_match": 3.0,
+          "score_rationale_consistency": 3.0,
+          "specificity": 3.0,
+          "groundedness": 3.0,
+          "overall_judge": 3.0
+        }
+      }
+    }
+  }
+]

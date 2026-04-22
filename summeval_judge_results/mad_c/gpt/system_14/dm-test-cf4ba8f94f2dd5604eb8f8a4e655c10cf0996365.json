@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-cf4ba8f94f2dd5604eb8f8a4e655c10cf0996365",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information and does not connect the events in a coherent manner."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the description of the robber, the context of the robbery, and the police's appeal for public assistance."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention that the robber was wearing a 'distinctive' cartoon mask, which is a significant detail from the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The use of quotation marks around 'distinctive' is inconsistent and disrupts the flow of reading."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, detailing the robbery and the actions of the man in the mask."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the key details from the article, such as the distinctive mask, the amount stolen, and the involvement of the police."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most critical aspects of the robbery, including the demand for cash and the actions taken by the robber."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as the lack of proper sentence structure and punctuation."
+        },
+        {
+          "criterion": "coherence",
+          "reason": "The summary could benefit from a more organized structure, as it jumps between details without clear transitions."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-d89de9c2a76f2665560becfe5d761a4fc62b9926",
+  "system_name": "system_7",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow and omits important context about the match, such as the significance of the event and the performance of other players."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention key details like the match atmosphere, the attendance, and the performance of other notable players, which are essential to understanding the match's context."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the competitive context of the match, such as the implications for the league standings, which is relevant to the outcome."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper punctuation and capitalization, making it difficult to read smoothly."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, starting with the outcome of the match and then mentioning the key player and tactical setup."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the main events and details from the article, including the scoreline and the goal scorer."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important aspects of the match, such as the result and the goal, while avoiding trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization at the beginning of sentences and does not use punctuation correctly, making it less fluent."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 4,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 3.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

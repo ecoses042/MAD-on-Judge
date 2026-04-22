@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-8bc8f134bc3ceaeec0df8f29e96e13d319717ab8",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from a major consistency flaw: it states 'Enrique will be replaced in the summer' as a fact, whereas the source text explicitly says Bartomeu 'refuted these claims.' This hallucinates a future event that contradicts the article's main point. Additionally, the summary is repetitive (mentioning Enrique taking charge twice) and lacks logical flow compared to the source."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from a major consistency flaw: it states 'Enrique will be replaced in the summer' as a fact, whereas the source text explicitly says Bartomeu 'refuted these claims.' This contradicts the article's main point. Additionally, the summary is repetitive (mentioning Enrique took charge last summer twice) and lacks smooth flow. However, it captures the core sentiment that the club is happy with him."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a critical consistency error by stating 'Enrique will be replaced' as a fact, directly contradicting the source text which says Bartomeu 'refuted these claims.' This is a hallucination of the opposite meaning. Additionally, the repetition regarding when Enrique took charge reduces coherence and relevance. No score increase is warranted."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No changes made. The lenient judge's assessment of the consistency error (stating Enrique will be replaced vs. Bartomeu refuting it) is correct and must be upheld. The repetition in the summary also justifies the lower coherence score."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No score adjustment is warranted. The lenient judge correctly identified the critical consistency error where the summary states 'Enrique will be replaced' as a fact, whereas the source text explicitly says Bartomeu 'refuted these claims.' This hallucination of the opposite meaning is severe enough to warrant a low consistency score (2). Additionally, the repetition regarding when Enrique took charge negatively impacts coherence and relevance. The fluency score remains at 4 due to minor capitalization issues ('barcelona', 'luis enrique') which do not impede readability but prevent a perfect score."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary contains a critical consistency error by stating 'Enrique will be replaced' when the source text explicitly says Bartomeu refuted these claims. Additionally, the summary repeats information about Enrique taking charge last summer in two separate sentences, which negatively impacts coherence and relevance."
+      }
+    },
+    "final": {
+      "coherence": 3.0,
+      "consistency": 2.0,
+      "fluency": 4.0,
+      "relevance": 3.0,
+      "overall_judge": 3.0
+    }
+  }
+}

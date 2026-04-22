@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-2c6695b438980783754f7db28129ec2fbb3e6e21",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from severe grammatical errors (e.g., 'he allegedly sexually abusing' instead of 'allegedly sexually abused'), which impacts fluency and professionalism. While it captures the main events, it omits significant details regarding the specific charges listed in the source (sexual abuse of children, invasion of privacy) and the nature of the evidence (41 videos, 34 showing victims showering), reducing its relevance. The inclusion of the bail amount and police chief's quote from the source is missing, further limiting coverage."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 3.8,
+        "rationale_for_score": "The summary accurately reflects the main facts of the article (arrest, victim age, hidden camera location, duration of abuse) and avoids hallucinations. However, it receives a lower score due to grammatical errors ('he allegedly sexually abusing' instead of 'allegedly sexually abused') and slightly choppy sentence structure, which impacts fluency. It is leniently scored because the core information is consistent with the source."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 1,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The strict judge's assessment was accurate but perhaps slightly conservative on coherence; however, the grammatical errors identified (e.g., 'he allegedly sexually abusing' instead of 'allegedly sexually abused') are severe enough to warrant a much lower fluency score (1). These errors also impact consistency and relevance by making the text unprofessional and incomplete. The summary omits key details like specific charges beyond the first, the volume of evidence (41 videos), and the bail amount, justifying low scores in relevance and consistency."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "Adjusted scores down from the lenient judge's assessment. While the summary captures the main facts (coherence/relevance), it contains significant grammatical errors that impact fluency ('he allegedly sexually abusing' is a fragment/run-on error). Furthermore, the consistency score was lowered because the summary omits critical details present in the source text regarding the specific charges (sexual abuse of children, invasion of privacy) and the nature of the evidence (41 videos found), making it an incomplete representation of the article's key points."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 1,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The lenient judge's points are accepted. The grammatical error ('allegedly sexually abusing' instead of 'abused') is severe enough to warrant a fluency score of 1. This error also impacts consistency and relevance by making the text unprofessional and incomplete. The summary omits key details like specific charges beyond the first, the volume of evidence (41 videos), and the bail amount, justifying low scores in relevance and consistency."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary contains a significant grammatical error ('he allegedly sexually abusing' is a sentence fragment/run-on), which severely impacts fluency and readability. Additionally, the consistency score was lowered because the summary omits critical details from the source text, specifically the full list of charges (sexual abuse of children, invasion of privacy) and the nature of the evidence (41 videos found), making it an incomplete representation of the article."
+      }
+    },
+    "final": {
+      "coherence": 3.5,
+      "consistency": 2.5,
+      "fluency": 1.5,
+      "relevance": 3.0,
+      "overall_judge": 2.5
+    }
+  }
+}

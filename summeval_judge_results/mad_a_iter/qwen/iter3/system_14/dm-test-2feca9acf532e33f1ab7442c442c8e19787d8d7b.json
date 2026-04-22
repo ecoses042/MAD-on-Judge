@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-2feca9acf532e33f1ab7442c442c8e19787d8d7b",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 1,
+        "consistency": 2,
+        "fluency": 1,
+        "relevance": 1,
+        "overall_judge": 1.2,
+        "rationale_for_score": "The summary is extremely poor. It suffers from severe grammatical errors and sentence fragmentation (e.g., 'the man by running his finger along it...'), making it incoherent and unfluent. Crucially, it fails the consistency criterion by omitting the subject ('the man') in key clauses, creating nonsensical sentences that do not accurately reflect the source text's meaning. It also misses the vast majority of the article's content (background on the fish, the owner's history with the pet, and the conclusion), failing relevance."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 3,
+        "fluency": 1,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary suffers from severe fluency issues due to broken sentence structures and missing verbs (e.g., 'the man by running his finger' instead of 'the man runs his finger'). It also fails coherence as the sentences do not flow logically into one another. While it captures some events present in the text, the grammatical errors make it difficult to read and significantly reduce its quality."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 1,
+        "consistency": 2,
+        "fluency": 1,
+        "relevance": 1,
+        "overall_judge": 1.2,
+        "adjustment_notes": "The strict judge's assessment is accurate and justified. The summary text provided contains severe grammatical errors (sentence fragments like 'the man by running his finger...'), lacks a clear logical flow, and omits the vast majority of the source text's content (background, owner history, conclusion). It fails on all criteria. No leniency is warranted as the flaws are fundamental to the text's readability and accuracy."
+      },
+      "strict": {
+        "coherence": 1,
+        "consistency": 2,
+        "fluency": 1,
+        "relevance": 1,
+        "overall_judge": 1.2,
+        "adjustment_notes": "The summary is grammatically broken and incoherent. It reads like a string of fragments rather than sentences (e.g., 'the man by running his finger along it' lacks a subject-verb structure). Furthermore, it contains hallucinations/inconsistencies: the text says the man runs his finger *along* the fish, but the summary claims he cups the fish *with his fingers* in that specific clause. The lenient judge's scores were too high given the severe lack of basic sentence construction and factual accuracy relative to the source."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 1,
+        "consistency": 2,
+        "fluency": 1,
+        "relevance": 1,
+        "overall_judge": 1.2,
+        "adjustment_notes": "The summary is severely flawed. It consists of disjointed sentence fragments that do not form a coherent narrative (e.g., 'the man by running his finger along it...'). It fails fluency completely due to grammatical errors and lacks coherence/structure. While the few phrases included are consistent with the text, the summary omits 95% of the source content (context about cats/dogs, the owner's history with bullying fish, the specific breed details, etc.), failing relevance. The lenient judge's points were accurate; no score increase is warranted."
+      },
+      "lenient": {
+        "coherence": 1,
+        "consistency": 2,
+        "fluency": 1,
+        "relevance": 1,
+        "overall_judge": 1.2,
+        "adjustment_notes": "The strict judge's assessment is accurate and justified. The summary consists of fragmented phrases lacking proper subject-verb agreement (e.g., 'the man by running his finger...'), making it grammatically broken and incoherent. Additionally, the summary introduces a factual inconsistency regarding how the fish is held ('cups the fish with his fingers' vs 'running his finger along it') and fails to form complete sentences. There are no grounds to maintain higher scores; the strict evaluation correctly identifies these as critical failures."
+      }
+    },
+    "final": {
+      "coherence": 1.0,
+      "consistency": 2.0,
+      "fluency": 1.0,
+      "relevance": 1.0,
+      "overall_judge": 1.2
+    }
+  }
+}

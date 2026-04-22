@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-18243373494a1722ddcd162ec67b63dd749633ab",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and consistent with the source text, but it suffers from poor relevance due to extreme brevity that omits key details such as the goalkeeper's crucial saves, the security context, and specific match events. It reads like a truncated version rather than a complete summary."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and consistent with the source text. It accurately captures the main headline (ending the winless streak) and the specific goal scorer/time. The only minor deduction for relevance is that it omits other significant details mentioned in the article, such as the goalkeeper's performance, the security context, or the match result's implications beyond just the league standing."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. While the summary is grammatically correct and factually consistent, it is severely lacking in relevance due to extreme brevity. It omits critical details such as the goalkeeper's performance (De Sanctis), the security context regarding the Campania region ban, and specific match events like the penalty call or late chances. The strict judge correctly identified that this reads more like a truncated snippet than a complete summary."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The lenient judge's assessment is accurate. The summary effectively captures the headline news (ending the streak) and key facts (scorer/time, league standing). While it omits significant details like the goalkeeper's performance, security context, and specific match events (e.g., missed chances), these are secondary to the primary narrative of the win. Therefore, the relevance score of 4 is appropriate and does not need adjustment."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding relevance. The summary is factually consistent and fluent, but it is extremely brief, omitting significant details present in the source text such as the goalkeeper's performance, security context, and other match events. Therefore, I will not lower the relevance score despite the strictness of the criteria."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The strict judge's assessment is correct. The summary successfully captures the primary narrative (ending the streak) and key factual updates (scorer/time, league standing). While it omits significant secondary details like the goalkeeper's performance, security context, and specific match events, these are appropriately considered secondary to the main headline news. Therefore, the relevance score of 4 is justified and does not require adjustment."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.7
+    }
+  }
+}

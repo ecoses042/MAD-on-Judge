@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-e880fda4c25289f8325574246f0f8ed4ff5eb26b",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 3.8,
+        "rationale_for_score": "The summary is mostly coherent and relevant but contains a significant consistency error: it uses the '#' symbol instead of '£' for the price, which contradicts the source text's currency notation. Additionally, while it captures key points, it omits specific details like the guide price range being explicitly stated as such in the second sentence of the summary versus the first, creating slight redundancy."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 3.8,
+        "rationale_for_score": "The summary is coherent and relevant, capturing the main points of the article. However, it contains a significant consistency error: it uses the '#' symbol instead of '£' for the price, which introduces factual information not present in the source text (hallucination). Additionally, it omits specific details like the guide price range being between £200k and £250k, though this is a minor relevance issue compared to the currency symbol error."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 2,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the consistency score significantly because the summary uses '#' instead of '£' for the currency, which is a factual inconsistency with the source text. I also lowered the fluency score due to the awkward phrasing in the second sentence ('comes complete with...') and the redundancy between the first and second sentences regarding the guide price, which makes the flow less smooth than initially assessed."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 3,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 3.8,
+        "adjustment_notes": "The lenient judge's assessment is correct. The summary contains a significant consistency error by using '#' instead of '£' for the currency symbol. This is not just a formatting issue but introduces information (the specific character '#') that contradicts the source text which explicitly uses '£'. Therefore, the consistency score must remain low (3) as per the lenient judge's rationale."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 2,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding consistency (using '#' instead of '£' is a factual error) and fluency (awkward phrasing and redundancy). The scores remain unchanged as the summary contains these specific issues."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the consistency score from 3 to 2. While the lenient judge correctly identified that using '#' instead of '£' is a factual inconsistency with the source text (which explicitly states '£'), I agree with their assessment that this is a significant error rather than a minor formatting glitch. The summary introduces a specific character ('#') that contradicts the source, violating the core principle of consistency. Therefore, the score should be penalized more heavily to reflect this clear deviation from the source facts."
+      }
+    },
+    "final": {
+      "coherence": 4.0,
+      "consistency": 2.0,
+      "fluency": 3.5,
+      "relevance": 4.0,
+      "overall_judge": 3.0
+    }
+  }
+}

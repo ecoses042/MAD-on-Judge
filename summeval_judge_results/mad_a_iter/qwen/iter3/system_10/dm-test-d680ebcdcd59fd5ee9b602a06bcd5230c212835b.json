@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-d680ebcdcd59fd5ee9b602a06bcd5230c212835b",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from a significant relevance issue: it completely omits the core news hook of the article, which is that five former England managers have signed a letter backing Dyke's proposals. The summary mentions the opposition from the Premier League (which is in the text) but fails to mention the crucial support from the specific individuals named in the source. Additionally, while mostly consistent, it misses the context provided by the article regarding the statistics and the specific warnings issued by the managers."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is excellent in coherence, consistency, and fluency, accurately reflecting the main points of the article without hallucinations. It captures the core conflict (Dyke's proposals vs. Premier League opposition) and the specific rule changes. It receives a slightly lower relevance score because it omits the significant supporting details regarding the five former managers' names, their specific warnings about England's future, and the statistical context provided in the article, though these are secondary to the main news hook."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment regarding relevance. The summary fails to mention the specific action taken by the five former managers (signing a letter), which is the central news hook of the article. It also omits the context provided by the statistics and the managers' warnings about England's future, focusing only on Dyke's proposals and the opposition. Therefore, I maintain the lower relevance score."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is well-structured and factually accurate (consistent). While it omits specific names of the managers and statistical details found in the article, these are secondary to the primary news hook regarding Dyke's proposals and the opposition faced. Therefore, a relevance score of 4 is appropriate, and no harsher penalty is warranted."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary effectively captures the main news hook (Dyke's proposals and the opposition) while omitting secondary details like specific manager names and statistics, which is acceptable for a concise summary. No score reduction is necessary."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding relevance. The summary accurately captures the main news hook (Dyke getting backing from five managers) and the specific details of his proposals (increasing home-grown players to 12 and changing the age/training criteria). While it omits the statistics, the letter signing action, and the warnings about England's future, these are secondary details compared to the core news event. The summary is well-structured, factually consistent with the text, and fluent."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.5,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.5
+    }
+  }
+}

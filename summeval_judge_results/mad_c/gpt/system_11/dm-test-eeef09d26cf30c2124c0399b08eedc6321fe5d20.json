@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-eeef09d26cf30c2124c0399b08eedc6321fe5d20",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, abruptly ending after mentioning the basketball match without connecting to Neymar's recent performance or the broader context."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits significant details from the article, such as Neymar's role in the Brazil vs. Chile match and the La Liga context, which are essential for understanding the full scope of Neymar's activities."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains inconsistent capitalization (e.g., 'team-mates' should be 'teammates', 'barca' should be 'Barca'), which affects readability."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses narrowly on the basketball match, neglecting other important events and context that would provide a more comprehensive overview."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, detailing Neymar and Alves' attendance at the basketball game and the outcome of the match."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the events described in the article, specifically mentioning Neymar and Alves supporting the basketball team and the victory against Real Madrid."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key event of Neymar and Alves attending the basketball game and the result, which are the most important points from the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as inconsistent capitalization and punctuation, which affect its readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

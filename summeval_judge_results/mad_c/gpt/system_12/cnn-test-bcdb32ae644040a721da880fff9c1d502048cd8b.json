@@ -1,0 +1,66 @@
+{
+  "article_id": "cnn-test-bcdb32ae644040a721da880fff9c1d502048cd8b",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow of information, as it jumps between different pieces of information without connecting them."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary fails to mention the murder-suicide aspect, which is a crucial detail from the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits important details such as the involvement of the FBI and the timing of the discovery of the bodies."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary has awkward phrasing, such as 'cleaning staff discovered the deceased passengers' which could be more clearly stated."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with the discovery of the deceased passengers and mentioning the cruise details."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article without introducing any new facts."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is written in grammatically correct and easy-to-read English."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points, such as the discovery of the bodies and the cruise details, while avoiding trivial information."
+        }
+      ],
+      "remaining_concerns": [],
+      "provisional_score": 5
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 4,
+      "relevance": 3,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

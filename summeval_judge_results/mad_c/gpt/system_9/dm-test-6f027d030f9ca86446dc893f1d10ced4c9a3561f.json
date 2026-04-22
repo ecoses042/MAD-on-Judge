@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-6f027d030f9ca86446dc893f1d10ced4c9a3561f",
+  "system_name": "system_9",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, as it jumps from Henderson's contract to a vague mention of 'latest Liverpool news' without connecting these ideas."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as Henderson's contributions to the team, his potential role as captain, and the context of his contract extension following the FA Cup defeat."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention that Henderson is the vice-captain, which is a relevant detail from the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary uses lowercase for 'jordan henderson' instead of capitalizing his name, which is a grammatical error."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding Henderson's new contract, including details about its duration and financial terms."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the key details from the article, such as the contract duration and weekly wage, without introducing any new or conflicting information."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important aspects of Henderson's contract situation, omitting trivial details while highlighting the key points."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary lacks proper capitalization at the beginning of sentences and does not maintain a consistent format for names, which affects its overall fluency."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "tie",
+        "consistency": "tie",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

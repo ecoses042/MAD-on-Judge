@@ -1,0 +1,63 @@
+{
+  "article_id": "dm-test-54b857a66cbd8473d6732e5da52d48612e636a37",
+  "system_name": "system_8",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, failing to present the sequence of events leading to the incident."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that the passenger blamed the incident on his own stupidity, which is not mentioned in the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the injuries sustained, the location of the incident, and the passenger's initial actions, which are crucial for understanding the context."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'blamed it on his own stupidity' is vague and does not accurately reflect the passenger's changing story, leading to a lack of clarity."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the incident involving the passenger and the broken toilet."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states that the passenger blamed the incident on his own stupidity, which is not explicitly mentioned in the article."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the injuries sustained, the context of the incident, and the response from authorities, which are important for understanding the full scope of the event."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

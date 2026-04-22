@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-c05bda9b387ec8ae43803170b6f59b4b82505db9",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is factually consistent with the source text and fluent enough to read, but it suffers from poor relevance by omitting critical context such as the number of people released (217 vs 228), the role of Arab tribal leaders, and the broader background on ISIS's persecution of Yazidis. Additionally, the phrasing 'an official says' is vague compared to the specific names provided in the text, slightly reducing coherence."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and consistent with the source text. It captures the key details regarding who was released, their demographics, where they were sent, and the uncertainty surrounding the motivation. It receives a 'Good' (4) rather than 'Excellent' (5) for relevance because it omits significant context provided in the article, such as the specific number of people released (217 vs 228), the background on ISIS's attack, the humanitarian crisis, and the broader international response."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is factually accurate and fluent but fails to capture the essential context of the article (the scale of the crisis, the specific numbers released, the role of tribal leaders, and the historical background of persecution). Therefore, the relevance score remains low."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes needed. The lenient judge's assessment is accurate. The summary is well-structured (coherence), contains only facts present in the text (consistency), and is grammatically correct (fluency). It receives a 4 for relevance because it focuses exclusively on the immediate release event, omitting the significant background context regarding the humanitarian crisis, ISIS atrocities, and international response detailed in the source article."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate: while the summary is factually consistent and fluent, it suffers from low relevance because it omits critical context such as the specific number of people released (217 vs 228), the role of Arab tribal leaders, the historical background of persecution, and the broader humanitarian crisis. The strict judge's lower relevance score was justified."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes needed. The strict judge's assessment is accurate. While the summary is well-structured and factually consistent, it significantly under-represents the source text by omitting the crucial context of ISIS atrocities, the humanitarian crisis, and the international response, which are major components of the article."
+      }
+    },
+    "final": {
+      "coherence": 4.5,
+      "consistency": 5.0,
+      "fluency": 4.5,
+      "relevance": 3.5,
+      "overall_judge": 4.4
+    }
+  }
+}

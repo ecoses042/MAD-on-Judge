@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-4e0de0ec6d5b9df174f54d03158de8f30aac861f",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and consistent with the source text, but it suffers from poor relevance due to severe truncation. It omits significant details present in the article, such as Ozil's current form (4 assists, 3 goals), his transfer history (£42.5m from Real Madrid), the specific context of his return to London ('Home Sweet Home'), and the rumors regarding his whereabouts in Berlin which were addressed by Arsene Wenger. By cutting off after the mention of illness without providing the conclusion or other key points, it fails to capture the full essence of the article."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is well-structured, fluent, and consistent with the source text. It covers the main points regarding Ozil's social media post, his return to London, his performance for Germany, and his recent absence due to illness. It receives a 4 instead of 5 on relevance because it omits other significant details from the article, such as his upcoming match against Liverpool, his specific stats (goals/assists), and the rumors about him being in Berlin."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is grammatically correct and factually consistent, but it suffers from severe truncation that renders it incomplete. It misses the core narrative arc (the 'Home Sweet Home' caption context), his current form stats, transfer history, and the specific rumors about his whereabouts in Berlin which were addressed by the manager. Therefore, the relevance score remains low."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate. The summary is well-structured and consistent with the source text. It covers the key points mentioned (Twitter post, return to London, Germany performance, illness absence). The deduction for relevance is justified because it omits other significant details present in the article, such as the upcoming match against Liverpool, his specific stats (4 assists, 3 goals), and the rumors regarding his location in Berlin."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary is grammatically correct and factually consistent with the source text (no hallucinations). However, it suffers from severe truncation, omitting significant details such as Ozil's current form stats, transfer history, the specific rumors about his whereabouts in Berlin, and the manager's response to them. Consequently, the relevance score remains low due to this incompleteness."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The strict judge's assessment is accurate. While the summary is well-structured and consistent, it significantly omits key details from the source text, specifically the upcoming match against Liverpool, his impressive statistics (4 assists, 3 goals), and the rumors regarding his location in Berlin. These omissions justify the relevance deduction."
+      }
+    },
+    "final": {
+      "coherence": 4.5,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.5
+    }
+  }
+}

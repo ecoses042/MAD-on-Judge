@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-801763443e6c73e3857039f2223798b2b58bef19",
+  "system_name": "system_8",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, abruptly shifting from Van der Wiel's happiness to a mention of a release clause without clear connection."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary introduces a £250 million release clause, which is not mentioned in the article, thus adding information not present in the source."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The mention of being linked with a move to the Nou Camp is trivial compared to the main focus of Van der Wiel's commitment to PSG."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear statement about Van der Wiel's happiness at PSG and his lack of plans to leave, which aligns with the main message of the article."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects Van der Wiel's sentiments about his current situation at PSG without introducing any new or conflicting information."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary captures the key point of Van der Wiel's contentment at the club, which is the central theme of the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'PSG have a £250million release clause in the player's contract' is unclear and seems out of context, as the article does not mention a release clause."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The mention of a potential move to the Nou Camp is misleading, as the article primarily focuses on Van der Wiel's commitment to PSG rather than transfer rumors."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

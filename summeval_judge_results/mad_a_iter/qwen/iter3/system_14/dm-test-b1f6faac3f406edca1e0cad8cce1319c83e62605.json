@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-b1f6faac3f406edca1e0cad8cce1319c83e62605",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary contains a major hallucination regarding consistency: it states 'Costa feigned his failing memory,' which directly contradicts the source text where Professor Mullen (the expert witness) denied these claims and argued Costa was likely suffering from dementia. Additionally, the phrase 'state of mind abuse' is grammatically awkward and not supported by the text (which mentions alcohol abuse). The summary also omits the critical detail that the jury could return a not guilty verdict based on his mental state."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary contains a major hallucination regarding consistency: it states 'Costa feigned his failing memory,' which directly contradicts the source text where Professor Mullen (the expert witness) denied these claims and argued Costa was likely suffering from dementia. Additionally, the phrase 'state of mind abuse' is grammatically awkward and not supported by the text. While the summary covers key facts well otherwise, the direct contradiction with the article's specific details regarding the feigning claim prevents a higher score."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the overall score because the strict judge correctly identified a critical hallucination in the 'consistency' dimension. The summary states 'Costa feigned his failing memory,' which directly contradicts the source text where Professor Mullen explicitly denied this claim and argued Costa was likely suffering from dementia. This is a severe factual error that cannot be overlooked. I also adjusted the fluency score slightly down to 4 (from a potential 5) due to the awkward phrasing 'state of mind abuse' which misrepresents the source's mention of 'alcohol abuse'. The summary fails to capture the critical legal nuance regarding the not guilty verdict possibility."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I have lowered the overall score from 3.0 to 2.5. The lenient judge correctly identified a critical consistency error: the summary states 'Costa feigned his failing memory,' which directly contradicts the source text where Professor Mullen explicitly denied this claim and argued Costa was likely suffering from dementia. This is not a minor hallucination but a direct contradiction of the article's specific details regarding the expert witness's opinion. Additionally, the phrase 'state of mind abuse' in the summary is grammatically incorrect (likely a conflation of 'abuse' and 'decline') and not supported by the text, further penalizing consistency and fluency."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I have lowered the overall score from 3.0 to 2.5. The lenient judge correctly identified that the summary contains a critical hallucination regarding 'Costa feigned his failing memory,' which directly contradicts the source text where Professor Mullen denied this claim. This is a severe consistency error that fundamentally undermines the summary's reliability. Additionally, the phrase 'state of mind abuse' in the summary is grammatically incorrect and misrepresents the source text's mention of 'alcohol abuse,' further justifying the lower fluency score."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I have lowered the overall score from 3.0 to 2.5. The strict judge correctly identified a critical consistency error: the summary states 'Costa feigned his failing memory,' which directly contradicts the source text where Professor Mullen explicitly denied this claim and argued Costa was likely suffering from dementia. This is not a minor hallucination but a direct contradiction of the article's specific details regarding the expert witness's opinion. Additionally, the phrase 'state of mind abuse' in the summary is grammatically incorrect (likely a conflation of 'abuse' and 'decline') and not supported by the text, further penalizing consistency and fluency."
+      }
+    },
+    "final": {
+      "coherence": 3.0,
+      "consistency": 2.0,
+      "fluency": 4.0,
+      "relevance": 3.0,
+      "overall_judge": 3.0
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-36352fd1c61fd0c593ee7b84cbe213aa9b444439",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, as it abruptly shifts from the discovery of the body to the arrest without providing context or details about the circumstances surrounding her death."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the nature of her profession as a transgender escort and the police's appeal for information, which are crucial to understanding the case."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention that the man arrested has been told to return for further questioning, which is an important detail from the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrasing 'a man in connection with her death but have bailed him' is awkward and could be improved for better readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, detailing the key facts about Vanessa Santillan's death and the police investigation."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, including the circumstances of her death and the arrest of a suspect."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the most important details, such as the cause of death, the location, and the police investigation, while avoiding trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains a formatting issue with the spacing around the apostrophe in 'Vanessa Santillan 's', which affects its overall fluency."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 3,
+      "fluency": 4,
+      "relevance": 3,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-c05bda9b387ec8ae43803170b6f59b4b82505db9",
+  "system_name": "system_2",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow of information, as it abruptly shifts from the release of Yazidis to mentioning previous releases without a smooth transition."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits significant details about the humanitarian crisis faced by the Yazidis, the context of their persecution, and the international response, which are crucial for understanding the situation."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary states 'more than 200 Yazidis' but does not clarify the exact number released, which is mentioned in the article as 217 or 228, leading to potential confusion."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The use of abbreviations like 'lrb' and 'rrb' is inappropriate and disrupts the fluency of the text, making it less readable."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding the release of Yazidis by ISIS, including details about the demographics of those released and the context of their captivity."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article, including the number of Yazidis released and the mention of women, children, and the elderly among them."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key event of the release of Yazidis and provides relevant details about the circumstances surrounding it, avoiding trivial information."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains some grammatical issues, such as the use of parentheses and dashes, which may hinder readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 3,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

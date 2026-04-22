@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-31114653cd606fd3f4b1035f98dedd71f8282cd2",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary contains severe hallucinations and grammatical errors that violate consistency and fluency criteria. Specifically, it claims 'Real Madrid star Bale scored the top of the group B table,' which is factually incorrect based on the text (Belgium is on top due to goal difference). It also omits the crucial detail about Marc Wilmots' side being ranked fourth in the world while having 11 points. The sentence structure is broken and ungrammatical ('scored the top of the group B table'). These are major flaws."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 2,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from a major consistency flaw (hallucination). It states 'Real Madrid star bale scored the top of the group b table', whereas the source text explicitly says Wales is on top due to goal difference after Bale's free-kick; Bale himself did not score the points that put them at the top. Additionally, the summary lacks proper capitalization and punctuation, affecting fluency. However, it covers the key facts (date, venue, sell-out status) correctly."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a severe factual hallucination ('Bale scored the top of the group B table') which contradicts the source text stating Belgium is on top due to goal difference. This violates the consistency criterion significantly. Additionally, the grammar is poor ('scored the top'), and the flow is disjointed. No leniency is warranted for these fundamental errors."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 2.8,
+        "adjustment_notes": "I have lowered the scores to align with the lenient judge's valid points regarding consistency and fluency. The summary contains a significant hallucination: it states 'Real Madrid star bale scored the top of the group b table,' whereas the source text explicitly attributes the top position to Wales due to goal difference, not Bale scoring points. Additionally, the summary lacks proper capitalization (e.g., 'cardiff city stadium', 'june 12') and punctuation throughout, which severely impacts fluency. While the key facts are present, the factual error and poor grammar prevent a higher rating."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "adjustment_notes": "No adjustment needed. The lenient judge correctly identified a severe factual hallucination in the summary ('Bale scored the top of the group B table') which directly contradicts the source text stating Belgium is on top due to goal difference. This violates the consistency criterion significantly. Additionally, the grammar is poor ('scored the top'), and the flow is disjointed. No leniency is warranted for these fundamental errors."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 2.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a significant factual hallucination ('Real Madrid star bale scored the top of the group b table') which contradicts the source text stating 'Wales... on top spot'. Additionally, the lack of capitalization and punctuation severely impacts readability and fluency. No adjustment to the scores is necessary."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 1.5,
+      "fluency": 2.0,
+      "relevance": 3.5,
+      "overall_judge": 2.4
+    }
+  }
+}

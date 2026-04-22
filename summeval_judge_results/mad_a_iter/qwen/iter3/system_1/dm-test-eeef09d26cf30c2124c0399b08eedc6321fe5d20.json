@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-eeef09d26cf30c2124c0399b08eedc6321fe5d20",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is well-structured, grammatically correct, and strictly consistent with the source text. It captures the main points regarding Neymar and Dani Alves supporting the basketball team and the match results. A minor deduction in relevance is given because it omits the significant information about Barcelona's La Liga standing (moving four points clear) and their upcoming fixture against Celta Vigo, which are key details in the article."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is consistent with the source text and fluent in English. However, it suffers from poor relevance as it omits significant details present in the article, such as the specific scores of the matches (85-80 for basketball, 1-0 for football), the context of Neymar's recent performance against Chile, and the upcoming match against Celta Vigo. It essentially truncates the source text rather than synthesizing the key information."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate. The summary is well-structured and consistent with the source text. The deduction in relevance is justified because the summary omits key details regarding Barcelona's La Liga standing (moving four points clear) and their upcoming fixture against Celta Vigo, which are significant parts of the article."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the strict judge's assessment regarding relevance. The summary is a direct truncation of the first three sentences of the source text and completely ignores the majority of the content, including specific scores, the upcoming match against Celta Vigo, and details about Neymar's recent performance. Therefore, I maintain the low relevance score."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The strict judge's assessment is accurate. The summary is well-structured and consistent with the source text. The deduction in relevance is justified because the summary omits key details regarding Barcelona's La Liga standing (moving four points clear) and their upcoming fixture against Celta Vigo, which are significant parts of the article."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding relevance. The summary is a direct truncation of the first three sentences of the source text and completely ignores the majority of the content, including specific scores, the upcoming match against Celta Vigo, and details about Neymar's recent performance. Therefore, I maintain the low relevance score."
+      }
+    },
+    "final": {
+      "coherence": 4.5,
+      "consistency": 5.0,
+      "fluency": 4.5,
+      "relevance": 3.5,
+      "overall_judge": 4.4
+    }
+  }
+}

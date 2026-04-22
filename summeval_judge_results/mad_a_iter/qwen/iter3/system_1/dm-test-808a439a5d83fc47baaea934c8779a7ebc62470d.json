@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-808a439a5d83fc47baaea934c8779a7ebc62470d",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is coherent and fluent but suffers from severe relevance issues by omitting the vast majority of the source text's key information (e.g., Clattenburg's specific red card history, the current league standings, team form, and match officials). It also contains a minor consistency flaw: it states Kompany is suspended for 'the match against Wales in June,' whereas the source specifies this suspension applies to the match against Wales in 'June' (implying the upcoming fixture), but the summary's phrasing could be slightly ambiguous without context. However, the primary failure is relevance due to excessive truncation of the source content."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is factually consistent with the source and maintains a logical flow. However, it only covers the first two sentences of the article, omitting significant context such as Clattenburg's overall record, the current form of both teams, and the match officials. Due to the lenient rules regarding direction alignment (which is correct) and avoiding clear hallucinations, the score is kept above 3 despite the brevity."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is grammatically correct and logically structured (coherence/fluency), but it fails significantly on relevance by truncating the text and omitting major context like team form, league standings, and other officials. It also has a minor consistency issue regarding the specific phrasing of Kompany's suspension timing relative to the source text."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I raised the Relevance score from 1 to 2 because the summary does contain specific factual details (Kompany's suspension, Clattenburg's appointment) that are present in the text, rather than being a complete hallucination. However, I lowered it from the lenient judge's 3 because the summary is extremely truncated; it ignores the vast majority of the article's content regarding team form, Clattenburg's career context, and match officials, making it barely relevant to the full scope of the source text."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No changes made. The summary is grammatically correct and logically structured (Coherence/Fluency), but it significantly fails on Relevance by omitting crucial context such as team form, league standings, and other officials mentioned in the source text. There is also a minor Consistency issue regarding the specific phrasing of Kompany's suspension timing relative to the source text."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. While the summary is factually consistent and coherent regarding the specific sentences it chose to summarize, its relevance is extremely low because it ignores the vast majority of the article's content (team form, Clattenburg's career context, other match officials). The lenient score was too generous given how much information was omitted."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.5,
+      "fluency": 3.5,
+      "relevance": 2.0,
+      "overall_judge": 3.0
+    }
+  }
+}

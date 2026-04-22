@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-4761dc6d8bdf56b9ada97104113dd1bcf4aed3f1",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.8,
+        "rationale_for_score": "The summary contains a severe hallucination by appending 'fourth baby orca born this season' at the end. This sentence is completely unrelated to the article text provided (which ends with that headline but does not mention it in the body) and introduces facts not present in the source story about the whale Varvara. While the first two sentences are accurate, the inclusion of this irrelevant fact violates the consistency criterion significantly."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary contains a severe hallucination by including the phrase 'fourth baby orca born this season' at the end. This fact is completely absent from the source text and appears to be noise from a different news item (indicated by the header in the article text). This violates the consistency criterion strictly, resulting in a score of 1 for consistency and low relevance. The rest of the summary accurately reflects the source text."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.8,
+        "adjustment_notes": "No adjustment needed. The lenient judge's assessment is correct: the summary includes a severe hallucination by appending 'fourth baby orca born this season,' which is unrelated to the main story about Varvara and not part of the article's body text (only appearing as a headline). This violates consistency and relevance significantly."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The inclusion of 'fourth baby orca born this season' is a severe hallucination as it appears in the source text only as a disjointed header/footer artifact from a different news story, not as part of the article content about Varvara. This violates the consistency criterion fundamentally and renders the summary irrelevant to the main topic."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The strict judge was correct to penalize the summary heavily. The inclusion of 'fourth baby orca born this season' is a severe hallucination as it appears to be a headline from a different story appended to the text, violating consistency and relevance significantly. I have lowered my scores to reflect this critical flaw."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 4,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "No adjustment needed. The lenient judge correctly identified that the phrase 'fourth baby orca born this season' is a disjointed artifact from a different news story included in the source text but not part of the narrative about Varvara. Including it in the summary violates the consistency criterion by introducing irrelevant information and severely impacts relevance and coherence."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 1.0,
+      "fluency": 4.0,
+      "relevance": 1.0,
+      "overall_judge": 2.0
+    }
+  }
+}

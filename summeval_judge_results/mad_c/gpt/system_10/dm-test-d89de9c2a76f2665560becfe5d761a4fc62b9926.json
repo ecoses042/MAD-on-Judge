@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-d89de9c2a76f2665560becfe5d761a4fc62b9926",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, jumping abruptly between points without clear connections."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the significance of the match, the performance of other players, and the context of the rivalry, making it less informative."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention the fact that it was a 'mini-derby', which is an important aspect of the match's context."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The use of lowercase for 'english' and 'manchester united' is grammatically incorrect and affects readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, starting with the number of English players and leading into the match details."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "It focuses on key points such as the match winner, the attendance, and the setting of the match, which are important aspects of the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits several details from the article, such as the context of the match being a 'mini-derby' and the performance of other players, which could provide a fuller picture."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The use of lowercase letters at the beginning of sentences and the lack of punctuation in some areas detracts from the overall fluency and readability."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 2,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

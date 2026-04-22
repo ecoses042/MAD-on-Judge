@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-e06ff0eb7c4fa4416fda84a9a239b15480c5a9d9",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, jumping between details without proper transitions."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits significant details from the original article, such as Rich's personal description and the benefits he offers, which are crucial for understanding the context."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The use of punctuation and formatting (e.g., ' -lrb- ' and ' -rrb- ') disrupts the readability and fluency of the summary."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary does not adequately cover the key points, such as Rich's personality traits and the nature of his advertisement."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear focus on the main subject, which is Rich's advertisement for a girlfriend/wife, and it logically outlines his preferences."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the content of the article by mentioning Rich's requirements for a partner and his personal details."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary captures the key points of Rich's advertisement, including his preferences and the context of the advertisement."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, such as the use of backticks and inconsistent capitalization."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

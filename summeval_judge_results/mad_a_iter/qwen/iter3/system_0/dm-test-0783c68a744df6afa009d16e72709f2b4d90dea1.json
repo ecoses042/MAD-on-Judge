@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-0783c68a744df6afa009d16e72709f2b4d90dea1",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary contains a severe hallucination in the sentence 'bolt is the iaaf/btc general secretary garth gayle said...', which incorrectly conflates Bolt with Garth Gayle (who is identified as the General Secretary in the text). This violates consistency rules strictly. Additionally, the summary suffers from poor coherence due to run-on sentences and awkward phrasing ('the world 's fastest man will be in the bahamas next month' lacks a clear subject connection). While it captures some key facts, the hallucination and disjointed structure make it very poor."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary contains a significant hallucination in the sentence 'bolt is the iaaf/btc general secretary garth gayle said...'. It incorrectly conflates Bolt with Garth Gayle (who is the General Secretary), creating a factual error not present in the source. Additionally, the attribution of the quote 'best to make his country proud' to Gayle instead of Bolt is inconsistent with the text. While the summary covers the main points and is generally fluent, these consistency errors prevent it from being rated higher."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a critical hallucination where it conflates Usain Bolt with Garth Gayle ('bolt is the iaaf/btc general secretary garth gayle said...'), which is a severe consistency failure. Additionally, the sentence structure is disjointed and lacks proper punctuation or capitalization, resulting in poor fluency and coherence. The summary fails to clearly attribute quotes to their correct speakers."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "The lenient judge's assessment of consistency (2) is correct and should be maintained because the summary contains a severe hallucination: it merges two distinct sentences from the source into one ('Bolt is the... Garth Gayle said'), incorrectly attributing Bolt's quote to Gayle and implying Bolt holds the title of General Secretary. This is a major factual error. The coherence score was lowered slightly (from 4 to 3) because the sentence structure resulting from this merge is awkward and confusing, though not grammatically broken. Fluency remains high as the English itself is readable despite the semantic error. Relevance is low (3) because the summary fails to mention the specific event name ('IAAF/BTC World Relays') in the second sentence, replacing it with just 'World', and omits the detail about the full team list being announced shortly."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary contains a critical hallucination where it conflates Usain Bolt with Garth Gayle ('bolt is the iaaf/btc general secretary garth gayle said...'), which is a severe consistency failure. Additionally, the sentence structure is disjointed and lacks proper punctuation or capitalization, resulting in poor fluency and coherence. The summary fails to clearly attribute quotes to their correct speakers."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a severe hallucination where it conflates Usain Bolt with Garth Gayle ('Bolt is the... Garth Gayle said'), which is a critical consistency failure that also impacts coherence by creating confusion. The relevance score is appropriately lowered because key details like the specific event name and the announcement of the full team list are omitted. No changes to scores are necessary."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 1.5,
+      "fluency": 3.5,
+      "relevance": 2.5,
+      "overall_judge": 2.5
+    }
+  }
+}

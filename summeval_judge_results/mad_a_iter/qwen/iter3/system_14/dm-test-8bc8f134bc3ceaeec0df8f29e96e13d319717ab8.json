@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-8bc8f134bc3ceaeec0df8f29e96e13d319717ab8",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary is factually consistent with the source text but suffers from severe fluency issues due to poor sentence structure and awkward phrasing (e.g., 'took only six games away from winning'). It also lacks coherence as it presents disjointed facts without a logical narrative flow. While it covers key points, the low quality of expression significantly impacts its overall utility."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 3,
+        "relevance": 3,
+        "overall_judge": 2.8,
+        "rationale_for_score": "The summary suffers from a major consistency flaw: it states the manager is 'only six games away from winning the title,' which misrepresents the source text. The article says he is 'six games away from winning the title' (meaning six games remain in the season), but the summary adds the word 'only,' implying he has only played six games or that victory is imminent after just six more, creating a misleading implication not supported by the text. Additionally, the sentence structure is slightly awkward ('took only six games away'). While it captures key points like his tenure start and the president's sentiment, the distortion of the timeline regarding the title race is a significant issue."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains severe fluency issues (e.g., 'took only six games away from winning' is grammatically awkward and unclear) and lacks coherence as it presents disjointed facts without a logical narrative flow. While the information is consistent with the source, the poor expression significantly lowers its quality. No score adjustment is needed."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 3,
+        "relevance": 3,
+        "overall_judge": 2.8,
+        "adjustment_notes": "No changes made. The lenient judge's assessment of the consistency error is valid: the summary adds 'only' to 'six games away from winning the title,' which alters the meaning from 'six games remaining in the season' to a misleading implication about his tenure or imminent victory, contradicting the source text. The awkward phrasing ('took only six games') further supports the low fluency score."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 5,
+        "fluency": 1,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding fluency and coherence. The summary contains severe grammatical errors (e.g., 'took only six games away from winning' is nonsensical) and lacks a logical narrative flow, presenting disjointed facts. While the information is consistent with the source text, the poor expression significantly lowers its quality. No score adjustment is needed; in fact, I slightly lowered the coherence score to reflect that the disjointed nature of the sentences makes it harder to follow than just '3'."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 3,
+        "relevance": 3,
+        "overall_judge": 2.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary contains a significant consistency error by adding 'only' to 'six games away from winning the title,' which changes the meaning from 'six games remaining in the season' to an ambiguous or misleading statement about his tenure. This factual distortion warrants a low consistency score. The awkward phrasing ('took only six games') also justifies the lower fluency and coherence scores."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 3.5,
+      "fluency": 2.0,
+      "relevance": 3.0,
+      "overall_judge": 2.4
+    }
+  }
+}

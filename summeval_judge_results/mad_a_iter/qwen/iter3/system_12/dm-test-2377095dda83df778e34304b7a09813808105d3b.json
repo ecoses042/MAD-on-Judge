@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-2377095dda83df778e34304b7a09813808105d3b",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and consistent with the source text. It accurately captures the three main points: the refusal of blanket refunds, the specific statistics on approved compensation claims, and Keith Vaz's role. It receives a slight deduction on relevance (from 5 to 4) because it omits other significant details from the article, such as the £42 million profit made by the Passport Office and the bonuses received by managers, which are central to the story's narrative about the 'fiasco'. However, under lenient rules, this omission is not a hallucination or a failure, just a selection of key points."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and strictly consistent with the source text regarding the specific statistics (2,191 approved applications) and the stance of Ministers/Keith Vaz. However, it scores a 4 for relevance because it omits significant key information present in the article: the £42 million profit made by the Passport Office, the bonuses received by managers (£3,500), and the specific details about holidaymakers missing trips or paying extra fees without compensation. Given the instruction to focus on the most important information, excluding the financial contrast between the agency's profit and the lack of compensation for victims makes the summary incomplete."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate. The summary is well-structured (coherence), contains only facts present in the article (consistency), and is grammatically correct (fluency). While it omits the significant details about profits and bonuses which lowers its relevance score, this is a valid editorial choice for a short summary rather than an error or hallucination. Therefore, the scores remain unchanged."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I lowered the relevance score from 4 to 3. While the summary is factually consistent and fluent, the strict judge's critique regarding the omission of the '£42 million profit' and 'manager bonuses' is valid. These details represent a critical narrative arc (the contrast between victim suffering and management gain) that defines the article's main point. By excluding this central conflict to focus only on the compensation statistics, the summary fails to capture the most important information, making it incomplete rather than just partially relevant."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The strict judge's assessment is accurate. The summary effectively captures the main narrative arc (refusal of refunds, low compensation numbers, Keith Vaz's involvement) with perfect coherence, consistency, and fluency. While it omits the specific details regarding profits and bonuses, this is a reasonable editorial choice for a concise summary rather than an error, justifying the slight deduction in relevance."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I accepted the lenient judge's point regarding relevance. The summary completely omits the central conflict of the article: the £42 million profit and manager bonuses received during the chaos. This omission renders the summary factually consistent but severely lacking in relevance to the main story, as it misses the 'critical narrative arc' identified by the lenient judge. Therefore, the relevance score remains at 3."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.7
+    }
+  }
+}

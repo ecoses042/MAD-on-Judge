@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-b5bc2ae78441e4ac08fb01823d5fc0f1627c3166",
+  "system_name": "system_12",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a logical flow of information, as it abruptly shifts from Pietersen's mood to the match schedule without connecting the ideas."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits significant context about Paul Downton's dismissal and its implications for Pietersen's potential return to the England team, which is a key point in the article."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention that Pietersen was reflecting deeply, which is a notable aspect of his demeanor during the photo shoot."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The phrase 'CLICK HERE for all the latest cricket news' is irrelevant and disrupts the fluency of the summary."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, starting with Pietersen's participation in the team photo and leading into the context of the upcoming county championship season."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points, such as Pietersen's mood, the team photo shoot, and the start of the county championship season, which are all significant details from the article."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary omits important context regarding Paul Downton's dismissal and its implications for Pietersen's potential return to the England team, which is a significant aspect of the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "While the summary is mostly fluent, the phrase 'CLICK HERE for all the latest cricket news' is not relevant to the content and disrupts the flow."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 2.8,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "defender"
+      }
+    }
+  }
+}

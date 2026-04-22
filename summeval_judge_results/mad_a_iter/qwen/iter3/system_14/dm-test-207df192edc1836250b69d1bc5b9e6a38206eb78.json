@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-207df192edc1836250b69d1bc5b9e6a38206eb78",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is fluent and consistent with the source text (no hallucinations). However, it suffers from relevance issues by omitting key findings such as the specific gender differences (boys vs. girls), the mechanism of action (gut bugs), and the broader context of antibiotic resistance mentioned in the article. It also includes a minor grammatical error ('two year old' instead of 'two-year-olds') affecting fluency slightly."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is well-structured, fluent, and consistent with the source text. It captures the main findings (antibiotics linked to toddler obesity), the specific analogy used regarding farm animals, and key statistics (12,000 children studied). It receives a slight deduction on relevance because it omits the gender-specific details (boys vs. girls) and the mechanism of action (gut bugs) mentioned in the article, but these are secondary to the primary headline finding."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is well-structured and consistent with the source text. While it omits specific details like gender differences and the biological mechanism (gut bugs), these are secondary to the primary headline finding regarding the link between early antibiotic use and toddler obesity. The deduction in relevance is appropriate for missing these supporting details."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the fluency score from 4 to 3 because the strict judge correctly identified a grammatical error ('two year old' vs 'two-year-olds') and awkward phrasing ('the may also be fattening'). I significantly lowered the relevance score from 3 to 2. While the summary captures the main headline, it misses critical supporting details present in the text: the specific gender disparity (boys vs girls), the proposed biological mechanism (gut bugs), the comparison to farm animals which was actually included in the source but omitted in the strict judge's critique (wait, looking closer at the summary provided in the prompt: 'just as antibiotics are used to make farm animals put on weight' IS in the summary. My previous thought process had a slip). Let me re-evaluate relevance based on the text provided. The summary includes the headline, the farm animal analogy, the England stats (boys only), and the study details. It misses: 1) Girls stats, 2) Mechanism (gut bugs), 3) Repeated prescriptions, 4) Taller boys finding, 5) Context of antibiotic resistance/superbugs. The strict judge was right to penalize relevance for omitting these key findings. I will maintain the low relevance score but acknowledge the farm animal point was actually included in the summary text provided."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary effectively captures the main headline finding and key statistics (England obesity rates, sample size). While it omits specific details like gender differences and the biological mechanism regarding gut bugs, these are considered secondary to the primary message. The deduction in relevance is appropriate for missing these supporting details."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No changes to scores. The lenient judge's analysis correctly identified the grammatical errors ('two year old' vs 'two-year-olds', 'the may also') warranting a fluency score of 3. The relevance score of 2 is justified because the summary omits significant findings from the source text, specifically the gender disparity (boys vs girls), the biological mechanism (gut bugs), and the finding that treated boys were taller. While the farm animal analogy was correctly noted as present in the summary, the omission of these other key data points significantly reduces the summary's coverage of the article's main content."
+      }
+    },
+    "final": {
+      "coherence": 4.5,
+      "consistency": 5.0,
+      "fluency": 4.0,
+      "relevance": 3.0,
+      "overall_judge": 3.9
+    }
+  }
+}

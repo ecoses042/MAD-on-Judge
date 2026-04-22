@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-801763443e6c73e3857039f2223798b2b58bef19",
+  "system_name": "system_2",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow, jumping from Van der Wiel's denial of leaving to the mention of Dani Alves without a smooth transition."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary implies that Van der Wiel could be sold, which is not explicitly stated in the article. The article mentions that he is happy and wants to stay, contradicting the implication of a potential sale."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary uses inconsistent capitalization (e.g., 'gregory van der wiel' instead of 'Gregory van der Wiel'), which affects readability."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key points such as Van der Wiel's comments about his happiness at PSG and his desire to sign a new contract, which are important to understanding his position."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information regarding Van der Wiel's stance on his future with PSG."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects Van der Wiel's denial of leaving the club and his expressed love for PSG, consistent with the article."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of Van der Wiel's happiness at PSG and the potential implications of Dani Alves' link to the club."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical issues, such as inconsistent capitalization and punctuation, which affect readability."
+        }
+      ],
+      "provisional_score": 4
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 4,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "critic",
+        "relevance": "defender"
+      }
+    }
+  }
+}

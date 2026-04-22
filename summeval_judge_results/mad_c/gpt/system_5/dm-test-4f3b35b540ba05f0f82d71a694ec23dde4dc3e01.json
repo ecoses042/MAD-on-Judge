@@ -1,0 +1,71 @@
+{
+  "article_id": "dm-test-4f3b35b540ba05f0f82d71a694ec23dde4dc3e01",
+  "system_name": "system_5",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow of information, as it abruptly ends without mentioning the outcome of the incident or the investigation."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the attempted carjacking, the presence of passengers, and the fact that no one was injured, which are crucial to understanding the incident."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors, such as inconsistent capitalization of 'california' and 'saturday', which affects readability."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear sequence of events, starting with the actions of the gang and the context of the incident."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the main details from the article, including the number of suspects and the location of the incident."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is written in grammatically correct English, making it easy to read."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary captures the key points of the incident, including the argument and the setting, without including trivial details."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks some details about the aftermath of the incident, such as the attempted carjacking and the investigation, which could enhance understanding."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "While it covers the main event, it omits significant context regarding the passengers and the investigation, which are important for a complete understanding."
+        }
+      ],
+      "provisional_score": 3
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 4,
+      "fluency": 3,
+      "relevance": 3,
+      "overall_judge": 3.2,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "defender",
+        "fluency": "critic",
+        "relevance": "critic"
+      }
+    }
+  }
+}

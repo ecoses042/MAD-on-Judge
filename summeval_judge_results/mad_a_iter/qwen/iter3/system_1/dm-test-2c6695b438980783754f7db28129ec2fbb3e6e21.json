@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-2c6695b438980783754f7db28129ec2fbb3e6e21",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 4,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.8,
+        "rationale_for_score": "The summary is fluent and consistent with the source text, accurately reporting the charges and the discovery of the camera. However, it suffers from significant redundancy by repeating the victim's age, location details, and the arrest event twice in a short span without adding new information. Additionally, it omits key details regarding the duration of the abuse (four years), the specific nature of the videos found (41 total, 34 showing victims showering), and the defendant's admission to filming other juveniles, which are central to the article's narrative."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 2,
+        "overall_judge": 2.8,
+        "rationale_for_score": "The summary suffers from severe redundancy (repeating the arrest and victim details twice in slightly different ways) and lacks a logical flow, making it disjointed. It fails to cover key information present in the source text, such as the specific nature of the abuse (molesting while sleeping), the number of videos found, or the bail amount, resulting in poor relevance. While the facts included are consistent with the article, the low fluency and missing critical details prevent a higher score."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "The lenient judge's score for relevance (3) was too high given the summary's extreme redundancy and lack of key details. The summary repeats the arrest event and victim details twice in immediate succession without adding value, which degrades coherence significantly. Furthermore, it omits critical information present in the source text: the duration of the abuse (4 years), the specific count of videos found (41 total, 34 showering), and the admission regarding other victims. These omissions make the summary trivial compared to the source. I lowered relevance to 2 due to these missing key points and coherence to 3 due to the poor structure caused by repetition."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I lowered the scores to align with the strict judge's assessment. The summary is indeed disjointed due to severe redundancy (the first sentence repeats the arrest details found in the second sentence). It fails fluency standards because it lacks logical progression and wastes space on repetition rather than synthesizing information. Most critically, it has poor relevance as it omits major details from the source text, such as the specific timeline of abuse (ages 9-13), the number of videos found (41), and the bail amount ($500,000). The strict judge was accurate in identifying these flaws."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary suffers from significant redundancy by repeating the arrest and victim discovery details in immediate succession without adding new information, which harms coherence. More critically, it fails to include essential facts present in the source text, such as the duration of the abuse (4 years), the specific number of videos found (41 total, 34 showing showering), and the admission regarding other victims. These omissions make the summary trivial compared to the source material, justifying a low relevance score."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 1,
+        "overall_judge": 2.0,
+        "adjustment_notes": "No adjustment needed. The lenient judge's points regarding redundancy (repeating the arrest details), lack of logical progression, and omission of key facts (timeline of abuse, video count, bail amount) are accurate and supported by the source text. The summary is indeed disjointed, repetitive, and lacks relevance to the full scope of the article."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 4.0,
+      "fluency": 3.0,
+      "relevance": 1.5,
+      "overall_judge": 2.5
+    }
+  }
+}

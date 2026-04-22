@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-8847383b72167c3f3dd2161b5b091b580c8f4da7",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 5,
+        "overall_judge": 5.0,
+        "rationale_for_score": "The summary is excellent. It accurately captures the key facts (location, height, dimensions, cause) from the source text without adding any hallucinations or omitting critical details. The flow is logical and the English is fluent."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and strictly consistent with the provided text. However, it scores a 4 for relevance because it omits significant key points present in the article, such as the lack of tremors/sounds reported by locals, the specific location context (Hokkaido), and the clarification that this event is unrelated to the recent Kathmandu earthquake."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 5,
+        "overall_judge": 5.0,
+        "adjustment_notes": "The summary accurately reflects the source text's key details regarding location, dimensions, height, and geological cause without hallucinations or omissions. The lenient judge's assessment is correct; no score adjustment is needed."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. While the summary is fluent and consistent, it significantly misses key context provided in the article: the specific location (Hokkaido), the residents' experience of no tremors/sounds, and the crucial clarification that this event is unrelated to the Kathmandu earthquake. These are significant omissions that impact relevance."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "The summary is factually accurate and well-structured. However, it omits significant context provided in the source text: the complete surprise to locals (no tremors/sounds), the specific location details (Hokkaido Island), the distinction from recent earthquakes, and the presence of marine life. While the core geological event is covered, the omission of these key narrative elements reduces the overall relevance compared to a more comprehensive summary."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I am raising the relevance score from the strict assessment (which likely penalized heavily for missing context) to 3. While the lenient judge correctly identified that the summary misses key context like the location name 'Hokkaido', the residents' lack of sensation, and the earthquake disclaimer, these are secondary details compared to the core event description. The summary successfully captures the main phenomenon (land rise), cause (landslide mechanism), and specific dimensions provided in the text. It is not a trivial omission but rather a focus on the physical facts of the event itself. Therefore, it deserves a higher relevance score than a low 2 or 1, though it cannot be a perfect 5 due to the missing context."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.7
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-d83b82a9cd504218e604616be3f3c3928e3428b8",
+  "system_name": "system_14",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary contains a severe hallucination in the second sentence: it claims Henry believes Arsenal need to buy players 'if they are to remain as the club's first choice striker,' which is grammatically nonsensical and contradicts the source text (Henry urges buying players to win the league, not to keep Giroud as first choice). Additionally, the summary fails to mention the specific four positions required or the context of Chelsea's example, making it factually inconsistent with the article."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from a major consistency error (hallucination). It states Henry believes Arsenal need to buy a striker 'if they are to remain as the club's first choice striker,' which misrepresents the source text. The article says Henry urges them to buy a striker so they can win the league, and separately notes that Giroud is the current first choice; it does not link buying a new striker to keeping Giroud as the starter. Additionally, the summary fails to mention the specific criticism regarding Giroud's inability to lead the team to the title despite scoring 14 goals, which is a key point in the source."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a severe hallucination in the second sentence where it claims Henry believes Arsenal need to buy players 'if they are to remain as the club's first choice striker.' This is grammatically nonsensical and factually incorrect based on the source text; Henry urges buying players to win the league, not to keep Giroud as the first choice. Additionally, the summary fails to mention the specific four positions required or the context of Chelsea's example, making it factually inconsistent with the article."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "The lenient judge's assessment of consistency (score 2) is correct and should be maintained. The summary contains a significant hallucination: it claims Henry believes Arsenal need to buy a striker 'if they are to remain as the club's first choice striker.' This creates a logical contradiction not present in the source text. The source states Giroud *is* the first choice, but Henry argues that buying a new striker is necessary for them to win the league, implying Giroud should likely be replaced or supplemented, not kept as the sole option. The summary conflates two separate points (buying a striker vs. Giroud's status) into a nonsensical condition. Therefore, the consistency score must remain low."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary contains a severe hallucination in the second sentence ('if they are to remain as the club 's first choice striker') which is grammatically nonsensical and factually incorrect based on the source text; Henry urges buying players to win the league, not to keep Giroud as the first choice. Additionally, the summary fails to mention the specific four positions required or the context of Chelsea's example, making it factually inconsistent with the article."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary contains a significant logical error (hallucination) in the sentence regarding Giroud: '...need a striker if they are to remain as the club's first choice striker.' This creates a nonsensical condition where buying a new striker is contingent on keeping Giroud as the first choice, whereas the source text implies Henry believes Arsenal need a *new* top-quality striker because Giroud cannot lead them to the title. This inconsistency warrants a low score. The other scores reflect the summary's otherwise fluent and relevant nature despite this flaw."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 1.5,
+      "fluency": 3.5,
+      "relevance": 3.0,
+      "overall_judge": 2.5
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "article_id": "cnn-test-404f859482d47c127868964a9a39d1a7645dd2e9",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear and logical flow of information, making it difficult to understand the sequence of events."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary incorrectly states 'sterling says he is the former female companion who has lost the,' which is factually incorrect and misleading."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to mention key details such as the context of the lawsuit and the significance of the court's decision."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, such as 'sterling also includes a $ 391 easter bunny costume , $ 299 and a $ 299.'"
+        }
+      ],
+      "provisional_score": 1
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear connection between Donald Sterling's actions and the lawsuit filed by his wife against V. Stiviano."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the lawsuit's outcome and the amount involved, which is consistent with the source document."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains grammatical errors and awkward phrasing, making it difficult to read smoothly."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary lacks important details, such as the context of Sterling's racist remarks and the implications of the court's decision."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "final": {
+      "coherence": 1,
+      "consistency": 1,
+      "fluency": 2,
+      "relevance": 2,
+      "overall_judge": 1.5,
+      "winner_side": {
+        "coherence": "critic",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-2abe0f81f5b22c8a406165717e3bd7fce6fe47c6",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary fails the consistency criterion severely due to a major hallucination: it states 'he can resume practicing chiropractic in the state,' whereas the source explicitly says he must prove circumstances no longer exist before resuming and pledged not to apply for reinstatement for at least 10 years. Additionally, the grammar is poor (e.g., 'the exorcisms on patients has surrendered'), and the flow is disjointed."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from a major consistency flaw: it states 'he can resume practicing chiropractic in the state' as a fact, whereas the source text explicitly says he must 'prove any circumstances... no longer exist before he can resume.' This is a significant hallucination regarding the current status of his license. Additionally, the grammar is poor (e.g., 'the exorcisms on patients has surrendered'), and the flow is disjointed. While it covers relevant points, the factual error regarding the license revocation conditions prevents a higher score."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a critical factual error (hallucination) regarding the ability to resume practice, contradicting the source text which states he must prove circumstances no longer exist and pledged not to apply for 10 years. Additionally, the grammar is poor ('the exorcisms... has surrendered'), and the flow is disjointed. No score adjustment is needed."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The lenient judge's assessment of consistency (2) and fluency (3) is accurate and should be maintained. The summary contains a critical factual error ('he can resume' vs 'must prove... before he can resume'), which violates the consistency criterion severely. Additionally, the grammar is poor ('the exorcisms on patients has surrendered', missing articles like 'a report', 'an agreement'). These issues justify lowering the coherence and fluency scores further than the lenient judge gave, as the sentences are structurally broken and the logical flow is compromised by the hallucination."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "No score adjustment is needed. The lenient judge correctly identified the critical factual error (hallucination) regarding Manuel's ability to resume practice immediately versus the source text stating he must prove circumstances no longer exist and pledged a 10-year wait. Additionally, the grammatical errors ('the exorcisms... has surrendered') and disjointed flow were accurately penalized. The summary fails consistency checks due to these hallucinations and fluency checks due to poor grammar."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 2.0,
+        "adjustment_notes": "Agree with the strict judge's assessment. The summary contains a severe factual error ('he can resume' vs 'must prove... before he can resume'), which violates consistency. Additionally, the grammar is poor (e.g., 'the exorcisms on patients has surrendered', missing articles), compromising fluency and coherence. The lenient scores were overly generous given these critical flaws."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 1.0,
+      "fluency": 2.5,
+      "relevance": 3.0,
+      "overall_judge": 2.0
+    }
+  }
+}

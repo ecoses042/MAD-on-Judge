@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-36352fd1c61fd0c593ee7b84cbe213aa9b444439",
+  "system_name": "system_13",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is well-structured, fluent, and strictly consistent with the source text. It captures the key facts: the victim's identity, location of discovery, cause of death, and police stance on her profession. It receives a slight deduction on relevance (from 5 to 4) because it omits other significant details present in the article, such as the arrest of the suspect and the ongoing appeal for witnesses, though this is acceptable given the brevity."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and strictly consistent with the source text. It captures the main facts (victim details, location, cause of death, police stance). However, it scores a 4 for relevance because it omits significant key information present in the article, such as the arrest of the suspect, Scotland Yard's appeal to the public, and specific timeline details (date/time of discovery), which are central to the news story."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate. The summary is coherent, consistent, and fluent. The deduction in relevance is justified because the summary omits significant details from the source text, specifically the arrest of the suspect and the police appeal for witnesses, which are major components of the news story."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. While the summary is fluent and consistent, it significantly under-reports the key news elements: the arrest of a suspect and the police appeal for witnesses. These are central to a crime report, making the omission a valid reason to lower the relevance score from 5 to 4."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "No changes made. The strict judge's assessment is accurate. While the summary is coherent, consistent, and fluent, it significantly omits key news elements such as the arrest of a suspect and the police appeal for witnesses, which are central to the story's current status. Therefore, the relevance score of 4 is justified."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I am raising the relevance score from 3 to 4. While the summary omits the arrest and police appeal (which are significant), it successfully captures the core narrative: the victim's identity, location of death, cause of death, and the specific stance taken by police regarding her profession. The lenient judge correctly identified that these omissions prevent a perfect score, but the summary is not so trivial as to warrant a 3; it covers the essential 'what' and 'where' effectively."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.7
+    }
+  }
+}

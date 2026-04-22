@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-2cf8c2d1d2ceb1980249f77e703f9039e63799d0",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from significant relevance issues due to extreme redundancy (repeating the same core sentence twice with minor variations). It also fails to capture key details present in the source text, such as the specific clothing contrast (daughters in casual wear vs. fathers in suits), the setting (Japanese landmarks), and the emotional context (fathers expressing fun sides/pained expressions). While factually consistent with the provided text, its brevity leads to a loss of important information."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is fluent, coherent, and strictly consistent with the source text. It accurately captures the main points: the photographer's name, the concept (daughters posing while fathers jump), the age of the photographer, and the book title. It receives a 4 for relevance because it omits several interesting details present in the article (such as the fathers' suits, their pained expressions, and the online interest), but given the lenient rules allowing benefit of the doubt for minor omissions, it is still considered good."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is well-structured, grammatically correct, and strictly adheres to the facts in the source text without hallucination. While it omits secondary details like clothing, expressions, and online interest (justifying a relevance score of 4 rather than 5), these are minor omissions for a short summary. No harsher penalties were applied."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I maintained the low relevance score (3) because the strict judge's criticism regarding 'extreme redundancy' is valid; the summary repeats the exact same core sentence twice with only minor wording changes, which is a structural flaw rather than a content issue. I adjusted the overall score slightly down from 4.2 to 4.0 to reflect this significant waste of space and lack of information density, while keeping coherence, consistency, and fluency at their maximum as they are flawless."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary is well-structured and factually accurate. While it omits secondary details like clothing, expressions, and online interest (justifying a relevance score of 4 rather than 5), these are minor omissions for a short summary. No harsher penalties were applied."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.5,
+        "adjustment_notes": "I accepted the lenient judge's assessment regarding relevance. The summary suffers from extreme redundancy by repeating the core sentence twice with only minor wording changes (e.g., 'po-faced teenagers pictured next to their fathers' vs 'fathers leaping into the air next to their daughters'). This structural flaw wastes space and reduces information density, justifying a low relevance score despite perfect coherence, consistency, and fluency."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 5.0,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.7
+    }
+  }
+}

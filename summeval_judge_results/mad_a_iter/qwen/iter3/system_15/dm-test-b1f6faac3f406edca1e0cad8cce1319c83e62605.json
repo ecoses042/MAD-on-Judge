@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-b1f6faac3f406edca1e0cad8cce1319c83e62605",
+  "system_name": "system_15",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary suffers from severe fluency issues due to poor punctuation and lack of capitalization (e.g., 'luigi costa', 'triple 0 calls costa made ` almost certainly' the man was believed...'), making it difficult to read. While the content is generally consistent with the source text, the sentence structure in the middle is broken and confusing ('...made ` almost certainly ' the man was believed...'). It misses a key detail regarding the prosecutor's claim that Costa feigned memory loss, which is significant context."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is consistent with the source text and covers key points (accusation, victim, expert opinion on dementia/alcohol). However, it scores lower on coherence and fluency due to poor formatting (lowercase start, inconsistent spacing) and a slightly awkward sentence structure ('examined costa 's state of mind declining' lacks a clear connector like 'that'). Despite these minor flaws, the content is accurate and relevant."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I have lowered the fluency score from 4 to 2 because the strict judge correctly identified severe grammatical and punctuation errors (lack of capitalization, missing periods, broken sentence structure) that make the text difficult to read. I also slightly reduced the overall score to reflect these significant readability issues, acknowledging that while the content is relevant and consistent, the execution is poor."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I lowered the fluency score from 3 to 2 because the summary contains significant grammatical and syntactic errors that go beyond 'minor flaws.' Specifically: 1) The first sentence is a fragment ('luigi costa , 71 , is accused of stomping on his elderly neighbour 's head .') with no predicate connecting it to the subject in a complete thought relative to the next clause. 2) The phrase 'examined costa 's state of mind declining' is ungrammatical; it lacks a conjunction (e.g., 'that was declining') or proper phrasing, making it awkward and hard to read. 3) The text starts with lowercase letters throughout, which is a formatting error affecting readability. While the content is consistent and relevant, these structural issues severely impact fluency."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 4,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No changes to scores. The lenient judge's assessment of fluency (2) is correct due to the severe lack of capitalization and punctuation which renders the text difficult to read. The coherence score remains low because the summary presents disjointed sentences without logical connectors or a clear narrative flow, jumping between facts abruptly. Consistency and relevance are maintained as the content accurately reflects the source article's key points."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary suffers from significant grammatical errors (sentence fragments, lack of conjunctions) and formatting issues (lowercase start), which severely impact readability and fluency. Therefore, I maintain the low fluency score of 2. The other scores remain unchanged as the content is consistent and relevant."
+      }
+    },
+    "final": {
+      "coherence": 3.0,
+      "consistency": 4.5,
+      "fluency": 2.0,
+      "relevance": 4.0,
+      "overall_judge": 3.0
+    }
+  }
+}

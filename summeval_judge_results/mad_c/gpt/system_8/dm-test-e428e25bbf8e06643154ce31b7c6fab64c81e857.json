@@ -1,0 +1,67 @@
+{
+  "article_id": "dm-test-e428e25bbf8e06643154ce31b7c6fab64c81e857",
+  "system_name": "system_8",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear, logical flow of information and does not provide context or details about the situation."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary fails to cover key points such as the history of the speed camera, the response from the Birmingham City Council, and the implications of the camera being pointed at the house."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention that the speed camera has not been operational for over two years, which is a crucial detail."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is a fragment and does not form a complete sentence, making it less fluent."
+        }
+      ],
+      "provisional_score": 1
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and concise statement about the speed camera's position relative to the house, maintaining a logical flow."
+        }
+      ],
+      "remaining_concerns": [
+        {
+          "criterion": "relevance",
+          "reason": "The summary lacks coverage of key points from the article, such as the camera's malfunction, the history of speed enforcement in the area, and the council's response."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary does not mention that the camera has not been working for over two years, which is a significant detail from the article."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is grammatically correct but lacks detail, making it less informative."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "final": {
+      "coherence": 2,
+      "consistency": 2,
+      "fluency": 3,
+      "relevance": 2,
+      "overall_judge": 2.2,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

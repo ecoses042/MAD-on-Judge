@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-b1c3fc03a2b74cf4c79844c1fe2fdce70a8a436e",
+  "system_name": "system_10",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is consistent with the source text and covers key points (rescue numbers, Save the Children claims, transit route). However, it suffers from poor fluency due to a lack of capitalization and punctuation throughout the entire text, which significantly impacts readability. It also omits the Coast Guard's contradictory statement regarding the capsized boat, which is a significant piece of information in the source, slightly affecting relevance."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "rationale_for_score": "The summary is consistent with the source text and covers key points (rescue numbers, Save the Children report, capsized ship details, transit route). However, it suffers from poor fluency due to a lack of capitalization for proper nouns (Italy, Monday, Tuesday, CNN, etc.) and sentence structure issues. It also omits significant context regarding the death toll and specific causes of migrant deaths mentioned in the source, slightly reducing relevance."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate: the summary is factually consistent with the source (Consistency 5) and covers the main points regarding rescue numbers and the Save the Children claim (Relevance 4). However, the lack of capitalization and punctuation severely impacts readability and grammatical correctness (Fluency 3), and the omission of the Coast Guard's contradictory statement regarding the capsized boat is a valid point for lowering relevance slightly (Relevance 4). The scores reflect these specific strengths and weaknesses."
+      },
+      "lenient": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is factually consistent and covers the main points regarding rescue numbers and the capsized ship report. However, the lack of capitalization for proper nouns (Italy, Monday, Tuesday, CNN, Save the Children, Mediterranean, Libya) significantly impacts fluency and professionalism, justifying a score of 3 rather than higher. Additionally, while the summary captures the 'why' regarding transit routes, it omits the specific context about death tolls and causes of death mentioned in the source, which slightly affects relevance."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 5,
+        "fluency": 2,
+        "relevance": 4,
+        "overall_judge": 3.0,
+        "adjustment_notes": "Lowered Fluency from 3 to 2 because the lack of capitalization and punctuation makes the text extremely difficult to read and violates basic grammatical standards. Lowered Coherence from 4 to 3 because the sentences are run-on fragments that lack proper syntactic structure, making the logical flow feel disjointed despite the chronological order. Consistency remains 5 as all facts align with the source. Relevance remains 4 as it covers the main points but misses the Coast Guard's denial of the capsizing incident."
+      },
+      "strict": {
+        "coherence": 4,
+        "consistency": 5,
+        "fluency": 3,
+        "relevance": 4,
+        "overall_judge": 4.0,
+        "adjustment_notes": "I agree with the lenient judge's assessment. The summary is factually consistent and covers the main points regarding rescue numbers and the capsized ship report. However, the lack of capitalization for proper nouns (Italy, Monday, Tuesday, CNN, Save the Children, Mediterranean, Libya) significantly impacts fluency and professionalism, justifying a score of 3 rather than higher. Additionally, while the summary captures the 'why' regarding transit routes, it omits the specific context about death tolls and causes of death mentioned in the source, which slightly affects relevance."
+      }
+    },
+    "final": {
+      "coherence": 3.5,
+      "consistency": 5.0,
+      "fluency": 2.5,
+      "relevance": 4.0,
+      "overall_judge": 3.5
+    }
+  }
+}

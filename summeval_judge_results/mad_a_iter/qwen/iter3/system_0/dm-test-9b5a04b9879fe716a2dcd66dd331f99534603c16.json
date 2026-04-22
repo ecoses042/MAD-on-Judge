@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-9b5a04b9879fe716a2dcd66dd331f99534603c16",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.8,
+        "rationale_for_score": "The summary fails the consistency criterion due to a severe hallucination: it claims Gordon was accused of 'attacking the Queensland government,' whereas the source text states he was accused of domestic violence and withholding his criminal history. Additionally, the summary lacks coherence by presenting disjointed sentences without proper grammatical structure (e.g., missing articles, run-on thoughts), and it misses key relevant details like Katter's defense of the term 'black puppet'."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "rationale_for_score": "The summary contains a significant hallucination in the final sentence: it claims Mr Gordon was accused of 'attacking the Queensland government,' whereas the source text states he was accused of domestic violence and withholding his criminal history. This is a clear inconsistency with the source document. Additionally, the summary's structure is somewhat disjointed, jumping between Katter's quotes and facts without smooth transitions."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 2,
+        "overall_judge": 2.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains a severe hallucination regarding the accusation against Mr. Gordon (claiming he attacked the government instead of domestic violence/criminal history), which violates consistency. It also lacks coherence due to disjointed sentence structures and misses significant relevant context like Katter's defense of his terminology, warranting low relevance and coherence scores."
+      },
+      "strict": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No adjustment needed. The lenient judge correctly identified the critical hallucination in the final sentence ('accused of attacking the Queensland government' vs 'withholding his criminal history'). This factual error significantly impacts consistency. The disjointed structure also justifies the low coherence score. No points should be raised."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 3,
+        "relevance": 2,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The summary contains a severe hallucination: it claims Mr. Gordon was accused of 'attacking the Queensland Government', whereas the source text explicitly states he was accused of 'domestic violence' and withholding his criminal history. This is a critical consistency failure. Additionally, the summary lacks coherence due to disjointed sentence structures (e.g., starting sentences with lowercase letters) and fails to capture key relevant context such as Katter's defense of his terminology or the political chaos caused by Gordon's resignation."
+      },
+      "lenient": {
+        "coherence": 3,
+        "consistency": 2,
+        "fluency": 4,
+        "relevance": 3,
+        "overall_judge": 3.0,
+        "adjustment_notes": "No adjustment needed. The strict judge's assessment is accurate: the summary contains a significant hallucination in the final sentence ('accused of attacking' vs 'withholding criminal history'), which violates consistency. Additionally, the disjointed structure and lack of logical flow justify the low coherence score. The lenient evaluator should not raise scores despite minor grammatical strengths."
+      }
+    },
+    "final": {
+      "coherence": 2.5,
+      "consistency": 1.5,
+      "fluency": 3.5,
+      "relevance": 2.5,
+      "overall_judge": 2.5
+    }
+  }
+}

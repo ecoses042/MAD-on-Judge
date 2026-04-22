@@ -1,0 +1,69 @@
+{
+  "article_id": "cnn-test-5139ccfabee55ddb83e7937f5802c0a67aee8975",
+  "system_name": "system_1",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "rationale_for_score": "The summary is fluent and coherent but suffers from relevance issues by omitting the U.S. response (diplomatic petition) and context about previous incidents, which are key points in the source. Consistency is slightly reduced because the summary omits the conflicting reports on the transponder status, presenting only one side without attribution, though it remains factually consistent with the Pentagon's statement."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "rationale_for_score": "The summary is well-structured, fluent, and accurately reflects the key details of the incident (date, location, aircraft types, and specific quotes) without hallucinations. It loses a slight point on relevance because it omits the context regarding the transponder dispute and the historical precedent mentioned in the article, but given the lenient rules, this is acceptable as it focuses on the primary event."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary is fluent and coherent but fails to cover key points from the source text, specifically the U.S. diplomatic response (filing a petition) and the context of previous dangerous incidents. These omissions significantly impact relevance. I maintain the scores as they accurately reflect these flaws."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the lenient judge's assessment. The summary is well-structured and fluent. It accurately reflects the primary event described in the article without introducing hallucinations. While it omits the transponder dispute and historical context (which lowers relevance slightly), this is acceptable as the core incident is covered comprehensively."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 5,
+        "fluency": 5,
+        "relevance": 4,
+        "overall_judge": 4.8,
+        "adjustment_notes": "Agreed with the strict judge's assessment. The summary effectively captures the main event and key quotes while omitting secondary details like the transponder dispute and historical context, which is acceptable for a concise summary."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 5,
+        "relevance": 3,
+        "overall_judge": 4.2,
+        "adjustment_notes": "I agree with the lenient judge's assessment regarding the scores. The summary is fluent and coherent (5s). It contains a minor inconsistency by omitting the specific location 'north of Poland' mentioned in the text, though it correctly identifies the sea, justifying a 4 for consistency. The relevance score of 3 is appropriate because the summary misses two significant key points from the source: the U.S. diplomatic response (filing a petition) and the context of previous dangerous incidents involving RC-135Us and SU-27s."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.5,
+      "fluency": 5.0,
+      "relevance": 3.5,
+      "overall_judge": 4.5
+    }
+  }
+}

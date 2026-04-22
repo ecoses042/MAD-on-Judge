@@ -1,0 +1,66 @@
+{
+  "article_id": "dm-test-8847383b72167c3f3dd2161b5b091b580c8f4da7",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "gpt",
+  "judge": {
+    "critic": {
+      "major_issues": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary lacks a clear logical flow of information, as it abruptly shifts from the description of the event to the geological explanation without a smooth transition."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary inaccurately states '1,000 ft of seabed was forced to the surface,' while the article specifies that the new land measures roughly 1,000-1,640 ft long, which is not the same as the seabed being forced to the surface."
+        }
+      ],
+      "minor_issues": [
+        {
+          "criterion": "fluency",
+          "reason": "The summary contains inconsistent capitalization, such as 'japan' and 'hokkaido island,' which detracts from its readability."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary omits key details such as the lack of tremors felt by residents and the specific measurements of the new land, which are important for understanding the significance of the event."
+        }
+      ],
+      "provisional_score": 2
+    },
+    "defender": {
+      "strengths": [
+        {
+          "criterion": "coherence",
+          "reason": "The summary presents a clear and logical flow of information, detailing the unexpected emergence of the seabed and the geological explanation behind it."
+        },
+        {
+          "criterion": "consistency",
+          "reason": "The summary accurately reflects the information from the article without introducing any new facts or misrepresenting the events."
+        },
+        {
+          "criterion": "fluency",
+          "reason": "The summary is written in fluent English, making it easy to read and understand despite some minor formatting issues."
+        },
+        {
+          "criterion": "relevance",
+          "reason": "The summary focuses on the key points of the article, including the location, the phenomenon, and the geological explanation, while avoiding trivial details."
+        }
+      ],
+      "remaining_concerns": [],
+      "provisional_score": 5
+    },
+    "final": {
+      "coherence": 3,
+      "consistency": 2,
+      "fluency": 4,
+      "relevance": 3,
+      "overall_judge": 3.0,
+      "winner_side": {
+        "coherence": "defender",
+        "consistency": "critic",
+        "fluency": "defender",
+        "relevance": "critic"
+      }
+    }
+  }
+}

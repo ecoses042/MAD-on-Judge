@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-02c955067d00f38b6978b805d5a8701a787f78ac",
+  "system_name": "system_0",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "rationale_for_score": "The summary contains severe hallucinations and factual errors inconsistent with the source text. Specifically, it claims three vehicles were taken to Ipswich Hospital (the article states six others went there, while two were airlifted to Princess Alexandra), incorrectly attributes abdominal pain to a five-year-old boy (who had chest pain; the girl had abdominal pain), and includes repetitive, nonsensical phrasing ('three people were including four children'). These are clear failures in consistency and fluency."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 2,
+        "overall_judge": 1.8,
+        "rationale_for_score": "The summary contains severe hallucinations and factual errors inconsistent with the source text. Specifically, it claims 'three vehicles were taken to Ipswich hospital' (the text says six others went there, while three were airlifted to Princess Alexandra Hospital), states a 5-year-old boy suffered abdominal pain (text says chest pain), and mentions a 40-year-old man was airlifted but fails to mention the other victims correctly. The summary is repetitive ('crash crash', 'airlifted... airlifted') and incoherent."
+      }
+    },
+    "round_1": {
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "adjustment_notes": "The lenient judge's assessment is accurate and well-founded. The summary contains severe factual inconsistencies (wrong hospital for the airlifted patients, wrong injury for the boy), grammatical errors ('three people were including four children'), and repetitive phrasing. No points should be raised; the low scores reflect these critical failures."
+      },
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 2,
+        "overall_judge": 1.8,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains severe factual hallucinations (wrong hospital for the airlifted patients, wrong injury for the 5-year-old boy) and significant repetition ('crash crash', 'airlifted... airlifted'). These are critical flaws that make the summary unreliable and incoherent. No leniency is warranted."
+      }
+    },
+    "round_2": {
+      "lenient": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 3,
+        "overall_judge": 2.0,
+        "adjustment_notes": "I agree with the strict judge's assessment. The summary contains critical factual errors (stating airlifted patients went to Ipswich instead of Princess Alexandra), grammatical incoherence ('three people were including four children'), and repetitive phrasing. These are severe flaws that warrant low scores across all categories."
+      },
+      "strict": {
+        "coherence": 2,
+        "consistency": 1,
+        "fluency": 2,
+        "relevance": 2,
+        "overall_judge": 1.8,
+        "adjustment_notes": "No adjustment needed. The lenient judge's points regarding factual hallucinations (wrong hospital for airlifted patients, wrong injury for the 5-year-old boy) and repetition ('crash crash', 'airlifted... airlifted') are accurate and severe enough to warrant low scores across all categories. The summary is factually inconsistent with the source text and structurally flawed."
+      }
+    },
+    "final": {
+      "coherence": 2.0,
+      "consistency": 1.0,
+      "fluency": 2.0,
+      "relevance": 2.5,
+      "overall_judge": 1.9
+    }
+  }
+}

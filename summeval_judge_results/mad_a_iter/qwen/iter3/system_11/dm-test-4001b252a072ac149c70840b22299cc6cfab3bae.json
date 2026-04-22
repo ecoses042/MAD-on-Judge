@@ -1,0 +1,69 @@
+{
+  "article_id": "dm-test-4001b252a072ac149c70840b22299cc6cfab3bae",
+  "system_name": "system_11",
+  "gold": {},
+  "judge_model": "qwen",
+  "judge": {
+    "round_0": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.5,
+        "rationale_for_score": "The summary is well-structured and covers the main points of the article (Dirar's opinion, Falcao's performance, injury context, transfer fee, and likelihood of permanent deal). However, it omits the specific detail that Falcao was 'not happy in France' and Dirar's belief that he would have been better off at Monaco, which are significant parts of the source text. Additionally, the summary includes a hash symbol (#) before the monetary figure, which is a minor formatting flaw affecting fluency/consistency slightly."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.5,
+        "rationale_for_score": "The summary is well-structured and covers all key points from the source text accurately. The only minor deduction for consistency is due to the use of '# 46million' instead of '£46million', which is a formatting inconsistency rather than a factual hallucination. Given the lenient rules, this does not constitute a severe flaw."
+      }
+    },
+    "round_1": {
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 5,
+        "overall_judge": 4.2,
+        "adjustment_notes": "Lowered fluency score from 4 to 3 due to the inclusion of the hash symbol (#) before '46million', which is a formatting error and breaks the flow of reading. The strict judge was correct that this affects quality, though it is minor."
+      },
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.5,
+        "adjustment_notes": "No changes made. The lenient judge's assessment is accurate: the summary is well-structured and covers key points. The only deviation from the source text is the formatting of the currency symbol ('#' vs '£'), which is a minor inconsistency rather than a factual error or hallucination, justifying the score of 4 for consistency."
+      }
+    },
+    "round_2": {
+      "strict": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 3,
+        "relevance": 5,
+        "overall_judge": 4.2,
+        "adjustment_notes": "Agreed with the lenient judge's assessment regarding the fluency score. The inclusion of the hash symbol (#) before '46million' is a clear formatting error that disrupts readability and constitutes a grammatical/punctuation flaw, justifying the reduction from 4 to 3. No other changes were necessary."
+      },
+      "lenient": {
+        "coherence": 5,
+        "consistency": 4,
+        "fluency": 4,
+        "relevance": 5,
+        "overall_judge": 4.5,
+        "adjustment_notes": "No changes made. The strict judge's assessment is accurate. The summary is well-structured and covers the key points effectively. The only deviation from the source text is the formatting of the currency symbol ('#' vs '£'), which is a minor inconsistency rather than a factual error or hallucination, justifying the score of 4 for consistency."
+      }
+    },
+    "final": {
+      "coherence": 5.0,
+      "consistency": 4.0,
+      "fluency": 3.5,
+      "relevance": 5.0,
+      "overall_judge": 4.3
+    }
+  }
+}
