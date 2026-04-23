@@ -13,7 +13,7 @@ from pathlib import Path
 from typing import Optional
 from openai import OpenAI, RateLimitError
 from env_utils import load_project_env
-from judge_prompt_utils import (
+from mad2_prompt_utils import (
     DOMAINS,
     LENIENT_JUDGE_ADJUST_SYSTEM,
     LENIENT_JUDGE_SYSTEM,

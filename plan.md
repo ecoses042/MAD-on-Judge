@@ -1,341 +1,193 @@
-# 디렉토리 구조 최적화 + 추가 실험 준비 계획
+# MAD-on-Judge 실행 계획
 
-## Context
+> 기준 문서: `outline.md` v0.3  
+> 갱신일: 2026-04-23
 
-현재 프로젝트 루트에 15개 이상의 결과 폴더가 flat하게 쌓여 있어 실험 유형 구분이 어렵고, 새 실험(iteration 증가, cross-model debater)을 추가하면 더 복잡해진다. 추가 실험 시작 전 계층적 구조로 재편하고, 새 스크립트 설계까지 함께 준비한다.
+## 목표
 
-**연구 질문**: 주관적 task(한국어 에세이 채점)에서 LLM Judge의 점수 일률화 문제와 인간 평가자와의 일관성 분석
-- Debate iteration 수 증가 → 수렴 여부 확인
-- Cross-model debater → 모델 조합에 따른 점수 분포 변화
+현재 repo는 에세이 파이프라인과 SummEval 파이프라인이 모두 구현되어 있지만, 결과 산출물은 아직 `outline.md`의 RQ1/RQ2/RQ3를 완전히 채우지 못한다. 이 계획은 남은 작업을 실행 가능한 순서로 정리한다.
 
----
+핵심 산출물은 다음 세 가지다.
 
-## Phase 1: 디렉토리 구조 재편
+1. RQ1: `single / mad1 / mad2 iter5` 점수 분포 비교표
+2. RQ2: mad2 round별 flip, delta, convergence 분석표
+3. RQ3: full vs text-only ablation 비교표와 숫자 앵커링 해석
 
-### 목표 구조
+## 현재 표준 경로
 
-```
-초기실험 코드/
-├── src/                               (스크립트 — 경로만 수정)
-├── data/
-│   └── selected_prompt_jsons/        ← MOVE from root
-├── inference_results/                 ← 모델 예측 결과 통합
-│   ├── gpt/                          ← MOVE from gpt_results/
-│   ├── gemma/                        ← MOVE from results_google_gemma-3-4b/
-│   ├── llama/                        ← MOVE from results_llama3_8b/
-│   └── qwen/                         ← MOVE from results_qwen_qwen3.5-9b/
-├── judge_results/
-│   ├── exp01_single/                  ← MOVE from judge_single_results_*/ & judge_multi_results_*/
-│   │   ├── gemma/ gpt/ llama/ qwen/
-│   ├── exp02_mad/                     ← MOVE from mad_results_*/
-│   │   ├── gemma/ gpt/ llama/ qwen/
-│   ├── exp03_mad2/                    ← MOVE from mad2_results_*/ or mad3_results_*/
-│   │   ├── gemma/ gpt/ llama/ qwen/
-│   ├── exp04_mad3/                    ← MOVE from mad4_results_*/
-│   │   ├── gemma/ gpt/ llama/ qwen/
-│   ├── exp05_iter/                    ← NEW: iteration 증가 실험
-│   │   ├── iter3/
-│   │   │   ├── gemma/ gpt/ llama/ qwen/
-│   │   └── iter5/
-│   │       ├── gemma/ gpt/ llama/ qwen/
-│   └── exp06_crossmodel/             ← NEW: cross-model debater
-│       ├── gpt_baseline9b/            ← GPT(strict) + Baseline 9b(lenient)
-│       │   ├── gemma/ llama/ qwen/    (essay model별 서브폴더)
-│       ├── gpt_instruct9b/
-│       └── baseline9b_instruct9b/
-├── stats/                             ← MOVE aggregated JSONs from root
-│   ├── judge_single_all.json
-│   ├── judge_MAD3_all.json
-│   └── mad4_stats_all.json
-└── 실험결과 시각화/                   (그대로 유지)
-```
+### 에세이
 
-### 이동할 파일/폴더 목록
-
-| 현재 위치 | 이동 후 위치 |
+| 용도 | 경로 |
 |---|---|
-| `selected_prompt_jsons/` | `data/selected_prompt_jsons/` |
-| `gpt_results/` | `inference_results/gpt/` |
-| `results_google_gemma-3-4b/` | `inference_results/gemma/` |
-| `results_llama3_8b/` | `inference_results/llama/` |
-| `results_qwen_qwen3.5-9b/` | `inference_results/qwen/` |
-| `judge_single_results_*/` (또는 `judge_multi_results_*/`) | `judge_results/single_judge/{model}/` |
-| `mad_results_*/` | `judge_results/mad_c/{model}/` |
-| `mad2_results_*/` | `judge_results/mad_c_seq/{model}/` |
-| `mad3_results_*/` | `judge_results/mad_c_seq/{model}/` (중복 시 확인) |
-| `mad4_results_*/` | `judge_results/mad_a_base/{model}/` |
-| `judge_single_all.json` | `stats/judge_single_all.json` |
-| `judge_MAD3_all.json` | `stats/judge_MAD3_all.json` |
-| `mad4_stats_all.json` | `stats/mad4_stats_all.json` |
-| `results/` (요약 JSON 4개) | `stats/inference_summary/` |
+| 원본 NIKL 데이터 | `data/NIKL_GRADING WRITING DATA 2024/` |
+| 100-per-prompt 샘플 | `data/selected_prompt_jsons_100/` |
+| 기존 스크립트 기본 에세이 경로 | `data/selected_prompt_jsons/` |
+| 모델 채점 결과 | `inference_results/{gemma,qwen,llama,gpt}/` |
+| single judge 결과 | `judge_results/single_judge/{judge_model}/{essay_model}/` |
+| mad1 결과 | `judge_results/mad1/{essay_model}/` |
+| mad2 결과 | `judge_results/mad2_iter/{judge_model}/iter5/{essay_model}/` |
+| mad2 text-only 결과 | `judge_results/mad2_text_only/{judge_model}/iter5/{essay_model}/` |
 
----
+주의: 현재 샘플 데이터는 `data/selected_prompt_jsons_100/`에 있고, 일부 에세이 judge 스크립트 기본값은 `data/selected_prompt_jsons/`이다. 실행 전 둘 중 하나로 통일해야 한다.
 
-## Phase 2: 스크립트 경로 수정
+### SummEval
 
-모든 스크립트는 프로젝트 루트 기준 상대 경로를 사용하므로, Config/상수만 수정하면 됨.
-
-### `src/MAD_A_base.py` — Config 수정
-```python
-essay_data_dir: str = "data/selected_prompt_jsons"
-input_dirs: list[str] = field(default_factory=lambda: [
-    "inference_results/gemma",
-    "inference_results/qwen",
-    "inference_results/llama",
-    "inference_results/gpt",
-])
-output_dirs: list[str] = field(default_factory=lambda: [
-    "judge_results/mad_a_base/gemma",
-    "judge_results/mad_a_base/qwen",
-    "judge_results/mad_a_base/llama",
-    "judge_results/mad_a_base/gpt",
-])
-```
-
-### `src/MAD_C_seq.py` — 동일 방식, exp03_mad2/
-
-### `src/single_judge.py` — 상수 수정
-```python
-ESSAY_DATA_DIR = "data/selected_prompt_jsons"
-INPUT_DIRS  = ["inference_results/gemma", "inference_results/gpt", ...]
-OUTPUT_DIRS = ["judge_results/single_judge/gemma", ...]
-```
-
-### `src/MAD_C.py` — 동일 방식, exp02_mad/
-
-### `src/get_mad4_score.py` — INPUT/OUTPUT 경로
-```python
-INPUT_DIRS  = ["judge_results/mad_a_base/gemma", ..., "judge_results/mad_a_base/gpt"]
-OUTPUT_FILE = "stats/mad4_stats_all.json"
-```
-
-### `src/get_judge2_score.py`, `src/get_judge_score.py`
-- 입력 디렉토리 패턴을 `judge_results/mad_c_seq/*/` 로 변경
-- 출력을 `stats/` 하위로 변경
-
-### `src/inf_gpt.py`, `src/inf_ollama.py`, `src/inf_lmstudion.py`
-- 출력 디렉토리를 `inference_results/{model}/` 로 변경
-
-### `실험결과 시각화/*.py`
-- JSON 로드 경로를 `../stats/` 기준으로 수정
-
----
-
-## Phase 3: 새 실험 스크립트
-
-### 3-A. `src/MAD_A_iter.py` — Debate Iteration 증가
-
-**핵심 변경**: MADPipeline이 N회 교환을 반복.
-
-현재 MAD3 = 2회 교환:
-```
-strict_initial, lenient_initial  → Round 1 (independent)
-strict_adjusted, lenient_adjusted → Round 2 (each sees other's Round 1)
-final = avg(strict_adjusted, lenient_adjusted)
-```
-
-iter=N 구조:
-```
-rounds[0]: strict_r0, lenient_r0  (독립, temp=0.1)
-rounds[1]: strict_r1 (sees lenient_r0), lenient_r1 (sees strict_r0)  (temp=0.0)
-...
-rounds[N-1]: strict_rN, lenient_rN  (each sees other's round N-2)
-final = avg(strict_rN, lenient_rN)
-```
-
-출력 구조 변경:
-```json
-{
-  "round_0": {"strict": {...}, "lenient": {...}},
-  "round_1": {"strict": {...}, "lenient": {...}},
-  "round_N": {"strict": {...}, "lenient": {...}},
-  "final":   {"4개 점수(float 평균)", "overall_judge"}
-}
-```
-
-**CLI 인터페이스**:
-```bash
-python src/MAD_A_iter.py --model gemma --iterations 3
-python src/MAD_A_iter.py --model gemma --iterations 5
-```
-
-**출력 위치**: `judge_results/mad_a_iter/iter{N}/{model}/`
-
-**Config 추가 필드**:
-```python
-n_iterations: int = 3  # 총 교환 횟수 (2 = 기존 MAD3과 동일)
-```
-
-**재사용**: MAD_A_base.py의 `strict_judge()`, `lenient_judge()`, `strict_adjust()`, `lenient_adjust()`, `compute_overall()`, `build_essay_index()`, `append_result()`, `load_checkpoint()` 그대로 사용.
-
-### 3-B. `src/MAD3_crossmodel.py` — Cross-Model Debater
-
-**핵심 변경**: strict judge와 lenient judge가 서로 다른 모델/API 사용.
-
-두 개의 클라이언트 필요:
-- `strict_client`: OpenAI API (GPT-4o-mini)
-- `lenient_client`: LM Studio OpenAI-compatible API (`base_url="http://localhost:1234/v1"`)
-
-**Config 구조**:
-```python
-@dataclass
-class CrossModelConfig:
-    # Strict judge 설정
-    strict_api_key: str = "sk-..."           # OpenAI key
-    strict_model: str = "gpt-4o-mini"
-    strict_base_url: str = None              # None = 기본 OpenAI endpoint
-    
-    # Lenient judge 설정
-    lenient_api_key: str = "lm-studio"       # LM Studio는 아무 값이나 가능
-    lenient_model: str = "qwen2.5-7b-instruct"
-    lenient_base_url: str = "http://localhost:1234/v1"
-    
-    essay_data_dir: str = "data/selected_prompt_jsons"
-    input_dirs: list[str] = ...
-    output_dirs: list[str] = ...
-```
-
-**MADPipeline 분리**: 현재 `api_client` 하나 → `strict_client`, `lenient_client` 두 개.
-
-**CLI 인터페이스**:
-```bash
-# GPT(strict) + Baseline Qwen 9b(lenient) — essay model gemma 채점 결과 judge
-python src/MAD3_crossmodel.py \
-  --strict-model gpt-4o-mini \
-  --lenient-model qwen2.5-7b \
-  --lenient-url http://localhost:1234/v1 \
-  --essay-model gemma \
-  --exp-tag gpt_baseline9b
-```
-
-**출력 위치**: `judge_results/exp06_crossmodel/{exp_tag}/{essay_model}/`
-
-**3개 실험 조합**:
-```bash
-# 1. GPT + Baseline 9b
---exp-tag gpt_baseline9b  --strict gpt-4o-mini  --lenient qwen2.5-7b
-
-# 2. GPT + Instruct 9b  
---exp-tag gpt_instruct9b  --strict gpt-4o-mini  --lenient qwen2.5-7b-instruct
-
-# 3. Baseline 9b + Instruct 9b
---exp-tag baseline9b_instruct9b  --strict qwen2.5-7b  --lenient qwen2.5-7b-instruct
-```
-
----
-
-## Phase 4: 새 메트릭 — `src/get_metrics.py`
-
-### 4-A. Range 메트릭 (점수 다양성 측정)
-```python
-score_range = max(scores) - min(scores)          # 점수 분산 범위
-iqr = Q75 - Q25                                  # 이상치 강건한 spread
-```
-
-### 4-B. Distribution 메트릭 (다른 range도 비교 가능)
-점수 range가 모델/방법마다 달라도 비교 가능한 정규화 메트릭:
-
-```python
-# 1. Coefficient of Variation (CV): std/mean — range 중립적
-cv = std / mean
-
-# 2. Normalized Entropy: 정수 점수 분포의 균등성
-#    score 1~5 → 빈도 분포 → Shannon entropy / log(n_bins)
-from collections import Counter
-import math
-counts = Counter(round(s) for s in scores)
-probs  = [c / len(scores) for c in counts.values()]
-entropy = -sum(p * math.log2(p) for p in probs if p > 0)
-n_entropy = entropy / math.log2(5)  # 5점 척도 기준 정규화
-
-# 3. Score Concentration Index (점수 쏠림 측정)
-#    특정 점수(3점)에 몰리는 정도
-mode_freq = max(counts.values()) / len(scores)
-
-# 4. Wasserstein Distance from Uniform (분포 균등성)
-from scipy.stats import wasserstein_distance
-uniform = [1/5] * 5  # 1~5점 균등 분포
-actual  = [counts.get(i, 0)/len(scores) for i in range(1, 6)]
-wd = wasserstein_distance(range(1,6), range(1,6), actual, uniform)
-```
-
-**출력 구조** (`stats/metrics_all.json`):
-```json
-{
-  "exp04_mad3": {
-    "gemma": {
-      "domain_match": {
-        "mean": 3.62, "std": 0.71, "range": 4.0, "iqr": 1.0,
-        "cv": 0.196, "normalized_entropy": 0.72, "mode_freq": 0.45,
-        "wasserstein_from_uniform": 0.38
-      },
-      ...
-    }
-  },
-  "exp05_iter/iter3": { ... },
-  "exp06_crossmodel/gpt_baseline9b": { ... }
-}
-```
-
-### `src/get_metrics.py` CLI
-```bash
-# 단일 실험 집계
-python src/get_metrics.py --exp exp04_mad3
-
-# 전체 비교
-python src/get_metrics.py --all
-```
-
----
-
-## Phase 5: 시각화 확장 (`실험결과 시각화/`)
-
-- `iteration_convergence.py` — round별 점수 변화 line plot (수렴 확인)
-- `crossmodel_distribution.py` — 모델 조합별 CV/entropy 비교 bar chart
-- `distribution_heatmap.py` — 점수 분포를 heatmap (score bin × experiment)
-
----
-
-## 실행 순서
-
-```bash
-# 1. 디렉토리 이동 (OS 명령으로 일괄)
-# 2. 스크립트 경로 수정
-# 3. 기존 실험 재집계 확인
-python src/get_mad4_score.py
-python src/get_judge2_score.py --output-prefix judge_MAD3
-
-# 4. 새 실험 — Iteration study
-python src/MAD_A_iter.py --model gpt --iterations 3
-python src/MAD_A_iter.py --model gpt --iterations 5
-
-# 5. 새 실험 — Cross-model
-python src/MAD3_crossmodel.py --strict gpt-4o-mini --lenient qwen2.5-7b --essay-model gemma --exp-tag gpt_baseline9b
-
-# 6. 통합 메트릭 집계
-python src/get_metrics.py --all
-```
-
----
-
-## 수정 대상 파일 정리
-
-| 파일 | 변경 내용 |
+| 용도 | 경로 |
 |---|---|
-| `src/MAD_A_base.py` | Config 경로 4개 수정 |
-| `src/MAD_C_seq.py` | Config 경로 수정 |
-| `src/single_judge.py` | 상수 3개 수정 |
-| `src/MAD_C.py` | 경로 수정 |
-| `src/get_mad4_score.py` | INPUT_DIRS, OUTPUT_FILE 수정 |
-| `src/get_judge2_score.py` | 입/출력 경로 수정 |
-| `src/get_judge_score.py` | 경로 수정 |
-| `src/inf_gpt.py` | 출력 디렉토리 수정 |
-| `src/inf_ollama.py` | 출력 디렉토리 수정 |
-| `src/inf_lmstudion.py` | 출력 디렉토리 수정 |
-| `실험결과 시각화/*.py` | JSON 로드 경로 수정 |
-| `CLAUDE.md` | 새 구조 반영하여 업데이트 |
-| **(NEW)** `src/MAD_A_iter.py` | MAD3 iteration 확장 |
-| **(NEW)** `src/MAD3_crossmodel.py` | Cross-model debater |
-| **(NEW)** `src/get_metrics.py` | Range + Distribution 메트릭 |
-| **(NEW)** `실험결과 시각화/iteration_convergence.py` | Iteration 시각화 |
-| **(NEW)** `실험결과 시각화/crossmodel_distribution.py` | Cross-model 시각화 |
+| judge 입력 | `summeval_judge_input/{system_name}/` |
+| single judge 결과 | `summeval_judge_results/single_judge/{judge_model}/{system_name}/` |
+| mad1 결과 | `summeval_judge_results/mad1/{judge_model}/{system_name}/` |
+| mad2 결과 | `summeval_judge_results/mad2_iter/{judge_model}/iter5/{system_name}/` |
+| RQ1 집계 | `stats/summeval_metrics_all.json` |
+
+주의: repo에는 과거 명칭인 `summeval_judge_results/mad_c/`, `summeval_judge_results/mad_a_iter/` 결과가 남아 있다. 현재 스크립트는 `mad1`, `mad2_iter`를 표준으로 사용한다.
+
+## 구현 상태
+
+| 구분 | 에세이 | SummEval |
+|---|---|---|
+| 데이터 준비 | `prepare_nikl_essay_dataset.py` 있음 | `prepare_summeval.py` 있음 |
+| single | `legacy_rationale_single_judge.py`, `single_*` 추론 있음 | `single_judge_summeval.py` 있음 |
+| mad1 | `mad1_critic_defender.py` 있음 | `mad1_critic_defender_summeval.py` 있음 |
+| mad2 iter | `mad2_consensus_iter.py` 있음 | `mad2_consensus_iter_summeval.py` 있음 |
+| RQ1 집계 | direct scoring 중심, 통합표 보강 필요 | `rq1_score_distribution_summeval.py` 있음 |
+| RQ2 분석 | `rq2_mad2_oscillation.py` 있음 | 전용 스크립트 필요 |
+| RQ3 text-only | `mad2_text_only.py`, `analysis/rq3_anchoring.py` 있음 | 전용 실험/분석 스크립트 필요 |
+| gold 성능 | `essay_scoring_performance.py` 있음 | 전용 스크립트 필요 |
+
+## 우선순위
+
+### P0. 경로 정합성 고정
+
+- [ ] 에세이 데이터 경로를 하나로 고정한다.
+  - 권장: `data/selected_prompt_jsons_100/`를 표준으로 쓰고, 스크립트 기본값을 이 경로로 맞춘다.
+  - 호환이 필요하면 `data/selected_prompt_jsons` 심볼릭 링크 또는 복사본을 만든다.
+- [ ] SummEval 결과 경로를 현재 스크립트 기준으로 통일한다.
+  - 표준: `mad1`, `mad2_iter`
+  - 과거 결과 `mad_c`, `mad_a_iter`는 legacy 결과로만 취급한다.
+- [ ] 실행 생성물은 git 추적 대상에서 제외한다.
+  - `debug/raw_responses/`, `__pycache__/`, `*.pyc`, 오타 경로 `lagacy/`
+
+### P1. 에세이 결과 산출
+
+- [ ] `inference_results/{gemma,qwen,llama,gpt}/`를 최신 샘플 600개 기준으로 산출한다.
+- [ ] single judge 결과를 산출한다.
+
+```bash
+python src/essay/legacy_rationale_single_judge.py --judge-model gpt
+python src/essay/legacy_rationale_single_judge.py --judge-model gemma
+python src/essay/legacy_rationale_single_judge.py --judge-model qwen
+```
+
+- [ ] mad1 결과를 산출한다.
+
+```bash
+python src/essay/mad1_critic_defender.py
+```
+
+- [ ] mad2 iter5 결과를 산출한다.
+
+```bash
+python src/essay/mad2_consensus_iter.py --judge-model gpt --iterations 5
+python src/essay/mad2_consensus_iter.py --judge-model gemma --iterations 5
+python src/essay/mad2_consensus_iter.py --judge-model qwen --iterations 5
+```
+
+### P2. SummEval 결과 보완
+
+- [ ] SummEval 입력 1,600개를 재생성하거나 현재 입력 개수를 검증한다.
+
+```bash
+python src/summeval/prepare_summeval.py --sample-size 100 --seed 42
+```
+
+- [ ] single/mad1/mad2 iter5를 judge model별로 산출한다.
+
+```bash
+python src/summeval/single_judge_summeval.py --judge-model gpt --workers 8
+python src/summeval/mad1_critic_defender_summeval.py --judge-model gpt --workers 8
+python src/summeval/mad2_consensus_iter_summeval.py --judge-model gpt --iterations 5 --workers 8
+```
+
+동일 명령을 `gemma`, `qwen`에도 반복한다. 최종 실험 기준은 `iter5`이며, 미완료 judge model의 `iter5` 결과가 우선 보완 대상이다.
+
+### P3. RQ1 통합표
+
+- [ ] 에세이 RQ1 스크립트를 `single_judge`, `mad1`, `mad2_iter/iter5`를 읽는 형태로 확장한다.
+- [ ] SummEval RQ1 집계는 현재 표준 경로(`mad1`, `mad2_iter`) 기준으로 실행한다.
+
+```bash
+python src/summeval/rq1_score_distribution_summeval.py --all
+```
+
+최종 표에는 최소한 `count`, `mean`, `std`, `range`, `iqr`, `mode_frequency`, `wasserstein_from_uniform`을 포함한다.
+
+### P4. RQ2 분석
+
+- [ ] 에세이 RQ2를 judge model별 `iter5` 기준으로 산출한다.
+
+```bash
+python src/essay/rq2_mad2_oscillation.py --judge-model gpt
+python src/essay/rq2_mad2_oscillation.py --judge-model gemma
+python src/essay/rq2_mad2_oscillation.py --judge-model qwen
+```
+
+- [ ] SummEval용 RQ2 스크립트를 추가한다.
+  - 입력: `summeval_judge_results/mad2_iter/{judge_model}/iter5/`
+  - 출력: `stats/rq2_summeval_oscillation_{judge_model}.json/.md`
+  - 지표: `flip_count`, `delta_strict`, `delta_lenient`, `convergence_final`
+
+### P5. RQ3 ablation
+
+- [ ] 에세이 text-only 결과를 산출한다.
+
+```bash
+python src/essay/mad2_text_only.py --judge-model gpt --iterations 5
+python src/essay/mad2_text_only.py --judge-model gemma --iterations 5
+python src/essay/mad2_text_only.py --judge-model qwen --iterations 5
+```
+
+- [ ] `mad2_text_only.py`에서 공유 텍스트 내부 숫자 표현까지 마스킹한다.
+- [ ] `analysis/rq3_anchoring.py`의 기본 에세이 모델 목록에 `qwen`을 포함한다.
+- [ ] SummEval text-only 실험 스크립트와 full vs text-only 분석 스크립트를 추가한다.
+
+### P6. 보조 실험과 gold 성능
+
+- [ ] mad1 defender bias 분석 스크립트를 추가한다.
+  - `defender_win_rate`
+  - `critic_major_issue_count`와 `final_score` 상관
+  - `defender_rebuttal_success_rate`와 `score_change` 상관
+- [ ] 에세이 human average 대비 성능표를 최신 결과로 산출한다.
+
+```bash
+python src/essay/essay_scoring_performance.py --input-dir inference_results/gemma
+```
+
+- [ ] SummEval human score 대비 RMSE/MAE/Pearson/Spearman 평가 스크립트를 추가한다.
+
+## 논문 산출물 체크리스트
+
+- [ ] Introduction 초안
+- [ ] Background & Related Work 초안
+- [ ] Method 섹션에 최종 실험 경로/모델/샘플 수 반영
+- [ ] RQ1 표와 해석 문단
+- [ ] RQ2 표와 해석 문단
+- [ ] RQ3 표와 해석 문단
+- [ ] Defender bias 보조 실험 표
+- [ ] Essay와 SummEval을 함께 보여주는 최종 비교표
+- [ ] Discussion / Limitation / Conclusion
+
+## 정리된 불필요 파일 정책
+
+삭제 또는 ignore 대상:
+
+- `__pycache__/`, `*.pyc`
+- `debug/raw_responses/`
+- 오타 경로의 중복 보관본 `lagacy/`
+- 새 `plan.md`와 중복되는 과거 실행 메모
+
+보존 대상:
+
+- `src/essay/legacy/`: 현재 본문 실험 밖 코드이지만 재현성 확인용으로 보존
+- `stats/*.json`, `stats/*.md`: 과거 결과라도 논문 초안 작성 중 비교 근거로 보존
+- `summeval_judge_results/mad_c`, `summeval_judge_results/mad_a_iter`: 현재 표준 경로는 아니지만 기존 실행 결과로 보존

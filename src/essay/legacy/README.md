@@ -5,12 +5,12 @@
 - `mad_c_seq`, `mad_a_base`처럼 현재 본문 실험 설계와 직접 맞지 않는 전용 집계 스크립트
 
 현재 활성 집계 스크립트:
-- `src/get_metrics.py`
+- `src/essay/rq1_score_distribution.py`
 
 현재 활성 실행 스크립트:
-- `src/single_judge.py`
+- `src/essay/legacy_rationale_single_judge.py`
 - `src/MAD_C.py`
-- `src/MAD_A_iter.py`
+- `src/essay/mad2_consensus_iter.py`
 
 추가 legacy 대상:
 - `src/legacy/MAD_A_base.py`

@@ -16,7 +16,7 @@ from openai import OpenAI, RateLimitError
 sys.path.insert(0, str(Path(__file__).parent.parent))
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 from env_utils import load_project_env
-from judge_prompt_utils import (
+from mad2_prompt_utils import (
     DOMAINS,
     LENIENT_JUDGE_ADJUST_SYSTEM,
     LENIENT_JUDGE_SYSTEM,

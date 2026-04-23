@@ -14,7 +14,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 from openai import OpenAI, RateLimitError
 
-from summeval.summeval_prompt_utils import SCORE_KEYS, SINGLE_JUDGE_SYSTEM, build_user_prompt, compute_overall
+from prompts.summeval import SCORE_KEYS, SINGLE_JUDGE_SYSTEM, build_user_prompt, compute_overall
 
 API_KEY = os.environ.get("OPENAI_API_KEY", "")
 LM_STUDIO_BASE_URL = "http://localhost:1234/v1"

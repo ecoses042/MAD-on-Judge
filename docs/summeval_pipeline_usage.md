@@ -12,15 +12,20 @@ The SummEval pipeline is independent from the essay pipeline:
 - It uses English prompts and article-conditioned judging.
 - It parallelizes per article-summary item with `ThreadPoolExecutor`.
 
+Current standard result paths are `summeval_judge_results/mad1/` and
+`summeval_judge_results/mad2_iter/`. Older local outputs may still exist under
+`summeval_judge_results/mad_c/` and `summeval_judge_results/mad_a_iter/`; treat
+those as legacy outputs unless a script explicitly targets them.
+
 ## Data Flow
 
 Execution flow:
 
-`prepare_summeval.py` -> `summeval_judge_input/` -> `{single_judge_summeval.py, MAD_C_summeval.py, MAD_A_iter_summeval.py}` -> `summeval_judge_results/` -> `get_metrics_summeval.py` -> `stats/summeval_metrics_all.json`
+`prepare_summeval.py` -> `summeval_judge_input/` -> `{single_judge_summeval.py, mad1_critic_defender_summeval.py, mad2_consensus_iter_summeval.py}` -> `summeval_judge_results/` -> `rq1_score_distribution_summeval.py` -> `stats/summeval_metrics_all.json`
 
 1. `prepare_summeval.py` downloads and samples `mteb/summeval`, then writes one JSON file per `(article, system summary)` pair.
 2. Judge scripts read those files and write experiment outputs under `summeval_judge_results/`.
-3. `get_metrics_summeval.py` aggregates score distributions across all items for each experiment.
+3. `rq1_score_distribution_summeval.py` aggregates score distributions across all items for each experiment.
 
 ## Directory Layout
 
@@ -37,11 +42,11 @@ summeval_judge_results/
 │   └── {judge_model}/
 │       └── {system_name}/
 │           └── {article_id}.json
-├── mad_c/
+├── mad1/
 │   └── {judge_model}/
 │       └── {system_name}/
 │           └── {article_id}.json
-└── mad_a_iter/
+└── mad2_iter/
     └── {judge_model}/
         └── iter{N}/
             └── {system_name}/
@@ -76,7 +81,7 @@ Install the required packages from the project root:
 pip install datasets openai scipy
 ```
 
-`scipy` is optional but recommended because `get_metrics_summeval.py` adds `wasserstein_from_uniform` when SciPy is available.
+`scipy` is optional but recommended because `rq1_score_distribution_summeval.py` adds `wasserstein_from_uniform` when SciPy is available.
 
 For GPT-based judging, set `OPENAI_API_KEY`.
 For local judging, LM Studio should expose an OpenAI-compatible API at `http://localhost:1234/v1`.
@@ -97,33 +102,33 @@ python src/summeval/single_judge_summeval.py --judge-model gpt --workers 8
 python src/summeval/single_judge_summeval.py --judge-model gemma --workers 4
 ```
 
-Run MAD-C evaluation:
+Run mad1 evaluation:
 
 ```bash
-python src/summeval/MAD_C_summeval.py --judge-model gpt --workers 8
-python src/summeval/MAD_C_summeval.py --judge-model qwen --workers 4
+python src/summeval/mad1_critic_defender_summeval.py --judge-model gpt --workers 8
+python src/summeval/mad1_critic_defender_summeval.py --judge-model qwen --workers 4
 ```
 
-Run iterative MAD-A evaluation:
+Run iterative mad2 evaluation:
 
 ```bash
-python src/summeval/MAD_A_iter_summeval.py --judge-model gpt --iterations 3 --workers 8
-python src/summeval/MAD_A_iter_summeval.py --judge-model gpt --iterations 5 --workers 8
-python src/summeval/MAD_A_iter_summeval.py --judge-model gemma --iterations 3 --workers 4
+python src/summeval/mad2_consensus_iter_summeval.py --judge-model gpt --iterations 3 --workers 8
+python src/summeval/mad2_consensus_iter_summeval.py --judge-model gpt --iterations 5 --workers 8
+python src/summeval/mad2_consensus_iter_summeval.py --judge-model gemma --iterations 3 --workers 4
 ```
 
 Aggregate one experiment:
 
 ```bash
-python src/summeval/get_metrics_summeval.py --exp single_judge/gpt
-python src/summeval/get_metrics_summeval.py --exp mad_c/gpt
-python src/summeval/get_metrics_summeval.py --exp mad_a_iter/gpt/iter3
+python src/summeval/rq1_score_distribution_summeval.py --exp single_judge/gpt
+python src/summeval/rq1_score_distribution_summeval.py --exp mad1/gpt
+python src/summeval/rq1_score_distribution_summeval.py --exp mad2_iter/gpt/iter3
 ```
 
 Aggregate all discovered experiments:
 
 ```bash
-python src/summeval/get_metrics_summeval.py --all
+python src/summeval/rq1_score_distribution_summeval.py --all
 ```
 
 ## Key Differences From The Korean Essay Pipeline
@@ -135,8 +140,8 @@ python src/summeval/get_metrics_summeval.py --all
 - Parallel unit of work: `ThreadPoolExecutor` processes independent article-summary items, grouped by `system_name`.
 - Result structure differs slightly:
   - `single_judge` stores scores in `judge`
-  - `mad_c` stores `critic`, `defender`, and `final` under `judge`
-  - `mad_a_iter` stores `round_0 ... round_N` and `final` under `judge`
+  - `mad1` stores `critic`, `defender`, and `final` under `judge`
+  - `mad2_iter` stores `round_0 ... round_N` and `final` under `judge`
 
 ## Recommended Execution Order
 
@@ -155,20 +160,20 @@ python src/summeval/single_judge_summeval.py --judge-model gpt --workers 8
 3. Run MAD-C.
 
 ```bash
-python src/summeval/MAD_C_summeval.py --judge-model gpt --workers 8
+python src/summeval/mad1_critic_defender_summeval.py --judge-model gpt --workers 8
 ```
 
-4. Run MAD-A iterative settings, usually `iter3` then `iter5`.
+4. Run mad2 iterative settings, usually `iter3` then `iter5`.
 
 ```bash
-python src/summeval/MAD_A_iter_summeval.py --judge-model gpt --iterations 3 --workers 8
-python src/summeval/MAD_A_iter_summeval.py --judge-model gpt --iterations 5 --workers 8
+python src/summeval/mad2_consensus_iter_summeval.py --judge-model gpt --iterations 3 --workers 8
+python src/summeval/mad2_consensus_iter_summeval.py --judge-model gpt --iterations 5 --workers 8
 ```
 
 5. Aggregate metrics.
 
 ```bash
-python src/summeval/get_metrics_summeval.py --all
+python src/summeval/rq1_score_distribution_summeval.py --all
 ```
 
 Final metrics will be written to `stats/summeval_metrics_all.json`.

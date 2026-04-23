@@ -9,7 +9,7 @@
 한국어 에세이 judge 파이프라인(`src/essay/`)에서 관찰한 **MAD 진동·앵커링 현상**이  
 영어 요약 품질 평가 도메인에서도 재현되는지 확인한다 (도메인 일반화 검증).
 
-에세이 파이프라인과 1:1 대응하는 세 가지 judge 방식(Single / MAD-C / MAD-A iter)을 동일하게 실행하고,  
+에세이 파이프라인과 1:1 대응하는 세 가지 judge 방식(Single / MAD-C / mad2 iter)을 동일하게 실행하고,  
 결과 메트릭을 비교한다.
 
 ---
@@ -64,13 +64,13 @@ summeval_judge_input/
         ├──▶ single_judge_summeval.py
         │         └──▶ summeval_judge_results/single_judge/{judge_model}/{system_name}/{article_id}.json
         │
-        ├──▶ MAD_C_summeval.py
-        │         └──▶ summeval_judge_results/mad_c/{judge_model}/{system_name}/{article_id}.json
+        ├──▶ mad1_critic_defender_summeval.py
+        │         └──▶ summeval_judge_results/mad1/{judge_model}/{system_name}/{article_id}.json
         │
-        └──▶ MAD_A_iter_summeval.py
-                  └──▶ summeval_judge_results/mad_a_iter/{judge_model}/iter{N}/{system_name}/{article_id}.json
+        └──▶ mad2_consensus_iter_summeval.py
+                  └──▶ summeval_judge_results/mad2_iter/{judge_model}/iter{N}/{system_name}/{article_id}.json
                             │
-                            ▼  get_metrics_summeval.py
+                            ▼  rq1_score_distribution_summeval.py
                     stats/summeval_metrics_all.json
 ```
 
@@ -143,7 +143,7 @@ load_dataset("mteb/summeval", split="test")
 
 ---
 
-### 2. `MAD_C_summeval.py` — MAD-C (Multi-Agent Debate Critic)
+### 2. `mad1_critic_defender_summeval.py` — mad1 (Critic-Defender-Final Judge)
 
 Critic → Defender → Final Judge 3단계 토론 구조.
 
@@ -185,7 +185,7 @@ Critic과 Defender는 **독립적으로 요약문을 평가**하고, Final Judge
 
 ---
 
-### 3. `MAD_A_iter_summeval.py` — MAD-A iter (반복 합의)
+### 3. `mad2_consensus_iter_summeval.py` — mad2 iter (반복 합의)
 
 Strict judge와 Lenient judge가 서로의 평가를 보고 점수를 조정하는 과정을 N회 반복한다.
 
@@ -247,7 +247,7 @@ round_0 lenient 완료 → 즉시 round_1 strict 제출
 
 ---
 
-### 4. `get_metrics_summeval.py` — 메트릭 집계
+### 4. `rq1_score_distribution_summeval.py` — 메트릭 집계
 
 judge 결과 파일들을 읽어 분포 메트릭을 계산하고 `stats/summeval_metrics_all.json`에 저장한다.
 
@@ -255,8 +255,8 @@ judge 결과 파일들을 읽어 분포 메트릭을 계산하고 `stats/summeva
 
 | `uses_final` | 읽는 필드 | 해당 실험 |
 |---|---|---|
-| `False` | `judge.coherence` 등 직접 | single_judge, mad_c |
-| `True` | `judge.final.coherence` 등 | mad_a_iter |
+| `False` | `judge.coherence` 등 직접 | single_judge, mad1 |
+| `True` | `judge.final.coherence` 등 | mad2_iter |
 
 계산하는 메트릭:
 
@@ -292,18 +292,18 @@ python src/summeval/prepare_summeval.py --sample-size 100 --seed 42
 # 2. Single Judge
 python src/summeval/single_judge_summeval.py --judge-model gpt --workers 4
 
-# 3. MAD-C
-python src/summeval/MAD_C_summeval.py --judge-model gpt --workers 4
+# 3. mad1
+python src/summeval/mad1_critic_defender_summeval.py --judge-model gpt --workers 4
 
-# 4. MAD-A iter
-python src/summeval/MAD_A_iter_summeval.py --judge-model gpt --iterations 3 --workers 4
-python src/summeval/MAD_A_iter_summeval.py --judge-model gpt --iterations 5 --workers 4
+# 4. mad2 iter
+python src/summeval/mad2_consensus_iter_summeval.py --judge-model gpt --iterations 3 --workers 4
+python src/summeval/mad2_consensus_iter_summeval.py --judge-model gpt --iterations 5 --workers 4
 
 # 5. 메트릭 집계
-python src/summeval/get_metrics_summeval.py --all
+python src/summeval/rq1_score_distribution_summeval.py --all
 # 또는 단일 실험
-python src/summeval/get_metrics_summeval.py --exp single_judge/gpt
-python src/summeval/get_metrics_summeval.py --exp mad_a_iter/gpt/iter3
+python src/summeval/rq1_score_distribution_summeval.py --exp single_judge/gpt
+python src/summeval/rq1_score_distribution_summeval.py --exp mad2_iter/gpt/iter3
 ```
 
 ### judge_model 옵션

@@ -8,8 +8,8 @@
 
 | RQ | 질문 |
 |---|---|
-| RQ1 | Judge 방식(Single / MAD-C / MAD-A)에 따라 점수 분포와 변별력이 어떻게 달라지는가? |
-| RQ2 | 합의 MAD(MAD-A)에서 점수 분포 축소의 원인으로 진동 현상이 실제 존재하는가? |
+| RQ1 | Judge 방식(Single / MAD-C / mad2)에 따라 점수 분포와 변별력이 어떻게 달라지는가? |
+| RQ2 | 합의 MAD(mad2)에서 점수 분포 축소의 원인으로 진동 현상이 실제 존재하는가? |
 | RQ3 | 그 진동은 상대의 점수 숫자에 반응한 결과인가, 아니면 근거 내용에 반응한 결과인가? |
 | RQ4 | iteration 수가 증가하면 진동 횟수와 양상은 어떻게 변하는가? |
 
@@ -32,8 +32,8 @@
 - Judge 관점:
   - `Single Judge`
   - `MAD-C` (비판 중심)
-  - `MAD-A iter3`
-  - `MAD-A iter5`
+  - `mad2 iter3`
+  - `mad2 iter5`
 - 평가 영역:
   - `content`
   - `organization`
@@ -114,7 +114,7 @@
 - RQ3-A용 `adjustment_notes` 텍스트 패턴 분석 완료
 - RQ3-B용 `Text-only` ablation 분석 완료
 - RQ3 분석 코드 추가 완료:
-  - [analyze_rq3_anchoring.py](/mnt/c/Users/c/OneDrive/Desktop/NLP%20lab/제안서/말평/초기실험%20코드/src/analysis/analyze_rq3_anchoring.py:1)
+  - [rq3_anchoring.py](/mnt/c/Users/c/OneDrive/Desktop/NLP%20lab/제안서/말평/초기실험%20코드/src/analysis/rq3_anchoring.py:1)
 
 ### 2.4 아직 남은 핵심 분석
 
@@ -216,7 +216,7 @@
 
 1. 에이전트들은 상대의 숫자만 따라가는 것이 아니라 상대의 설명 텍스트와 조정 논리를 적극적으로 참조한다.
 2. 이 과정에서 실제 설득이라기보다 "상대 표현을 재진술하거나 부분 수용하는 반복 패턴"이 발생한다.
-3. 따라서 MAD-A의 진동은 숫자 앵커링뿐 아니라 텍스트 피드백 기반 상호 모방, 반복적 재서술, 불안정한 재평가 메커니즘이 함께 만드는 현상일 수 있다.
+3. 따라서 mad2의 진동은 숫자 앵커링뿐 아니라 텍스트 피드백 기반 상호 모방, 반복적 재서술, 불안정한 재평가 메커니즘이 함께 만드는 현상일 수 있다.
 
 즉, 현재 단계에서는 연구의 framing을 아래처럼 조금 조정하는 것이 더 안전하다.
 
